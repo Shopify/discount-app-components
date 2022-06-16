@@ -60,5 +60,5 @@ Sets which day should be used as the start of week
 
 ## Related components
 
-- The component renders a [`DatePicker`](https://github.com/Shopify/discount-app-components-internal/tree/main/src/components/DatePicker)
-- The component renders a [`TimePicker`](https://github.com/Shopify/discount-app-components-internal/tree/main/src/components/TimePicker)
+- The component renders a [`DatePicker`](https://github.com/Shopify/discount-app-components/tree/main/src/components/DatePicker)
+- The component renders a [`TimePicker`](https://github.com/Shopify/discount-app-components/tree/main/src/components/TimePicker)

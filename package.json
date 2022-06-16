@@ -1,11 +1,11 @@
 {
-  "name": "@shopify/discount-app-components-internal",
+  "name": "@shopify/discount-app-components",
   "description": "Shopify’s discounts component library",
   "version": "0.12.0",
   "private": true,
   "author": "Shopify <dev@shopify.com>",
-  "repository": "https://github.com/Shopify/discount-app-components-internal",
-  "bugs": "https://github.com/Shopify/discount-app-components-internal/issues",
+  "repository": "https://github.com/Shopify/discount-app-components",
+  "bugs": "https://github.com/Shopify/discount-app-components/issues",
   "publishConfig": {
     "access": "restricted"
   },
@@ -22,7 +22,7 @@
   ],
   "keywords": [
     "shopify",
-    "discount-app-components-internal",
+    "discount-app-components",
     "react",
     "components",
     "component library"

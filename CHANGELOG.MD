@@ -1,1 +1,5 @@
-TODO do we want to use a changelog while this is WIP or **only** once we publish the repo?
+# Changelog
+
+## 1.0.0
+
+- Initial release
