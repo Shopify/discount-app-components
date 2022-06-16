@@ -1,0 +1,542 @@
+{
+  "DiscountAppComponents": {
+    "SampleComponent": {
+      "content": "Näytekomponentti renderöi!",
+      "destructiveAction": "Käynnistä konsolilogi klikkaamalla!!"
+    },
+    "SampleSubComponent": {
+      "content": "Näytteen alakomponentti renderöi!"
+    },
+    "ActiveDatesCard": {
+      "title": "Aktiiviset päivämäärät",
+      "startDate": "Alkamispäivä",
+      "startTime": "Aloitusaika ({timezoneAbbreviation})",
+      "endDate": "Päättymispäivä",
+      "endTime": "Päättymisaika ({timezoneAbbreviation})",
+      "setEndDate": "Aseta päättymispäivä"
+    },
+    "TimePicker": {
+      "timePlaceholder": "Anna aika"
+    },
+    "DatePicker": {
+      "datePlaceholder": "VVVV-KK-PP",
+      "dateFormatError": "Päivämäärän on oltava muodossa VVVV-KK-PP"
+    },
+    "MethodCard": {
+      "methodSubtitle": "Tapa",
+      "choiceList": {
+        "title": "Valitse menetelmävaihtoehdot",
+        "code": "Alennuskoodi",
+        "automatic": "Automaattinen alennus"
+      },
+      "discountClassLabel": {
+        "product": "Tuotteen alennus",
+        "order": "Tilauksen alennus",
+        "shipping": "Toimitusalennus"
+      },
+      "discountField": {
+        "label": "Otsikko",
+        "helpText": "Asiakkaat näkevät tämän ostoskorissaan ja kassalla."
+      },
+      "pos": {
+        "description": "Alennus on saatavilla verkkomyyntikanavissa.",
+        "checkboxLabel": "Tarjoa myös myyntipisteessä (vain POS Pro ‑sijainnit)"
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "Alennuskoodi",
+        "helpText": "Asiakkaiden on syötettävä tämä koodi kassalla."
+      },
+      "buttonText": "Tee alennuskoodi"
+    },
+    "UsageLimitsCard": {
+      "title": "Käyttörajat",
+      "options": "Käyttörajavaihtoehdot",
+      "totalUsageLimitLabel": "Rajoita tämän alennuksen käyttökertojen yhteismäärää",
+      "oncePerCustomerLimitLabel": "Rajoita yhteen käyttökertaan asiakasta kohden",
+      "totalUsageLimitHelpTextSubscription": "Tilaus, jossa on useita maksuja, lasketaan yhdeksi käyttökerraksi."
+    },
+    "RecurringPayment": {
+      "title": "Tilausten toistuvaissuoritukset",
+      "options": "Toistuvaissuoritusten asetukset",
+      "firstPayment": "Rajoita alennus ensimmäiseen maksusuoritukseen",
+      "multiplePayments": "Rajoita alennus useaan toistuvaissuoritukseen",
+      "allPayments": "Alennus koskee kaikkia toistuvaissuorituksia",
+      "includesFirstPayment": "Tämä sisältää ensimmäisen tilauksen maksun."
+    },
+    "MinimumRequirementsCard": {
+      "title": "Ostoksen vähimmäisvaatimukset",
+      "none": "Ei vähimmäisvaatimuksia",
+      "minimumSubtotal": "Vähimmäisostos ({currencySymbol})",
+      "minimumQuantity": "Tuotteiden vähimmäismäärä",
+      "subscriptions": {
+        "appliesToCollections": "Koskee vain valittujen kokoelmien tilaustuotteita.",
+        "appliesToProducts": "Koskee vain valittuja tilaustuotteita.",
+        "appliesToAllProducts": "Koskee vain tilaustuotteita."
+      },
+      "oneTime": {
+        "appliesToCollections": "Koskee vain valittuja kokoelmia.",
+        "appliesToProducts": "Koskee vain valittuja tuotteita.",
+        "appliesToAllProducts": "Koskee kaikkia tuotteita."
+      }
+    },
+    "CombinationCard": {
+      "title": "Yhdistelmät",
+      "combinesWith": "Yhdistetään",
+      "discountNameFilled": "voidaan yhdistää:",
+      "discountNameNotFilled": "Tämä {discountClass}-alennus voidaan yhdistää:",
+      "options": {
+        "productLabelOther": "Muut tuotealennukset",
+        "productLabel": "Tuotealennukset",
+        "orderLabel": "Tilauksen alennukset",
+        "shippingLabel": "Toimitusalennukset"
+      },
+      "newBadge": "Uusi",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "Tällä hetkellä tuotealennuksia ei ole määritetty siten, että niitä voisi yhdistää.",
+            "warning": {
+              "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää tuotealennuksiin.",
+              "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää tilausalennuksiin.",
+              "withshipping": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää toimitusalennuksiin."
+            }
+          },
+          "order": {
+            "title": "Tällä hetkellä tilausalennuksia ei ole määritetty siten, että niitä voisi yhdistää.",
+            "warning": {
+              "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tuotealennuksiin.",
+              "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tilausalennuksiin.",
+              "withshipping": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tuotealennuksiin."
+            }
+          },
+          "shipping": {
+            "title": "Tällä hetkellä toimitusalennuksia ei ole määritetty siten, että niitä voisi yhdistää.",
+            "warning": {
+              "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi toimitusalennus, joka voidaan yhdistää tuotealennuksiin.",
+              "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tilausalennuksiin.",
+              "withshipping": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi toimitusalennus, joka voidaan yhdistää toimitusalennuksiin."
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count} tuotealennus",
+              "other": "{count} tuotealennusta"
+            },
+            "order": {
+              "one": "{count} tilausalennus",
+              "other": "{count} tilausalennusta"
+            },
+            "shipping": {
+              "one": "{count} toimitusalennus",
+              "other": "{count} toimitusalennusta"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink} voidaan yhdistää samaan ostokseen. Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta.",
+            "other": "{discountCountLink} voidaan yhdistää samaan ostokseen. Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta."
+          }
+        }
+      },
+      "discountClass": {
+        "product": "tuote",
+        "order": "tilaus",
+        "shipping": "toimitus"
+      }
+    },
+    "SummaryCard": {
+      "title": "Yhteenveto",
+      "details": "tiedot",
+      "Header": {
+        "emptyState": {
+          "Code": "Ei vielä alennuskoodia.",
+          "Automatic": "Ei vielä otsikkoa."
+        },
+        "badge": {
+          "active": "Aktiivinen",
+          "expired": "Vanhentunut",
+          "scheduled": "Ajoitettu"
+        },
+        "typeAndMethod": "tyyppi ja menetelmä",
+        "discountMethod": {
+          "Code": "Koodi",
+          "Automatic": "Automaattinen"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "Koskee tilausostoksia",
+        "appliesToPurchaseTypeOneTime": "Koskee kertaostoja",
+        "appliesToPurchaseTypeBoth": "Koskee tilauksia ja kertaostoja"
+      },
+      "ActiveDates": {
+        "today": "tänään",
+        "activeSingleDate": "Aktiivinen {date}",
+        "activeFromDate": "Aktiivinen {date} alkaen",
+        "activeFromTodayUntilDate": "Aktiivinen tästä päivästä päivämäärään {date} asti",
+        "activeFromDateToDate": "Aktiivinen {startDate}–{endDate}"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "Saatavilla verkkomyyntikanavissa ja Point of Salessa",
+        "availableOnCheckoutOnly": "Käytettävissä verkkomyyntikanavilla"
+      },
+      "Combinations": {
+        "cannotCombine": "Ei voida yhdistää muihin alennuksiin",
+        "combinesWithOne": {
+          "product": "Voidaan yhdistää tuotealennuksiin",
+          "order": "Voidaan yhdistää tilausalennuksiin",
+          "shipping": "Voidaan yhdistää toimitusalennuksiin"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "Voidaan yhdistää tuote- ja tilausalennuksiin",
+          "productAndShipping": "Voidaan yhdistää tuote- ja toimitusalennuksiin",
+          "orderAndShipping": "Voidaan yhdistää tilaus- ja toimitusalennuksiin"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "Kaikki asiakkaat",
+        "customers": {
+          "one": "Seuraavalle maalle {customerName}",
+          "other": "Asiakasryhmille: {count}"
+        },
+        "customerSegments": {
+          "one": "Seuraavalle maalle {segmentName}",
+          "other": "{count} asiakassegmentille"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "Vähimmäisosto {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "Vähimmäisostos {count} tuote",
+          "other": "Vähimmäisostos {count} tuotetta"
+        },
+        "noMinimumPurchaseRequirement": "Ei vähimmäisostosvaatimusta"
+      },
+      "Performance": {
+        "title": "Tehokkuus",
+        "notActive": "Alennus ei ole vielä aktiivinen.",
+        "performanceLink": "Näytä myynnit alennusraportin mukaan",
+        "usageCount": "{usageCount} käytetty",
+        "totalSales": "{totalSales} kokonaismyynnistä"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "Koskee toimitusmaksuja alle {value}"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "Sovelletaan kaikkiin toistuvaissuorituksiin",
+          "one": "Rajoitus koskee {count} toistuvaisuussuoritusta",
+          "other": "Rajoitus koskee {count} toistuvaisuussuoritusta"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "Kaikille maille",
+        "forSpecificCountry": "Seuraavalle maalle {countryName}",
+        "forNumberOfCountries": "{numberOfCountries} maalle"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "Yksi käyttö asiakasta kohti",
+        "totalUsageLimit": {
+          "one": "Rajoitettu {count} käyttökertaan",
+          "other": "Rajoitettu {count} käyttökertaan"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "Rajoitettu {count} käyttökertaan, kerran asiakasta kohti",
+          "other": "Rajoitettu {count} käyttökertaan, yksi asiakasta kohti"
+        },
+        "noUsageLimits": "Ei käyttörajoja"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "Asiakkaan kelpoisuus",
+      "everyone": "Kaikki asiakkaat",
+      "customerSegments": "Tietyt asiakassegmentit",
+      "customers": "Tietyt asiakkaat"
+    },
+    "CountriesAndRatesCard": {
+      "title": "Maat",
+      "choiceList": {
+        "title": "Maat ja hinnat",
+        "all": "Kaikki maat",
+        "selected": "Tietyt maat"
+      },
+      "excludeShippingRatesSection": {
+        "title": "Toimituskulut",
+        "checkboxLabel": "Jätä pois tietyn summan ylittävät toimituskulut"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "Ostostyyppi",
+      "choiceList": {
+        "title": "Ostostyyppi",
+        "oneTimePurchase": "Kertaostos",
+        "subscription": "Tilaus",
+        "both": "Molemmat"
+      }
+    },
+    "Countries": {
+      "AC": "Ascension",
+      "AD": "Andorra",
+      "AE": "Yhdistyneet arabiemiirikunnat",
+      "AF": "Afganistan",
+      "AG": "Antigua ja Barbuda",
+      "AI": "Anguilla",
+      "AL": "Albania",
+      "AM": "Armenia",
+      "AN": "Alankomaiden Antillit",
+      "AO": "Angola",
+      "AQ": "Antarktis",
+      "AR": "Argentiina",
+      "AS": "Amerikan Samoa",
+      "AT": "Itävalta",
+      "AU": "Australia",
+      "AW": "Aruba",
+      "AX": "Ahvenanmaa",
+      "AZ": "Azerbaidžan",
+      "BA": "Bosnia ja Hertsegovina",
+      "BB": "Barbados",
+      "BD": "Bangladesh",
+      "BE": "Belgia",
+      "BF": "Burkina Faso",
+      "BG": "Bulgaria",
+      "BH": "Bahrain",
+      "BI": "Burundi",
+      "BJ": "Benin",
+      "BL": "Saint-Barthélemy",
+      "BM": "Bermuda",
+      "BN": "Brunei",
+      "BO": "Bolivia",
+      "BQ": "Alankomaiden Karibian saaret",
+      "BR": "Brasilia",
+      "BS": "Bahama",
+      "BT": "Bhutan",
+      "BV": "Bouvet'nsaari",
+      "BW": "Botswana",
+      "BY": "Valko-Venäjä",
+      "BZ": "Belize",
+      "CA": "Kanada",
+      "CC": "Kookossaaret (Keelingsaaret)",
+      "CD": "Kongon demokraattinen tasavalta",
+      "CF": "Keski-Afrikan tasavalta",
+      "CG": "Kongon tasavalta",
+      "CH": "Sveitsi",
+      "CI": "Norsunluurannikko",
+      "CK": "Cookinsaaret",
+      "CL": "Chile",
+      "CM": "Kamerun",
+      "CN": "Kiina",
+      "CO": "Kolumbia",
+      "CP": "Clippertoninsaari",
+      "CR": "Costa Rica",
+      "CU": "Kuuba",
+      "CV": "Kap Verde",
+      "CW": "Curaçao",
+      "CX": "Joulusaari",
+      "CY": "Kypros",
+      "CZ": "Tšekin tasavalta",
+      "DE": "Saksa",
+      "DG": "Diego Garcia",
+      "DJ": "Djibouti",
+      "DK": "Tanska",
+      "DM": "Dominica",
+      "DO": "Dominikaaninen tasavalta",
+      "DZ": "Algeria",
+      "EA": "Ceuta ja Melilla",
+      "EC": "Ecuador",
+      "EE": "Viro",
+      "EG": "Egypti",
+      "EH": "Länsi-Sahara",
+      "ER": "Eritrea",
+      "ES": "Espanja",
+      "ET": "Etiopia",
+      "EU": "Euroopan unioni",
+      "FI": "Suomi",
+      "FJ": "Fidži",
+      "FK": "Falklandinsaaret",
+      "FM": "Mikronesia",
+      "FO": "Färsaaret",
+      "FR": "Ranska",
+      "GA": "Gabon",
+      "GB": "Yhdistynyt kuningaskunta",
+      "GD": "Grenada",
+      "GE": "Georgia",
+      "GF": "Ranskan Guayana",
+      "GG": "Guernsey",
+      "GH": "Ghana",
+      "GI": "Gibraltar",
+      "GL": "Grönlanti",
+      "GM": "Gambia",
+      "GN": "Guinea",
+      "GP": "Guadeloupe",
+      "GQ": "Päiväntasaajan Guinea",
+      "GR": "Kreikka",
+      "GS": "Etelä-Georgia ja Eteläiset Sandwichsaaret",
+      "GT": "Guatemala",
+      "GU": "Guam",
+      "GW": "Guinea-Bissau",
+      "GY": "Guyana",
+      "HK": "Hongkong (Kiinan erityishallintoalue)",
+      "HM": "Heard ja McDonaldinsaaret",
+      "HN": "Honduras",
+      "HR": "Kroatia",
+      "HT": "Haiti",
+      "HU": "Unkari",
+      "IC": "Kanariansaaret",
+      "ID": "Indonesia",
+      "IE": "Irlanti",
+      "IL": "Israel",
+      "IM": "Mansaari",
+      "IN": "Intia",
+      "IO": "Brittiläinen Intian valtameren alue",
+      "IQ": "Irak",
+      "IR": "Iran",
+      "IS": "Islanti",
+      "IT": "Italia",
+      "JE": "Jersey",
+      "JM": "Jamaika",
+      "JO": "Jordania",
+      "JP": "Japani",
+      "KE": "Kenia",
+      "KG": "Kirgisia",
+      "KH": "Kambodža",
+      "KI": "Kiribati",
+      "KM": "Komorit",
+      "KN": "Saint Kitts ja Nevis",
+      "KP": "Pohjois-Korea",
+      "KR": "Etelä-Korea",
+      "KW": "Kuwait",
+      "KY": "Caymansaaret",
+      "KZ": "Kazakstan",
+      "LA": "Laos",
+      "LB": "Libanon",
+      "LC": "Saint Lucia",
+      "LI": "Liechtenstein",
+      "LK": "Sri Lanka",
+      "LR": "Liberia",
+      "LS": "Lesotho",
+      "LT": "Liettua",
+      "LU": "Luxemburg",
+      "LV": "Latvia",
+      "LY": "Libya",
+      "MA": "Marokko",
+      "MC": "Monaco",
+      "MD": "Moldova",
+      "ME": "Montenegro",
+      "MF": "Saint-Martin",
+      "MG": "Madagaskar",
+      "MH": "Marshallinsaaret",
+      "MK": "Makedonia",
+      "ML": "Mali",
+      "MM": "Myanmar (Burma)",
+      "MN": "Mongolia",
+      "MO": "Macao (Kiinan erityishallintoalue)",
+      "MP": "Pohjois-Mariaanit",
+      "MQ": "Martinique",
+      "MR": "Mauritania",
+      "MS": "Montserrat",
+      "MT": "Malta",
+      "MU": "Mauritius",
+      "MV": "Malediivit",
+      "MW": "Malawi",
+      "MX": "Meksiko",
+      "MY": "Malesia",
+      "MZ": "Mosambik",
+      "NA": "Namibia",
+      "NC": "Uusi-Kaledonia",
+      "NE": "Niger",
+      "NF": "Norfolkinsaari",
+      "NG": "Nigeria",
+      "NI": "Nicaragua",
+      "NL": "Alankomaat",
+      "NO": "Norja",
+      "NP": "Nepal",
+      "NR": "Nauru",
+      "NU": "Niue",
+      "NZ": "Uusi-Seelanti",
+      "OM": "Oman",
+      "PA": "Panama",
+      "PE": "Peru",
+      "PF": "Ranskan Polynesia",
+      "PG": "Papua-Uusi-Guinea",
+      "PH": "Filippiinit",
+      "PK": "Pakistan",
+      "PL": "Puola",
+      "PM": "Saint-Pierre ja Miquelon",
+      "PN": "Pitcairn",
+      "PR": "Puerto Rico",
+      "PS": "Palestiina",
+      "PT": "Portugali",
+      "PW": "Palau",
+      "PY": "Paraguay",
+      "QA": "Qatar",
+      "QO": "Syrjäiset Tyynenmeren saaret (ulkomeri)",
+      "RE": "Réunion",
+      "REST_OF_WORLD": "Muu maailma",
+      "RO": "Romania",
+      "RS": "Serbia",
+      "RU": "Venäjä",
+      "RW": "Ruanda",
+      "SA": "Saudi-Arabia",
+      "SB": "Salomonsaaret",
+      "SC": "Seychellit",
+      "SD": "Sudan",
+      "SE": "Ruotsi",
+      "SG": "Singapore",
+      "SH": "Saint Helena",
+      "SI": "Slovenia",
+      "SJ": "Huippuvuoret ja Jan Mayen",
+      "SK": "Slovakia",
+      "SL": "Sierra Leone",
+      "SM": "San Marino",
+      "SN": "Senegal",
+      "SO": "Somalia",
+      "SR": "Suriname",
+      "SS": "Etelä-Sudan",
+      "ST": "São Tomé ja Príncipe",
+      "SV": "El Salvador",
+      "SX": "Saint-Martin",
+      "SY": "Syyria",
+      "SZ": "Eswatini",
+      "TA": "Tristan da Cunha",
+      "TC": "Turks- ja Caicossaaret",
+      "TD": "Tšad",
+      "TF": "Ranskan eteläiset alueet",
+      "TG": "Togo",
+      "TH": "Thaimaa",
+      "TJ": "Tadžikistan",
+      "TK": "Tokelau",
+      "TL": "Itä-Timor",
+      "TM": "Turkmenistan",
+      "TN": "Tunisia",
+      "TO": "Tonga",
+      "TR": "Turkki",
+      "TT": "Trinidad ja Tobago",
+      "TV": "Tuvalu",
+      "TW": "Taiwan",
+      "TZ": "Tansania",
+      "UA": "Ukraina",
+      "UG": "Uganda",
+      "UM": "Yhdysvaltain pienet erillissaaret",
+      "US": "Yhdysvallat",
+      "UY": "Uruguay",
+      "UZ": "Uzbekistan",
+      "VA": "Vatikaanivaltio",
+      "VC": "Saint Vincent ja Grenadiinit",
+      "VE": "Venezuela",
+      "VG": "Brittiläiset Neitsytsaaret",
+      "VI": "Yhdysvaltain Neitsytsaaret",
+      "VN": "Vietnam",
+      "VU": "Vanuatu",
+      "WF": "Wallis ja Futuna",
+      "WS": "Samoa",
+      "XK": "Kosovo",
+      "YE": "Jemen",
+      "YT": "Mayotte",
+      "ZA": "Etelä-Afrikka",
+      "ZM": "Sambia",
+      "ZW": "Zimbabwe"
+    }
+  }
+}

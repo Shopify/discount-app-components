@@ -1,0 +1,541 @@
+{
+  "DiscountAppComponents": {
+    "ActiveDatesCard": {
+      "title": "Dates d’activation",
+      "startDate": "Date de début",
+      "startTime": "Heure de début ({timezoneAbbreviation})",
+      "endDate": "Date de fin",
+      "endTime": "Heure de fin ({timezoneAbbreviation})",
+      "setEndDate": "Définir la date de fin"
+    },
+    "TimePicker": {
+      "timePlaceholder": "Saisir l'heure"
+    },
+    "DatePicker": {
+      "datePlaceholder": "AAAA-MM-JJ",
+      "dateFormatError": "La date doit être formatée comme suit : AAAA-MM-JJ"
+    },
+    "MethodCard": {
+      "methodSubtitle": "Méthode",
+      "choiceList": {
+        "title": "Sélectionnez les options de la méthode",
+        "code": "Code de réduction",
+        "automatic": "Réduction automatique"
+      },
+      "discountClassLabel": {
+        "product": "Réduction sur un produit",
+        "order": "Réduction sur la commande",
+        "shipping": "Réduction sur les frais d’expédition"
+      },
+      "discountField": {
+        "label": "Titre",
+        "helpText": "La clientèle verra cela dans son panier et au moment du paiement."
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "Code de réduction",
+        "helpText": "La clientèle doit saisir ce code au moment du paiement."
+      },
+      "buttonText": "Générer"
+    },
+    "UsageLimitsCard": {
+      "title": "Nombre maximum d'utilisations de la réduction",
+      "options": "Options de limites d’utilisation",
+      "totalUsageLimitLabel": "Limiter le nombre total d’utilisations de cette réduction",
+      "oncePerCustomerLimitLabel": "Limiter à une utilisation par client(e)",
+      "totalUsageLimitHelpTextSubscription": "Un abonnement comportant plusieurs paiements comptera comme une seule utilisation."
+    },
+    "RecurringPayment": {
+      "title": "Paiements récurrents pour les abonnements",
+      "options": "Options pour les paiements récurrents",
+      "firstPayment": "Limiter la réduction au premier paiement",
+      "multiplePayments": "Limiter la réduction à plusieurs paiements récurrents",
+      "allPayments": "La réduction s’applique à tous les paiements récurrents",
+      "includesFirstPayment": "Inclut le paiement sur la première commande."
+    },
+    "MinimumRequirementsCard": {
+      "title": "Conditions d’achat minimum",
+      "none": "Aucune exigence minimale",
+      "minimumSubtotal": "Montant minimum d’achat ({currencySymbol})",
+      "minimumQuantity": "Quantité minimum d’articles",
+      "subscriptions": {
+        "appliesToCollections": "S’applique uniquement aux produits par abonnement dans les collections sélectionnées.",
+        "appliesToProducts": "S’applique uniquement aux produits par abonnement sélectionnés.",
+        "appliesToAllProducts": "S’applique uniquement aux produits par abonnement."
+      },
+      "oneTime": {
+        "appliesToCollections": "S’applique uniquement aux collections sélectionnées.",
+        "appliesToProducts": "S’applique uniquement aux produits sélectionnés.",
+        "appliesToAllProducts": "S’applique à tous les produits."
+      }
+    },
+    "CombinationCard": {
+      "title": "Combinaisons",
+      "combinesWith": "Cumulable avec",
+      "discountNameFilled": "peut être combiné avec :",
+      "discountNameNotFilled": "Cette réduction {discountClass} peut être combinée avec :",
+      "options": {
+        "productLabelOther": "Autres réductions sur les produits",
+        "productLabel": "Réductions sur un produit",
+        "orderLabel": "Réductions sur la commande",
+        "shippingLabel": "Réductions sur les frais d’expédition"
+      },
+      "newBadge": "Nouveau",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "Vous n’avez pas de réductions sur des produits à cumuler pour le moment.",
+            "warning": {
+              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur un produit qui soit cumulable avec d’autres réductions sur des produits.",
+              "withorder": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur un produit qui soit cumulable avec les réductions sur la commande.",
+              "withshipping": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur un produit qui soit cumulable avec les réductions sur les frais d’expédition."
+            }
+          },
+          "order": {
+            "title": "Vous n’avez pas de réductions sur la commande à cumuler pour le moment.",
+            "warning": {
+              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur la commande qui soit cumulable avec les réductions sur des produits.",
+              "withorder": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur la commande qui soit cumulable avec d’autres réductions sur la commande.",
+              "withshipping": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur la commande qui soit cumulable avec les réductions sur les frais d’expédition."
+            }
+          },
+          "shipping": {
+            "title": "Vous n’avez pas de réductions sur les frais d’expédition à cumuler pour le moment.",
+            "warning": {
+              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec les réductions sur des produits.",
+              "withorder": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec les réductions sur la commande.",
+              "withshipping": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec d’autres réductions sur les frais d’expédition."
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count} réduction sur un produit",
+              "other": "{count} réductions sur un produit",
+              "many": "{count} réductions sur un produit"
+            },
+            "order": {
+              "one": "{count} réduction sur la commande",
+              "other": "{count} réductions sur la commande",
+              "many": "{count} réductions sur la commande"
+            },
+            "shipping": {
+              "one": "{count} réduction sur les frais d’expédition",
+              "other": "{count} réductions sur les frais d’expédition",
+              "many": "{count} réductions sur les frais d’expédition"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink} sont cumulables sur le même achat. Si un article est admissible à plusieurs réductions, seule la réduction la plus importante sera appliquée.",
+            "other": "{discountCountLink} sont cumulables sur le même achat. Si un article est admissible à plusieurs réductions, seule la réduction la plus importante sera appliquée.",
+            "many": "{discountCountLink} sont cumulables sur le même achat. Si un article est admissible à plusieurs réductions, seule la réduction la plus importante sera appliquée."
+          }
+        }
+      },
+      "discountClass": {
+        "product": "produit",
+        "order": "commande",
+        "shipping": "expédition"
+      }
+    },
+    "SummaryCard": {
+      "title": "Résumé",
+      "details": "détails",
+      "Header": {
+        "emptyState": {
+          "Code": "Aucun code de réduction pour l’instant.",
+          "Automatic": "Aucun titre pour l’instant."
+        },
+        "badge": {
+          "active": "Actif",
+          "expired": "Expiré",
+          "scheduled": "Programmé"
+        },
+        "typeAndMethod": "type et mode",
+        "discountMethod": {
+          "Code": "Code",
+          "Automatic": "Automatique"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "S’applique aux achats par abonnement",
+        "appliesToPurchaseTypeOneTime": "S’applique aux achats ponctuels",
+        "appliesToPurchaseTypeBoth": "S’applique aux achats par abonnement et aux achats ponctuels"
+      },
+      "ActiveDates": {
+        "today": "aujourd’hui",
+        "activeSingleDate": "Actif le {date}",
+        "activeFromDate": "Actif dès le {date}",
+        "activeFromTodayUntilDate": "Actif à partir d'aujourd’hui jusqu’au {date}",
+        "activeFromDateToDate": "Actif du {startDate} au {endDate}"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "Disponible sur les canaux de vente en ligne et Point de vente",
+        "availableOnCheckoutOnly": "Disponible sur les canaux de vente en ligne"
+      },
+      "Combinations": {
+        "cannotCombine": "Ne peut pas être cumulable avec d’autres réductions",
+        "combinesWithOne": {
+          "product": "Cumulable avec les réductions sur les produits",
+          "order": "Cumulable avec les réductions sur la commande",
+          "shipping": "Cumulable avec les réductions sur l’expédition"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "Cumulable avec les réductions sur la commande et les produits",
+          "productAndShipping": "Cumulable avec les réductions sur les produits et l’expédition",
+          "orderAndShipping": "Cumulable avec les réductions sur la commande et l’expédition"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "Tous les clients",
+        "customers": {
+          "one": "Pour {customerName}",
+          "other": "Pour {count} clients",
+          "many": "Pour {count} clients"
+        },
+        "customerSegments": {
+          "one": "Pour {segmentName}",
+          "other": "Pour {count} segments de clients",
+          "many": "Pour {count} segments de clients"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "Achat minimum de {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "Achat minimum de {count} article",
+          "other": "Achat minimum de {count} articles",
+          "many": "Achat minimum de {count} articles"
+        },
+        "noMinimumPurchaseRequirement": "Aucun minimum d’achat requis"
+      },
+      "Performance": {
+        "title": "Performance",
+        "notActive": "La réduction n’est pas encore active.",
+        "performanceLink": "Afficher le rapport des ventes par réduction",
+        "usageCount": "{usageCount} utilisé(s)",
+        "totalSales": "{totalSales} de ventes totales"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "S’applique aux frais d’expédition inférieurs à {value}"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "Pour tous les paiements récurrents",
+          "one": "Limité à {count} paiement récurrent",
+          "other": "Limité à {count} paiements récurrents",
+          "many": "Limité à {count} paiements récurrents"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "Pour tous les pays",
+        "forSpecificCountry": "Pour {countryName}",
+        "forNumberOfCountries": "Pour {numberOfCountries} pays"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "Une utilisation par client",
+        "totalUsageLimit": {
+          "one": "Limité à {count} utilisation",
+          "other": "Limité à {count} utilisations",
+          "many": "Limité à {count} utilisations"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "Limité à {count} utilisation, une par client",
+          "other": "Limité à {count} utilisations, une par client",
+          "many": "Limité à {count} utilisations, une par client"
+        },
+        "noUsageLimits": "Aucune limite d’utilisation"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "Admissibilité du client",
+      "everyone": "Tous les clients",
+      "customerSegments": "Segments spécifiques de clients",
+      "customers": "Clients spécifiques"
+    },
+    "CountriesAndRatesCard": {
+      "title": "Pays",
+      "choiceList": {
+        "title": "Pays et tarifs",
+        "all": "Tous les pays",
+        "selected": "Pays spécifiques"
+      },
+      "excludeShippingRatesSection": {
+        "title": "Tarifs d'expédition",
+        "checkboxLabel": "Exclure les frais d’expédition au-dessus d’un certain montant"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "Type d’achat",
+      "choiceList": {
+        "title": "Type d’achat",
+        "oneTimePurchase": "Achat unique",
+        "subscription": "Abonnement",
+        "both": "Les deux"
+      }
+    },
+    "Countries": {
+      "AC": "Île de l’Ascension",
+      "AD": "Andorre",
+      "AE": "Émirats arabes unis",
+      "AF": "Afghanistan",
+      "AG": "Antigua-et-Barbuda",
+      "AI": "Anguilla",
+      "AL": "Albanie",
+      "AM": "Arménie",
+      "AN": "Antilles néerlandaises",
+      "AO": "Angola",
+      "AQ": "Antarctique",
+      "AR": "Argentine",
+      "AS": "Samoa américaines",
+      "AT": "Autriche",
+      "AU": "Australie",
+      "AW": "Aruba",
+      "AX": "Îles Åland",
+      "AZ": "Azerbaïdjan",
+      "BA": "Bosnie-Herzégovine",
+      "BB": "Barbade",
+      "BD": "Bangladesh",
+      "BE": "Belgique",
+      "BF": "Burkina Faso",
+      "BG": "Bulgarie",
+      "BH": "Bahreïn",
+      "BI": "Burundi",
+      "BJ": "Bénin",
+      "BL": "Saint-Barthélemy",
+      "BM": "Bermudes",
+      "BN": "Brunei",
+      "BO": "Bolivie",
+      "BQ": "Pays-Bas caribéens",
+      "BR": "Brésil",
+      "BS": "Bahamas",
+      "BT": "Bhoutan",
+      "BV": "Île Bouvet",
+      "BW": "Botswana",
+      "BY": "Biélorussie",
+      "BZ": "Belize",
+      "CA": "Canada",
+      "CC": "Îles Cocos (Keeling)",
+      "CD": "Congo – Kinshasa",
+      "CF": "République centrafricaine",
+      "CG": "Congo – Brazzaville",
+      "CH": "Suisse",
+      "CI": "Côte d’Ivoire",
+      "CK": "Îles Cook",
+      "CL": "Chili",
+      "CM": "Cameroun",
+      "CN": "Chine",
+      "CO": "Colombie",
+      "CP": "Île Clipperton",
+      "CR": "Costa Rica",
+      "CU": "Cuba",
+      "CV": "Cap-Vert",
+      "CW": "Curaçao",
+      "CX": "Île Christmas",
+      "CY": "Chypre",
+      "CZ": "République tchèque",
+      "DE": "Allemagne",
+      "DG": "Diego Garcia",
+      "DJ": "Djibouti",
+      "DK": "Danemark",
+      "DM": "Dominique",
+      "DO": "République dominicaine",
+      "DZ": "Algérie",
+      "EA": "Ceuta et Melilla",
+      "EC": "Équateur",
+      "EE": "Estonie",
+      "EG": "Égypte",
+      "EH": "Sahara occidental",
+      "ER": "Érythrée",
+      "ES": "Espagne",
+      "ET": "Éthiopie",
+      "EU": "Union européenne",
+      "FI": "Finlande",
+      "FJ": "Fidji",
+      "FK": "Îles Falkland",
+      "FM": "Micronésie",
+      "FO": "Îles Féroé",
+      "FR": "France",
+      "GA": "Gabon",
+      "GB": "Royaume-Uni",
+      "GD": "Grenade",
+      "GE": "Géorgie",
+      "GF": "Guyane française",
+      "GG": "Guernesey",
+      "GH": "Ghana",
+      "GI": "Gibraltar",
+      "GL": "Groenland",
+      "GM": "Gambie",
+      "GN": "Guinée",
+      "GP": "Guadeloupe",
+      "GQ": "Guinée équatoriale",
+      "GR": "Grèce",
+      "GS": "Géorgie du Sud et îles Sandwich du Sud",
+      "GT": "Guatemala",
+      "GU": "Guam",
+      "GW": "Guinée-Bissau",
+      "GY": "Guyane",
+      "HK": "RAS de Hong Kong en Chine",
+      "HM": "Îles Heard et McDonald",
+      "HN": "Honduras",
+      "HR": "Croatie",
+      "HT": "Haïti",
+      "HU": "Hongrie",
+      "IC": "Îles Canaries",
+      "ID": "Indonésie",
+      "IE": "Irlande",
+      "IL": "Israël",
+      "IM": "Île de Man",
+      "IN": "Inde",
+      "IO": "Territoire britannique de l’océan Indien",
+      "IQ": "Irak",
+      "IR": "Iran",
+      "IS": "Islande",
+      "IT": "Italie",
+      "JE": "Jersey",
+      "JM": "Jamaïque",
+      "JO": "Jordanie",
+      "JP": "Japon",
+      "KE": "Kenya",
+      "KG": "Kirghizistan",
+      "KH": "Cambodge",
+      "KI": "Kiribati",
+      "KM": "Comores",
+      "KN": "Saint-Kitts-et-Nevis",
+      "KP": "Corée du Nord",
+      "KR": "Corée du Sud",
+      "KW": "Koweït",
+      "KY": "Îles Caïmans",
+      "KZ": "Kazakhstan",
+      "LA": "Laos",
+      "LB": "Liban",
+      "LC": "Sainte-Lucie",
+      "LI": "Liechtenstein",
+      "LK": "Sri Lanka",
+      "LR": "Libéria",
+      "LS": "Lesotho",
+      "LT": "Lituanie",
+      "LU": "Luxembourg",
+      "LV": "Lettonie",
+      "LY": "Libye",
+      "MA": "Maroc",
+      "MC": "Monaco",
+      "MD": "Moldavie",
+      "ME": "Monténégro",
+      "MF": "Saint-Martin",
+      "MG": "Madagascar",
+      "MH": "Îles Marshall",
+      "MK": "Macédoine",
+      "ML": "Mali",
+      "MM": "Myanmar (Birmanie)",
+      "MN": "Mongolie",
+      "MO": "Macao RAS de Chine",
+      "MP": "Îles Mariannes du Nord",
+      "MQ": "Martinique",
+      "MR": "Mauritanie",
+      "MS": "Montserrat",
+      "MT": "Malte",
+      "MU": "Maurice",
+      "MV": "Maldives",
+      "MW": "Malawi",
+      "MX": "Mexique",
+      "MY": "Malaisie",
+      "MZ": "Mozambique",
+      "NA": "Namibie",
+      "NC": "Nouvelle-Calédonie",
+      "NE": "Niger",
+      "NF": "Île Norfolk",
+      "NG": "Nigeria",
+      "NI": "Nicaragua",
+      "NL": "Pays-Bas",
+      "NO": "Norvège",
+      "NP": "Népal",
+      "NR": "Nauru",
+      "NU": "Nioué",
+      "NZ": "Nouvelle-Zélande",
+      "OM": "Oman",
+      "PA": "Panama",
+      "PE": "Pérou",
+      "PF": "Polynésie française",
+      "PG": "Papouasie-Nouvelle-Guinée",
+      "PH": "Philippines",
+      "PK": "Pakistan",
+      "PL": "Pologne",
+      "PM": "Saint-Pierre-et-Miquelon",
+      "PN": "Îles Pitcairn",
+      "PR": "Porto Rico",
+      "PS": "Territoires palestiniens",
+      "PT": "Portugal",
+      "PW": "Palaos",
+      "PY": "Paraguay",
+      "QA": "Qatar",
+      "QO": "Océanie périphérique",
+      "RE": "Réunion",
+      "REST_OF_WORLD": "Reste du monde",
+      "RO": "Roumanie",
+      "RS": "Serbie",
+      "RU": "Russie",
+      "RW": "Rwanda",
+      "SA": "Arabie saoudite",
+      "SB": "Îles Salomon",
+      "SC": "Seychelles",
+      "SD": "Soudan",
+      "SE": "Suède",
+      "SG": "Singapour",
+      "SH": "Sainte-Hélène",
+      "SI": "Slovénie",
+      "SJ": "Svalbard et Jan Mayen",
+      "SK": "Slovaquie",
+      "SL": "Sierra Leone",
+      "SM": "Saint-Marin",
+      "SN": "Sénégal",
+      "SO": "Somalie",
+      "SR": "Suriname",
+      "SS": "Soudan du Sud",
+      "ST": "Sao Tomé-et-Principe",
+      "SV": "Le Salvador",
+      "SX": "Saint-Martin",
+      "SY": "Syrie",
+      "SZ": "Eswatini",
+      "TA": "Tristan da Cunha",
+      "TC": "Îles Turques et Caïques",
+      "TD": "Tchad",
+      "TF": "Terres australes françaises",
+      "TG": "Togo",
+      "TH": "Thaïlande",
+      "TJ": "Tadjikistan",
+      "TK": "Tokelau",
+      "TL": "Timor-Leste",
+      "TM": "Turkménistan",
+      "TN": "Tunisie",
+      "TO": "Tonga",
+      "TR": "Turquie",
+      "TT": "Trinité-et-Tobago",
+      "TV": "Tuvalu",
+      "TW": "Taïwan",
+      "TZ": "Tanzanie",
+      "UA": "Ukraine",
+      "UG": "Ouganda",
+      "UM": "Îles mineures éloignées des États-Unis",
+      "US": "États-Unis",
+      "UY": "Uruguay",
+      "UZ": "Ouzbékistan",
+      "VA": "Cité du Vatican",
+      "VC": "Saint-Vincent et les Grenadines",
+      "VE": "Venezuela",
+      "VG": "Îles Vierges britanniques",
+      "VI": "Îles Vierges américaines",
+      "VN": "Vietnam",
+      "VU": "Vanuatu",
+      "WF": "Wallis-et-Futuna",
+      "WS": "Samoa",
+      "XK": "Kosovo",
+      "YE": "Yémen",
+      "YT": "Mayotte",
+      "ZA": "Afrique du Sud",
+      "ZM": "Zambie",
+      "ZW": "Zimbabwe"
+    }
+  }
+}

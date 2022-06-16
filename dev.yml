@@ -1,0 +1,5 @@
+name: discount-app-components-internal
+up:
+  - node:
+      yarn: v1.22.17
+      version: v16.13.0 # to be kept in sync with .nvmrc and .github/workflows/ci.yml

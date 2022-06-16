@@ -1,0 +1,531 @@
+{
+  "DiscountAppComponents": {
+    "ActiveDatesCard": {
+      "title": "有効期間",
+      "startDate": "開始日",
+      "startTime": "開始時間 ({timezoneAbbreviation})",
+      "endDate": "終了日",
+      "endTime": "終了時間 ({timezoneAbbreviation})",
+      "setEndDate": "終了日を設定"
+    },
+    "TimePicker": {
+      "timePlaceholder": "時間を入力"
+    },
+    "DatePicker": {
+      "datePlaceholder": "YYYY-MM-DD",
+      "dateFormatError": "日付はYYYY-MM-DDの形式にしてください"
+    },
+    "MethodCard": {
+      "methodSubtitle": "方法",
+      "choiceList": {
+        "title": "方法オプションを選択する",
+        "code": "クーポンコード",
+        "automatic": "自動ディスカウント"
+      },
+      "discountClassLabel": {
+        "product": "商品のディスカウント",
+        "order": "注文のディスカウント",
+        "shipping": "配送のディスカウント"
+      },
+      "discountField": {
+        "label": "Title",
+        "helpText": "お客様のチェックアウト時にカートに表示されます。"
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "クーポンコード",
+        "helpText": "お客様はチェックアウト時にこのコードを入力する必要があります。"
+      },
+      "buttonText": "生成"
+    },
+    "UsageLimitsCard": {
+      "title": "最大ディスカウントを使用",
+      "options": "利用制限のオプション",
+      "totalUsageLimitLabel": "このディスカウントを使用できる合計回数を制限する",
+      "oncePerCustomerLimitLabel": "お客様1人につき1回のみの使用とする",
+      "totalUsageLimitHelpTextSubscription": "多くの決済があるサブスクリプションは、1回の使用としてカウントされます。"
+    },
+    "RecurringPayment": {
+      "title": "サブスクリプションの定期的な支払い",
+      "options": "定期的な支払いのオプション",
+      "firstPayment": "ディスカウントを最初の決済に制限する",
+      "multiplePayments": "ディスカウントを複数回の定期的な支払いに制限する",
+      "allPayments": "ディスカウントを定期的な支払いすべてに適用する",
+      "includesFirstPayment": "最初の注文での決済を含めます。"
+    },
+    "MinimumRequirementsCard": {
+      "title": "最低購入の要件",
+      "none": "最低要件なし",
+      "minimumSubtotal": "最低購入額 ({currencySymbol})",
+      "minimumQuantity": "アイテムの最低数量",
+      "subscriptions": {
+        "appliesToCollections": "選択したコレクション内のサブスクリプション商品にのみ適用します。",
+        "appliesToProducts": "選択したサブスクリプション商品にのみ適用します。",
+        "appliesToAllProducts": "サブスクリプション商品にのみ適用します。"
+      },
+      "oneTime": {
+        "appliesToCollections": "選択したコレクションにのみ適用されます。",
+        "appliesToProducts": "選択した商品にのみ適用されます。",
+        "appliesToAllProducts": "すべての商品に適用します。"
+      }
+    },
+    "CombinationCard": {
+      "title": "組み合わせ",
+      "combinesWith": "組み合わせる",
+      "discountNameFilled": "以下と組み合わせることができる:",
+      "discountNameNotFilled": "この{discountClass}ディスカウントは、以下と組み合わせることができます。",
+      "options": {
+        "productLabelOther": "他の商品のディスカウント",
+        "productLabel": "商品のディスカウント",
+        "orderLabel": "注文のディスカウント",
+        "shippingLabel": "配送のディスカウント"
+      },
+      "newBadge": "新規",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "現在、商品のディスカウントの組み合わせは設定されていません。",
+            "warning": {
+              "withproduct": "お客様に複数のディスカウントを利用していただくために、商品のディスカウントと組み合わせた商品のディスカウントを少なくとも1つ設定してください。",
+              "withorder": "お客様に複数のディスカウントを利用していただくために、注文のディスカウントと組み合わせた商品のディスカウントを少なくとも1つ設定してください。",
+              "withshipping": "お客様に複数のディスカウントを利用していただくために、配送のディスカウントと組み合わせた商品のディスカウントを少なくとも1つ設定してください。"
+            }
+          },
+          "order": {
+            "title": "現在、注文のディスカウントの組み合わせは設定されていません。",
+            "warning": {
+              "withproduct": "お客様に複数のディスカウントを利用していただくために、商品のディスカウントと組み合わせた注文のディスカウントを少なくとも1つ設定してください。",
+              "withorder": "お客様に複数のディスカウントを利用していただくために、注文のディスカウントと組み合わせた注文のディスカウントを少なくとも1つ設定してください。",
+              "withshipping": "お客様に複数のディスカウントを利用していただくために、配送のディスカウントと組み合わせた注文のディスカウントを少なくとも1つ設定してください。"
+            }
+          },
+          "shipping": {
+            "title": "現在、配送のディスカウントの組み合わせは設定されていません。",
+            "warning": {
+              "withproduct": "お客様に複数のディスカウントを利用していただくために、商品のディスカウントと組み合わせた配送のディスカウントを少なくとも1つ設定してください。",
+              "withorder": "お客様に複数のディスカウントを利用していただくために、注文のディスカウントと組み合わせた配送のディスカウントを少なくとも1つ設定してください。",
+              "withshipping": "お客様に複数のディスカウントを利用していただくために、配送のディスカウントと組み合わせた配送のディスカウントを少なくとも1つ設定してください。"
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count}件の商品のディスカウント",
+              "other": "{count}件の商品のディスカウント"
+            },
+            "order": {
+              "one": "{count}件の注文のディスカウント",
+              "other": "{count}件の注文のディスカウント"
+            },
+            "shipping": {
+              "one": "{count}件の配送のディスカウント",
+              "other": "{count}件の配送のディスカウント"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink}は同じアイテムの購入で組み合わせることができます。複数のディスカウントが適用されるアイテムの場合、最も大きいディスカウントのみが適用されます。",
+            "other": "{discountCountLink}は同じアイテムの購入で組み合わせることができます。複数のディスカウントが適用されるアイテムの場合、最も大きいディスカウントのみが適用されます。"
+          }
+        }
+      },
+      "discountClass": {
+        "product": "商品",
+        "order": "注文",
+        "shipping": "配送"
+      }
+    },
+    "SummaryCard": {
+      "title": "サマリー",
+      "details": "詳細",
+      "Header": {
+        "emptyState": {
+          "Code": "クーポンコードがまだありません。",
+          "Automatic": "タイトルがまだありません。"
+        },
+        "badge": {
+          "active": "アクティブ",
+          "expired": "期限切れ",
+          "scheduled": "スケジュール済み"
+        },
+        "typeAndMethod": "タイプと方法",
+        "discountMethod": {
+          "Code": "コード",
+          "Automatic": "自動"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "サブスクリプション購入に適用する",
+        "appliesToPurchaseTypeOneTime": "一度限りの購入に適用する",
+        "appliesToPurchaseTypeBoth": "サブスクリプション購入と一度限りの購入に適用する"
+      },
+      "ActiveDates": {
+        "today": "今日",
+        "activeSingleDate": "{date}に有効",
+        "activeFromDate": "{date}から有効",
+        "activeFromTodayUntilDate": "今日から{date}まで有効",
+        "activeFromDateToDate": "{startDate}から{endDate}まで有効"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "オンライン販売チャネルとPOSで利用可能",
+        "availableOnCheckoutOnly": "オンライン販売チャネルで利用可能"
+      },
+      "Combinations": {
+        "cannotCombine": "他のディスカウントと組み合わせることはできません",
+        "combinesWithOne": {
+          "product": "商品のディスカウントとの組み合わせ",
+          "order": "注文のディスカウントとの組み合わせ",
+          "shipping": "配送のディスカウントとの組み合わせ"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "商品および注文のディスカウントとの組み合わせ",
+          "productAndShipping": "商品および配送のディスカウントとの組み合わせ",
+          "orderAndShipping": "注文および配送のディスカウントとの組み合わせ"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "すべてのお客様",
+        "customers": {
+          "one": "{customerName}向け",
+          "other": "{count}人のお客様向け"
+        },
+        "customerSegments": {
+          "one": "{segmentName}向け",
+          "other": "{count}個のお客様セグメント向け"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "最低購入商品数: {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "最低購入商品数: {count}",
+          "other": "最低購入商品数: {count}"
+        },
+        "noMinimumPurchaseRequirement": "最低購入数の要件はありません"
+      },
+      "Performance": {
+        "title": "パフォーマンス",
+        "notActive": "ディスカウントはまだ有効ではありません。",
+        "performanceLink": "ディスカウント別の売上レポートを表示する",
+        "usageCount": "{usageCount}回利用されました",
+        "totalSales": "販売合計: {totalSales}"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "{value}以下の配送料に適応する"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "すべての定期的な支払い用",
+          "one": "{count}件の定期的な支払いに制限しました",
+          "other": "{count}件の定期的な支払いに制限しました"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "すべての国",
+        "forSpecificCountry": "{countryName}向け",
+        "forNumberOfCountries": "{numberOfCountries}か国向け"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "お客様1人につき1回",
+        "totalUsageLimit": {
+          "one": "{count}回の利用制限",
+          "other": "{count}回の利用制限"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "{count}回の利用制限、お客様1人につき1回",
+          "other": "{count}回の利用制限、お客様1人につき1回"
+        },
+        "noUsageLimits": "利用制限はありません"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "お客様の資格",
+      "everyone": "すべてのお客様",
+      "customerSegments": "特定のお客様セグメント",
+      "customers": "特定のお客様"
+    },
+    "CountriesAndRatesCard": {
+      "title": "国",
+      "choiceList": {
+        "title": "国と料金",
+        "all": "すべての国",
+        "selected": "選択した国"
+      },
+      "excludeShippingRatesSection": {
+        "title": "配送料",
+        "checkboxLabel": "一定額以上の配送料を除外"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "購入タイプ",
+      "choiceList": {
+        "title": "購入タイプ",
+        "oneTimePurchase": "一度限りの購入",
+        "subscription": "サブスクリプション",
+        "both": "両方"
+      }
+    },
+    "Countries": {
+      "AC": "アセンション島",
+      "AD": "アンドラ",
+      "AE": "アラブ首長国連邦",
+      "AF": "アフガニスタン",
+      "AG": "アンティグア・バーブーダ",
+      "AI": "アンギラ",
+      "AL": "アルバニア",
+      "AM": "アルメニア",
+      "AN": "オランダ領アンティル諸島",
+      "AO": "アンゴラ",
+      "AQ": "南極大陸",
+      "AR": "アルゼンチン",
+      "AS": "アメリカ領サモア",
+      "AT": "オーストリア",
+      "AU": "オーストラリア",
+      "AW": "アルバ",
+      "AX": "オーランド諸島",
+      "AZ": "アゼルバイジャン",
+      "BA": "ボスニア・ヘルツェゴビナ",
+      "BB": "バルバドス",
+      "BD": "バングラデシュ",
+      "BE": "ベルギー",
+      "BF": "ブルキナファソ",
+      "BG": "ブルガリア",
+      "BH": "バーレーン",
+      "BI": "ブルンジ",
+      "BJ": "ベニン",
+      "BL": "サン・バルテルミー島",
+      "BM": "バミューダ",
+      "BN": "ブルネイ",
+      "BO": "ボリビア",
+      "BQ": "オランダカリブ領域",
+      "BR": "ブラジル",
+      "BS": "バハマ",
+      "BT": "ブータン",
+      "BV": "ブーベ島",
+      "BW": "ボツワナ",
+      "BY": "ベラルーシ",
+      "BZ": "ベリーズ",
+      "CA": "カナダ",
+      "CC": "ココス (キーリング) 諸島",
+      "CD": "コンゴ - キンシャサ",
+      "CF": "中央アフリカ共和国",
+      "CG": "コンゴ - ブラザビル",
+      "CH": "スイス",
+      "CI": "コートジボワール",
+      "CK": "クック諸島",
+      "CL": "チリ",
+      "CM": "カメルーン",
+      "CN": "中国",
+      "CO": "コロンビア",
+      "CP": "クリッパートン島",
+      "CR": "コスタリカ",
+      "CU": "キューバ",
+      "CV": "カーボベルデ",
+      "CW": "キュラソー",
+      "CX": "クリスマス島",
+      "CY": "キプロス",
+      "CZ": "チェコ共和国",
+      "DE": "ドイツ",
+      "DG": "ディエゴガルシア島",
+      "DJ": "ジブチ",
+      "DK": "デンマーク",
+      "DM": "ドミニカ",
+      "DO": "ドミニカ共和国",
+      "DZ": "アルジェリア",
+      "EA": "セウタ・メリリャ",
+      "EC": "エクアドル",
+      "EE": "エストニア",
+      "EG": "エジプト",
+      "EH": "西サハラ",
+      "ER": "エリトリア",
+      "ES": "スペイン",
+      "ET": "エチオピア",
+      "EU": "欧州連合",
+      "FI": "フィンランド",
+      "FJ": "フィジー",
+      "FK": "フォークランド諸島",
+      "FM": "ミクロネシア",
+      "FO": "フェロー諸島",
+      "FR": "フランス",
+      "GA": "ガボン",
+      "GB": "イギリス",
+      "GD": "グレナダ",
+      "GE": "ジョージア",
+      "GF": "フランス領ギアナ",
+      "GG": "ガーンジー",
+      "GH": "ガーナ",
+      "GI": "ジブラルタル",
+      "GL": "グリーンランド",
+      "GM": "ガンビア",
+      "GN": "ギニア",
+      "GP": "グアドループ",
+      "GQ": "赤道ギニア",
+      "GR": "ギリシャ",
+      "GS": "サウスジョージア・サウスサンドウィッチ諸島",
+      "GT": "グアテマラ",
+      "GU": "グアム",
+      "GW": "ギニアビサウ",
+      "GY": "ガイアナ",
+      "HK": "香港特別行政区 (中国)",
+      "HM": "ハード島・マクドナルド諸島",
+      "HN": "ホンジュラス",
+      "HR": "クロアチア",
+      "HT": "ハイチ",
+      "HU": "ハンガリー",
+      "IC": "カナリア諸島",
+      "ID": "インドネシア",
+      "IE": "アイルランド",
+      "IL": "イスラエル",
+      "IM": "マン島",
+      "IN": "インド",
+      "IO": "イギリス領インド洋地域",
+      "IQ": "イラク",
+      "IR": "イラン",
+      "IS": "アイスランド",
+      "IT": "イタリア",
+      "JE": "ジャージー",
+      "JM": "ジャマイカ",
+      "JO": "ヨルダン",
+      "JP": "日本",
+      "KE": "ケニア",
+      "KG": "キルギス",
+      "KH": "カンボジア",
+      "KI": "キリバス",
+      "KM": "コモロ",
+      "KN": "セントクリストファー・ネイビス",
+      "KP": "北朝鮮",
+      "KR": "韓国",
+      "KW": "クウェート",
+      "KY": "ケイマン諸島",
+      "KZ": "カザフスタン",
+      "LA": "ラオス",
+      "LB": "レバノン",
+      "LC": "セントルシア",
+      "LI": "リヒテンシュタイン",
+      "LK": "スリランカ",
+      "LR": "リベリア",
+      "LS": "レソト",
+      "LT": "リトアニア",
+      "LU": "ルクセンブルク",
+      "LV": "ラトビア",
+      "LY": "リビア",
+      "MA": "モロッコ",
+      "MC": "モナコ",
+      "MD": "モルドバ",
+      "ME": "モンテネグロ",
+      "MF": "セント・マーチン島",
+      "MG": "マダガスカル",
+      "MH": "マーシャル諸島",
+      "MK": "マケドニア",
+      "ML": "マリ",
+      "MM": "ミャンマー (ビルマ)",
+      "MN": "モンゴル",
+      "MO": "マカオ特別行政区 (中国)",
+      "MP": "北マリアナ諸島",
+      "MQ": "マルティニーク島",
+      "MR": "モーリタニア",
+      "MS": "モントセラト",
+      "MT": "マルタ",
+      "MU": "モーリシャス",
+      "MV": "モルディブ",
+      "MW": "マラウイ",
+      "MX": "メキシコ",
+      "MY": "マレーシア",
+      "MZ": "モザンビーク",
+      "NA": "ナミビア",
+      "NC": "ニューカレドニア",
+      "NE": "ニジェール",
+      "NF": "ノーフォーク島",
+      "NG": "ナイジェリア",
+      "NI": "ニカラグア",
+      "NL": "オランダ",
+      "NO": "ノルウェー",
+      "NP": "ネパール",
+      "NR": "ナウル",
+      "NU": "ニウエ",
+      "NZ": "ニュージーランド",
+      "OM": "オマーン",
+      "PA": "パナマ",
+      "PE": "ペルー",
+      "PF": "フランス領ポリネシア",
+      "PG": "パプアニューギニア",
+      "PH": "フィリピン",
+      "PK": "パキスタン",
+      "PL": "ポーランド",
+      "PM": "サンピエール島・ミクロン島",
+      "PN": "ピトケアン諸島",
+      "PR": "プエルトリコ",
+      "PS": "パレスチナ",
+      "PT": "ポルトガル",
+      "PW": "パラオ",
+      "PY": "パラグアイ",
+      "QA": "カタール",
+      "QO": "合衆国領有小離島",
+      "RE": "レユニオン",
+      "REST_OF_WORLD": "その他の国",
+      "RO": "ルーマニア",
+      "RS": "セルビア",
+      "RU": "ロシア",
+      "RW": "ルワンダ",
+      "SA": "サウジアラビア",
+      "SB": "ソロモン諸島",
+      "SC": "セイシェル",
+      "SD": "スーダン",
+      "SE": "スウェーデン",
+      "SG": "シンガポール",
+      "SH": "セントヘレナ",
+      "SI": "スロベニア",
+      "SJ": "スヴァールバル諸島・ヤンマイエン島",
+      "SK": "スロバキア",
+      "SL": "シエラレオネ",
+      "SM": "サンマリノ",
+      "SN": "セネガル",
+      "SO": "ソマリア",
+      "SR": "スリナム",
+      "SS": "南スーダン",
+      "ST": "サントメ・プリンシペ",
+      "SV": "エルサルバドル",
+      "SX": "セント・マーチン島",
+      "SY": "シリア",
+      "SZ": "エスワティニ",
+      "TA": "トリスタンダクーニャ",
+      "TC": "タークス・カイコス諸島",
+      "TD": "チャド",
+      "TF": "フランス領南方・南極地域",
+      "TG": "トーゴ",
+      "TH": "タイ",
+      "TJ": "タジキスタン",
+      "TK": "トケラウ",
+      "TL": "東ティモール",
+      "TM": "トルクメニスタン",
+      "TN": "チュニジア",
+      "TO": "トンガ",
+      "TR": "トルコ",
+      "TT": "トリニダード・トバゴ",
+      "TV": "ツバル",
+      "TW": "台湾",
+      "TZ": "タンザニア",
+      "UA": "ウクライナ",
+      "UG": "ウガンダ",
+      "UM": "合衆国領有小離島",
+      "US": "アメリカ",
+      "UY": "ウルグアイ",
+      "UZ": "ウズベキスタン",
+      "VA": "バチカン市国",
+      "VC": "セントビンセント・グレナディン諸島",
+      "VE": "ベネズエラ",
+      "VG": "イギリス領バージン諸島",
+      "VI": "アメリカ領バージン諸島",
+      "VN": "ベトナム",
+      "VU": "バヌアツ",
+      "WF": "ウォリス・フツナ",
+      "WS": "サモア",
+      "XK": "コソボ",
+      "YE": "イエメン",
+      "YT": "マヨット",
+      "ZA": "南アフリカ",
+      "ZM": "ザンビア",
+      "ZW": "ジンバブエ"
+    }
+  }
+}

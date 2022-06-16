@@ -1,0 +1,9 @@
+.WarningTitle {
+  font-weight: var(--p-font-weight-semibold);
+}
+
+.WarningContent {
+  display: flex;
+  flex-direction: column;
+  color: var(--p-text-subdued);
+}

@@ -1,0 +1,531 @@
+{
+  "DiscountAppComponents": {
+    "ActiveDatesCard": {
+      "title": "Aktive datoer",
+      "startDate": "Startdato",
+      "startTime": "Starttidspunkt ({timezoneAbbreviation})",
+      "endDate": "Slutdato",
+      "endTime": "Sluttidspunkt ({timezoneAbbreviation})",
+      "setEndDate": "Angiv slutdato"
+    },
+    "TimePicker": {
+      "timePlaceholder": "Angiv tidspunkt"
+    },
+    "DatePicker": {
+      "datePlaceholder": "ÅÅÅÅ-MM-DD",
+      "dateFormatError": "Datoen skal være i formatet ÅÅÅÅ-MM-DD"
+    },
+    "MethodCard": {
+      "methodSubtitle": "Metode",
+      "choiceList": {
+        "title": "Vælg metodemuligheder",
+        "code": "Rabatkode",
+        "automatic": "Automatisk rabat"
+      },
+      "discountClassLabel": {
+        "product": "Produktrabat",
+        "order": "Ordrerabat",
+        "shipping": "Leveringsrabat"
+      },
+      "discountField": {
+        "label": "Titel",
+        "helpText": "Kunderne får vist dette i deres indkøbskurv ved betaling."
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "Rabatkode",
+        "helpText": "Kunderne skal angive denne kode ved betaling."
+      },
+      "buttonText": "Generer"
+    },
+    "UsageLimitsCard": {
+      "title": "Maksimalt antal rabatanvendelser",
+      "options": "Indstillinger for brugsgrænser",
+      "totalUsageLimitLabel": "Begræns det antal gange, denne rabat kan bruges i alt",
+      "oncePerCustomerLimitLabel": "Kan kun bruges én gang pr. kunde",
+      "totalUsageLimitHelpTextSubscription": "Et abonnement med mange betalinger tæller som én brug."
+    },
+    "RecurringPayment": {
+      "title": "Tilbagevendende betalinger af abonnementer",
+      "options": "Indstillinger for tilbagevendende betalinger",
+      "firstPayment": "Begræns rabatten til første betaling",
+      "multiplePayments": "Begræns rabatten til flere tilbagevendende betalinger",
+      "allPayments": "Rabatten gælder for alle tilbagevendende betalinger",
+      "includesFirstPayment": "Inkluderer betaling for den første ordre."
+    },
+    "MinimumRequirementsCard": {
+      "title": "Minimumskrav til køb",
+      "none": "Ingen minimumskrav",
+      "minimumSubtotal": "Minimumkøbsbeløb ({currencySymbol})",
+      "minimumQuantity": "Mindste antal varer",
+      "subscriptions": {
+        "appliesToCollections": "Gælder kun for abonnementsprodukter i udvalgte kollektioner.",
+        "appliesToProducts": "Gælder kun for udvalgte abonnementsprodukter.",
+        "appliesToAllProducts": "Gælder kun for abonnementsprodukter."
+      },
+      "oneTime": {
+        "appliesToCollections": "Gælder kun for udvalgte kollektioner.",
+        "appliesToProducts": "Gælder kun for udvalgte produkter.",
+        "appliesToAllProducts": "Gælder for alle produkter."
+      }
+    },
+    "CombinationCard": {
+      "title": "Kombinationer",
+      "combinesWith": "Kan kombineres med",
+      "discountNameFilled": "kan kombineres med:",
+      "discountNameNotFilled": "denne {discountClass}-rabat kan kombineres med:",
+      "options": {
+        "productLabelOther": "Andre produktrabatter",
+        "productLabel": "Produktrabatter",
+        "orderLabel": "Ordrerabatter",
+        "shippingLabel": "Rabatter på levering"
+      },
+      "newBadge": "Ny",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "Ingen produktrabatter er opsat til at blive kombineret på nuværende tidspunkt.",
+            "warning": {
+              "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med produktrabatter.",
+              "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med ordrerabatter.",
+              "withshipping": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med leveringsrabatter."
+            }
+          },
+          "order": {
+            "title": "Ingen ordrerabatter er opsat til at blive kombineret på nuværende tidspunkt.",
+            "warning": {
+              "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med produktrabatter.",
+              "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med ordrerabatter.",
+              "withshipping": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med leveringsrabatter."
+            }
+          },
+          "shipping": {
+            "title": "Ingen leveringsrabatter er opsat til at blive kombineret på nuværende tidspunkt.",
+            "warning": {
+              "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med produktrabatter.",
+              "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med ordrerabatter.",
+              "withshipping": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med leveringsrabatter."
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count} produktrabat",
+              "other": "{count} produktrabatter"
+            },
+            "order": {
+              "one": "{count} ordrerabat",
+              "other": "{count} ordrerabatter"
+            },
+            "shipping": {
+              "one": "{count} leveringsrabat",
+              "other": "{count} leveringsrabatter"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink} kan kombineres i samme køb. Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat.",
+            "other": "{discountCountLink} kan kombineres i samme køb. Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat."
+          }
+        }
+      },
+      "discountClass": {
+        "product": "produkt",
+        "order": "ordre",
+        "shipping": "levering"
+      }
+    },
+    "SummaryCard": {
+      "title": "Oversigt",
+      "details": "detaljer",
+      "Header": {
+        "emptyState": {
+          "Code": "Ingen rabatkode endnu.",
+          "Automatic": "Ingen titel endnu."
+        },
+        "badge": {
+          "active": "Aktiv",
+          "expired": "Udløbet",
+          "scheduled": "Planlagt"
+        },
+        "typeAndMethod": "type og metode",
+        "discountMethod": {
+          "Code": "Kode",
+          "Automatic": "Automatisk"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "Gælder for køb via abonnement",
+        "appliesToPurchaseTypeOneTime": "Gælder for engangskøb",
+        "appliesToPurchaseTypeBoth": "Gælder for køb via abonnementer og engangskøb"
+      },
+      "ActiveDates": {
+        "today": "i dag",
+        "activeSingleDate": "Aktiv den {date}",
+        "activeFromDate": "Aktiv fra den {date}",
+        "activeFromTodayUntilDate": "Aktiv fra i dag indtil {date}",
+        "activeFromDateToDate": "Aktiv fra {startDate} til {endDate}"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "Tilgængelig på onlinesalgskanaler og POS",
+        "availableOnCheckoutOnly": "Tilgængelig på onlinesalgskanaler"
+      },
+      "Combinations": {
+        "cannotCombine": "Kan ikke kombineres med andre rabatter",
+        "combinesWithOne": {
+          "product": "Kan kombineres med produktrabatter",
+          "order": "Kan kombineres med ordrerabatter",
+          "shipping": "Kan kombineres med leveringsrabatter"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "Kan kombineres med produkt- og ordrerabatter",
+          "productAndShipping": "Kan kombineres med produkt- og leveringsrabatter",
+          "orderAndShipping": "Kan kombineres med ordre- og leveringsrabatter"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "Alle kunder",
+        "customers": {
+          "one": "For {customerName}",
+          "other": "For {count} kunder"
+        },
+        "customerSegments": {
+          "one": "For {segmentName}",
+          "other": "For {count} kundesegmenter"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "Køb for mindst {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "Køb mindst {count} vare",
+          "other": "Køb mindst {count} varer"
+        },
+        "noMinimumPurchaseRequirement": "Ingen minimumskrav til køb"
+      },
+      "Performance": {
+        "title": "Resultater",
+        "notActive": "Rabat er endnu ikke aktiv.",
+        "performanceLink": "Se rapporten Salg efter rabat",
+        "usageCount": "{usageCount} anvendt",
+        "totalSales": "{totalSales} i salg i alt"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "Gælder for leveringspriser under {value}"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "For alle tilbagevendende betalinger",
+          "one": "Begrænset til {count} tilbagevendende betaling",
+          "other": "Begrænset til {count} tilbagevendende betalinger"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "For alle lande",
+        "forSpecificCountry": "For {countryName}",
+        "forNumberOfCountries": "For {numberOfCountries} lande"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "Kan bruges én gang pr. kunde",
+        "totalUsageLimit": {
+          "one": "Grænse på {count} anvendelse",
+          "other": "Grænse på {count} anvendelser"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "Grænse på {count} anvendelse, én pr. kunde",
+          "other": "Grænse på {count} anvendelser, én pr. kunde"
+        },
+        "noUsageLimits": "Ingen brugsgrænser"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "Kundens berettigelse",
+      "everyone": "Alle kunder",
+      "customerSegments": "Specifikke kundesegmenter",
+      "customers": "Specifikke kunder"
+    },
+    "CountriesAndRatesCard": {
+      "title": "Lande",
+      "choiceList": {
+        "title": "Lande og priser",
+        "all": "Alle lande",
+        "selected": "Specifikke lande"
+      },
+      "excludeShippingRatesSection": {
+        "title": "Leveringspriser",
+        "checkboxLabel": "Udelad leveringspriser over et vist beløb"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "Købstype",
+      "choiceList": {
+        "title": "Købstype",
+        "oneTimePurchase": "Engangskøb",
+        "subscription": "Abonnement",
+        "both": "Begge"
+      }
+    },
+    "Countries": {
+      "AC": "Ascension",
+      "AD": "Andorra",
+      "AE": "De Forenede Arabiske Emirater",
+      "AF": "Afghanistan",
+      "AG": "Antigua og Barbuda",
+      "AI": "Anguilla",
+      "AL": "Albanien",
+      "AM": "Armenien",
+      "AN": "De Nederlandske Antiller",
+      "AO": "Angola",
+      "AQ": "Antarktis",
+      "AR": "Argentina",
+      "AS": "Amerikansk Samoa",
+      "AT": "Østrig",
+      "AU": "Australien",
+      "AW": "Aruba",
+      "AX": "Ålandsøerne",
+      "AZ": "Aserbajdsjan",
+      "BA": "Bosnien-Hercegovina",
+      "BB": "Barbados",
+      "BD": "Bangladesh",
+      "BE": "Belgien",
+      "BF": "Burkina Faso",
+      "BG": "Bulgarien",
+      "BH": "Bahrain",
+      "BI": "Burundi",
+      "BJ": "Benin",
+      "BL": "Saint-Barthélemy",
+      "BM": "Bermuda",
+      "BN": "Brunei",
+      "BO": "Bolivia",
+      "BQ": "Caribisk Nederlandene",
+      "BR": "Brasilien",
+      "BS": "Bahamas",
+      "BT": "Bhutan",
+      "BV": "Bouvetøen",
+      "BW": "Botswana",
+      "BY": "Belarus",
+      "BZ": "Belize",
+      "CA": "Canada",
+      "CC": "Cocosøerne",
+      "CD": "Den Demokratiske Republik Congo",
+      "CF": "Den Centralafrikanske Republik",
+      "CG": "Republikken Congo",
+      "CH": "Schweiz",
+      "CI": "Elfenbenskysten",
+      "CK": "Cookøerne",
+      "CL": "Chile",
+      "CM": "Cameroun",
+      "CN": "Kina",
+      "CO": "Colombia",
+      "CP": "Clippertonøen",
+      "CR": "Costa Rica",
+      "CU": "Cuba",
+      "CV": "Kap Verde",
+      "CW": "Curaçao",
+      "CX": "Juleøen",
+      "CY": "Cypern",
+      "CZ": "Tjekkiet",
+      "DE": "Tyskland",
+      "DG": "Diego Garcia",
+      "DJ": "Djibouti",
+      "DK": "Danmark",
+      "DM": "Dominica",
+      "DO": "Den Dominikanske Republik",
+      "DZ": "Algeriet",
+      "EA": "Ceuta & Melilla",
+      "EC": "Ecuador",
+      "EE": "Estland",
+      "EG": "Egypten",
+      "EH": "Vestsahara",
+      "ER": "Eritrea",
+      "ES": "Spanien",
+      "ET": "Etiopien",
+      "EU": "Den Europæiske Union",
+      "FI": "Finland",
+      "FJ": "Fiji",
+      "FK": "Falklandsøerne",
+      "FM": "Mikronesien",
+      "FO": "Færøerne",
+      "FR": "Frankrig",
+      "GA": "Gabon",
+      "GB": "Storbritannien",
+      "GD": "Grenada",
+      "GE": "Georgia",
+      "GF": "Fransk Guyana",
+      "GG": "Guernsey",
+      "GH": "Ghana",
+      "GI": "Gibraltar",
+      "GL": "Grønland",
+      "GM": "Gambia",
+      "GN": "Guinea",
+      "GP": "Guadeloupe",
+      "GQ": "Ækvatorialguinea",
+      "GR": "Grækenland",
+      "GS": "South Georgia og South Sandwich Islands",
+      "GT": "Guatemala",
+      "GU": "Guam",
+      "GW": "Guinea-Bissau",
+      "GY": "Guyana",
+      "HK": "Hongkong SAR, Kina",
+      "HM": "Heard Island og McDonald Islands",
+      "HN": "Honduras",
+      "HR": "Kroatien",
+      "HT": "Haiti",
+      "HU": "Ungarn",
+      "IC": "De Kanariske Øer",
+      "ID": "Indonesien",
+      "IE": "Irland",
+      "IL": "Israel",
+      "IM": "Isle of Man",
+      "IN": "Indien",
+      "IO": "British Indian Ocean Territory",
+      "IQ": "Irak",
+      "IR": "Iran",
+      "IS": "Island",
+      "IT": "Italien",
+      "JE": "Jersey",
+      "JM": "Jamaica",
+      "JO": "Jordan",
+      "JP": "Japan",
+      "KE": "Kenya",
+      "KG": "Kirgisistan",
+      "KH": "Cambodja",
+      "KI": "Kiribati",
+      "KM": "Comorerne",
+      "KN": "Saint Kitts og Nevis",
+      "KP": "Nordkorea",
+      "KR": "Sydkorea",
+      "KW": "Kuwait",
+      "KY": "Caymanøerne",
+      "KZ": "Kasakhstan",
+      "LA": "Laos",
+      "LB": "Libanon",
+      "LC": "Saint Lucia",
+      "LI": "Liechtenstein",
+      "LK": "Sri Lanka",
+      "LR": "Liberia",
+      "LS": "Lesotho",
+      "LT": "Litauen",
+      "LU": "Luxembourg",
+      "LV": "Letland",
+      "LY": "Libyen",
+      "MA": "Marokko",
+      "MC": "Monaco",
+      "MD": "Moldova",
+      "ME": "Montenegro",
+      "MF": "Saint Martin",
+      "MG": "Madagaskar",
+      "MH": "Marshalløerne",
+      "MK": "Republikken Nordmakedonien",
+      "ML": "Mali",
+      "MM": "Myanmar (Burma)",
+      "MN": "Mongoliet",
+      "MO": "Macao SAR, Kina",
+      "MP": "Nordmarianerne",
+      "MQ": "Martinique",
+      "MR": "Mauretanien",
+      "MS": "Montserrat",
+      "MT": "Malta",
+      "MU": "Mauritius",
+      "MV": "Maldiverne",
+      "MW": "Malawi",
+      "MX": "Mexico",
+      "MY": "Malaysia",
+      "MZ": "Mozambique",
+      "NA": "Namibia",
+      "NC": "Ny Kaledonien",
+      "NE": "Niger",
+      "NF": "Norfolk Island",
+      "NG": "Nigeria",
+      "NI": "Nicaragua",
+      "NL": "Holland (Nederlandene)",
+      "NO": "Norge",
+      "NP": "Nepal",
+      "NR": "Nauru",
+      "NU": "Niue",
+      "NZ": "New Zealand",
+      "OM": "Oman",
+      "PA": "Panama",
+      "PE": "Peru",
+      "PF": "Fransk Polynesien",
+      "PG": "Papua Ny Guinea",
+      "PH": "Filippinerne",
+      "PK": "Pakistan",
+      "PL": "Polen",
+      "PM": "Saint-Pierre og Miquelon",
+      "PN": "Pitcairn-øerne",
+      "PR": "Puerto Rico",
+      "PS": "Palæstina",
+      "PT": "Portugal",
+      "PW": "Palau",
+      "PY": "Paraguay",
+      "QA": "Qatar",
+      "QO": "Ydre Oceanien",
+      "RE": "Réunion",
+      "REST_OF_WORLD": "Resten af verden",
+      "RO": "Rumænien",
+      "RS": "Serbien",
+      "RU": "Rusland",
+      "RW": "Rwanda",
+      "SA": "Saudi Arabien",
+      "SB": "Salomonøerne",
+      "SC": "Seychellerne",
+      "SD": "Sudan",
+      "SE": "Sverige",
+      "SG": "Singapore",
+      "SH": "Sankt Helena",
+      "SI": "Slovenien",
+      "SJ": "Svalbard og Jan Mayen",
+      "SK": "Slovakiet",
+      "SL": "Sierra Leone",
+      "SM": "San Marino",
+      "SN": "Senegal",
+      "SO": "Somalia",
+      "SR": "Surinam",
+      "SS": "Sydsudan",
+      "ST": "São Tomé og Príncipe",
+      "SV": "El Salvador",
+      "SX": "Saint Martin",
+      "SY": "Syrien",
+      "SZ": "Eswatini",
+      "TA": "Tristan da Cunha",
+      "TC": "Turks- og Caicosøerne",
+      "TD": "Tchad",
+      "TF": "Franske sydlige territorier",
+      "TG": "Togo",
+      "TH": "Thailand",
+      "TJ": "Tadsjikistan",
+      "TK": "Tokelau",
+      "TL": "Østtimor",
+      "TM": "Turkmenistan",
+      "TN": "Tunesien",
+      "TO": "Tonga",
+      "TR": "Tyrkiet",
+      "TT": "Trinidad og Tobago",
+      "TV": "Tuvalu",
+      "TW": "Taiwan",
+      "TZ": "Tanzania",
+      "UA": "Ukraine",
+      "UG": "Uganda",
+      "UM": "Amerikanske Oversøiske Øer",
+      "US": "USA",
+      "UY": "Uruguay",
+      "UZ": "Usbekistan",
+      "VA": "Vatikanet",
+      "VC": "Saint Vincent og Grenadinerne",
+      "VE": "Venezuela",
+      "VG": "Britiske Jomfruøer",
+      "VI": "De Amerikanske Jomfruøer",
+      "VN": "Vietnam",
+      "VU": "Vanuatu",
+      "WF": "Wallis og Futuna",
+      "WS": "Samoa",
+      "XK": "Kosovo",
+      "YE": "Yemen",
+      "YT": "Mayotte",
+      "ZA": "Sydafrika",
+      "ZM": "Zambia",
+      "ZW": "Zimbabwe"
+    }
+  }
+}

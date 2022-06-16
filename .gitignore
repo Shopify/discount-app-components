@@ -1,0 +1,8 @@
+*.log
+node_modules
+/.loom
+/build
+.DS_Store
+*.scss.d.ts
+.idea
+.vscode/*

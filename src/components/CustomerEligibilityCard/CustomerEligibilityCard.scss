@@ -1,0 +1,11 @@
+.CustomerItem {
+  display: flex;
+  gap: var(--p-space-3);
+  align-items: center;
+}
+
+.Email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--p-text-subdued);
+}

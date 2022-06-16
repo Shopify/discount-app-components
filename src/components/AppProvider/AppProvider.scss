@@ -1,0 +1,5 @@
+// Common styles may be added to this file, since AppProvider is required by all consumers.
+
+:root {
+  --discount-app-components-version-number: '{{DISCOUNT_APP_COMPONENTS_VERSION}}';
+}

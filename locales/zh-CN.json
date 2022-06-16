@@ -1,0 +1,531 @@
+{
+  "DiscountAppComponents": {
+    "ActiveDatesCard": {
+      "title": "生效日期",
+      "startDate": "开始日期",
+      "startTime": "开始时间 ({timezoneAbbreviation})",
+      "endDate": "结束日期",
+      "endTime": "结束时间 ({timezoneAbbreviation})",
+      "setEndDate": "设置结束日期"
+    },
+    "TimePicker": {
+      "timePlaceholder": "输入时间"
+    },
+    "DatePicker": {
+      "datePlaceholder": "YYYY-MM-DD",
+      "dateFormatError": "日期应采用格式 YYYY-MM-DD"
+    },
+    "MethodCard": {
+      "methodSubtitle": "方式",
+      "choiceList": {
+        "title": "选择方式选项",
+        "code": "折扣码",
+        "automatic": "自动折扣"
+      },
+      "discountClassLabel": {
+        "product": "产品折扣",
+        "order": "订单折扣",
+        "shipping": "运费折扣"
+      },
+      "discountField": {
+        "label": "标题",
+        "helpText": "客户将在购物车中和在结账时看到此内容。"
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "折扣码",
+        "helpText": "客户必须在结账时输入此代码。"
+      },
+      "buttonText": "生成"
+    },
+    "UsageLimitsCard": {
+      "title": "最大折扣使用次数",
+      "options": "使用限制选项",
+      "totalUsageLimitLabel": "限制此折扣可使用的总次数",
+      "oncePerCustomerLimitLabel": "每位客户限使用一次",
+      "totalUsageLimitHelpTextSubscription": "需要多次付款的订阅将被视为使用一次。"
+    },
+    "RecurringPayment": {
+      "title": "订阅的定期付款",
+      "options": "定期付款选项",
+      "firstPayment": "将折扣限制于首笔付款",
+      "multiplePayments": "将折扣限制于多次定期付款",
+      "allPayments": "折扣适用于所有定期付款",
+      "includesFirstPayment": "包括第一笔订单的付款。"
+    },
+    "MinimumRequirementsCard": {
+      "title": "最低购买要求",
+      "none": "无最低要求",
+      "minimumSubtotal": "最低购买金额 ({currencySymbol})",
+      "minimumQuantity": "最低商品数量",
+      "subscriptions": {
+        "appliesToCollections": "仅适用于选定产品系列中的订阅产品。",
+        "appliesToProducts": "仅适用于选定的订阅产品。",
+        "appliesToAllProducts": "仅适用于订阅产品。"
+      },
+      "oneTime": {
+        "appliesToCollections": "仅适用于选定的产品系列。",
+        "appliesToProducts": "仅适用于选定的产品。",
+        "appliesToAllProducts": "适用于所有产品。"
+      }
+    },
+    "CombinationCard": {
+      "title": "组合",
+      "combinesWith": "组合",
+      "discountNameFilled": "可组合：",
+      "discountNameNotFilled": "此{discountClass}折扣可与以下折扣组合：",
+      "options": {
+        "productLabelOther": "其他产品折扣",
+        "productLabel": "产品折扣",
+        "orderLabel": "订单折扣",
+        "shippingLabel": "运费折扣"
+      },
+      "newBadge": "新",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "目前未设置要组合的产品折扣。",
+            "warning": {
+              "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的产品折扣。",
+              "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的产品折扣。",
+              "withshipping": "若要允许客户使用多项折扣，请至少设置一项与其他运费折扣进行组合的产品折扣。"
+            }
+          },
+          "order": {
+            "title": "目前未设置要组合的订单折扣。",
+            "warning": {
+              "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的订单折扣。",
+              "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的订单折扣。",
+              "withshipping": "若要允许客户使用多项折扣，请至少设置一项与其他运费折扣进行组合的订单折扣。"
+            }
+          },
+          "shipping": {
+            "title": "目前未设置要组合的运费折扣。",
+            "warning": {
+              "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的运费折扣。",
+              "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的运费折扣。",
+              "withshipping": "若要允许客户使用多项折扣，请至少设置一项与其他运费折扣进行组合的运费折扣。"
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count} 项产品折扣",
+              "other": "{count} 项产品折扣"
+            },
+            "order": {
+              "one": "{count} 项订单折扣",
+              "other": "{count} 项订单折扣"
+            },
+            "shipping": {
+              "one": "{count} 项运费折扣",
+              "other": "{count} 项运费折扣"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink}可在同一购买中组合使用。如果某商品可使用多项折扣，则只会应用优惠金额最大的折扣。",
+            "other": "{discountCountLink}可在同一购买中组合使用。如果某商品可使用多项折扣，则只会应用优惠金额最大的折扣。"
+          }
+        }
+      },
+      "discountClass": {
+        "product": "产品",
+        "order": "订单",
+        "shipping": "发货"
+      }
+    },
+    "SummaryCard": {
+      "title": "摘要",
+      "details": "详情",
+      "Header": {
+        "emptyState": {
+          "Code": "尚无折扣码。",
+          "Automatic": "尚无标题。"
+        },
+        "badge": {
+          "active": "有效",
+          "expired": "已过期",
+          "scheduled": "已安排"
+        },
+        "typeAndMethod": "类型和方式",
+        "discountMethod": {
+          "Code": "代码",
+          "Automatic": "自动"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "适用于订阅购买",
+        "appliesToPurchaseTypeOneTime": "适用于一次性购买",
+        "appliesToPurchaseTypeBoth": "适用于订阅和一次性购买"
+      },
+      "ActiveDates": {
+        "today": "今天",
+        "activeSingleDate": "在 {date} 有效",
+        "activeFromDate": "从 {date} 开始生效",
+        "activeFromTodayUntilDate": "从今天开始生效直到 {date}",
+        "activeFromDateToDate": "从 {startDate} 开始生效直到 {endDate}"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "可用于在线销售渠道和 POS",
+        "availableOnCheckoutOnly": "可用于在线销售渠道"
+      },
+      "Combinations": {
+        "cannotCombine": "不得与其他折扣组合使用",
+        "combinesWithOne": {
+          "product": "与产品折扣组合",
+          "order": "与订单折扣组合",
+          "shipping": "与运费折扣组合"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "与产品和订单折扣组合",
+          "productAndShipping": "与产品和运费折扣组合",
+          "orderAndShipping": "与订单和运费折扣组合"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "全部客户",
+        "customers": {
+          "one": "适用于 {customerName}",
+          "other": "适用于 {count} 位客户"
+        },
+        "customerSegments": {
+          "one": "适用于 {segmentName}",
+          "other": "适用于 {count} 个客户细分"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "最低购买金额为 {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "至少购买 {count} 件商品",
+          "other": "至少购买 {count} 件商品"
+        },
+        "noMinimumPurchaseRequirement": "无最低购买要求"
+      },
+      "Performance": {
+        "title": "绩效",
+        "notActive": "折扣尚未生效。",
+        "performanceLink": "查看“按折扣显示销售额”报告",
+        "usageCount": "已使用 {usageCount} 次",
+        "totalSales": "总销售额 {totalSales}"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "适用于 {value} 以下的运费"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "适用于所有定期付款",
+          "one": "限制为 {count} 次定期付款",
+          "other": "限制为 {count} 次定期付款"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "适用于所有国家/地区",
+        "forSpecificCountry": "适用于 {countryName}",
+        "forNumberOfCountries": "适用于 {numberOfCountries} 个国家/地区"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "每位客户使用一次",
+        "totalUsageLimit": {
+          "one": "只能使用 {count} 次",
+          "other": "只能使用 {count} 次"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "每位客户使用一次，限使用 {count} 次",
+          "other": "每位客户使用一次，限使用 {count} 次"
+        },
+        "noUsageLimits": "无使用限制"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "客户资格",
+      "everyone": "全部客户",
+      "customerSegments": "特定客户细分",
+      "customers": "特定客户"
+    },
+    "CountriesAndRatesCard": {
+      "title": "国家/地区",
+      "choiceList": {
+        "title": "国家/地区和税率",
+        "all": "所有国家/地区",
+        "selected": "特定国家/地区"
+      },
+      "excludeShippingRatesSection": {
+        "title": "运费",
+        "checkboxLabel": "排除超过特定金额的运费"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "购买类型",
+      "choiceList": {
+        "title": "购买类型",
+        "oneTimePurchase": "一次性购买",
+        "subscription": "订阅",
+        "both": "两者"
+      }
+    },
+    "Countries": {
+      "AC": "阿森松岛",
+      "AD": "安道尔",
+      "AE": "阿拉伯联合酋长国",
+      "AF": "阿富汗",
+      "AG": "安提瓜和巴布达",
+      "AI": "安圭拉",
+      "AL": "阿尔巴尼亚",
+      "AM": "亚美尼亚",
+      "AN": "荷属安的列斯群島",
+      "AO": "安哥拉",
+      "AQ": "南极洲",
+      "AR": "阿根廷",
+      "AS": "美属萨摩亚",
+      "AT": "奥地利",
+      "AU": "澳大利亚",
+      "AW": "阿鲁巴",
+      "AX": "奥兰群岛",
+      "AZ": "阿塞拜疆",
+      "BA": "波斯尼亚和黑塞哥维那",
+      "BB": "巴巴多斯",
+      "BD": "孟加拉国",
+      "BE": "比利时",
+      "BF": "布基纳法索",
+      "BG": "保加利亚",
+      "BH": "巴林",
+      "BI": "布隆迪",
+      "BJ": "贝宁",
+      "BL": "圣巴泰勒米",
+      "BM": "百慕大",
+      "BN": "文莱",
+      "BO": "玻利维亚",
+      "BQ": "荷属加勒比",
+      "BR": "巴西",
+      "BS": "巴哈马",
+      "BT": "不丹",
+      "BV": "布维岛",
+      "BW": "博茨瓦纳",
+      "BY": "白俄罗斯",
+      "BZ": "伯利兹",
+      "CA": "加拿大",
+      "CC": "科科斯（基林）群岛",
+      "CD": "刚果金沙萨",
+      "CF": "中非共和国",
+      "CG": "刚果布拉柴维尔",
+      "CH": "瑞士",
+      "CI": "科特迪瓦",
+      "CK": "库克群岛",
+      "CL": "智利",
+      "CM": "喀麦隆",
+      "CN": "中国",
+      "CO": "哥伦比亚",
+      "CP": "克利珀顿岛",
+      "CR": "哥斯达黎加",
+      "CU": "古巴",
+      "CV": "佛得角",
+      "CW": "库拉索",
+      "CX": "圣诞岛",
+      "CY": "塞浦路斯",
+      "CZ": "捷克共和国",
+      "DE": "德国",
+      "DG": "迪戈加西亚",
+      "DJ": "吉布提",
+      "DK": "丹麦",
+      "DM": "多米尼加",
+      "DO": "多明尼加共和国",
+      "DZ": "阿尔及利亚",
+      "EA": "休达和梅利利亚",
+      "EC": "厄瓜多尔",
+      "EE": "爱沙尼亚",
+      "EG": "埃及",
+      "EH": "西萨哈拉",
+      "ER": "厄立特里亚",
+      "ES": "西班牙",
+      "ET": "埃塞俄比亚",
+      "EU": "欧盟",
+      "FI": "芬兰",
+      "FJ": "斐济岛",
+      "FK": "福克兰群岛",
+      "FM": "密克罗尼西亚",
+      "FO": "法罗群岛",
+      "FR": "法国",
+      "GA": "加蓬",
+      "GB": "英国",
+      "GD": "格林纳达",
+      "GE": "佐治亚州",
+      "GF": "法属圭亚那",
+      "GG": "根西岛",
+      "GH": "加纳",
+      "GI": "直布罗陀",
+      "GL": "格陵兰",
+      "GM": "冈比亚",
+      "GN": "几内亚",
+      "GP": "瓜德罗普岛",
+      "GQ": "赤道几内亚",
+      "GR": "希腊",
+      "GS": "南乔治亚岛和南桑威奇群岛",
+      "GT": "危地马拉",
+      "GU": "关岛",
+      "GW": "几内亚比绍",
+      "GY": "圭亚那",
+      "HK": "中国香港特别行政区",
+      "HM": "赫德和麦克唐纳群岛",
+      "HN": "洪都拉斯",
+      "HR": "克罗地亚",
+      "HT": "海地",
+      "HU": "匈牙利",
+      "IC": "加那利群岛",
+      "ID": "印度尼西亚",
+      "IE": "爱尔兰",
+      "IL": "以色列",
+      "IM": "马恩岛",
+      "IN": "印度",
+      "IO": "英属印度洋领地",
+      "IQ": "伊拉克",
+      "IR": "伊朗",
+      "IS": "冰岛",
+      "IT": "意大利",
+      "JE": "新泽西",
+      "JM": "牙买加",
+      "JO": "约旦",
+      "JP": "日本",
+      "KE": "肯尼亚",
+      "KG": "吉尔吉斯斯坦",
+      "KH": "柬埔寨",
+      "KI": "基里巴斯",
+      "KM": "科摩罗",
+      "KN": "圣基茨和尼维斯",
+      "KP": "朝鲜",
+      "KR": "韩国",
+      "KW": "科威特",
+      "KY": "开曼群岛",
+      "KZ": "哈萨克斯坦",
+      "LA": "老挝",
+      "LB": "黎巴嫩",
+      "LC": "圣卢西亚",
+      "LI": "列支敦士登",
+      "LK": "斯里兰卡",
+      "LR": "利比里亚",
+      "LS": "莱索托",
+      "LT": "立陶宛",
+      "LU": "卢森堡",
+      "LV": "拉脱维亚",
+      "LY": "利比亚",
+      "MA": "摩洛哥",
+      "MC": "摩纳哥",
+      "MD": "摩尔多瓦",
+      "ME": "黑山",
+      "MF": "圣马丁",
+      "MG": "马达加斯加",
+      "MH": "马绍尔群岛",
+      "MK": "马其顿",
+      "ML": "马里",
+      "MM": "缅甸",
+      "MN": "蒙古",
+      "MO": "中国澳门特别行政区",
+      "MP": "北马里亚纳群岛",
+      "MQ": "马提尼克",
+      "MR": "毛里塔尼亚",
+      "MS": "蒙特塞拉特",
+      "MT": "马耳他",
+      "MU": "毛里求斯",
+      "MV": "马尔代夫",
+      "MW": "马拉维",
+      "MX": "墨西哥",
+      "MY": "马来西亚",
+      "MZ": "莫桑比克",
+      "NA": "纳米比亚",
+      "NC": "新喀里多尼亚",
+      "NE": "尼日尔",
+      "NF": "诺福克岛",
+      "NG": "尼日利亚",
+      "NI": "尼加拉瓜",
+      "NL": "荷兰",
+      "NO": "挪威",
+      "NP": "尼泊尔",
+      "NR": "瑙鲁",
+      "NU": "纽埃",
+      "NZ": "新西兰",
+      "OM": "阿曼",
+      "PA": "巴拿马",
+      "PE": "秘鲁",
+      "PF": "法属波利尼西亚",
+      "PG": "巴布亚新几内亚",
+      "PH": "菲律宾",
+      "PK": "巴基斯坦",
+      "PL": "波兰",
+      "PM": "圣皮埃尔和密克隆",
+      "PN": "皮特凯恩群岛",
+      "PR": "波多黎各",
+      "PS": "巴勒斯坦领土",
+      "PT": "葡萄牙",
+      "PW": "帕劳",
+      "PY": "巴拉圭",
+      "QA": "卡塔尔",
+      "QO": "大洋洲本土外领土",
+      "RE": "留尼汪岛",
+      "REST_OF_WORLD": "世界其他地区",
+      "RO": "罗马尼亚",
+      "RS": "塞尔维亚",
+      "RU": "俄罗斯",
+      "RW": "卢旺达",
+      "SA": "沙特阿拉伯",
+      "SB": "所罗门群岛",
+      "SC": "塞舌尔",
+      "SD": "苏丹",
+      "SE": "瑞典",
+      "SG": "新加坡",
+      "SH": "圣赫勒拿岛",
+      "SI": "斯洛文尼亚",
+      "SJ": "斯瓦尔巴和扬马延",
+      "SK": "斯洛伐克",
+      "SL": "塞拉利昂",
+      "SM": "圣马力诺",
+      "SN": "塞内加尔",
+      "SO": "索马里",
+      "SR": "苏里南",
+      "SS": "南苏丹",
+      "ST": "圣多美和普林西比",
+      "SV": "萨尔瓦多",
+      "SX": "圣马丁",
+      "SY": "叙利亚",
+      "SZ": "斯威士兰",
+      "TA": "特里斯坦达库尼亚",
+      "TC": "特克斯和凯科斯群岛",
+      "TD": "乍得",
+      "TF": "法属南部领土",
+      "TG": "多哥",
+      "TH": "泰国",
+      "TJ": "塔吉克斯坦",
+      "TK": "托克劳",
+      "TL": "东帝汶",
+      "TM": "土库曼斯坦",
+      "TN": "突尼斯",
+      "TO": "汤加",
+      "TR": "土耳其",
+      "TT": "特立尼达和多巴哥",
+      "TV": "图瓦卢",
+      "TW": "中国台湾",
+      "TZ": "坦桑尼亚",
+      "UA": "乌克兰",
+      "UG": "乌干达",
+      "UM": "美国离岛",
+      "US": "美国",
+      "UY": "乌拉圭",
+      "UZ": "乌兹别克斯坦",
+      "VA": "梵蒂冈城",
+      "VC": "圣文森特和格林纳丁斯",
+      "VE": "委内瑞拉",
+      "VG": "英属维尔京群岛",
+      "VI": "美属维尔京群岛",
+      "VN": "越南",
+      "VU": "瓦努阿图",
+      "WF": "瓦利斯和富图纳群岛",
+      "WS": "萨摩亚",
+      "XK": "科索沃",
+      "YE": "也门",
+      "YT": "马约特",
+      "ZA": "南非",
+      "ZM": "赞比亚",
+      "ZW": "津巴布韦"
+    }
+  }
+}

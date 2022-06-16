@@ -1,0 +1,542 @@
+{
+  "DiscountAppComponents": {
+    "SampleComponent": {
+      "content": "Voorbeeldcomponent wordt gerenderd.",
+      "destructiveAction": "Klik om een console-logboek op te starten."
+    },
+    "SampleSubComponent": {
+      "content": "Voorbeeld-subcomponent wordt gerenderd."
+    },
+    "ActiveDatesCard": {
+      "title": "Actieve datums",
+      "startDate": "Begindatum",
+      "startTime": "Begintijd ({timezoneAbbreviation})",
+      "endDate": "Einddatum",
+      "endTime": "Eindtijd ({timezoneAbbreviation})",
+      "setEndDate": "Einddatum instellen"
+    },
+    "TimePicker": {
+      "timePlaceholder": "Tijd invoeren"
+    },
+    "DatePicker": {
+      "datePlaceholder": "JJJJ-MM-DD",
+      "dateFormatError": "De datum moet deze indeling hebben: JJJJ-MM-DD"
+    },
+    "MethodCard": {
+      "methodSubtitle": "Methode",
+      "choiceList": {
+        "title": "Opties voor methoden selecteren",
+        "code": "Kortingscode",
+        "automatic": "Automatische korting"
+      },
+      "discountClassLabel": {
+        "product": "Productkorting",
+        "order": "Korting op bestelling",
+        "shipping": "Verzendkorting"
+      },
+      "discountField": {
+        "label": "Titel",
+        "helpText": "Klanten zien dit in hun winkelwagen en bij de checkout."
+      },
+      "pos": {
+        "description": "Deze korting is beschikbaar op online verkoopkanalen.",
+        "checkboxLabel": "Ook op Point of Sale aanbieden (alleen POS Pro-locaties)"
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "Kortingscode",
+        "helpText": "Klanten moeten deze code invoeren bij de checkout."
+      },
+      "buttonText": "Kortingscode genereren"
+    },
+    "UsageLimitsCard": {
+      "title": "Gebruikslimieten",
+      "options": "Opties voor gebruikslimieten",
+      "totalUsageLimitLabel": "Het aantal keren beperken dat deze korting in totaal kan worden gebruikt",
+      "oncePerCustomerLimitLabel": "Beperken tot één keer gebruiken per klant",
+      "totalUsageLimitHelpTextSubscription": "Een abonnement met veel betalingen geldt als één keer gebruiken."
+    },
+    "RecurringPayment": {
+      "title": "Terugkerende betalingen voor abonnementen",
+      "options": "Terugkerende betalingsopties",
+      "firstPayment": "Korting beperken tot eerste betaling",
+      "multiplePayments": "Korting beperken tot meerdere terugkerende betalingen",
+      "allPayments": "Korting is van toepassing op alle terugkerende betalingen",
+      "includesFirstPayment": "Inclusief betaling bij de eerste bestelling."
+    },
+    "MinimumRequirementsCard": {
+      "title": "Minimale aankoopvereisten",
+      "none": "Geen minimumvereisten",
+      "minimumSubtotal": "Minimaal aankoopbedrag ({currencySymbol})",
+      "minimumQuantity": "Minimumaantal artikelen",
+      "subscriptions": {
+        "appliesToCollections": "Is alleen van toepassing op abonnementsproducten in bepaalde collecties.",
+        "appliesToProducts": "Is alleen van toepassing op bepaalde abonnementsproducten.",
+        "appliesToAllProducts": "Is alleen van toepassing op abonnementsproducten."
+      },
+      "oneTime": {
+        "appliesToCollections": "Is alleen van toepassing op bepaalde collecties.",
+        "appliesToProducts": "Is alleen van toepassing op bepaalde producten.",
+        "appliesToAllProducts": "Is van toepassing op alle producten."
+      }
+    },
+    "CombinationCard": {
+      "title": "Combinaties",
+      "combinesWith": "Mag worden gecombineerd met",
+      "discountNameFilled": "kan worden gecombineerd met:",
+      "discountNameNotFilled": "Je kunt deze {discountClass} korting combineren met:",
+      "options": {
+        "productLabelOther": "Andere productkortingen",
+        "productLabel": "Productkortingen",
+        "orderLabel": "Kortingen op bestellingen",
+        "shippingLabel": "Verzendkortingen"
+      },
+      "newBadge": "Nieuw",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "Op dit moment zijn er geen productkortingen ingesteld voor combinatie met andere kortingen.",
+            "warning": {
+              "withproduct": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met andere productkortingen kan worden gecombineerd.",
+              "withorder": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met kortingen op bestellingen kan worden gecombineerd.",
+              "withshipping": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met verzendkortingen kan worden gecombineerd."
+            }
+          },
+          "order": {
+            "title": "Op dit moment zijn er geen kortingen op bestellingen ingesteld voor combinatie met andere kortingen.",
+            "warning": {
+              "withproduct": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één korting op bestellingen in die met andere kortingen op bestellingen kan worden gecombineerd.",
+              "withorder": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met kortingen op bestellingen kan worden gecombineerd.",
+              "withshipping": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één korting voor bestellingen in die met verzendkortingen kan worden gecombineerd."
+            }
+          },
+          "shipping": {
+            "title": "Op dit moment zijn er geen verzendkortingen ingesteld voor combinatie met andere kortingen.",
+            "warning": {
+              "withproduct": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één verzendkorting in die met productkortingen kan worden gecombineerd.",
+              "withorder": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één verzendkorting in die met kortingen op bestellingen kan worden gecombineerd.",
+              "withshipping": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één verzendkorting in die met andere verzendkortingen kan worden gecombineerd."
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count} productkorting",
+              "other": "{count} productkortingen"
+            },
+            "order": {
+              "one": "{count} korting op bestellingen",
+              "other": "{count} kortingen op bestellingen"
+            },
+            "shipping": {
+              "one": "{count} verzendkorting",
+              "other": "{count} verzendkortingen"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink} mag in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, geldt alleen de hoogste korting.",
+            "other": "{discountCountLink} mag in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, geldt alleen de hoogste korting."
+          }
+        }
+      },
+      "discountClass": {
+        "product": "product",
+        "order": "bestelling",
+        "shipping": "verzending"
+      }
+    },
+    "SummaryCard": {
+      "title": "Overzicht",
+      "details": "gegevens",
+      "Header": {
+        "emptyState": {
+          "Code": "Nog geen kortingscode.",
+          "Automatic": "Nog geen titel."
+        },
+        "badge": {
+          "active": "Actief",
+          "expired": "Verlopen",
+          "scheduled": "Gepland"
+        },
+        "typeAndMethod": "type en methode",
+        "discountMethod": {
+          "Code": "Code",
+          "Automatic": "Automatisch"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "Van toepassing op abonnementsaankopen",
+        "appliesToPurchaseTypeOneTime": "Van toepassing op eenmalige aankopen",
+        "appliesToPurchaseTypeBoth": "Van toepassing op abonnementen en eenmalige aankopen"
+      },
+      "ActiveDates": {
+        "today": "vandaag",
+        "activeSingleDate": "Actief op {date}",
+        "activeFromDate": "Actief vanaf {date}",
+        "activeFromTodayUntilDate": "Actief vanaf vandaag tot {date}",
+        "activeFromDateToDate": "Actief van {startDate} tot {endDate}"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "Beschikbaar op online verkoopkanalen en Point of Sale",
+        "availableOnCheckoutOnly": "Beschikbaar op online verkoopkanalen"
+      },
+      "Combinations": {
+        "cannotCombine": "Kan niet worden gecombineerd met andere kortingen",
+        "combinesWithOne": {
+          "product": "In combinatie met productkortingen",
+          "order": "In combinatie met bestelkortingen",
+          "shipping": "In combinatie met verzendkortingen"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "In combinatie met product- en bestelkortingen",
+          "productAndShipping": "In combinatie met product- en verzendkortingen",
+          "orderAndShipping": "In combinatie met bestel- en verzendkortingen"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "Alle klanten",
+        "customers": {
+          "one": "Voor {customerName}",
+          "other": "Voor {count} klanten"
+        },
+        "customerSegments": {
+          "one": "Voor {segmentName}",
+          "other": "Voor {count} klantsegmenten"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "Minimale aankoop van {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "Minimale aankoop van {count} artikel",
+          "other": "Minimale aankoop van {count} artikelen"
+        },
+        "noMinimumPurchaseRequirement": "Geen minimale aankoopvereiste"
+      },
+      "Performance": {
+        "title": "Prestatie",
+        "notActive": "Korting is nog niet actief.",
+        "performanceLink": "Bekijk het rapport verkopen per korting",
+        "usageCount": "{usageCount} gebruikt",
+        "totalSales": "{totalSales} in totale omzet"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "Geldt voor verzendtarieven onder de {value}"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "Voor alle terugkerende betalingen",
+          "one": "Beperkt tot {count} terugkerende betaling",
+          "other": "Beperkt tot {count} terugkerende betalingen"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "Voor alle landen",
+        "forSpecificCountry": "Voor {countryName}",
+        "forNumberOfCountries": "Voor {numberOfCountries} landen"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "Eén per klant",
+        "totalUsageLimit": {
+          "one": "Limiet van {count} toepassing",
+          "other": "Limiet van {count} toepassingen"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "Limiet van {count} toepassing, één per klant",
+          "other": "Limiet van {count} toepassingen, één per klant"
+        },
+        "noUsageLimits": "Geen gebruikslimieten"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "Geschiktheid van klant",
+      "everyone": "Alle klanten",
+      "customerSegments": "Specifieke klantsegmenten",
+      "customers": "Specifieke klanten"
+    },
+    "CountriesAndRatesCard": {
+      "title": "Landen",
+      "choiceList": {
+        "title": "Landen en tarieven",
+        "all": "Alle landen",
+        "selected": "Specifieke landen"
+      },
+      "excludeShippingRatesSection": {
+        "title": "Verzendtarieven",
+        "checkboxLabel": "Exclusief verzendtarieven boven een bepaald bedrag"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "Soort aankoop",
+      "choiceList": {
+        "title": "Soort aankoop",
+        "oneTimePurchase": "Eenmalige aankoop",
+        "subscription": "Abonnement",
+        "both": "Beide"
+      }
+    },
+    "Countries": {
+      "AC": "Ascension",
+      "AD": "Andorra",
+      "AE": "Verenigde Arabische Emiraten",
+      "AF": "Afghanistan",
+      "AG": "Antigua en Barbuda",
+      "AI": "Anguilla",
+      "AL": "Albanië",
+      "AM": "Armenië",
+      "AN": "Nederlandse Antillen",
+      "AO": "Angola",
+      "AQ": "Antarctica",
+      "AR": "Argentinië",
+      "AS": "Amerikaans-Samoa",
+      "AT": "Oostenrijk",
+      "AU": "Australië",
+      "AW": "Aruba",
+      "AX": "Åland",
+      "AZ": "Azerbeidzjan",
+      "BA": "Bosnië en Herzegovina",
+      "BB": "Barbados",
+      "BD": "Bangladesh",
+      "BE": "België",
+      "BF": "Burkina Faso",
+      "BG": "Bulgarije",
+      "BH": "Bahrein",
+      "BI": "Burundi",
+      "BJ": "Benin",
+      "BL": "St. Barthélemy",
+      "BM": "Bermuda",
+      "BN": "Brunei",
+      "BO": "Bolivia",
+      "BQ": "Caribisch Nederland",
+      "BR": "Brazilië",
+      "BS": "Bahama's",
+      "BT": "Bhutan",
+      "BV": "Bouvet Island",
+      "BW": "Botswana",
+      "BY": "Wit-Rusland",
+      "BZ": "Belize",
+      "CA": "Canada",
+      "CC": "Cocoseilanden",
+      "CD": "Congo-Kinshasa",
+      "CF": "Centraal-Afrikaanse Republiek",
+      "CG": "Congo-Brazzaville",
+      "CH": "Zwitserland",
+      "CI": "Ivoorkust",
+      "CK": "Cookeilanden",
+      "CL": "Chili",
+      "CM": "Kameroen",
+      "CN": "China",
+      "CO": "Colombia",
+      "CP": "Clipperton",
+      "CR": "Costa Rica",
+      "CU": "Cuba",
+      "CV": "Kaapverdië",
+      "CW": "Curaçao",
+      "CX": "Christmaseiland",
+      "CY": "Cyprus",
+      "CZ": "Tsjechië",
+      "DE": "Duitsland",
+      "DG": "Diego Garcia",
+      "DJ": "Djibouti",
+      "DK": "Denemarken",
+      "DM": "Dominica",
+      "DO": "Dominicaanse Republiek",
+      "DZ": "Algerije",
+      "EA": "Ceuta en Melilla",
+      "EC": "Ecuador",
+      "EE": "Estland",
+      "EG": "Egypte",
+      "EH": "Westelijke Sahara",
+      "ER": "Eritrea",
+      "ES": "Spanje",
+      "ET": "Ethiopië",
+      "EU": "Europese Unie",
+      "FI": "Finland",
+      "FJ": "Fiji",
+      "FK": "Falklandeilanden",
+      "FM": "Micronesië",
+      "FO": "Faeröer",
+      "FR": "Frankrijk",
+      "GA": "Gabon",
+      "GB": "Verenigd Koninkrijk",
+      "GD": "Grenada",
+      "GE": "Georgië",
+      "GF": "Frans-Guyana",
+      "GG": "Guernsey",
+      "GH": "Ghana",
+      "GI": "Gibraltar",
+      "GL": "Groenland",
+      "GM": "Gambia",
+      "GN": "Guinee",
+      "GP": "Guadeloupe",
+      "GQ": "Equatoriaal-Guinea",
+      "GR": "Griekenland",
+      "GS": "Zuid-Georgia en de Zuidelijke Sandwicheilanden",
+      "GT": "Guatemala",
+      "GU": "Guam",
+      "GW": "Guinee-Bissau",
+      "GY": "Guyana",
+      "HK": "Speciale bestuurlijke regio Hongkong van de Volksrepubliek China",
+      "HM": "Heard en McDonaldeilanden",
+      "HN": "Honduras",
+      "HR": "Kroatië",
+      "HT": "Haïti",
+      "HU": "Hongarije",
+      "IC": "Canarische eilanden",
+      "ID": "Indonesië",
+      "IE": "Ierland",
+      "IL": "Israël",
+      "IM": "Isle of Man",
+      "IN": "India",
+      "IO": "Brits Indische Oceaanterritorium",
+      "IQ": "Irak",
+      "IR": "Iran",
+      "IS": "IJsland",
+      "IT": "Italië",
+      "JE": "Jersey",
+      "JM": "Jamaica",
+      "JO": "Jordanië",
+      "JP": "Japan",
+      "KE": "Kenia",
+      "KG": "Kirgizië",
+      "KH": "Cambodja",
+      "KI": "Kiribati",
+      "KM": "Comoren",
+      "KN": "Saint Kitts en Nevis",
+      "KP": "Noord-Korea",
+      "KR": "Zuid-Korea",
+      "KW": "Koeweit",
+      "KY": "Kaaimaneilanden",
+      "KZ": "Kazachstan",
+      "LA": "Laos",
+      "LB": "Libanon",
+      "LC": "St. Lucia",
+      "LI": "Liechtenstein",
+      "LK": "Sri Lanka",
+      "LR": "Liberia",
+      "LS": "Lesotho",
+      "LT": "Litouwen",
+      "LU": "Luxemburg",
+      "LV": "Letland",
+      "LY": "Libië",
+      "MA": "Marokko",
+      "MC": "Monaco",
+      "MD": "Moldavië",
+      "ME": "Montenegro",
+      "MF": "Sint Maarten",
+      "MG": "Madagascar",
+      "MH": "Marshalleilanden",
+      "MK": "Macedonië",
+      "ML": "Mali",
+      "MM": "Myanmar (Birma)",
+      "MN": "Mongolië",
+      "MO": "Speciale bestuurlijke regio Macau van de Volksrepubliek China",
+      "MP": "Noordelijke Marianen",
+      "MQ": "Martinique",
+      "MR": "Mauritanië",
+      "MS": "Montserrat",
+      "MT": "Malta",
+      "MU": "Mauritius",
+      "MV": "Malediven",
+      "MW": "Malawi",
+      "MX": "Mexico",
+      "MY": "Maleisië",
+      "MZ": "Mozambique",
+      "NA": "Namibië",
+      "NC": "Nieuw-Caledonië",
+      "NE": "Niger",
+      "NF": "Norfolk",
+      "NG": "Nigeria",
+      "NI": "Nicaragua",
+      "NL": "Nederland",
+      "NO": "Noorwegen",
+      "NP": "Nepal",
+      "NR": "Nauru",
+      "NU": "Niue",
+      "NZ": "Nieuw-Zeeland",
+      "OM": "Oman",
+      "PA": "Panama",
+      "PE": "Peru",
+      "PF": "Frans-Polynesië",
+      "PG": "Papoea-Nieuw-Guinea",
+      "PH": "Filipijnen",
+      "PK": "Pakistan",
+      "PL": "Polen",
+      "PM": "Saint Pierre en Miquelon",
+      "PN": "Pitcairneilanden",
+      "PR": "Puerto Rico",
+      "PS": "Palestijnse gebieden",
+      "PT": "Portugal",
+      "PW": "Palau",
+      "PY": "Paraguay",
+      "QA": "Qatar",
+      "QO": "Afgelegen Oceanië",
+      "RE": "Réunion",
+      "REST_OF_WORLD": "De rest van de wereld",
+      "RO": "Roemenië",
+      "RS": "Servië",
+      "RU": "Rusland",
+      "RW": "Rwanda",
+      "SA": "Saoedi-Arabië",
+      "SB": "Salomonseilanden",
+      "SC": "Seychellen",
+      "SD": "Soedan",
+      "SE": "Zweden",
+      "SG": "Singapore",
+      "SH": "Sint-Helena",
+      "SI": "Slovenië",
+      "SJ": "Spitsbergen en Jan Mayen",
+      "SK": "Slowakije",
+      "SL": "Sierra Leone",
+      "SM": "San Marino",
+      "SN": "Senegal",
+      "SO": "Somalië",
+      "SR": "Suriname",
+      "SS": "Zuid-Soedan",
+      "ST": "São Tomé en Principe",
+      "SV": "El Salvador",
+      "SX": "Sint-Maarten",
+      "SY": "Syrië",
+      "SZ": "Eswatini",
+      "TA": "Tristan da Cunha",
+      "TC": "Turks- en Caicoseilanden",
+      "TD": "Tsjaad",
+      "TF": "Franse Zuidelijke Gebieden",
+      "TG": "Togo",
+      "TH": "Thailand",
+      "TJ": "Tadzjikistan",
+      "TK": "Tokelau",
+      "TL": "Oost-Timor",
+      "TM": "Turkmenistan",
+      "TN": "Tunesië",
+      "TO": "Tonga",
+      "TR": "Turkije",
+      "TT": "Trinidad en Tobago",
+      "TV": "Tuvalu",
+      "TW": "Taiwan",
+      "TZ": "Tanzania",
+      "UA": "Oekraïne",
+      "UG": "Oeganda",
+      "UM": "Afgelegen eilanden van de Verenigde Staten",
+      "US": "Verenigde Staten",
+      "UY": "Uruguay",
+      "UZ": "Oezbekistan",
+      "VA": "Vaticaanstad",
+      "VC": "Saint Vincent en de Grenadines",
+      "VE": "Venezuela",
+      "VG": "Britse Maagdeneilanden",
+      "VI": "Amerikaanse Maagdeneilanden",
+      "VN": "Vietnam",
+      "VU": "Vanuatu",
+      "WF": "Wallis en Futuna",
+      "WS": "Samoa",
+      "XK": "Kosovo",
+      "YE": "Jemen",
+      "YT": "Mayotte",
+      "ZA": "Zuid-Afrika",
+      "ZM": "Zambia",
+      "ZW": "Zimbabwe"
+    }
+  }
+}

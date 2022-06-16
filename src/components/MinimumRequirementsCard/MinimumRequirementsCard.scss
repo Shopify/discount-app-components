@@ -1,0 +1,5 @@
+@import '../../styles/common';
+
+.TextField {
+  @include constrained-input;
+}

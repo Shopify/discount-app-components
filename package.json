@@ -1,0 +1,173 @@
+{
+  "name": "@shopify/discount-app-components-internal",
+  "description": "Shopify’s discounts component library",
+  "version": "0.12.0",
+  "private": true,
+  "author": "Shopify <dev@shopify.com>",
+  "repository": "https://github.com/Shopify/discount-app-components-internal",
+  "bugs": "https://github.com/Shopify/discount-app-components-internal/issues",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "files": [
+    "build/",
+    "!build/ts/**/*.tsbuildinfo",
+    "!build/ts/**/tests/",
+    "locales/"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss",
+    "**/configure.{js,mjs,esnext,ts}"
+  ],
+  "keywords": [
+    "shopify",
+    "discount-app-components-internal",
+    "react",
+    "components",
+    "component library"
+  ],
+  "main": "build/cjs/index.js",
+  "module": "build/esm/index.js",
+  "esnext": "build/esnext/index.esnext",
+  "types": "build/ts/latest/src/index.d.ts",
+  "typesVersions": {
+    "<4.0": {
+      "build/types/latest/*": [
+        "build/ts/3.4/*"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "scripts": {
+    "lint": "loom lint",
+    "format": "loom lint --fix",
+    "type-check": "loom type-check",
+    "test": "loom test",
+    "run-checks": "npm-run-all lint type-check test",
+    "clean": "rimraf build",
+    "build": "node ./scripts/build.js",
+    "prepublish": "npm-run-all clean build",
+    "bump-version": "node ./scripts/version-bumper.js",
+    "storybook": "yarn start-storybook"
+  },
+  "dependencies": {
+    "@shopify/admin-graphql-api-utilities": "^2.0.0",
+    "@shopify/dates": "^1.1.5",
+    "@shopify/polaris-icons": "^4.18.3",
+    "@shopify/react-hooks": "^2.1.18",
+    "@shopify/react-i18n": "^6.3.13",
+    "d3-time-format": "2.1.1",
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "@shopify/app-bridge": "^3.1.0",
+    "@shopify/app-bridge-react": "^3.1.0",
+    "@shopify/polaris": "^9.7.0",
+    "react": "^16.14.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.14.0 || ^17.0.0 || ^10.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-image": "^2.0.5",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "@rollup/pluginutils": "^3.1.0",
+    "@shopify/app-bridge": "^3.1.0",
+    "@shopify/app-bridge-react": "^3.1.0",
+    "@shopify/babel-preset": "^24.1.2",
+    "@shopify/browserslist-config": "^3.0.0",
+    "@shopify/eslint-plugin": "^41.2.0",
+    "@shopify/jest-dom-mocks": "^3.0.5",
+    "@shopify/loom": "^1.0.0",
+    "@shopify/loom-cli": "^1.0.0",
+    "@shopify/loom-plugin-build-library": "^1.0.0",
+    "@shopify/loom-plugin-eslint": "^2.0.0",
+    "@shopify/loom-plugin-prettier": "^2.0.0",
+    "@shopify/loom-plugin-stylelint": "^2.0.0",
+    "@shopify/polaris": "^9.7.0",
+    "@shopify/postcss-plugin": "^5.0.1",
+    "@shopify/prettier-config": "^1.1.2",
+    "@shopify/react-testing": "^3.2.4",
+    "@shopify/stylelint-plugin": "^11.0.0",
+    "@shopify/typescript-configs": "^5.0.0",
+    "@size-limit/preset-small-lib": "^5.0.3",
+    "@storybook/builder-webpack5": "^6.5.4",
+    "@storybook/manager-webpack5": "^6.5.4",
+    "@storybook/react": "^6.5.4",
+    "@types/d3-time-format": "^4.0.0",
+    "@types/lodash": "^4.14.181",
+    "@types/node": "^16.11.11",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-loader": "^8.1.0",
+    "chalk": "^2.4.2",
+    "change-case": "^3.1.0",
+    "copyfiles": "^2.1.1",
+    "downlevel-dts": "^0.6.0",
+    "eslint": "^8.3.0",
+    "glob": "^7.1.4",
+    "jest-location-mock": "^1.0.9",
+    "node-cmd": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.1",
+    "postcss-loader": "^4.2.0",
+    "postcss-modules": "^4.2.2",
+    "postcss-pxtorem": "^5.1.1",
+    "postcss-value-parser": "^4.2.0",
+    "prettier": "^2.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.0",
+    "sass": "^1.50.0",
+    "sass-loader": "^12.6.0",
+    "shelljs": "^0.8.3",
+    "size-limit": "^5.0.3",
+    "stylelint": "^14.1.0",
+    "svgo": "^1.3.0",
+    "typescript": "~4.3.5"
+  },
+  "browserslist": [
+    "last 3 chrome versions",
+    "last 3 firefox versions",
+    "last 3 opera versions",
+    "last 3 edge versions",
+    "last 3 safari versions",
+    "last 3 chromeandroid versions",
+    "last 1 firefoxandroid versions",
+    "ios >= 13.4"
+  ],
+  "prettier": "@shopify/prettier-config",
+  "stylelint": {
+    "extends": [
+      "@shopify/stylelint-plugin/prettier"
+    ]
+  },
+  "size-limit": [
+    {
+      "name": "cjs",
+      "path": "build/cjs/index.js",
+      "limit": "180 kB"
+    },
+    {
+      "name": "esm",
+      "path": "build/esm/index.js",
+      "limit": "105 kB"
+    },
+    {
+      "name": "esnext",
+      "path": "build/esnext/index.esnext",
+      "limit": "160 kB"
+    },
+    {
+      "name": "css",
+      "path": "build/esm/styles.css",
+      "limit": "45 kB"
+    }
+  ]
+}

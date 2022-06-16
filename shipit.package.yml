@@ -1,0 +1,7 @@
+ci:
+  require:
+    - buildkite/discount-app-components-internal
+
+deploy:
+  override:
+    - buildkite-trigger discount-app-components-internal-publish-package

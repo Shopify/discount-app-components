@@ -1,0 +1,542 @@
+{
+  "DiscountAppComponents": {
+    "SampleComponent": {
+      "content": "Đang kết xuất mẫu thành phần!",
+      "destructiveAction": "Nhấp để gửi nhật ký hoạt động điều khiển!!"
+    },
+    "SampleSubComponent": {
+      "content": "Đang kết xuất mẫu thành phần phụ!"
+    },
+    "ActiveDatesCard": {
+      "title": "Số ngày hoạt động",
+      "startDate": "Ngày bắt đầu",
+      "startTime": "Thời gian bắt đầu ({timezoneAbbreviation})",
+      "endDate": "Ngày kết thúc",
+      "endTime": "Thời gian kết thúc ({timezoneAbbreviation})",
+      "setEndDate": "Đặt ngày kết thúc"
+    },
+    "TimePicker": {
+      "timePlaceholder": "Nhập thời gian"
+    },
+    "DatePicker": {
+      "datePlaceholder": "DD-MM-YYYY",
+      "dateFormatError": "Ngày phải có định dạng DD-MM-YYYY"
+    },
+    "MethodCard": {
+      "methodSubtitle": "Phương thức",
+      "choiceList": {
+        "title": "Chọn tùy chọn phương thức",
+        "code": "Mã giảm giá",
+        "automatic": "Ưu đãi giảm giá tự động"
+      },
+      "discountClassLabel": {
+        "product": "Giảm giá sản phẩm",
+        "order": "Giảm giá cho đơn hàng",
+        "shipping": "Giảm giá vận chuyển"
+      },
+      "discountField": {
+        "label": "Tiêu đề",
+        "helpText": "Khách hàng sẽ thấy mục này trong giỏ hàng và khi thanh toán."
+      },
+      "pos": {
+        "description": "Ưu đãi giảm giá này sẽ khả dụng trên các kênh bán hàng trực tuyến.",
+        "checkboxLabel": "Ngoài ra còn khả dụng tại Điểm bán hàng (chỉ các địa điểm dùng POS Pro)"
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "Mã giảm giá",
+        "helpText": "Khách hàng phải nhập mã này lúc thanh toán."
+      },
+      "buttonText": "Tạo mã giảm giá"
+    },
+    "UsageLimitsCard": {
+      "title": "Giới hạn sử dụng",
+      "options": "Tùy chọn giới hạn sử dụng",
+      "totalUsageLimitLabel": "Giới hạn tổng số lần có thể sử dụng giảm giá này",
+      "oncePerCustomerLimitLabel": "Giới hạn mỗi khách hàng sử dụng một lần",
+      "totalUsageLimitHelpTextSubscription": "Gói đăng ký có nhiều khoản thanh toán sẽ được tính là một lần sử dụng."
+    },
+    "RecurringPayment": {
+      "title": "Khoản thanh toán định kỳ của gói đăng ký",
+      "options": "Tùy chọn khoản thanh toán định kỳ",
+      "firstPayment": "Giới hạn giảm giá cho lần thanh toán đầu tiên",
+      "multiplePayments": "Giới hạn giảm giá cho nhiều khoản thanh toán định kỳ",
+      "allPayments": "Giảm giá áp dụng cho tất cả các khoản thanh toán định kỳ",
+      "includesFirstPayment": "Bao gồm khoản thanh toán trên đơn hàng đầu tiên."
+    },
+    "MinimumRequirementsCard": {
+      "title": "Yêu cầu mua tối thiểu",
+      "none": "Không có yêu cầu tối thiểu",
+      "minimumSubtotal": "Số tiền mua tối thiểu ({currencySymbol})",
+      "minimumQuantity": "Số lượng mặt hàng tối thiểu",
+      "subscriptions": {
+        "appliesToCollections": "Chỉ áp dụng cho sản phẩm gói đăng ký trong một số bộ sưu tập nhất định.",
+        "appliesToProducts": "Chỉ áp dụng cho một số sản phẩm gói đăng ký nhất định.",
+        "appliesToAllProducts": "Chỉ áp dụng cho sản phẩm gói đăng ký."
+      },
+      "oneTime": {
+        "appliesToCollections": "Chỉ áp dụng cho một số bộ sưu tập nhất định.",
+        "appliesToProducts": "Chỉ áp dụng cho một số sản phẩm nhất định.",
+        "appliesToAllProducts": "Áp dụng cho tất cả sản phẩm."
+      }
+    },
+    "CombinationCard": {
+      "title": "Kết hợp",
+      "combinesWith": "Kết hợp với",
+      "discountNameFilled": "có thể kết hợp với:",
+      "discountNameNotFilled": "Ưu đãi giảm giá {discountClass} có thể kết hợp với:",
+      "options": {
+        "productLabelOther": "Giảm giá sản phẩm khác",
+        "productLabel": "Ưu đãi giảm giá sản phẩm",
+        "orderLabel": "Ưu đãi giảm giá đơn hàng",
+        "shippingLabel": "Ưu đãi giảm giá vận chuyển"
+      },
+      "newBadge": "Mới",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "Hiện không có ưu đãi giảm giá sản phẩm nào được thiết lập để kết hợp.",
+            "warning": {
+              "withproduct": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá sản phẩm kết hợp với các ưu đãi giảm giá sản phẩm.",
+              "withorder": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá sản phẩm kết hợp với các ưu đãi giảm giá đơn hàng.",
+              "withshipping": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá sản phẩm kết hợp với các ưu đãi giảm giá vận chuyển."
+            }
+          },
+          "order": {
+            "title": "Hiện không có ưu đãi giảm giá đơn hàng nào được thiết lập để kết hợp.",
+            "warning": {
+              "withproduct": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá đơn hàng kết hợp với các ưu đãi giảm giá sản phẩm.",
+              "withorder": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá đơn hàng kết hợp với các ưu đãi giảm giá đơn hàng.",
+              "withshipping": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá đơn hàng kết hợp với các ưu đãi giảm giá vận chuyển."
+            }
+          },
+          "shipping": {
+            "title": "Hiện không có ưu đãi giảm giá vận chuyển nào được thiết lập để kết hợp.",
+            "warning": {
+              "withproduct": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá vận chuyển kết hợp với các ưu đãi giảm giá sản phẩm.",
+              "withorder": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá vận chuyển kết hợp với các ưu đãi giảm giá đơn hàng.",
+              "withshipping": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá vận chuyển kết hợp với các ưu đãi giảm giá vận chuyển."
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count} ưu đãi giảm giá sản phẩm",
+              "other": "{count} ưu đãi giảm giá sản phẩm"
+            },
+            "order": {
+              "one": "{count} ưu đãi giảm giá đơn hàng",
+              "other": "{count} ưu đãi giảm giá đơn hàng"
+            },
+            "shipping": {
+              "one": "{count} ưu đãi giảm giá vận chuyển",
+              "other": "{count} ưu đãi giảm giá vận chuyển"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink} có thể được kết hợp trong cùng đơn mua. Nếu mặt hàng đủ điều kiện áp dụng nhiều ưu đãi giảm giá thì chỉ áp dụng ưu đãi giảm giá lớn nhất.",
+            "other": "{discountCountLink} có thể được kết hợp trong cùng đơn mua. Nếu mặt hàng đủ điều kiện áp dụng nhiều ưu đãi giảm giá thì chỉ áp dụng ưu đãi giảm giá lớn nhất."
+          }
+        }
+      },
+      "discountClass": {
+        "product": "sản phẩm",
+        "order": "đơn hàng",
+        "shipping": "vận chuyển"
+      }
+    },
+    "SummaryCard": {
+      "title": "Tóm tắt",
+      "details": "chi tiết",
+      "Header": {
+        "emptyState": {
+          "Code": "Chưa có mã giảm giá nào.",
+          "Automatic": "Chưa có tiêu đề nào."
+        },
+        "badge": {
+          "active": "Đang hoạt động",
+          "expired": "Đã hết hạn",
+          "scheduled": "Đã lên lịch"
+        },
+        "typeAndMethod": "loại và phương pháp",
+        "discountMethod": {
+          "Code": "Mã",
+          "Automatic": "Tự động"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "Áp dụng cho các đơn mua gói đăng ký",
+        "appliesToPurchaseTypeOneTime": "Áp dụng cho đơn mua một lần",
+        "appliesToPurchaseTypeBoth": "Áp dụng cho gói đăng ký và đơn mua một lần"
+      },
+      "ActiveDates": {
+        "today": "hôm nay",
+        "activeSingleDate": "Có hiệu lực vào {date}",
+        "activeFromDate": "Có hiệu lực từ {date}",
+        "activeFromTodayUntilDate": "Có hiệu lực từ hôm nay đến {date}",
+        "activeFromDateToDate": "Có hiệu lực từ {startDate} đến {endDate}"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "Khả dụng trên các kênh bán hàng trực tuyến và Point of Sale",
+        "availableOnCheckoutOnly": "Khả dụng trên các kênh bán hàng trực tuyến"
+      },
+      "Combinations": {
+        "cannotCombine": "Không thể kết hợp với các ưu đãi giảm giá khác",
+        "combinesWithOne": {
+          "product": "Kết hợp với ưu đãi giảm giá sản phẩm",
+          "order": "Kết hợp với ưu đãi giảm giá đơn hàng",
+          "shipping": "Kết hợp với ưu đãi giảm giá vận chuyển"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "Kết hợp với ưu đãi giảm giá sản phẩm và đơn hàng",
+          "productAndShipping": "Kết hợp với ưu đãi giảm giá sản phẩm và vận chuyển",
+          "orderAndShipping": "Kết hợp với ưu đãi giảm giá đơn hàng và vận chuyển"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "Tất cả khách hàng",
+        "customers": {
+          "one": "Dành cho {customerName}",
+          "other": "Dành cho {count} khách hàng"
+        },
+        "customerSegments": {
+          "one": "Dành cho {segmentName}",
+          "other": "Dành cho {count} phân khúc khách hàng"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "Mua tối thiểu {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "Mua tối thiểu {count} mặt hàng",
+          "other": "Mua tối thiểu {count} mặt hàng"
+        },
+        "noMinimumPurchaseRequirement": "Không có yêu cầu mua tối thiểu"
+      },
+      "Performance": {
+        "title": "Hiệu suất",
+        "notActive": "Giảm giá chưa được kích hoạt.",
+        "performanceLink": "Xem báo cáo doanh số theo ưu đãi giảm giá",
+        "usageCount": "Đã sử dụng {usageCount}",
+        "totalSales": "{totalSales} trong tổng doanh số"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "Áp dụng cho phí vận chuyển dưới {value}"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "Dành cho tất cả các khoản thanh toán định kỳ",
+          "one": "Giới hạn với {count} khoản thanh toán định kỳ",
+          "other": "Giới hạn với {count} khoản thanh toán định kỳ"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "Dành cho tất cả các quốc gia",
+        "forSpecificCountry": "Dành cho {countryName}",
+        "forNumberOfCountries": "Dành cho {numberOfCountries} quốc gia"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "Mỗi khách hàng sử dụng một lần",
+        "totalUsageLimit": {
+          "one": "Giới hạn {count} lần sử dụng",
+          "other": "Giới hạn {count} lần sử dụng"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "Giới hạn {count} lần sử dụng, mỗi khách hàng sử dụng một lần",
+          "other": "Giới hạn {count} lần sử dụng, mỗi khách hàng sử dụng một lần"
+        },
+        "noUsageLimits": "Không có giới hạn sử dụng"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "Tư cách hợp lệ của khách hàng",
+      "everyone": "Tất cả khách hàng",
+      "customerSegments": "Phân khúc khách hàng cụ thể",
+      "customers": "Các khách hàng cụ thể"
+    },
+    "CountriesAndRatesCard": {
+      "title": "Quốc gia",
+      "choiceList": {
+        "title": "Quốc gia và mức phí",
+        "all": "Tất cả các quốc gia",
+        "selected": "Các quốc gia cụ thể"
+      },
+      "excludeShippingRatesSection": {
+        "title": "Phí vận chuyển",
+        "checkboxLabel": "Không bao gồm phí vận chuyển trên một số tiền nhất định"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "Loại đơn mua",
+      "choiceList": {
+        "title": "Loại đơn mua",
+        "oneTimePurchase": "Đơn mua một lần",
+        "subscription": "Gói đăng ký",
+        "both": "Cả hai"
+      }
+    },
+    "Countries": {
+      "AC": "Đảo Ascension",
+      "AD": "Andorra",
+      "AE": "Các tiểu Vương quốc Ả Rập thống nhất",
+      "AF": "Afghanistan",
+      "AG": "Antigua và Barbuda",
+      "AI": "Anguilla",
+      "AL": "Albania",
+      "AM": "Armenia",
+      "AN": "Antille thuộc Hà Lan",
+      "AO": "Angola",
+      "AQ": "Nam Cực",
+      "AR": "Argentina",
+      "AS": "Samoa thuộc Mỹ",
+      "AT": "Áo",
+      "AU": "Úc",
+      "AW": "Aruba",
+      "AX": "Quần đảo Åland",
+      "AZ": "Azerbaijan",
+      "BA": "Bosnia và Herzegovina",
+      "BB": "Barbados",
+      "BD": "Bangladesh",
+      "BE": "Bỉ",
+      "BF": "Burkina Faso",
+      "BG": "Bulgaria",
+      "BH": "Bahrain",
+      "BI": "Burundi",
+      "BJ": "Benin",
+      "BL": "St. Barthélemy",
+      "BM": "Bermuda",
+      "BN": "Brunei",
+      "BO": "Bolivia",
+      "BQ": "Caribe thuộc Hà Lan",
+      "BR": "Brazil",
+      "BS": "Bahamas",
+      "BT": "Bhutan",
+      "BV": "Đảo Bouvet",
+      "BW": "Botswana",
+      "BY": "Belarus",
+      "BZ": "Belize",
+      "CA": "Canada",
+      "CC": "Quần đảo Cocos (Keeling)",
+      "CD": "Congo - Kinshasa",
+      "CF": "Cộng hòa Trung Phi",
+      "CG": "Congo - Brazzaville",
+      "CH": "Thụy Sĩ",
+      "CI": "Côte d’Ivoire",
+      "CK": "Đảo Cook",
+      "CL": "Chile",
+      "CM": "Cameroon",
+      "CN": "Trung Quốc",
+      "CO": "Colombia",
+      "CP": "Đảo Clipperton",
+      "CR": "Costa Rica",
+      "CU": "Cuba",
+      "CV": "Cape Verde",
+      "CW": "Curaçao",
+      "CX": "Đảo Giáng Sinh",
+      "CY": "Cyprus",
+      "CZ": "Cộng hòa Séc",
+      "DE": "Đức",
+      "DG": "Diego Garcia",
+      "DJ": "Djibouti",
+      "DK": "Đan Mạch",
+      "DM": "Dominica",
+      "DO": "Cộng hòa Dominica",
+      "DZ": "Algeria",
+      "EA": "Ceuta và Melilla",
+      "EC": "Ecuador",
+      "EE": "Estonia",
+      "EG": "Ai Cập",
+      "EH": "Tây Sahara",
+      "ER": "Eritrea",
+      "ES": "Tây Ban Nha",
+      "ET": "Ethiopia",
+      "EU": "Liên minh châu Âu",
+      "FI": "Phần Lan",
+      "FJ": "Fiji",
+      "FK": "Quần đảo Falkland",
+      "FM": "Micronesia",
+      "FO": "Quần đảo Faroe",
+      "FR": "Pháp",
+      "GA": "Gabon",
+      "GB": "Vương quốc Anh",
+      "GD": "Grenada",
+      "GE": "Georgia",
+      "GF": "Guiana thuộc Pháp",
+      "GG": "Guernsey",
+      "GH": "Ghana",
+      "GI": "Gibraltar",
+      "GL": "Greenland",
+      "GM": "Gambia",
+      "GN": "Guinea",
+      "GP": "Guadeloupe",
+      "GQ": "Equatorial Guinea",
+      "GR": "Hy Lạp",
+      "GS": "Nam Georgia và Quần đảo Nam Sandwich",
+      "GT": "Guatemala",
+      "GU": "Guam",
+      "GW": "Guinea-Bissau",
+      "GY": "Guyana",
+      "HK": "(Đặc khu hành chính) Hồng Kông Trung Quốc",
+      "HM": "Đảo Heard và Quần đảo McDonald",
+      "HN": "Honduras",
+      "HR": "Croatia",
+      "HT": "Haiti",
+      "HU": "Hungary",
+      "IC": "Quần đảo Canary",
+      "ID": "Indonesia",
+      "IE": "Ireland",
+      "IL": "Israel",
+      "IM": "Đảo Man",
+      "IN": "Ấn Độ",
+      "IO": "Lãnh thổ Ấn Độ Dương thuộc Anh",
+      "IQ": "Iraq",
+      "IR": "Iran",
+      "IS": "Iceland",
+      "IT": "Ý",
+      "JE": "Jersey",
+      "JM": "Jamaica",
+      "JO": "Jordan",
+      "JP": "Nhật Bản",
+      "KE": "Kenya",
+      "KG": "Kyrgyzstan",
+      "KH": "Cam-pu-chia",
+      "KI": "Kiribati",
+      "KM": "Comoros",
+      "KN": "St. Kitts và Nevis",
+      "KP": "Triều Tiên",
+      "KR": "Hàn Quốc",
+      "KW": "Kuwait",
+      "KY": "Quần đảo Cayman",
+      "KZ": "Kazakhstan",
+      "LA": "Lào",
+      "LB": "Lebanon",
+      "LC": "St. Lucia",
+      "LI": "Liechtenstein",
+      "LK": "Sri Lanka",
+      "LR": "Liberia",
+      "LS": "Lesotho",
+      "LT": "Lithuania",
+      "LU": "Luxembourg",
+      "LV": "Latvia",
+      "LY": "Libya",
+      "MA": "Morocco",
+      "MC": "Monaco",
+      "MD": "Moldova",
+      "ME": "Montenegro",
+      "MF": "St. Martin",
+      "MG": "Madagascar",
+      "MH": "Quần đảo Marshall",
+      "MK": "Macedonia",
+      "ML": "Mali",
+      "MM": "Myanmar (Burma)",
+      "MN": "Mông Cổ",
+      "MO": "Ma-cao Trung Quốc",
+      "MP": "Quần đảo Bắc Mariana",
+      "MQ": "Martinique",
+      "MR": "Mauritania",
+      "MS": "Montserrat",
+      "MT": "Malta",
+      "MU": "Mauritius",
+      "MV": "Maldives",
+      "MW": "Malawi",
+      "MX": "Mexico",
+      "MY": "Malaysia",
+      "MZ": "Mozambique",
+      "NA": "Namibia",
+      "NC": "New Caledonia",
+      "NE": "Niger",
+      "NF": "Đảo Norfolk",
+      "NG": "Nigeria",
+      "NI": "Nicaragua",
+      "NL": "Hà Lan",
+      "NO": "Na Uy",
+      "NP": "Nepal",
+      "NR": "Nauru",
+      "NU": "Niue",
+      "NZ": "New Zealand",
+      "OM": "Oman",
+      "PA": "Panama",
+      "PE": "Peru",
+      "PF": "Polynesia thuộc Pháp",
+      "PG": "Papua New Guinea",
+      "PH": "Philippines",
+      "PK": "Pakistan",
+      "PL": "Ba Lan",
+      "PM": "St. Pierre và Miquelon",
+      "PN": "Quần đảo Pitcairn",
+      "PR": "Puerto Rico",
+      "PS": "Các lãnh thổ thuộc Palestine",
+      "PT": "Bồ Đào Nha",
+      "PW": "Palau",
+      "PY": "Paraguay",
+      "QA": "Qatar",
+      "QO": "Vùng xa xôi thuộc Châu Đại Dương",
+      "RE": "Réunion",
+      "REST_OF_WORLD": "Các khu vực còn lại trên thế giới",
+      "RO": "Romania",
+      "RS": "Serbia",
+      "RU": "Nga",
+      "RW": "Rwanda",
+      "SA": "Ả Rập Xê-út",
+      "SB": "Quần đảo Solomon",
+      "SC": "Seychelles",
+      "SD": "Sudan",
+      "SE": "Thụy Điển",
+      "SG": "Singapore",
+      "SH": "St. Helena",
+      "SI": "Slovenia",
+      "SJ": "Svalbard và Jan Mayen",
+      "SK": "Slovakia",
+      "SL": "Sierra Leone",
+      "SM": "San Marino",
+      "SN": "Senegal",
+      "SO": "Somalia",
+      "SR": "Suriname",
+      "SS": "Nam Sudan",
+      "ST": "São Tomé và Príncipe",
+      "SV": "El Salvador",
+      "SX": "Saint Martin",
+      "SY": "Syria",
+      "SZ": "Eswatini",
+      "TA": "Tristan da Cunha",
+      "TC": "Quần đảo Turks và Caicos",
+      "TD": "Chad",
+      "TF": "Vùng lãnh thổ phía Nam thuộc Pháp",
+      "TG": "Togo",
+      "TH": "Thái Lan",
+      "TJ": "Tajikistan",
+      "TK": "Tokelau",
+      "TL": "Timor-Leste",
+      "TM": "Turkmenistan",
+      "TN": "Tunisia",
+      "TO": "Tonga",
+      "TR": "Thổ Nhĩ Kỳ",
+      "TT": "Trinidad và Tobago",
+      "TV": "Tuvalu",
+      "TW": "Đài Loan",
+      "TZ": "Tanzania",
+      "UA": "Ukraine",
+      "UG": "Uganda",
+      "UM": "Các tiểu đảo xa của Hoa Kỳ",
+      "US": "Hoa Kỳ",
+      "UY": "Uruguay",
+      "UZ": "Uzbekistan",
+      "VA": "Thành quốc Vatican",
+      "VC": "St. Vincent và Grenadines",
+      "VE": "Venezuela",
+      "VG": "Quần đảo Virgin thuộc Anh",
+      "VI": "Quần đảo Virgin thuộc Hoa Kỳ",
+      "VN": "Việt Nam",
+      "VU": "Vanuatu",
+      "WF": "Wallis và Futuna",
+      "WS": "Samoa",
+      "XK": "Kosovo",
+      "YE": "Yemen",
+      "YT": "Mayotte",
+      "ZA": "Nam Phi",
+      "ZM": "Zambia",
+      "ZW": "Zimbabwe"
+    }
+  }
+}

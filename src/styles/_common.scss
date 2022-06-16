@@ -1,0 +1,5 @@
+$max-input-width: 150px;
+
+@mixin constrained-input() {
+  max-width: $max-input-width;
+}

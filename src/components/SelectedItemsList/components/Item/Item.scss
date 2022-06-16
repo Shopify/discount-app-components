@@ -1,0 +1,24 @@
+$close-btn-size: 20px;
+
+.Item {
+  padding: var(--p-space-4) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    border-bottom: var(--p-border-divider);
+  }
+}
+
+.Content {
+  flex: 1 1 auto;
+  padding: var(--p-space-1);
+  max-width: calc(100% - $close-btn-size);
+  overflow: hidden;
+}
+
+.Actions {
+  flex: 0 0 $close-btn-size;
+  height: $close-btn-size;
+}

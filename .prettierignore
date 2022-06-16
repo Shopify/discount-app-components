@@ -1,0 +1,5 @@
+node_modules
+/.loom
+/build
+/package.json
+loom.config.ts

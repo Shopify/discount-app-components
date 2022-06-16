@@ -1,0 +1,542 @@
+{
+  "DiscountAppComponents": {
+    "SampleComponent": {
+      "content": "Örnek bileşen işleniyor.",
+      "destructiveAction": "Konsol günlüğü tetiklemek için tıklayın."
+    },
+    "SampleSubComponent": {
+      "content": "Örnek alt bileşen işleniyor."
+    },
+    "ActiveDatesCard": {
+      "title": "Etkin Tarihler",
+      "startDate": "Başlangıç tarihi",
+      "startTime": "Başlangıç saati ({timezoneAbbreviation})",
+      "endDate": "Bitiş tarihi",
+      "endTime": "Bitiş saati ({timezoneAbbreviation})",
+      "setEndDate": "Bitiş tarihini ayarla"
+    },
+    "TimePicker": {
+      "timePlaceholder": "Saat girin"
+    },
+    "DatePicker": {
+      "datePlaceholder": "YYYY-AA-GG",
+      "dateFormatError": "Tarih, YYYY-AA-GG olarak biçimlendirilmelidir"
+    },
+    "MethodCard": {
+      "methodSubtitle": "Yöntem",
+      "choiceList": {
+        "title": "Yöntem seçeneklerini belirleyin",
+        "code": "İndirim kodu",
+        "automatic": "Otomatik indirim"
+      },
+      "discountClassLabel": {
+        "product": "Ürün indirimi",
+        "order": "Sipariş indirimi",
+        "shipping": "Kargo indirimi"
+      },
+      "discountField": {
+        "label": "Başlık",
+        "helpText": "Müşteriler indirimi sepetlerinde ve ödeme sayfasında görür."
+      },
+      "pos": {
+        "description": "Bu indirim, online satış kanallarında kullanılabilir.",
+        "checkboxLabel": "Ayrıca Point of Sale'de sun (yalnızca POS Pro konumları)"
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "İndirim kodu",
+        "helpText": "Müşteriler, ödeme sırasında bu kodu girmelidir."
+      },
+      "buttonText": "İndirim kodu oluştur"
+    },
+    "UsageLimitsCard": {
+      "title": "Kullanım sınırları",
+      "options": "Kullanım sınırı seçenekleri",
+      "totalUsageLimitLabel": "Bu indirimin toplamda kaç kez kullanılabileceğini sınırlayın",
+      "oncePerCustomerLimitLabel": "Müşteri başına tek kullanımla sınırlayın",
+      "totalUsageLimitHelpTextSubscription": "Birçok ödeme içeren bir abonelik, tek kullanım olarak sayılır."
+    },
+    "RecurringPayment": {
+      "title": "Aboneliklere yönelik yinelenen ödemeler",
+      "options": "Yinelenen ödeme seçenekleri",
+      "firstPayment": "İndirimi ilk ödemeyle sınırlayın",
+      "multiplePayments": "İndirimi birden fazla yinelenen ödemeyle sınırlayın",
+      "allPayments": "İndirim tüm yinelenen ödemeler için geçerlidir",
+      "includesFirstPayment": "İlk siparişte ödemeyi içerir."
+    },
+    "MinimumRequirementsCard": {
+      "title": "Minimum satın alım gereklilikleri",
+      "none": "Minimum gereklilik yok",
+      "minimumSubtotal": "Minimum satın alım tutarı ({currencySymbol})",
+      "minimumQuantity": "Minimum ürün adedi",
+      "subscriptions": {
+        "appliesToCollections": "Yalnızca seçili koleksiyonlardaki abonelik ürünleri için geçerlidir.",
+        "appliesToProducts": "Yalnızca seçili abonelik ürünleri için geçerlidir.",
+        "appliesToAllProducts": "Yalnızca abonelik ürünleri için geçerlidir."
+      },
+      "oneTime": {
+        "appliesToCollections": "Yalnızca seçili koleksiyonlar için geçerlidir.",
+        "appliesToProducts": "Yalnızca seçili ürünler için geçerlidir.",
+        "appliesToAllProducts": "Tüm ürünler için geçerlidir."
+      }
+    },
+    "CombinationCard": {
+      "title": "Kombinasyonlar",
+      "combinesWith": "Şununla birleştirilir:",
+      "discountNameFilled": "şununla bileştirilebilir:",
+      "discountNameNotFilled": "Bu {discountClass} indirimi şununla birleştirilebilir:",
+      "options": {
+        "productLabelOther": "Diğer ürün indirimleri",
+        "productLabel": "Ürün indirimleri",
+        "orderLabel": "Sipariş indirimleri",
+        "shippingLabel": "Kargo indirimleri"
+      },
+      "newBadge": "Yeni",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "Şu anda birleştirilmek üzere ayarlanmış ürün indirimi yok.",
+            "warning": {
+              "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın.",
+              "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın.",
+              "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın."
+            }
+          },
+          "order": {
+            "title": "Şu anda birleştirilmek üzere ayarlanmış sipariş indirimi yok.",
+            "warning": {
+              "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın.",
+              "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın.",
+              "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın."
+            }
+          },
+          "shipping": {
+            "title": "Şu anda birleştirilmek üzere ayarlanmış kargo indirimi yok.",
+            "warning": {
+              "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
+              "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
+              "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın."
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "{count} ürün indirimi",
+              "other": "{count} ürün indirimi"
+            },
+            "order": {
+              "one": "{count} sipariş indirimi",
+              "other": "{count} sipariş indirimi"
+            },
+            "shipping": {
+              "one": "{count} kargo indirimi",
+              "other": "{count} kargo indirimi"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır.",
+            "other": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
+          }
+        }
+      },
+      "discountClass": {
+        "product": "ürün",
+        "order": "sipariş",
+        "shipping": "kargo"
+      }
+    },
+    "SummaryCard": {
+      "title": "Özet",
+      "details": "ayrıntılar",
+      "Header": {
+        "emptyState": {
+          "Code": "Henüz indirim kodu yok.",
+          "Automatic": "Henüz başlık yok."
+        },
+        "badge": {
+          "active": "Etkin",
+          "expired": "Süresi sona ermiş",
+          "scheduled": "Planlanmış"
+        },
+        "typeAndMethod": "tür ve yöntem",
+        "discountMethod": {
+          "Code": "Kod",
+          "Automatic": "Otomatik"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "Abonelik satın alımları için geçerlidir",
+        "appliesToPurchaseTypeOneTime": "Tek seferlik satın alımlar için geçerlidir",
+        "appliesToPurchaseTypeBoth": "Abonelik satın alımları ve tek seferlik satın alımlar için geçerlidir"
+      },
+      "ActiveDates": {
+        "today": "bugün",
+        "activeSingleDate": "{date} tarihinde etkin",
+        "activeFromDate": "{date} tarihinden itibaren etkin",
+        "activeFromTodayUntilDate": "Bugünden {date} tarihine kadar etkin",
+        "activeFromDateToDate": "{startDate} tarihinden {endDate} tarihine kadar etkin"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "Online satış kanallarında ve Point of Sale'de kullanılabilir",
+        "availableOnCheckoutOnly": "Online satış kanallarında kullanılabilir"
+      },
+      "Combinations": {
+        "cannotCombine": "Diğer indirimlerle birleştirilemez",
+        "combinesWithOne": {
+          "product": "Ürün indirimleriyle birleştirilebilir",
+          "order": "Sipariş indirimleriyle birleştirilebilir",
+          "shipping": "Kargo indirimleriyle birleştirilebilir"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "Ürün ve sipariş indirimleriyle birleştirilebilir",
+          "productAndShipping": "Ürün ve kargo indirimleriyle birleştirilebilir",
+          "orderAndShipping": "Sipariş ve kargo indirimleriyle birleştirilebilir"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "Tüm müşteriler",
+        "customers": {
+          "one": "{customerName} için",
+          "other": "{count} müşteri için"
+        },
+        "customerSegments": {
+          "one": "{segmentName} için",
+          "other": "{count} müşteri segmenti için"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "Minimum {subtotal} tutarında satın alım",
+        "minimumPurchaseQuantity": {
+          "one": "Minimum {count} ürün satın alımı",
+          "other": "Minimum {count} ürün satın alımı"
+        },
+        "noMinimumPurchaseRequirement": "Minimum satın alım gerekliliği yok"
+      },
+      "Performance": {
+        "title": "Performans",
+        "notActive": "İndirim henüz etkin değil.",
+        "performanceLink": "İndirime göre satışlar raporunu görüntüleyin",
+        "usageCount": "{usageCount} kullanıldı",
+        "totalSales": "Toplam satışta {totalSales}"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "{value} altındaki kargo ücretleri için geçerlidir"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "Tüm yinelenen ödemeler için",
+          "one": "{count} yinelenen ödeme ile sınırlıdır",
+          "other": "{count} yinelenen ödeme ile sınırlıdır"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "Tüm ülkeler için",
+        "forSpecificCountry": "{countryName} için",
+        "forNumberOfCountries": "{numberOfCountries} ülke için"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "Müşteri başına bir kullanım",
+        "totalUsageLimit": {
+          "one": "{count} kez kullanım sınırı",
+          "other": "{count} kez kullanım sınırı"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "Müşteri başına bir kez olmak üzere, {count} kez kullanım sınırı",
+          "other": "Müşteri başına bir kez olmak üzere, {count} kez kullanım sınırı"
+        },
+        "noUsageLimits": "Kullanım sınırı yok"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "Müşteri uygunluğu",
+      "everyone": "Tüm müşteriler",
+      "customerSegments": "Belirli müşteri segmentleri",
+      "customers": "Belirli müşteriler"
+    },
+    "CountriesAndRatesCard": {
+      "title": "Ülkeler",
+      "choiceList": {
+        "title": "Ülkeler ve ücretler",
+        "all": "Tüm ülkeler",
+        "selected": "Belirli ülkeler"
+      },
+      "excludeShippingRatesSection": {
+        "title": "Kargo ücretleri",
+        "checkboxLabel": "Belirli bir tutarın üzerindeki kargo ücretlerini hariç tut"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "Satın alım türü",
+      "choiceList": {
+        "title": "Satın alım türü",
+        "oneTimePurchase": "Tek seferlik satın alım",
+        "subscription": "Abonelik",
+        "both": "Her ikisi"
+      }
+    },
+    "Countries": {
+      "AC": "Ascension Adası",
+      "AD": "Andorra",
+      "AE": "Birleşik Arap Emirlikleri",
+      "AF": "Afganistan",
+      "AG": "Antigua ve Barbuda",
+      "AI": "Anguilla",
+      "AL": "Arnavutluk",
+      "AM": "Ermenistan",
+      "AN": "Hollanda Antilleri",
+      "AO": "Angola",
+      "AQ": "Antarktika",
+      "AR": "Arjantin",
+      "AS": "Amerikan Samoası",
+      "AT": "Avusturya",
+      "AU": "Avustralya",
+      "AW": "Aruba",
+      "AX": "Åland Adaları",
+      "AZ": "Azerbaycan",
+      "BA": "Bosna-Hersek",
+      "BB": "Barbados",
+      "BD": "Bangladeş",
+      "BE": "Belçika",
+      "BF": "Burkina Faso",
+      "BG": "Bulgaristan",
+      "BH": "Bahreyn",
+      "BI": "Burundi",
+      "BJ": "Benin",
+      "BL": "Saint Barthélemy",
+      "BM": "Bermuda",
+      "BN": "Brunei",
+      "BO": "Bolivya",
+      "BQ": "Hollanda Karayipleri",
+      "BR": "Brezilya",
+      "BS": "Bahamalar",
+      "BT": "Butan",
+      "BV": "Bouvet Adası",
+      "BW": "Botsvana",
+      "BY": "Belarus",
+      "BZ": "Belize",
+      "CA": "Kanada",
+      "CC": "Cocos (Keeling) Adaları",
+      "CD": "Kongo - Kinşasa",
+      "CF": "Orta Afrika Cumhuriyeti",
+      "CG": "Kongo - Brazzaville",
+      "CH": "İsviçre",
+      "CI": "Fildişi Sahili",
+      "CK": "Cook Adaları",
+      "CL": "Şili",
+      "CM": "Kamerun",
+      "CN": "Çin",
+      "CO": "Kolombiya",
+      "CP": "Clipperton Adası",
+      "CR": "Kosta Rika",
+      "CU": "Küba",
+      "CV": "Cape Verde",
+      "CW": "Curaçao",
+      "CX": "Christmas Adası",
+      "CY": "Kıbrıs Rum Kesimi",
+      "CZ": "Çek Cumhuriyeti",
+      "DE": "Almanya",
+      "DG": "Diego Garcia",
+      "DJ": "Cibuti",
+      "DK": "Danimarka",
+      "DM": "Dominika",
+      "DO": "Dominik Cumhuriyeti",
+      "DZ": "Cezayir",
+      "EA": "Ceuta ve Melilla",
+      "EC": "Ekvador",
+      "EE": "Estonya",
+      "EG": "Mısır",
+      "EH": "Batı Sahra",
+      "ER": "Eritrea",
+      "ES": "İspanya",
+      "ET": "Etiyopya",
+      "EU": "Avrupa Birliği",
+      "FI": "Finlandiya",
+      "FJ": "Fiji",
+      "FK": "Falkland Adaları",
+      "FM": "Mikronezya",
+      "FO": "Faroe Adaları",
+      "FR": "Fransa",
+      "GA": "Gabon",
+      "GB": "Birleşik Krallık",
+      "GD": "Grenada",
+      "GE": "Gürcistan",
+      "GF": "Fransız Guyanası",
+      "GG": "Guernsey",
+      "GH": "Gana",
+      "GI": "Cebelitarık",
+      "GL": "Grönland",
+      "GM": "Gambiya",
+      "GN": "Gine",
+      "GP": "Guadeloupe",
+      "GQ": "Ekvator Ginesi",
+      "GR": "Yunanistan",
+      "GS": "Güney Georgia ve Güney Sandwich Adaları",
+      "GT": "Guatemala",
+      "GU": "Guam",
+      "GW": "Gine-Bissau",
+      "GY": "Guyana",
+      "HK": "Hong Kong Çin Özel Yönetim Bölgesi",
+      "HM": "Heard ve McDonald Adaları",
+      "HN": "Honduras",
+      "HR": "Hırvatistan",
+      "HT": "Haiti",
+      "HU": "Macaristan",
+      "IC": "Kanarya Adaları",
+      "ID": "Endonezya",
+      "IE": "İrlanda",
+      "IL": "İsrail",
+      "IM": "Man Adası",
+      "IN": "Hindistan",
+      "IO": "Britanya Hint Okyanusu Toprakları",
+      "IQ": "Irak",
+      "IR": "İran",
+      "IS": "İzlanda",
+      "IT": "İtalya",
+      "JE": "Jersey",
+      "JM": "Jamaika",
+      "JO": "Ürdün",
+      "JP": "Japonya",
+      "KE": "Kenya",
+      "KG": "Kırgızistan",
+      "KH": "Kamboçya",
+      "KI": "Kiribati",
+      "KM": "Komorlar",
+      "KN": "Saint Kitts ve Nevis",
+      "KP": "Kuzey Kore",
+      "KR": "Güney Kore",
+      "KW": "Kuveyt",
+      "KY": "Cayman Adaları",
+      "KZ": "Kazakistan",
+      "LA": "Laos",
+      "LB": "Lübnan",
+      "LC": "Saint Lucia",
+      "LI": "Lihtenştayn",
+      "LK": "Sri Lanka",
+      "LR": "Liberya",
+      "LS": "Lesotho",
+      "LT": "Litvanya",
+      "LU": "Lüksemburg",
+      "LV": "Letonya",
+      "LY": "Libya",
+      "MA": "Fas",
+      "MC": "Monako",
+      "MD": "Moldova",
+      "ME": "Karadağ",
+      "MF": "Saint Martin",
+      "MG": "Madagaskar",
+      "MH": "Marshall Adaları",
+      "MK": "Makedonya",
+      "ML": "Mali",
+      "MM": "Myanmar (Burma)",
+      "MN": "Moğolistan",
+      "MO": "Makao Çin Özel Yönetim Bölgesi",
+      "MP": "Kuzey Mariana Adaları",
+      "MQ": "Martinik",
+      "MR": "Moritanya",
+      "MS": "Montserrat",
+      "MT": "Malta",
+      "MU": "Mauritius",
+      "MV": "Maldivler",
+      "MW": "Malavi",
+      "MX": "Meksika",
+      "MY": "Malezya",
+      "MZ": "Mozambik",
+      "NA": "Namibya",
+      "NC": "Yeni Kaledonya",
+      "NE": "Nijer",
+      "NF": "Norfolk Adası",
+      "NG": "Nijerya",
+      "NI": "Nikaragua",
+      "NL": "Hollanda",
+      "NO": "Norveç",
+      "NP": "Nepal",
+      "NR": "Nauru",
+      "NU": "Niue",
+      "NZ": "Yeni Zelanda",
+      "OM": "Umman",
+      "PA": "Panama",
+      "PE": "Peru",
+      "PF": "Fransız Polinezyası",
+      "PG": "Papua Yeni Gine",
+      "PH": "Filipinler",
+      "PK": "Pakistan",
+      "PL": "Polonya",
+      "PM": "Saint Pierre ve Miquelon",
+      "PN": "Pitcairn Adaları",
+      "PR": "Porto Riko",
+      "PS": "Filistin",
+      "PT": "Portekiz",
+      "PW": "Palau",
+      "PY": "Paraguay",
+      "QA": "Katar",
+      "QO": "Dış Okyanusya",
+      "RE": "Réunion",
+      "REST_OF_WORLD": "Dünyanın geri kalanı",
+      "RO": "Romanya",
+      "RS": "Sırbistan",
+      "RU": "Rusya",
+      "RW": "Ruanda",
+      "SA": "Suudi Arabistan",
+      "SB": "Solomon Adaları",
+      "SC": "Seyşeller",
+      "SD": "Sudan",
+      "SE": "İsveç",
+      "SG": "Singapur",
+      "SH": "Saint Helena",
+      "SI": "Slovenya",
+      "SJ": "Svalbard ve Jan Mayen",
+      "SK": "Slovakya",
+      "SL": "Sierra Leone",
+      "SM": "San Marino",
+      "SN": "Senegal",
+      "SO": "Somali",
+      "SR": "Surinam",
+      "SS": "Güney Sudan",
+      "ST": "São Tomé ve Príncipe",
+      "SV": "El Salvador",
+      "SX": "Saint Martin",
+      "SY": "Suriye",
+      "SZ": "Esvatini",
+      "TA": "Tristan da Cunha",
+      "TC": "Turks ve Caicos Adaları",
+      "TD": "Çad",
+      "TF": "Fransız Güney Toprakları",
+      "TG": "Togo",
+      "TH": "Tayland",
+      "TJ": "Tacikistan",
+      "TK": "Tokelau",
+      "TL": "Doğu Timor",
+      "TM": "Türkmenistan",
+      "TN": "Tunus",
+      "TO": "Tonga",
+      "TR": "Türkiye",
+      "TT": "Trinidad ve Tobago",
+      "TV": "Tuvalu",
+      "TW": "Tayvan",
+      "TZ": "Tanzanya",
+      "UA": "Ukrayna",
+      "UG": "Uganda",
+      "UM": "ABD Küçük Dış Adaları",
+      "US": "ABD",
+      "UY": "Uruguay",
+      "UZ": "Özbekistan",
+      "VA": "Vatikan",
+      "VC": "Saint Vincent ve Grenadinler",
+      "VE": "Venezuela",
+      "VG": "Britanya Virjin Adaları",
+      "VI": "ABD Virjin Adaları",
+      "VN": "Vietnam",
+      "VU": "Vanuatu",
+      "WF": "Wallis ve Futuna",
+      "WS": "Samoa",
+      "XK": "Kosova",
+      "YE": "Yemen",
+      "YT": "Mayotte",
+      "ZA": "Güney Afrika",
+      "ZM": "Zambiya",
+      "ZW": "Zimbabve"
+    }
+  }
+}

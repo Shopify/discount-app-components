@@ -1,0 +1,9 @@
+@import '../../styles/common';
+
+.ShippingRatesTextField {
+  @include constrained-input;
+}
+
+.CountryModalActivator {
+  margin-top: var(--p-space-2);
+}

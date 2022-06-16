@@ -1,0 +1,531 @@
+{
+  "DiscountAppComponents": {
+    "ActiveDatesCard": {
+      "title": "활성 날짜",
+      "startDate": "시작 날짜",
+      "startTime": "시작 시간({timezoneAbbreviation})",
+      "endDate": "종료 날짜",
+      "endTime": "종료 시간 {timezoneAbbreviation}",
+      "setEndDate": "종료 날짜 설정"
+    },
+    "TimePicker": {
+      "timePlaceholder": "시간 입력"
+    },
+    "DatePicker": {
+      "datePlaceholder": "YYYY-MM-DD",
+      "dateFormatError": "날짜는 YYYY-MM-DD 형식이어야 합니다."
+    },
+    "MethodCard": {
+      "methodSubtitle": "방법",
+      "choiceList": {
+        "title": "방법 옵션 선택",
+        "code": "할인 코드",
+        "automatic": "자동 할인"
+      },
+      "discountClassLabel": {
+        "product": "제품 할인",
+        "order": "주문 할인",
+        "shipping": "배송 할인"
+      },
+      "discountField": {
+        "label": "제목",
+        "helpText": "카트에서 또는 결제 시에 고객에게 표시됩니다."
+      }
+    },
+    "DiscountCodeGenerator": {
+      "field": {
+        "label": "할인 코드",
+        "helpText": "고객이 결제 시에 할인 코드를 입력해야 합니다."
+      },
+      "buttonText": "생성"
+    },
+    "UsageLimitsCard": {
+      "title": "최대 할인 사용",
+      "options": "사용 한도 옵션",
+      "totalUsageLimitLabel": "이 할인을 사용할 수 있는 총 횟수 제한",
+      "oncePerCustomerLimitLabel": "고객당 1회 사용으로 제한",
+      "totalUsageLimitHelpTextSubscription": "1건의 가입에 여러 결제를 사용하면 단일 사용으로 계산됩니다."
+    },
+    "RecurringPayment": {
+      "title": "가입 정기결제",
+      "options": "정기결제 옵션",
+      "firstPayment": "최초 결제에만 할인 적용",
+      "multiplePayments": "여러 정기결제에 할인 적용",
+      "allPayments": "할인을 모든 정기결제에 적용",
+      "includesFirstPayment": "첫 번째 주문 결제액을 포함합니다."
+    },
+    "MinimumRequirementsCard": {
+      "title": "구매 최소 요구 사항",
+      "none": "최소 요구 사항 없음",
+      "minimumSubtotal": "최소 구매액({currencySymbol})",
+      "minimumQuantity": "최소 품목 수량",
+      "subscriptions": {
+        "appliesToCollections": "선택된 컬렉션의 가입 제품에만 적용됩니다.",
+        "appliesToProducts": "선택된 가입 제품에만 적용됩니다.",
+        "appliesToAllProducts": "가입 제품에만 적용됩니다."
+      },
+      "oneTime": {
+        "appliesToCollections": "선택한 컬렉션에만 적용됩니다.",
+        "appliesToProducts": "선택한 제품에만 적용됩니다.",
+        "appliesToAllProducts": "모든 제품에 적용됩니다."
+      }
+    },
+    "CombinationCard": {
+      "title": "조합",
+      "combinesWith": "다음과 결합:",
+      "discountNameFilled": "결합 가능한 할인:",
+      "discountNameNotFilled": "이 {discountClass} 할인과 결합 가능한 할인:",
+      "options": {
+        "productLabelOther": "기타 제품 할인",
+        "productLabel": "제품 할인",
+        "orderLabel": "주문 할인",
+        "shippingLabel": "배송료 할인"
+      },
+      "newBadge": "신규",
+      "HelpText": {
+        "emptyState": {
+          "product": {
+            "title": "현재 결합된 제품 할인이 설정되어 있지 않습니다.",
+            "warning": {
+              "withproduct": "고객이 여러 개의 할인을 사용할 수 있게 하려면 제품 할인과 결합된 제품 할인을 하나 이상 설정하십시오.",
+              "withorder": "고객이 여러 개의 할인을 사용할 수 있게 하려면 주문 할인과 결합된 제품 할인을 하나 이상 설정하십시오.",
+              "withshipping": "고객이 여러 개의 할인을 사용할 수 있게 하려면 배송 할인과 결합된 제품 할인을 하나 이상 설정하십시오."
+            }
+          },
+          "order": {
+            "title": "현재 결합된 주문 할인이 설정되어 있지 않습니다.",
+            "warning": {
+              "withproduct": "고객이 여러 개의 할인을 사용할 수 있게 하려면 제품 할인과 결합된 주문 할인을 하나 이상 설정하십시오.",
+              "withorder": "고객이 여러 개의 할인을 사용할 수 있게 하려면 주문 할인과 결합된 주문 할인을 하나 이상 설정하십시오.",
+              "withshipping": "고객이 여러 개의 할인을 사용할 수 있게 하려면 배송 할인과 결합된 주문 할인을 하나 이상 설정하십시오."
+            }
+          },
+          "shipping": {
+            "title": "현재 결합된 배송 할인이 설정되어 있지 않습니다.",
+            "warning": {
+              "withproduct": "고객이 여러 개의 할인을 사용할 수 있게 하려면 제품 할인과 결합된 배송 할인을 하나 이상 설정하십시오.",
+              "withorder": "고객이 여러 개의 할인을 사용할 수 있게 하려면 주문 할인과 결합된 배송 할인을 하나 이상 설정하십시오.",
+              "withshipping": "고객이 여러 개의 할인을 사용할 수 있게 하려면 배송 할인과 결합된 배송 할인을 하나 이상 설정하십시오."
+            }
+          }
+        },
+        "combinations": {
+          "counts": {
+            "product": {
+              "one": "제품 할인 {count}개",
+              "other": "제품 할인 {count}개"
+            },
+            "order": {
+              "one": "주문 할인 {count}개",
+              "other": "주문 할인 {count}개"
+            },
+            "shipping": {
+              "one": "배송 할인 {count}개",
+              "other": "배송 할인 {count}개"
+            }
+          },
+          "info": {
+            "one": "{discountCountLink}은(는) 같은 구매로 결합할 수 있습니다. 한 품목에 여러 할인이 해당되는 경우 가장 큰 할인만 적용됩니다.",
+            "other": "{discountCountLink}은(는) 같은 구매로 결합할 수 있습니다. 한 품목에 여러 할인이 해당되는 경우 가장 큰 할인만 적용됩니다."
+          }
+        }
+      },
+      "discountClass": {
+        "product": "제품",
+        "order": "주문",
+        "shipping": "배송"
+      }
+    },
+    "SummaryCard": {
+      "title": "요약",
+      "details": "세부 정보",
+      "Header": {
+        "emptyState": {
+          "Code": "아직 할인 코드가 없습니다.",
+          "Automatic": "아직 제목이 없습니다."
+        },
+        "badge": {
+          "active": "활성",
+          "expired": "만료됨",
+          "scheduled": "예약됨"
+        },
+        "typeAndMethod": "유형 및 방법",
+        "discountMethod": {
+          "Code": "코드",
+          "Automatic": "자동"
+        }
+      },
+      "AppliesToPurchaseType": {
+        "appliesToPurchaseTypeSubscription": "가입 구매에 적용",
+        "appliesToPurchaseTypeOneTime": "1회 구매에 적용",
+        "appliesToPurchaseTypeBoth": "가입 및 1회 구매에 적용"
+      },
+      "ActiveDates": {
+        "today": "오늘",
+        "activeSingleDate": "{date}에 활성화",
+        "activeFromDate": "{date}부터 활성화",
+        "activeFromTodayUntilDate": "오늘부터 {date}까지 활성화",
+        "activeFromDateToDate": "{startDate}부터 {endDate}까지 활성화"
+      },
+      "AvailableOnPos": {
+        "availableOnCheckoutAndPos": "온라인 판매 채널 및 POS(Point of Sale)에서 사용 가능",
+        "availableOnCheckoutOnly": "온라인 판매 채널에서 사용 가능"
+      },
+      "Combinations": {
+        "cannotCombine": "다른 할인과 결합할 수 없습니다",
+        "combinesWithOne": {
+          "product": "제품 할인과 결합",
+          "order": "주문 할인과 결합",
+          "shipping": "배송 할인과 결합"
+        },
+        "combinesWithTwo": {
+          "productAndOrder": "제품 및 주문 할인과 결합",
+          "productAndShipping": "제품 및 배송 할인과 결합",
+          "orderAndShipping": "주문 및 배송 할인과 결합"
+        }
+      },
+      "CustomerEligibility": {
+        "allCustomers": "모든 고객",
+        "customers": {
+          "one": "{customerName}",
+          "other": "고객 {count}명"
+        },
+        "customerSegments": {
+          "one": "{segmentName}",
+          "other": "{count}개 고객 세그먼트"
+        }
+      },
+      "MinimumRequirements": {
+        "minimumPurchaseSubtotal": "최소 구매액 {subtotal}",
+        "minimumPurchaseQuantity": {
+          "one": "최소 구매 품목 {count}개",
+          "other": "최소 구매 품목 {count}개"
+        },
+        "noMinimumPurchaseRequirement": "구매 최소 요구 사항 없음"
+      },
+      "Performance": {
+        "title": "실적",
+        "notActive": "할인이 아직 활성 상태가 아닙니다.",
+        "performanceLink": "할인별 판매 보고서 보기",
+        "usageCount": "{usageCount}개 사용함",
+        "totalSales": "총 판매액 중 {totalSales}"
+      },
+      "RatesExclusion": {
+        "forShippingRatesUnder": "{value} 미만의 배송료에 적용됨"
+      },
+      "RecurringPayment": {
+        "subscriptionRecurringPayments": {
+          "none": "모든 정기결제에 적용",
+          "one": "정기결제 {count}건으로 제한",
+          "other": "정기결제 {count}건으로 제한"
+        }
+      },
+      "SelectedCountries": {
+        "forAllCountries": "모든 국가",
+        "forSpecificCountry": "{countryName}",
+        "forNumberOfCountries": "{numberOfCountries}개 국가"
+      },
+      "UsageLimits": {
+        "oneUsePerCustomer": "고객당 1회 사용",
+        "totalUsageLimit": {
+          "one": "{count}회까지 사용",
+          "other": "{count}회까지 사용"
+        },
+        "totalUsageLimitWithOneUsePerCustomer": {
+          "one": "{count}회까지 사용(고객당 1회)",
+          "other": "{count}회까지 사용(고객당 1회)"
+        },
+        "noUsageLimits": "사용 한도 없음"
+      }
+    },
+    "CustomerEligibilityCard": {
+      "title": "고객 자격",
+      "everyone": "모든 고객",
+      "customerSegments": "특정 고객 세그먼트",
+      "customers": "특정 고객"
+    },
+    "CountriesAndRatesCard": {
+      "title": "국가",
+      "choiceList": {
+        "title": "국가 및 요금",
+        "all": "모든 국가",
+        "selected": "특정 국가"
+      },
+      "excludeShippingRatesSection": {
+        "title": "배송료",
+        "checkboxLabel": "일정 금액 이상 구매 시 배송료 면제"
+      }
+    },
+    "PurchaseTypeList": {
+      "title": "구매 유형",
+      "choiceList": {
+        "title": "구매 유형",
+        "oneTimePurchase": "1회성 구매",
+        "subscription": "가입",
+        "both": "모두"
+      }
+    },
+    "Countries": {
+      "AC": "어센션 섬",
+      "AD": "안도라",
+      "AE": "아랍에미리트",
+      "AF": "아프가니스탄",
+      "AG": "앤티가 바부다",
+      "AI": "앵귈라",
+      "AL": "알바니아",
+      "AM": "아르메니아",
+      "AN": "네덜란드령 앤틸리스",
+      "AO": "앙골라",
+      "AQ": "남극 대륙",
+      "AR": "아르헨티나",
+      "AS": "미국령 사모아",
+      "AT": "오스트리아",
+      "AU": "호주",
+      "AW": "아루바",
+      "AX": "올란드 제도",
+      "AZ": "아제르바이잔",
+      "BA": "보스니아 헤르체고비나",
+      "BB": "바베이도스",
+      "BD": "방글라데시",
+      "BE": "벨기에",
+      "BF": "부르키나파소",
+      "BG": "불가리아",
+      "BH": "바레인",
+      "BI": "부룬디",
+      "BJ": "베냉",
+      "BL": "생바르텔레미",
+      "BM": "버뮤다",
+      "BN": "브루나이",
+      "BO": "볼리비아",
+      "BQ": "카리브 해(네덜란드)",
+      "BR": "브라질",
+      "BS": "바하마",
+      "BT": "부탄",
+      "BV": "부베섬",
+      "BW": "보츠와나",
+      "BY": "벨라루스",
+      "BZ": "벨리즈",
+      "CA": "캐나다",
+      "CC": "코코스(킬링) 제도",
+      "CD": "콩고 - 킨샤사",
+      "CF": "중앙 아프리카 공화국",
+      "CG": "콩고 - 브라자빌",
+      "CH": "스위스",
+      "CI": "코트디부아르",
+      "CK": "쿡 제도",
+      "CL": "칠레",
+      "CM": "카메룬",
+      "CN": "중국",
+      "CO": "콜롬비아",
+      "CP": "클립퍼튼 섬",
+      "CR": "코스타리카",
+      "CU": "쿠바",
+      "CV": "카보베르데",
+      "CW": "퀴라소",
+      "CX": "크리스마스 섬",
+      "CY": "키프로스",
+      "CZ": "체코",
+      "DE": "독일",
+      "DG": "디에고 가르시아 섬",
+      "DJ": "지부티",
+      "DK": "덴마크",
+      "DM": "도미니카",
+      "DO": "도미니카 공화국",
+      "DZ": "알제리",
+      "EA": "세우타 멜리야",
+      "EC": "에콰도르",
+      "EE": "에스토니아",
+      "EG": "이집트",
+      "EH": "서사하라",
+      "ER": "에리트레아",
+      "ES": "스페인",
+      "ET": "에티오피아",
+      "EU": "유럽 연합",
+      "FI": "핀란드",
+      "FJ": "피지",
+      "FK": "포클랜드 제도",
+      "FM": "미크로네시아",
+      "FO": "페로 제도",
+      "FR": "프랑스",
+      "GA": "가봉",
+      "GB": "영국",
+      "GD": "그레나다",
+      "GE": "조지아",
+      "GF": "프랑스령 기아나",
+      "GG": "건지",
+      "GH": "가나",
+      "GI": "지브롤터",
+      "GL": "그린란드",
+      "GM": "감비아",
+      "GN": "기니",
+      "GP": "과들루프",
+      "GQ": "적도 기니",
+      "GR": "그리스",
+      "GS": "사우스 조지아 및 사우스 샌드위치 제도",
+      "GT": "과테말라",
+      "GU": "괌",
+      "GW": "기니비사우",
+      "GY": "가이아나",
+      "HK": "홍콩특별행정구(중국)",
+      "HM": "허드 섬 및 맥도널드 제도",
+      "HN": "온두라스",
+      "HR": "크로아티아",
+      "HT": "아이티",
+      "HU": "헝가리",
+      "IC": "카나리아 제도",
+      "ID": "인도네시아",
+      "IE": "아일랜드",
+      "IL": "이스라엘",
+      "IM": "맨 섬",
+      "IN": "인도",
+      "IO": "영국령 인도양 식민지",
+      "IQ": "이라크",
+      "IR": "이란",
+      "IS": "아이슬란드",
+      "IT": "이탈리아",
+      "JE": "저지",
+      "JM": "자메이카",
+      "JO": "요르단",
+      "JP": "일본",
+      "KE": "케냐",
+      "KG": "키르기스스탄",
+      "KH": "캄보디아",
+      "KI": "키리바시",
+      "KM": "코모로",
+      "KN": "세인트 크리스토퍼 네비스",
+      "KP": "북한",
+      "KR": "한국",
+      "KW": "쿠웨이트",
+      "KY": "케이맨 제도",
+      "KZ": "카자흐스탄",
+      "LA": "라오스",
+      "LB": "레바논",
+      "LC": "세인트 루시아",
+      "LI": "리히텐슈타인",
+      "LK": "스리랑카",
+      "LR": "라이베리아",
+      "LS": "레소토",
+      "LT": "리투아니아",
+      "LU": "룩셈부르크",
+      "LV": "라트비아",
+      "LY": "리비아",
+      "MA": "모로코",
+      "MC": "모나코",
+      "MD": "몰도바",
+      "ME": "몬테네그로",
+      "MF": "세인트마틴 섬",
+      "MG": "마다가스카르",
+      "MH": "마셜 제도",
+      "MK": "마케도니아",
+      "ML": "말리",
+      "MM": "미얀마(버마)",
+      "MN": "몽골",
+      "MO": "마카오 특별 행정구",
+      "MP": "북마리아나 제도",
+      "MQ": "마르티니크",
+      "MR": "모리타니",
+      "MS": "몬트세라트",
+      "MT": "몰타",
+      "MU": "모리셔스",
+      "MV": "몰디브",
+      "MW": "말라위",
+      "MX": "멕시코",
+      "MY": "말레이시아",
+      "MZ": "모잠비크",
+      "NA": "나미비아",
+      "NC": "뉴칼레도니아",
+      "NE": "니제르",
+      "NF": "노퍽섬",
+      "NG": "나이지리아",
+      "NI": "니카라과",
+      "NL": "네덜란드",
+      "NO": "노르웨이",
+      "NP": "네팔",
+      "NR": "나우루",
+      "NU": "니우에",
+      "NZ": "뉴질랜드",
+      "OM": "오만",
+      "PA": "파나마",
+      "PE": "페루",
+      "PF": "프랑스령 폴리네시아",
+      "PG": "파푸아뉴기니",
+      "PH": "필리핀",
+      "PK": "파키스탄",
+      "PL": "폴란드",
+      "PM": "생피에르 미클롱",
+      "PN": "핏케언 제도",
+      "PR": "푸에르토리코",
+      "PS": "팔레스타인 영토",
+      "PT": "포르투갈",
+      "PW": "팔라우",
+      "PY": "파라과이",
+      "QA": "카타르",
+      "QO": "외부 오세아니아",
+      "RE": "리유니온",
+      "REST_OF_WORLD": "기타 지역",
+      "RO": "루마니아",
+      "RS": "세르비아",
+      "RU": "러시아",
+      "RW": "르완다",
+      "SA": "사우디아라비아",
+      "SB": "솔로몬 제도",
+      "SC": "세이셸",
+      "SD": "수단",
+      "SE": "스웨덴",
+      "SG": "싱가포르",
+      "SH": "세인트 헬레나",
+      "SI": "슬로베니아",
+      "SJ": "스발바르제도-얀마웬섬",
+      "SK": "슬로바키아",
+      "SL": "시에라리온",
+      "SM": "산마리노",
+      "SN": "세네갈",
+      "SO": "소말리아",
+      "SR": "수리남",
+      "SS": "남수단",
+      "ST": "상투메 프린시페",
+      "SV": "엘살바도르",
+      "SX": "세인트마틴",
+      "SY": "시리아",
+      "SZ": "에스와티니",
+      "TA": "트리스탄다쿠냐",
+      "TC": "터크스 케이커스 제도",
+      "TD": "차드",
+      "TF": "프랑스령 남부",
+      "TG": "토고",
+      "TH": "태국",
+      "TJ": "타지키스탄",
+      "TK": "토켈라우",
+      "TL": "동티모르",
+      "TM": "투르크메니스탄",
+      "TN": "튀니지",
+      "TO": "통가",
+      "TR": "터키",
+      "TT": "트리니다드 토바고",
+      "TV": "투발루",
+      "TW": "대만",
+      "TZ": "탄자니아",
+      "UA": "우크라이나",
+      "UG": "우간다",
+      "UM": "미국령 군소 제도",
+      "US": "미국",
+      "UY": "우루과이",
+      "UZ": "우즈베키스탄",
+      "VA": "바티칸시국",
+      "VC": "세인트 빈센트 그레나딘",
+      "VE": "베네수엘라",
+      "VG": "영국령 버진아일랜드",
+      "VI": "미국령 버진아일랜드",
+      "VN": "베트남",
+      "VU": "바누아투",
+      "WF": "월리스 푸투나",
+      "WS": "사모아",
+      "XK": "코소보",
+      "YE": "예멘",
+      "YT": "마요트",
+      "ZA": "남아프리카 공화국",
+      "ZM": "잠비아",
+      "ZW": "짐바브웨"
+    }
+  }
+}
