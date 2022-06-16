@@ -1,4 +1,4 @@
-name: discount-app-components-internal
+name: discount-app-components
 up:
   - node:
       yarn: v1.22.17

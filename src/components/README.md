@@ -1,16 +1,32 @@
-TODO: this file should be reviewed and updated before releasing publicly. This README should roughly resemble polaris-react's src/components/README.md
-
 # Components
 
-## Getting Started
+Our components are a collection of interface elements that can be reused and composed to build discounts-focused [AppBridge](https://shopify.dev/apps/tools/app-bridge) apps.
+
+---
+
+## Getting started
+
+The component library was designed to help developers quickly create the best experience for Shopify merchants.
+
+Each component includes information to help you implement them, such as:
+
+- Explanations of the merchant problem it solves in the interface
+- Examples so you can see the component in action
+- Best practices and guidelines to use the component correctly
+
+Learn more about developing apps and themes for Shopify on our [developer hub](https://developers.shopify.com/).
+
+---
 
 ## Installing and implementing
+
+- [Implementation instructions](https://github.com/Shopify/discount-app-components#using-the-repo) (requires HTML, React, a JS build tool)
 
 ---
 
 ## Learning resources
 
-These resources have information on getting started with React and how to develop apps and themes for Shopify.
+These resources have information on getting started with React and how to develop apps for Shopify.
 
 ### React
 
@@ -24,10 +40,10 @@ Here are some additional resources:
 
 ### Shopify’s developer hub
 
-Learn more about developing apps and themes for Shopify on our [developer hub](https://developers.shopify.com/).
+Learn more about developing apps and themes for Shopify on our [developer hub](https://shopify.dev/).
 
 ---
 
-## Component methodology
-
 ## Feedback
+
+Issues or feature requests can be created on the [discount-app-components GitHub page](https://github.com/Shopify/discount-app-components/issues).
