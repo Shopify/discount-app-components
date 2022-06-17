@@ -1,6 +1,6 @@
 # discount-app-components
 
-[![Build status](https://badge.buildkite.com/efd5a5b2a2543346b71426e60643af346fe06d0531f0827d27.svg)](https://buildkite.com/shopify/discount-app-components)
+[![Build status](https://badge.buildkite.com/4e7a3f939797eebf2b65249c3202b09044fc3e9677ac51cf6d.svg)](https://buildkite.com/shopify/discount-app-components)
 [![npm Package Version](https://img.shields.io/npm/v/@shopify/discount-app-components)](https://www.npmjs.com/package/@shopify/discount-app-components)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
