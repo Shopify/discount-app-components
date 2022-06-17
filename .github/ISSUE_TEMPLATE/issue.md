@@ -4,7 +4,6 @@ about: Create a report to help us improve
 title: "\U0001F41B[Bug]"
 labels: bug
 assignees: ''
-
 ---
 
 <!-- For feature requests, please use the following template: https://github.com/Shopify/polaris/issues/new?labels=Feature+request&template=FEATURE_REQUEST.md -->
