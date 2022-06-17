@@ -15,14 +15,13 @@ Include any best practices or usage for using this component. This is typically 
 Brief summary of what this example shows.
 
 ```jsx
-
 // show usage here
-
 ```
 
 ### Component example two
 
 ...
+
 ## Related components (optional)
 
 Bulleted list of related components and how they relate

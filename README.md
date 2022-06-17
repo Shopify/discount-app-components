@@ -1,6 +1,6 @@
 # discount-app-components
 
-[![Build status](https://badge.buildkite.com/efd5a5b2a2543346b71426e60643af346fe06d0531f0827d27.svg)](https://buildkite.com/shopify/discount-app-components)
+[![Build status](https://badge.buildkite.com/4e7a3f939797eebf2b65249c3202b09044fc3e9677ac51cf6d.svg)](https://buildkite.com/shopify/discount-app-components)
 [![npm Package Version](https://img.shields.io/npm/v/@shopify/discount-app-components)](https://www.npmjs.com/package/@shopify/discount-app-components)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
@@ -34,26 +34,25 @@ yarn add @shopify/discount-app-components
 
 1.  Import the CSS for this repo and Polaris directly into your project if your asset packager supports it:
 
-      ```js
-      import '@shopify/discount-app-components/build/esm/styles.css';
-      import '@shopify/polaris/build/esm/styles.css';
-      ```
+    ```js
+    import '@shopify/discount-app-components/build/esm/styles.css';
+    import '@shopify/polaris/build/esm/styles.css';
+    ```
 
-      Otherwise include the CSS in your HTML. We suggest copying the styles file into your own project, but you may also use it directly:
+    Otherwise include the CSS in your HTML. We suggest copying the styles file into your own project, but you may also use it directly:
 
-      ```html
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/@shopify/discount-app-components@<your version number>/build/esm/styles.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/@shopify/polaris@<your version number>/build/esm/styles.css"
-      />
-      ```
+    ```html
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@shopify/discount-app-components@<your version number>/build/esm/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@shopify/polaris@<your version number>/build/esm/styles.css"
+    />
+    ```
 
-
-2. This library contains a number of locale-specific components, and you will be required to pass a `locale` and a `ianaTimezone` to the discounts AppProvider. Also, this library will require you to wrap your app in a Polaris AppProvider and an AppBridge AppProvider. A full example of an app root can be found below:
+2.  This library contains a number of locale-specific components, and you will be required to pass a `locale` and a `ianaTimezone` to the discounts AppProvider. Also, this library will require you to wrap your app in a Polaris AppProvider and an AppBridge AppProvider. A full example of an app root can be found below:
 
     ```js
     import {Page, AppProvider as PolarisAppProvider} from '@shopify/polaris';
@@ -113,7 +112,7 @@ yarn add @shopify/discount-app-components
 
 1. Republish your changes from @shopify/discount-app-components with `yalc publish --private`
 2. Update the dependency in your consuming project with `yalc update @shopify/discount-app-components`
-   -  Note that you may need to `rm -rf ./node_modules && rm -rf .yalc && yarn` for the changes to apply.
+   - Note that you may need to `rm -rf ./node_modules && rm -rf .yalc && yarn` for the changes to apply.
 
 ---
 

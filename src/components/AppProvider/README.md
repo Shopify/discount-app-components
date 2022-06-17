@@ -14,7 +14,7 @@ This project uses [@shopify/polaris](https://github.com/Shopify/polaris) and [@s
 
 ## Examples
 
-### Usage 
+### Usage
 
 ```js
 import {Page, AppProvider as PolarisAppProvider} from '@shopify/polaris';
@@ -55,6 +55,7 @@ export default function App() {
 Translations for `@shopify/discount-app-components` reside in the repository and are loaded by the AppProvider. Translations are loaded based on the locale passed into the `AppProvider`. You can see the full set of supported locales in the top level [/locales](https://github.com/Shopify/discount-app-components/tree/main/locales) folder.
 
 ---
+
 ## Testing components
 
 You must include the discounts app context, polaris app context, and appbridge app context when writing tests that include `@shopify/discount-app-components` components. For your convenience, we've provided a [DiscountAppComponentsTestProvider component](https://github.com/Shopify/discount-app-components/blob/main/src/components/DiscountAppComponentsTestProvider/DiscountAppComponentsTestProvider.tsx) to provide these contexts.
