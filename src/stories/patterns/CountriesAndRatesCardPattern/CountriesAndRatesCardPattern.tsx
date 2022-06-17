@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import {Page, Button, Modal, ChoiceList} from '@shopify/polaris';
 import {CountriesAndRatesCard} from '../../../components/CountriesAndRatesCard';
 
-import {useLocalizeCountryList} from '../../../';
+import {useLocalizeCountry} from '../../../';
 
 import {CountrySelectionType, REST_OF_WORLD, SupportedCountryCode} from '../../../constants';
 import {CountryCode, Field} from '../../../types';
@@ -72,6 +72,8 @@ function CountryModal({
   toggleModal(): void;
   countries: CountryCode[];
 }) {
+  const localizeCountry = useLocalizeCountry();
+
   const [selected, setSelected] = useState<CountryCode[]>(
     () => selectedCountries.value,
   );
@@ -90,7 +92,6 @@ function CountryModal({
     toggleModal();
   };
 
-  const localizedCountryList = useLocalizeCountryList(countries);
 
   return (
     <Modal
@@ -113,10 +114,16 @@ function CountryModal({
       <ChoiceList
         allowMultiple
         title="Select countries"
-        choices={localizedCountryList.map((country) => ({
-          label: country.name,
-          value: country.id,
-        }))}
+        choices={
+          countries
+          .map((countryCode) => {
+            const country = localizeCountry(countryCode);
+
+            return ({
+              label: country.name,
+              value: country.id,
+            });
+          })}
         selected={selected.map((countryCode) => countryCode)}
         onChange={(nextValue: string[]) => {
           setSelected(

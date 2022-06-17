@@ -102,7 +102,7 @@ export {
   getNewDateAtStartOfDay,
 } from './utilities/dates';
 
-export {useLocalizeCountryList} from './components/CountriesAndRatesCard/utilities';
+export {useLocalizeCountry} from './components/CountriesAndRatesCard/utilities';
 
 export {onBreadcrumbAction, handleRedirect} from './utilities/navigation';
 

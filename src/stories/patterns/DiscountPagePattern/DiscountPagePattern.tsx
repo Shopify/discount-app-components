@@ -7,7 +7,6 @@ import {MethodCard} from '../../../components/MethodCard';
 import {MinimumRequirementsCard} from '../../../components/MinimumRequirementsCard';
 import {UsageLimitsCard} from '../../../components/UsageLimitsCard';
 import {SummaryCard} from '../../../components/SummaryCard';
-import {CountriesAndRatesCard} from '../../../components/CountriesAndRatesCard';
 
 import {
   AppliesTo,
@@ -96,6 +95,17 @@ const getDiscountData = (isEditing: boolean) => {
   };
 };
 
+/**
+ *  appDiscountType(functionId: $functionID) {
+ *    title
+ *  }
+ */
+const appQuery = () => {
+  return {
+    title: "My custom discount type",
+  };
+};
+
 export default function DiscountPage({id = '1'}) {
   const isEditing = Boolean(id);
 
@@ -103,6 +113,7 @@ export default function DiscountPage({id = '1'}) {
     getShopData();
 
   const discountData = getDiscountData(isEditing);
+  const {title: appDiscountType} = appQuery();
 
   // Active dates
   const [startTime, setStartTime] = useState(discountData.startsAt);
@@ -151,7 +162,7 @@ export default function DiscountPage({id = '1'}) {
       <Layout>
         <Layout.Section>
           <MethodCard
-            title="My custom discount type"
+            title={appDiscountType}
             discountClass={discountData.discountClass}
             discountMethod={{
               value: discountMethod,
@@ -237,7 +248,7 @@ export default function DiscountPage({id = '1'}) {
           <SummaryCard
             header={{
               discountMethod: discountMethod,
-              appDiscountType: discountTitle,
+              appDiscountType,
               discountDescriptor,
               isEditing,
               discountStatus: discountData.status,
