@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "O componente de exemplo está a ser processado!",
-      "destructiveAction": "Clique para ativar um registo de consola!!"
-    },
-    "SampleSubComponent": {
-      "content": "O subcomponente de exemplo está a ser processado!"
-    },
     "ActiveDatesCard": {
       "title": "Datas ativas",
       "startDate": "Data de início",
@@ -37,10 +30,6 @@
       "discountField": {
         "label": "Título",
         "helpText": "Os clientes verão esta informação no carrinho e na finalização da compra."
-      },
-      "pos": {
-        "description": "Este desconto estará disponível em canais de vendas online.",
-        "checkboxLabel": "Disponibilize também no Ponto de Venda (Apenas locais POS Pro)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Código de desconto",
         "helpText": "Os clientes têm de introduzir este código na finalização da compra."
       },
-      "buttonText": "Gerar código de desconto"
+      "buttonText": "Gerar"
     },
     "UsageLimitsCard": {
-      "title": "Limites de utilização",
+      "title": "Número máximo de utilizações do desconto",
       "options": "Opções de limite de utilização",
       "totalUsageLimitLabel": "Limitar o número total de vezes que este desconto pode ser utilizado",
       "oncePerCustomerLimitLabel": "Limitar a uma utilização por cliente",

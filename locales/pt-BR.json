@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "O componente de exemplo está renderizando!",
-      "destructiveAction": "Clique para ativar um log do console."
-    },
-    "SampleSubComponent": {
-      "content": "O subcomponente de exemplo está renderizando!"
-    },
     "ActiveDatesCard": {
       "title": "Datas ativas",
       "startDate": "Data de início",
@@ -30,17 +23,13 @@
         "automatic": "Desconto automático"
       },
       "discountClassLabel": {
-        "product": "Desconto em produto",
+        "product": "Desconto em produtos",
         "order": "Desconto no pedido",
-        "shipping": "Desconto de frete"
+        "shipping": "Desconto no frete"
       },
       "discountField": {
         "label": "Título",
         "helpText": "Os clientes verão esta informação no carrinho e no checkout."
-      },
-      "pos": {
-        "description": "O desconto estará disponível nos canais de vendas online.",
-        "checkboxLabel": "Oferecer também no Ponto de venda (apenas para locais com o PDV Pro)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Código de desconto",
         "helpText": "Os clientes precisam inserir este código durante o checkout."
       },
-      "buttonText": "Gerar código de desconto"
+      "buttonText": "Gerar"
     },
     "UsageLimitsCard": {
-      "title": "Limites de uso",
+      "title": "Uso máximo do desconto",
       "options": "Opções de limite de uso",
       "totalUsageLimitLabel": "Limitar o número total de vezes que este desconto pode ser usado",
       "oncePerCustomerLimitLabel": "Limitar a apenas um uso por cliente",

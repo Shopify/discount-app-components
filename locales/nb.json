@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Eksempelkomponenten gjengis!",
-      "destructiveAction": "Klikk for å utløse en konsollogg!"
-    },
-    "SampleSubComponent": {
-      "content": "Eksempel på underkomponent gjengis!"
-    },
     "ActiveDatesCard": {
       "title": "Aktive datoer",
       "startDate": "Startdato",
@@ -37,10 +30,6 @@
       "discountField": {
         "label": "Tittel",
         "helpText": "Kundene vil se dette i handlekurven og i kassen."
-      },
-      "pos": {
-        "description": "Denne rabatten vil være tilgjengelig i salgskanaler på nettet.",
-        "checkboxLabel": "Tilby også i Point of Sale (kun POS Pro-lokalisasjoner)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Rabattkode",
         "helpText": "Kundene må angi denne koden i kassen."
       },
-      "buttonText": "Generer en rabattkode"
+      "buttonText": "Generer"
     },
     "UsageLimitsCard": {
-      "title": "Bruksgrenser",
+      "title": "Maksimalt antall bruk av rabatt",
       "options": "Alternativer for bruksgrense",
       "totalUsageLimitLabel": "Begrens totalt antall ganger denne rabatten kan brukes",
       "oncePerCustomerLimitLabel": "Begrens til én gang per kunde",

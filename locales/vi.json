@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Đang kết xuất mẫu thành phần!",
-      "destructiveAction": "Nhấp để gửi nhật ký hoạt động điều khiển!!"
-    },
-    "SampleSubComponent": {
-      "content": "Đang kết xuất mẫu thành phần phụ!"
-    },
     "ActiveDatesCard": {
       "title": "Số ngày hoạt động",
       "startDate": "Ngày bắt đầu",
@@ -30,17 +23,13 @@
         "automatic": "Ưu đãi giảm giá tự động"
       },
       "discountClassLabel": {
-        "product": "Giảm giá sản phẩm",
-        "order": "Giảm giá cho đơn hàng",
-        "shipping": "Giảm giá vận chuyển"
+        "product": "Ưu đãi giảm giá sản phẩm",
+        "order": "Ưu đãi giảm giá đơn hàng",
+        "shipping": "Ưu đãi giảm giá vận chuyển"
       },
       "discountField": {
         "label": "Tiêu đề",
         "helpText": "Khách hàng sẽ thấy mục này trong giỏ hàng và khi thanh toán."
-      },
-      "pos": {
-        "description": "Ưu đãi giảm giá này sẽ khả dụng trên các kênh bán hàng trực tuyến.",
-        "checkboxLabel": "Ngoài ra còn khả dụng tại Điểm bán hàng (chỉ các địa điểm dùng POS Pro)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Mã giảm giá",
         "helpText": "Khách hàng phải nhập mã này lúc thanh toán."
       },
-      "buttonText": "Tạo mã giảm giá"
+      "buttonText": "Tạo"
     },
     "UsageLimitsCard": {
-      "title": "Giới hạn sử dụng",
+      "title": "Số lần giảm giá tối đa",
       "options": "Tùy chọn giới hạn sử dụng",
       "totalUsageLimitLabel": "Giới hạn tổng số lần có thể sử dụng giảm giá này",
       "oncePerCustomerLimitLabel": "Giới hạn mỗi khách hàng sử dụng một lần",

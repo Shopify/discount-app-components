@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Näytekomponentti renderöi!",
-      "destructiveAction": "Käynnistä konsolilogi klikkaamalla!!"
-    },
-    "SampleSubComponent": {
-      "content": "Näytteen alakomponentti renderöi!"
-    },
     "ActiveDatesCard": {
       "title": "Aktiiviset päivämäärät",
       "startDate": "Alkamispäivä",
@@ -30,17 +23,13 @@
         "automatic": "Automaattinen alennus"
       },
       "discountClassLabel": {
-        "product": "Tuotteen alennus",
+        "product": "Tuotealennus",
         "order": "Tilauksen alennus",
         "shipping": "Toimitusalennus"
       },
       "discountField": {
         "label": "Otsikko",
         "helpText": "Asiakkaat näkevät tämän ostoskorissaan ja kassalla."
-      },
-      "pos": {
-        "description": "Alennus on saatavilla verkkomyyntikanavissa.",
-        "checkboxLabel": "Tarjoa myös myyntipisteessä (vain POS Pro ‑sijainnit)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Alennuskoodi",
         "helpText": "Asiakkaiden on syötettävä tämä koodi kassalla."
       },
-      "buttonText": "Tee alennuskoodi"
+      "buttonText": "Luo"
     },
     "UsageLimitsCard": {
-      "title": "Käyttörajat",
+      "title": "Alennuksen enimmäiskäyttökerrat",
       "options": "Käyttörajavaihtoehdot",
       "totalUsageLimitLabel": "Rajoita tämän alennuksen käyttökertojen yhteismäärää",
       "oncePerCustomerLimitLabel": "Rajoita yhteen käyttökertaan asiakasta kohden",

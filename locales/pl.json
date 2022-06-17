@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Przykładowy komponent jest renderowany!",
-      "destructiveAction": "Kliknij, aby uruchomić dziennik konsoli!"
-    },
-    "SampleSubComponent": {
-      "content": "Przykładowy podkomponent jest renderowany!"
-    },
     "ActiveDatesCard": {
       "title": "Aktywne daty",
       "startDate": "Data rozpoczęcia",
@@ -31,16 +24,12 @@
       },
       "discountClassLabel": {
         "product": "Rabat na produkt",
-        "order": "Rabat dotyczący zamówienia",
+        "order": "Rabat na zamówienie",
         "shipping": "Rabat na wysyłkę"
       },
       "discountField": {
         "label": "Tytuł",
         "helpText": "Klienci zobaczą to w koszyku i przy realizacji zakupu."
-      },
-      "pos": {
-        "description": "Ten rabat będzie dostępny w kanałach sprzedaży online.",
-        "checkboxLabel": "Oferuj także w punkcie sprzedaży (tylko lokalizacje POS Pro)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Kod rabatowy",
         "helpText": "Klienci muszą wprowadzić ten kod podczas realizacji zakupu."
       },
-      "buttonText": "Generuj kod rabatowy"
+      "buttonText": "Generuj"
     },
     "UsageLimitsCard": {
-      "title": "Limity wykorzystania",
+      "title": "Maksymalna liczba zastosowań rabatu",
       "options": "Opcje limitu wykorzystania",
       "totalUsageLimitLabel": "Ogranicz łączną liczbę możliwości wykorzystania tego rabatu",
       "oncePerCustomerLimitLabel": "Ogranicz do jednego wykorzystania na klienta",

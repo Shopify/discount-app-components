@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Beispielkomponente wird gerendert!",
-      "destructiveAction": "Hier klicken, um ein Konsolenprotokoll zu veranlassen!"
-    },
-    "SampleSubComponent": {
-      "content": "Beispiel-Subkomponente wird gerendert!"
-    },
     "ActiveDatesCard": {
       "title": "Aktive Daten",
       "startDate": "Anfangsdatum",
@@ -31,16 +24,12 @@
       },
       "discountClassLabel": {
         "product": "Produktrabatt",
-        "order": "Bestellungsrabatt",
+        "order": "Bestellrabatt",
         "shipping": "Versandrabatt"
       },
       "discountField": {
         "label": "Titel",
         "helpText": "Kunden sehen dies in ihrem Warenkorb und beim Checkout."
-      },
-      "pos": {
-        "description": "Dieser Rabatt wird auf Online-Vertriebskanälen zur Verfügung stehen.",
-        "checkboxLabel": "Auch in Point of Sale anbieten (nur POS Pro-Standorte)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Rabattcode",
         "helpText": "Kunden müssen beim Checkout diesen Code eingeben."
       },
-      "buttonText": "Rabattcode generieren"
+      "buttonText": "Generieren"
     },
     "UsageLimitsCard": {
-      "title": "Nutzungsgrenzen",
+      "title": "Maximale Anzahl von Rabattnutzungen",
       "options": "Optionen für Nutzungsgrenze",
       "totalUsageLimitLabel": "Beschränke, wie oft dieser Rabatt insgesamt verwendet werden kann",
       "oncePerCustomerLimitLabel": "Lege fest, dass jeder Kunde diesen Rabatt nur einmal verwenden darf",

@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Provkomponent är på väg!",
-      "destructiveAction": "Klicka för att starta en console-loggning!"
-    },
-    "SampleSubComponent": {
-      "content": "Underkomponent som prov är på väg!"
-    },
     "ActiveDatesCard": {
       "title": "Aktiva datum",
       "startDate": "Startdatum",
@@ -32,15 +25,11 @@
       "discountClassLabel": {
         "product": "Produktrabatt",
         "order": "Orderrabatt",
-        "shipping": "Fraktrabatt"
+        "shipping": "Leveransrabatt"
       },
       "discountField": {
         "label": "Titel",
         "helpText": "Kunderna ser detta i varukorgen vid betalning i kassan."
-      },
-      "pos": {
-        "description": "Rabatten kommer att vara tillgänglig på online-försäljningskanaler.",
-        "checkboxLabel": "Erbjud också på Point of Sale (endast POS Pro-platser)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Rabattkod",
         "helpText": "Kunder måste ange den här koden i kassan."
       },
-      "buttonText": "Generera rabattkod"
+      "buttonText": "Generera"
     },
     "UsageLimitsCard": {
-      "title": "Användningsbegränsningar",
+      "title": "Maximal rabatt används",
       "options": "Alternativ för användningsbegränsning",
       "totalUsageLimitLabel": "Begränsa antalet gånger som denna rabatt kan användas totalt",
       "oncePerCustomerLimitLabel": "Begränsa till en användning per kund",
@@ -92,7 +81,7 @@
         "orderLabel": "Orderrabatt",
         "shippingLabel": "Leveransrabatter"
       },
-      "newBadge": "Ny",
+      "newBadge": "Nytt",
       "HelpText": {
         "emptyState": {
           "product": {
