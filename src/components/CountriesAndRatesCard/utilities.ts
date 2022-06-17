@@ -1,25 +1,23 @@
-import {useMemo} from 'react';
 import {useI18n} from '@shopify/react-i18n';
 
-import type {Country, CountryCode} from '~/types';
+import type {
+  REST_OF_WORLD,
+  SupportedCountryCode as CountryCode,
+} from '~/constants';
+import type {Country} from '~/types';
 
 /**
- * @param countryCodes - a list of country codes or `REST_OF_WORLD`
- * @returns a list of country objects with country names localized in the current locale
+ * @returns a function that takes a country code or `REST_OF_WORLD` and returns a localized country object
  */
-export function useLocalizeCountryList(countryCodes: CountryCode[]): Country[] {
+export function useLocalizeCountry(): (
+  countryCode: CountryCode | typeof REST_OF_WORLD,
+) => Country {
   const [i18n] = useI18n();
 
-  const localizedCountryList = useMemo(
-    () =>
-      countryCodes.map((countryCode) => ({
-        id: countryCode,
-        name: i18n.translate(countryCode, {
-          scope: 'DiscountAppComponents.Countries',
-        }),
-      })),
-    [i18n, countryCodes],
-  );
-
-  return localizedCountryList;
+  return (countryCode) => ({
+    id: countryCode,
+    name: i18n.translate(countryCode, {
+      scope: 'DiscountAppComponents.Countries',
+    }),
+  });
 }

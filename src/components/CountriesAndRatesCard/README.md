@@ -7,7 +7,6 @@ This component enables merchants to select if a discount will apply to all count
 ## Usage and best practices
 
 - This component is typically used in discounts that impact shipping rates
-- The `Country` object expects a country code and a localized country name. We recommend using [@shopify/address's `getCountries()` utility](https://github.com/Shopify/quilt/tree/main/packages/address#async-getcountries-promisecountry) as your source for localized country names.
 
 ## Examples
 
@@ -22,5 +21,6 @@ This component enables merchants to select if a discount will apply to all count
   countrySelector={
     <CountrySelector selectedCountries={selectedCountriesField} />
   }
+  currencyCode={CurrencyCode.Cad}
 />
 ```

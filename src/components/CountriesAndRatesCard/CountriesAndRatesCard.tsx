@@ -6,7 +6,7 @@ import {SelectedItemsList} from '../SelectedItemsList';
 import {CurrencyField} from '../CurrencyField';
 
 import styles from './CountriesAndRatesCard.scss';
-import {useLocalizeCountryList} from './utilities';
+import {useLocalizeCountry} from './utilities';
 
 import type {Field, PositiveNumericValue, CountryCode, Country} from '~/types';
 import {CountrySelectionType} from '~/constants';
@@ -54,8 +54,7 @@ export function CountriesAndRatesCard({
   currencyCode,
 }: CountriesAndRatesCardProps) {
   const [i18n] = useI18n();
-
-  const localizedCountryList = useLocalizeCountryList(selectedCountries.value);
+  const localizeCountry = useLocalizeCountry();
 
   return (
     <Card
@@ -95,7 +94,7 @@ export function CountriesAndRatesCard({
               {countrySelector}
             </div>
             <SelectedItemsList
-              items={localizedCountryList}
+              items={selectedCountries.value.map(localizeCountry)}
               renderItem={(item: Country) => <div>{item.name}</div>}
               onRemoveItem={(itemId: string) =>
                 selectedCountries.onChange(
