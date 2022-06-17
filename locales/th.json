@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "กำลังแสดงตัวอย่างเนื้อหา!",
-      "destructiveAction": "คลิกเพื่อส่งบันทึกในแผงควบคุม!"
-    },
-    "SampleSubComponent": {
-      "content": "กำลังแสดงตัวอย่างเนื้อหาย่อย!"
-    },
     "ActiveDatesCard": {
       "title": "วันที่ใช้งาน",
       "startDate": "วันที่เริ่มต้น",
@@ -31,16 +24,12 @@
       },
       "discountClassLabel": {
         "product": "ส่วนลดสินค้า",
-        "order": "ส่วนลดของคำสั่งซื้อ",
+        "order": "ส่วนลดคำสั่งซื้อ",
         "shipping": "ส่วนลดการจัดส่ง"
       },
       "discountField": {
         "label": "ชื่อ",
         "helpText": "ลูกค้าจะเห็นสิ่งนี้ในตะกร้าสินค้าและในขั้นตอนการชำระเงิน"
-      },
-      "pos": {
-        "description": "ส่วนลดนี้จะสามารถใช้ได้ในช่องทางการขายออนไลน์",
-        "checkboxLabel": "มีใน Point of Sale ด้วยเช่นกัน (ตำแหน่งที่ตั้งที่ใช้ POS Pro เท่านั้น)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "รหัสส่วนลด",
         "helpText": "ลูกค้าจะต้องใส่รหัสนี้ในขั้นตอนการชำระเงิน"
       },
-      "buttonText": "สร้างรหัสส่วนลด"
+      "buttonText": "สร้าง"
     },
     "UsageLimitsCard": {
-      "title": "ขีดจำกัดการใช้งาน",
+      "title": "การใช้ส่วนลดสูงสุด",
       "options": "ตัวเลือกขีดจำกัดการใช้งาน",
       "totalUsageLimitLabel": "จำกัดจำนวนครั้งทั้งหมดที่สามารถใช้ส่วนลดนี้ได้",
       "oncePerCustomerLimitLabel": "จำกัดให้ลูกค้าหนึ่งรายใช้ได้หนึ่งครั้ง",

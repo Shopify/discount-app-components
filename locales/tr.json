@@ -1,14 +1,7 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Örnek bileşen işleniyor.",
-      "destructiveAction": "Konsol günlüğü tetiklemek için tıklayın."
-    },
-    "SampleSubComponent": {
-      "content": "Örnek alt bileşen işleniyor."
-    },
     "ActiveDatesCard": {
-      "title": "Etkin Tarihler",
+      "title": "Etkin tarihler",
       "startDate": "Başlangıç tarihi",
       "startTime": "Başlangıç saati ({timezoneAbbreviation})",
       "endDate": "Bitiş tarihi",
@@ -37,10 +30,6 @@
       "discountField": {
         "label": "Başlık",
         "helpText": "Müşteriler indirimi sepetlerinde ve ödeme sayfasında görür."
-      },
-      "pos": {
-        "description": "Bu indirim, online satış kanallarında kullanılabilir.",
-        "checkboxLabel": "Ayrıca Point of Sale'de sun (yalnızca POS Pro konumları)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "İndirim kodu",
         "helpText": "Müşteriler, ödeme sırasında bu kodu girmelidir."
       },
-      "buttonText": "İndirim kodu oluştur"
+      "buttonText": "Oluştur"
     },
     "UsageLimitsCard": {
-      "title": "Kullanım sınırları",
+      "title": "Maksimum indirim kullanımları",
       "options": "Kullanım sınırı seçenekleri",
       "totalUsageLimitLabel": "Bu indirimin toplamda kaç kez kullanılabileceğini sınırlayın",
       "oncePerCustomerLimitLabel": "Müşteri başına tek kullanımla sınırlayın",

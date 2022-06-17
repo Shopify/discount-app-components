@@ -1,12 +1,5 @@
 {
   "DiscountAppComponents": {
-    "SampleComponent": {
-      "content": "Voorbeeldcomponent wordt gerenderd.",
-      "destructiveAction": "Klik om een console-logboek op te starten."
-    },
-    "SampleSubComponent": {
-      "content": "Voorbeeld-subcomponent wordt gerenderd."
-    },
     "ActiveDatesCard": {
       "title": "Actieve datums",
       "startDate": "Begindatum",
@@ -31,16 +24,12 @@
       },
       "discountClassLabel": {
         "product": "Productkorting",
-        "order": "Korting op bestelling",
+        "order": "Bestelkorting",
         "shipping": "Verzendkorting"
       },
       "discountField": {
         "label": "Titel",
         "helpText": "Klanten zien dit in hun winkelwagen en bij de checkout."
-      },
-      "pos": {
-        "description": "Deze korting is beschikbaar op online verkoopkanalen.",
-        "checkboxLabel": "Ook op Point of Sale aanbieden (alleen POS Pro-locaties)"
       }
     },
     "DiscountCodeGenerator": {
@@ -48,10 +37,10 @@
         "label": "Kortingscode",
         "helpText": "Klanten moeten deze code invoeren bij de checkout."
       },
-      "buttonText": "Kortingscode genereren"
+      "buttonText": "Genereren"
     },
     "UsageLimitsCard": {
-      "title": "Gebruikslimieten",
+      "title": "Maximaal kortingsgebruik",
       "options": "Opties voor gebruikslimieten",
       "totalUsageLimitLabel": "Het aantal keren beperken dat deze korting in totaal kan worden gebruikt",
       "oncePerCustomerLimitLabel": "Beperken tot één keer gebruiken per klant",
