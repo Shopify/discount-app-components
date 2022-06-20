@@ -28,7 +28,7 @@
         "shipping": "配送のディスカウント"
       },
       "discountField": {
-        "label": "Title",
+        "label": "タイトル",
         "helpText": "お客様のチェックアウト時にカートに表示されます。"
       }
     },
@@ -40,7 +40,7 @@
       "buttonText": "生成"
     },
     "UsageLimitsCard": {
-      "title": "最大ディスカウントを使用",
+      "title": "最大ディスカウントの使用",
       "options": "利用制限のオプション",
       "totalUsageLimitLabel": "このディスカウントを使用できる合計回数を制限する",
       "oncePerCustomerLimitLabel": "お客様1人につき1回のみの使用とする",
@@ -73,7 +73,7 @@
     "CombinationCard": {
       "title": "組み合わせ",
       "combinesWith": "組み合わせる",
-      "discountNameFilled": "以下と組み合わせることができる:",
+      "discountNameFilled": "以下と組み合わせることができる: ",
       "discountNameNotFilled": "この{discountClass}ディスカウントは、以下と組み合わせることができます。",
       "options": {
         "productLabelOther": "他の商品のディスカウント",
@@ -196,10 +196,10 @@
         }
       },
       "MinimumRequirements": {
-        "minimumPurchaseSubtotal": "最低購入商品数: {subtotal}",
+        "minimumPurchaseSubtotal": "{subtotal}の最低購入",
         "minimumPurchaseQuantity": {
-          "one": "最低購入商品数: {count}",
-          "other": "最低購入商品数: {count}"
+          "one": "最低購入数: {count}",
+          "other": "最低購入数: {count}"
         },
         "noMinimumPurchaseRequirement": "最低購入数の要件はありません"
       },
@@ -207,7 +207,7 @@
         "title": "パフォーマンス",
         "notActive": "ディスカウントはまだ有効ではありません。",
         "performanceLink": "ディスカウント別の売上レポートを表示する",
-        "usageCount": "{usageCount}回利用されました",
+        "usageCount": "{usageCount}回使用されました",
         "totalSales": "販売合計: {totalSales}"
       },
       "RatesExclusion": {
@@ -253,7 +253,7 @@
       },
       "excludeShippingRatesSection": {
         "title": "配送料",
-        "checkboxLabel": "一定額以上の配送料を除外"
+        "checkboxLabel": "一定額以上の配送料を除外する"
       }
     },
     "PurchaseTypeList": {

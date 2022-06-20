@@ -153,9 +153,9 @@
           "Automatic": "Nie ma jeszcze tytułu."
         },
         "badge": {
-          "active": "Aktywny",
-          "expired": "Ważność wygasła",
-          "scheduled": "Zaplanowano"
+          "active": "Aktywne",
+          "expired": "Wygasłe",
+          "scheduled": "Zaplanowane"
         },
         "typeAndMethod": "typ i metoda",
         "discountMethod": {
@@ -210,10 +210,10 @@
       "MinimumRequirements": {
         "minimumPurchaseSubtotal": "Minimalny zakup {subtotal}",
         "minimumPurchaseQuantity": {
-          "one": "Minimalny zakup od liczby pozycji: {count}",
-          "other": "Minimalny zakup od liczby pozycji: {count}",
-          "few": "Minimalny zakup od liczby pozycji: {count}",
-          "many": "Minimalny zakup od liczby pozycji: {count}"
+          "one": "Minimalny zakup od {count} pozycji",
+          "other": "Minimalny zakup od {count} pozycji",
+          "few": "Minimalny zakup od {count} pozycji",
+          "many": "Minimalny zakup od {count} pozycji"
         },
         "noMinimumPurchaseRequirement": "Brak wymogu minimalnego zakupu"
       },
