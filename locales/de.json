@@ -16,7 +16,7 @@
       "dateFormatError": "Das Datum muss das Format JJJJ-MM-TT haben"
     },
     "MethodCard": {
-      "methodSubtitle": "Methode",
+      "methodSubtitle": "Art",
       "choiceList": {
         "title": "Optionen für Methode auswählen",
         "code": "Rabattcode",
