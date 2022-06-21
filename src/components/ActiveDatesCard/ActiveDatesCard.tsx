@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {Card, Checkbox, FormLayout} from '@shopify/polaris';
 import {isSameDay} from '@shopify/dates';
 import {useI18n} from '@shopify/react-i18n';
