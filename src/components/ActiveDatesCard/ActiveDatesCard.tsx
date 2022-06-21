@@ -56,12 +56,7 @@ export function ActiveDatesCard({
   const nowInUTC = new Date();
 
   const ianaTimezone = i18n.defaultTimezone!;
-
-  const [showEndDate, setShowEndDate] = useState(Boolean(endDate.value));
-
-  useEffect(() => {
-    setShowEndDate(Boolean(endDate.value));
-  }, [endDate.value]);
+  const showEndDate = Boolean(endDate.value);
 
   // When start date or time changes, updates the end date to be later than start date (if applicable)
   const handleStartDateTimeChange = (nextStart: DateTime) => {
@@ -107,8 +102,6 @@ export function ActiveDatesCard({
 
       endDate.onChange(endDateAtEndOfDay.toISOString());
     }
-
-    setShowEndDate((prev) => !prev);
   };
 
   const endDateIsStartDate =
