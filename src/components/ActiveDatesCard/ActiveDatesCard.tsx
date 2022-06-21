@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Card, Checkbox, FormLayout} from '@shopify/polaris';
 import {isSameDay} from '@shopify/dates';
 import {useI18n} from '@shopify/react-i18n';
@@ -57,9 +57,11 @@ export function ActiveDatesCard({
 
   const ianaTimezone = i18n.defaultTimezone!;
 
-  const [showEndDate, setShowEndDate] = useState(
-    initShowEndDate(startDate, endDate),
-  );
+  const [showEndDate, setShowEndDate] = useState(Boolean(endDate.value));
+
+  useEffect(() => {
+    setShowEndDate(Boolean(endDate.value));
+  }, [endDate.value]);
 
   // When start date or time changes, updates the end date to be later than start date (if applicable)
   const handleStartDateTimeChange = (nextStart: DateTime) => {
@@ -206,25 +208,6 @@ export function ActiveDatesCard({
  */
 function getEndDatePickerDisableDatesBefore(now: Date, startDate: Date) {
   return now > startDate ? now : startDate;
-}
-
-/**
- * showEndDate is initialized to:
- *  - false if endDate is null
- *  - true if endDate is not null and has an error value
- *  - Boolean(startDate equals endDate)
- */
-function initShowEndDate(
-  startDate: Field<DateTime>,
-  endDate: Field<DateTime | null>,
-) {
-  if (!endDate.value) {
-    return false;
-  } else if (endDate.value && endDate.error) {
-    return true;
-  }
-
-  return startDate.value !== endDate.value;
 }
 
 /**
