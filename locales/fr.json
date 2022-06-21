@@ -9,7 +9,7 @@
       "setEndDate": "Définir la date de fin"
     },
     "TimePicker": {
-      "timePlaceholder": "Saisir l'heure"
+      "timePlaceholder": "Saisir l’heure"
     },
     "DatePicker": {
       "datePlaceholder": "AAAA-MM-JJ",
@@ -29,21 +29,21 @@
       },
       "discountField": {
         "label": "Titre",
-        "helpText": "La clientèle verra cela dans son panier et au moment du paiement."
+        "helpText": "Les clients verront cela dans leur panier et sur la page de paiement."
       }
     },
     "DiscountCodeGenerator": {
       "field": {
         "label": "Code de réduction",
-        "helpText": "La clientèle doit saisir ce code au moment du paiement."
+        "helpText": "Les clients doivent saisir ce code au moment du paiement."
       },
       "buttonText": "Générer"
     },
     "UsageLimitsCard": {
-      "title": "Nombre maximum d'utilisations de la réduction",
+      "title": "Nombre maximal d’utilisations de la réduction",
       "options": "Options de limites d’utilisation",
       "totalUsageLimitLabel": "Limiter le nombre total d’utilisations de cette réduction",
-      "oncePerCustomerLimitLabel": "Limiter à une utilisation par client(e)",
+      "oncePerCustomerLimitLabel": "Limiter à une utilisation par client",
       "totalUsageLimitHelpTextSubscription": "Un abonnement comportant plusieurs paiements comptera comme une seule utilisation."
     },
     "RecurringPayment": {
@@ -55,10 +55,10 @@
       "includesFirstPayment": "Inclut le paiement sur la première commande."
     },
     "MinimumRequirementsCard": {
-      "title": "Conditions d’achat minimum",
+      "title": "Conditions d’achat minimales",
       "none": "Aucune exigence minimale",
-      "minimumSubtotal": "Montant minimum d’achat ({currencySymbol})",
-      "minimumQuantity": "Quantité minimum d’articles",
+      "minimumSubtotal": "Montant minimal d’achat ({currencySymbol})",
+      "minimumQuantity": "Quantité minimale d’articles",
       "subscriptions": {
         "appliesToCollections": "S’applique uniquement aux produits par abonnement dans les collections sélectionnées.",
         "appliesToProducts": "S’applique uniquement aux produits par abonnement sélectionnés.",
@@ -73,8 +73,8 @@
     "CombinationCard": {
       "title": "Combinaisons",
       "combinesWith": "Cumulable avec",
-      "discountNameFilled": "peut être combiné avec :",
-      "discountNameNotFilled": "Cette réduction {discountClass} peut être combinée avec :",
+      "discountNameFilled": "peut être cumulé avec :",
+      "discountNameNotFilled": "Cette réduction {discountClass} peut être cumulée avec :",
       "options": {
         "productLabelOther": "Autres réductions sur les produits",
         "productLabel": "Réductions sur un produit",
@@ -103,7 +103,7 @@
           "shipping": {
             "title": "Vous n’avez pas de réductions sur les frais d’expédition à cumuler pour le moment.",
             "warning": {
-              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec les réductions sur des produits.",
+              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec les réductions sur les produits.",
               "withorder": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec les réductions sur la commande.",
               "withshipping": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec d’autres réductions sur les frais d’expédition."
             }
@@ -149,9 +149,9 @@
           "Automatic": "Aucun titre pour l’instant."
         },
         "badge": {
-          "active": "Actif",
-          "expired": "Expiré",
-          "scheduled": "Programmé"
+          "active": "Active",
+          "expired": "Expirée",
+          "scheduled": "Programmée"
         },
         "typeAndMethod": "type et mode",
         "discountMethod": {
@@ -161,31 +161,31 @@
       },
       "AppliesToPurchaseType": {
         "appliesToPurchaseTypeSubscription": "S’applique aux achats par abonnement",
-        "appliesToPurchaseTypeOneTime": "S’applique aux achats ponctuels",
-        "appliesToPurchaseTypeBoth": "S’applique aux achats par abonnement et aux achats ponctuels"
+        "appliesToPurchaseTypeOneTime": "S’applique aux achats uniques",
+        "appliesToPurchaseTypeBoth": "S’applique aux achats par abonnement et aux achats uniques"
       },
       "ActiveDates": {
         "today": "aujourd’hui",
         "activeSingleDate": "Actif le {date}",
         "activeFromDate": "Actif dès le {date}",
-        "activeFromTodayUntilDate": "Actif à partir d'aujourd’hui jusqu’au {date}",
+        "activeFromTodayUntilDate": "Actif à partir d’aujourd’hui jusqu’au {date}",
         "activeFromDateToDate": "Actif du {startDate} au {endDate}"
       },
       "AvailableOnPos": {
-        "availableOnCheckoutAndPos": "Disponible sur les canaux de vente en ligne et Point de vente",
+        "availableOnCheckoutAndPos": "Disponible sur les canaux de vente en ligne et Shopify Point de vente",
         "availableOnCheckoutOnly": "Disponible sur les canaux de vente en ligne"
       },
       "Combinations": {
-        "cannotCombine": "Ne peut pas être cumulable avec d’autres réductions",
+        "cannotCombine": "N’est pas cumulable avec d’autres réductions",
         "combinesWithOne": {
           "product": "Cumulable avec les réductions sur les produits",
           "order": "Cumulable avec les réductions sur la commande",
-          "shipping": "Cumulable avec les réductions sur l’expédition"
+          "shipping": "Cumulable avec les réductions sur les frais d’expédition"
         },
         "combinesWithTwo": {
           "productAndOrder": "Cumulable avec les réductions sur la commande et les produits",
-          "productAndShipping": "Cumulable avec les réductions sur les produits et l’expédition",
-          "orderAndShipping": "Cumulable avec les réductions sur la commande et l’expédition"
+          "productAndShipping": "Cumulable avec les réductions sur les produits et les frais d’expédition",
+          "orderAndShipping": "Cumulable avec les réductions sur la commande et les frais d’expédition"
         }
       },
       "CustomerEligibility": {
@@ -251,7 +251,7 @@
     "CustomerEligibilityCard": {
       "title": "Admissibilité du client",
       "everyone": "Tous les clients",
-      "customerSegments": "Segments spécifiques de clients",
+      "customerSegments": "Segments client spécifiques",
       "customers": "Clients spécifiques"
     },
     "CountriesAndRatesCard": {
@@ -262,7 +262,7 @@
         "selected": "Pays spécifiques"
       },
       "excludeShippingRatesSection": {
-        "title": "Tarifs d'expédition",
+        "title": "Frais d’expédition",
         "checkboxLabel": "Exclure les frais d’expédition au-dessus d’un certain montant"
       }
     },
@@ -494,7 +494,7 @@
       "SR": "Suriname",
       "SS": "Soudan du Sud",
       "ST": "Sao Tomé-et-Principe",
-      "SV": "Le Salvador",
+      "SV": "Salvador",
       "SX": "Saint-Martin",
       "SY": "Syrie",
       "SZ": "Eswatini",

@@ -76,7 +76,7 @@
       "discountNameFilled": "có thể kết hợp với:",
       "discountNameNotFilled": "Ưu đãi giảm giá {discountClass} có thể kết hợp với:",
       "options": {
-        "productLabelOther": "Giảm giá sản phẩm khác",
+        "productLabelOther": "Ưu đãi giảm giá cho sản phẩm khác",
         "productLabel": "Ưu đãi giảm giá sản phẩm",
         "orderLabel": "Ưu đãi giảm giá đơn hàng",
         "shippingLabel": "Ưu đãi giảm giá vận chuyển"
@@ -168,7 +168,7 @@
         "activeFromDateToDate": "Có hiệu lực từ {startDate} đến {endDate}"
       },
       "AvailableOnPos": {
-        "availableOnCheckoutAndPos": "Khả dụng trên các kênh bán hàng trực tuyến và Point of Sale",
+        "availableOnCheckoutAndPos": "Có trên các kênh bán hàng trực tuyến và Point of Sale",
         "availableOnCheckoutOnly": "Khả dụng trên các kênh bán hàng trực tuyến"
       },
       "Combinations": {

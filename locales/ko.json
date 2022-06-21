@@ -1,11 +1,11 @@
 {
   "DiscountAppComponents": {
     "ActiveDatesCard": {
-      "title": "활성 날짜",
+      "title": "활성화 날짜",
       "startDate": "시작 날짜",
       "startTime": "시작 시간({timezoneAbbreviation})",
       "endDate": "종료 날짜",
-      "endTime": "종료 시간 {timezoneAbbreviation}",
+      "endTime": "종료 시간({timezoneAbbreviation})",
       "setEndDate": "종료 날짜 설정"
     },
     "TimePicker": {
@@ -29,13 +29,13 @@
       },
       "discountField": {
         "label": "제목",
-        "helpText": "카트에서 또는 결제 시에 고객에게 표시됩니다."
+        "helpText": "카트에서 또는 결제 시 고객에게 표시됩니다."
       }
     },
     "DiscountCodeGenerator": {
       "field": {
         "label": "할인 코드",
-        "helpText": "고객이 결제 시에 할인 코드를 입력해야 합니다."
+        "helpText": "고객은 결제 시 이 코드를 입력해야 합니다."
       },
       "buttonText": "생성"
     },
@@ -44,7 +44,7 @@
       "options": "사용 한도 옵션",
       "totalUsageLimitLabel": "이 할인을 사용할 수 있는 총 횟수 제한",
       "oncePerCustomerLimitLabel": "고객당 1회 사용으로 제한",
-      "totalUsageLimitHelpTextSubscription": "1건의 가입에 여러 결제를 사용하면 단일 사용으로 계산됩니다."
+      "totalUsageLimitHelpTextSubscription": "많이 결제한 가입이 1회 사용한 것으로 계산됩니다."
     },
     "RecurringPayment": {
       "title": "가입 정기결제",
@@ -60,8 +60,8 @@
       "minimumSubtotal": "최소 구매액({currencySymbol})",
       "minimumQuantity": "최소 품목 수량",
       "subscriptions": {
-        "appliesToCollections": "선택된 컬렉션의 가입 제품에만 적용됩니다.",
-        "appliesToProducts": "선택된 가입 제품에만 적용됩니다.",
+        "appliesToCollections": "선택한 컬렉션의 가입 제품에만 적용됩니다.",
+        "appliesToProducts": "선택한 가입 제품에만 적용됩니다.",
         "appliesToAllProducts": "가입 제품에만 적용됩니다."
       },
       "oneTime": {
@@ -71,7 +71,7 @@
       }
     },
     "CombinationCard": {
-      "title": "조합",
+      "title": "결합",
       "combinesWith": "다음과 결합:",
       "discountNameFilled": "결합 가능한 할인:",
       "discountNameNotFilled": "이 {discountClass} 할인과 결합 가능한 할인:",
@@ -79,7 +79,7 @@
         "productLabelOther": "기타 제품 할인",
         "productLabel": "제품 할인",
         "orderLabel": "주문 할인",
-        "shippingLabel": "배송료 할인"
+        "shippingLabel": "배송 할인"
       },
       "newBadge": "신규",
       "HelpText": {
@@ -157,8 +157,8 @@
       },
       "AppliesToPurchaseType": {
         "appliesToPurchaseTypeSubscription": "가입 구매에 적용",
-        "appliesToPurchaseTypeOneTime": "1회 구매에 적용",
-        "appliesToPurchaseTypeBoth": "가입 및 1회 구매에 적용"
+        "appliesToPurchaseTypeOneTime": "1회성 구매에 적용",
+        "appliesToPurchaseTypeBoth": "가입 및 1회성 구매에 적용"
       },
       "ActiveDates": {
         "today": "오늘",
@@ -301,7 +301,7 @@
       "BR": "브라질",
       "BS": "바하마",
       "BT": "부탄",
-      "BV": "부베섬",
+      "BV": "부베 섬",
       "BW": "보츠와나",
       "BY": "벨라루스",
       "BZ": "벨리즈",
@@ -366,7 +366,7 @@
       "GU": "괌",
       "GW": "기니비사우",
       "GY": "가이아나",
-      "HK": "홍콩특별행정구(중국)",
+      "HK": "홍콩 특별 행정구",
       "HM": "허드 섬 및 맥도널드 제도",
       "HN": "온두라스",
       "HR": "크로아티아",
@@ -394,7 +394,7 @@
       "KM": "코모로",
       "KN": "세인트 크리스토퍼 네비스",
       "KP": "북한",
-      "KR": "한국",
+      "KR": "대한민국",
       "KW": "쿠웨이트",
       "KY": "케이맨 제도",
       "KZ": "카자흐스탄",
@@ -435,7 +435,7 @@
       "NA": "나미비아",
       "NC": "뉴칼레도니아",
       "NE": "니제르",
-      "NF": "노퍽섬",
+      "NF": "노퍽 섬",
       "NG": "나이지리아",
       "NI": "니카라과",
       "NL": "네덜란드",
@@ -475,7 +475,7 @@
       "SG": "싱가포르",
       "SH": "세인트 헬레나",
       "SI": "슬로베니아",
-      "SJ": "스발바르제도-얀마웬섬",
+      "SJ": "스발바르 얀마옌 제도",
       "SK": "슬로바키아",
       "SL": "시에라리온",
       "SM": "산마리노",
@@ -511,7 +511,7 @@
       "US": "미국",
       "UY": "우루과이",
       "UZ": "우즈베키스탄",
-      "VA": "바티칸시국",
+      "VA": "바티칸 시국",
       "VC": "세인트 빈센트 그레나딘",
       "VE": "베네수엘라",
       "VG": "영국령 버진아일랜드",

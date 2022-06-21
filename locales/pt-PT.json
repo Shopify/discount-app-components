@@ -29,7 +29,7 @@
       },
       "discountField": {
         "label": "Título",
-        "helpText": "Os clientes verão esta informação no carrinho e na finalização da compra."
+        "helpText": "Os clientes vão ver esta informação no carrinho e na finalização da compra."
       }
     },
     "DiscountCodeGenerator": {
@@ -149,9 +149,9 @@
           "Automatic": "Ainda sem título."
         },
         "badge": {
-          "active": "Ativo",
+          "active": "Ativa",
           "expired": "Expirado",
-          "scheduled": "Agendada"
+          "scheduled": "Agendado"
         },
         "typeAndMethod": "tipo e método",
         "discountMethod": {
@@ -208,10 +208,10 @@
           "other": "Compra mínima de {count} itens",
           "many": "Compra mínima de {count} itens"
         },
-        "noMinimumPurchaseRequirement": "Sem requisito mínimo de compra mínima"
+        "noMinimumPurchaseRequirement": "compra"
       },
       "Performance": {
-        "title": "Desempenho",
+        "title": "desempenho",
         "notActive": "O desconto ainda não está ativo.",
         "performanceLink": "Ver relatório de vendas por desconto",
         "usageCount": "{usageCount} usado(s)",
@@ -327,7 +327,7 @@
       "CM": "Camarões",
       "CN": "China",
       "CO": "Colômbia",
-      "CP": "Clipperton",
+      "CP": "Ilha Clipperton",
       "CR": "Costa Rica",
       "CU": "Cuba",
       "CV": "Cabo Verde",
