@@ -50,7 +50,7 @@ jobs:
 
       - name: 💅🏼 Lint
         run: yarn lint
-      - name: ':typescript: Typecheck'
+      - name: 🔎 Typecheck
         run: yarn type-check
-      - name: ':js: Javascript Tests'
+      - name: ‍💻 Javascript Tests
         run: yarn test --no-watch
