@@ -6,7 +6,7 @@
       "startTime": "Başlangıç saati ({timezoneAbbreviation})",
       "endDate": "Bitiş tarihi",
       "endTime": "Bitiş saati ({timezoneAbbreviation})",
-      "setEndDate": "Bitiş tarihini ayarla"
+      "setEndDate": "Bitiş tarihini ayarlayın"
     },
     "TimePicker": {
       "timePlaceholder": "Saat girin"
@@ -35,7 +35,7 @@
     "DiscountCodeGenerator": {
       "field": {
         "label": "İndirim kodu",
-        "helpText": "Müşteriler, ödeme sırasında bu kodu girmelidir."
+        "helpText": "Müşteriler ödeme sırasında bu kodu girmelidir."
       },
       "buttonText": "Oluştur"
     },
@@ -162,8 +162,8 @@
       },
       "ActiveDates": {
         "today": "bugün",
-        "activeSingleDate": "{date} tarihinde etkin",
-        "activeFromDate": "{date} tarihinden itibaren etkin",
+        "activeSingleDate": "Etkin olduğu tarih: {date}",
+        "activeFromDate": "Şu tarihten itibaren etkin: {date}",
         "activeFromTodayUntilDate": "Bugünden {date} tarihine kadar etkin",
         "activeFromDateToDate": "{startDate} tarihinden {endDate} tarihine kadar etkin"
       },
@@ -350,7 +350,7 @@
       "GA": "Gabon",
       "GB": "Birleşik Krallık",
       "GD": "Grenada",
-      "GE": "Gürcistan",
+      "GE": "Georgia",
       "GF": "Fransız Guyanası",
       "GG": "Guernsey",
       "GH": "Gana",

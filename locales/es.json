@@ -13,7 +13,7 @@
     },
     "DatePicker": {
       "datePlaceholder": "AAAA-MM-DD",
-      "dateFormatError": "Debe ser una fecha en formato AAAA-MM-DD"
+      "dateFormatError": "Debe ser una fecha con el formato AAAA-MM-DD."
     },
     "MethodCard": {
       "methodSubtitle": "Método",
@@ -76,55 +76,55 @@
       "discountNameFilled": "se puede combinar con:",
       "discountNameNotFilled": "Este descuento de {discountClass} se puede combinar con:",
       "options": {
-        "productLabelOther": "Otros descuentos de producto",
-        "productLabel": "Descuentos de producto",
-        "orderLabel": "Descuentos de pedido",
-        "shippingLabel": "Descuentos de envío"
+        "productLabelOther": "Otros descuentos en productos",
+        "productLabel": "Descuentos en productos",
+        "orderLabel": "Descuentos en pedidos",
+        "shippingLabel": "Descuentos en envíos"
       },
       "newBadge": "Nuevo",
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Actualmente, no hay descuentos de producto definidos para combinarse.",
+            "title": "Actualmente, no hay descuentos en productos definidos para combinarse.",
             "warning": {
-              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de producto que combine con descuentos de producto.",
-              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de producto que combine con descuentos de pedido.",
-              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de producto que combine con descuentos de envío."
+              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos del mismo tipo.",
+              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos en pedidos.",
+              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos en envíos."
             }
           },
           "order": {
-            "title": "Actualmente, no hay descuentos de pedido definidos para combinarse.",
+            "title": "Actualmente, no hay descuentos en pedidos definidos para combinarse.",
             "warning": {
-              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de pedido que combine con descuentos de producto.",
-              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de pedido que combine con descuentos de pedido.",
-              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de pedido que combine con descuentos de envío."
+              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos en productos.",
+              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos del mismo tipo.",
+              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos en envíos."
             }
           },
           "shipping": {
-            "title": "Actualmente, no hay descuentos de envío definidos para combinarse.",
+            "title": "Actualmente, no hay descuentos en envíos definidos para combinarse.",
             "warning": {
-              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de envío que combine con descuentos de producto.",
-              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de envío que combine con descuentos de pedido.",
-              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento de envío que combine con descuentos de envío."
+              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en productos.",
+              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en pedidos.",
+              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos del mismo tipo."
             }
           }
         },
         "combinations": {
           "counts": {
             "product": {
-              "one": "{count} descuento de producto",
-              "other": "{count} descuentos de producto",
-              "many": "{count} descuentos de producto"
+              "one": "{count} descuento en productos",
+              "other": "{count} descuentos en productos",
+              "many": "{count} descuentos en productos"
             },
             "order": {
-              "one": "{count} descuento de pedido",
-              "other": "{count} descuentos de pedido",
-              "many": "{count} descuentos de pedido"
+              "one": "{count} descuento en pedidos",
+              "other": "{count} descuentos en pedidos",
+              "many": "{count} descuentos en pedidos"
             },
             "shipping": {
-              "one": "{count} descuento de envío",
-              "other": "{count} descuentos de envío",
-              "many": "{count} descuentos de envío"
+              "one": "{count} descuento en envíos",
+              "other": "{count} descuentos en envíos",
+              "many": "{count} descuentos en envíos"
             }
           },
           "info": {
@@ -146,7 +146,7 @@
       "Header": {
         "emptyState": {
           "Code": "Aún no hay ningún código de descuento.",
-          "Automatic": "Aún no tiene nombre."
+          "Automatic": "Aún no hay ningún título."
         },
         "badge": {
           "active": "Activo",
@@ -160,9 +160,9 @@
         }
       },
       "AppliesToPurchaseType": {
-        "appliesToPurchaseTypeSubscription": "Se aplica a compras de suscripción",
-        "appliesToPurchaseTypeOneTime": "Se aplica a compras únicas",
-        "appliesToPurchaseTypeBoth": "Se aplica a compras de suscripción y compras únicas"
+        "appliesToPurchaseTypeSubscription": "Se aplica a compras por suscripción",
+        "appliesToPurchaseTypeOneTime": "Se aplica a compras únicas.",
+        "appliesToPurchaseTypeBoth": "Se aplica a compras por suscripción y únicas."
       },
       "ActiveDates": {
         "today": "hoy",
@@ -172,20 +172,20 @@
         "activeFromDateToDate": "Activo desde el {startDate} hasta el {endDate}"
       },
       "AvailableOnPos": {
-        "availableOnCheckoutAndPos": "Disponible en canales de ventas online y Shopify POS",
+        "availableOnCheckoutAndPos": "Disponible en canales de ventas online y Point of Sale",
         "availableOnCheckoutOnly": "Disponible en canales de ventas online"
       },
       "Combinations": {
         "cannotCombine": "No puede combinarse con otros descuentos.",
         "combinesWithOne": {
-          "product": "Se puede combinar con descuentos de producto.",
-          "order": "Se puede combinar con descuentos de pedido.",
+          "product": "Se puede combinar con descuentos en productos.",
+          "order": "Se puede combinar con descuentos en pedidos.",
           "shipping": "Se puede combinar con descuentos de envío."
         },
         "combinesWithTwo": {
-          "productAndOrder": "Se puede combinar con descuentos de producto y pedido.",
-          "productAndShipping": "Se puede combinar con descuentos de producto y envío.",
-          "orderAndShipping": "Se puede combinar con descuentos de pedido y envío."
+          "productAndOrder": "Se puede combinar con descuentos en productos y pedidos.",
+          "productAndShipping": "Se puede combinar con descuentos en productos y envíos.",
+          "orderAndShipping": "Se puede combinar con descuentos en pedidos y envíos."
         }
       },
       "CustomerEligibility": {
@@ -208,12 +208,12 @@
           "other": "Compra mínima de {count} artículos",
           "many": "Compra mínima de {count} artículos"
         },
-        "noMinimumPurchaseRequirement": "No hay ningún requisito de compra mínima"
+        "noMinimumPurchaseRequirement": "No hay ningún requisito de compra mínima."
       },
       "Performance": {
         "title": "Rendimiento",
         "notActive": "El descuento aún no está activo.",
-        "performanceLink": "Ver los informes de ventas por descuento",
+        "performanceLink": "Ver el informe de ventas por descuento",
         "usageCount": "{usageCount} usados",
         "totalSales": "{totalSales} en ventas totales"
       },
@@ -241,7 +241,7 @@
           "many": "Limite de {count} usos"
         },
         "totalUsageLimitWithOneUsePerCustomer": {
-          "one": "Límite de {count} uso por cliente",
+          "one": "Límite de {count} uso, uno por cliente",
           "other": "Límite de {count} usos, uno por cliente",
           "many": "Límite de {count} usos, uno por cliente"
         },
@@ -251,7 +251,7 @@
     "CustomerEligibilityCard": {
       "title": "Elegibilidad de los clientes",
       "everyone": "Todos los clientes",
-      "customerSegments": "Segmentos de clientes específicos",
+      "customerSegments": "Segmentos específicos de clientes",
       "customers": "Clientes específicos"
     },
     "CountriesAndRatesCard": {
@@ -263,7 +263,7 @@
       },
       "excludeShippingRatesSection": {
         "title": "Tarifas de envío",
-        "checkboxLabel": "Excluir tarifas de envío a partir de cierta cantidad"
+        "checkboxLabel": "Excluir tarifas de envío a partir de un monto determinado"
       }
     },
     "PurchaseTypeList": {
@@ -376,7 +376,7 @@
       "GU": "Guam",
       "GW": "Guinea Bissau",
       "GY": "Guyana",
-      "HK": "Hong Kong RAE de China",
+      "HK": "RAE de Hong Kong (China)",
       "HM": "Islas Heard y McDonald",
       "HN": "Honduras",
       "HR": "Croacia",

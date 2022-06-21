@@ -76,10 +76,10 @@
       "discountNameFilled": "è cumulabile con:",
       "discountNameNotFilled": "Questo sconto {discountClass} è cumulabile con:",
       "options": {
-        "productLabelOther": "Altro sconti sui prodotti",
+        "productLabelOther": "Altri sconti sui prodotti",
         "productLabel": "Sconti sui prodotti",
         "orderLabel": "Sconti sugli ordini",
-        "shippingLabel": "Sconti sulle spedizioni"
+        "shippingLabel": "Sconti sulla spedizione"
       },
       "newBadge": "Nuovo",
       "HelpText": {
@@ -151,7 +151,7 @@
         "badge": {
           "active": "Attivo",
           "expired": "Scaduto",
-          "scheduled": "Programmati"
+          "scheduled": "Programmato"
         },
         "typeAndMethod": "tipo e metodo",
         "discountMethod": {
@@ -169,14 +169,14 @@
         "activeSingleDate": "Attivo il giorno {date}",
         "activeFromDate": "Attivo dal giorno {date}",
         "activeFromTodayUntilDate": "Attivo da oggi fino al giorno {date}",
-        "activeFromDateToDate": "Attivo dalle ore {startDate} alle ore {endDate}"
+        "activeFromDateToDate": "Attivo dal {startDate} al {endDate}"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "Disponibile sui canali di vendita online e Point of Sale",
         "availableOnCheckoutOnly": "Disponibile sui canali di vendita online"
       },
       "Combinations": {
-        "cannotCombine": "Non cumulabili con altri sconti",
+        "cannotCombine": "Non cumulabile con altri sconti",
         "combinesWithOne": {
           "product": "Cumulabile con sconti sui prodotti",
           "order": "Cumulabile con sconti sugli ordini",
