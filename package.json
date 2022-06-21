@@ -6,6 +6,7 @@
   "repository": "https://github.com/Shopify/discount-app-components",
   "bugs": "https://github.com/Shopify/discount-app-components/issues",
   "private": false,
+  "license": "SEE LICENSE IN LICENSE.md",
   "publishConfig": {
     "access": "public",
     "@shopify:registry": "https://registry.npmjs.org"
