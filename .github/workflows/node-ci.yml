@@ -1,0 +1,56 @@
+name: Node-CI
+
+on:
+  pull_request: ~
+  push:
+    branches: [main]
+
+jobs:
+  node-tests:
+    runs-on: ubuntu-latest
+    name: 'Test (Node ${{ matrix.node-version }})'
+    strategy:
+      matrix:
+        # The action will first check the local cache for a semver match.
+        # If unable to find a specific version in the cache,
+        # the action will attempt to download a version of Node.js.
+        # It will pull LTS versions from node-versions releases and on miss
+        # or failure will fall back to the previous behavior of downloading
+        # directly from node dist.
+        # https://github.com/actions/setup-node
+        node-version: ['16']
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout
+
+      - uses: actions/setup-node@v2
+        name: Use Node.js ${{ matrix.node-version }}
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+          check-latest: true
+
+      - uses: actions/cache@v2
+        name: Restore loom cache
+        with:
+          path: |
+            .loom
+            packages/*/build/ts
+            packages/*/build/*.tsbuildinfo
+          key: ${{ runner.os }}-node${{ matrix.node-version }}-loom-v1-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-node${{ matrix.node-version }}-loom-v1-
+      - name: 📦 Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: 🔨 Build
+        run: yarn build
+
+      - name: 💅🏼 Lint
+        run: yarn lint
+      - name: 🔎 Typecheck
+        run: yarn type-check
+      - name: ‍💻 Javascript Tests
+        run: yarn test --no-watch
