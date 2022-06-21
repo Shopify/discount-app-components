@@ -12,7 +12,7 @@ export type DateTime = string;
 export type Decimal = string;
 
 /**
- * @deprecated
+ * @deprecated use {@link PositiveNumericString} instead
  */
 export type PositiveNumericValue = string;
 
