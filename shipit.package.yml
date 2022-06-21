@@ -1,3 +1,0 @@
-ci:
-  require:
-    - buildkite/discount-app-components
