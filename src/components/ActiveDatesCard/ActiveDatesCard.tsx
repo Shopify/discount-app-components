@@ -26,7 +26,7 @@ export interface ActiveDatesCardProps {
   endDate: Field<DateTime | null>;
 
   /**
-   * The shop's time zone abbreviation.
+   * The shop's time zone abbreviation. This can be queried from the [Shop gql object](https://shopify.dev/api/admin-graphql/2022-07/objects/Shop#field-shop-timezoneabbreviation).
    */
   timezoneAbbreviation: string;
 
@@ -110,7 +110,7 @@ export function ActiveDatesCard({
   };
 
   const endDateIsStartDate =
-    endDate.value !== null &&
+    endDate.value &&
     isSameDay(new Date(endDate.value), new Date(startDate.value));
 
   const disableEndDatesBefore = getEndDatePickerDisableDatesBefore(
@@ -164,7 +164,7 @@ export function ActiveDatesCard({
           />
         </FormLayout.Group>
 
-        {showEndDate && endDate.value !== null && (
+        {showEndDate && endDate.value && (
           <FormLayout.Group>
             <DatePicker
               date={{
@@ -220,7 +220,7 @@ function initShowEndDate(
 ) {
   if (!endDate.value) {
     return false;
-  } else if (endDate.value !== null && endDate.error) {
+  } else if (endDate.value && endDate.error) {
     return true;
   }
 
