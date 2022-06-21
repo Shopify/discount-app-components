@@ -472,7 +472,7 @@ describe('<ActiveDatesCard />', () => {
       });
     });
 
-    it('updates checked value to checked when end date prop is changed to have a value', async () => {
+    it('updates checked value to checked when end date prop is changed to have a value', () => {
       const activeDates = mountWithApp(
         <ActiveDatesCard
           {...mockProps}

@@ -3,7 +3,7 @@ import {List} from '@shopify/polaris';
 import {I18n, useI18n, CurrencyCode} from '@shopify/react-i18n';
 
 import {RequirementType} from '~/constants';
-import type {PositiveNumericValue} from '~/types';
+import type {PositiveNumericString} from '~/types';
 
 export interface MinimumRequirementsProps {
   /**
@@ -14,12 +14,12 @@ export interface MinimumRequirementsProps {
   /**
    * (optional) The minimum quantity requirement for the discount
    */
-  quantity?: PositiveNumericValue;
+  quantity?: PositiveNumericString;
 
   /**
    * (optional) The minimum subtotal requirement for the discount. NOTE: requires currencyCode to be passed
    */
-  subtotal?: PositiveNumericValue;
+  subtotal?: PositiveNumericString;
 
   /**
    * (optional) The currencyCode that should be used to format the subtotal amount
@@ -73,7 +73,7 @@ export function MinimumRequirements({
 function getValidSubtotal(
   i18n: I18n,
   currencyCode?: CurrencyCode,
-  subtotal?: PositiveNumericValue,
+  subtotal?: PositiveNumericString,
 ) {
   if (subtotal === undefined || currencyCode === undefined) {
     return null;
@@ -97,7 +97,7 @@ function getValidSubtotal(
   return null;
 }
 
-function isValidQuantity(quantity?: PositiveNumericValue) {
+function isValidQuantity(quantity?: PositiveNumericString) {
   if (quantity === undefined) {
     return false;
   }

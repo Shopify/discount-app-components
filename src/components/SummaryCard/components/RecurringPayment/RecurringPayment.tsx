@@ -3,7 +3,7 @@ import {List} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
 import {RecurringPaymentType} from '~/constants';
-import type {PositiveNumericValue} from '~/types';
+import type {PositiveNumericString} from '~/types';
 
 export interface RecurringPaymentProps {
   /**
@@ -19,7 +19,7 @@ export interface RecurringPaymentProps {
   /**
    * (optional) If the discount is available for RecurringPaymentType.MultiplePayments, this value displays how many payments the discount is available for
    */
-  recurringPaymentLimit?: PositiveNumericValue;
+  recurringPaymentLimit?: PositiveNumericString;
 }
 
 const I18N_SCOPE = {

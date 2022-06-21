@@ -11,6 +11,7 @@ export type {
   MoneyInput,
   Option,
   PositiveNumericValue,
+  PositiveNumericString,
   Country,
   Customer,
   CustomerSegment,

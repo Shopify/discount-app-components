@@ -2,13 +2,13 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {CurrencyCode, useI18n} from '@shopify/react-i18n';
 
-import type {PositiveNumericValue} from '~/types';
+import type {PositiveNumericString} from '~/types';
 
 export interface MaximumShippingPriceProps {
   /**
    * Maximum shipping price, displayed when the user selects to exclude shipping rates
    */
-  maximumShippingPrice: PositiveNumericValue;
+  maximumShippingPrice: PositiveNumericString;
 
   /**
    * The currency code that should be used to format the input value

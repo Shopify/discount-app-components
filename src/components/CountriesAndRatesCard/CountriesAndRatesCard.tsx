@@ -8,7 +8,7 @@ import {CurrencyField} from '../CurrencyField';
 import styles from './CountriesAndRatesCard.scss';
 import {useLocalizeCountry} from './utilities';
 
-import type {Field, PositiveNumericValue, CountryCode, Country} from '~/types';
+import type {Field, PositiveNumericString, CountryCode, Country} from '~/types';
 import {CountrySelectionType} from '~/constants';
 
 const EXCLUDE_SHIPPING_RATES_FIELD_ID = 'excludeShippingRatesOverTextField';
@@ -32,7 +32,7 @@ export interface CountriesAndRatesCardProps {
   /**
    * The maximum shipping rate where the discount applies
    */
-  maximumShippingPrice: Field<PositiveNumericValue>;
+  maximumShippingPrice: Field<PositiveNumericString>;
 
   /**
    * Widget that enables users to select countries (see docs for an example)
