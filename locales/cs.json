@@ -13,7 +13,7 @@
     },
     "DatePicker": {
       "datePlaceholder": "RRRR-MM-DD",
-      "dateFormatError": "Datum by mělo být naformátováno jako RRRR-MM-DD."
+      "dateFormatError": "Datum by mělo být ve formátu RRRR-MM-DD."
     },
     "MethodCard": {
       "methodSubtitle": "Metoda",
@@ -81,7 +81,7 @@
         "orderLabel": "Slevy na objednávku",
         "shippingLabel": "Slevy na dopravu"
       },
-      "newBadge": "Novinka",
+      "newBadge": "Nové",
       "HelpText": {
         "emptyState": {
           "product": {
@@ -131,10 +131,10 @@
             }
           },
           "info": {
-            "one": "{discountCountLink} lze kombinovat v rámci jednoho nákupu. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
-            "other": "{discountCountLink} lze kombinovat v rámci jednoho nákupu. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
-            "few": "{discountCountLink} lze kombinovat v rámci jednoho nákupu. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
-            "many": "{discountCountLink} lze kombinovat v rámci jednoho nákupu. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva."
+            "one": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
+            "other": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
+            "few": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
+            "many": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva."
           }
         }
       },
@@ -160,7 +160,7 @@
         "typeAndMethod": "typ a metoda",
         "discountMethod": {
           "Code": "Kód",
-          "Automatic": "Automaticky"
+          "Automatic": "Automatická"
         }
       },
       "AppliesToPurchaseType": {
@@ -182,14 +182,14 @@
       "Combinations": {
         "cannotCombine": "Nelze kombinovat s jinými slevami",
         "combinesWithOne": {
-          "product": "Kombinuje se se slevami na produkt",
-          "order": "Kombinuje se se slevami na objednávku",
-          "shipping": "Kombinuje se se slevami na dopravu"
+          "product": "Lze kombinovat se se slevami na produkt",
+          "order": "Lze kombinovat se se slevami na objednávku",
+          "shipping": "Lze kombinovat se se slevami na dopravu"
         },
         "combinesWithTwo": {
-          "productAndOrder": "Kombinuje se se slevami na produkt a objednávku",
-          "productAndShipping": "Kombinuje se se slevami na produkt a dopravu",
-          "orderAndShipping": "Kombinuje se se slevami na objednávku a dopravu"
+          "productAndOrder": "Lze kombinovat se se slevami na produkt a objednávku",
+          "productAndShipping": "Lze kombinovat se se slevami na produkt a dopravu",
+          "orderAndShipping": "Lze kombinovat se se slevami na objednávku a dopravu"
         }
       },
       "CustomerEligibility": {
@@ -221,7 +221,7 @@
         "title": "Výkonnost",
         "notActive": "Sleva není zatím aktivní.",
         "performanceLink": "Zobrazit zprávu o prodejích podle slev",
-        "usageCount": "Použito: {usageCount}",
+        "usageCount": "Uplatněno: {usageCount}",
         "totalSales": "{totalSales} v celkových prodejích"
       },
       "RatesExclusion": {

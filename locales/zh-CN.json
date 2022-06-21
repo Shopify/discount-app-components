@@ -247,7 +247,7 @@
     "CountriesAndRatesCard": {
       "title": "国家/地区",
       "choiceList": {
-        "title": "国家/地区和税率",
+        "title": "国家/地区和费率",
         "all": "所有国家/地区",
         "selected": "特定国家/地区"
       },

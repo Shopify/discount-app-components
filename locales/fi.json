@@ -28,7 +28,7 @@
         "shipping": "Toimitusalennus"
       },
       "discountField": {
-        "label": "Otsikko",
+        "label": "Nimi",
         "helpText": "Asiakkaat näkevät tämän ostoskorissaan ja kassalla."
       }
     },
@@ -72,7 +72,7 @@
     },
     "CombinationCard": {
       "title": "Yhdistelmät",
-      "combinesWith": "Yhdistetään",
+      "combinesWith": "Yhdistettävissä",
       "discountNameFilled": "voidaan yhdistää:",
       "discountNameNotFilled": "Tämä {discountClass}-alennus voidaan yhdistää:",
       "options": {
@@ -147,7 +147,7 @@
         "badge": {
           "active": "Aktiivinen",
           "expired": "Vanhentunut",
-          "scheduled": "Ajoitettu"
+          "scheduled": "Ajastettu"
         },
         "typeAndMethod": "tyyppi ja menetelmä",
         "discountMethod": {
@@ -187,11 +187,11 @@
       "CustomerEligibility": {
         "allCustomers": "Kaikki asiakkaat",
         "customers": {
-          "one": "Seuraavalle maalle {customerName}",
+          "one": "Asiakkaalle: {customerName}",
           "other": "Asiakasryhmille: {count}"
         },
         "customerSegments": {
-          "one": "Seuraavalle maalle {segmentName}",
+          "one": "Asiakkaalle: {segmentName}",
           "other": "{count} asiakassegmentille"
         }
       },
@@ -222,7 +222,7 @@
       },
       "SelectedCountries": {
         "forAllCountries": "Kaikille maille",
-        "forSpecificCountry": "Seuraavalle maalle {countryName}",
+        "forSpecificCountry": "Asiakkaalle: {countryName}",
         "forNumberOfCountries": "{numberOfCountries} maalle"
       },
       "UsageLimits": {

@@ -89,7 +89,7 @@
             "warning": {
               "withproduct": "หากต้องการให้ลูกค้าใช้ส่วนลดมากกว่าหนึ่งรายการ ตั้งค่าให้มีส่วนลดสินค้าอย่างน้อยหนึ่งรายการที่รวมกับส่วนลดสินค้า",
               "withorder": "หากต้องการให้ลูกค้าใช้ส่วนลดมากกว่าหนึ่งรายการ ตั้งค่าให้มีส่วนลดสินค้าอย่างน้อยหนึ่งรายการที่รวมกับส่วนลดคำสั่งซื้อ",
-              "withshipping": "หากต้องการให้ลูกค้าใช้ส่วนลดมากกว่าหนึ่งรายการ ตั้งค่าให้มีส่วนลดสินค้าอย่างน้อยหนึ่งรายการที่รวมกับส่วนลดการจัดส่ง"
+              "withshipping": "หากต้องการให้ลูกค้าใช้ส่วนลดมากกว่าหนึ่งรายการ โปรดตั้งค่าให้ส่วนลดสินค้าอย่างน้อยหนึ่งรายการสามารถใช้ร่วมกับส่วนลดการจัดส่งได้"
             }
           },
           "order": {
@@ -187,11 +187,11 @@
       "CustomerEligibility": {
         "allCustomers": "ลูกค้าทั้งหมด",
         "customers": {
-          "one": "สำหรับ{customerName}",
+          "one": "สำหรับ {customerName}",
           "other": "สำหรับลูกค้า {count} ราย"
         },
         "customerSegments": {
-          "one": "สำหรับ{segmentName}",
+          "one": "สำหรับ {segmentName}",
           "other": "สำหรับกลุ่มลูกค้า {count} กลุ่ม"
         }
       },
@@ -207,7 +207,7 @@
         "title": "ประสิทธิภาพ",
         "notActive": "ส่วนลดยังไม่เปิดใช้งาน",
         "performanceLink": "ดูยอดขายตามรายงานส่วนลด",
-        "usageCount": "ใช้ไปแล้ว {usageCount} ครั้ง",
+        "usageCount": "ใช้ไปแล้ว {usageCount}",
         "totalSales": "ยอดขายรวม {totalSales}"
       },
       "RatesExclusion": {
@@ -222,7 +222,7 @@
       },
       "SelectedCountries": {
         "forAllCountries": "สำหรับทุกประเทศ",
-        "forSpecificCountry": "สำหรับ{countryName}",
+        "forSpecificCountry": "สำหรับ {countryName}",
         "forNumberOfCountries": "สำหรับ {numberOfCountries} ประเทศ"
       },
       "UsageLimits": {

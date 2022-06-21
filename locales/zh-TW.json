@@ -16,7 +16,7 @@
       "dateFormatError": "日期格式須為 YYYY-MM-DD。"
     },
     "MethodCard": {
-      "methodSubtitle": "方法",
+      "methodSubtitle": "方式",
       "choiceList": {
         "title": "選取方式選項",
         "code": "折扣代碼",
@@ -29,15 +29,15 @@
       },
       "discountField": {
         "label": "標題",
-        "helpText": "顧客會在購物車內與結帳時看見此標題。"
+        "helpText": "顧客會在購物車內與結帳頁面看見此資訊。"
       }
     },
     "DiscountCodeGenerator": {
       "field": {
         "label": "折扣代碼",
-        "helpText": "顧客必須在結帳時輸入這組代碼。"
+        "helpText": "顧客必須在結帳頁面輸入這組代碼。"
       },
-      "buttonText": "一般"
+      "buttonText": "產生"
     },
     "UsageLimitsCard": {
       "title": "折扣使用次數上限",
@@ -58,7 +58,7 @@
       "title": "最低消費要求",
       "none": "沒有最低要求",
       "minimumSubtotal": "最低消費金額 ({currencySymbol})",
-      "minimumQuantity": "商品最低購買數量",
+      "minimumQuantity": "品項最低購買數量",
       "subscriptions": {
         "appliesToCollections": "僅適用於所選商品系列的訂閱方案商品。",
         "appliesToProducts": "僅適用於所選訂閱方案商品。",
@@ -133,7 +133,7 @@
       "discountClass": {
         "product": "商品",
         "order": "訂單",
-        "shipping": "運送"
+        "shipping": "運費"
       }
     },
     "SummaryCard": {
@@ -156,9 +156,9 @@
         }
       },
       "AppliesToPurchaseType": {
-        "appliesToPurchaseTypeSubscription": "套用至訂閱方案購買產品",
-        "appliesToPurchaseTypeOneTime": "套用至一次性購買產品",
-        "appliesToPurchaseTypeBoth": "透用至訂閱方案和一次性購買產品"
+        "appliesToPurchaseTypeSubscription": "套用至訂閱方案購買商品",
+        "appliesToPurchaseTypeOneTime": "套用至一次性購買商品",
+        "appliesToPurchaseTypeBoth": "套用至訂閱方案和一次性購買商品"
       },
       "ActiveDates": {
         "today": "今天",
@@ -176,19 +176,19 @@
         "combinesWithOne": {
           "product": "與商品折扣併用",
           "order": "與訂單折扣併用",
-          "shipping": "與運送折扣併用"
+          "shipping": "與運費折扣併用"
         },
         "combinesWithTwo": {
           "productAndOrder": "與商品與訂單折扣併用",
-          "productAndShipping": "與商品與運送折扣併用",
-          "orderAndShipping": "與訂單與運送折扣併用"
+          "productAndShipping": "與商品與運費折扣併用",
+          "orderAndShipping": "與訂單與運費折扣併用"
         }
       },
       "CustomerEligibility": {
         "allCustomers": "所有顧客",
         "customers": {
           "one": "適用於 {customerName}",
-          "other": "適用於 {count} 顧客"
+          "other": "適用於 {count} 位顧客"
         },
         "customerSegments": {
           "one": "適用於 {segmentName}",
@@ -196,18 +196,18 @@
         }
       },
       "MinimumRequirements": {
-        "minimumPurchaseSubtotal": "最低購買要求：{subtotal}",
+        "minimumPurchaseSubtotal": "最低購買數量：{subtotal}",
         "minimumPurchaseQuantity": {
-          "one": "最少須購買 {count} 項商品",
-          "other": "最少須購買 {count} 項商品"
+          "one": "最少須購買 {count} 個品項",
+          "other": "最少須購買 {count} 個品項"
         },
         "noMinimumPurchaseRequirement": "沒有最低購買要求"
       },
       "Performance": {
         "title": "成效",
         "notActive": "折扣尚未生效。",
-        "performanceLink": "按折扣查看銷售報告",
-        "usageCount": "{usageCount} 已使用",
+        "performanceLink": "查看「按折扣排序銷售量」報告",
+        "usageCount": "已使用 {usageCount} 次",
         "totalSales": "總銷售量中的 {totalSales}"
       },
       "RatesExclusion": {
@@ -253,7 +253,7 @@
       },
       "excludeShippingRatesSection": {
         "title": "運費費率",
-        "checkboxLabel": "達到指定金額後免除運費"
+        "checkboxLabel": "達到指定金額後免除運費費率"
       }
     },
     "PurchaseTypeList": {
