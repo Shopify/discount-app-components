@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Card, Checkbox, FormLayout} from '@shopify/polaris';
 import {isSameDay} from '@shopify/dates';
 import {useI18n} from '@shopify/react-i18n';
@@ -26,7 +26,7 @@ export interface ActiveDatesCardProps {
   endDate: Field<DateTime | null>;
 
   /**
-   * The shop's time zone abbreviation.
+   * The shop's time zone abbreviation. This can be queried from the [Shop gql object](https://shopify.dev/api/admin-graphql/2022-07/objects/Shop#field-shop-timezoneabbreviation).
    */
   timezoneAbbreviation: string;
 
@@ -56,10 +56,7 @@ export function ActiveDatesCard({
   const nowInUTC = new Date();
 
   const ianaTimezone = i18n.defaultTimezone!;
-
-  const [showEndDate, setShowEndDate] = useState(
-    initShowEndDate(startDate, endDate),
-  );
+  const showEndDate = Boolean(endDate.value);
 
   // When start date or time changes, updates the end date to be later than start date (if applicable)
   const handleStartDateTimeChange = (nextStart: DateTime) => {
@@ -105,12 +102,10 @@ export function ActiveDatesCard({
 
       endDate.onChange(endDateAtEndOfDay.toISOString());
     }
-
-    setShowEndDate((prev) => !prev);
   };
 
   const endDateIsStartDate =
-    endDate.value !== null &&
+    endDate.value &&
     isSameDay(new Date(endDate.value), new Date(startDate.value));
 
   const disableEndDatesBefore = getEndDatePickerDisableDatesBefore(
@@ -164,7 +159,7 @@ export function ActiveDatesCard({
           />
         </FormLayout.Group>
 
-        {showEndDate && endDate.value !== null && (
+        {showEndDate && endDate.value && (
           <FormLayout.Group>
             <DatePicker
               date={{
@@ -206,25 +201,6 @@ export function ActiveDatesCard({
  */
 function getEndDatePickerDisableDatesBefore(now: Date, startDate: Date) {
   return now > startDate ? now : startDate;
-}
-
-/**
- * showEndDate is initialized to:
- *  - false if endDate is null
- *  - true if endDate is not null and has an error value
- *  - Boolean(startDate equals endDate)
- */
-function initShowEndDate(
-  startDate: Field<DateTime>,
-  endDate: Field<DateTime | null>,
-) {
-  if (!endDate.value) {
-    return false;
-  } else if (endDate.value !== null && endDate.error) {
-    return true;
-  }
-
-  return startDate.value !== endDate.value;
 }
 
 /**

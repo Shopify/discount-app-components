@@ -1,5 +1,5 @@
 import React from 'react';
-import {ChoiceList, Heading, TextField} from '@shopify/polaris';
+import {Card, ChoiceList, Heading, TextField} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {MethodCard} from '../MethodCard';
@@ -97,6 +97,9 @@ describe('<MethodCard />', () => {
       />,
     );
     expect(methodCard).not.toContainReactComponent(ChoiceList);
+    expect(methodCard).not.toContainReactComponent(Card.Section, {
+      title: 'Method',
+    });
   });
 
   it('renders discountMethod choice list when discountMethodHidden is false', () => {
@@ -110,6 +113,9 @@ describe('<MethodCard />', () => {
       />,
     );
     expect(methodCard).toContainReactComponent(ChoiceList);
+    expect(methodCard).toContainReactComponent(Card.Section, {
+      title: 'Method',
+    });
   });
 
   it('toggling the discount method calls onChange for the discountMethod', () => {

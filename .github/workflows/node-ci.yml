@@ -45,12 +45,11 @@ jobs:
       - name: 📦 Install dependencies
         run: yarn --frozen-lockfile
 
-      - name: 🔨 Build
-        run: yarn build
-
       - name: 💅🏼 Lint
         run: yarn lint
       - name: 🔎 Typecheck
         run: yarn type-check
       - name: ‍💻 Javascript Tests
         run: yarn test --no-watch
+      - name: 🔨 Build
+        run: yarn build

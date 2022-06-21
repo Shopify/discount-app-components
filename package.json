@@ -50,7 +50,7 @@
     "run-checks": "npm-run-all lint type-check test",
     "clean": "rimraf build",
     "build": "node ./scripts/build.js",
-    "prepublish": "npm-run-all clean build",
+    "preyalcpublish": "npm-run-all clean build",
     "storybook": "yarn start-storybook"
   },
   "dependencies": {

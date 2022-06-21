@@ -13,7 +13,7 @@ import {useI18n} from '@shopify/react-i18n';
 import styles from './RecurringPayment.scss';
 
 import {RecurringPaymentType} from '~/constants';
-import type {Field, PositiveNumericValue} from '~/types';
+import type {Field, PositiveNumericString} from '~/types';
 import {forcePositiveInteger} from '~/utilities/numbers';
 
 const RECURRING_PAYMENT_FIELD_ID = 'RECURRING_PAYMENT_FIELD_ID';
@@ -27,7 +27,7 @@ interface Props {
   /**
    * The number of times the discount can be used for a recurring payment.
    */
-  recurringPaymentLimit: Field<PositiveNumericValue>;
+  recurringPaymentLimit: Field<PositiveNumericString>;
 }
 
 export function RecurringPayment({

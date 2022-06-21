@@ -12,7 +12,7 @@ import {useI18n} from '@shopify/react-i18n';
 import styles from './UsageLimitsCard.scss';
 import {RecurringPayment} from './components';
 
-import type {Field, PositiveNumericValue} from '~/types';
+import type {Field, PositiveNumericString} from '~/types';
 import type {RecurringPaymentType} from '~/constants';
 import {forcePositiveInteger} from '~/utilities/numbers';
 
@@ -25,7 +25,7 @@ interface UsageLimitProps {
   /**
    * The total number of times the discount can be used.
    */
-  totalUsageLimit: Field<PositiveNumericValue | null>;
+  totalUsageLimit: Field<PositiveNumericString | null>;
 
   /**
    * When selected, the discount may be used at most once per customer
@@ -53,7 +53,7 @@ interface UsageLimitsCardMultiplePaymentsProps
   /**
    * The number of times the discount can be used for a recurring payment.
    */
-  recurringPaymentLimit: Field<PositiveNumericValue>;
+  recurringPaymentLimit: Field<PositiveNumericString>;
 }
 
 export type UsageLimitsCardProps =

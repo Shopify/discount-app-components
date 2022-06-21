@@ -10,7 +10,13 @@ import type {REST_OF_WORLD, SupportedCountryCode} from './constants';
 
 export type DateTime = string;
 export type Decimal = string;
+
+/**
+ * @deprecated use {@link PositiveNumericString} instead
+ */
 export type PositiveNumericValue = string;
+
+export type PositiveNumericString = string;
 
 export interface Field<TValue> {
   value: TValue;

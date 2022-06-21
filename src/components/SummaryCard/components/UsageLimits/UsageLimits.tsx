@@ -2,13 +2,13 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
-import type {PositiveNumericValue} from '~/types';
+import type {PositiveNumericString} from '~/types';
 
 export interface UsageLimitsProps {
   /**
    * The total number of times a discount can be used
    */
-  totalUsageLimit: PositiveNumericValue | null;
+  totalUsageLimit: PositiveNumericString | null;
 
   /**
    * When true, a discount may only be used once per customer
@@ -34,7 +34,7 @@ export function UsageLimits({
 }
 
 const getUsageSummary = (
-  totalUsageLimit: PositiveNumericValue | null,
+  totalUsageLimit: PositiveNumericString | null,
   oncePerCustomer: boolean,
   i18n: I18n,
 ) => {

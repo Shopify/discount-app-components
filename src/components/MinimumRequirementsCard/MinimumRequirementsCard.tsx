@@ -14,7 +14,7 @@ import {CurrencyField} from '../CurrencyField';
 import styles from './MinimumRequirementsCard.scss';
 
 import {forcePositiveInteger} from '~/utilities/numbers';
-import type {Field, PositiveNumericValue} from '~/types';
+import type {Field, PositiveNumericString} from '~/types';
 import {AppliesTo, DiscountMethod, RequirementType} from '~/constants';
 
 export interface MinimumRequirementsCardProps {
@@ -26,12 +26,12 @@ export interface MinimumRequirementsCardProps {
   /**
    * Field for the subtotal minimum requirement
    */
-  subtotal: Field<PositiveNumericValue | undefined>;
+  subtotal: Field<PositiveNumericString | undefined>;
 
   /**
    * Field for the quantity minimum requirement
    */
-  quantity: Field<PositiveNumericValue | undefined>;
+  quantity: Field<PositiveNumericString | undefined>;
 
   /**
    * The discount method (e.g. code, automatic) of the current discount

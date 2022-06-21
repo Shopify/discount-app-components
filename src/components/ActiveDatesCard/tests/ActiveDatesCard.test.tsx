@@ -204,7 +204,7 @@ describe('<ActiveDatesCard />', () => {
   });
 
   describe('EndDate', () => {
-    it('renders a date and time picker when endDate is different from startDate', () => {
+    it('renders a date and time picker when endDate is present', () => {
       const activeDates = mountWithApp(
         <ActiveDatesCard
           {...mockProps}
@@ -229,32 +229,6 @@ describe('<ActiveDatesCard />', () => {
           onChange: expect.any(Function),
         }),
         disabled: true,
-        label: `End time (${mockProps.timezoneAbbreviation})`,
-      });
-    });
-
-    it('does not render an enddate/time picker when endDate is the same as startDate', () => {
-      const startEndDate = '2023-02-20T18:23:00.000Z';
-
-      const activeDates = mountWithApp(
-        <ActiveDatesCard
-          {...mockProps}
-          startDate={{
-            ...mockProps.startDate,
-            value: startEndDate,
-          }}
-          endDate={{
-            ...mockProps.endDate,
-            value: startEndDate,
-          }}
-        />,
-      );
-
-      expect(activeDates).not.toContainReactComponent(DatePicker, {
-        label: 'End date',
-      });
-
-      expect(activeDates).not.toContainReactComponent(TimePicker, {
         label: `End time (${mockProps.timezoneAbbreviation})`,
       });
     });
@@ -497,10 +471,44 @@ describe('<ActiveDatesCard />', () => {
         }),
       });
     });
+
+    it('updates checked value to checked when end date prop is changed to have a value', () => {
+      const activeDates = mountWithApp(
+        <ActiveDatesCard
+          {...mockProps}
+          weekStartsOn={Weekday.Friday}
+          endDate={mockField(null)}
+        />,
+      );
+
+      expect(activeDates).not.toContainReactComponent(TimePicker, {
+        label: 'End time (EDT)',
+      });
+
+      activeDates.act(() => {
+        activeDates.setProps({
+          endDate: mockField('2023-04-20T18:23:00.000Z'),
+        });
+      });
+
+      expect(activeDates).toContainReactComponent(TimePicker, {
+        label: 'End time (EDT)',
+      });
+
+      activeDates.act(() => {
+        activeDates.setProps({
+          endDate: mockField(null),
+        });
+      });
+
+      expect(activeDates).not.toContainReactComponent(TimePicker, {
+        label: 'End time (EDT)',
+      });
+    });
   });
 
   describe('showEndDate checkbox', () => {
-    it('renders a checked checkbox when endDate is different than startDate', () => {
+    it('renders a checked checkbox when endDate is present', () => {
       const activeDates = mountWithApp(
         <ActiveDatesCard
           {...mockProps}
@@ -519,28 +527,6 @@ describe('<ActiveDatesCard />', () => {
         label: 'Set end date',
         checked: true,
         onChange: expect.any(Function),
-      });
-    });
-
-    it('renders an unchecked checkbox when startDate is the same as endDate', () => {
-      const startEndDate = '2023-02-20T18:23:00.000Z';
-
-      const activeDates = mountWithApp(
-        <ActiveDatesCard
-          {...mockProps}
-          startDate={{
-            ...mockProps.startDate,
-            value: startEndDate,
-          }}
-          endDate={{
-            ...mockProps.endDate,
-            value: startEndDate,
-          }}
-        />,
-      );
-
-      expect(activeDates).toContainReactComponent(Checkbox, {
-        checked: false,
       });
     });
 

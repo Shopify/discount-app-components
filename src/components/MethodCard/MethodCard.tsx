@@ -85,9 +85,8 @@ export function MethodCard({
       </Card.Section>
       <Card.Section
         title={
-          discountMethodHidden
-            ? i18n.translate('DiscountAppComponents.MethodCard.methodSubtitle')
-            : undefined
+          !discountMethodHidden &&
+          i18n.translate('DiscountAppComponents.MethodCard.methodSubtitle')
         }
       >
         <Stack vertical>
