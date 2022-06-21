@@ -51,3 +51,5 @@ jobs:
         run: yarn type-check
       - name: ‍💻 Javascript Tests
         run: yarn test --no-watch
+      - name: 🔨 Build
+        run: yarn build
