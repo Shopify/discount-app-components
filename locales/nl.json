@@ -24,7 +24,7 @@
       },
       "discountClassLabel": {
         "product": "Productkorting",
-        "order": "Bestelkorting",
+        "order": "Bestellingskorting",
         "shipping": "Verzendkorting"
       },
       "discountField": {
@@ -35,7 +35,7 @@
     "DiscountCodeGenerator": {
       "field": {
         "label": "Kortingscode",
-        "helpText": "Klanten moeten deze code invoeren bij de checkout."
+        "helpText": "Klanten moeten deze code bij de checkout invoeren."
       },
       "buttonText": "Genereren"
     },
@@ -52,7 +52,7 @@
       "firstPayment": "Korting beperken tot eerste betaling",
       "multiplePayments": "Korting beperken tot meerdere terugkerende betalingen",
       "allPayments": "Korting is van toepassing op alle terugkerende betalingen",
-      "includesFirstPayment": "Inclusief betaling bij de eerste bestelling."
+      "includesFirstPayment": "Inclusief de betaling bij de eerste bestelling."
     },
     "MinimumRequirementsCard": {
       "title": "Minimale aankoopvereisten",
@@ -72,39 +72,39 @@
     },
     "CombinationCard": {
       "title": "Combinaties",
-      "combinesWith": "Mag worden gecombineerd met",
+      "combinesWith": "Kan worden gecombineerd met",
       "discountNameFilled": "kan worden gecombineerd met:",
-      "discountNameNotFilled": "Je kunt deze {discountClass} korting combineren met:",
+      "discountNameNotFilled": "Je kunt deze {discountClass}-korting combineren met:",
       "options": {
         "productLabelOther": "Andere productkortingen",
         "productLabel": "Productkortingen",
-        "orderLabel": "Kortingen op bestellingen",
+        "orderLabel": "Bestellingskortingen",
         "shippingLabel": "Verzendkortingen"
       },
       "newBadge": "Nieuw",
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Op dit moment zijn er geen productkortingen ingesteld voor combinatie met andere kortingen.",
+            "title": "Op dit moment zijn er geen productkortingen ingesteld om te combineren.",
             "warning": {
-              "withproduct": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met andere productkortingen kan worden gecombineerd.",
-              "withorder": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met kortingen op bestellingen kan worden gecombineerd.",
-              "withshipping": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met verzendkortingen kan worden gecombineerd."
+              "withproduct": "Stel minstens één productkorting in die met productkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
+              "withorder": "Stel minstens één productkorting in die met bestellingskortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
+              "withshipping": "Stel minstens één productkorting in die met verzendkortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken."
             }
           },
           "order": {
-            "title": "Op dit moment zijn er geen kortingen op bestellingen ingesteld voor combinatie met andere kortingen.",
+            "title": "Op dit moment zijn er geen bestellingskortingen ingesteld voor combinatie met andere kortingen.",
             "warning": {
-              "withproduct": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één korting op bestellingen in die met andere kortingen op bestellingen kan worden gecombineerd.",
-              "withorder": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één productkorting in die met kortingen op bestellingen kan worden gecombineerd.",
-              "withshipping": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één korting voor bestellingen in die met verzendkortingen kan worden gecombineerd."
+              "withproduct": "Stel minstens één bestellingskorting in die met productkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
+              "withorder": "Stel minstens één bestellingskorting in die met andere bestellingskortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
+              "withshipping": "Stel minstens één bestellingskorting in die met verzendkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken."
             }
           },
           "shipping": {
             "title": "Op dit moment zijn er geen verzendkortingen ingesteld voor combinatie met andere kortingen.",
             "warning": {
-              "withproduct": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één verzendkorting in die met productkortingen kan worden gecombineerd.",
-              "withorder": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één verzendkorting in die met kortingen op bestellingen kan worden gecombineerd.",
+              "withproduct": "Stel minstens één verzendkorting in die met productkortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken.",
+              "withorder": "Stel minstens één verzendkorting in die met bestellingskortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken.",
               "withshipping": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één verzendkorting in die met andere verzendkortingen kan worden gecombineerd."
             }
           }
@@ -116,8 +116,8 @@
               "other": "{count} productkortingen"
             },
             "order": {
-              "one": "{count} korting op bestellingen",
-              "other": "{count} kortingen op bestellingen"
+              "one": "{count} bestellingskorting",
+              "other": "{count} bestellingskortingen"
             },
             "shipping": {
               "one": "{count} verzendkorting",
@@ -125,8 +125,8 @@
             }
           },
           "info": {
-            "one": "{discountCountLink} mag in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, geldt alleen de hoogste korting.",
-            "other": "{discountCountLink} mag in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, geldt alleen de hoogste korting."
+            "one": "{discountCountLink} mogen in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, dan geldt alleen de hoogste korting.",
+            "other": "{discountCountLink} mogen in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, dan geldt alleen de hoogste korting."
           }
         }
       },
@@ -175,13 +175,13 @@
         "cannotCombine": "Kan niet worden gecombineerd met andere kortingen",
         "combinesWithOne": {
           "product": "In combinatie met productkortingen",
-          "order": "In combinatie met bestelkortingen",
+          "order": "In combinatie met bestellingskortingen",
           "shipping": "In combinatie met verzendkortingen"
         },
         "combinesWithTwo": {
-          "productAndOrder": "In combinatie met product- en bestelkortingen",
+          "productAndOrder": "In combinatie met product- en bestellingskortingen",
           "productAndShipping": "In combinatie met product- en verzendkortingen",
-          "orderAndShipping": "In combinatie met bestel- en verzendkortingen"
+          "orderAndShipping": "In combinatie met bestellings- en verzendkortingen"
         }
       },
       "CustomerEligibility": {
@@ -228,12 +228,12 @@
       "UsageLimits": {
         "oneUsePerCustomer": "Eén per klant",
         "totalUsageLimit": {
-          "one": "Limiet van {count} toepassing",
-          "other": "Limiet van {count} toepassingen"
+          "one": "Limiet van {count} keer gebruiken",
+          "other": "Limiet van {count} keer gebruiken"
         },
         "totalUsageLimitWithOneUsePerCustomer": {
-          "one": "Limiet van {count} toepassing, één per klant",
-          "other": "Limiet van {count} toepassingen, één per klant"
+          "one": "Limiet van {count} keer gebruiken, één per klant",
+          "other": "Limiet van {count} keer gebruiken, één per klant"
         },
         "noUsageLimits": "Geen gebruikslimieten"
       }
@@ -253,7 +253,7 @@
       },
       "excludeShippingRatesSection": {
         "title": "Verzendtarieven",
-        "checkboxLabel": "Exclusief verzendtarieven boven een bepaald bedrag"
+        "checkboxLabel": "Verzendtarieven niet toevoegen boven een bepaald bedrag"
       }
     },
     "PurchaseTypeList": {
@@ -293,7 +293,7 @@
       "BH": "Bahrein",
       "BI": "Burundi",
       "BJ": "Benin",
-      "BL": "St. Barthélemy",
+      "BL": "Saint-Barthélemy",
       "BM": "Bermuda",
       "BN": "Brunei",
       "BO": "Bolivia",
@@ -301,7 +301,7 @@
       "BR": "Brazilië",
       "BS": "Bahama's",
       "BT": "Bhutan",
-      "BV": "Bouvet Island",
+      "BV": "Bouvet",
       "BW": "Botswana",
       "BY": "Wit-Rusland",
       "BZ": "Belize",
@@ -400,7 +400,7 @@
       "KZ": "Kazachstan",
       "LA": "Laos",
       "LB": "Libanon",
-      "LC": "St. Lucia",
+      "LC": "Saint Lucia",
       "LI": "Liechtenstein",
       "LK": "Sri Lanka",
       "LR": "Liberia",
@@ -413,7 +413,7 @@
       "MC": "Monaco",
       "MD": "Moldavië",
       "ME": "Montenegro",
-      "MF": "Sint Maarten",
+      "MF": "Sint-Maarten",
       "MG": "Madagascar",
       "MH": "Marshalleilanden",
       "MK": "Macedonië",
@@ -443,7 +443,7 @@
       "NP": "Nepal",
       "NR": "Nauru",
       "NU": "Niue",
-      "NZ": "Nieuw-Zeeland",
+      "NZ": "Nieuw Zeeland",
       "OM": "Oman",
       "PA": "Panama",
       "PE": "Peru",
@@ -460,7 +460,7 @@
       "PW": "Palau",
       "PY": "Paraguay",
       "QA": "Qatar",
-      "QO": "Afgelegen Oceanië",
+      "QO": "Amerikaanse Kleinere Afgelegen Eilanden in de Grote Oceaan",
       "RE": "Réunion",
       "REST_OF_WORLD": "De rest van de wereld",
       "RO": "Roemenië",
