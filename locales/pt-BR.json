@@ -23,7 +23,7 @@
         "automatic": "Desconto automático"
       },
       "discountClassLabel": {
-        "product": "Desconto em produtos",
+        "product": "Desconto no produto",
         "order": "Desconto no pedido",
         "shipping": "Desconto no frete"
       },
@@ -35,16 +35,16 @@
     "DiscountCodeGenerator": {
       "field": {
         "label": "Código de desconto",
-        "helpText": "Os clientes precisam inserir este código durante o checkout."
+        "helpText": "Os clientes precisam inserir este código no checkout."
       },
       "buttonText": "Gerar"
     },
     "UsageLimitsCard": {
-      "title": "Uso máximo do desconto",
-      "options": "Opções de limite de uso",
-      "totalUsageLimitLabel": "Limitar o número total de vezes que este desconto pode ser usado",
-      "oncePerCustomerLimitLabel": "Limitar a apenas um uso por cliente",
-      "totalUsageLimitHelpTextSubscription": "Uma assinatura com vários pagamentos será contabilizada como um uso."
+      "title": "Uso máximo de descontos",
+      "options": "Opções do limite de uso",
+      "totalUsageLimitLabel": "Limitar o número total de vezes que o desconto pode ser usado",
+      "oncePerCustomerLimitLabel": "Limitar a um uso por cliente",
+      "totalUsageLimitHelpTextSubscription": "Uma assinatura com vários pagamentos é contabilizada como um uso."
     },
     "RecurringPayment": {
       "title": "Pagamentos recorrentes para assinaturas",
@@ -61,7 +61,7 @@
       "minimumQuantity": "Quantidade mínima de itens",
       "subscriptions": {
         "appliesToCollections": "Válido apenas para produtos de assinatura em coleções selecionadas.",
-        "appliesToProducts": "Válido apenas para produtos de assinatura selecionados.",
+        "appliesToProducts": "Válido apenas para produtos selecionados de assinatura.",
         "appliesToAllProducts": "Válido apenas para produtos de assinatura."
       },
       "oneTime": {
@@ -76,50 +76,50 @@
       "discountNameFilled": "pode ser combinado com:",
       "discountNameNotFilled": "Este desconto de {discountClass} pode ser combinado com:",
       "options": {
-        "productLabelOther": "Outros descontos em produto",
-        "productLabel": "Descontos em produtos",
+        "productLabelOther": "Outros descontos no produto",
+        "productLabel": "Descontos no produto",
         "orderLabel": "Descontos no pedido",
         "shippingLabel": "Descontos de frete"
       },
-      "newBadge": "Novidade",
+      "newBadge": "Novo",
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "No momento, não há descontos de produtos configurados para combinação.",
+            "title": "No momento, não há descontos configurados nos produtos para combinação.",
             "warning": {
-              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto em produto que combine com descontos em produtos.",
+              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto em produto que combine com outros.",
               "withorder": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto em produto que combine com descontos no pedido.",
               "withshipping": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto em produto que combine com descontos de frete."
             }
           },
           "order": {
-            "title": "No momento, não há descontos no pedido configurados para combinação.",
+            "title": "No momento, não há descontos configurados no pedido para combinação.",
             "warning": {
-              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com descontos em produtos.",
-              "withorder": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com descontos no pedido.",
+              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com descontos no produto.",
+              "withorder": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com outros.",
               "withshipping": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com descontos de frete."
             }
           },
           "shipping": {
             "title": "No momento, não há descontos de frete configurados para combinação.",
             "warning": {
-              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com descontos em produtos.",
+              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com descontos no produto.",
               "withorder": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com descontos no pedido.",
-              "withshipping": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com descontos de frete."
+              "withshipping": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com outros."
             }
           }
         },
         "combinations": {
           "counts": {
             "product": {
-              "one": "{count} desconto em produtos",
-              "other": "{count} descontos em produtos",
-              "many": "{count} descontos em produtos"
+              "one": "{count} desconto no produto",
+              "other": "{count} descontos no produto",
+              "many": "{count} descontos no produto"
             },
             "order": {
               "one": "{count} desconto no pedido",
-              "other": "{count} descontos no pedido",
-              "many": "{count} descontos no pedido"
+              "other": "{count} descontos nos pedidos",
+              "many": "{count} descontos nos pedidos"
             },
             "shipping": {
               "one": "{count} desconto de frete",
@@ -128,9 +128,9 @@
             }
           },
           "info": {
-            "one": "{discountCountLink} pode ser combinado na mesma compra. Se um item estiver qualificado para vários descontos, será aplicado apenas o maior desconto.",
-            "other": "{discountCountLink} podem ser combinados na mesma compra. Se um item estiver qualificado para vários descontos, será aplicado apenas o maior desconto.",
-            "many": "{discountCountLink} podem ser combinados na mesma compra. Se um item estiver qualificado para vários descontos, será aplicado apenas o maior desconto."
+            "one": "{discountCountLink} pode ser combinado na mesma compra. Se um item estiver qualificado para vários descontos, será aplicado apenas o maior deles.",
+            "other": "{discountCountLink} pode ser combinado na mesma compra. Se um item estiver qualificado para vários descontos, será aplicado apenas o maior deles.",
+            "many": "{discountCountLink} pode ser combinado na mesma compra. Se um item estiver qualificado para vários descontos, será aplicado apenas o maior deles."
           }
         }
       },
@@ -145,8 +145,8 @@
       "details": "informações",
       "Header": {
         "emptyState": {
-          "Code": "Ainda sem códigos de desconto.",
-          "Automatic": "Ainda sem título."
+          "Code": "Ainda não há um código de desconto.",
+          "Automatic": "Ainda não há um título."
         },
         "badge": {
           "active": "Ativo",
@@ -160,7 +160,7 @@
         }
       },
       "AppliesToPurchaseType": {
-        "appliesToPurchaseTypeSubscription": "Aplicável a compras por assinatura",
+        "appliesToPurchaseTypeSubscription": "Válido para compras por assinatura",
         "appliesToPurchaseTypeOneTime": "Aplicável a compras únicas",
         "appliesToPurchaseTypeBoth": "Aplicável a assinaturas e compras únicas"
       },
@@ -172,19 +172,19 @@
         "activeFromDateToDate": "Ativo de {startDate} até {endDate}"
       },
       "AvailableOnPos": {
-        "availableOnCheckoutAndPos": "Disponível em canais de vendas online e no Ponto de venda",
-        "availableOnCheckoutOnly": "Disponível em canais de vendas online"
+        "availableOnCheckoutAndPos": "Disponível em canais de vendas online e no Shopify PDV",
+        "availableOnCheckoutOnly": "Disponível em canais de venda online"
       },
       "Combinations": {
         "cannotCombine": "Não é possível combinar com outros descontos",
         "combinesWithOne": {
-          "product": "É combinado com descontos em produtos",
-          "order": "É combinado com descontos em pedidos",
-          "shipping": "É combinado com descontos em frete"
+          "product": "Combina com descontos no produto",
+          "order": "Combina com descontos em pedidos",
+          "shipping": "Combina com descontos no frete"
         },
         "combinesWithTwo": {
-          "productAndOrder": "É combinado com descontos em produtos e pedidos",
-          "productAndShipping": "É combinado com descontos em produtos e frete",
+          "productAndOrder": "Combina com descontos em produtos e pedidos",
+          "productAndShipping": "Combina com descontos em produtos e frete",
           "orderAndShipping": "É combinado com descontos em pedidos e frete"
         }
       },
@@ -213,8 +213,8 @@
       "Performance": {
         "title": "Desempenho",
         "notActive": "O desconto ainda não está ativo.",
-        "performanceLink": "Ver o relatório de vendas por desconto",
-        "usageCount": "{usageCount} usado(s)",
+        "performanceLink": "Ver as vendas pelo relatório de desconto",
+        "usageCount": "{usageCount} usado",
         "totalSales": "{totalSales} no total de vendas"
       },
       "RatesExclusion": {
@@ -263,7 +263,7 @@
       },
       "excludeShippingRatesSection": {
         "title": "Taxas de frete",
-        "checkboxLabel": "Excluir taxas de frete maiores que uma certa quantia"
+        "checkboxLabel": "Excluir taxas de frete acima de uma determinada quantia"
       }
     },
     "PurchaseTypeList": {
@@ -284,7 +284,7 @@
       "AI": "Anguila",
       "AL": "Albânia",
       "AM": "Armênia",
-      "AN": "Antilhas holandesas",
+      "AN": "Antilhas Holandesas",
       "AO": "Angola",
       "AQ": "Antártica",
       "AR": "Argentina",
@@ -359,7 +359,7 @@
       "FR": "França",
       "GA": "Gabão",
       "GB": "Reino Unido",
-      "GD": "Grenada",
+      "GD": "Granada",
       "GE": "Geórgia",
       "GF": "Guiana Francesa",
       "GG": "Guernsey",
@@ -371,13 +371,13 @@
       "GP": "Guadalupe",
       "GQ": "Guiné Equatorial",
       "GR": "Grécia",
-      "GS": "Geórgia do Sul e Ilhas Sandwich do Sul",
+      "GS": "Ilhas Geórgia do Sul e Sandwich do Sul",
       "GT": "Guatemala",
       "GU": "Guam",
       "GW": "Guiné-Bissau",
       "GY": "Guiana",
       "HK": "Hong Kong (RAE da China)",
-      "HM": "Ilhas Heard e Ilhas McDonald",
+      "HM": "Ilha Heard e Ilhas McDonald",
       "HN": "Honduras",
       "HR": "Croácia",
       "HT": "Haiti",
@@ -388,7 +388,7 @@
       "IL": "Israel",
       "IM": "Ilha de Man",
       "IN": "Índia",
-      "IO": "Território Britânico do Oceano Índico",
+      "IO": "Território do Oceano Índico Britânico",
       "IQ": "Iraque",
       "IR": "Irã",
       "IS": "Islândia",
@@ -400,7 +400,7 @@
       "KE": "Quênia",
       "KG": "Quirguistão",
       "KH": "Camboja",
-      "KI": "Kiribati",
+      "KI": "Quiribati",
       "KM": "Comores",
       "KN": "São Cristóvão e Névis",
       "KP": "Coreia do Norte",
@@ -423,7 +423,7 @@
       "MC": "Mônaco",
       "MD": "Moldávia",
       "ME": "Montenegro",
-      "MF": "St. Martin",
+      "MF": "Ilha de São Martinho",
       "MG": "Madagascar",
       "MH": "Ilhas Marshall",
       "MK": "Macedônia",
@@ -436,7 +436,7 @@
       "MR": "Mauritânia",
       "MS": "Montserrat",
       "MT": "Malta",
-      "MU": "Maurícia",
+      "MU": "Ilhas Maurício",
       "MV": "Maldivas",
       "MW": "Malawi",
       "MX": "México",
@@ -445,7 +445,7 @@
       "NA": "Namíbia",
       "NC": "Nova Caledônia",
       "NE": "Níger",
-      "NF": "Ilha de Norfolk",
+      "NF": "Ilha Norfolk",
       "NG": "Nigéria",
       "NI": "Nicarágua",
       "NL": "Países Baixos",
@@ -462,7 +462,7 @@
       "PH": "Filipinas",
       "PK": "Paquistão",
       "PL": "Polônia",
-      "PM": "St-Pierre e Miquelon",
+      "PM": "São Pedro e Miquelão",
       "PN": "Ilhas Pitcairn",
       "PR": "Porto Rico",
       "PS": "Territórios palestinos",
@@ -505,7 +505,7 @@
       "TG": "Togo",
       "TH": "Tailândia",
       "TJ": "Tajiquistão",
-      "TK": "Tokelau",
+      "TK": "Toquelau",
       "TL": "Timor-Leste",
       "TM": "Turquemenistão",
       "TN": "Tunísia",
