@@ -165,7 +165,8 @@
         "activeSingleDate": "啟用日期 {date}",
         "activeFromDate": "從 {date} 啟用",
         "activeFromTodayUntilDate": "啟用日期從今天起至 {date} 為止",
-        "activeFromDateToDate": "啟用日期從 {startDate} 至 {endDate} 為止"
+        "activeFromDateToDate": "啟用日期從 {startDate} 至 {endDate} 為止",
+        "activeFromDateUntilToday": "啟用日期從 {date} 起至今天為止"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "在線上銷售管道和 Point of Sale (POS) 中可供使用",

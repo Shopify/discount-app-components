@@ -165,7 +165,8 @@
         "activeSingleDate": "Etkin olduğu tarih: {date}",
         "activeFromDate": "Şu tarihten itibaren etkin: {date}",
         "activeFromTodayUntilDate": "Bugünden {date} tarihine kadar etkin",
-        "activeFromDateToDate": "{startDate} tarihinden {endDate} tarihine kadar etkin"
+        "activeFromDateToDate": "{startDate} tarihinden {endDate} tarihine kadar etkin",
+        "activeFromDateUntilToday": "{date} tarihinden bugüne kadar etkin"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "Online satış kanallarında ve Point of Sale'de kullanılabilir",

@@ -165,7 +165,8 @@
         "activeSingleDate": "Aktivt {date}",
         "activeFromDate": "Aktiv från {date}",
         "activeFromTodayUntilDate": "Aktiv från i dag till {date}",
-        "activeFromDateToDate": "Aktiv från {startDate} till {endDate}"
+        "activeFromDateToDate": "Aktiv från {startDate} till {endDate}",
+        "activeFromDateUntilToday": "Aktiv från och med {date} till i dag"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "Tillgänglig på online-försäljningskanaler och Point of sale",

@@ -169,7 +169,8 @@
         "activeSingleDate": "Attivo il giorno {date}",
         "activeFromDate": "Attivo dal giorno {date}",
         "activeFromTodayUntilDate": "Attivo da oggi fino al giorno {date}",
-        "activeFromDateToDate": "Attivo dal {startDate} al {endDate}"
+        "activeFromDateToDate": "Attivo dal {startDate} al {endDate}",
+        "activeFromDateUntilToday": "Attivo dal giorno {date} a oggi"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "Disponibile sui canali di vendita online e Point of Sale",
