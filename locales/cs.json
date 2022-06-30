@@ -173,7 +173,8 @@
         "activeSingleDate": "Aktivní: {date}",
         "activeFromDate": "Aktivní od: {date}",
         "activeFromTodayUntilDate": "Aktivní ode dneška do: {date}",
-        "activeFromDateToDate": "Aktivní od: {startDate} do: {endDate}"
+        "activeFromDateToDate": "Aktivní od: {startDate} do: {endDate}",
+        "activeFromDateUntilToday": "Aktivní od {date} do dnešního dne"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "K dispozici v online prodejních kanálech a v Point of Sale",
