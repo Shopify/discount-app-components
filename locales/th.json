@@ -166,7 +166,7 @@
         "activeFromDate": "ใช้งานตั้งแต่ {date}",
         "activeFromTodayUntilDate": "ใช้งานตั้งแต่วันนี้จนถึง {date}",
         "activeFromDateToDate": "ใช้งานตั้งแต่ {startDate} ถึง {endDate}",
-        "activeFromDateUntilToday": "ใช้งานตั้งแต่วันที่ {date} จนถึงวันนี้"
+        "activeFromDateUntilToday": "ใช้งานตั้งแต่วันที่ {date} จนถึงปัจจุบัน"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "ใช้ได้ในช่องทางการขายออนไลน์และการขายหน้าร้าน",

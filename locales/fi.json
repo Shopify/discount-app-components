@@ -166,7 +166,7 @@
         "activeFromDate": "Aktiivinen {date} alkaen",
         "activeFromTodayUntilDate": "Aktiivinen tästä päivästä päivämäärään {date} asti",
         "activeFromDateToDate": "Aktiivinen {startDate}–{endDate}",
-        "activeFromDateUntilToday": "Aktiivinen päivästä {date} tähän päivään saakka"
+        "activeFromDateUntilToday": "Aktiivinen {date} alkaen tähän päivään saakka"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "Saatavilla verkkomyyntikanavissa ja Point of Salessa",
