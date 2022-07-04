@@ -165,6 +165,7 @@
         "activeSingleDate": "{date}に有効",
         "activeFromDate": "{date}から有効",
         "activeFromTodayUntilDate": "今日から{date}まで有効",
+        "activeFromDateUntilToday": "{date}から本日まで有効",
         "activeFromDateToDate": "{startDate}から{endDate}まで有効"
       },
       "AvailableOnPos": {

@@ -191,6 +191,7 @@
         "today": "today",
         "activeSingleDate": "Active {date}",
         "activeFromDate": "Active from {date}",
+        "activeFromDateUntilToday": "Active from {date} until today",
         "activeFromTodayUntilDate": "Active from today until {date}",
         "activeFromDateToDate": "Active from {startDate} to {endDate}"
       },

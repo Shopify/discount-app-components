@@ -165,7 +165,8 @@
         "activeSingleDate": "Actief op {date}",
         "activeFromDate": "Actief vanaf {date}",
         "activeFromTodayUntilDate": "Actief vanaf vandaag tot {date}",
-        "activeFromDateToDate": "Actief van {startDate} tot {endDate}"
+        "activeFromDateToDate": "Actief van {startDate} tot {endDate}",
+        "activeFromDateUntilToday": "Actief vanaf {date} tot vandaag"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "Beschikbaar op online verkoopkanalen en Point of Sale",

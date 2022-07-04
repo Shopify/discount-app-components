@@ -165,6 +165,7 @@
         "activeSingleDate": "在 {date} 有效",
         "activeFromDate": "从 {date} 开始生效",
         "activeFromTodayUntilDate": "从今天开始生效直到 {date}",
+        "activeFromDateUntilToday": "有效期为 {date} 至今天",
         "activeFromDateToDate": "从 {startDate} 开始生效直到 {endDate}"
       },
       "AvailableOnPos": {

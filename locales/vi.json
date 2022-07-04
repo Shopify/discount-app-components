@@ -165,7 +165,8 @@
         "activeSingleDate": "Có hiệu lực vào {date}",
         "activeFromDate": "Có hiệu lực từ {date}",
         "activeFromTodayUntilDate": "Có hiệu lực từ hôm nay đến {date}",
-        "activeFromDateToDate": "Có hiệu lực từ {startDate} đến {endDate}"
+        "activeFromDateToDate": "Có hiệu lực từ {startDate} đến {endDate}",
+        "activeFromDateUntilToday": "Hoạt động từ {date} đến tận hôm nay"
       },
       "AvailableOnPos": {
         "availableOnCheckoutAndPos": "Có trên các kênh bán hàng trực tuyến và Point of Sale",

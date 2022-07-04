@@ -46,6 +46,7 @@ const getDateSummary = (
   }
 
   const endDateAsDate = new Date(endDate);
+  const endsAtIsToday = isToday(endDateAsDate, ianaTimezone);
   if (isSameDay(startDateAsDate, endDateAsDate, ianaTimezone)) {
     const date = startsAtIsToday
       ? i18n.translate('today', I18N_SCOPE)
@@ -57,6 +58,10 @@ const getDateSummary = (
   } else if (startsAtIsToday) {
     return i18n.translate('activeFromTodayUntilDate', I18N_SCOPE, {
       date: formatDateForSummary(endDateAsDate, i18n),
+    });
+  } else if (endsAtIsToday) {
+    return i18n.translate('activeFromDateUntilToday', I18N_SCOPE, {
+      date: formatDateForSummary(startDateAsDate, i18n),
     });
   } else {
     return i18n.translate('activeFromDateToDate', I18N_SCOPE, {
