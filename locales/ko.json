@@ -165,6 +165,7 @@
         "activeSingleDate": "{date}에 활성화",
         "activeFromDate": "{date}부터 활성화",
         "activeFromTodayUntilDate": "오늘부터 {date}까지 활성화",
+        "activeFromDateUntilToday": "{date}부터 오늘까지 활성 상태임",
         "activeFromDateToDate": "{startDate}부터 {endDate}까지 활성화"
       },
       "AvailableOnPos": {

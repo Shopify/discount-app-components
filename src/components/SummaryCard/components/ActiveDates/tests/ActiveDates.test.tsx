@@ -7,6 +7,12 @@ import {ActiveDates} from '../ActiveDates';
 describe('<ActiveDates />', () => {
   const todayInShopTimeZone = new Date('2022-05-15T12:00:00.000Z');
 
+  function addMonthToNow(offset: number) {
+    const oneMonthFromNow = new Date(todayInShopTimeZone);
+    oneMonthFromNow.setMonth(oneMonthFromNow.getMonth() + offset);
+    return oneMonthFromNow;
+  }
+
   beforeEach(() => {
     clock.mock(todayInShopTimeZone);
   });
@@ -16,8 +22,8 @@ describe('<ActiveDates />', () => {
   });
 
   const mockProps = {
-    startDate: new Date(),
-    endDate: new Date(),
+    startDate: todayInShopTimeZone,
+    endDate: todayInShopTimeZone,
     displayEndDate: false,
     shopIanaTimeZone: 'America/Montreal',
   };
@@ -114,20 +120,18 @@ describe('<ActiveDates />', () => {
     expect(activeDates).toContainReactText('Active from Jul 15, 2024');
   });
 
-  it('displays active from today until date summary when start date is today and end date is within current year', () => {
-    const oneMonthFromNow = new Date(
-      todayInShopTimeZone.setMonth(todayInShopTimeZone.getMonth() + 1),
-    );
+  it('displays active from date until today summary when start date is within current year and end date is today', () => {
+    const oneMonthAgo = addMonthToNow(-1);
 
     const activeDates = mountWithApp(
       <ActiveDates
         {...mockProps}
-        startDate={new Date().toISOString()}
-        endDate={oneMonthFromNow.toISOString()}
+        startDate={oneMonthAgo.toISOString()}
+        endDate={todayInShopTimeZone.toISOString()}
       />,
     );
 
-    expect(activeDates).toContainReactText('Active from today until Aug 15');
+    expect(activeDates).toContainReactText('Active from Jun 15 until today');
   });
 
   it('displays active from today until date summary when start date is today and end date is after current year', () => {
@@ -143,7 +147,7 @@ describe('<ActiveDates />', () => {
       />,
     );
 
-    expect(activeDates).toContainReactText('Active from Aug 15, 2025');
+    expect(activeDates).toContainReactText('Active from Jul 15, 2025');
   });
 
   it('displays active from date to date summary when both start dates are in the future and after current year', () => {
@@ -163,7 +167,7 @@ describe('<ActiveDates />', () => {
     );
 
     expect(activeDates).toContainReactText(
-      'Active from Aug 15, 2026 to Aug 15, 2027',
+      'Active from Jul 15, 2026 to Jul 15, 2027',
     );
   });
 
@@ -183,6 +187,6 @@ describe('<ActiveDates />', () => {
       />,
     );
 
-    expect(activeDates).toContainReactText('Active from Sep 15 to Oct 15');
+    expect(activeDates).toContainReactText('Active from Aug 15 to Sep 15');
   });
 });

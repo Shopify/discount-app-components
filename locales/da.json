@@ -165,6 +165,7 @@
         "activeSingleDate": "Aktiv den {date}",
         "activeFromDate": "Aktiv fra den {date}",
         "activeFromTodayUntilDate": "Aktiv fra i dag indtil {date}",
+        "activeFromDateUntilToday": "Aktiv fra den {date} indtil i dag",
         "activeFromDateToDate": "Aktiv fra {startDate} til {endDate}"
       },
       "AvailableOnPos": {

@@ -169,6 +169,7 @@
         "activeSingleDate": "Actif le {date}",
         "activeFromDate": "Actif dès le {date}",
         "activeFromTodayUntilDate": "Actif à partir d’aujourd’hui jusqu’au {date}",
+        "activeFromDateUntilToday": "Actif depuis le {date} jusqu’à ce jour",
         "activeFromDateToDate": "Actif du {startDate} au {endDate}"
       },
       "AvailableOnPos": {
