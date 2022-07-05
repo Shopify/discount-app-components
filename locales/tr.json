@@ -84,6 +84,7 @@
       "newBadge": "Yeni",
       "HelpText": {
         "emptyState": {
+          "link": "Daha fazla bilgi edinin",
           "product": {
             "title": "Şu anda birleştirilmek üzere ayarlanmış ürün indirimi yok.",
             "warning": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count} kargo indirimi",
               "other": "{count} kargo indirimi"
+            },
+            "productOther": {
+              "one": "Diğer {count} ürün indirimi",
+              "other": "Diğer {count} ürün indirimi"
             }
           },
           "info": {
             "one": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır.",
             "other": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
-          }
+          },
+          "multipleEligibleDiscounts": "Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
         }
       },
       "discountClass": {

@@ -84,6 +84,7 @@
       "newBadge": "Nouveau",
       "HelpText": {
         "emptyState": {
+          "link": "En savoir plus",
           "product": {
             "title": "Vous n’avez pas de réductions sur des produits à cumuler pour le moment.",
             "warning": {
@@ -125,13 +126,19 @@
               "one": "{count} réduction sur les frais d’expédition",
               "other": "{count} réductions sur les frais d’expédition",
               "many": "{count} réductions sur les frais d’expédition"
+            },
+            "productOther": {
+              "one": "{count} autres réductions sur un produit",
+              "other": "{count} autres réductions sur les produits",
+              "many": "{count} autres réductions sur les produits"
             }
           },
           "info": {
             "one": "{discountCountLink} sont cumulables sur le même achat. Si un article est admissible à plusieurs réductions, seule la réduction la plus importante sera appliquée.",
             "other": "{discountCountLink} sont cumulables sur le même achat. Si un article est admissible à plusieurs réductions, seule la réduction la plus importante sera appliquée.",
             "many": "{discountCountLink} sont cumulables sur le même achat. Si un article est admissible à plusieurs réductions, seule la réduction la plus importante sera appliquée."
-          }
+          },
+          "multipleEligibleDiscounts": "Si un article est admissible à plusieurs réductions, seule la réduction la plus importante sera appliquée."
         }
       },
       "discountClass": {

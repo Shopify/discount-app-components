@@ -84,6 +84,7 @@
       "newBadge": "Novo",
       "HelpText": {
         "emptyState": {
+          "link": "Saiba mais",
           "product": {
             "title": "De momento, nenhum desconto do produto está configurado para combinar.",
             "warning": {
@@ -125,13 +126,19 @@
               "one": "{count} desconto do envio",
               "other": "{count} descontos do envio",
               "many": "{count} descontos do envio"
+            },
+            "productOther": {
+              "one": "{count} outro desconto no produto",
+              "other": "{count} outros descontos no produto",
+              "many": "{count} outros descontos no produto"
             }
           },
           "info": {
             "one": "{discountCountLink} é combinável na mesma compra. Se um item for elegível para vários descontos, apenas é aplicado o maior desconto.",
             "other": "{discountCountLink} é combinável na mesma compra. Se um item for elegível para vários descontos, apenas é aplicado o maior desconto.",
             "many": "{discountCountLink} é combinável na mesma compra. Se um item for elegível para vários descontos, apenas é aplicado o maior desconto."
-          }
+          },
+          "multipleEligibleDiscounts": "Se um item for elegível para vários descontos, apenas é aplicado o maior desconto."
         }
       },
       "discountClass": {

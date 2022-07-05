@@ -1,14 +1,11 @@
 import React, {useRef} from 'react';
-import {Button, Icon, Stack, TextStyle} from '@shopify/polaris';
-import {InfoMinor} from '@shopify/polaris-icons';
+import {Button, TextStyle, Stack, Link} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 import {useAppBridge} from '@shopify/app-bridge-react';
 import {Modal} from '@shopify/app-bridge/actions';
 import {Action} from '@shopify/app-bridge/actions/Modal';
 
-import styles from './HelpText.scss';
-
-import type {DiscountClass} from '~/constants';
+import {DiscountClass} from '~/constants';
 
 const DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL =
   'shopify://app-bridge/modal/discounts-combinations';
@@ -35,6 +32,10 @@ export function HelpText({
     url: DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL,
   });
 
+  const productCombinesWithProduct =
+    currentDiscountClass === DiscountClass.Product &&
+    targetDiscountClass === DiscountClass.Product;
+
   const targetDiscountClassLabel = targetDiscountClass.toLocaleLowerCase();
   const scope = `DiscountAppComponents.CombinationCard.HelpText`;
 
@@ -58,48 +59,55 @@ export function HelpText({
   };
 
   return count > 0 ? (
-    <TextStyle variation="subdued">
-      {i18n.translate(
-        'combinations.info',
-        {scope},
-        {
-          count,
-          discountCountLink: (
-            <span ref={buttonWrapperRef}>
-              <Button onClick={handleModalOpen} plain>
-                {i18n.translate(
-                  `combinations.counts.${targetDiscountClassLabel}`,
-                  {scope},
-                  {
-                    count,
-                  },
-                )}
-              </Button>
-            </span>
-          ),
-        },
+    <Stack spacing="none" vertical>
+      <TextStyle variation="subdued">
+        {i18n.translate(
+          'combinations.info',
+          {scope},
+          {
+            count,
+            discountCountLink: (
+              <span ref={buttonWrapperRef}>
+                <Button onClick={handleModalOpen} plain>
+                  {i18n.translate(
+                    `combinations.counts.${
+                      productCombinesWithProduct
+                        ? 'productOther'
+                        : targetDiscountClassLabel
+                    }`,
+                    {scope},
+                    {
+                      count,
+                    },
+                  )}
+                </Button>
+              </span>
+            ),
+          },
+        )}
+      </TextStyle>
+      {productCombinesWithProduct && (
+        <TextStyle variation="subdued">
+          {i18n.translate('combinations.multipleEligibleDiscounts', {scope})}
+        </TextStyle>
       )}
-    </TextStyle>
-  ) : (
-    <Stack spacing="tight" wrap={false}>
-      <Icon source={InfoMinor} color="subdued" />
-      <Stack.Item fill>
-        <p className={styles.WarningContent}>
-          <span className={styles.WarningTitle}>
-            {i18n.translate('title', {
-              scope: `${scope}.emptyState.${targetDiscountClassLabel}`,
-            })}
-          </span>
-          <span>
-            {i18n.translate(
-              `warning.with${currentDiscountClass.toLowerCase()}`,
-              {
-                scope: `${scope}.emptyState.${targetDiscountClassLabel}`,
-              },
-            )}
-          </span>
-        </p>
-      </Stack.Item>
     </Stack>
+  ) : (
+    <>
+      <TextStyle variation="subdued">
+        {i18n.translate('title', {
+          scope: `${scope}.emptyState.${currentDiscountClass.toLowerCase()}`,
+        })}{' '}
+        {i18n.translate(`warning.with${currentDiscountClass.toLowerCase()}`, {
+          scope: `${scope}.emptyState.${currentDiscountClass.toLowerCase()}`,
+        })}{' '}
+        <Link
+          url={`https://help.shopify.com/${i18n.locale}/manual/discounts/combining-discounts`}
+          external
+        >
+          {i18n.translate(`${scope}.emptyState.link`)}
+        </Link>
+      </TextStyle>
+    </>
   );
 }

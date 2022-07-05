@@ -84,6 +84,7 @@
       "newBadge": "Ny",
       "HelpText": {
         "emptyState": {
+          "link": "Finn ut mer",
           "product": {
             "title": "Ingen produktrabatter er konfigurert for kombinasjoner for øyeblikket.",
             "warning": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count} fraktrabatt",
               "other": "{count} fraktrabatter"
+            },
+            "productOther": {
+              "one": "{count} annen produktrabatt",
+              "other": "{count} andre produktrabatter"
             }
           },
           "info": {
             "one": "{discountCountLink} kan kombineres i samme kjøp. Hvis en vare er berettiget for flere rabatter vil bare den største rabatten gjelde.",
             "other": "{discountCountLink} kan kombineres i samme kjøp. Hvis en vare er berettiget for flere rabatter vil bare den største rabatten gjelde."
-          }
+          },
+          "multipleEligibleDiscounts": "Hvis en vare er berettiget for flere rabatter vil bare den største rabatten gjelde."
         }
       },
       "discountClass": {

@@ -84,6 +84,7 @@
       "newBadge": "Uusi",
       "HelpText": {
         "emptyState": {
+          "link": "Lisätietoja",
           "product": {
             "title": "Tällä hetkellä tuotealennuksia ei ole määritetty siten, että niitä voisi yhdistää.",
             "warning": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count} toimitusalennus",
               "other": "{count} toimitusalennusta"
+            },
+            "productOther": {
+              "one": "{count} muu tuotealennus",
+              "other": "{count} muuta tuotealennusta"
             }
           },
           "info": {
             "one": "{discountCountLink} voidaan yhdistää samaan ostokseen. Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta.",
             "other": "{discountCountLink} voidaan yhdistää samaan ostokseen. Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta."
-          }
+          },
+          "multipleEligibleDiscounts": "Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta."
         }
       },
       "discountClass": {

@@ -84,6 +84,7 @@
       "newBadge": "Ny",
       "HelpText": {
         "emptyState": {
+          "link": "Få mere at vide",
           "product": {
             "title": "Ingen produktrabatter er opsat til at blive kombineret på nuværende tidspunkt.",
             "warning": {
@@ -110,7 +111,12 @@
           }
         },
         "combinations": {
+          "multipleEligibleDiscounts": "Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat.",
           "counts": {
+            "productOther": {
+              "one": "{count} anden produktrabat",
+              "other": "{count} andre produktrabatter"
+            },
             "product": {
               "one": "{count} produktrabat",
               "other": "{count} produktrabatter"

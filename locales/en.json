@@ -117,7 +117,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Currently, no product discounts are set up to combine.",
+            "title": "No product discounts are currently set to combine.",
             "warning": {
               "withproduct": "To let customers use more than one discount, set up at least one product discount that combines with product discounts.",
               "withorder": "To let customers use more than one discount, set up at least one product discount that combines with order discounts.",
@@ -125,7 +125,7 @@
             }
           },
           "order": {
-            "title": "Currently, no order discounts are set up to combine.",
+            "title": "No order discounts are currently set to combine.",
             "warning": {
               "withproduct": "To let customers use more than one discount, set up at least one order discount that combines with product discounts.",
               "withorder": "To let customers use more than one discount, set up at least one order discount that combines with order discounts.",
@@ -133,23 +133,29 @@
             }
           },
           "shipping": {
-            "title": "Currently, no shipping discounts are set up to combine.",
+            "title": "No shipping discounts are currently set to combine.",
             "warning": {
               "withproduct": "To let customers use more than one discount, set up at least one shipping discount that combines with product discounts.",
               "withorder": "To let customers use more than one discount, set up at least one shipping discount that combines with order discounts.",
               "withshipping": "To let customers use more than one discount, set up at least one shipping discount that combines with shipping discounts."
             }
-          }
+          },
+          "link": "Learn more"
         },
         "combinations": {
           "info": {
-            "one": "{discountCountLink} can be combined in the same purchase. If an item is eligible for multiple discounts, only the largest discount will apply.",
-            "other": "{discountCountLink} can be combined in the same purchase. If an item is eligible for multiple discounts, only the largest discount will apply."
+            "one": "{discountCountLink} is currently set to combine.",
+            "other": "{discountCountLink} are currently set to combine."
           },
+          "multipleEligibleDiscounts": "If an item is eligible for multiple discounts, only the largest discount will apply.",
           "counts": {
             "product": {
               "one": "{count} product discount",
               "other": "{count} product discounts"
+            },
+            "productOther": {
+              "one": "{count} other product discount",
+              "other": "{count} other product discounts"
             },
             "order": {
               "one": "{count} order discount",

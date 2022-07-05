@@ -84,6 +84,7 @@
       "newBadge": "Nuovo",
       "HelpText": {
         "emptyState": {
+          "link": "Maggiori informazioni",
           "product": {
             "title": "Attualmente, nessuno sconto sul prodotto è configurato per essere cumulabile.",
             "warning": {
@@ -125,13 +126,19 @@
               "one": "{count} sconto sulla spedizione",
               "other": "{count} sconti sulle spedizioni",
               "many": "{count} sconti sulle spedizioni"
+            },
+            "productOther": {
+              "one": "{count} altro sconto sui prodotti",
+              "other": "{count} altri sconti sui prodotti",
+              "many": "{count} altri sconti sui prodotti"
             }
           },
           "info": {
             "one": "{discountCountLink} che è possibile cumulare nello stesso acquisto. Se un articolo è idoneo a più sconti, verrà applicato solo lo sconto maggiore.",
             "other": "{discountCountLink} che è possibile cumulare nello stesso acquisto. Se un articolo è idoneo a più sconti, verrà applicato solo lo sconto maggiore.",
             "many": "{discountCountLink} che è possibile cumulare nello stesso acquisto. Se un articolo è idoneo a più sconti, verrà applicato solo lo sconto maggiore."
-          }
+          },
+          "multipleEligibleDiscounts": "Se un articolo è idoneo a più sconti, verrà applicato solo lo sconto maggiore."
         }
       },
       "discountClass": {

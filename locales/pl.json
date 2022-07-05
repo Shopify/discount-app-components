@@ -84,6 +84,7 @@
       "newBadge": "Nowe",
       "HelpText": {
         "emptyState": {
+          "link": "Dowiedz się więcej",
           "product": {
             "title": "Obecnie nie ma możliwości łączenia rabatów na produkty.",
             "warning": {
@@ -128,6 +129,12 @@
               "other": "{count} rabaty(-ów) na wysyłkę",
               "few": "{count} rabaty(-ów) na wysyłkę",
               "many": "{count} rabaty(-ów) na wysyłkę"
+            },
+            "productOther": {
+              "one": "{count} inny rabat na produkt",
+              "other": "{count} inne(-ych) rabaty(-ów) na produkt",
+              "few": "{count} inne(-ych) rabaty(-ów) na produkt",
+              "many": "{count} inne(-ych) rabaty(-ów) na produkt"
             }
           },
           "info": {
@@ -135,7 +142,8 @@
             "other": "{discountCountLink} można łączyć w ramach tego samego zakupu. Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie największy rabat.",
             "few": "{discountCountLink} można łączyć w ramach tego samego zakupu. Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie największy rabat.",
             "many": "{discountCountLink} można łączyć w ramach tego samego zakupu. Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie największy rabat."
-          }
+          },
+          "multipleEligibleDiscounts": "Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie jeden, największy rabat."
         }
       },
       "discountClass": {

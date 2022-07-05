@@ -84,6 +84,7 @@
       "newBadge": "Nieuw",
       "HelpText": {
         "emptyState": {
+          "link": "Meer informatie",
           "product": {
             "title": "Op dit moment zijn er geen productkortingen ingesteld om te combineren.",
             "warning": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count} verzendkorting",
               "other": "{count} verzendkortingen"
+            },
+            "productOther": {
+              "one": "{count} andere productkorting",
+              "other": "{count} andere productkortingen"
             }
           },
           "info": {
             "one": "{discountCountLink} mogen in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, dan geldt alleen de hoogste korting.",
             "other": "{discountCountLink} mogen in dezelfde aankoop worden gecombineerd. Als een artikel voor meerdere kortingen in aanmerking komt, dan geldt alleen de hoogste korting."
-          }
+          },
+          "multipleEligibleDiscounts": "Als een artikel voor meerdere kortingen in aanmerking komt, dan geldt alleen de hoogste korting."
         }
       },
       "discountClass": {

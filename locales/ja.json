@@ -84,6 +84,7 @@
       "newBadge": "新規",
       "HelpText": {
         "emptyState": {
+          "link": "詳しくはこちら",
           "product": {
             "title": "現在、商品のディスカウントの組み合わせは設定されていません。",
             "warning": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count}件の配送のディスカウント",
               "other": "{count}件の配送のディスカウント"
+            },
+            "productOther": {
+              "one": "他の{count}個の商品のディスカウント",
+              "other": "他の{count}個の商品のディスカウント"
             }
           },
           "info": {
             "one": "{discountCountLink}は同じアイテムの購入で組み合わせることができます。複数のディスカウントが適用されるアイテムの場合、最も大きいディスカウントのみが適用されます。",
             "other": "{discountCountLink}は同じアイテムの購入で組み合わせることができます。複数のディスカウントが適用されるアイテムの場合、最も大きいディスカウントのみが適用されます。"
-          }
+          },
+          "multipleEligibleDiscounts": "複数のディスカウントが適用されるアイテムの場合、最も大きいディスカウントのみが適用されます。"
         }
       },
       "discountClass": {
