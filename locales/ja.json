@@ -74,7 +74,7 @@
       "title": "組み合わせ",
       "combinesWith": "組み合わせる",
       "discountNameFilled": "以下と組み合わせることができる: ",
-      "discountNameNotFilled": "この{discountClass}ディスカウントは、以下と組み合わせることができます。",
+      "discountNameNotFilled": "この{discountClass}のディスカウントは、以下と組み合わせることができます。",
       "options": {
         "productLabelOther": "他の商品のディスカウント",
         "productLabel": "商品のディスカウント",
