@@ -74,7 +74,7 @@
       "title": "การรวม",
       "combinesWith": "รวมกับ",
       "discountNameFilled": "สามารถรวมกับ:",
-      "discountNameNotFilled": "ส่วนลด {discountClass} นี้สามารถรวมกับ:",
+      "discountNameNotFilled": "ส่วนลด{discountClass}นี้สามารถรวมกับ:",
       "options": {
         "productLabelOther": "ส่วนลดสินค้าอื่นๆ",
         "productLabel": "ส่วนลดสินค้า",
