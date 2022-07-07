@@ -84,7 +84,6 @@
       "newBadge": "新版",
       "HelpText": {
         "emptyState": {
-          "link": "瞭解詳情",
           "product": {
             "title": "目前未設定可併用的商品折扣。",
             "warning": {
@@ -108,7 +107,8 @@
               "withorder": "若要讓顧客使用多個折扣，請至少設定一個可與訂單折扣合併使用的運費折扣。",
               "withshipping": "若要讓顧客使用多個折扣，請至少設定一個可與其他運費折扣合併使用的運費折扣。"
             }
-          }
+          },
+          "link": "深入瞭解"
         },
         "combinations": {
           "counts": {
@@ -130,8 +130,8 @@
             }
           },
           "info": {
-            "one": "可在同一筆購買中合併使用 {discountCountLink}。若某品項符合多項折扣資格，則系統會套用最優惠的折扣。",
-            "other": "可在同一筆購買中合併使用 {discountCountLink}。若某品項符合多項折扣資格，則系統會套用最優惠的折扣。"
+            "one": "目前已設定 {discountCountLink} 可併用。",
+            "other": "目前已設定 {discountCountLink} 可併用。"
           },
           "multipleEligibleDiscounts": "若某品項符合多項折扣資格，則系統會套用最優惠的折扣。"
         }

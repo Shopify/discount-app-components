@@ -84,7 +84,6 @@
       "newBadge": "Yeni",
       "HelpText": {
         "emptyState": {
-          "link": "Daha fazla bilgi edinin",
           "product": {
             "title": "Şu anda birleştirilmek üzere ayarlanmış ürün indirimi yok.",
             "warning": {
@@ -108,7 +107,8 @@
               "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
               "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın."
             }
-          }
+          },
+          "link": "Daha fazla bilgi edinin"
         },
         "combinations": {
           "counts": {
@@ -130,8 +130,8 @@
             }
           },
           "info": {
-            "one": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır.",
-            "other": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
+            "one": "{discountCountLink} indirim birleştirilmek üzere ayarlanmış durumda.",
+            "other": "{discountCountLink} indirim birleştirilmek üzere ayarlanmış durumda."
           },
           "multipleEligibleDiscounts": "Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
         }

@@ -84,7 +84,6 @@
       "newBadge": "Nowe",
       "HelpText": {
         "emptyState": {
-          "link": "Dowiedz się więcej",
           "product": {
             "title": "Obecnie nie ma możliwości łączenia rabatów na produkty.",
             "warning": {
@@ -102,13 +101,14 @@
             }
           },
           "shipping": {
-            "title": "W tej chwili nie ustawiono rabatów na wysyłkę, które można byłoby łączyć.",
+            "title": "Obecnie nie ma możliwości łączenia rabatów na wysyłkę.",
             "warning": {
               "withproduct": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na produkty.",
               "withorder": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na zamówienia.",
               "withshipping": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na wysyłkę."
             }
-          }
+          },
+          "link": "Dowiedz się więcej"
         },
         "combinations": {
           "counts": {
@@ -138,10 +138,10 @@
             }
           },
           "info": {
-            "one": "{discountCountLink} można łączyć w ramach tego samego zakupu. Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie największy rabat.",
-            "other": "{discountCountLink} można łączyć w ramach tego samego zakupu. Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie największy rabat.",
-            "few": "{discountCountLink} można łączyć w ramach tego samego zakupu. Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie największy rabat.",
-            "many": "{discountCountLink} można łączyć w ramach tego samego zakupu. Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie największy rabat."
+            "one": "{discountCountLink} ma aktualnie ustawioną opcję łączenia.",
+            "other": "{discountCountLink} ma(ją) aktualnie ustawioną opcję łączenia.",
+            "few": "{discountCountLink} ma(ją) aktualnie ustawioną opcję łączenia.",
+            "many": "{discountCountLink} ma(ją) aktualnie ustawioną opcję łączenia."
           },
           "multipleEligibleDiscounts": "Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie jeden, największy rabat."
         }
