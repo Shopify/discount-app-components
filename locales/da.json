@@ -84,7 +84,6 @@
       "newBadge": "Ny",
       "HelpText": {
         "emptyState": {
-          "link": "Få mere at vide",
           "product": {
             "title": "Ingen produktrabatter er opsat til at blive kombineret på nuværende tidspunkt.",
             "warning": {
@@ -108,15 +107,11 @@
               "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med ordrerabatter.",
               "withshipping": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med leveringsrabatter."
             }
-          }
+          },
+          "link": "Få mere at vide"
         },
         "combinations": {
-          "multipleEligibleDiscounts": "Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat.",
           "counts": {
-            "productOther": {
-              "one": "{count} anden produktrabat",
-              "other": "{count} andre produktrabatter"
-            },
             "product": {
               "one": "{count} produktrabat",
               "other": "{count} produktrabatter"
@@ -128,12 +123,17 @@
             "shipping": {
               "one": "{count} leveringsrabat",
               "other": "{count} leveringsrabatter"
+            },
+            "productOther": {
+              "one": "{count} anden produktrabat",
+              "other": "{count} andre produktrabatter"
             }
           },
           "info": {
-            "one": "{discountCountLink} kan kombineres i samme køb. Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat.",
-            "other": "{discountCountLink} kan kombineres i samme køb. Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat."
-          }
+            "one": "{discountCountLink} er opsat til at blive kombineret på nuværende tidspunkt.",
+            "other": "{discountCountLink} er opsat til at blive kombineret på nuværende tidspunkt."
+          },
+          "multipleEligibleDiscounts": "Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat."
         }
       },
       "discountClass": {
