@@ -84,7 +84,6 @@
       "newBadge": "Nytt",
       "HelpText": {
         "emptyState": {
-          "link": "Mer information",
           "product": {
             "title": "För tillfället är inga produktrabatter inställda för att kombineras.",
             "warning": {
@@ -108,7 +107,8 @@
               "withorder": "För att låta kunder använda mer än en rabatt, ställ in minst en leveransrabatt som kombineras med orderrabatter.",
               "withshipping": "För att låta kunder använda mer än en rabatt, ställ in minst en leveransrabatt som kombineras med leveransrabatter."
             }
-          }
+          },
+          "link": "Mer information"
         },
         "combinations": {
           "counts": {
@@ -125,13 +125,13 @@
               "other": "{count} leveransrabatter"
             },
             "productOther": {
-              "one": "{count} annan produktrabatt",
+              "one": "{count} till produktrabatt",
               "other": "{count} andra produktrabatter"
             }
           },
           "info": {
-            "one": "{discountCountLink} kan kombineras i samma köp. Om en artikel är berättigad till flera rabatter kommer endast den största rabatten att gälla.",
-            "other": "{discountCountLink} kan kombineras i samma köp. Om en artikel är berättigad till flera rabatter kommer endast den största rabatten att gälla."
+            "one": "{discountCountLink} är inställd för att kombineras.",
+            "other": "{discountCountLink} är inställda för att kombineras."
           },
           "multipleEligibleDiscounts": "Om en artikel är berättigad till flera rabatter kommer endast den största rabatten att gälla."
         }

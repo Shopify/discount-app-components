@@ -84,9 +84,8 @@
       "newBadge": "Uusi",
       "HelpText": {
         "emptyState": {
-          "link": "Lisätietoja",
           "product": {
-            "title": "Tällä hetkellä tuotealennuksia ei ole määritetty siten, että niitä voisi yhdistää.",
+            "title": "Yhtään tuotealennusta ei ole määritetty siten, että niitä voisi yhdistää.",
             "warning": {
               "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää tuotealennuksiin.",
               "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää tilausalennuksiin.",
@@ -94,7 +93,7 @@
             }
           },
           "order": {
-            "title": "Tällä hetkellä tilausalennuksia ei ole määritetty siten, että niitä voisi yhdistää.",
+            "title": "Yhtään tilausalennusta ei ole määritetty siten, että niitä voisi yhdistää.",
             "warning": {
               "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tuotealennuksiin.",
               "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tilausalennuksiin.",
@@ -102,13 +101,14 @@
             }
           },
           "shipping": {
-            "title": "Tällä hetkellä toimitusalennuksia ei ole määritetty siten, että niitä voisi yhdistää.",
+            "title": "Yhtään toimitusalennusta ei ole määritetty siten, että niitä voisi yhdistää.",
             "warning": {
               "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi toimitusalennus, joka voidaan yhdistää tuotealennuksiin.",
               "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tilausalennuksiin.",
               "withshipping": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi toimitusalennus, joka voidaan yhdistää toimitusalennuksiin."
             }
-          }
+          },
+          "link": "Lisätietoja"
         },
         "combinations": {
           "counts": {
@@ -130,8 +130,8 @@
             }
           },
           "info": {
-            "one": "{discountCountLink} voidaan yhdistää samaan ostokseen. Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta.",
-            "other": "{discountCountLink} voidaan yhdistää samaan ostokseen. Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta."
+            "one": "{discountCountLink} on tällä hetkellä määritetty siten, että sen voi yhdistää.",
+            "other": "{discountCountLink} on tällä hetkellä määritetty siten, että ne voi yhdistää."
           },
           "multipleEligibleDiscounts": "Jos tuote on oikeutettu useaan alennukseen, käytetään vain suurinta alennusta."
         }

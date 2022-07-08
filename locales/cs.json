@@ -84,9 +84,8 @@
       "newBadge": "Nové",
       "HelpText": {
         "emptyState": {
-          "link": "Zjistit více",
           "product": {
-            "title": "V současné době nejsou nastaveny žádné slevy na produkty, které by bylo možné kombinovat.",
+            "title": "Aktuálně nejsou nastaveny žádné slevy na produkty, které by bylo možné kombinovat.",
             "warning": {
               "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na produkt, kterou bude možné kombinovat se slevami na produkty.",
               "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na produkt, kterou bude možné kombinovat se slevami na objednávku.",
@@ -94,7 +93,7 @@
             }
           },
           "order": {
-            "title": "V současné době nejsou nastaveny žádné slevy na objednávku, které by bylo možné kombinovat.",
+            "title": "Aktuálně nejsou nastaveny žádné slevy na objednávku, které by bylo možné kombinovat.",
             "warning": {
               "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na objednávku, kterou bude možné kombinovat se slevami na produkty.",
               "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na objednávku, kterou bude možné kombinovat se slevami na objednávky.",
@@ -102,16 +101,16 @@
             }
           },
           "shipping": {
-            "title": "V současné době nejsou nastaveny žádné slevy na dopravu, které by bylo možné kombinovat.",
+            "title": "Aktuálně nejsou nastaveny žádné slevy na dopravu, které by bylo možné kombinovat.",
             "warning": {
               "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na produkty.",
               "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na objednávku.",
               "withshipping": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na dopravu."
             }
-          }
+          },
+          "link": "Zjistit více"
         },
         "combinations": {
-          "multipleEligibleDiscounts": "Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
           "counts": {
             "product": {
               "one": "{count} slevu na produkt",
@@ -133,17 +132,18 @@
             },
             "productOther": {
               "one": "{count} další sleva na produkt",
-              "other": "{count} dalších slev na produkty",
-              "few": "{count} dalších slev na produkty",
-              "many": "{count} dalších slev na produkty"
+              "other": "další slevy na produkty ({count})",
+              "few": "další slevy na produkty ({count})",
+              "many": "další slevy na produkty ({count})"
             }
           },
           "info": {
-            "one": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
-            "other": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
-            "few": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva.",
-            "many": "V rámci jednoho nákupu lze kombinovat {discountCountLink}. Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva."
-          }
+            "one": "Je nastavena {discountCountLink}, kterou je možné kombinovat.",
+            "other": "Jsou nastaveny {discountCountLink}, které je možné kombinovat.",
+            "few": "Jsou nastaveny {discountCountLink}, které je možné kombinovat.",
+            "many": "Jsou nastaveny {discountCountLink}, které je možné kombinovat."
+          },
+          "multipleEligibleDiscounts": "Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva."
         }
       },
       "discountClass": {

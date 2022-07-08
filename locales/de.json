@@ -84,7 +84,6 @@
       "newBadge": "Neu",
       "HelpText": {
         "emptyState": {
-          "link": "Erfahre mehr",
           "product": {
             "title": "Derzeit sind keine Produktrabatte kombinierbar.",
             "warning": {
@@ -108,7 +107,8 @@
               "withorder": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Versandrabatt fest, der mit Bestellrabatten kombinierbar ist.",
               "withshipping": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Versandrabatt fest, der mit Versandrabatten kombinierbar ist."
             }
-          }
+          },
+          "link": "Weitere Informationen"
         },
         "combinations": {
           "counts": {
@@ -130,8 +130,8 @@
             }
           },
           "info": {
-            "one": "{discountCountLink} ist/sind im selben Kauf kombinierbar. Wenn ein Artikel für mehrere Rabatte geeignet ist, wird nur der größte Rabatt angewendet.",
-            "other": "{discountCountLink} ist/sind im selben Kauf kombinierbar. Wenn ein Artikel für mehrere Rabatte geeignet ist, wird nur der größte Rabatt angewendet."
+            "one": "{discountCountLink} ist derzeit kombinierbar.",
+            "other": "{discountCountLink} sind kombinierbar."
           },
           "multipleEligibleDiscounts": "Wenn ein Artikel für mehrere Rabatte geeignet ist, wird nur der größte Rabatt angewendet."
         }
