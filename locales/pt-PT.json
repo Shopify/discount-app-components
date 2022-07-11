@@ -85,7 +85,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "De momento, nenhum desconto do produto está configurado para combinar.",
+            "title": "De momento, não existem descontos de produtos configurados para combinação.",
             "warning": {
               "withproduct": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do produto que combine com descontos do produto.",
               "withorder": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do produto que combine com descontos da encomenda.",
@@ -93,7 +93,7 @@
             }
           },
           "order": {
-            "title": "De momento, nenhum desconto da encomenda está configurado para combinar.",
+            "title": "De momento, não existem descontos da encomenda configurados para combinação.",
             "warning": {
               "withproduct": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto da encomenda que combine com descontos do produto.",
               "withorder": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto da encomenda que combine com descontos da encomenda.",
@@ -101,13 +101,14 @@
             }
           },
           "shipping": {
-            "title": "De momento, nenhum desconto do envio está configurado para combinar.",
+            "title": "De momento, não existem descontos do envio configurados para combinação.",
             "warning": {
               "withproduct": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do envio que combine com descontos do produto.",
               "withorder": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do envio que combine com descontos da encomenda.",
               "withshipping": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do envio que combine com descontos do envio."
             }
-          }
+          },
+          "link": "Saber mais"
         },
         "combinations": {
           "counts": {
@@ -125,13 +126,19 @@
               "one": "{count} desconto do envio",
               "other": "{count} descontos do envio",
               "many": "{count} descontos do envio"
+            },
+            "productOther": {
+              "one": "{count} outro desconto no produto",
+              "other": "{count} outros descontos no produto",
+              "many": "{count} outros descontos no produto"
             }
           },
           "info": {
-            "one": "{discountCountLink} é combinável na mesma compra. Se um item for elegível para vários descontos, apenas é aplicado o maior desconto.",
-            "other": "{discountCountLink} é combinável na mesma compra. Se um item for elegível para vários descontos, apenas é aplicado o maior desconto.",
-            "many": "{discountCountLink} é combinável na mesma compra. Se um item for elegível para vários descontos, apenas é aplicado o maior desconto."
-          }
+            "one": "De momento, {discountCountLink} está configurado para combinação.",
+            "other": "De momento, {discountCountLink} estão configurados para combinação.",
+            "many": "De momento, {discountCountLink} estão configurados para combinação."
+          },
+          "multipleEligibleDiscounts": "Se um item for elegível para vários descontos, apenas é aplicado o maior desconto."
         }
       },
       "discountClass": {

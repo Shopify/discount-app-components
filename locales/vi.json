@@ -107,7 +107,8 @@
               "withorder": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá vận chuyển kết hợp với các ưu đãi giảm giá đơn hàng.",
               "withshipping": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá vận chuyển kết hợp với các ưu đãi giảm giá vận chuyển."
             }
-          }
+          },
+          "link": "Tìm hiểu thêm"
         },
         "combinations": {
           "counts": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count} ưu đãi giảm giá vận chuyển",
               "other": "{count} ưu đãi giảm giá vận chuyển"
+            },
+            "productOther": {
+              "one": "{count} ưu đãi giảm giá sản phẩm khác",
+              "other": "{count} ưu đãi giảm giá sản phẩm khác"
             }
           },
           "info": {
-            "one": "{discountCountLink} có thể được kết hợp trong cùng đơn mua. Nếu mặt hàng đủ điều kiện áp dụng nhiều ưu đãi giảm giá thì chỉ áp dụng ưu đãi giảm giá lớn nhất.",
-            "other": "{discountCountLink} có thể được kết hợp trong cùng đơn mua. Nếu mặt hàng đủ điều kiện áp dụng nhiều ưu đãi giảm giá thì chỉ áp dụng ưu đãi giảm giá lớn nhất."
-          }
+            "one": "Hiện có {discountCountLink} được thiết lập để kết hợp.",
+            "other": "Hiện có {discountCountLink} được thiết lập để kết hợp."
+          },
+          "multipleEligibleDiscounts": "Nếu mặt hàng đủ điều kiện áp dụng nhiều ưu đãi giảm giá thì chỉ áp dụng ưu đãi giảm giá lớn nhất."
         }
       },
       "discountClass": {

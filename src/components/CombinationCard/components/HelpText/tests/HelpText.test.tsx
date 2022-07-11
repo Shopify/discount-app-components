@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button, Icon} from '@shopify/polaris';
-import {InfoMinor} from '@shopify/polaris-icons';
+import {Button} from '@shopify/polaris';
 import {mountWithApp} from 'tests/utilities';
 import {Action} from '@shopify/app-bridge/actions/Modal';
 import {composeGid} from '@shopify/admin-graphql-api-utilities';
@@ -48,10 +47,15 @@ describe('<HelpText />', () => {
     };
 
     it('renders supporting copy', () => {
-      const helpText = mountWithApp(<HelpText {...countProps} />);
+      const helpText = mountWithApp(
+        <HelpText
+          {...countProps}
+          currentDiscountClass={DiscountClass.Product}
+        />,
+      );
 
       expect(helpText).toContainReactText(
-        '3 product discounts can be combined in the same purchase. If an item is eligible for multiple discounts, only the largest discount will apply.',
+        '3 other product discounts are currently set to combine.If an item is eligible for multiple discounts, only the largest discount will apply.',
       );
     });
   });
@@ -62,25 +66,28 @@ describe('<HelpText />', () => {
       count: 0,
     };
 
-    it('renders <Icon />', () => {
-      const helpText = mountWithApp(<HelpText {...emptyStateProps} />);
-
-      expect(helpText).toContainReactComponent(Icon, {
-        color: 'subdued',
-        source: InfoMinor,
-      });
-    });
-
-    it('renders empty state content', () => {
-      const helpText = mountWithApp(<HelpText {...emptyStateProps} />);
-
-      expect(helpText).toContainReactText(
-        'Currently, no product discounts are set up to combine.',
-      );
-      expect(helpText).toContainReactText(
-        'To let customers use more than one discount, set up at least one product discount that combines with shipping discounts.',
-      );
-    });
+    it.each([
+      [
+        DiscountClass.Product,
+        'No product discounts are currently set to combine. To let customers use more than one discount, set up at least one product discount that combines with product discounts. Learn more',
+      ],
+      [
+        DiscountClass.Order,
+        'No order discounts are currently set to combine. To let customers use more than one discount, set up at least one order discount that combines with order discounts. Learn more',
+      ],
+      [
+        DiscountClass.Shipping,
+        'No shipping discounts are currently set to combine. To let customers use more than one discount, set up at least one shipping discount that combines with shipping discounts. Learn more',
+      ],
+    ])(
+      'renders empty state content when no %s discounts are set to combine with current discount',
+      (combinesWith, expectedText) => {
+        const helpText = mountWithApp(
+          <HelpText {...emptyStateProps} currentDiscountClass={combinesWith} />,
+        );
+        expect(helpText).toContainReactText(expectedText);
+      },
+    );
   });
 
   describe('Combinations Modal', () => {

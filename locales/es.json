@@ -85,7 +85,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Actualmente, no hay descuentos en productos definidos para combinarse.",
+            "title": "Actualmente, no hay descuentos en productos que puedan combinarse.",
             "warning": {
               "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos del mismo tipo.",
               "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos en pedidos.",
@@ -93,7 +93,7 @@
             }
           },
           "order": {
-            "title": "Actualmente, no hay descuentos en pedidos definidos para combinarse.",
+            "title": "Actualmente, no hay descuentos en pedidos que puedan combinarse.",
             "warning": {
               "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos en productos.",
               "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos del mismo tipo.",
@@ -101,13 +101,14 @@
             }
           },
           "shipping": {
-            "title": "Actualmente, no hay descuentos en envíos definidos para combinarse.",
+            "title": "Actualmente, no hay descuentos en envíos que puedan combinarse.",
             "warning": {
               "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en productos.",
               "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en pedidos.",
               "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos del mismo tipo."
             }
-          }
+          },
+          "link": "Más información"
         },
         "combinations": {
           "counts": {
@@ -125,13 +126,19 @@
               "one": "{count} descuento en envíos",
               "other": "{count} descuentos en envíos",
               "many": "{count} descuentos en envíos"
+            },
+            "productOther": {
+              "one": "{count} descuento de producto más",
+              "other": "{count} descuentos de producto más",
+              "many": "{count} descuentos de producto más"
             }
           },
           "info": {
-            "one": "{discountCountLink} se pueden combinar en la misma compra. Si un artículo es elegible para varios descuentos, solo se aplicará el mayor.",
-            "other": "{discountCountLink} se pueden combinar en la misma compra. Si un artículo es elegible para varios descuentos, solo se aplicará el mayor.",
-            "many": "{discountCountLink} se pueden combinar en la misma compra. Si un artículo es elegible para varios descuentos, solo se aplicará el mayor."
-          }
+            "one": "Actualmente, {discountCountLink} puede combinarse.",
+            "other": "Actualmente, {discountCountLink} pueden combinarse.",
+            "many": "Actualmente, {discountCountLink} pueden combinarse."
+          },
+          "multipleEligibleDiscounts": "Si un artículo es elegible para varios descuentos, solo se aplicará el mayor."
         }
       },
       "discountClass": {

@@ -107,7 +107,8 @@
               "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的运费折扣。",
               "withshipping": "若要允许客户使用多项折扣，请至少设置一项与其他运费折扣进行组合的运费折扣。"
             }
-          }
+          },
+          "link": "了解详细信息"
         },
         "combinations": {
           "counts": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count} 项运费折扣",
               "other": "{count} 项运费折扣"
+            },
+            "productOther": {
+              "one": "{count} 项其他产品折扣",
+              "other": "{count} 项其他产品折扣"
             }
           },
           "info": {
-            "one": "{discountCountLink}可在同一购买中组合使用。如果某商品可使用多项折扣，则只会应用优惠金额最大的折扣。",
-            "other": "{discountCountLink}可在同一购买中组合使用。如果某商品可使用多项折扣，则只会应用优惠金额最大的折扣。"
-          }
+            "one": "{discountCountLink} 目前设置为进行组合。",
+            "other": "{discountCountLink} 目前设置为进行组合。"
+          },
+          "multipleEligibleDiscounts": "如果某商品可使用多项折扣，则只会应用优惠金额最大的折扣。"
         }
       },
       "discountClass": {

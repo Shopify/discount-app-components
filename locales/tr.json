@@ -107,7 +107,8 @@
               "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
               "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın."
             }
-          }
+          },
+          "link": "Daha fazla bilgi edinin"
         },
         "combinations": {
           "counts": {
@@ -122,12 +123,17 @@
             "shipping": {
               "one": "{count} kargo indirimi",
               "other": "{count} kargo indirimi"
+            },
+            "productOther": {
+              "one": "Diğer {count} ürün indirimi",
+              "other": "Diğer {count} ürün indirimi"
             }
           },
           "info": {
-            "one": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır.",
-            "other": "{discountCountLink} aynı satın alım işleminde birleştirilebilir. Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
-          }
+            "one": "{discountCountLink} indirim birleştirilmek üzere ayarlanmış durumda.",
+            "other": "{discountCountLink} indirim birleştirilmek üzere ayarlanmış durumda."
+          },
+          "multipleEligibleDiscounts": "Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
         }
       },
       "discountClass": {
