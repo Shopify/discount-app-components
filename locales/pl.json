@@ -74,7 +74,7 @@
       "title": "Połączenia",
       "combinesWith": "Łączy się z",
       "discountNameFilled": "można łączyć z:",
-      "discountNameNotFilled": "Ten rabat {discountClass} można łączyć z:",
+      "discountNameNotFilled": "Ten rabat na: {discountClass} można łączyć z:",
       "options": {
         "productLabelOther": "Inne rabaty na produkty",
         "productLabel": "Rabaty na produkty",
