@@ -74,7 +74,7 @@
       "title": "Kết hợp",
       "combinesWith": "Kết hợp với",
       "discountNameFilled": "có thể kết hợp với:",
-      "discountNameNotFilled": "Ưu đãi giảm giá {discountClass} có thể kết hợp với:",
+      "discountNameNotFilled": "Ưu đãi giảm giá cho {discountClass} này có thể kết hợp với:",
       "options": {
         "productLabelOther": "Ưu đãi giảm giá cho sản phẩm khác",
         "productLabel": "Ưu đãi giảm giá sản phẩm",
