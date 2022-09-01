@@ -51,7 +51,7 @@ yarn add @shopify/discount-app-components
     />
     ```
 
-2.  This library contains a number of locale-specific components, and you will be required to pass a `locale` and a `ianaTimezone` to the discounts AppProvider. Also, this library will require you to wrap your app in a Polaris AppProvider and an AppBridge AppProvider. A full example of an app root can be found below:
+2.  This library contains a number of locale-specific components, and you will be required to pass a `locale` and a `ianaTimezone` to the discounts AppProvider. Also, this library will require you to wrap your app in a [Polaris AppProvider](https://polaris.shopify.com/components/app-provider) and an [AppBridge AppProvider](https://shopify.dev/apps/tools/app-bridge/getting-started/using-react#provider). A full example of an app root can be found below:
 
     ```js
     import {Page, AppProvider as PolarisAppProvider} from '@shopify/polaris';
