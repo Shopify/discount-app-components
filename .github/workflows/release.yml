@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
 
-      - name: Create release Pull Request or publish to NPM
+      - name: Create release pr or publish new tag
         id: changesets
         uses: changesets/action@v1
         with:
