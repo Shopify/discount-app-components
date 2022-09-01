@@ -53,7 +53,10 @@
     "build": "node ./scripts/build.js",
     "preyalcpublish": "npm-run-all clean build",
     "prepare": "npm-run-all clean build",
-    "storybook": "yarn start-storybook"
+    "storybook": "yarn start-storybook",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset tag"
   },
   "dependencies": {
     "@shopify/admin-graphql-api-utilities": "^2.0.0",
