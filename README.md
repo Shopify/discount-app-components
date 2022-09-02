@@ -147,6 +147,7 @@ You may need to update your webpack.config.js to include a `module.rules` of:
 ### New version and releasing
 
 1. When feature work is merged into main there is a release GitHub action which will run.
-2. It runs `yarn version` and incorporates the changesets into the changelog.
-3. It bumps the version accordingly. If changesets contain minor changes then the minor version is bumped.
-4. The release action runs `yarn release`, which runs the `tag` command because we are using a different tool (Shipit), to publish our package. It creates a vX.X.X tag, which can then be picked up by Shipit.
+2. If you want to include those changes into the changelog, run `yarn changeset add` and commit the generated changesets. If you don't want to include those changes in the changelog, you can label your pr with 🤖 Skip Changelog.
+3. It runs `yarn version` and incorporates the changesets into the changelog.
+4. It bumps the version accordingly. If changesets contain minor changes then the minor version is bumped.
+5. The release action runs `yarn release`, which publishes the package to npm.
