@@ -56,7 +56,7 @@
     "storybook": "yarn start-storybook",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "changeset tag"
+    "release": "changeset publish"
   },
   "dependencies": {
     "@shopify/admin-graphql-api-utilities": "^2.0.0",
