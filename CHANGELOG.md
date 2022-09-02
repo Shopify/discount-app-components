@@ -1,5 +1,13 @@
 # @shopify/discount-app-components
 
+## 1.0.5
+
+### Patch Changes
+
+- [#41](https://github.com/Shopify/discount-app-components/pull/41) [`31abc78`](https://github.com/Shopify/discount-app-components/commit/31abc7846c6c3e829e9ed855436a31c27ec7a6ad) Thanks [@devisscher](https://github.com/devisscher)! - update changelog file name
+
+- [#41](https://github.com/Shopify/discount-app-components/pull/41) [`31abc78`](https://github.com/Shopify/discount-app-components/commit/31abc7846c6c3e829e9ed855436a31c27ec7a6ad) Thanks [@devisscher](https://github.com/devisscher)! - update release config to publish to npm
+
 ## 1.0.4
 
 ### Patch Changes
