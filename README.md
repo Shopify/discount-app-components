@@ -142,12 +142,24 @@ You may need to update your webpack.config.js to include a `module.rules` of:
 }
 ```
 
-### Releasing
+### Deploying new versions
 
-### New version and releasing
+Writing changelogs and releasing should be as seamless and automated as possible. This repo uses changesets to version and release packages. To create a new version and release, follow these steps:
 
-1. When feature work is merged into main there is a release GitHub action which will run.
-2. If you want to include those changes into the changelog, run `yarn changeset add` and commit the generated changesets. If you don't want to include those changes in the changelog, you can label your pr with 🤖 Skip Changelog.
-3. It runs `yarn version` and incorporates the changesets into the changelog.
-4. It bumps the version accordingly. If changesets contain minor changes then the minor version is bumped.
-5. The release action runs `yarn release`, which publishes the package to npm.
+#### Typical flow:
+
+##### Feature work
+
+1. Changes are made in a working branch and it is deemed that a version (patch/minor/major) bump is needed.
+2. On the working branch:
+   a. If you want to include those changes into the changelog, run `yarn changeset add` and commit the generated changesets.
+   b. If you don't want to include those changes in the changelog, you can label your pr with 🤖 Skip Changelog.
+3. Then push the generated changesets and or changes to your working branch
+4. Merge working branch as you would normally, after getting reviews and CI passing
+
+##### New version and releasing
+
+1. When feature work is merged into main there is a release GitHub action that runs which generates a Version Packages pull request.
+2. It runs `yarn version` and incorporates the changesets into the changelog and bumps the version accordingly. (patch/minor/major) It then creates a `Version Packages` pull request.
+3. Merge the Version Packages PR.
+4. The release action runs `yarn release`, which publishes the package to npm.
