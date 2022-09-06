@@ -142,9 +142,7 @@ You may need to update your webpack.config.js to include a `module.rules` of:
 }
 ```
 
-### Releasing
-
-### New version and releasing
+### Deploying new versions
 
 Writing changelogs and releasing should be as seamless and automated as possible. This repo uses changesets to version and release packages. To create a new version and release, follow these steps:
 
