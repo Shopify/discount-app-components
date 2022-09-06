@@ -147,12 +147,13 @@ You may need to update your webpack.config.js to include a `module.rules` of:
 Writing changelogs and releasing should be as seamless and automated as possible. This repo uses changesets to version and release packages. To create a new version and release, follow these steps:
 
 #### Typical flow:
+
 ##### Feature work
 
 1. Changes are made in a working branch and it is deemed that a version (patch/minor/major) bump is needed.
 2. On the working branch:
-    a. If you want to include those changes into the changelog, run `yarn changeset add` and commit the generated changesets.
-    b. If you don't want to include those changes in the changelog, you can label your pr with 🤖 Skip Changelog.
+   a. If you want to include those changes into the changelog, run `yarn changeset add` and commit the generated changesets.
+   b. If you don't want to include those changes in the changelog, you can label your pr with 🤖 Skip Changelog.
 3. Then push the generated changesets and or changes to your working branch
 4. Merge working branch as you would normally, after getting reviews and CI passing
 
@@ -162,4 +163,3 @@ Writing changelogs and releasing should be as seamless and automated as possible
 2. It runs `yarn version` and incorporates the changesets into the changelog and bumps the version accordingly. (patch/minor/major) It then creates a `Version Packages` pull request.
 3. Merge the Version Packages PR.
 4. The release action runs `yarn release`, which publishes the package to npm.
-
