@@ -70,9 +70,9 @@
   "peerDependencies": {
     "@shopify/app-bridge": "^3.1.0",
     "@shopify/app-bridge-react": "^3.1.0",
-    "@shopify/polaris": "^9.7.0",
+    "@shopify/polaris": "^9.7.0 || ^10.0.0",
     "react": "^16.14.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.14.0 || ^17.0.0 || ^10.0.0"
+    "react-dom": "^16.14.0 || ^17.0.0 || ^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -96,7 +96,7 @@
     "@shopify/loom-plugin-eslint": "^2.0.0",
     "@shopify/loom-plugin-prettier": "^2.0.0",
     "@shopify/loom-plugin-stylelint": "^2.0.0",
-    "@shopify/polaris": "^9.7.0",
+    "@shopify/polaris": "^10.0.0",
     "@shopify/postcss-plugin": "^5.0.1",
     "@shopify/prettier-config": "^1.1.2",
     "@shopify/react-testing": "^3.2.4",
