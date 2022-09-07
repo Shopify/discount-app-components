@@ -1,5 +1,13 @@
 # @shopify/discount-app-components
 
+## 1.0.6
+
+### Patch Changes
+
+- [#44](https://github.com/Shopify/discount-app-components/pull/44) [`bd2631d`](https://github.com/Shopify/discount-app-components/commit/bd2631dfb4c59820cd65a83565ef992f4d724e82) Thanks [@devisscher](https://github.com/devisscher)! - update the readme
+
+- [#48](https://github.com/Shopify/discount-app-components/pull/48) [`f72f683`](https://github.com/Shopify/discount-app-components/commit/f72f683d0791581fcde283d1173ea4a38eeae615) Thanks [@davejcameron](https://github.com/davejcameron)! - bump Polaris version
+
 ## 1.0.5
 
 ### Patch Changes
