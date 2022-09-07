@@ -2396,21 +2396,31 @@
     fs-extra "^9.0.0"
     glob "^7.1.6"
 
-"@shopify/polaris-icons@*", "@shopify/polaris-icons@^4.18.3":
+"@shopify/polaris-icons@^4.18.3":
   version "4.20.0"
   resolved "https://registry.npmjs.org/@shopify/polaris-icons/-/polaris-icons-4.20.0.tgz"
   integrity sha512-W9SMbO22z3rQc8VK2bB+eB8cTui47I5q8sOmDtDclCOAKhFd3RDmV9+RM/RPnGtNgiJ0jtCamko2IMLuBv46Hw==
 
-"@shopify/polaris@^9.7.0":
-  version "9.7.0"
-  resolved "https://registry.npmjs.org/@shopify/polaris/-/polaris-9.7.0.tgz"
-  integrity sha512-y71JWkBnZ+tZ7Mo3TbI0qZKZo52Fr+Z2lVLS05MlLHv/49yBlYHE7WxbKxtLOBZM1u7JWT2z7GZOfYsCSkGkJg==
+"@shopify/polaris-icons@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris-icons/-/polaris-icons-6.1.0.tgz#4f06ce99898134bd05c68508df43e0a4f12a1180"
+  integrity sha512-MRAX8CsFW2TXc7bzgNmjco3ghYKIbh3WILSqe/BLToAAJst07R/2UgtysGiePbjOEBiwlubRj1WxZBYTLtmyJw==
+
+"@shopify/polaris-tokens@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris-tokens/-/polaris-tokens-6.0.0.tgz#e6c88c2d8d283d2eca2d285ae2e08b9e76e4a0d5"
+  integrity sha512-Mh4vqMvXHFynGz/ZuoABQpuAWXexpIJrq5q75rYuzuRIV6R26cNZY/JCjVU29TjLSGaPipc2qGmYmEnz23KSAA==
+
+"@shopify/polaris@^10.0.0":
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-10.1.2.tgz#a4fb447d679bb0cf692087d9b4f63a84302bba80"
+  integrity sha512-5H7zCV4nLV8qM7Dnqq1c7iMiXtYVXagaBojODJn9G+FOV92dBcHbrtM13FBgHzDqUwbJP0Wgg7ilKwB8vCNcdg==
   dependencies:
-    "@shopify/polaris-icons" "*"
-    "@types/react" "^17.0.19"
-    "@types/react-dom" "^17.0.9"
+    "@shopify/polaris-icons" "^6.1.0"
+    "@shopify/polaris-tokens" "^6.0.0"
+    "@types/react" "^17.0.2"
+    "@types/react-dom" "^17.0.2"
     "@types/react-transition-group" "^4.4.2"
-    focus-visible "^5.2.0"
     react-fast-compare "^3.2.0"
     react-transition-group "^4.4.2"
 
@@ -3498,7 +3508,7 @@
   resolved "https://registry.npmjs.org/@types/qs/-/qs-6.9.7.tgz"
   integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
 
-"@types/react-dom@^17.0.2", "@types/react-dom@^17.0.9":
+"@types/react-dom@^17.0.2":
   version "17.0.17"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.17.tgz#2e3743277a793a96a99f1bf87614598289da68a1"
   integrity sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==
@@ -3523,15 +3533,6 @@
   version "17.0.45"
   resolved "https://registry.npmjs.org/@types/react/-/react-17.0.45.tgz"
   integrity sha512-YfhQ22Lah2e3CHPsb93tRwIGNiSwkuz1/blk4e6QrWS0jQzCSNbGLtOEYhPg02W0yGTTmpajp7dCTbBAMN3qsg==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@^17.0.19":
-  version "17.0.49"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.49.tgz#df87ba4ca8b7942209c3dc655846724539dc1049"
-  integrity sha512-CCBPMZaPhcKkYUTqFs/hOWqKjPxhTEmnZWjlHHgIMop67DsXywf9B5Os9Hz8KSacjNOgIdnZVJamwl232uxoPg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -7475,11 +7476,6 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
-
-focus-visible@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/focus-visible/-/focus-visible-5.2.0.tgz"
-  integrity sha512-Rwix9pBtC1Nuy5wysTmKy+UjbDJpIfg8eHjw0rjZ1mX4GNLz1Bmd16uDpI3Gk1i70Fgcs8Csg2lPm8HULFg9DQ==
 
 for-in@^1.0.2:
   version "1.0.2"
