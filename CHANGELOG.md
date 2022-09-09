@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 1.0.7
+
+### Patch Changes
+
+- [#49](https://github.com/Shopify/discount-app-components/pull/49) [`668bf13`](https://github.com/Shopify/discount-app-components/commit/668bf13429faee6a1a3c93642a8dc9099ee6573d) Thanks [@devisscher](https://github.com/devisscher)! - use gaap to provide secrets
+
 ## 1.0.6
 
 ### Patch Changes
