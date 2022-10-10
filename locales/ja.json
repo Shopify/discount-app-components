@@ -151,7 +151,7 @@
           "Automatic": "タイトルがまだありません。"
         },
         "badge": {
-          "active": "アクティブ",
+          "active": "公開中",
           "expired": "期限切れ",
           "scheduled": "スケジュール済み"
         },
