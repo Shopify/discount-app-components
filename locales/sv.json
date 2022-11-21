@@ -152,7 +152,7 @@
         },
         "badge": {
           "active": "Aktiv",
-          "expired": "Utgått",
+          "expired": "Har utgått",
           "scheduled": "Schemalagd"
         },
         "typeAndMethod": "typ och metod",
