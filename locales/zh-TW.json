@@ -248,7 +248,7 @@
     "CustomerEligibilityCard": {
       "title": "顧客資格條件",
       "everyone": "所有顧客",
-      "customerSegments": "特定顧客群",
+      "customerSegments": "特定顧客分群",
       "customers": "特定顧客"
     },
     "CountriesAndRatesCard": {
