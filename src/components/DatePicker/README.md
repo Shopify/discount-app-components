@@ -2,7 +2,7 @@
 
 The DatePicker component provides an input that allows users to select a date from a calendar popover or enter one into a text input.
 
-The calendar is powered by a [Polaris DatePicker](https://polaris.shopify.com/components/forms/date-picker) under the hood.
+The calendar is powered by a [Polaris DatePicker](https://polaris.shopify.com/components/selection-and-input/date-picker) under the hood.
 
 ---
 
