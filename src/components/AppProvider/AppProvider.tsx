@@ -1,5 +1,5 @@
-import React, {useMemo} from 'react';
 import {I18nContext, I18nManager} from '@shopify/react-i18n';
+import React, {useMemo} from 'react';
 
 import {DiscountsI18nProvider} from './components';
 
@@ -15,6 +15,8 @@ export interface AppProviderProps {
    * The shop's time zone as defined by the IANA (e.g. `America/Los_Angeles`). This can be queried from the [Shop gql object](https://shopify.dev/api/admin-graphql/2022-07/objects/Shop#field-shop-ianatimezone).
    */
   ianaTimezone: string;
+
+  translationsFn?: (locale: string) => Promise<any>;
 
   children?: React.ReactNode;
 }
@@ -40,7 +42,9 @@ export function AppProvider(props: AppProviderProps) {
 
   return (
     <I18nContext.Provider value={i18nManager}>
-      <DiscountsI18nProvider>{props.children}</DiscountsI18nProvider>
+      <DiscountsI18nProvider translationsFn={props.translationsFn}>
+        {props.children}
+      </DiscountsI18nProvider>
     </I18nContext.Provider>
   );
 }
