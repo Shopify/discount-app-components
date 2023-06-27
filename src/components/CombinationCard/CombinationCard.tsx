@@ -1,16 +1,16 @@
 import React from 'react';
 import {
-  Card,
+  LegacyCard as Card,
   ChoiceList,
-  Stack,
-  TextStyle,
+  LegacyStack as Stack,
+  Text,
   ChoiceListProps,
 } from '@shopify/polaris';
-import {I18n, useI18n} from '@shopify/react-i18n';
+import { I18n, useI18n } from '@shopify/react-i18n';
 
-import {HelpText} from './components';
+import { HelpText } from './components';
 
-import {DiscountClass} from '~/constants';
+import { DiscountClass } from '~/constants';
 import type {
   CombinableDiscountTypes,
   CombinableDiscountCounts,
@@ -73,7 +73,7 @@ export function CombinationCard({
         <p>
           {trimmedDescriptor ? (
             <>
-              <TextStyle variation="strong">{trimmedDescriptor}</TextStyle>{' '}
+              <Text as="span" fontWeight="semibold">{trimmedDescriptor}</Text>{' '}
               {i18n.translate('discountNameFilled', I18N_SCOPE)}
             </>
           ) : (
@@ -214,9 +214,9 @@ function getActualCombiningDiscountsCount(
 const getSelectedChoices = (
   combinableDiscountTypes: CombinableDiscountTypes,
 ): ChoiceListProps['selected'] => [
-  ...(combinableDiscountTypes.productDiscounts ? [DiscountClass.Product] : []),
-  ...(combinableDiscountTypes.orderDiscounts ? [DiscountClass.Order] : []),
-  ...(combinableDiscountTypes.shippingDiscounts
-    ? [DiscountClass.Shipping]
-    : []),
-];
+    ...(combinableDiscountTypes.productDiscounts ? [DiscountClass.Product] : []),
+    ...(combinableDiscountTypes.orderDiscounts ? [DiscountClass.Order] : []),
+    ...(combinableDiscountTypes.shippingDiscounts
+      ? [DiscountClass.Shipping]
+      : []),
+  ];

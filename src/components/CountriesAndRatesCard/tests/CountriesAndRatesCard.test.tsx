@@ -1,20 +1,20 @@
 import React from 'react';
 import {
-  Heading,
+  LegacyCard,
   ChoiceList,
   Checkbox,
   InlineError,
   Button,
-  Subheading,
+  Text,
 } from '@shopify/polaris';
-import {CurrencyCode} from '@shopify/react-i18n';
-import {mountWithApp, mockField} from 'tests/utilities';
+import { CurrencyCode } from '@shopify/react-i18n';
+import { mountWithApp, mockField } from 'tests/utilities';
 
-import {CountriesAndRatesCard} from '../CountriesAndRatesCard';
-import {CountrySelectionType, SupportedCountryCode} from '../../../constants';
+import { CountriesAndRatesCard } from '../CountriesAndRatesCard';
+import { CountrySelectionType, SupportedCountryCode } from '../../../constants';
 
-import {CurrencyField} from '~/components/CurrencyField';
-import {SelectedItemsList} from '~/components/SelectedItemsList';
+import { CurrencyField } from '~/components/CurrencyField';
+import { SelectedItemsList } from '~/components/SelectedItemsList';
 
 describe('<CountriesAndRatesCard />', () => {
   const mockProps = {
@@ -38,21 +38,21 @@ describe('<CountriesAndRatesCard />', () => {
       <CountriesAndRatesCard {...mockProps} />,
     );
 
-    expect(countriesAndRatesCard).toContainReactComponent(Heading, {
+    expect(countriesAndRatesCard).toContainReactComponent(LegacyCard.Header, {
       children: 'Countries',
     });
     expect(countriesAndRatesCard).toContainReactComponent(ChoiceList, {
       title: 'Countries and rates',
       titleHidden: true,
       choices: expect.arrayContaining([
-        {value: CountrySelectionType.AllCountries, label: 'All countries'},
+        { value: CountrySelectionType.AllCountries, label: 'All countries' },
         {
           value: CountrySelectionType.SelectedCountries,
           label: 'Specific countries',
         },
       ]),
     });
-    expect(countriesAndRatesCard).toContainReactComponent(Subheading, {
+    expect(countriesAndRatesCard).toContainReactComponent(Text, {
       children: 'Shipping rates',
     });
     expect(countriesAndRatesCard).toContainReactComponent(Checkbox, {
@@ -76,8 +76,8 @@ describe('<CountriesAndRatesCard />', () => {
         SelectedItemsList,
         {
           items: expect.arrayContaining([
-            {name: 'Canada', id: 'CA'},
-            {name: 'United States', id: 'US'},
+            { name: 'Canada', id: 'CA' },
+            { name: 'United States', id: 'US' },
           ]),
         },
       );
@@ -96,8 +96,8 @@ describe('<CountriesAndRatesCard />', () => {
       );
       expect(countriesAndRatesCard).toContainReactComponent(SelectedItemsList, {
         items: expect.arrayContaining([
-          {name: 'Canada', id: 'CA'},
-          {name: 'United States', id: 'US'},
+          { name: 'Canada', id: 'CA' },
+          { name: 'United States', id: 'US' },
         ]),
       });
     });

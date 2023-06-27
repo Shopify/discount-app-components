@@ -2,22 +2,22 @@ import React from 'react';
 import {
   ChoiceList,
   TextField,
-  Card,
+  LegacyCard as Card,
   InlineError,
-  Stack,
-  TextStyle,
+  LegacyStack as Stack,
+  Text,
 } from '@shopify/polaris';
-import {mockField, mountWithApp} from 'tests/utilities';
+import { mockField, mountWithApp } from 'tests/utilities';
 
 import {
   DISCOUNT_TOTAL_USAGE_LIMIT_FIELD,
   UsageLimitsCard,
   UsageLimitType,
 } from '../UsageLimitsCard';
-import {RecurringPayment} from '../components';
+import { RecurringPayment } from '../components';
 
-import {RecurringPaymentType} from '~/constants';
-import {forcePositiveInteger} from '~/utilities/numbers';
+import { RecurringPaymentType } from '~/constants';
+import { forcePositiveInteger } from '~/utilities/numbers';
 
 describe('UsageLimitsCard', () => {
   const defaultProps = {
@@ -122,8 +122,7 @@ describe('UsageLimitsCard', () => {
 
       const stack = usageLimits.find(Stack);
 
-      expect(stack).toContainReactComponent(TextStyle, {
-        variation: 'subdued',
+      expect(stack).toContainReactComponent(Text, {
         children: 'A subscription with many payments will count as one use.',
       });
     });
@@ -131,8 +130,7 @@ describe('UsageLimitsCard', () => {
     it('does not render help text when isRecurring is false', () => {
       const usageLimits = mountWithApp(<UsageLimitsCard {...defaultProps} />);
 
-      expect(usageLimits).not.toContainReactComponent(TextStyle, {
-        variation: 'subdued',
+      expect(usageLimits).not.toContainReactComponent(Text, {
         children: 'A subscription with many payments will count as one use.',
       });
     });
@@ -207,7 +205,7 @@ describe('UsageLimitsCard', () => {
         const usageLimits = mountWithApp(
           <UsageLimitsCard
             {...defaultProps}
-            totalUsageLimit={mockField('0', {error: 'foo'})}
+            totalUsageLimit={mockField('0', { error: 'foo' })}
           />,
         );
 
@@ -221,7 +219,7 @@ describe('UsageLimitsCard', () => {
         const usageLimits = mountWithApp(
           <UsageLimitsCard
             {...defaultProps}
-            totalUsageLimit={mockField('0', {error})}
+            totalUsageLimit={mockField('0', { error })}
           />,
         );
 

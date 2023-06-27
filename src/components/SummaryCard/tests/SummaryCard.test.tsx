@@ -1,9 +1,9 @@
 import React from 'react';
-import {mountWithApp} from 'tests/utilities';
-import {Card, List, Subheading} from '@shopify/polaris';
-import {CurrencyCode} from '@shopify/react-i18n';
+import { mountWithApp } from 'tests/utilities';
+import { LegacyCard as Card, List, Text } from '@shopify/polaris';
+import { CurrencyCode } from '@shopify/react-i18n';
 
-import {SummaryCard, SummaryCardProps} from '../SummaryCard';
+import { SummaryCard, SummaryCardProps } from '../SummaryCard';
 import {
   ActiveDates,
   AppliesToPurchaseType,
@@ -54,7 +54,7 @@ describe('<SummaryCard />', () => {
   it('does not render optional sections by default', () => {
     const summaryCard = mountWithApp(<SummaryCard {...mockProps} />);
 
-    expect(summaryCard).not.toContainReactComponent(Subheading, {
+    expect(summaryCard).not.toContainReactComponent(Text, {
       children: 'details',
     });
   });

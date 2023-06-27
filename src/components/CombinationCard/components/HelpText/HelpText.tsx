@@ -1,11 +1,11 @@
-import React, {useRef} from 'react';
-import {Button, TextStyle, Stack, Link} from '@shopify/polaris';
-import {useI18n} from '@shopify/react-i18n';
-import {useAppBridge} from '@shopify/app-bridge-react';
-import {Modal} from '@shopify/app-bridge/actions';
-import {Action} from '@shopify/app-bridge/actions/Modal';
+import React, { useRef } from 'react';
+import { Button, Text, LegacyStack as Stack, Link } from '@shopify/polaris';
+import { useI18n } from '@shopify/react-i18n';
+import { useAppBridge } from '@shopify/app-bridge-react';
+import { Modal } from '@shopify/app-bridge/actions';
+import { Action } from '@shopify/app-bridge/actions/Modal';
 
-import {DiscountClass} from '~/constants';
+import { DiscountClass } from '~/constants';
 
 const DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL =
   'shopify://app-bridge/modal/discounts-combinations';
@@ -60,22 +60,21 @@ export function HelpText({
 
   return count > 0 ? (
     <Stack spacing="none" vertical>
-      <TextStyle variation="subdued">
+      <Text as="span" color="subdued">
         {i18n.translate(
           'combinations.info',
-          {scope},
+          { scope },
           {
             count,
             discountCountLink: (
               <span ref={buttonWrapperRef}>
                 <Button onClick={handleModalOpen} plain>
                   {i18n.translate(
-                    `combinations.counts.${
-                      productCombinesWithProduct
-                        ? 'productOther'
-                        : targetDiscountClassLabel
+                    `combinations.counts.${productCombinesWithProduct
+                      ? 'productOther'
+                      : targetDiscountClassLabel
                     }`,
-                    {scope},
+                    { scope },
                     {
                       count,
                     },
@@ -85,16 +84,16 @@ export function HelpText({
             ),
           },
         )}
-      </TextStyle>
+      </Text>
       {productCombinesWithProduct && (
-        <TextStyle variation="subdued">
-          {i18n.translate('combinations.multipleEligibleDiscounts', {scope})}
-        </TextStyle>
+        <Text as="span" color="subdued">
+          {i18n.translate('combinations.multipleEligibleDiscounts', { scope })}
+        </Text>
       )}
     </Stack>
   ) : (
     <>
-      <TextStyle variation="subdued">
+      <Text as="span" color="subdued">
         {i18n.translate('title', {
           scope: `${scope}.emptyState.${currentDiscountClass.toLowerCase()}`,
         })}{' '}
@@ -107,7 +106,7 @@ export function HelpText({
         >
           {i18n.translate(`${scope}.emptyState.link`)}
         </Link>
-      </TextStyle>
+      </Text>
     </>
   );
 }

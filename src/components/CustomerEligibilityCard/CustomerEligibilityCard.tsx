@@ -1,13 +1,13 @@
 import React from 'react';
-import {Card, ChoiceList, Stack} from '@shopify/polaris';
-import {useI18n} from '@shopify/react-i18n';
-import {Action} from '@shopify/app-bridge/actions/Navigation/Redirect';
-import {parseGid} from '@shopify/admin-graphql-api-utilities';
+import { LegacyCard as Card, ChoiceList, LegacyStack as Stack } from '@shopify/polaris';
+import { useI18n } from '@shopify/react-i18n';
+import { Action } from '@shopify/app-bridge/actions/Navigation/Redirect';
+import { parseGid } from '@shopify/admin-graphql-api-utilities';
 
-import {Eligibility} from '../../constants';
-import type {Customer, CustomerSegment, Field} from '../../types';
-import {SelectedItemsList} from '../SelectedItemsList';
-import {AppBridgeLink} from '../AppBridgeLink';
+import { Eligibility } from '../../constants';
+import type { Customer, CustomerSegment, Field } from '../../types';
+import { SelectedItemsList } from '../SelectedItemsList';
+import { AppBridgeLink } from '../AppBridgeLink';
 
 import styles from './CustomerEligibilityCard.scss';
 
@@ -102,7 +102,7 @@ export const SelectedCustomersList = ({
 }: {
   selectedCustomers: Field<Customer[]>;
 }) => {
-  const renderCustomerItem = ({email, displayName}: Customer) => (
+  const renderCustomerItem = ({ email, displayName }: Customer) => (
     <div className={styles.CustomerItem}>
       <span>{displayName}</span>
       {email && (
@@ -115,7 +115,7 @@ export const SelectedCustomersList = ({
 
   const handleRemoveCustomer = (customerId: string) => {
     selectedCustomers.onChange(
-      selectedCustomers.value.filter(({id}) => id !== customerId),
+      selectedCustomers.value.filter(({ id }) => id !== customerId),
     );
   };
 
@@ -133,7 +133,7 @@ export const SelectedCustomerSegmentsList = ({
 }: {
   selectedCustomerSegments: Field<CustomerSegment[]>;
 }) => {
-  const renderCustomerSegmentItem = ({name, id}: CustomerSegment) => (
+  const renderCustomerSegmentItem = ({ name, id }: CustomerSegment) => (
     <AppBridgeLink
       external
       action={Action.ADMIN_PATH}
@@ -145,7 +145,7 @@ export const SelectedCustomerSegmentsList = ({
 
   const handleRemoveCustomerSegment = (customerSegmentId: string) => {
     selectedCustomerSegments.onChange(
-      selectedCustomerSegments.value.filter(({id}) => id !== customerSegmentId),
+      selectedCustomerSegments.value.filter(({ id }) => id !== customerSegmentId),
     );
   };
 
