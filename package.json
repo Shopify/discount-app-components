@@ -68,11 +68,11 @@
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "@shopify/app-bridge": "^3.1.0",
-    "@shopify/app-bridge-react": "^3.1.0",
-    "@shopify/polaris": "^9.7.0 || ^10.0.0",
-    "react": "^16.14.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.14.0 || ^17.0.0 || ^18.0.0"
+    "@shopify/app-bridge": "^3.7.7",
+    "@shopify/app-bridge-react": "^3.7.7",
+    "@shopify/polaris": "^11.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -127,7 +127,7 @@
     "postcss-modules": "^6.0.0",
     "postcss-pxtorem": "^6.0.0",
     "postcss-value-parser": "^4.2.0",
-    "prettier": "^2.5.0",
+    "prettier": "^3.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rimraf": "^5.0.1",
