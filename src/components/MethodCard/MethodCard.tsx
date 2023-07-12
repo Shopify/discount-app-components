@@ -76,7 +76,7 @@ export function MethodCard({
     <Card>
       <Card.Section>
         <Stack distribution="equalSpacing" alignment="center">
-          <Card.Header>{title}</Card.Header>
+          <Text variant="headingMd" as="h2">{title}</Text>
           <Text as="span" color="subdued">
             {getDiscountClassLabel(discountClass, i18n)}
           </Text>
