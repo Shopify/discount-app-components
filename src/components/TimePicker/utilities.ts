@@ -109,7 +109,7 @@ export function isValidTime(time?: string) {
 }
 
 /**
- * Given a list of dates, returns a list of options that can be used by a {@link https://polaris.shopify.com/components/forms/select| @shopify/polaris select}
+ * Given a list of dates, returns a list of options that can be used by a {@link https://polaris.shopify.com/components/selection-and-input/select| @shopify/polaris select}
  *
  * @param dates - List of dates to convert to options
  * @param locale - Locale to use for date formatting
