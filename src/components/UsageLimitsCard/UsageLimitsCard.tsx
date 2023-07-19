@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   LegacyCard as Card,
   ChoiceList,
@@ -7,14 +7,14 @@ import {
   Text,
   InlineError,
 } from '@shopify/polaris';
-import { useI18n } from '@shopify/react-i18n';
+import {useI18n} from '@shopify/react-i18n';
 
 import styles from './UsageLimitsCard.scss';
-import { RecurringPayment } from './components';
+import {RecurringPayment} from './components';
 
-import type { Field, PositiveNumericString } from '~/types';
-import type { RecurringPaymentType } from '~/constants';
-import { forcePositiveInteger } from '~/utilities/numbers';
+import type {Field, PositiveNumericString} from '~/types';
+import type {RecurringPaymentType} from '~/constants';
+import {forcePositiveInteger} from '~/utilities/numbers';
 
 export enum UsageLimitType {
   TotalUsageLimit = 'TOTAL_USAGE_LIMIT',
@@ -63,7 +63,7 @@ export type UsageLimitsCardProps =
 export const DISCOUNT_TOTAL_USAGE_LIMIT_FIELD = 'totalUsageLimit';
 
 export function UsageLimitsCard(props: UsageLimitsCardProps) {
-  const { totalUsageLimit, oncePerCustomer, isRecurring } = props;
+  const {totalUsageLimit, oncePerCustomer, isRecurring} = props;
 
   const [showUsageLimit, setShowUsageLimit] = useState(
     totalUsageLimit.value !== null,

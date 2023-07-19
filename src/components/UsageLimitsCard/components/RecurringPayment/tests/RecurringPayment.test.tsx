@@ -6,11 +6,11 @@ import {
   Text,
   VerticalStack,
 } from '@shopify/polaris';
-import { mockField, mountWithApp } from 'tests/utilities';
+import {mockField, mountWithApp} from 'tests/utilities';
 
-import { RecurringPayment } from '../RecurringPayment';
+import {RecurringPayment} from '../RecurringPayment';
 
-import { RecurringPaymentType } from '~/constants';
+import {RecurringPaymentType} from '~/constants';
 
 const defaultProps = {
   recurringPaymentType: mockField(RecurringPaymentType.FirstPayment),
@@ -177,7 +177,7 @@ describe('<RecurringPayment />', () => {
   });
 
   it('text field calls onBlur', () => {
-    const limitMockField = mockField('5', { onBlur: jest.fn() });
+    const limitMockField = mockField('5', {onBlur: jest.fn()});
     const recurringPayment = mountWithApp(
       <RecurringPayment
         {...defaultProps}
@@ -196,7 +196,7 @@ describe('<RecurringPayment />', () => {
       const recurringPayment = mountWithApp(
         <RecurringPayment
           {...defaultProps}
-          recurringPaymentLimit={mockField('0', { error: 'foo' })}
+          recurringPaymentLimit={mockField('0', {error: 'foo'})}
           recurringPaymentType={mockField(
             RecurringPaymentType.MultiplePayments,
           )}
@@ -213,7 +213,7 @@ describe('<RecurringPayment />', () => {
       const recurringPayment = mountWithApp(
         <RecurringPayment
           {...defaultProps}
-          recurringPaymentLimit={mockField('0', { error })}
+          recurringPaymentLimit={mockField('0', {error})}
           recurringPaymentType={mockField(
             RecurringPaymentType.MultiplePayments,
           )}

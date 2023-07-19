@@ -1,6 +1,6 @@
 import React from 'react';
-import { useI18n, CurrencyCode, I18n } from '@shopify/react-i18n';
-import { LegacyStack as Stack } from '@shopify/polaris';
+import {useI18n, CurrencyCode, I18n} from '@shopify/react-i18n';
+import {LegacyStack as Stack} from '@shopify/polaris';
 
 import {
   FormattedNumberField,
@@ -80,7 +80,7 @@ function renderPrefix(
   i18n: I18n,
   currencyCode: CurrencyCode,
 ) {
-  const { prefixed, symbol } = currencyMetadata(i18n, currencyCode);
+  const {prefixed, symbol} = currencyMetadata(i18n, currencyCode);
   return prefixed ? prefix || symbol : prefix;
 }
 
@@ -90,7 +90,7 @@ function renderSuffix(
   currencyCode: CurrencyCode,
   appendSuffixToCurrency?: boolean,
 ) {
-  const { prefixed, symbol } = currencyMetadata(i18n, currencyCode);
+  const {prefixed, symbol} = currencyMetadata(i18n, currencyCode);
 
   if (appendSuffixToCurrency && !prefixed && suffix) {
     return (

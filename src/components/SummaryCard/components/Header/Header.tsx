@@ -1,13 +1,8 @@
 import React from 'react';
-import { I18n, useI18n } from '@shopify/react-i18n';
-import {
-  Badge,
-  List,
-  LegacyStack as Stack,
-  Text,
-} from '@shopify/polaris';
+import {I18n, useI18n} from '@shopify/react-i18n';
+import {Badge, List, LegacyStack as Stack, Text} from '@shopify/polaris';
 
-import { DiscountMethod, DiscountStatus } from '~/constants';
+import {DiscountMethod, DiscountStatus} from '~/constants';
 
 interface BaseProps {
   /**
@@ -55,7 +50,7 @@ const I18N_SCOPE = {
 };
 
 export function Header(props: HeaderProps) {
-  const { discountMethod, discountDescriptor } = props;
+  const {discountMethod, discountDescriptor} = props;
   const [i18n] = useI18n();
 
   const trimmedDescriptor = discountDescriptor.trim();
@@ -64,7 +59,9 @@ export function Header(props: HeaderProps) {
     <Stack vertical spacing="loose">
       {trimmedDescriptor ? (
         <Stack distribution="equalSpacing" alignment="center" wrap>
-          <Text variant="headingMd" as="h3">{trimmedDescriptor}</Text>
+          <Text variant="headingMd" as="h3">
+            {trimmedDescriptor}
+          </Text>
 
           {isEditing(props) && renderBadgeForStatus(props.discountStatus, i18n)}
         </Stack>

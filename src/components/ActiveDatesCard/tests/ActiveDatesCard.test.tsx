@@ -1,14 +1,14 @@
 import React from 'react';
-import { clock } from '@shopify/jest-dom-mocks';
-import { mockField, mountWithApp } from 'tests/utilities';
-import { LegacyCard as Card, Checkbox, FormLayout } from '@shopify/polaris';
+import {clock} from '@shopify/jest-dom-mocks';
+import {mockField, mountWithApp} from 'tests/utilities';
+import {LegacyCard as Card, Checkbox, FormLayout} from '@shopify/polaris';
 import _ from 'lodash';
 
-import { ActiveDatesCard } from '../ActiveDatesCard';
-import { DatePicker } from '../../DatePicker';
-import { TimePicker } from '../../TimePicker';
+import {ActiveDatesCard} from '../ActiveDatesCard';
+import {DatePicker} from '../../DatePicker';
+import {TimePicker} from '../../TimePicker';
 
-import { Weekday } from '~/constants';
+import {Weekday} from '~/constants';
 
 describe('<ActiveDatesCard />', () => {
   const mockProps = {

@@ -1,13 +1,13 @@
 import React from 'react';
-import { LegacyCard as Card, ChoiceList } from '@shopify/polaris';
-import { mockField, mountWithApp } from 'tests/utilities';
-import { composeGid } from '@shopify/admin-graphql-api-utilities';
+import {LegacyCard as Card, ChoiceList} from '@shopify/polaris';
+import {mockField, mountWithApp} from 'tests/utilities';
+import {composeGid} from '@shopify/admin-graphql-api-utilities';
 
-import { CombinationCard } from '../CombinationCard';
-import { HelpText } from '../components';
-import type { CombinationCardProps } from '../CombinationCard';
+import {CombinationCard} from '../CombinationCard';
+import {HelpText} from '../components';
+import type {CombinationCardProps} from '../CombinationCard';
 
-import { DiscountClass } from '~/constants';
+import {DiscountClass} from '~/constants';
 
 describe('<CombinationCard />', () => {
   const mockProps: CombinationCardProps = {
@@ -122,7 +122,7 @@ describe('<CombinationCard />', () => {
     ${DiscountClass.Shipping}
   `(
     'renders a default label based on the discount class $discountClass when the discountDescriptor has a value',
-    ({ discountClass }) => {
+    ({discountClass}) => {
       const combinationCard = mountWithApp(
         <CombinationCard
           {...mockProps}
@@ -158,14 +158,14 @@ describe('<CombinationCard />', () => {
     ${DiscountClass.Shipping} | ${[mockProductOption, mockOrderOption]}
   `(
     'renders choices for $discountClass discount',
-    ({ discountClass, expectedChoiceOptions }) => {
+    ({discountClass, expectedChoiceOptions}) => {
       const combinationCard = mountWithApp(
         <CombinationCard {...mockProps} discountClass={discountClass} />,
       );
 
       expect(combinationCard).toContainReactComponent(ChoiceList, {
         choices: expectedChoiceOptions.map(
-          (choice: { label: string; value: DiscountClass }) => ({
+          (choice: {label: string; value: DiscountClass}) => ({
             value: choice.value,
             label: choice.label,
             renderChildren: expect.any(Function),
@@ -240,7 +240,7 @@ describe('<CombinationCard />', () => {
     ${DiscountClass.Shipping} | ${DiscountClass.Order}    | ${2}
   `(
     'adjusts the HelpText count to $expectedCount based on the currentDiscountClass of $currentDiscountClass and targetDiscountClass of $targetDiscountClass',
-    ({ currentDiscountClass, targetDiscountClass, expectedCount }) => {
+    ({currentDiscountClass, targetDiscountClass, expectedCount}) => {
       const combinationCard = mountWithApp(
         <CombinationCard
           {...mockProps}

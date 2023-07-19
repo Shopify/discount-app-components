@@ -1,18 +1,18 @@
 import React from 'react';
-import { LegacyCard as Card, Checkbox, FormLayout } from '@shopify/polaris';
-import { isSameDay } from '@shopify/dates';
-import { useI18n } from '@shopify/react-i18n';
+import {LegacyCard as Card, Checkbox, FormLayout} from '@shopify/polaris';
+import {isSameDay} from '@shopify/dates';
+import {useI18n} from '@shopify/react-i18n';
 
-import { DatePicker } from '../DatePicker';
-import { TimePicker } from '../TimePicker';
+import {DatePicker} from '../DatePicker';
+import {TimePicker} from '../TimePicker';
 
 import {
   getDateInUTC,
   getDateTimeInShopTimeZone,
   getNewDateAtEndOfDay,
 } from '~/utilities/dates';
-import { DEFAULT_WEEK_START_DAY, Weekday } from '~/constants';
-import type { DateTime, Field } from '~/types';
+import {DEFAULT_WEEK_START_DAY, Weekday} from '~/constants';
+import type {DateTime, Field} from '~/types';
 
 export interface ActiveDatesCardProps {
   /**

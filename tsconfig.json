@@ -10,26 +10,12 @@
     "isolatedModules": true,
     "strictFunctionTypes": false,
     "paths": {
-      "tests/*": [
-        "./tests/*"
-      ],
-      "@locales/*": [
-        "./locales/*"
-      ],
-      "locales_dynamic/*": [
-        "./locales/*"
-      ],
-      "~/*": [
-        "./src/*"
-      ]
+      "tests/*": ["./tests/*"],
+      "@locales/*": ["./locales/*"],
+      "locales_dynamic/*": ["./locales/*"],
+      "~/*": ["./src/*"]
     }
   },
-  "include": [
-    "./config/typescript",
-    "./src",
-    "./tests"
-  ],
-  "exclude": [
-    "./src/stories"
-  ]
+  "include": ["./config/typescript", "./src", "./tests"],
+  "exclude": ["./src/stories"]
 }

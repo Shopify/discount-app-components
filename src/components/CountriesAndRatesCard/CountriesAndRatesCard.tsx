@@ -1,15 +1,20 @@
 import React from 'react';
-import { LegacyCard as Card, ChoiceList, Checkbox, InlineError } from '@shopify/polaris';
-import { CurrencyCode, useI18n } from '@shopify/react-i18n';
+import {
+  LegacyCard as Card,
+  ChoiceList,
+  Checkbox,
+  InlineError,
+} from '@shopify/polaris';
+import {CurrencyCode, useI18n} from '@shopify/react-i18n';
 
-import { SelectedItemsList } from '../SelectedItemsList';
-import { CurrencyField } from '../CurrencyField';
+import {SelectedItemsList} from '../SelectedItemsList';
+import {CurrencyField} from '../CurrencyField';
 
 import styles from './CountriesAndRatesCard.scss';
-import { useLocalizeCountry } from './utilities';
+import {useLocalizeCountry} from './utilities';
 
-import type { Field, PositiveNumericString, CountryCode, Country } from '~/types';
-import { CountrySelectionType } from '~/constants';
+import type {Field, PositiveNumericString, CountryCode, Country} from '~/types';
+import {CountrySelectionType} from '~/constants';
 
 const EXCLUDE_SHIPPING_RATES_FIELD_ID = 'excludeShippingRatesOverTextField';
 
@@ -89,23 +94,23 @@ export function CountriesAndRatesCard({
         />
         {countrySelectionType.value ===
           CountrySelectionType.SelectedCountries && (
-            <>
-              <div className={styles.countrySelectorActivator}>
-                {countrySelector}
-              </div>
-              <SelectedItemsList
-                items={selectedCountries.value.map(localizeCountry)}
-                renderItem={(item: Country) => <div>{item.name}</div>}
-                onRemoveItem={(itemId: string) =>
-                  selectedCountries.onChange(
-                    selectedCountries.value.filter(
-                      (countryCode) => countryCode !== itemId,
-                    ),
-                  )
-                }
-              />
-            </>
-          )}
+          <>
+            <div className={styles.countrySelectorActivator}>
+              {countrySelector}
+            </div>
+            <SelectedItemsList
+              items={selectedCountries.value.map(localizeCountry)}
+              renderItem={(item: Country) => <div>{item.name}</div>}
+              onRemoveItem={(itemId: string) =>
+                selectedCountries.onChange(
+                  selectedCountries.value.filter(
+                    (countryCode) => countryCode !== itemId,
+                  ),
+                )
+              }
+            />
+          </>
+        )}
       </Card.Section>
       <Card.Section
         title={i18n.translate(

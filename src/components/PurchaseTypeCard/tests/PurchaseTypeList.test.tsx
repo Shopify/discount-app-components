@@ -1,17 +1,17 @@
 import React from 'react';
-import { LegacyCard as Card, ChoiceList } from '@shopify/polaris';
-import { mountWithApp, mockField } from 'tests/utilities';
+import {LegacyCard as Card, ChoiceList} from '@shopify/polaris';
+import {mountWithApp, mockField} from 'tests/utilities';
 
-import { PurchaseTypeCard } from '../PurchaseTypeCard';
+import {PurchaseTypeCard} from '../PurchaseTypeCard';
 
-import { PurchaseType } from '~/constants';
+import {PurchaseType} from '~/constants';
 
 function mountWithProps({
   purchaseType = PurchaseType.OneTimePurchase,
   onChange = jest.fn(),
 } = {}) {
   const defaultProps = {
-    purchaseType: mockField(purchaseType, { onChange }),
+    purchaseType: mockField(purchaseType, {onChange}),
   };
 
   return <PurchaseTypeCard {...defaultProps} />;
@@ -33,7 +33,7 @@ describe('<PurchaseTypeList />', () => {
 
   it('sets the choice list selected item based on the props', () => {
     const purchaseTypeCard = mountWithApp(
-      mountWithProps({ purchaseType: PurchaseType.Subscription }),
+      mountWithProps({purchaseType: PurchaseType.Subscription}),
     );
 
     expect(purchaseTypeCard).toContainReactComponent(ChoiceList, {

@@ -7,17 +7,17 @@ import {
   LegacyStack as Stack,
   Text,
 } from '@shopify/polaris';
-import { mockField, mountWithApp } from 'tests/utilities';
+import {mockField, mountWithApp} from 'tests/utilities';
 
 import {
   DISCOUNT_TOTAL_USAGE_LIMIT_FIELD,
   UsageLimitsCard,
   UsageLimitType,
 } from '../UsageLimitsCard';
-import { RecurringPayment } from '../components';
+import {RecurringPayment} from '../components';
 
-import { RecurringPaymentType } from '~/constants';
-import { forcePositiveInteger } from '~/utilities/numbers';
+import {RecurringPaymentType} from '~/constants';
+import {forcePositiveInteger} from '~/utilities/numbers';
 
 describe('UsageLimitsCard', () => {
   const defaultProps = {
@@ -205,7 +205,7 @@ describe('UsageLimitsCard', () => {
         const usageLimits = mountWithApp(
           <UsageLimitsCard
             {...defaultProps}
-            totalUsageLimit={mockField('0', { error: 'foo' })}
+            totalUsageLimit={mockField('0', {error: 'foo'})}
           />,
         );
 
@@ -219,7 +219,7 @@ describe('UsageLimitsCard', () => {
         const usageLimits = mountWithApp(
           <UsageLimitsCard
             {...defaultProps}
-            totalUsageLimit={mockField('0', { error })}
+            totalUsageLimit={mockField('0', {error})}
           />,
         );
 

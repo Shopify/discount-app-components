@@ -19,7 +19,7 @@ describe('<MinimumRequirementsCard>', () => {
     isRecurring: false,
     currencyCode: CurrencyCode.Cad,
   };
-  const currencySymbol = 'CA$';
+  const currencySymbol = '$';
 
   it('renders list of minimum requirements', () => {
     const minimumRequirementsCard = mountWithApp(
@@ -33,18 +33,10 @@ describe('<MinimumRequirementsCard>', () => {
         expect.objectContaining({
           label: 'No minimum requirements',
         }),
-      ]),
-    });
-    expect(choiceList).toHaveReactProps({
-      choices: expect.arrayContaining([
         expect.objectContaining({
           label: `Minimum purchase amount (${currencySymbol})`,
           renderChildren: expect.any(Function),
         }),
-      ]),
-    });
-    expect(choiceList).toHaveReactProps({
-      choices: expect.arrayContaining([
         expect.objectContaining({
           label: 'Minimum quantity of items',
           renderChildren: expect.any(Function),
