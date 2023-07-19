@@ -1,21 +1,21 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import {
-  Card,
+  LegacyCard as Card,
   TextField,
   ChoiceList,
   InlineError,
-  TextStyle,
-  Stack,
+  Text,
+  LegacyStack as Stack,
 } from '@shopify/polaris';
-import {CurrencyCode, I18n, useI18n} from '@shopify/react-i18n';
+import { CurrencyCode, I18n, useI18n } from '@shopify/react-i18n';
 
-import {CurrencyField} from '../CurrencyField';
+import { CurrencyField } from '../CurrencyField';
 
 import styles from './MinimumRequirementsCard.scss';
 
-import {forcePositiveInteger} from '~/utilities/numbers';
-import type {Field, PositiveNumericString} from '~/types';
-import {AppliesTo, DiscountMethod, RequirementType} from '~/constants';
+import { forcePositiveInteger } from '~/utilities/numbers';
+import type { Field, PositiveNumericString } from '~/types';
+import { AppliesTo, DiscountMethod, RequirementType } from '~/constants';
 
 export interface MinimumRequirementsCardProps {
   /**
@@ -102,9 +102,9 @@ export function MinimumRequirementsCard({
   );
 
   const fieldHelpTextMarkup = (
-    <TextStyle variation="subdued">
+    <Text as="span" color="subdued">
       {getFieldHelpText(isRecurring, appliesTo, i18n)}
-    </TextStyle>
+    </Text>
   );
 
   const allMinimumRequirementChoices = [
@@ -185,9 +185,9 @@ export function MinimumRequirementsCard({
 
   const minimumRequirementChoicesToRender =
     discountMethod === DiscountMethod.Automatic
-      ? allMinimumRequirementChoices.filter(({value}) =>
-          AUTOMATIC_REQUIREMENT_TYPES.includes(value),
-        )
+      ? allMinimumRequirementChoices.filter(({ value }) =>
+        AUTOMATIC_REQUIREMENT_TYPES.includes(value),
+      )
       : allMinimumRequirementChoices;
 
   return (
@@ -222,10 +222,10 @@ function getFieldHelpText(
     : 'DiscountAppComponents.MinimumRequirementsCard.oneTime';
   switch (appliesTo) {
     case AppliesTo.Order:
-      return i18n.translate('appliesToAllProducts', {scope});
+      return i18n.translate('appliesToAllProducts', { scope });
     case AppliesTo.Products:
-      return i18n.translate('appliesToProducts', {scope});
+      return i18n.translate('appliesToProducts', { scope });
     case AppliesTo.Collections:
-      return i18n.translate('appliesToCollections', {scope});
+      return i18n.translate('appliesToCollections', { scope });
   }
 }

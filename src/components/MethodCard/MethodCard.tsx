@@ -1,22 +1,21 @@
 import React from 'react';
 import {
-  Card,
+  LegacyCard as Card,
   ChoiceList,
-  Heading,
-  Stack,
+  LegacyStack as Stack,
   TextField,
-  TextStyle,
+  Text,
 } from '@shopify/polaris';
-import {I18n, useI18n} from '@shopify/react-i18n';
+import { I18n, useI18n } from '@shopify/react-i18n';
 
-import {DiscountCodeGenerator} from '../DiscountCodeGenerator';
+import { DiscountCodeGenerator } from '../DiscountCodeGenerator';
 
 import {
   DEFAULT_DISCOUNT_CODE_LENGTH,
   DiscountClass,
   DiscountMethod,
 } from '~/constants';
-import type {Field} from '~/types';
+import type { Field } from '~/types';
 
 const DISCOUNT_TITLE_MAX_LENGTH = 255;
 
@@ -77,10 +76,10 @@ export function MethodCard({
     <Card>
       <Card.Section>
         <Stack distribution="equalSpacing" alignment="center">
-          <Heading>{title}</Heading>
-          <TextStyle variation="subdued">
+          <Text variant="headingMd" as="h2">{title}</Text>
+          <Text as="span" color="subdued">
             {getDiscountClassLabel(discountClass, i18n)}
-          </TextStyle>
+          </Text>
         </Stack>
       </Card.Section>
       <Card.Section

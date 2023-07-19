@@ -1,10 +1,10 @@
 import React from 'react';
-import {ChoiceList, Card} from '@shopify/polaris';
-import {useI18n} from '@shopify/react-i18n';
+import { ChoiceList, LegacyCard as Card } from '@shopify/polaris';
+import { useI18n } from '@shopify/react-i18n';
 
-import type {Field} from '../../types';
+import type { Field } from '../../types';
 
-import {PurchaseType} from '~/constants';
+import { PurchaseType } from '~/constants';
 
 export interface PurchaseTypeCardProps {
   /**
@@ -13,7 +13,7 @@ export interface PurchaseTypeCardProps {
   purchaseType: Field<PurchaseType>;
 }
 
-export function PurchaseTypeCard({purchaseType}: PurchaseTypeCardProps) {
+export function PurchaseTypeCard({ purchaseType }: PurchaseTypeCardProps) {
   const [i18n] = useI18n();
   return (
     <Card

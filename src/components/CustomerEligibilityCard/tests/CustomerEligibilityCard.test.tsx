@@ -1,8 +1,8 @@
 import React from 'react';
-import {mockField, mountWithApp} from 'tests/utilities';
-import {Action} from '@shopify/app-bridge/actions/Navigation/Redirect';
-import {composeGid, parseGid} from '@shopify/admin-graphql-api-utilities';
-import {Card, ChoiceList} from '@shopify/polaris';
+import { mockField, mountWithApp } from 'tests/utilities';
+import { Action } from '@shopify/app-bridge/actions/Navigation/Redirect';
+import { composeGid, parseGid } from '@shopify/admin-graphql-api-utilities';
+import { LegacyCard as Card, ChoiceList } from '@shopify/polaris';
 
 import {
   CustomerEligibilityCard,
@@ -11,10 +11,10 @@ import {
 } from '../CustomerEligibilityCard';
 import styles from '../CustomerEligibilityCard.scss';
 
-import {Eligibility} from '~/constants';
-import {SelectedItemsList} from '~/components/SelectedItemsList';
-import {AppBridgeLink} from '~/components/AppBridgeLink';
-import type {Customer, CustomerSegment} from '~/types';
+import { Eligibility } from '~/constants';
+import { SelectedItemsList } from '~/components/SelectedItemsList';
+import { AppBridgeLink } from '~/components/AppBridgeLink';
+import type { Customer, CustomerSegment } from '~/types';
 
 describe('<CustomerEligibilityCard />', () => {
   const customerSegmentsList = [
@@ -162,7 +162,7 @@ describe('<CustomerEligibilityCard />', () => {
           customerEligibilityCard.find(SelectedItemsList)?.prop('renderItem'),
         ),
       ).toStrictEqual(
-        JSON.stringify(({email, displayName}: Customer) => (
+        JSON.stringify(({ email, displayName }: Customer) => (
           <div className={styles.CustomerItem}>
             <span>{displayName}</span>
             {email && (
@@ -189,7 +189,7 @@ describe('<CustomerEligibilityCard />', () => {
 
       expect(mockProps.selectedCustomers.onChange).toHaveBeenCalledWith(
         mockProps.selectedCustomers.value.filter(
-          ({id}) => id !== mockProps.selectedCustomers.value[0].id,
+          ({ id }) => id !== mockProps.selectedCustomers.value[0].id,
         ),
       );
     });
@@ -234,7 +234,7 @@ describe('<CustomerEligibilityCard />', () => {
           customerEligibilityCard.find(SelectedItemsList)?.prop('renderItem'),
         ),
       ).toStrictEqual(
-        JSON.stringify(({name, id}: CustomerSegment) => (
+        JSON.stringify(({ name, id }: CustomerSegment) => (
           <AppBridgeLink
             external
             action={Action.ADMIN_PATH}
@@ -263,7 +263,7 @@ describe('<CustomerEligibilityCard />', () => {
 
       expect(mockProps.selectedCustomerSegments.onChange).toHaveBeenCalledWith(
         mockProps.selectedCustomerSegments.value.filter(
-          ({id}) => id !== mockProps.selectedCustomerSegments.value[0].id,
+          ({ id }) => id !== mockProps.selectedCustomerSegments.value[0].id,
         ),
       );
     });

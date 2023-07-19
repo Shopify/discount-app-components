@@ -1,11 +1,11 @@
 import React from 'react';
-import {Card, ChoiceList, Heading, TextField} from '@shopify/polaris';
-import {mockField, mountWithApp} from 'tests/utilities';
+import { LegacyCard as Card, ChoiceList, TextField } from '@shopify/polaris';
+import { mockField, mountWithApp } from 'tests/utilities';
 
-import {MethodCard} from '../MethodCard';
-import {DiscountCodeGenerator} from '../../DiscountCodeGenerator';
+import { MethodCard } from '../MethodCard';
+import { DiscountCodeGenerator } from '../../DiscountCodeGenerator';
 
-import {DiscountClass, DiscountMethod} from '~/constants';
+import { DiscountClass, DiscountMethod } from '~/constants';
 
 describe('<MethodCard />', () => {
   const mockProps = {
@@ -64,7 +64,7 @@ describe('<MethodCard />', () => {
   it('displays a Heading with title prop as the content', () => {
     const methodCard = mountWithApp(<MethodCard {...mockProps} />);
 
-    expect(methodCard).toContainReactComponent(Heading, {
+    expect(methodCard).toContainReactComponent(Card.Header, {
       children: mockProps.title,
     });
   });
@@ -76,7 +76,7 @@ describe('<MethodCard />', () => {
     ${DiscountClass.Shipping} | ${'Shipping discount'}
   `(
     'renders a subtitle based on the discount class $discountClass',
-    ({discountClass, subtitle}) => {
+    ({ discountClass, subtitle }) => {
       const methodCard = mountWithApp(
         <MethodCard {...mockProps} discountClass={discountClass} />,
       );

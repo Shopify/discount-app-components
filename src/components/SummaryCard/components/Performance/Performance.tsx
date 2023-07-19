@@ -1,12 +1,12 @@
 import React from 'react';
-import {useI18n} from '@shopify/react-i18n';
-import {Card, List, TextContainer, TextStyle} from '@shopify/polaris';
-import {Redirect} from '@shopify/app-bridge/actions';
+import { useI18n } from '@shopify/react-i18n';
+import { LegacyCard as Card, List, Text, VerticalStack } from '@shopify/polaris';
+import { Redirect } from '@shopify/app-bridge/actions';
 
-import {AppBridgeLink} from '../../../AppBridgeLink';
+import { AppBridgeLink } from '../../../AppBridgeLink';
 
-import {DiscountMethod, DiscountStatus} from '~/constants';
-import type {MoneyInput} from '~/types';
+import { DiscountMethod, DiscountStatus } from '~/constants';
+import type { MoneyInput } from '~/types';
 
 export interface PerformanceProps {
   /**
@@ -61,17 +61,17 @@ export function Performance({
 
   return (
     <Card.Section title={i18n.translate('title', I18N_SCOPE)}>
-      <TextContainer>
+      <VerticalStack>
         {(isEditing || status === DiscountStatus.Scheduled) && (
-          <TextStyle variation="subdued">
+          <Text as="span" color="subdued">
             {i18n.translate('notActive', I18N_SCOPE)}
-          </TextStyle>
+          </Text>
         )}
         {isActiveOrExpired && (
           <>
             <List type="bullet">
               <List.Item>
-                {i18n.translate('usageCount', I18N_SCOPE, {usageCount})}
+                {i18n.translate('usageCount', I18N_SCOPE, { usageCount })}
               </List.Item>
               {totalSales && (
                 <List.Item>
@@ -95,7 +95,7 @@ export function Performance({
             )}
           </>
         )}
-      </TextContainer>
+      </VerticalStack>
     </Card.Section>
   );
 }
