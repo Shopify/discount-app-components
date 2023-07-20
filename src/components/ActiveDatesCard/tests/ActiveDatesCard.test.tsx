@@ -1,7 +1,7 @@
 import React from 'react';
 import {clock} from '@shopify/jest-dom-mocks';
 import {mockField, mountWithApp} from 'tests/utilities';
-import {Card, Checkbox, FormLayout} from '@shopify/polaris';
+import {LegacyCard as Card, Checkbox, FormLayout} from '@shopify/polaris';
 import _ from 'lodash';
 
 import {ActiveDatesCard} from '../ActiveDatesCard';

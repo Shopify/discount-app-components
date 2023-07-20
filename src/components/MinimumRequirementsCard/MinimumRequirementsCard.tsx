@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import {
-  Card,
+  LegacyCard as Card,
   TextField,
   ChoiceList,
   InlineError,
-  TextStyle,
-  Stack,
+  Text,
+  LegacyStack as Stack,
 } from '@shopify/polaris';
 import {CurrencyCode, I18n, useI18n} from '@shopify/react-i18n';
 
@@ -102,9 +102,9 @@ export function MinimumRequirementsCard({
   );
 
   const fieldHelpTextMarkup = (
-    <TextStyle variation="subdued">
+    <Text as="span" color="subdued">
       {getFieldHelpText(isRecurring, appliesTo, i18n)}
-    </TextStyle>
+    </Text>
   );
 
   const allMinimumRequirementChoices = [

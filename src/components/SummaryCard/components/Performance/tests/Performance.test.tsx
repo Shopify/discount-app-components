@@ -51,7 +51,7 @@ describe('<Performance />', () => {
         <Performance {...mockProps} totalSales={totalSales} />,
       );
 
-      expect(performance).toContainReactText('CA$10.00 in total sales');
+      expect(performance).toContainReactText('$10.00 in total sales');
     });
 
     describe('Report link', () => {

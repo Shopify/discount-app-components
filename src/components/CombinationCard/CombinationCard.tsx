@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  Card,
+  LegacyCard as Card,
   ChoiceList,
-  Stack,
-  TextStyle,
+  LegacyStack as Stack,
+  Text,
   ChoiceListProps,
 } from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
@@ -73,7 +73,9 @@ export function CombinationCard({
         <p>
           {trimmedDescriptor ? (
             <>
-              <TextStyle variation="strong">{trimmedDescriptor}</TextStyle>{' '}
+              <Text as="span" fontWeight="semibold">
+                {trimmedDescriptor}
+              </Text>{' '}
               {i18n.translate('discountNameFilled', I18N_SCOPE)}
             </>
           ) : (

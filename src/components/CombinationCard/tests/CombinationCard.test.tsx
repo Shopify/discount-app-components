@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, ChoiceList} from '@shopify/polaris';
+import {LegacyCard as Card, ChoiceList} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 import {composeGid} from '@shopify/admin-graphql-api-utilities';
 

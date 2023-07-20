@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-  Heading,
+  LegacyCard,
   ChoiceList,
   Checkbox,
   InlineError,
   Button,
-  Subheading,
+  Text,
 } from '@shopify/polaris';
 import {CurrencyCode} from '@shopify/react-i18n';
 import {mountWithApp, mockField} from 'tests/utilities';
@@ -38,8 +38,8 @@ describe('<CountriesAndRatesCard />', () => {
       <CountriesAndRatesCard {...mockProps} />,
     );
 
-    expect(countriesAndRatesCard).toContainReactComponent(Heading, {
-      children: 'Countries',
+    expect(countriesAndRatesCard).toContainReactComponent(LegacyCard.Header, {
+      title: 'Countries',
     });
     expect(countriesAndRatesCard).toContainReactComponent(ChoiceList, {
       title: 'Countries and rates',
@@ -52,7 +52,7 @@ describe('<CountriesAndRatesCard />', () => {
         },
       ]),
     });
-    expect(countriesAndRatesCard).toContainReactComponent(Subheading, {
+    expect(countriesAndRatesCard).toContainReactComponent(Text, {
       children: 'Shipping rates',
     });
     expect(countriesAndRatesCard).toContainReactComponent(Checkbox, {

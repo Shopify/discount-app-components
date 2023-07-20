@@ -1,5 +1,10 @@
 import React from 'react';
-import {Card, ChoiceList, Checkbox, InlineError} from '@shopify/polaris';
+import {
+  LegacyCard as Card,
+  ChoiceList,
+  Checkbox,
+  InlineError,
+} from '@shopify/polaris';
 import {CurrencyCode, useI18n} from '@shopify/react-i18n';
 
 import {SelectedItemsList} from '../SelectedItemsList';

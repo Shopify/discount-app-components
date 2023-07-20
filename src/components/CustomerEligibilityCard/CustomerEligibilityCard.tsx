@@ -1,5 +1,9 @@
 import React from 'react';
-import {Card, ChoiceList, Stack} from '@shopify/polaris';
+import {
+  LegacyCard as Card,
+  ChoiceList,
+  LegacyStack as Stack,
+} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 import {Action} from '@shopify/app-bridge/actions/Navigation/Redirect';
 import {parseGid} from '@shopify/admin-graphql-api-utilities';

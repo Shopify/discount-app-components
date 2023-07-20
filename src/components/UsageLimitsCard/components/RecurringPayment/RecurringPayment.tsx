@@ -1,12 +1,11 @@
 import React from 'react';
 import {
   ChoiceList,
-  Subheading,
-  Stack,
+  LegacyStack as Stack,
   TextField,
-  TextStyle,
-  TextContainer,
+  Text,
   InlineError,
+  VerticalStack,
 } from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
@@ -69,11 +68,11 @@ export function RecurringPayment({
                   error={Boolean(recurringPaymentLimit.error)}
                 />
               </div>
-              <TextStyle variation="subdued">
+              <Text as="span" color="subdued">
                 {i18n.translate(
                   'DiscountAppComponents.RecurringPayment.includesFirstPayment',
                 )}
-              </TextStyle>
+              </Text>
               {recurringPaymentLimit.error && (
                 <InlineError
                   fieldID={RECURRING_PAYMENT_FIELD_ID}
@@ -94,10 +93,10 @@ export function RecurringPayment({
   ];
 
   return (
-    <TextContainer>
-      <Subheading>
+    <VerticalStack>
+      <Text variant="headingXs" as="h3">
         {i18n.translate('DiscountAppComponents.RecurringPayment.title')}
-      </Subheading>
+      </Text>
       <ChoiceList
         title={i18n.translate('DiscountAppComponents.RecurringPayment.options')}
         titleHidden
@@ -109,6 +108,6 @@ export function RecurringPayment({
           )
         }
       />
-    </TextContainer>
+    </VerticalStack>
   );
 }
