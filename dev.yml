@@ -2,4 +2,4 @@ name: discount-app-components
 up:
   - node:
       yarn: v1.22.17
-      version: v16.17.0 # to be kept in sync with .nvmrc and .github/workflows/changelog.yml
+      version: v16.17.0 # to be kept in sync with .nvmrc and .github/workflows/changelog.yml and .github/workflows/node-ci.yml
