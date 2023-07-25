@@ -1,5 +1,23 @@
 # @shopify/discount-app-components
 
+## 1.1.0
+
+### Minor Changes
+
+- [#77](https://github.com/Shopify/discount-app-components/pull/77) [`a7992bd`](https://github.com/Shopify/discount-app-components/commit/a7992bd2d6e8344a3e259d76f5290a8181377b12) Thanks [@mathiusj](https://github.com/mathiusj)! - Upgrade dependencies Polaris to v11 and React to v18
+
+### Patch Changes
+
+- [#79](https://github.com/Shopify/discount-app-components/pull/79) [`cd675be`](https://github.com/Shopify/discount-app-components/commit/cd675be135779c2ed62405bded88f68e09f0b38f) Thanks [@mathiusj](https://github.com/mathiusj)! - increase node version to 16.17.0
+
+- [#62](https://github.com/Shopify/discount-app-components/pull/62) [`b0c72e7`](https://github.com/Shopify/discount-app-components/commit/b0c72e7b46ad022274c201ba80f7896fb8933380) Thanks [@laurkim](https://github.com/laurkim)! - Update Polaris style guide links
+
+- [#81](https://github.com/Shopify/discount-app-components/pull/81) [`af39664`](https://github.com/Shopify/discount-app-components/commit/af3966401e559eecf6576e15fc7bb78f9d36d6c4) Thanks [@mathiusj](https://github.com/mathiusj)! - update release yml
+
+- [#82](https://github.com/Shopify/discount-app-components/pull/82) [`e27ec99`](https://github.com/Shopify/discount-app-components/commit/e27ec9924f3ca2c0b8d14202de093d1a9a93f01a) Thanks [@mathiusj](https://github.com/mathiusj)! - more node version matching
+
+- [#80](https://github.com/Shopify/discount-app-components/pull/80) [`d5f3ae5`](https://github.com/Shopify/discount-app-components/commit/d5f3ae51cbd14446e39b8494d72c81f6e051942d) Thanks [@mathiusj](https://github.com/mathiusj)! - update lockfile
+
 ## 1.0.7
 
 ### Patch Changes
