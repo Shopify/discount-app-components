@@ -2,10 +2,10 @@ import React from 'react';
 import {
   ChoiceList,
   TextField,
-  Card,
+  LegacyCard as Card,
   InlineError,
-  Stack,
-  TextStyle,
+  LegacyStack as Stack,
+  Text,
 } from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
@@ -122,8 +122,7 @@ describe('UsageLimitsCard', () => {
 
       const stack = usageLimits.find(Stack);
 
-      expect(stack).toContainReactComponent(TextStyle, {
-        variation: 'subdued',
+      expect(stack).toContainReactComponent(Text, {
         children: 'A subscription with many payments will count as one use.',
       });
     });
@@ -131,8 +130,7 @@ describe('UsageLimitsCard', () => {
     it('does not render help text when isRecurring is false', () => {
       const usageLimits = mountWithApp(<UsageLimitsCard {...defaultProps} />);
 
-      expect(usageLimits).not.toContainReactComponent(TextStyle, {
-        variation: 'subdued',
+      expect(usageLimits).not.toContainReactComponent(Text, {
         children: 'A subscription with many payments will count as one use.',
       });
     });

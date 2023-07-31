@@ -16,7 +16,7 @@ describe('<MaximumShippingPrice />', () => {
     );
 
     expect(wrapper).toContainReactText(
-      `Applies to shipping rates under CA$10.00`,
+      `Applies to shipping rates under $10.00`,
     );
   });
 

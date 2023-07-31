@@ -1,5 +1,5 @@
 import React from 'react';
-import {ChoiceList, Card} from '@shopify/polaris';
+import {ChoiceList, LegacyCard as Card} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
 import type {Field} from '../../types';

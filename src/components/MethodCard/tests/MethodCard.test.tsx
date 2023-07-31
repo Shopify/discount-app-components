@@ -1,5 +1,10 @@
 import React from 'react';
-import {Card, ChoiceList, Heading, TextField} from '@shopify/polaris';
+import {
+  LegacyCard as Card,
+  ChoiceList,
+  Text,
+  TextField,
+} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {MethodCard} from '../MethodCard';
@@ -64,7 +69,7 @@ describe('<MethodCard />', () => {
   it('displays a Heading with title prop as the content', () => {
     const methodCard = mountWithApp(<MethodCard {...mockProps} />);
 
-    expect(methodCard).toContainReactComponent(Heading, {
+    expect(methodCard).toContainReactComponent(Text, {
       children: mockProps.title,
     });
   });

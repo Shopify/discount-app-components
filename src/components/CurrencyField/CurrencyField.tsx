@@ -1,6 +1,6 @@
 import React from 'react';
 import {useI18n, CurrencyCode, I18n} from '@shopify/react-i18n';
-import {Stack} from '@shopify/polaris';
+import {LegacyStack as Stack} from '@shopify/polaris';
 
 import {
   FormattedNumberField,

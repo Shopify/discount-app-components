@@ -1,7 +1,7 @@
 {
   "name": "@shopify/discount-app-components",
   "description": "Shopify’s discounts component library",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "author": "Shopify <dev@shopify.com>",
   "repository": "https://github.com/Shopify/discount-app-components",
   "bugs": "https://github.com/Shopify/discount-app-components/issues",
@@ -41,7 +41,7 @@
     }
   },
   "engines": {
-    "node": ">=16.13.0"
+    "node": "^16.17.0 || >=18.12.0"
   },
   "scripts": {
     "lint": "loom lint",
@@ -60,19 +60,19 @@
   },
   "dependencies": {
     "@shopify/admin-graphql-api-utilities": "^2.0.0",
-    "@shopify/dates": "^1.1.5",
-    "@shopify/polaris-icons": "^4.18.3",
-    "@shopify/react-hooks": "^2.1.18",
-    "@shopify/react-i18n": "^6.3.13",
+    "@shopify/dates": "^2.0.3",
+    "@shopify/polaris-icons": "^7.1.0",
+    "@shopify/react-hooks": "^3.0.5",
+    "@shopify/react-i18n": "^7.8.0",
     "d3-time-format": "2.1.1",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {
-    "@shopify/app-bridge": "^3.1.0",
-    "@shopify/app-bridge-react": "^3.1.0",
-    "@shopify/polaris": "^9.7.0 || ^10.0.0",
-    "react": "^16.14.0 || ^17.0.0 || ^18.0.0",
-    "react-dom": "^16.14.0 || ^17.0.0 || ^18.0.0"
+    "@shopify/app-bridge": "^3.7.7",
+    "@shopify/app-bridge-react": "^3.7.7",
+    "@shopify/polaris": "^11.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -91,15 +91,15 @@
     "@shopify/eslint-plugin": "^41.2.0",
     "@shopify/jest-dom-mocks": "^3.0.5",
     "@shopify/loom": "^1.0.0",
-    "@shopify/loom-cli": "^1.0.0",
+    "@shopify/loom-cli": "^1.1.0",
     "@shopify/loom-plugin-build-library": "^1.0.0",
     "@shopify/loom-plugin-eslint": "^2.0.0",
     "@shopify/loom-plugin-prettier": "^2.0.0",
     "@shopify/loom-plugin-stylelint": "^2.0.0",
-    "@shopify/polaris": "^10.0.0",
+    "@shopify/polaris": "^11.2.2",
     "@shopify/postcss-plugin": "^5.0.1",
     "@shopify/prettier-config": "^1.1.2",
-    "@shopify/react-testing": "^3.2.4",
+    "@shopify/react-testing": "^5.1.3",
     "@shopify/stylelint-plugin": "^11.0.0",
     "@shopify/typescript-configs": "^5.0.0",
     "@size-limit/preset-small-lib": "^5.0.3",
@@ -109,8 +109,8 @@
     "@types/d3-time-format": "^4.0.0",
     "@types/lodash": "^4.14.181",
     "@types/node": "^16.11.11",
-    "@types/react": "^17.0.2",
-    "@types/react-dom": "^17.0.2",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.11",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.1.0",
     "chalk": "^2.4.2",
@@ -128,8 +128,8 @@
     "postcss-pxtorem": "^5.1.1",
     "postcss-value-parser": "^4.2.0",
     "prettier": "^2.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rimraf": "^3.0.0",
     "sass": "^1.50.0",
     "sass-loader": "^12.6.0",

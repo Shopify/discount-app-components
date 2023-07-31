@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, ChoiceList} from '@shopify/polaris';
+import {LegacyCard as Card, ChoiceList} from '@shopify/polaris';
 import {mountWithApp, mockField} from 'tests/utilities';
 
 import {PurchaseTypeCard} from '../PurchaseTypeCard';

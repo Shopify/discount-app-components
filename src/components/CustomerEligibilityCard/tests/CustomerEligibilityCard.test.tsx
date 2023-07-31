@@ -2,7 +2,7 @@ import React from 'react';
 import {mockField, mountWithApp} from 'tests/utilities';
 import {Action} from '@shopify/app-bridge/actions/Navigation/Redirect';
 import {composeGid, parseGid} from '@shopify/admin-graphql-api-utilities';
-import {Card, ChoiceList} from '@shopify/polaris';
+import {LegacyCard as Card, ChoiceList} from '@shopify/polaris';
 
 import {
   CustomerEligibilityCard,

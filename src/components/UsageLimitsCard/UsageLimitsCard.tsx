@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import {
-  Card,
+  LegacyCard as Card,
   ChoiceList,
   TextField,
-  Stack,
-  TextStyle,
+  LegacyStack as Stack,
+  Text,
   InlineError,
 } from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
@@ -138,11 +138,11 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
                     </div>
                   )}
                   {isRecurring && (
-                    <TextStyle variation="subdued">
+                    <Text as="span" color="subdued">
                       {i18n.translate(
                         'DiscountAppComponents.UsageLimitsCard.totalUsageLimitHelpTextSubscription',
                       )}
-                    </TextStyle>
+                    </Text>
                   )}
                   {isSelected && totalUsageLimit.error && (
                     <InlineError

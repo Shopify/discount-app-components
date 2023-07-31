@@ -1,6 +1,6 @@
 import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
-import {Card, List, TextContainer, TextStyle} from '@shopify/polaris';
+import {LegacyCard as Card, List, Text, VerticalStack} from '@shopify/polaris';
 import {Redirect} from '@shopify/app-bridge/actions';
 
 import {AppBridgeLink} from '../../../AppBridgeLink';
@@ -61,11 +61,11 @@ export function Performance({
 
   return (
     <Card.Section title={i18n.translate('title', I18N_SCOPE)}>
-      <TextContainer>
+      <VerticalStack>
         {(isEditing || status === DiscountStatus.Scheduled) && (
-          <TextStyle variation="subdued">
+          <Text as="span" color="subdued">
             {i18n.translate('notActive', I18N_SCOPE)}
-          </TextStyle>
+          </Text>
         )}
         {isActiveOrExpired && (
           <>
@@ -95,7 +95,7 @@ export function Performance({
             )}
           </>
         )}
-      </TextContainer>
+      </VerticalStack>
     </Card.Section>
   );
 }
