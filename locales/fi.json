@@ -47,7 +47,7 @@
       "totalUsageLimitHelpTextSubscription": "Tilaus, jossa on useita maksuja, lasketaan yhdeksi käyttökerraksi."
     },
     "RecurringPayment": {
-      "title": "Tilausten toistuvaissuoritukset",
+      "title": "Toistotilausten toistuvais­suoritukset",
       "options": "Toistuvaissuoritusten asetukset",
       "firstPayment": "Rajoita alennus ensimmäiseen maksusuoritukseen",
       "multiplePayments": "Rajoita alennus useaan toistuvaissuoritukseen",
@@ -170,7 +170,7 @@
         "today": "tänään",
         "activeSingleDate": "Aktiivinen {date}",
         "activeFromDate": "Aktiivinen {date} alkaen",
-        "activeFromTodayUntilDate": "Aktiivinen tästä päivästä päivämäärään {date} asti",
+        "activeFromTodayUntilDate": "Aktiivinen tästä päivästä {date} asti",
         "activeFromDateToDate": "Aktiivinen {startDate}–{endDate}",
         "activeFromDateUntilToday": "Aktiivinen {date} alkaen tähän päivään saakka"
       },
