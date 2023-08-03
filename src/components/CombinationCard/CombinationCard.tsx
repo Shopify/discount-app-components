@@ -1,5 +1,7 @@
 import React from 'react';
 import {
+  Banner,
+  Link,
   LegacyCard as Card,
   ChoiceList,
   LegacyStack as Stack,
@@ -67,9 +69,34 @@ export function CombinationCard({
 
   const trimmedDescriptor = discountDescriptor.trim();
 
+  const selectedChoices = getSelectedChoices(combinableDiscountTypes.value);
+
+  const shouldShowBanner =
+    (discountClass === DiscountClass.Order &&
+      (selectedChoices.includes(DiscountClass.Product) ||
+        selectedChoices.includes(DiscountClass.Order))) ||
+    (discountClass === DiscountClass.Product &&
+      selectedChoices.includes(DiscountClass.Order));
+
   return (
     <Card title={i18n.translate('title', I18N_SCOPE)} sectioned>
       <Stack vertical spacing="baseTight">
+        {shouldShowBanner && (
+          <Banner
+            title={i18n.translate('warning.title', I18N_SCOPE)}
+            status="warning"
+          >
+            <p>
+              {i18n.translate('warning.description', I18N_SCOPE)}{' '}
+              <Link
+                url={`https://help.shopify.com/${i18n.locale}/manual/discounts/combining-discounts`}
+                external
+              >
+                {i18n.translate('warning.link', I18N_SCOPE)}
+              </Link>
+            </p>
+          </Banner>
+        )}
         <p>
           {trimmedDescriptor ? (
             <>
@@ -122,10 +149,7 @@ function buildChoices({
   const hasCounts = typeof combinableDiscountCounts !== 'undefined';
 
   const productOption = {
-    label:
-      currentDiscountClass === DiscountClass.Product
-        ? i18n.translate('options.productLabelOther', I18N_SCOPE)
-        : i18n.translate('options.productLabel', I18N_SCOPE),
+    label: i18n.translate('options.productLabel', I18N_SCOPE),
     value: DiscountClass.Product,
     renderChildren: (isSelected: boolean) =>
       isSelected && hasCounts ? (
@@ -181,9 +205,9 @@ function buildChoices({
 
   switch (currentDiscountClass) {
     case DiscountClass.Product:
-      return [productOption, shippingOption];
+      return [productOption, orderOption, shippingOption];
     case DiscountClass.Order:
-      return [shippingOption];
+      return [productOption, orderOption, shippingOption];
     case DiscountClass.Shipping:
       return [productOption, orderOption];
     default:

@@ -1,10 +1,9 @@
 import React, {useState} from 'react';
-
 import {Page} from '@shopify/polaris';
 import {CombinationCard, DiscountClass} from '../../..';
 import {CombinableDiscountTypes} from '../../../types';
 
-export default function CombinationCardPattern() {
+export default function CombinationCardPattern({discountClass, discountDescriptor}) {
   const [combinesWith, setCombinesWith] = useState<CombinableDiscountTypes>({
     orderDiscounts: false,
     productDiscounts: false,
@@ -23,8 +22,8 @@ export default function CombinationCardPattern() {
           productDiscountsCount: 3,
           shippingDiscountsCount: 0,
         }}
-        discountClass={DiscountClass.Product}
-        discountDescriptor="My cool discount"
+        discountClass={discountClass}
+        discountDescriptor={discountDescriptor}
       />
     </Page>
   );

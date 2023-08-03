@@ -32,10 +32,6 @@ export function HelpText({
     url: DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL,
   });
 
-  const productCombinesWithProduct =
-    currentDiscountClass === DiscountClass.Product &&
-    targetDiscountClass === DiscountClass.Product;
-
   const targetDiscountClassLabel = targetDiscountClass.toLocaleLowerCase();
   const scope = `DiscountAppComponents.CombinationCard.HelpText`;
 
@@ -70,11 +66,7 @@ export function HelpText({
               <span ref={buttonWrapperRef}>
                 <Button onClick={handleModalOpen} plain>
                   {i18n.translate(
-                    `combinations.counts.${
-                      productCombinesWithProduct
-                        ? 'productOther'
-                        : targetDiscountClassLabel
-                    }`,
+                    `combinations.counts.${targetDiscountClassLabel}`,
                     {scope},
                     {
                       count,
@@ -86,20 +78,18 @@ export function HelpText({
           },
         )}
       </Text>
-      {productCombinesWithProduct && (
-        <Text as="span" color="subdued">
-          {i18n.translate('combinations.multipleEligibleDiscounts', {scope})}
-        </Text>
-      )}
+      <Text as="span" color="subdued">
+        {i18n.translate('combinations.multipleEligibleDiscounts', {scope})}
+      </Text>
     </Stack>
   ) : (
     <>
       <Text as="span" color="subdued">
         {i18n.translate('title', {
-          scope: `${scope}.emptyState.${currentDiscountClass.toLowerCase()}`,
+          scope: `${scope}.emptyState.${targetDiscountClass.toLowerCase()}`,
         })}{' '}
         {i18n.translate(`warning.with${currentDiscountClass.toLowerCase()}`, {
-          scope: `${scope}.emptyState.${currentDiscountClass.toLowerCase()}`,
+          scope: `${scope}.emptyState.${targetDiscountClass.toLowerCase()}`,
         })}{' '}
         <Link
           url={`https://help.shopify.com/${i18n.locale}/manual/discounts/combining-discounts`}
