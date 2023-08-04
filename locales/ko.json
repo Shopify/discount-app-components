@@ -76,7 +76,6 @@
       "discountNameFilled": "결합 가능한 할인:",
       "discountNameNotFilled": "이 {discountClass} 할인과 결합 가능한 할인:",
       "options": {
-        "productLabelOther": "기타 제품 할인",
         "productLabel": "제품 할인",
         "orderLabel": "주문 할인",
         "shippingLabel": "배송 할인"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "현재 결합하도록 설정된 제품 할인이 없습니다.",
+            "title": "결합하도록 설정된 제품 할인이 없습니다.",
             "warning": {
               "withproduct": "고객이 여러 개의 할인을 사용할 수 있게 하려면 제품 할인과 결합된 제품 할인을 하나 이상 설정하십시오.",
               "withorder": "고객이 여러 개의 할인을 사용할 수 있게 하려면 주문 할인과 결합된 제품 할인을 하나 이상 설정하십시오.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "현재 결합하도록 설정된 주문 할인이 없습니다.",
+            "title": "결합하도록 설정된 주문 할인이 없습니다.",
             "warning": {
               "withproduct": "고객이 여러 개의 할인을 사용할 수 있게 하려면 제품 할인과 결합된 주문 할인을 하나 이상 설정하십시오.",
               "withorder": "고객이 여러 개의 할인을 사용할 수 있게 하려면 주문 할인과 결합된 주문 할인을 하나 이상 설정하십시오.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "현재 결합하도록 설정된 배송 할인이 없습니다.",
+            "title": "결합하도록 설정된 배송 할인이 없습니다.",
             "warning": {
               "withproduct": "고객이 여러 개의 할인을 사용할 수 있게 하려면 제품 할인과 결합된 배송 할인을 하나 이상 설정하십시오.",
               "withorder": "고객이 여러 개의 할인을 사용할 수 있게 하려면 주문 할인과 결합된 배송 할인을 하나 이상 설정하십시오.",
@@ -123,23 +122,24 @@
             "shipping": {
               "one": "배송 할인 {count}개",
               "other": "배송 할인 {count}개"
-            },
-            "productOther": {
-              "one": "기타 제품 할인 {count}개",
-              "other": "기타 제품 할인 {count}개"
             }
           },
           "info": {
-            "one": "{discountCountLink}은(는) 현재 결합하도록 설정되었습니다.",
-            "other": "{discountCountLink}은(는) 현재 결합하도록 설정되었습니다."
+            "one": "{discountCountLink}이(가) 결합하도록 설정되었습니다.",
+            "other": "{discountCountLink}이(가) 결합하도록 설정되었습니다."
           },
-          "multipleEligibleDiscounts": "한 품목에 여러 할인이 해당되는 경우 가장 큰 할인만 적용됩니다."
+          "multipleEligibleDiscounts": "한 품목에 여러 할인이 해당하는 경우 가장 큰 할인만 적용됩니다."
         }
       },
       "discountClass": {
         "product": "제품",
         "order": "주문",
         "shipping": "배송"
+      },
+      "warning": {
+        "title": "일부 조합에서 할인액이 커질 수 있습니다.",
+        "description": "몇 가지 조합을 테스트해 보십시오. 총 할인액이 너무 크면 결합할 할인을 조정하십시오.",
+        "link": "자세히 알아보기"
       }
     },
     "SummaryCard": {

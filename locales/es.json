@@ -76,7 +76,6 @@
       "discountNameFilled": "se puede combinar con:",
       "discountNameNotFilled": "Este descuento de {discountClass} se puede combinar con:",
       "options": {
-        "productLabelOther": "Otros descuentos en productos",
         "productLabel": "Descuentos en productos",
         "orderLabel": "Descuentos en pedidos",
         "shippingLabel": "Descuentos en envíos"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Actualmente, no hay descuentos en productos que puedan combinarse.",
+            "title": "No hay descuentos en productos que puedan combinarse.",
             "warning": {
               "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos del mismo tipo.",
               "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos en pedidos.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Actualmente, no hay descuentos en pedidos que puedan combinarse.",
+            "title": "No hay descuentos en pedidos que puedan combinarse.",
             "warning": {
               "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos en productos.",
               "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos del mismo tipo.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Actualmente, no hay descuentos en envíos que puedan combinarse.",
+            "title": "No hay descuentos en envíos que puedan combinarse.",
             "warning": {
               "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en productos.",
               "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en pedidos.",
@@ -128,15 +127,13 @@
               "many": "{count} descuentos en envíos"
             },
             "productOther": {
-              "one": "{count} descuento de producto más",
-              "other": "{count} descuentos de producto más",
               "many": "{count} descuentos de producto más"
             }
           },
           "info": {
-            "one": "Actualmente, {discountCountLink} puede combinarse.",
-            "other": "Actualmente, {discountCountLink} pueden combinarse.",
-            "many": "Actualmente, {discountCountLink} pueden combinarse."
+            "one": "{discountCountLink} se puede combinar.",
+            "other": "{discountCountLink} se pueden combinar.",
+            "many": "{discountCountLink} se pueden combinar."
           },
           "multipleEligibleDiscounts": "Si un artículo es elegible para varios descuentos, solo se aplicará el mayor."
         }
@@ -145,6 +142,11 @@
         "product": "producto",
         "order": "pedido",
         "shipping": "envío"
+      },
+      "warning": {
+        "title": "Algunas combinaciones pueden traducirse en grandes descuentos",
+        "description": "Prueba unas cuantas combinaciones. Si el descuento total es demasiado grande, ajusta qué descuentos pueden combinarse.",
+        "link": "Más información."
       }
     },
     "SummaryCard": {

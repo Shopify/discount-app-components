@@ -76,7 +76,6 @@
       "discountNameFilled": "je možné kombinovat s:",
       "discountNameNotFilled": "Tuto slevu na {discountClass} lze kombinovat s:",
       "options": {
-        "productLabelOther": "Další slevy na produkty",
         "productLabel": "Slevy na produkty",
         "orderLabel": "Slevy na objednávku",
         "shippingLabel": "Slevy na dopravu"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Aktuálně nejsou nastaveny žádné slevy na produkty, které by bylo možné kombinovat.",
+            "title": "Nejsou nastaveny žádné slevy na produkty, které by bylo možné kombinovat.",
             "warning": {
               "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na produkt, kterou bude možné kombinovat se slevami na produkty.",
               "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na produkt, kterou bude možné kombinovat se slevami na objednávku.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Aktuálně nejsou nastaveny žádné slevy na objednávku, které by bylo možné kombinovat.",
+            "title": "Nejsou nastaveny žádné slevy na objednávku, které by bylo možné kombinovat.",
             "warning": {
               "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na objednávku, kterou bude možné kombinovat se slevami na produkty.",
               "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na objednávku, kterou bude možné kombinovat se slevami na objednávky.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Aktuálně nejsou nastaveny žádné slevy na dopravu, které by bylo možné kombinovat.",
+            "title": "Nejsou nastaveny žádné slevy na dopravu, které by bylo možné kombinovat.",
             "warning": {
               "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na produkty.",
               "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na objednávku.",
@@ -131,8 +130,6 @@
               "many": "{count} slev(y) na dopravu"
             },
             "productOther": {
-              "one": "{count} další sleva na produkt",
-              "other": "další slevy na produkty ({count})",
               "few": "další slevy na produkty ({count})",
               "many": "další slevy na produkty ({count})"
             }
@@ -143,13 +140,18 @@
             "few": "Jsou nastaveny {discountCountLink}, které je možné kombinovat.",
             "many": "Jsou nastaveny {discountCountLink}, které je možné kombinovat."
           },
-          "multipleEligibleDiscounts": "Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší sleva."
+          "multipleEligibleDiscounts": "Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší."
         }
       },
       "discountClass": {
         "product": "produkt",
         "order": "objednávku",
         "shipping": "dopravu"
+      },
+      "warning": {
+        "title": "Některé kombinace můžou vést k velkým slevám",
+        "description": "Otestujte několik kombinací. Jestliže je celková sleva příliš vysoká, upravte, které slevy je možné kombinovat.",
+        "link": "Zjistit více"
       }
     },
     "SummaryCard": {

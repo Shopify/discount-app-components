@@ -76,7 +76,6 @@
       "discountNameFilled": "可组合：",
       "discountNameNotFilled": "此{discountClass}折扣可与以下折扣组合：",
       "options": {
-        "productLabelOther": "其他产品折扣",
         "productLabel": "产品折扣",
         "orderLabel": "订单折扣",
         "shippingLabel": "运费折扣"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "目前未设置要组合的产品折扣。",
+            "title": "未设置要组合的产品折扣。",
             "warning": {
               "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的产品折扣。",
               "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的产品折扣。",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "目前未设置要组合的订单折扣。",
+            "title": "未设置要组合的订单折扣。",
             "warning": {
               "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的订单折扣。",
               "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的订单折扣。",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "目前未设置要组合的运费折扣。",
+            "title": "未设置要组合的运费折扣。",
             "warning": {
               "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的运费折扣。",
               "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的运费折扣。",
@@ -123,15 +122,11 @@
             "shipping": {
               "one": "{count} 项运费折扣",
               "other": "{count} 项运费折扣"
-            },
-            "productOther": {
-              "one": "{count} 项其他产品折扣",
-              "other": "{count} 项其他产品折扣"
             }
           },
           "info": {
-            "one": "{discountCountLink} 目前设置为进行组合。",
-            "other": "{discountCountLink} 目前设置为进行组合。"
+            "one": "{discountCountLink} 已被设置为进行组合。",
+            "other": "{discountCountLink} 已被设置为进行组合。"
           },
           "multipleEligibleDiscounts": "如果某商品可使用多项折扣，则只会应用优惠金额最大的折扣。"
         }
@@ -140,6 +135,11 @@
         "product": "产品",
         "order": "订单",
         "shipping": "发货"
+      },
+      "warning": {
+        "title": "某些组合可使折扣优惠金额更大",
+        "description": "测试一些组合。如果折扣总数太大，请调整可以组合的折扣。",
+        "link": "了解详细信息"
       }
     },
     "SummaryCard": {

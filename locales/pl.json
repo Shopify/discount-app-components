@@ -76,7 +76,6 @@
       "discountNameFilled": "można łączyć z:",
       "discountNameNotFilled": "Ten rabat na: {discountClass} można łączyć z:",
       "options": {
-        "productLabelOther": "Inne rabaty na produkty",
         "productLabel": "Rabaty na produkty",
         "orderLabel": "Rabaty na zamówienia",
         "shippingLabel": "Rabaty na wysyłkę"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Obecnie nie ma możliwości łączenia rabatów na produkty.",
+            "title": "Nie ma możliwości łączenia rabatów na produkty.",
             "warning": {
               "withproduct": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na produkt, który łączy się z rabatami na produkty.",
               "withorder": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na produkt, który łączy się z rabatami na zamówienia.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Obecnie nie ma możliwości łączenia rabatów na zamówienia.",
+            "title": "Nie ma możliwości łączenia rabatów na zamówienia.",
             "warning": {
               "withproduct": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na zamówienie, który łączy się z rabatami na produkty.",
               "withorder": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na zamówienie, który łączy się z rabatami na zamówienia.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Obecnie nie ma możliwości łączenia rabatów na wysyłkę.",
+            "title": "Nie ma możliwości łączenia rabatów na wysyłkę.",
             "warning": {
               "withproduct": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na produkty.",
               "withorder": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na zamówienia.",
@@ -131,17 +130,15 @@
               "many": "{count} rabaty(-ów) na wysyłkę"
             },
             "productOther": {
-              "one": "{count} inny rabat na produkt",
-              "other": "{count} inne(-ych) rabaty(-ów) na produkt",
               "few": "{count} inne(-ych) rabaty(-ów) na produkt",
               "many": "{count} inne(-ych) rabaty(-ów) na produkt"
             }
           },
           "info": {
-            "one": "{discountCountLink} ma aktualnie ustawioną opcję łączenia.",
-            "other": "{discountCountLink} ma(ją) aktualnie ustawioną opcję łączenia.",
-            "few": "{discountCountLink} ma(ją) aktualnie ustawioną opcję łączenia.",
-            "many": "{discountCountLink} ma(ją) aktualnie ustawioną opcję łączenia."
+            "one": "{discountCountLink} można łączyć.",
+            "other": "{discountCountLink} można łączyć.",
+            "few": "{discountCountLink} można łączyć.",
+            "many": "{discountCountLink} można łączyć."
           },
           "multipleEligibleDiscounts": "Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie jeden, największy rabat."
         }
@@ -150,6 +147,11 @@
         "product": "produkt",
         "order": "zamówienie",
         "shipping": "wysyłka"
+      },
+      "warning": {
+        "title": "Niektóre kombinacje mogą skutkować dużymi rabatami",
+        "description": "Przetestuj kilka kombinacji. Jeśli łączny rabat jest zbyt duży, dostosuj, które rabaty mogą się łączyć.",
+        "link": "Dowiedz się więcej"
       }
     },
     "SummaryCard": {
