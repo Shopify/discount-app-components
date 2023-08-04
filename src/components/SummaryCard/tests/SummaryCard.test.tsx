@@ -37,7 +37,6 @@ describe('<SummaryCard />', () => {
       discountDescriptor: 'My cool discount',
     },
     performance: {
-      isEditing: true,
       status: DiscountStatus.Scheduled,
     },
   };
