@@ -10,11 +10,6 @@ import type {MoneyInput} from '~/types';
 
 export interface PerformanceProps {
   /**
-   * Whether the current discount is being created or edited
-   */
-  isEditing: boolean;
-
-  /**
    * (optional) The status of the discount (e.g. active, expired, scheduled).
    */
   status?: DiscountStatus;
@@ -47,7 +42,6 @@ const I18N_SCOPE = {
 };
 
 export function Performance({
-  isEditing,
   status,
   totalSales,
   hasReports,
@@ -62,7 +56,7 @@ export function Performance({
   return (
     <Card.Section title={i18n.translate('title', I18N_SCOPE)}>
       <VerticalStack>
-        {(isEditing || status === DiscountStatus.Scheduled) && (
+        {status === DiscountStatus.Scheduled && (
           <Text as="span" color="subdued">
             {i18n.translate('notActive', I18N_SCOPE)}
           </Text>
