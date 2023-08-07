@@ -76,7 +76,6 @@
       "discountNameFilled": "kan worden gecombineerd met:",
       "discountNameNotFilled": "Je kunt deze {discountClass}-korting combineren met:",
       "options": {
-        "productLabelOther": "Andere productkortingen",
         "productLabel": "Productkortingen",
         "orderLabel": "Bestellingskortingen",
         "shippingLabel": "Verzendkortingen"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Op dit moment zijn er geen productkortingen ingesteld voor combinatie.",
+            "title": "Er zijn geen productkortingen ingesteld voor combinatie.",
             "warning": {
               "withproduct": "Stel minstens één productkorting in die met productkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
               "withorder": "Stel minstens één productkorting in die met bestellingskortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Op dit moment zijn er geen bestellingskortingen ingesteld voor combinatie.",
+            "title": "Er zijn geen bestelkortingen ingesteld voor combinatie.",
             "warning": {
               "withproduct": "Stel minstens één bestellingskorting in die met productkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
               "withorder": "Stel minstens één bestellingskorting in die met andere bestellingskortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Op dit moment zijn er geen verzendkortingen ingesteld voor combinatie.",
+            "title": "Er zijn geen verzendkortingen ingesteld voor combinatie.",
             "warning": {
               "withproduct": "Stel minstens één verzendkorting in die met productkortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken.",
               "withorder": "Stel minstens één verzendkorting in die met bestellingskortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken.",
@@ -123,23 +122,24 @@
             "shipping": {
               "one": "{count} verzendkorting",
               "other": "{count} verzendkortingen"
-            },
-            "productOther": {
-              "one": "{count} andere productkorting",
-              "other": "{count} andere productkortingen"
             }
           },
           "info": {
-            "one": "Op dit moment is {discountCountLink} ingesteld voor combinatie.",
-            "other": "Op dit moment zijn {discountCountLink} ingesteld voor combinatie."
+            "one": "{discountCountLink} is ingesteld voor combinatie.",
+            "other": "{discountCountLink} zijn ingesteld voor combinatie."
           },
-          "multipleEligibleDiscounts": "Als een artikel voor meerdere kortingen in aanmerking komt, dan geldt alleen de hoogste korting."
+          "multipleEligibleDiscounts": "Als een artikel voor meerdere kortingen in aanmerking komt, geldt alleen de hoogste."
         }
       },
       "discountClass": {
         "product": "product",
         "order": "bestelling",
         "shipping": "verzending"
+      },
+      "warning": {
+        "title": "Sommige combinaties kunnen resulteren in grote kortingen",
+        "description": "Test enkele combinaties. Als de totale korting te groot is, pas je aan welke kortingen combineerbaar zijn.",
+        "link": "Meer informatie"
       }
     },
     "SummaryCard": {

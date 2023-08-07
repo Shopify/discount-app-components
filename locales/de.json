@@ -76,7 +76,6 @@
       "discountNameFilled": "kann kombiniert werden mit:",
       "discountNameNotFilled": "Dieser {discountClass}-Rabatt kann kombiniert werden mit:",
       "options": {
-        "productLabelOther": "Andere Produktrabatte",
         "productLabel": "Produktrabatte",
         "orderLabel": "Bestellrabatte",
         "shippingLabel": "Versandrabatte"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Derzeit sind keine Produktrabatte kombinierbar.",
+            "title": "Es wurden keine kombinierbaren Produktrabatte eingerichtet.",
             "warning": {
               "withproduct": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Produktrabatt fest, der mit Produktrabatten kombinierbar ist.",
               "withorder": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Produktrabatt fest, der mit Bestellrabatten kombinierbar ist.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Derzeit sind keine Bestellrabatte kombinierbar.",
+            "title": "Es wurden keine kombinierbaren Bestellrabatte eingerichtet.",
             "warning": {
               "withproduct": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Bestellrabatt fest, der mit Produktrabatten kombinierbar ist.",
               "withorder": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Bestellrabatt fest, der mit Bestellrabatten kombinierbar ist.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Derzeit sind keine Versandrabatte kombinierbar.",
+            "title": "Es wurden keine kombinierbaren Versandrabatte eingerichtet.",
             "warning": {
               "withproduct": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Versandrabatt fest, der mit Produktrabatten kombinierbar ist.",
               "withorder": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Versandrabatt fest, der mit Bestellrabatten kombinierbar ist.",
@@ -123,23 +122,24 @@
             "shipping": {
               "one": "{count} Versandrabatt",
               "other": "{count} Versandrabatte"
-            },
-            "productOther": {
-              "one": "{count} weiterer Produktrabatt",
-              "other": "{count} weitere Produktrabatte"
             }
           },
           "info": {
-            "one": "{discountCountLink} ist derzeit kombinierbar.",
+            "one": "{discountCountLink} ist kombinierbar.",
             "other": "{discountCountLink} sind kombinierbar."
           },
-          "multipleEligibleDiscounts": "Wenn ein Artikel für mehrere Rabatte geeignet ist, wird nur der größte Rabatt angewendet."
+          "multipleEligibleDiscounts": "Wenn ein Artikel für mehrere Rabatte qualifiziert ist, wird nur der höchste Rabatt angewendet."
         }
       },
       "discountClass": {
         "product": "Produkt",
         "order": "Bestellung",
         "shipping": "Versand"
+      },
+      "warning": {
+        "title": "Einige Kombinationen können zu hohen Rabatten führen",
+        "description": "Probiere ein paar Kombinationen aus. Wenn der Gesamtrabatt zu hoch ist, passe an, welche Rabatte kombiniert werden können.",
+        "link": "Mehr erfahren"
       }
     },
     "SummaryCard": {
