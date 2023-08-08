@@ -1,5 +1,5 @@
 import React from 'react';
-import {LegacyCard as Card, ChoiceList} from '@shopify/polaris';
+import {Banner, LegacyCard as Card, ChoiceList} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 import {composeGid} from '@shopify/admin-graphql-api-utilities';
 
@@ -41,20 +41,6 @@ describe('<CombinationCard />', () => {
       ) : null,
   };
 
-  const mockProductOption = {
-    label: 'Product discounts',
-    value: DiscountClass.Product,
-    renderChildren: (isSelected: boolean) =>
-      isSelected ? (
-        <HelpText
-          currentDiscountClass={mockProps.discountClass}
-          targetDiscountClass={DiscountClass.Product}
-          count={mockProps.combinableDiscountCounts!.productDiscountsCount}
-          currentDiscountName={mockProps.discountDescriptor}
-          currentDiscountId={mockProps.discountId}
-        />
-      ) : null,
-  };
   const mockOrderOption = {
     label: 'Order discounts',
     value: DiscountClass.Order,
@@ -153,9 +139,9 @@ describe('<CombinationCard />', () => {
 
   it.each`
     discountClass             | expectedChoiceOptions
-    ${DiscountClass.Product}  | ${[mockProductOtherOption, mockShippingOption]}
-    ${DiscountClass.Order}    | ${[mockShippingOption]}
-    ${DiscountClass.Shipping} | ${[mockProductOption, mockOrderOption]}
+    ${DiscountClass.Product}  | ${[{label: 'Product discounts', value: 'PRODUCT'}, {label: 'Order discounts', value: 'ORDER'}, {label: 'Shipping discounts', value: 'SHIPPING'}]}
+    ${DiscountClass.Order}    | ${[{label: 'Product discounts', value: 'PRODUCT'}, {label: 'Order discounts', value: 'ORDER'}, {label: 'Shipping discounts', value: 'SHIPPING'}]}
+    ${DiscountClass.Shipping} | ${[{label: 'Product discounts', value: 'PRODUCT'}, {label: 'Order discounts', value: 'ORDER'}]}
   `(
     'renders choices for $discountClass discount',
     ({discountClass, expectedChoiceOptions}) => {
@@ -164,12 +150,14 @@ describe('<CombinationCard />', () => {
       );
 
       expect(combinationCard).toContainReactComponent(ChoiceList, {
-        choices: expectedChoiceOptions.map(
-          (choice: {label: string; value: DiscountClass}) => ({
-            value: choice.value,
-            label: choice.label,
-            renderChildren: expect.any(Function),
-          }),
+        choices: expect.arrayContaining(
+          expectedChoiceOptions.map((choice: {label: string; value: string}) =>
+            expect.objectContaining({
+              value: choice.value,
+              label: choice.label,
+              renderChildren: expect.any(Function),
+            }),
+          ),
         ),
       });
     },
@@ -275,4 +263,33 @@ describe('<CombinationCard />', () => {
       currentDiscountId: mockDiscountId,
     });
   });
+
+  it.each`
+    discountClass             | selectedChoices            | bannerCount
+    ${DiscountClass.Order}    | ${['PRODUCT']}             | ${1}
+    ${DiscountClass.Order}    | ${['ORDER']}               | ${1}
+    ${DiscountClass.Order}    | ${['SHIPPING']}            | ${0}
+    ${DiscountClass.Product}  | ${['ORDER']}               | ${1}
+    ${DiscountClass.Product}  | ${['PRODUCT', 'SHIPPING']} | ${0}
+    ${DiscountClass.Shipping} | ${['PRODUCT', 'ORDER']}    | ${0}
+  `(
+    'renders warning banner conditionally for $discountClass discount and selected choices $selectedChoices',
+    ({discountClass, selectedChoices, bannerCount}) => {
+      const mockPropsWithSelectedChoices = {
+        ...mockProps,
+        discountClass,
+        combinableDiscountTypes: mockField({
+          productDiscounts: selectedChoices.includes('PRODUCT'),
+          orderDiscounts: selectedChoices.includes('ORDER'),
+          shippingDiscounts: selectedChoices.includes('SHIPPING'),
+        }),
+      };
+
+      const combinationCard = mountWithApp(
+        <CombinationCard {...mockPropsWithSelectedChoices} />,
+      );
+
+      expect(combinationCard.findAll(Banner)).toHaveLength(bannerCount);
+    },
+  );
 });

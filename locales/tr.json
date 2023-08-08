@@ -76,7 +76,6 @@
       "discountNameFilled": "şununla bileştirilebilir:",
       "discountNameNotFilled": "Bu {discountClass} indirimi şununla birleştirilebilir:",
       "options": {
-        "productLabelOther": "Diğer ürün indirimleri",
         "productLabel": "Ürün indirimleri",
         "orderLabel": "Sipariş indirimleri",
         "shippingLabel": "Kargo indirimleri"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Şu anda birleştirilmek üzere ayarlanmış ürün indirimi yok.",
+            "title": "Birleştirilmek üzere ayarlanmış ürün indirimi yok.",
             "warning": {
               "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın.",
               "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Şu anda birleştirilmek üzere ayarlanmış sipariş indirimi yok.",
+            "title": "Birleştirilmek üzere ayarlanmış sipariş indirimi yok.",
             "warning": {
               "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın.",
               "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Şu anda birleştirilmek üzere ayarlanmış kargo indirimi yok.",
+            "title": "Birleştirilmek üzere ayarlanmış kargo indirimi yok.",
             "warning": {
               "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
               "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
@@ -123,15 +122,11 @@
             "shipping": {
               "one": "{count} kargo indirimi",
               "other": "{count} kargo indirimi"
-            },
-            "productOther": {
-              "one": "Diğer {count} ürün indirimi",
-              "other": "Diğer {count} ürün indirimi"
             }
           },
           "info": {
-            "one": "{discountCountLink} indirim birleştirilmek üzere ayarlanmış durumda.",
-            "other": "{discountCountLink} indirim birleştirilmek üzere ayarlanmış durumda."
+            "one": "{discountCountLink} birleştirilmek üzere ayarlanmış durumda.",
+            "other": "{discountCountLink} birleştirilmek üzere ayarlanmış durumda."
           },
           "multipleEligibleDiscounts": "Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
         }
@@ -140,6 +135,11 @@
         "product": "ürün",
         "order": "sipariş",
         "shipping": "kargo"
+      },
+      "warning": {
+        "title": "Bazı kombinasyonlar büyük indirimlerle sonuçlanabilir",
+        "description": "Birkaç kombinasyonu test edin.  Toplam indirim çok büyükse hangi indirimlerin birleştirilebileceğini belirleyin. ",
+        "link": "Daha fazla bilgi edinin"
       }
     },
     "SummaryCard": {

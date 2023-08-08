@@ -55,7 +55,7 @@ describe('<HelpText />', () => {
       );
 
       expect(helpText).toContainReactText(
-        '3 other product discounts are currently set to combine.If an item is eligible for multiple discounts, only the largest discount will apply.',
+        '3 product discounts are set to combine.If an item is eligible for multiple discounts, only the largest will apply.',
       );
     });
   });
@@ -69,15 +69,15 @@ describe('<HelpText />', () => {
     it.each([
       [
         DiscountClass.Product,
-        'No product discounts are currently set to combine. To let customers use more than one discount, set up at least one product discount that combines with product discounts. Learn more',
+        'No product discounts are set to combine. To let customers use more than one discount, set up at least one product discount that combines with product discounts. Learn more',
       ],
       [
         DiscountClass.Order,
-        'No order discounts are currently set to combine. To let customers use more than one discount, set up at least one order discount that combines with order discounts. Learn more',
+        'No product discounts are set to combine. To let customers use more than one discount, set up at least one product discount that combines with order discounts. Learn more',
       ],
       [
         DiscountClass.Shipping,
-        'No shipping discounts are currently set to combine. To let customers use more than one discount, set up at least one shipping discount that combines with shipping discounts. Learn more',
+        'No product discounts are set to combine. To let customers use more than one discount, set up at least one product discount that combines with shipping discounts. Learn more',
       ],
     ])(
       'renders empty state content when no %s discounts are set to combine with current discount',

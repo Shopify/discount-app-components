@@ -76,7 +76,6 @@
       "discountNameFilled": "kan kombineres med:",
       "discountNameNotFilled": "Denne {discountClass}-rabatten kan kombineres med:",
       "options": {
-        "productLabelOther": "Andre produktrabatter",
         "productLabel": "Produktrabatter",
         "orderLabel": "Bestillingsrabatter",
         "shippingLabel": "Fraktrabatter"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Ingen produktrabatter er satt til å kombineres for øyeblikket.",
+            "title": "Ingen produktrabatter kan kombineres.",
             "warning": {
               "withproduct": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én produktrabatt som kan kombineres med produktrabatter.",
               "withorder": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én produktrabatt som kan kombineres med bestillingsrabatter.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Ingen bestillingsrabatter er satt til å kombineres for øyeblikket.",
+            "title": "Ingen bestillingsrabatter kan kombineres.",
             "warning": {
               "withproduct": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én bestillingsrabatt som kan kombineres med produktrabatter.",
               "withorder": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én bestillingsrabatt som kan kombineres med bestillingsrabatter.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Ingen fraktrabatter er satt til å kombineres for øyeblikket.",
+            "title": "Ingen fraktrabatter kan kombineres.",
             "warning": {
               "withproduct": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én fraktrabatt som kan kombineres med produktrabatter.",
               "withorder": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én fraktrabatt som kan kombineres med bestillingsrabatter.",
@@ -123,23 +122,24 @@
             "shipping": {
               "one": "{count} fraktrabatt",
               "other": "{count} fraktrabatter"
-            },
-            "productOther": {
-              "one": "{count} annen produktrabatt",
-              "other": "{count} andre produktrabatter"
             }
           },
           "info": {
-            "one": "{discountCountLink} er for øyeblikket satt til å kombineres.",
-            "other": "{discountCountLink} er for øyeblikket satt til å kombineres."
+            "one": "{discountCountLink} kan kombineres.",
+            "other": "{discountCountLink} kan kombineres."
           },
-          "multipleEligibleDiscounts": "Hvis en vare er berettiget for flere rabatter vil bare den største rabatten gjelde."
+          "multipleEligibleDiscounts": "Hvis en vare er berettiget for flere rabatter, vil bare den største gjelde."
         }
       },
       "discountClass": {
         "product": "produkt",
         "order": "bestilling",
         "shipping": "frakt"
+      },
+      "warning": {
+        "title": "Noen kombinasjoner kan føre til store rabatter",
+        "description": "Test noen kombinasjoner. Hvis totalrabatten er for stor, kan du justere hvilke rabatter som kan kombineres.",
+        "link": "Les mer"
       }
     },
     "SummaryCard": {

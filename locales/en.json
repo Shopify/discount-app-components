@@ -104,7 +104,6 @@
       "discountNameFilled": "can be combined with:",
       "discountNameNotFilled": "This {discountClass} discount can be combined with:",
       "options": {
-        "productLabelOther": "Other product discounts",
         "productLabel": "Product discounts",
         "orderLabel": "Order discounts",
         "shippingLabel": "Shipping discounts"
@@ -114,10 +113,15 @@
         "order": "order",
         "shipping": "shipping"
       },
+      "warning": {
+        "title": "Some combinations can result in large discounts",
+        "description": "Test a few combinations. If the total discount is too large, adjust which discounts can combine.",
+        "link": "Learn more"
+      },
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "No product discounts are currently set to combine.",
+            "title": "No product discounts are set to combine.",
             "warning": {
               "withproduct": "To let customers use more than one discount, set up at least one product discount that combines with product discounts.",
               "withorder": "To let customers use more than one discount, set up at least one product discount that combines with order discounts.",
@@ -125,7 +129,7 @@
             }
           },
           "order": {
-            "title": "No order discounts are currently set to combine.",
+            "title": "No order discounts are set to combine.",
             "warning": {
               "withproduct": "To let customers use more than one discount, set up at least one order discount that combines with product discounts.",
               "withorder": "To let customers use more than one discount, set up at least one order discount that combines with order discounts.",
@@ -133,7 +137,7 @@
             }
           },
           "shipping": {
-            "title": "No shipping discounts are currently set to combine.",
+            "title": "No shipping discounts are set to combine.",
             "warning": {
               "withproduct": "To let customers use more than one discount, set up at least one shipping discount that combines with product discounts.",
               "withorder": "To let customers use more than one discount, set up at least one shipping discount that combines with order discounts.",
@@ -144,18 +148,14 @@
         },
         "combinations": {
           "info": {
-            "one": "{discountCountLink} is currently set to combine.",
-            "other": "{discountCountLink} are currently set to combine."
+            "one": "{discountCountLink} is set to combine.",
+            "other": "{discountCountLink} are set to combine."
           },
-          "multipleEligibleDiscounts": "If an item is eligible for multiple discounts, only the largest discount will apply.",
+          "multipleEligibleDiscounts": "If an item is eligible for multiple discounts, only the largest will apply.",
           "counts": {
             "product": {
               "one": "{count} product discount",
               "other": "{count} product discounts"
-            },
-            "productOther": {
-              "one": "{count} other product discount",
-              "other": "{count} other product discounts"
             },
             "order": {
               "one": "{count} order discount",

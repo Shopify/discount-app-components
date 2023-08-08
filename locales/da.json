@@ -76,7 +76,6 @@
       "discountNameFilled": "kan kombineres med:",
       "discountNameNotFilled": "denne {discountClass}-rabat kan kombineres med:",
       "options": {
-        "productLabelOther": "Andre produktrabatter",
         "productLabel": "Produktrabatter",
         "orderLabel": "Ordrerabatter",
         "shippingLabel": "Leveringsrabatter"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Ingen produktrabatter er opsat til at blive kombineret på nuværende tidspunkt.",
+            "title": "Ingen produktrabatter er indstillet til at blive kombineret.",
             "warning": {
               "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med produktrabatter.",
               "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med ordrerabatter.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Ingen ordrerabatter er opsat til at blive kombineret på nuværende tidspunkt.",
+            "title": "Ingen bestillingsrabatter er indstillet til at blive kombineret.",
             "warning": {
               "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med produktrabatter.",
               "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med ordrerabatter.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Ingen leveringsrabatter er opsat til at blive kombineret på nuværende tidspunkt.",
+            "title": "Ingen forsendelsesrabatter er indstillet til at blive kombineret.",
             "warning": {
               "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med produktrabatter.",
               "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med ordrerabatter.",
@@ -123,15 +122,11 @@
             "shipping": {
               "one": "{count} leveringsrabat",
               "other": "{count} leveringsrabatter"
-            },
-            "productOther": {
-              "one": "{count} anden produktrabat",
-              "other": "{count} andre produktrabatter"
             }
           },
           "info": {
-            "one": "{discountCountLink} er opsat til at blive kombineret på nuværende tidspunkt.",
-            "other": "{discountCountLink} er opsat til at blive kombineret på nuværende tidspunkt."
+            "one": "{discountCountLink} er indstillet til at blive kombineret.",
+            "other": "{discountCountLink} er indstillet til at blive kombineret."
           },
           "multipleEligibleDiscounts": "Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat."
         }
@@ -140,6 +135,11 @@
         "product": "produkt",
         "order": "ordre",
         "shipping": "levering"
+      },
+      "warning": {
+        "title": "Nogle kombinationer kan medføre betydelige rabatter",
+        "description": "Test nogle kombinationer. Hvis den samlede rabat er for stor, kan du justere, hvilke rabatter der kan kombineres.",
+        "link": "Få mere at vide"
       }
     },
     "SummaryCard": {

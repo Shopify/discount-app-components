@@ -76,7 +76,6 @@
       "discountNameFilled": "kan kombineras med:",
       "discountNameNotFilled": "Denna {discountClass}-rabatt kan kombineras med:",
       "options": {
-        "productLabelOther": "Andra produktrabatter",
         "productLabel": "Produktrabatter",
         "orderLabel": "Orderrabatter",
         "shippingLabel": "Leveransrabatter"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "För tillfället är inga produktrabatter inställda för att kombineras.",
+            "title": "Inga produktrabatter har ställts in till att kombineras.",
             "warning": {
               "withproduct": "För att låta kunder använda mer än en rabatt, ställ in minst en produktrabatt som kombineras med produktrabatter.",
               "withorder": "För att låta kunder använda mer än en rabatt, ställ in minst en produktrabatt som kombineras med orderrabatter.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "För tillfället är inga orderrabatter inställda för att kombineras.",
+            "title": "Inga orderrabatter har ställts in till att kombineras.",
             "warning": {
               "withproduct": "För att låta kunder använda mer än en rabatt, ställ in minst en orderrabatt som kombineras med produktrabatter.",
               "withorder": "För att låta kunder använda mer än en rabatt, ställ in minst en orderrabatt som kombineras med orderrabatter.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "För tillfället är inga leveransrabatter inställda för att kombineras.",
+            "title": "Inga leveransrabatter har ställts in till att kombineras.",
             "warning": {
               "withproduct": "För att låta kunder använda mer än en rabatt, ställ in minst en leveransrabatt som kombineras med produktrabatter.",
               "withorder": "För att låta kunder använda mer än en rabatt, ställ in minst en leveransrabatt som kombineras med orderrabatter.",
@@ -123,15 +122,11 @@
             "shipping": {
               "one": "{count} leveransrabatt",
               "other": "{count} leveransrabatter"
-            },
-            "productOther": {
-              "one": "{count} till produktrabatt",
-              "other": "{count} andra produktrabatter"
             }
           },
           "info": {
-            "one": "{discountCountLink} är inställd för att kombineras.",
-            "other": "{discountCountLink} är inställda för att kombineras."
+            "one": "{discountCountLink} har ställts in till att kombineras.",
+            "other": "{discountCountLink} har ställts in till att kombineras."
           },
           "multipleEligibleDiscounts": "Om en artikel är berättigad till flera rabatter kommer endast den största rabatten att gälla."
         }
@@ -140,6 +135,11 @@
         "product": "produkt",
         "order": "order",
         "shipping": "leverans"
+      },
+      "warning": {
+        "title": "Vissa kombinationer kan leda till stora rabatter",
+        "description": "Testa några kombinationer. Om den totala rabatten blir för stor kan du justera vilka rabatter som kan kombineras.",
+        "link": "Mer information"
       }
     },
     "SummaryCard": {

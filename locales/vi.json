@@ -76,7 +76,6 @@
       "discountNameFilled": "có thể kết hợp với:",
       "discountNameNotFilled": "Ưu đãi giảm giá cho {discountClass} này có thể kết hợp với:",
       "options": {
-        "productLabelOther": "Ưu đãi giảm giá cho sản phẩm khác",
         "productLabel": "Ưu đãi giảm giá sản phẩm",
         "orderLabel": "Ưu đãi giảm giá đơn hàng",
         "shippingLabel": "Ưu đãi giảm giá vận chuyển"
@@ -85,7 +84,7 @@
       "HelpText": {
         "emptyState": {
           "product": {
-            "title": "Hiện không có ưu đãi giảm giá sản phẩm nào được thiết lập để kết hợp.",
+            "title": "Không có ưu đãi giảm giá sản phẩm nào được thiết lập để kết hợp.",
             "warning": {
               "withproduct": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá sản phẩm kết hợp với các ưu đãi giảm giá sản phẩm.",
               "withorder": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá sản phẩm kết hợp với các ưu đãi giảm giá đơn hàng.",
@@ -93,7 +92,7 @@
             }
           },
           "order": {
-            "title": "Hiện không có ưu đãi giảm giá đơn hàng nào được thiết lập để kết hợp.",
+            "title": "Không có ưu đãi giảm giá đơn hàng nào được thiết lập để kết hợp.",
             "warning": {
               "withproduct": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá đơn hàng kết hợp với các ưu đãi giảm giá sản phẩm.",
               "withorder": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá đơn hàng kết hợp với các ưu đãi giảm giá đơn hàng.",
@@ -101,7 +100,7 @@
             }
           },
           "shipping": {
-            "title": "Hiện không có ưu đãi giảm giá vận chuyển nào được thiết lập để kết hợp.",
+            "title": "Không có ưu đãi giảm giá vận chuyển nào được thiết lập để kết hợp.",
             "warning": {
               "withproduct": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá vận chuyển kết hợp với các ưu đãi giảm giá sản phẩm.",
               "withorder": "Để khách hàng có thể sử dụng nhiều ưu đãi giảm giá, hãy thiết lập ít nhất một ưu đãi giảm giá vận chuyển kết hợp với các ưu đãi giảm giá đơn hàng.",
@@ -123,15 +122,11 @@
             "shipping": {
               "one": "{count} ưu đãi giảm giá vận chuyển",
               "other": "{count} ưu đãi giảm giá vận chuyển"
-            },
-            "productOther": {
-              "one": "{count} ưu đãi giảm giá sản phẩm khác",
-              "other": "{count} ưu đãi giảm giá sản phẩm khác"
             }
           },
           "info": {
-            "one": "Hiện có {discountCountLink} được thiết lập để kết hợp.",
-            "other": "Hiện có {discountCountLink} được thiết lập để kết hợp."
+            "one": "{discountCountLink} được thiết lập để kết hợp.",
+            "other": "{discountCountLink} được thiết lập để kết hợp."
           },
           "multipleEligibleDiscounts": "Nếu mặt hàng đủ điều kiện áp dụng nhiều ưu đãi giảm giá thì chỉ áp dụng ưu đãi giảm giá lớn nhất."
         }
@@ -140,6 +135,11 @@
         "product": "sản phẩm",
         "order": "đơn hàng",
         "shipping": "vận chuyển"
+      },
+      "warning": {
+        "title": "Một số tổ hợp có thể đem lại ưu đãi giảm giá lớn",
+        "description": "Thử nghiệm một số tổ hợp. Nếu tổng số tiền giảm giá quá lớn, hãy điều chỉnh các ưu đãi giảm giá có thể kết hợp.",
+        "link": "Tìm hiểu thêm"
       }
     },
     "SummaryCard": {
