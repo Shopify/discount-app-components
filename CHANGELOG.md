@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 1.2.0
+
+### Minor Changes
+
+- [#84](https://github.com/Shopify/discount-app-components/pull/84) [`7a83719`](https://github.com/Shopify/discount-app-components/commit/7a83719e312d3dd26bb934c339ff7effbf914b27) Thanks [@davejcameron](https://github.com/davejcameron)! - Add support for new combination options
+
 ## 1.1.0
 
 ### Minor Changes
