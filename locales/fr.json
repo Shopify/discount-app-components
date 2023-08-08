@@ -125,9 +125,6 @@
               "one": "{count} réduction sur les frais d’expédition",
               "other": "{count} réductions sur les frais d’expédition",
               "many": "{count} réductions sur les frais d’expédition"
-            },
-            "productOther": {
-              "many": "{count} autres réductions sur un produit"
             }
           },
           "info": {
