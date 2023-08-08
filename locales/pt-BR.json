@@ -125,9 +125,6 @@
               "one": "{count} desconto de frete",
               "other": "{count} descontos de frete",
               "many": "{count} descontos de frete"
-            },
-            "productOther": {
-              "many": "{count} outros descontos no produto"
             }
           },
           "info": {

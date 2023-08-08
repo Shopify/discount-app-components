@@ -128,10 +128,6 @@
               "other": "{count} rabaty(-ów) na wysyłkę",
               "few": "{count} rabaty(-ów) na wysyłkę",
               "many": "{count} rabaty(-ów) na wysyłkę"
-            },
-            "productOther": {
-              "few": "{count} inne(-ych) rabaty(-ów) na produkt",
-              "many": "{count} inne(-ych) rabaty(-ów) na produkt"
             }
           },
           "info": {

@@ -128,10 +128,6 @@
               "other": "{count} slev(y) na dopravu",
               "few": "{count} slev(y) na dopravu",
               "many": "{count} slev(y) na dopravu"
-            },
-            "productOther": {
-              "few": "další slevy na produkty ({count})",
-              "many": "další slevy na produkty ({count})"
             }
           },
           "info": {

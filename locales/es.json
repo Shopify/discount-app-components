@@ -125,9 +125,6 @@
               "one": "{count} descuento en envíos",
               "other": "{count} descuentos en envíos",
               "many": "{count} descuentos en envíos"
-            },
-            "productOther": {
-              "many": "{count} descuentos de producto más"
             }
           },
           "info": {
