@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "值",
+    "percentageButton": "百分比",
+    "fixedAmountButton": "固定金额",
+    "purchaseType": {
+      "title": "购买类型",
+      "choiceListTitle": "选择购买类型",
+      "choices": {
+        "oneTime": "一次性购买",
+        "subscription": "订阅",
+        "both": "两者"
+      },
+      "warning": {
+        "product": "只有一次性购买支持产品折扣。",
+        "order": "只有一次性购买支持订单折扣。",
+        "shipping": "只有一次性购买支持运费折扣。"
+      }
+    },
+    "discountValueLabel": "折扣额",
+    "oncePerOrder": "每个订单仅使用一次折扣",
+    "oncePerOrderHelpText": "如果未选择，订单中每件符合条件的商品都将减去此金额。",
+    "oncePerOrderHelpTextWithAmount": "如果未选择，订单中每件符合条件的商品都将减去 {fixedAmountValue}。"
+  }
+}

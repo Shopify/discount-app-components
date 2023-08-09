@@ -1,0 +1,13 @@
+{
+  "title": "적용 대상",
+  "subscription": {
+    "specificCollections": "특정 컬렉션 내 모든 가입 제품",
+    "specificProducts": "특정 가입 제품"
+  },
+  "oneTime": {
+    "specificCollections": "특정 컬렉션",
+    "specificProducts": "특정 제품"
+  },
+  "productResourcesName": "제품",
+  "collectionResourcesName": "컬렉션"
+}

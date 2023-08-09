@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "Hodnota",
+    "percentageButton": "Procento",
+    "fixedAmountButton": "Fixní částka",
+    "purchaseType": {
+      "title": "Typ nákupu",
+      "choiceListTitle": "Vyberte typ nákupu",
+      "choices": {
+        "oneTime": "Jednorázový nákup",
+        "subscription": "Předplatné",
+        "both": "Oba typy"
+      },
+      "warning": {
+        "product": "Slevy na produkty jsou podporovány pouze u jednorázových nákupů.",
+        "order": "Slevy na objednávky jsou podporovány pouze u jednorázových nákupů.",
+        "shipping": "Slevy na dopravu jsou podporovány pouze u jednorázových nákupů."
+      }
+    },
+    "discountValueLabel": "Hodnota slevy",
+    "oncePerOrder": "Uplatnit slevu na objednávku pouze jednou",
+    "oncePerOrderHelpText": "Pokud není možnost vybrána, odečte se příslušná částka od každé položky v objednávce, která splňuje dané podmínky.",
+    "oncePerOrderHelpTextWithAmount": "Pokud není možnost vybrána, odečte se {fixedAmountValue} od každé položky v objednávce, která splňuje dané podmínky."
+  }
+}

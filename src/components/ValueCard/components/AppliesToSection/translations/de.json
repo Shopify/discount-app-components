@@ -1,0 +1,13 @@
+{
+  "title": "Gilt für",
+  "subscription": {
+    "specificCollections": "Alle Abonnementprodukte in einer bestimmten Kategorie",
+    "specificProducts": "Bestimmte Abonnementprodukte"
+  },
+  "oneTime": {
+    "specificCollections": "Bestimmte Kategorien",
+    "specificProducts": "Bestimmte Produkte"
+  },
+  "productResourcesName": "Produkte",
+  "collectionResourcesName": "Kategorien"
+}

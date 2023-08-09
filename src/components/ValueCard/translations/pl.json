@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "Wartość",
+    "percentageButton": "Procent",
+    "fixedAmountButton": "Ustalona kwota",
+    "purchaseType": {
+      "title": "Typ zakupu",
+      "choiceListTitle": "Wybierz typ zakupu",
+      "choices": {
+        "oneTime": "Zakup jednorazowy",
+        "subscription": "Subskrypcja",
+        "both": "Oba"
+      },
+      "warning": {
+        "product": "Rabaty na produkty są obsługiwane tylko w przypadku jednorazowych zakupów.",
+        "order": "Rabaty na zamówienia są obsługiwane tylko w przypadku jednorazowych zakupów.",
+        "shipping": "Rabaty na wysyłkę są obsługiwane tylko w przypadku jednorazowych zakupów."
+      }
+    },
+    "discountValueLabel": "Wartość rabatu",
+    "oncePerOrder": "Rabat należy stosować tylko raz na zamówienie",
+    "oncePerOrderHelpText": "Jeśli nie wybrano, kwota zostanie odjęta od każdej kwalifikującej się pozycji w zamówieniu.",
+    "oncePerOrderHelpTextWithAmount": "Jeśli nie wybrano, kwota {fixedAmountValue} zostanie odjęta od każdej kwalifikującej się pozycji w zamówieniu."
+  }
+}

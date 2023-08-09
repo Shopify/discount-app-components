@@ -1,0 +1,13 @@
+{
+  "title": "Áp dụng cho",
+  "subscription": {
+    "specificCollections": "Tất cả sản phẩm gói đăng ký trong một bộ sưu tập cụ thể",
+    "specificProducts": "Sản phẩm gói đăng ký cụ thể"
+  },
+  "oneTime": {
+    "specificCollections": "Bộ sưu tập cụ thể",
+    "specificProducts": "Sản phẩm cụ thể"
+  },
+  "productResourcesName": "sản phẩm",
+  "collectionResourcesName": "bộ sưu tập"
+}

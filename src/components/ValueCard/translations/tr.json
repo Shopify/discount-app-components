@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "Değer",
+    "percentageButton": "Yüzde",
+    "fixedAmountButton": "Sabit tutar",
+    "purchaseType": {
+      "title": "Satın alım türü",
+      "choiceListTitle": "Satın alım türünü seçin",
+      "choices": {
+        "oneTime": "Tek seferlik satın alım",
+        "subscription": "Abonelik",
+        "both": "Her ikisi de"
+      },
+      "warning": {
+        "product": "Ürün indirimleri yalnızca tek seferlik satın alımlarda desteklenir.",
+        "order": "Sipariş indirimleri yalnızca tek seferlik satın alımlarda desteklenir.",
+        "shipping": "Kargo indirimleri yalnızca tek seferlik satın alımlarda desteklenir."
+      }
+    },
+    "discountValueLabel": "İndirim değeri",
+    "oncePerOrder": "Her sipariş için yalnızca bir kez indirim uygula",
+    "oncePerOrderHelpText": "Seçilmezse bu tutar bir siparişteki her uygun üründen çıkarılır.",
+    "oncePerOrderHelpTextWithAmount": "Seçilmezse {fixedAmountValue} bir siparişteki her uygun üründen çıkarılır."
+  }
+}

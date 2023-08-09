@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "値",
+    "percentageButton": "割引率",
+    "fixedAmountButton": "定額",
+    "purchaseType": {
+      "title": "購入タイプ",
+      "choiceListTitle": "購入タイプを選択する",
+      "choices": {
+        "oneTime": "一度限りの購入",
+        "subscription": "サブスクリプション",
+        "both": "両方"
+      },
+      "warning": {
+        "product": "商品のディスカウントは、一度限りの購入のみでサポートされています。",
+        "order": "注文のディスカウントは、一度限りの購入のみでサポートされています。",
+        "shipping": "配送のディスカウントは、一度限りの購入のみでサポートされています。"
+      }
+    },
+    "discountValueLabel": "ディスカウントの価格",
+    "oncePerOrder": "注文ごとにディスカウントを1回のみ適用する",
+    "oncePerOrderHelpText": "選択されていない場合、金額は注文内の各対象アイテムから差し引かれます。",
+    "oncePerOrderHelpTextWithAmount": "選択されていない場合、{fixedAmountValue}は注文内の各対象アイテムから差し引かれます。"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "Vztahuje se na",
+  "subscription": {
+    "specificCollections": "Všechny produkty předplatného ve specifické kolekci",
+    "specificProducts": "Specifické produkty předplatného"
+  },
+  "oneTime": {
+    "specificCollections": "Specifické kolekce",
+    "specificProducts": "Specifické produkty"
+  },
+  "productResourcesName": "produkty",
+  "collectionResourcesName": "kolekce"
+}

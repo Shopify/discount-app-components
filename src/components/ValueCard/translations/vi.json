@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "Giá trị",
+    "percentageButton": "Phần trăm",
+    "fixedAmountButton": "Số tiền cố định",
+    "purchaseType": {
+      "title": "Loại đơn mua",
+      "choiceListTitle": "Chọn loại đơn mua",
+      "choices": {
+        "oneTime": "Đơn mua một lần",
+        "subscription": "Gói đăng ký",
+        "both": "Cả hai"
+      },
+      "warning": {
+        "product": "Ưu đãi giảm giá sản phẩm chỉ được hỗ trợ với đơn mua một lần.",
+        "order": "Ưu đãi giảm giá đơn hàng chỉ được hỗ trợ với đơn mua một lần.",
+        "shipping": "Ưu đãi giảm giá vận chuyển chỉ được hỗ trợ với đơn mua một lần."
+      }
+    },
+    "discountValueLabel": "Giá trị giảm giá",
+    "oncePerOrder": "Chỉ áp dụng ưu đãi giảm giá một lần mỗi đơn hàng",
+    "oncePerOrderHelpText": "Nếu không được chọn, số lượng sẽ bị loại bỏ khỏi các mặt hàng đủ điều kiện trong đơn hàng.",
+    "oncePerOrderHelpTextWithAmount": "Nếu không được chọn, {fixedAmountValue} sẽ bị loại bỏ khỏi các mặt hàng đủ điều kiện trong đơn hàng."
+  }
+}

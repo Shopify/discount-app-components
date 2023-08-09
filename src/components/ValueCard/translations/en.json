@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "Value",
+    "percentageButton": "Percentage",
+    "fixedAmountButton": "Fixed amount",
+    "purchaseType": {
+      "title": "Purchase type",
+      "choiceListTitle": "Select purchase type",
+      "choices": {
+        "oneTime": "One-time purchase",
+        "subscription": "Subscription",
+        "both": "Both"
+      },
+      "warning": {
+        "product": "Product discounts are only supported with one-time purchases.",
+        "order": "Order discounts are only supported with one-time purchases.",
+        "shipping": "Shipping discounts are only supported with one-time purchases."
+      }
+    },
+    "discountValueLabel": "Discount value",
+    "oncePerOrder": "Only apply discount once per order",
+    "oncePerOrderHelpText": "If not selected, the amount will be taken off each eligible item in an order.",
+    "oncePerOrderHelpTextWithAmount": "If not selected, {fixedAmountValue} will be taken off each eligible item in an order."
+  }
+}

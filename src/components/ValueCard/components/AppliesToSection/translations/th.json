@@ -1,0 +1,13 @@
+{
+  "title": "ใช้กับ",
+  "subscription": {
+    "specificCollections": "สินค้าแบบสมัครใช้งานทั้งหมดในคอลเลกชันเฉพาะรายการ",
+    "specificProducts": "สินค้าแบบสมัครใช้งานเฉพาะ"
+  },
+  "oneTime": {
+    "specificCollections": "คอลเลกชันเฉพาะ",
+    "specificProducts": "สินค้าเฉพาะ"
+  },
+  "productResourcesName": "สินค้า",
+  "collectionResourcesName": "คอลเลกชัน"
+}

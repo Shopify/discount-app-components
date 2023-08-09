@@ -1,0 +1,13 @@
+{
+  "title": "套用至",
+  "subscription": {
+    "specificCollections": "特定商品系列中的所有預訂商品",
+    "specificProducts": "特定預訂商品"
+  },
+  "oneTime": {
+    "specificCollections": "特定商品系列",
+    "specificProducts": "特定商品"
+  },
+  "productResourcesName": "商品",
+  "collectionResourcesName": "商品系列"
+}

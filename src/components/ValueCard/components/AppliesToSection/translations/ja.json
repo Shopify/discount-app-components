@@ -1,0 +1,13 @@
+{
+  "title": "適用されます",
+  "subscription": {
+    "specificCollections": "特定のコレクション内のサブスクリプション商品すべて",
+    "specificProducts": "特定のサブスクリプション商品"
+  },
+  "oneTime": {
+    "specificCollections": "特定のコレクション",
+    "specificProducts": "特定の商品"
+  },
+  "productResourcesName": "商品",
+  "collectionResourcesName": "コレクション"
+}

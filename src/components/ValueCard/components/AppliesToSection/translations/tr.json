@@ -1,0 +1,13 @@
+{
+  "title": "Geçerlilik:",
+  "subscription": {
+    "specificCollections": "Belirli bir koleksiyondaki tüm abonelik ürünleri",
+    "specificProducts": "Belirli abonelik ürünleri"
+  },
+  "oneTime": {
+    "specificCollections": "Belirli koleksiyonlar",
+    "specificProducts": "Belirli ürünler"
+  },
+  "productResourcesName": "ürünler",
+  "collectionResourcesName": "koleksiyonlar"
+}

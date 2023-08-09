@@ -1,0 +1,13 @@
+{
+  "title": "适用于",
+  "subscription": {
+    "specificCollections": "特定产品系列中的所有订阅产品",
+    "specificProducts": "特定订阅产品"
+  },
+  "oneTime": {
+    "specificCollections": "特定产品系列",
+    "specificProducts": "特定产品"
+  },
+  "productResourcesName": "产品",
+  "collectionResourcesName": "产品系列"
+}

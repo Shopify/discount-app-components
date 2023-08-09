@@ -1,0 +1,13 @@
+{
+  "title": "Válido para",
+  "subscription": {
+    "specificCollections": "Todos os produtos de assinatura em uma coleção específica",
+    "specificProducts": "Produtos de assinatura específicos"
+  },
+  "oneTime": {
+    "specificCollections": "Coleções específicas",
+    "specificProducts": "Produtos específicos"
+  },
+  "productResourcesName": "produtos",
+  "collectionResourcesName": "coleções"
+}

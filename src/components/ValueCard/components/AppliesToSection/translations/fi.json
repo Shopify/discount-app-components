@@ -1,0 +1,13 @@
+{
+  "title": "Koskee:",
+  "subscription": {
+    "specificCollections": "Kaikki tietyn kokoelman tilaustuotteet",
+    "specificProducts": "Tietyt tilaustuotteet"
+  },
+  "oneTime": {
+    "specificCollections": "Tietyt kokoelmat",
+    "specificProducts": "Tietyt tuotteet"
+  },
+  "productResourcesName": "tuotteet",
+  "collectionResourcesName": "kokoelmat"
+}

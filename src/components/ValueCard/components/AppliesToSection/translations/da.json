@@ -1,0 +1,13 @@
+{
+  "title": "Gælder for",
+  "subscription": {
+    "specificCollections": "Alle abonnementsprodukter i en specifik kollektion",
+    "specificProducts": "Specifikke abonnementsprodukter"
+  },
+  "oneTime": {
+    "specificCollections": "Specifikke kollektioner",
+    "specificProducts": "Specifikke produkter"
+  },
+  "productResourcesName": "produkter",
+  "collectionResourcesName": "kollektioner"
+}

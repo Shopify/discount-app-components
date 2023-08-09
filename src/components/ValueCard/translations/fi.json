@@ -1,0 +1,25 @@
+{
+  "ValueCard": {
+    "title": "Arvo",
+    "percentageButton": "Prosentuaalinen summa",
+    "fixedAmountButton": "Kiinteä summa",
+    "purchaseType": {
+      "title": "Ostostyyppi",
+      "choiceListTitle": "Valitse ostostyyppi",
+      "choices": {
+        "oneTime": "Kertaostos",
+        "subscription": "Tilaus",
+        "both": "Molemmat"
+      },
+      "warning": {
+        "product": "Tuotetarjouksia tuetaan vain kertaostoksissa.",
+        "order": "Tilaustarjouksia tuetaan vain kertaostoksissa.",
+        "shipping": "Toimitustarjouksia tuetaan vain kertaostoksissa."
+      }
+    },
+    "discountValueLabel": "Alennuksen arvo",
+    "oncePerOrder": "Käytä alennusta vain kerran tilausta kohti",
+    "oncePerOrderHelpText": "Jos tätä ei valita, summa vähennetään tilauksen jokaisesta hyväksyttävästä tuotteesta.",
+    "oncePerOrderHelpTextWithAmount": "Jos tätä ei valita, tilauksen jokaisesta hyväksyttävästä tuotteesta vähennetään {fixedAmountValue}."
+  }
+}
