@@ -77,4 +77,31 @@ describe('<Combinations />', () => {
       );
     },
   );
+
+  it.each`
+    combinesWithProduct | combinesWithOrder | combinesWithShipping | selectedCombinations
+    ${true}             | ${true}           | ${true}              | ${[DiscountClass.Product, DiscountClass.Order, DiscountClass.Shipping]}
+  `(
+    'renders combination summary when three combination options are set',
+    ({
+      combinesWithProduct,
+      combinesWithOrder,
+      combinesWithShipping,
+      selectedCombinations,
+    }) => {
+      const combinations = mountWithApp(
+        <Combinations
+          combinesWith={{
+            productDiscounts: combinesWithProduct,
+            orderDiscounts: combinesWithOrder,
+            shippingDiscounts: combinesWithShipping,
+          }}
+        />,
+      );
+
+      expect(combinations).toContainReactText(
+        `Combines with ${selectedCombinations[0].toLowerCase()}, ${selectedCombinations[1].toLowerCase()}, and ${selectedCombinations[2].toLowerCase()} discounts`,
+      );
+    },
+  );
 });
