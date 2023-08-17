@@ -86,23 +86,23 @@ yarn add @shopify/discount-app-components
     }
     ```
 
- Note: you may need to rename the discounts AppProvider:
+_**Note**: you may need to rename the discounts AppProvider to avoid clashing with another AppProvider component:_
 
-    ```JavaScript
-    
-    import {AppProvider as DiscountAppComponentsProvider } from '@shopify/discount-app-components'
-    
-    ...
-    
-    <DiscountAppComponentsProvider locale="en-US" ianaTimezone="America/Los_Angeles">
-      <Page title="Example app">
-        {/* Add your discount components here */}
-      </Page>
-    </DiscountAppComponentsProvider>
-    
-    ...
-    
-    ```
+```js
+import {AppProvider as DiscountAppComponentsProvider} from '@shopify/discount-app-components';
+```
+
+_And in your app root:_
+
+```js
+<DiscountAppComponentsProvider
+  locale="en-US"
+  ianaTimezone="America/Los_Angeles"
+>
+  <Page title="Example app">{/* Add your discount components here */}</Page>
+</DiscountAppComponentsProvider>
+```
+
 ---
 
 ## Development
