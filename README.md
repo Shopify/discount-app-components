@@ -74,6 +74,7 @@ yarn add @shopify/discount-app-components
       return (
         <AppBridgeProvider config={/* pass your app bridge config here */}>
           <PolarisAppProvider i18n={enPolarisTranslations}>
+            {/* discount-app-component specific AppProvider */}
             <AppProvider locale="en-US" ianaTimezone="America/Los_Angeles">
               <Page title="Example app">
                 {/* Add your discount components here */}
@@ -85,6 +86,23 @@ yarn add @shopify/discount-app-components
     }
     ```
 
+    You may need to rename the discounts AppProvider:
+
+```JavaScript
+
+import {AppProvider as DiscountAppComponentsProvider } from '@shopify/discount-app-components'
+
+...
+
+<DiscountAppComponentsProvider locale="en-US" ianaTimezone="America/Los_Angeles">
+  <Page title="Example app">
+    {/* Add your discount components here */}
+  </Page>
+</DiscountAppComponentsProvider>
+
+...
+
+```
 ---
 
 ## Development
