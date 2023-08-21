@@ -1,9 +1,6 @@
 import React from 'react';
 import {mountWithApp} from 'tests/utilities';
-
 import {Combinations} from '../Combinations';
-
-import {DiscountClass} from '~/constants';
 
 describe('<Combinations />', () => {
   it('renders nothing when no combination options are set', () => {
@@ -21,17 +18,21 @@ describe('<Combinations />', () => {
   });
 
   it.each`
-    combinesWithProduct | combinesWithOrder | combinesWithShipping | selectedCombinations
-    ${true}             | ${false}          | ${false}             | ${[DiscountClass.Product]}
-    ${false}            | ${true}           | ${false}             | ${[DiscountClass.Order]}
-    ${false}            | ${false}          | ${true}              | ${[DiscountClass.Shipping]}
+    combinesWithProduct | combinesWithOrder | combinesWithShipping | expectedText
+    ${true}             | ${true}           | ${true}              | ${`Combines with product, order, and shipping discounts`}
+    ${true}             | ${true}           | ${false}             | ${`Combines with product and order discounts`}
+    ${true}             | ${false}          | ${true}              | ${`Combines with product and shipping discounts`}
+    ${false}            | ${true}           | ${true}              | ${`Combines with order and shipping discounts`}
+    ${true}             | ${false}          | ${false}             | ${`Combines with product discounts`}
+    ${false}            | ${true}           | ${false}             | ${`Combines with order discounts`}
+    ${false}            | ${false}          | ${true}              | ${`Combines with shipping discounts`}
   `(
-    'renders combination summary when one combination option is set',
+    'renders combination summary when at least one combination option is set',
     ({
       combinesWithProduct,
       combinesWithOrder,
       combinesWithShipping,
-      selectedCombinations,
+      expectedText,
     }) => {
       const combinations = mountWithApp(
         <Combinations
@@ -43,65 +44,7 @@ describe('<Combinations />', () => {
         />,
       );
 
-      expect(combinations).toContainReactText(
-        `Combines with ${selectedCombinations[0].toLowerCase()} discounts`,
-      );
-    },
-  );
-
-  it.each`
-    combinesWithProduct | combinesWithOrder | combinesWithShipping | selectedCombinations
-    ${true}             | ${true}           | ${false}             | ${[DiscountClass.Product, DiscountClass.Order]}
-    ${true}             | ${false}          | ${true}              | ${[DiscountClass.Product, DiscountClass.Shipping]}
-    ${false}            | ${true}           | ${true}              | ${[DiscountClass.Order, DiscountClass.Shipping]}
-  `(
-    'renders combination summary when two combination options are set',
-    ({
-      combinesWithProduct,
-      combinesWithOrder,
-      combinesWithShipping,
-      selectedCombinations,
-    }) => {
-      const combinations = mountWithApp(
-        <Combinations
-          combinesWith={{
-            productDiscounts: combinesWithProduct,
-            orderDiscounts: combinesWithOrder,
-            shippingDiscounts: combinesWithShipping,
-          }}
-        />,
-      );
-
-      expect(combinations).toContainReactText(
-        `Combines with ${selectedCombinations[0].toLowerCase()} and ${selectedCombinations[1].toLowerCase()} discounts`,
-      );
-    },
-  );
-
-  it.each`
-    combinesWithProduct | combinesWithOrder | combinesWithShipping | selectedCombinations
-    ${true}             | ${true}           | ${true}              | ${[DiscountClass.Product, DiscountClass.Order, DiscountClass.Shipping]}
-  `(
-    'renders combination summary when three combination options are set',
-    ({
-      combinesWithProduct,
-      combinesWithOrder,
-      combinesWithShipping,
-      selectedCombinations,
-    }) => {
-      const combinations = mountWithApp(
-        <Combinations
-          combinesWith={{
-            productDiscounts: combinesWithProduct,
-            orderDiscounts: combinesWithOrder,
-            shippingDiscounts: combinesWithShipping,
-          }}
-        />,
-      );
-
-      expect(combinations).toContainReactText(
-        `Combines with ${selectedCombinations[0].toLowerCase()}, ${selectedCombinations[1].toLowerCase()}, and ${selectedCombinations[2].toLowerCase()} discounts`,
-      );
+      expect(combinations).toContainReactText(expectedText);
     },
   );
 });
