@@ -1,5 +1,6 @@
 import React from 'react';
 import {mountWithApp} from 'tests/utilities';
+
 import {Combinations} from '../Combinations';
 
 describe('<Combinations />', () => {
