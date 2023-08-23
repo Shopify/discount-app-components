@@ -120,7 +120,7 @@ export function SummaryCard(props: SummaryCardProps) {
   );
 
   return (
-    <Card subdued title={i18n.translate('title', I18N_SCOPE)}>
+    <Card title={i18n.translate('title', I18N_SCOPE)}>
       <Card.Section>
         <Stack vertical spacing="loose">
           <Header {...props.header} />
