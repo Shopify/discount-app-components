@@ -189,7 +189,8 @@
           "productAndOrder": "Kombineres med produkt- og bestillingsrabatter",
           "productAndShipping": "Kombineres med produkt- og fraktrabatter",
           "orderAndShipping": "Kombineres med bestillings- og fraktrabatter"
-        }
+        },
+        "combinesAll": "Kombineres med rabatter på produkter, bestillinger og frakt"
       },
       "CustomerEligibility": {
         "allCustomers": "Alle kunder",
