@@ -102,7 +102,7 @@ const getDiscountData = (isEditing: boolean) => {
  */
 const appQuery = () => {
   return {
-    title: "My custom discount type",
+    title: 'My custom discount type',
   };
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider } from './foundation/Provider';
+import {Provider} from './foundation/Provider';
 import {Playground as PlaygroundInner} from './Playground';
 
 // eslint-disable-next-line import/no-default-export, import/no-anonymous-default-export
@@ -10,6 +10,10 @@ export default {
   },
 };
 
-const Playground = () => <Provider><PlaygroundInner /></Provider>;
+const Playground = () => (
+  <Provider>
+    <PlaygroundInner />
+  </Provider>
+);
 
 export {Playground};

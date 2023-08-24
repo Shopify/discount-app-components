@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider } from '../../foundation/Provider';
+import {Provider} from '../../foundation/Provider';
 import CountriesAndRatesCard from './CountriesAndRatesCardPattern';
 
 // eslint-disable-next-line import/no-default-export, import/no-anonymous-default-export
@@ -10,6 +10,10 @@ export default {
   },
 };
 
-const CountriesAndRatesCardPattern = () => <Provider><CountriesAndRatesCard /></Provider>;
+const CountriesAndRatesCardPattern = () => (
+  <Provider>
+    <CountriesAndRatesCard />
+  </Provider>
+);
 
 export {CountriesAndRatesCardPattern};

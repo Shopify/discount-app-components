@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider } from '../../foundation/Provider';
+import {Provider} from '../../foundation/Provider';
 import DiscountPage from './DiscountPagePattern';
 
 // eslint-disable-next-line import/no-default-export, import/no-anonymous-default-export
@@ -10,6 +10,10 @@ export default {
   },
 };
 
-const DiscountPagePattern = () => <Provider><DiscountPage /></Provider>;
+const DiscountPagePattern = () => (
+  <Provider>
+    <DiscountPage />
+  </Provider>
+);
 
 export {DiscountPagePattern};

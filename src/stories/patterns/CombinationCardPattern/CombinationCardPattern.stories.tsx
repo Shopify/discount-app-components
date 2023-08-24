@@ -30,6 +30,24 @@ const Template = (args) => (
   </Provider>
 );
 
-export const ProductDiscount = (args) => <Template discountDescriptor="My cool product discount" {...args} discountClass={DiscountClass.Product} />
-export const OrderDiscount = (args) => <Template discountDescriptor="My cool order discount" {...args} discountClass={DiscountClass.Order} />
-export const ShippingDiscount = (args) => <Template discountDescriptor="My cool shipping discount" {...args} discountClass={DiscountClass.Shipping} />
+export const ProductDiscount = (args) => (
+  <Template
+    discountDescriptor="My cool product discount"
+    {...args}
+    discountClass={DiscountClass.Product}
+  />
+);
+export const OrderDiscount = (args) => (
+  <Template
+    discountDescriptor="My cool order discount"
+    {...args}
+    discountClass={DiscountClass.Order}
+  />
+);
+export const ShippingDiscount = (args) => (
+  <Template
+    discountDescriptor="My cool shipping discount"
+    {...args}
+    discountClass={DiscountClass.Shipping}
+  />
+);
