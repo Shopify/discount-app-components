@@ -3,7 +3,10 @@ import {Page} from '@shopify/polaris';
 import {CombinationCard, DiscountClass} from '../../..';
 import {CombinableDiscountTypes} from '../../../types';
 
-export default function CombinationCardPattern({discountClass, discountDescriptor}) {
+export default function CombinationCardPattern({
+  discountClass,
+  discountDescriptor,
+}) {
   const [combinesWith, setCombinesWith] = useState<CombinableDiscountTypes>({
     orderDiscounts: false,
     productDiscounts: false,

@@ -18,11 +18,11 @@ module.exports = {
 
     config.resolve.alias = {
       ...config.resolve.alias,
-      "~": path.resolve(__dirname, "../src/"),
-      "@locales": path.resolve(__dirname, "../locales/"),
-      "locales_dynamic": path.resolve(__dirname, "../locales/"),
+      '~': path.resolve(__dirname, '../src/'),
+      '@locales': path.resolve(__dirname, '../locales/'),
+      locales_dynamic: path.resolve(__dirname, '../locales/'),
     };
-    config.resolve.extensions.push(".ts", ".tsx");
+    config.resolve.extensions.push('.ts', '.tsx');
 
     const extraRules = [
       {

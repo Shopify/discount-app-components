@@ -2,7 +2,12 @@ import React, {useState} from 'react';
 
 import {Page} from '@shopify/polaris';
 import {MinimumRequirementsCard} from '../../../../src';
-import {AppliesTo, DiscountClass, DiscountMethod, RequirementType} from '../../../constants';
+import {
+  AppliesTo,
+  DiscountClass,
+  DiscountMethod,
+  RequirementType,
+} from '../../../constants';
 import {CurrencyCode} from '@shopify/react-i18n';
 import {MethodCard} from '../../../components/MethodCard';
 

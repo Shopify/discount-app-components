@@ -1,5 +1,5 @@
 import React from 'react';
-import { Provider } from '../../foundation/Provider';
+import {Provider} from '../../foundation/Provider';
 import TimePicker from './TimePickerPattern';
 
 // eslint-disable-next-line import/no-default-export, import/no-anonymous-default-export
@@ -10,6 +10,10 @@ export default {
   },
 };
 
-const TimePickerPattern = () => <Provider><TimePicker /></Provider>;
+const TimePickerPattern = () => (
+  <Provider>
+    <TimePicker />
+  </Provider>
+);
 
 export {TimePickerPattern};
