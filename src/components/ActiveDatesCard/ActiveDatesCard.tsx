@@ -1,5 +1,11 @@
 import React from 'react';
-import {LegacyCard as Card, Checkbox, FormLayout} from '@shopify/polaris';
+import {
+  Card,
+  Checkbox,
+  FormLayout,
+  VerticalStack,
+  Text,
+} from '@shopify/polaris';
 import {isSameDay} from '@shopify/dates';
 import {useI18n} from '@shopify/react-i18n';
 
@@ -54,7 +60,6 @@ export function ActiveDatesCard({
 }: ActiveDatesCardProps) {
   const [i18n] = useI18n();
   const nowInUTC = new Date();
-
   const ianaTimezone = i18n.defaultTimezone!;
   const showEndDate = Boolean(endDate.value);
 
@@ -114,84 +119,86 @@ export function ActiveDatesCard({
   );
 
   return (
-    <Card
-      title={i18n.translate('DiscountAppComponents.ActiveDatesCard.title')}
-      sectioned
-    >
-      <FormLayout>
-        <FormLayout.Group>
-          <DatePicker
-            date={{
-              ...startDate,
-              onChange: handleStartDateTimeChange,
-            }}
-            weekStartsOn={weekStartsOn}
-            disabled={disabled}
-            label={i18n.translate(
-              'DiscountAppComponents.ActiveDatesCard.startDate',
-            )}
-            disableDatesBefore={nowInUTC.toISOString()}
-          />
-          <TimePicker
-            time={{
-              ...startDate,
-              onChange: handleStartDateTimeChange,
-            }}
-            disabled={disabled}
-            label={i18n.translate(
-              'DiscountAppComponents.ActiveDatesCard.startTime',
-              {
-                timezoneAbbreviation,
-              },
-            )}
-            disableTimesBefore={nowInUTC.toISOString()}
-          />
-        </FormLayout.Group>
-
-        <FormLayout.Group>
-          <Checkbox
-            label={i18n.translate(
-              'DiscountAppComponents.ActiveDatesCard.setEndDate',
-            )}
-            checked={showEndDate}
-            disabled={disabled}
-            onChange={handleShowEndDateChange}
-          />
-        </FormLayout.Group>
-
-        {showEndDate && endDate.value && (
+    <Card>
+      <VerticalStack gap="4">
+        <Text variant="headingMd" as="h2">
+          {i18n.translate('DiscountAppComponents.ActiveDatesCard.title')}
+        </Text>
+        <FormLayout>
           <FormLayout.Group>
             <DatePicker
               date={{
-                ...(endDate as Field<string>),
-                onChange: handleEndDateTimeChange,
-                error: endDateIsStartDate ? undefined : endDate.error,
+                ...startDate,
+                onChange: handleStartDateTimeChange,
               }}
               weekStartsOn={weekStartsOn}
               disabled={disabled}
               label={i18n.translate(
-                'DiscountAppComponents.ActiveDatesCard.endDate',
+                'DiscountAppComponents.ActiveDatesCard.startDate',
               )}
-              disableDatesBefore={disableEndDatesBefore.toISOString()}
+              disableDatesBefore={nowInUTC.toISOString()}
             />
             <TimePicker
               time={{
-                ...(endDate as Field<string>),
-                onChange: handleEndDateTimeChange,
-                error: endDateIsStartDate ? endDate.error : undefined,
+                ...startDate,
+                onChange: handleStartDateTimeChange,
               }}
               disabled={disabled}
               label={i18n.translate(
-                'DiscountAppComponents.ActiveDatesCard.endTime',
+                'DiscountAppComponents.ActiveDatesCard.startTime',
                 {
                   timezoneAbbreviation,
                 },
               )}
-              disableTimesBefore={disableEndDatesBefore.toISOString()}
+              disableTimesBefore={nowInUTC.toISOString()}
             />
           </FormLayout.Group>
-        )}
-      </FormLayout>
+
+          <FormLayout.Group>
+            <Checkbox
+              label={i18n.translate(
+                'DiscountAppComponents.ActiveDatesCard.setEndDate',
+              )}
+              checked={showEndDate}
+              disabled={disabled}
+              onChange={handleShowEndDateChange}
+            />
+          </FormLayout.Group>
+
+          {showEndDate && endDate.value && (
+            <FormLayout.Group>
+              <DatePicker
+                date={{
+                  ...(endDate as Field<string>),
+                  onChange: handleEndDateTimeChange,
+                  error: endDateIsStartDate ? undefined : endDate.error,
+                }}
+                weekStartsOn={weekStartsOn}
+                disabled={disabled}
+                label={i18n.translate(
+                  'DiscountAppComponents.ActiveDatesCard.endDate',
+                )}
+                disableDatesBefore={disableEndDatesBefore.toISOString()}
+              />
+              <TimePicker
+                time={{
+                  ...(endDate as Field<string>),
+                  onChange: handleEndDateTimeChange,
+                  error: endDateIsStartDate ? endDate.error : undefined,
+                }}
+                disabled={disabled}
+                label={i18n.translate(
+                  'DiscountAppComponents.ActiveDatesCard.endTime',
+                  {
+                    timezoneAbbreviation,
+                  },
+                )}
+                disableTimesBefore={disableEndDatesBefore.toISOString()}
+              />
+            </FormLayout.Group>
+          )}
+        </FormLayout>
+      </VerticalStack>
     </Card>
   );
 }
