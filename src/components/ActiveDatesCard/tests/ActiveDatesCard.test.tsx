@@ -20,7 +20,6 @@ describe('<ActiveDatesCard />', () => {
   };
 
   beforeEach(() => {
-    matchMedia.mock();
     jest.resetAllMocks();
   });
 
