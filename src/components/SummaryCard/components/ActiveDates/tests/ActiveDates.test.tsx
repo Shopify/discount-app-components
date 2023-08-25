@@ -1,5 +1,5 @@
 import React from 'react';
-import {clock} from '@shopify/jest-dom-mocks';
+import MockDate from 'mockdate';
 import {mountWithApp} from 'tests/utilities';
 
 import {ActiveDates} from '../ActiveDates';
@@ -14,11 +14,7 @@ describe('<ActiveDates />', () => {
   }
 
   beforeEach(() => {
-    clock.mock(todayInShopTimeZone);
-  });
-
-  afterEach(() => {
-    clock.restore();
+    MockDate.set(todayInShopTimeZone);
   });
 
   const mockProps = {

@@ -3,6 +3,7 @@ import {mockField, mountWithApp} from 'tests/utilities';
 import {Card, Checkbox, FormLayout, Text} from '@shopify/polaris';
 import _ from 'lodash';
 import MockDate from 'mockdate';
+
 import {ActiveDatesCard} from '../ActiveDatesCard';
 import {DatePicker} from '../../DatePicker';
 import {TimePicker} from '../../TimePicker';
@@ -21,8 +22,6 @@ describe('<ActiveDatesCard />', () => {
   beforeEach(() => {
     jest.resetAllMocks();
   });
-
-  afterEach(() => {});
 
   it('renders a Card', () => {
     const activeDates = mountWithApp(<ActiveDatesCard {...mockProps} />);
