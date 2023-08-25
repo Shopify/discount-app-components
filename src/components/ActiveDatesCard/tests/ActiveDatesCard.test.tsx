@@ -1,8 +1,8 @@
 import React from 'react';
-import {clock} from '@shopify/jest-dom-mocks';
 import {mockField, mountWithApp} from 'tests/utilities';
 import {LegacyCard as Card, Checkbox, FormLayout} from '@shopify/polaris';
 import _ from 'lodash';
+import MockDate from 'mockdate';
 
 import {ActiveDatesCard} from '../ActiveDatesCard';
 import {DatePicker} from '../../DatePicker';
@@ -21,12 +21,6 @@ describe('<ActiveDatesCard />', () => {
 
   beforeEach(() => {
     jest.resetAllMocks();
-  });
-
-  afterEach(() => {
-    if (clock.isMocked()) {
-      clock.restore();
-    }
   });
 
   it('renders a Card', () => {
@@ -77,7 +71,7 @@ describe('<ActiveDatesCard />', () => {
 
     it("prevents user from selecting a start date before the current shop's date", () => {
       const now = new Date('2022-04-15T00:00:00.000Z');
-      clock.mock(now);
+      MockDate.set(now);
 
       const activeDates = mountWithApp(<ActiveDatesCard {...mockProps} />);
 
@@ -259,7 +253,7 @@ describe('<ActiveDatesCard />', () => {
 
     it("prevents user from selecting an end datetime before the start date in shop's timezone when startDate is after now", () => {
       const now = new Date('2022-04-15T00:00:00.000Z');
-      clock.mock(now);
+      MockDate.set(now);
 
       const start = '2022-05-15T00:00:00.000Z';
       const activeDates = mountWithApp(
@@ -286,7 +280,7 @@ describe('<ActiveDatesCard />', () => {
     it("prevents user from selecting an end datetime before now in shop's timezone when startDate is before now", () => {
       const now = new Date('2022-04-15T00:00:00.000Z');
       const start = '2022-03-15T00:00:00.000Z';
-      clock.mock(now);
+      MockDate.set(now);
 
       const activeDates = mountWithApp(
         <ActiveDatesCard
