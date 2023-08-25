@@ -1,5 +1,5 @@
 import React from 'react';
-import {LegacyCard as Card, Checkbox, FormLayout} from '@shopify/polaris';
+import {Text, Card, Checkbox, FormLayout} from '@shopify/polaris';
 import {isSameDay} from '@shopify/dates';
 import {useI18n} from '@shopify/react-i18n';
 
@@ -114,11 +114,11 @@ export function ActiveDatesCard({
   );
 
   return (
-    <Card
-      title={i18n.translate('DiscountAppComponents.ActiveDatesCard.title')}
-      sectioned
-    >
+    <Card>
       <FormLayout>
+        <Text variant="headingMd" as="h2">
+          {i18n.translate('DiscountAppComponents.ActiveDatesCard.title')}
+        </Text>
         <FormLayout.Group>
           <DatePicker
             date={{
