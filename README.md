@@ -181,3 +181,7 @@ Writing changelogs and releasing should be as seamless and automated as possible
 2. It runs `yarn version` and incorporates the changesets into the changelog and bumps the version accordingly. (patch/minor/major) It then creates a `Version Packages` pull request.
 3. Merge the Version Packages PR.
 4. The release action runs `yarn release`, which publishes the package to npm.
+
+### Contributing
+
+Please see our [contributing guidelines](https://github.com/Shopify/discount-app-components/blob/main/CONTRIBUTING.md) for details.
