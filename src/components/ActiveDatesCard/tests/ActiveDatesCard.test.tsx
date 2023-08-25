@@ -1,7 +1,7 @@
 import React from 'react';
-import {clock} from '@shopify/jest-dom-mocks';
+import {clock, matchMedia} from '@shopify/jest-dom-mocks';
 import {mockField, mountWithApp} from 'tests/utilities';
-import {LegacyCard as Card, Checkbox, FormLayout} from '@shopify/polaris';
+import {Checkbox, FormLayout, Text} from '@shopify/polaris';
 import _ from 'lodash';
 
 import {ActiveDatesCard} from '../ActiveDatesCard';
@@ -20,6 +20,7 @@ describe('<ActiveDatesCard />', () => {
   };
 
   beforeEach(() => {
+    matchMedia.mock();
     jest.resetAllMocks();
   });
 
@@ -27,14 +28,16 @@ describe('<ActiveDatesCard />', () => {
     if (clock.isMocked()) {
       clock.restore();
     }
+    if (matchMedia.isMocked()) {
+      matchMedia.restore();
+    }
   });
 
   it('renders a Card', () => {
     const activeDates = mountWithApp(<ActiveDatesCard {...mockProps} />);
 
-    expect(activeDates).toContainReactComponent(Card, {
-      title: 'Active dates',
-      sectioned: true,
+    expect(activeDates).toContainReactComponent(Text, {
+      children: 'Active dates',
     });
   });
 
