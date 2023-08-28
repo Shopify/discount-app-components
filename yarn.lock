@@ -2702,9 +2702,9 @@
     "@shopify/app-bridge" "^3.7.8"
 
 "@shopify/app-bridge@^3.1.0", "@shopify/app-bridge@^3.7.8":
-  version "3.7.8"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-3.7.8.tgz#fe0253e0bb2e35bee9cb803917f43602465b84f5"
-  integrity sha512-S4BbjBlCvcaQEnVDt+ts8UuOH/ZcZIkek4KYMJerPe0U3nSHBKbh+F3Cx+gi6fH4e/rezZAEZoWScgpWeAIUxg==
+  version "3.7.9"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-3.7.9.tgz#8ee10f531af9bf8260d65d9b5adbe42351e243f8"
+  integrity sha512-ZT4Lc8wg/r8/VF5QbpGiIICyuytSPcPMiqTxsAXwT72mSgWTUog5/FMMu0hBH9c+OpvjDM4FjxDv9f8pKCC3aw==
   dependencies:
     "@shopify/app-bridge-core" "1.0.2"
     base64url "^3.0.1"
