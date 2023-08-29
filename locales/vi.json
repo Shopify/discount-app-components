@@ -189,7 +189,8 @@
           "productAndOrder": "Kết hợp với ưu đãi giảm giá sản phẩm và đơn hàng",
           "productAndShipping": "Kết hợp với ưu đãi giảm giá sản phẩm và vận chuyển",
           "orderAndShipping": "Kết hợp với ưu đãi giảm giá đơn hàng và vận chuyển"
-        }
+        },
+        "combinesAll": "Kết hợp với ưu đãi giảm giá sản phẩm, đơn hàng và vận chuyển"
       },
       "CustomerEligibility": {
         "allCustomers": "Tất cả khách hàng",

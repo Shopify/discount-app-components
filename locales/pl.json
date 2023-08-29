@@ -197,7 +197,8 @@
           "productAndOrder": "Łączy się z rabatami na produkty i zamówienia",
           "productAndShipping": "Łączy się z rabatami na produkty i wysyłkę",
           "orderAndShipping": "Łączy się z rabatami na zamówienie i wysyłkę"
-        }
+        },
+        "combinesAll": "Łączy się z rabatami na produkty, zamówienia i wysyłkę"
       },
       "CustomerEligibility": {
         "allCustomers": "Wszyscy klienci",

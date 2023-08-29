@@ -189,7 +189,8 @@
           "productAndOrder": "與商品與訂單折扣併用",
           "productAndShipping": "與商品與運費折扣併用",
           "orderAndShipping": "與訂單與運費折扣併用"
-        }
+        },
+        "combinesAll": "與商品、訂單和運費折扣併用"
       },
       "CustomerEligibility": {
         "allCustomers": "所有顧客",

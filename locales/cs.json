@@ -197,7 +197,8 @@
           "productAndOrder": "Lze kombinovat se se slevami na produkt a objednávku",
           "productAndShipping": "Lze kombinovat se se slevami na produkt a dopravu",
           "orderAndShipping": "Lze kombinovat se se slevami na objednávku a dopravu"
-        }
+        },
+        "combinesAll": "Možná kombinace se slevami na produkt, objednávku a dopravu"
       },
       "CustomerEligibility": {
         "allCustomers": "Všichni zákazníci",

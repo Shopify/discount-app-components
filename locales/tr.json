@@ -189,7 +189,8 @@
           "productAndOrder": "Ürün ve sipariş indirimleriyle birleştirilebilir",
           "productAndShipping": "Ürün ve kargo indirimleriyle birleştirilebilir",
           "orderAndShipping": "Sipariş ve kargo indirimleriyle birleştirilebilir"
-        }
+        },
+        "combinesAll": "Ürün, sipariş ve kargo indirimleriyle birleştirilebilir"
       },
       "CustomerEligibility": {
         "allCustomers": "Tüm müşteriler",

@@ -193,7 +193,8 @@
           "productAndOrder": "Cumulable avec les réductions sur la commande et les produits",
           "productAndShipping": "Cumulable avec les réductions sur les produits et les frais d’expédition",
           "orderAndShipping": "Cumulable avec les réductions sur la commande et les frais d’expédition"
-        }
+        },
+        "combinesAll": "Cumulable avec les réductions sur les produits, la commande et les frais d’expédition"
       },
       "CustomerEligibility": {
         "allCustomers": "Tous les clients",

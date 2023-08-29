@@ -189,7 +189,8 @@
           "productAndOrder": "商品および注文のディスカウントとの組み合わせ",
           "productAndShipping": "商品および配送のディスカウントとの組み合わせ",
           "orderAndShipping": "注文および配送のディスカウントとの組み合わせ"
-        }
+        },
+        "combinesAll": "商品、注文、配送のディスカウントの組み合わせ"
       },
       "CustomerEligibility": {
         "allCustomers": "すべてのお客様",

@@ -189,7 +189,8 @@
           "productAndOrder": "In combinatie met product- en bestellingskortingen",
           "productAndShipping": "In combinatie met product- en verzendkortingen",
           "orderAndShipping": "In combinatie met bestellings- en verzendkortingen"
-        }
+        },
+        "combinesAll": "In combinatie met product-, bestel- en verzendkortingen"
       },
       "CustomerEligibility": {
         "allCustomers": "Alle klanten",

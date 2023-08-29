@@ -193,7 +193,8 @@
           "productAndOrder": "Se puede combinar con descuentos en productos y pedidos.",
           "productAndShipping": "Se puede combinar con descuentos en productos y envíos.",
           "orderAndShipping": "Se puede combinar con descuentos en pedidos y envíos."
-        }
+        },
+        "combinesAll": "Combina con descuentos en productos, pedidos y envíos."
       },
       "CustomerEligibility": {
         "allCustomers": "Todos los clientes",

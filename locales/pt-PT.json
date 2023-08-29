@@ -193,7 +193,8 @@
           "productAndOrder": "Combina com descontos de produto e de encomenda",
           "productAndShipping": "Combina com descontos de produto e de envio",
           "orderAndShipping": "Combina com descontos de encomenda e de envio"
-        }
+        },
+        "combinesAll": "Combina com descontos de produto, de encomenda e envio"
       },
       "CustomerEligibility": {
         "allCustomers": "Todos os clientes",
