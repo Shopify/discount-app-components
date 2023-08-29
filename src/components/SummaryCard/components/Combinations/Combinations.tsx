@@ -42,6 +42,8 @@ function getContent(combinations: DiscountClass[], i18n: I18n) {
         )}`,
         I18N_SCOPE,
       );
+    case 3:
+      return i18n.translate(`combinesAll`, I18N_SCOPE);
     default:
       return '';
   }

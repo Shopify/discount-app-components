@@ -216,7 +216,8 @@
           "productAndOrder": "Combines with product and order discounts",
           "productAndShipping": "Combines with product and shipping discounts",
           "orderAndShipping": "Combines with order and shipping discounts"
-        }
+        },
+        "combinesAll": "Combines with product, order, and shipping discounts"
       },
       "CustomerEligibility": {
         "allCustomers": "All customers",
