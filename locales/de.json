@@ -189,7 +189,8 @@
           "productAndOrder": "Mit Produkt- und Bestellungsrabatten kombinierbar",
           "productAndShipping": "Mit Produkt- und Versandrabatten kombinierbar",
           "orderAndShipping": "Mit Bestellungs- und Versandrabatten kombinierbar"
-        }
+        },
+        "combinesAll": "Mit Produkt-, Bestellungs- und Versandrabatten kombinierbar"
       },
       "CustomerEligibility": {
         "allCustomers": "Alle Kunden",

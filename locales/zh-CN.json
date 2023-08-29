@@ -189,7 +189,8 @@
           "productAndOrder": "与产品和订单折扣组合",
           "productAndShipping": "与产品和运费折扣组合",
           "orderAndShipping": "与订单和运费折扣组合"
-        }
+        },
+        "combinesAll": "与产品、订单和运费折扣进行组合"
       },
       "CustomerEligibility": {
         "allCustomers": "全部客户",

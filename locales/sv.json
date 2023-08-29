@@ -189,7 +189,8 @@
           "productAndOrder": "Kombineras med produkt- och orderrabatter",
           "productAndShipping": "Kombineras med produkt- och leveransrabatter",
           "orderAndShipping": "Kombineras med order- och leveransrabatter"
-        }
+        },
+        "combinesAll": "Kan kombineras med produkt-, order- och leveransrabatter"
       },
       "CustomerEligibility": {
         "allCustomers": "Alla kunder",

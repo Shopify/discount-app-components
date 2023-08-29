@@ -193,7 +193,8 @@
           "productAndOrder": "Cumulabile con sconti su prodotti e ordini",
           "productAndShipping": "Cumulabile con sconti su prodotti e spedizioni",
           "orderAndShipping": "Cumulabile con sconti su ordini e spedizioni"
-        }
+        },
+        "combinesAll": "Cumulabile con prodotti, ordini e sconti sulla spedizione"
       },
       "CustomerEligibility": {
         "allCustomers": "Tutti i clienti",

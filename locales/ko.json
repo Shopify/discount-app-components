@@ -189,7 +189,8 @@
           "productAndOrder": "제품 및 주문 할인과 결합",
           "productAndShipping": "제품 및 배송 할인과 결합",
           "orderAndShipping": "주문 및 배송 할인과 결합"
-        }
+        },
+        "combinesAll": "제품, 주문, 배송 할인과 결합"
       },
       "CustomerEligibility": {
         "allCustomers": "모든 고객",

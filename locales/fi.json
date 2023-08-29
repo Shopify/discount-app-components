@@ -189,7 +189,8 @@
           "productAndOrder": "Voidaan yhdistää tuote- ja tilausalennuksiin",
           "productAndShipping": "Voidaan yhdistää tuote- ja toimitusalennuksiin",
           "orderAndShipping": "Voidaan yhdistää tilaus- ja toimitusalennuksiin"
-        }
+        },
+        "combinesAll": "Voidaan yhdistää tuote-, tilaus- ja toimitusalennuksiin"
       },
       "CustomerEligibility": {
         "allCustomers": "Kaikki asiakkaat",
