@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  LegacyCard,
   ChoiceList,
   Checkbox,
   InlineError,
@@ -38,8 +37,8 @@ describe('<CountriesAndRatesCard />', () => {
       <CountriesAndRatesCard {...mockProps} />,
     );
 
-    expect(countriesAndRatesCard).toContainReactComponent(LegacyCard.Header, {
-      title: 'Countries',
+    expect(countriesAndRatesCard).toContainReactComponent(Text, {
+      children: 'Countries',
     });
     expect(countriesAndRatesCard).toContainReactComponent(ChoiceList, {
       title: 'Countries and rates',
