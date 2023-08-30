@@ -1,6 +1,6 @@
 import React from 'react';
 import {mountWithApp} from 'tests/utilities';
-import {LegacyCard as Card, List, Text} from '@shopify/polaris';
+import {Card, List, Text} from '@shopify/polaris';
 import {CurrencyCode} from '@shopify/react-i18n';
 
 import {SummaryCard, SummaryCardProps} from '../SummaryCard';
@@ -44,8 +44,9 @@ describe('<SummaryCard />', () => {
   it('renders a default SummaryCard', () => {
     const summaryCard = mountWithApp(<SummaryCard {...mockProps} />);
 
-    expect(summaryCard).toContainReactComponent(Card, {
-      title: 'Summary',
+    expect(summaryCard).toContainReactComponent(Card);
+    expect(summaryCard).toContainReactComponent(Text, {
+      children: 'My cool discount',
     });
     expect(summaryCard).toContainReactComponent(Header, mockProps.header);
   });

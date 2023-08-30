@@ -1,9 +1,12 @@
 import React from 'react';
 import {
-  LegacyCard as Card,
+  Card,
   ChoiceList,
   Checkbox,
   InlineError,
+  VerticalStack,
+  Text,
+  Box,
 } from '@shopify/polaris';
 import {CurrencyCode, useI18n} from '@shopify/react-i18n';
 
@@ -62,93 +65,97 @@ export function CountriesAndRatesCard({
   const localizeCountry = useLocalizeCountry();
 
   return (
-    <Card
-      title={i18n.translate(
-        'DiscountAppComponents.CountriesAndRatesCard.title',
-      )}
-    >
-      <Card.Section>
-        <ChoiceList
-          title={i18n.translate(
-            'DiscountAppComponents.CountriesAndRatesCard.choiceList.title',
-          )}
-          titleHidden
-          choices={[
-            {
-              value: CountrySelectionType.AllCountries,
-              label: i18n.translate(
-                'DiscountAppComponents.CountriesAndRatesCard.choiceList.all',
-              ),
-            },
-            {
-              value: CountrySelectionType.SelectedCountries,
-              label: i18n.translate(
-                'DiscountAppComponents.CountriesAndRatesCard.choiceList.selected',
-              ),
-            },
-          ]}
-          selected={[countrySelectionType.value]}
-          onChange={(values: CountrySelectionType[]) =>
-            countrySelectionType.onChange(values[0])
-          }
-        />
-        {countrySelectionType.value ===
-          CountrySelectionType.SelectedCountries && (
-          <>
-            <div className={styles.countrySelectorActivator}>
-              {countrySelector}
-            </div>
-            <SelectedItemsList
-              items={selectedCountries.value.map(localizeCountry)}
-              renderItem={(item: Country) => <div>{item.name}</div>}
-              onRemoveItem={(itemId: string) =>
-                selectedCountries.onChange(
-                  selectedCountries.value.filter(
-                    (countryCode) => countryCode !== itemId,
-                  ),
-                )
-              }
-            />
-          </>
-        )}
-      </Card.Section>
-      <Card.Section
-        title={i18n.translate(
-          'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.title',
-        )}
-      >
-        <Checkbox
-          label={i18n.translate(
-            'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.checkboxLabel',
-          )}
-          checked={excludeShippingRates.value}
-          onChange={(value: boolean) => excludeShippingRates.onChange(value)}
-        />
-        {excludeShippingRates.value && (
-          <>
-            <div className={styles.ShippingRatesTextField}>
-              <CurrencyField
-                id={EXCLUDE_SHIPPING_RATES_FIELD_ID}
-                currencyCode={currencyCode}
-                error={Boolean(maximumShippingPrice.error)}
-                labelHidden
-                label={i18n.translate(
-                  'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.checkboxLabel',
-                )}
-                onChange={maximumShippingPrice.onChange}
-                value={String(maximumShippingPrice.value)}
-                positiveOnly
-              />
-            </div>
-            {maximumShippingPrice?.error && (
-              <InlineError
-                fieldID={EXCLUDE_SHIPPING_RATES_FIELD_ID}
-                message={maximumShippingPrice.error}
-              />
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="4">
+          <Text variant="headingMd" as="h2">
+            {i18n.translate(
+              'DiscountAppComponents.CountriesAndRatesCard.title',
             )}
-          </>
-        )}
-      </Card.Section>
-    </Card>
+          </Text>
+          <ChoiceList
+            title={i18n.translate(
+              'DiscountAppComponents.CountriesAndRatesCard.choiceList.title',
+            )}
+            titleHidden
+            choices={[
+              {
+                value: CountrySelectionType.AllCountries,
+                label: i18n.translate(
+                  'DiscountAppComponents.CountriesAndRatesCard.choiceList.all',
+                ),
+              },
+              {
+                value: CountrySelectionType.SelectedCountries,
+                label: i18n.translate(
+                  'DiscountAppComponents.CountriesAndRatesCard.choiceList.selected',
+                ),
+              },
+            ]}
+            selected={[countrySelectionType.value]}
+            onChange={(values: CountrySelectionType[]) =>
+              countrySelectionType.onChange(values[0])
+            }
+          />
+          {countrySelectionType.value ===
+            CountrySelectionType.SelectedCountries && (
+            <>
+              <div className={styles.countrySelectorActivator}>
+                {countrySelector}
+              </div>
+              <SelectedItemsList
+                items={selectedCountries.value.map(localizeCountry)}
+                renderItem={(item: Country) => <div>{item.name}</div>}
+                onRemoveItem={(itemId: string) =>
+                  selectedCountries.onChange(
+                    selectedCountries.value.filter(
+                      (countryCode) => countryCode !== itemId,
+                    ),
+                  )
+                }
+              />
+            </>
+          )}
+          <Text variant="headingMd" as="h2">
+            {i18n.translate(
+              'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.title',
+            )}
+          </Text>
+          {/* > */}
+          <Checkbox
+            label={i18n.translate(
+              'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.checkboxLabel',
+            )}
+            checked={excludeShippingRates.value}
+            onChange={(value: boolean) => excludeShippingRates.onChange(value)}
+          />
+          {excludeShippingRates.value && (
+            <>
+              <div className={styles.ShippingRatesTextField}>
+                <CurrencyField
+                  id={EXCLUDE_SHIPPING_RATES_FIELD_ID}
+                  currencyCode={currencyCode}
+                  error={Boolean(maximumShippingPrice.error)}
+                  labelHidden
+                  label={i18n.translate(
+                    'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.checkboxLabel',
+                  )}
+                  onChange={maximumShippingPrice.onChange}
+                  value={String(maximumShippingPrice.value)}
+                  positiveOnly
+                />
+              </div>
+              {maximumShippingPrice?.error && (
+                <InlineError
+                  fieldID={EXCLUDE_SHIPPING_RATES_FIELD_ID}
+                  message={maximumShippingPrice.error}
+                />
+              )}
+            </>
+          )}
+          {/* </Card.Section> */}
+        </VerticalStack>
+      </Card>
+    </Box>
   );
 }

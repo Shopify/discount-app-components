@@ -1,12 +1,7 @@
 /* eslint-disable @shopify/typescript/prefer-pascal-case-enums */
 import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
-import {
-  List,
-  LegacyCard as Card,
-  LegacyStack as Stack,
-  Text,
-} from '@shopify/polaris';
+import {List, Card, VerticalStack, Text, Box} from '@shopify/polaris';
 
 import {
   ActiveDates,
@@ -120,59 +115,67 @@ export function SummaryCard(props: SummaryCardProps) {
   );
 
   return (
-    <Card title={i18n.translate('title', I18N_SCOPE)}>
-      <Card.Section>
-        <Stack vertical spacing="loose">
-          <Header {...props.header} />
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="4">
+          <Text variant="headingMd" as="h2">
+            {i18n.translate('title', I18N_SCOPE)}
+          </Text>
 
-          {showDetailsSection && (
-            <Stack vertical spacing="tight">
-              <Text variant="headingXs" as="h3">
-                {i18n.translate('details', I18N_SCOPE)}
-              </Text>
+          <VerticalStack>
+            <Header {...props.header} />
 
-              <List type="bullet">
-                {props.additionalDetails?.map((detail) => (
-                  <List.Item key={detail.replace(/\s/g, '-')}>
-                    {detail}
-                  </List.Item>
-                ))}
+            {showDetailsSection && (
+              <VerticalStack>
+                <Text variant="headingXs" as="h3">
+                  {i18n.translate('details', I18N_SCOPE)}
+                </Text>
 
-                {props.appliesToPurchaseType && (
-                  <AppliesToPurchaseType {...props.appliesToPurchaseType} />
-                )}
+                <List type="bullet">
+                  {props.additionalDetails?.map((detail) => (
+                    <List.Item key={detail.replace(/\s/g, '-')}>
+                      {detail}
+                    </List.Item>
+                  ))}
 
-                {props.recurringPayment && (
-                  <RecurringPayment {...props.recurringPayment} />
-                )}
+                  {props.appliesToPurchaseType && (
+                    <AppliesToPurchaseType {...props.appliesToPurchaseType} />
+                  )}
 
-                {props.selectedCountries && (
-                  <SelectedCountries {...props.selectedCountries} />
-                )}
+                  {props.recurringPayment && (
+                    <RecurringPayment {...props.recurringPayment} />
+                  )}
 
-                {props.maximumShippingPrice && (
-                  <MaximumShippingPrice {...props.maximumShippingPrice} />
-                )}
+                  {props.selectedCountries && (
+                    <SelectedCountries {...props.selectedCountries} />
+                  )}
 
-                {props.minimumRequirements && (
-                  <MinimumRequirements {...props.minimumRequirements} />
-                )}
+                  {props.maximumShippingPrice && (
+                    <MaximumShippingPrice {...props.maximumShippingPrice} />
+                  )}
 
-                {props.customerEligibility && (
-                  <CustomerEligibility {...props.customerEligibility} />
-                )}
+                  {props.minimumRequirements && (
+                    <MinimumRequirements {...props.minimumRequirements} />
+                  )}
 
-                {props.usageLimits && <UsageLimits {...props.usageLimits} />}
+                  {props.customerEligibility && (
+                    <CustomerEligibility {...props.customerEligibility} />
+                  )}
 
-                {props.combinations && <Combinations {...props.combinations} />}
+                  {props.usageLimits && <UsageLimits {...props.usageLimits} />}
 
-                {props.activeDates && <ActiveDates {...props.activeDates} />}
-              </List>
-            </Stack>
-          )}
-        </Stack>
-      </Card.Section>
-      <Performance {...props.performance} />
-    </Card>
+                  {props.combinations && (
+                    <Combinations {...props.combinations} />
+                  )}
+
+                  {props.activeDates && <ActiveDates {...props.activeDates} />}
+                </List>
+              </VerticalStack>
+            )}
+          </VerticalStack>
+          <Performance {...props.performance} />
+        </VerticalStack>
+      </Card>
+    </Box>
   );
 }

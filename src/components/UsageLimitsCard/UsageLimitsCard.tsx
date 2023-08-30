@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {
-  LegacyCard as Card,
+  Card,
   ChoiceList,
   TextField,
-  LegacyStack as Stack,
   Text,
   InlineError,
+  VerticalStack,
+  Box,
 } from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
@@ -95,83 +96,88 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
   };
 
   return (
-    <Card title={i18n.translate('DiscountAppComponents.UsageLimitsCard.title')}>
-      <Card.Section>
-        <ChoiceList
-          title={i18n.translate(
-            'DiscountAppComponents.UsageLimitsCard.options',
-          )}
-          titleHidden
-          allowMultiple
-          selected={[
-            ...(showUsageLimit ? [UsageLimitType.TotalUsageLimit] : []),
-            ...(oncePerCustomer.value
-              ? [UsageLimitType.OncePerCustomerLimit]
-              : []),
-          ]}
-          choices={[
-            {
-              label: i18n.translate(
-                'DiscountAppComponents.UsageLimitsCard.totalUsageLimitLabel',
-              ),
-              value: UsageLimitType.TotalUsageLimit,
-              renderChildren: (isSelected: boolean) => (
-                <Stack vertical spacing="extraTight">
-                  {isSelected && (
-                    <div className={styles.TotalUsageLimitTextField}>
-                      <TextField
-                        id={DISCOUNT_TOTAL_USAGE_LIMIT_FIELD}
-                        label={i18n.translate(
-                          'DiscountAppComponents.UsageLimitsCard.totalUsageLimitLabel',
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="4">
+          <Text variant="headingMd" as="h2">
+            {i18n.translate('DiscountAppComponents.UsageLimitsCard.title')}
+          </Text>
+          <ChoiceList
+            title={i18n.translate(
+              'DiscountAppComponents.UsageLimitsCard.options',
+            )}
+            titleHidden
+            allowMultiple
+            selected={[
+              ...(showUsageLimit ? [UsageLimitType.TotalUsageLimit] : []),
+              ...(oncePerCustomer.value
+                ? [UsageLimitType.OncePerCustomerLimit]
+                : []),
+            ]}
+            choices={[
+              {
+                label: i18n.translate(
+                  'DiscountAppComponents.UsageLimitsCard.totalUsageLimitLabel',
+                ),
+                value: UsageLimitType.TotalUsageLimit,
+                renderChildren: (isSelected: boolean) => (
+                  <VerticalStack>
+                    {isSelected && (
+                      <div className={styles.TotalUsageLimitTextField}>
+                        <TextField
+                          id={DISCOUNT_TOTAL_USAGE_LIMIT_FIELD}
+                          label={i18n.translate(
+                            'DiscountAppComponents.UsageLimitsCard.totalUsageLimitLabel',
+                          )}
+                          autoComplete="off"
+                          labelHidden
+                          value={totalUsageLimit.value || ''}
+                          onChange={(nextValue) => {
+                            totalUsageLimit.onChange(
+                              forcePositiveInteger(nextValue),
+                            );
+                          }}
+                          onBlur={totalUsageLimit.onBlur}
+                          error={Boolean(totalUsageLimit.error)}
+                        />
+                      </div>
+                    )}
+                    {isRecurring && (
+                      <Text as="span" color="subdued">
+                        {i18n.translate(
+                          'DiscountAppComponents.UsageLimitsCard.totalUsageLimitHelpTextSubscription',
                         )}
-                        autoComplete="off"
-                        labelHidden
-                        value={totalUsageLimit.value || ''}
-                        onChange={(nextValue) => {
-                          totalUsageLimit.onChange(
-                            forcePositiveInteger(nextValue),
-                          );
-                        }}
-                        onBlur={totalUsageLimit.onBlur}
-                        error={Boolean(totalUsageLimit.error)}
+                      </Text>
+                    )}
+                    {isSelected && totalUsageLimit.error && (
+                      <InlineError
+                        fieldID={DISCOUNT_TOTAL_USAGE_LIMIT_FIELD}
+                        message={totalUsageLimit.error}
                       />
-                    </div>
-                  )}
-                  {isRecurring && (
-                    <Text as="span" color="subdued">
-                      {i18n.translate(
-                        'DiscountAppComponents.UsageLimitsCard.totalUsageLimitHelpTextSubscription',
-                      )}
-                    </Text>
-                  )}
-                  {isSelected && totalUsageLimit.error && (
-                    <InlineError
-                      fieldID={DISCOUNT_TOTAL_USAGE_LIMIT_FIELD}
-                      message={totalUsageLimit.error}
-                    />
-                  )}
-                </Stack>
-              ),
-            },
-            {
-              label: i18n.translate(
-                'DiscountAppComponents.UsageLimitsCard.oncePerCustomerLimitLabel',
-              ),
-              value: UsageLimitType.OncePerCustomerLimit,
-            },
-          ]}
-          onChange={handleUsageLimitsChoicesChange}
-        />
-      </Card.Section>
-      {isShowRecurringPaymentSection(props) && (
-        <Card.Section>
-          <RecurringPayment
-            recurringPaymentType={props.recurringPaymentType}
-            recurringPaymentLimit={props.recurringPaymentLimit}
+                    )}
+                  </VerticalStack>
+                ),
+              },
+              {
+                label: i18n.translate(
+                  'DiscountAppComponents.UsageLimitsCard.oncePerCustomerLimitLabel',
+                ),
+                value: UsageLimitType.OncePerCustomerLimit,
+              },
+            ]}
+            onChange={handleUsageLimitsChoicesChange}
           />
-        </Card.Section>
-      )}
-    </Card>
+        </VerticalStack>
+        {isShowRecurringPaymentSection(props) && (
+          <VerticalStack gap="4">
+            <RecurringPayment
+              recurringPaymentType={props.recurringPaymentType}
+              recurringPaymentLimit={props.recurringPaymentLimit}
+            />
+          </VerticalStack>
+        )}
+      </Card>
+    </Box>
   );
 }
 

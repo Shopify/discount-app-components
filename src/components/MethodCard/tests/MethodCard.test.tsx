@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-  LegacyCard as Card,
-  ChoiceList,
-  Text,
-  TextField,
-} from '@shopify/polaris';
+import {Card, ChoiceList, Text, TextField} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {MethodCard} from '../MethodCard';
@@ -102,8 +97,8 @@ describe('<MethodCard />', () => {
       />,
     );
     expect(methodCard).not.toContainReactComponent(ChoiceList);
-    expect(methodCard).not.toContainReactComponent(Card.Section, {
-      title: 'Method',
+    expect(methodCard).not.toContainReactComponent(Text, {
+      children: 'Method',
     });
   });
 
@@ -118,9 +113,7 @@ describe('<MethodCard />', () => {
       />,
     );
     expect(methodCard).toContainReactComponent(ChoiceList);
-    expect(methodCard).toContainReactComponent(Card.Section, {
-      title: 'Method',
-    });
+    expect(methodCard).toContainReactComponent(Card);
   });
 
   it('toggling the discount method calls onChange for the discountMethod', () => {

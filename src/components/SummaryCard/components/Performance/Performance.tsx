@@ -1,6 +1,6 @@
 import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
-import {LegacyCard as Card, List, Text, VerticalStack} from '@shopify/polaris';
+import {List, Text, VerticalStack} from '@shopify/polaris';
 import {Redirect} from '@shopify/app-bridge/actions';
 
 import {AppBridgeLink} from '../../../AppBridgeLink';
@@ -54,42 +54,43 @@ export function Performance({
     status === DiscountStatus.Active || status === DiscountStatus.Expired;
 
   return (
-    <Card.Section title={i18n.translate('title', I18N_SCOPE)}>
-      <VerticalStack>
-        {status === DiscountStatus.Scheduled && (
-          <Text as="span" color="subdued">
-            {i18n.translate('notActive', I18N_SCOPE)}
-          </Text>
-        )}
-        {isActiveOrExpired && (
-          <>
-            <List type="bullet">
+    <VerticalStack>
+      <Text variant="headingXs" as="h3">
+        {i18n.translate('title', I18N_SCOPE)}
+      </Text>
+      {status === DiscountStatus.Scheduled && (
+        <Text as="span" color="subdued">
+          {i18n.translate('notActive', I18N_SCOPE)}
+        </Text>
+      )}
+      {isActiveOrExpired && (
+        <>
+          <List type="bullet">
+            <List.Item>
+              {i18n.translate('usageCount', I18N_SCOPE, {usageCount})}
+            </List.Item>
+            {totalSales && (
               <List.Item>
-                {i18n.translate('usageCount', I18N_SCOPE, {usageCount})}
+                {i18n.translate('totalSales', I18N_SCOPE, {
+                  totalSales: i18n.formatCurrency(Number(totalSales.amount), {
+                    currency: totalSales.currencyCode,
+                  }),
+                })}
               </List.Item>
-              {totalSales && (
-                <List.Item>
-                  {i18n.translate('totalSales', I18N_SCOPE, {
-                    totalSales: i18n.formatCurrency(Number(totalSales.amount), {
-                      currency: totalSales.currencyCode,
-                    }),
-                  })}
-                </List.Item>
-              )}
-            </List>
-            {hasReports && discountMethod === DiscountMethod.Code && (
-              <p>
-                <AppBridgeLink
-                  action={Redirect.Action.ADMIN_PATH}
-                  url={CODE_DISCOUNT_ADMIN_REPORT_URL}
-                >
-                  {i18n.translate('performanceLink', I18N_SCOPE)}
-                </AppBridgeLink>
-              </p>
             )}
-          </>
-        )}
-      </VerticalStack>
-    </Card.Section>
+          </List>
+          {hasReports && discountMethod === DiscountMethod.Code && (
+            <p>
+              <AppBridgeLink
+                action={Redirect.Action.ADMIN_PATH}
+                url={CODE_DISCOUNT_ADMIN_REPORT_URL}
+              >
+                {i18n.translate('performanceLink', I18N_SCOPE)}
+              </AppBridgeLink>
+            </p>
+          )}
+        </>
+      )}
+    </VerticalStack>
   );
 }

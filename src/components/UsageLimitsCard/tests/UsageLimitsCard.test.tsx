@@ -2,9 +2,9 @@ import React from 'react';
 import {
   ChoiceList,
   TextField,
-  LegacyCard as Card,
+  Card,
   InlineError,
-  LegacyStack as Stack,
+  VerticalStack,
   Text,
 } from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
@@ -28,8 +28,9 @@ describe('UsageLimitsCard', () => {
   it('renders Card with title', () => {
     const usageLimits = mountWithApp(<UsageLimitsCard {...defaultProps} />);
 
-    expect(usageLimits).toContainReactComponent(Card, {
-      title: 'Maximum discount uses',
+    expect(usageLimits).toContainReactComponent(Card);
+    expect(usageLimits).toContainReactComponent(Text, {
+      children: 'Maximum discount uses',
     });
   });
 
@@ -89,9 +90,7 @@ describe('UsageLimitsCard', () => {
     it('displays usage limit option in a stack', () => {
       const usageLimits = mountWithApp(<UsageLimitsCard {...defaultProps} />);
 
-      expect(usageLimits).toContainReactComponent(Stack, {
-        spacing: 'extraTight',
-      });
+      expect(usageLimits).toContainReactComponent(VerticalStack);
     });
 
     it('displays total usage limit text field when totalUsageLimit is a number', () => {
@@ -103,7 +102,7 @@ describe('UsageLimitsCard', () => {
         />,
       );
 
-      const stack = usageLimits.find(Stack);
+      const stack = usageLimits.find(VerticalStack);
 
       expect(stack).toContainReactComponent(TextField, {
         value: totalUsageLimit,
@@ -120,7 +119,7 @@ describe('UsageLimitsCard', () => {
         />,
       );
 
-      const stack = usageLimits.find(Stack);
+      const stack = usageLimits.find(VerticalStack);
 
       expect(stack).toContainReactComponent(Text, {
         children: 'A subscription with many payments will count as one use.',

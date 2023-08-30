@@ -1,10 +1,12 @@
 import React from 'react';
 import {
-  LegacyCard as Card,
+  Card,
   ChoiceList,
-  LegacyStack as Stack,
+  VerticalStack,
   TextField,
   Text,
+  HorizontalStack,
+  Box,
 } from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
@@ -73,69 +75,69 @@ export function MethodCard({
   };
 
   return (
-    <Card>
-      <Card.Section>
-        <Stack distribution="equalSpacing" alignment="center">
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="4">
+          <HorizontalStack align="start" gap="1">
+            <Text variant="headingMd" as="h2">
+              {title}
+            </Text>
+            <Text as="span" color="subdued">
+              {getDiscountClassLabel(discountClass, i18n)}
+            </Text>
+          </HorizontalStack>
+
           <Text variant="headingMd" as="h2">
-            {title}
+            {!discountMethodHidden &&
+              i18n.translate('DiscountAppComponents.MethodCard.methodSubtitle')}
           </Text>
-          <Text as="span" color="subdued">
-            {getDiscountClassLabel(discountClass, i18n)}
-          </Text>
-        </Stack>
-      </Card.Section>
-      <Card.Section
-        title={
-          !discountMethodHidden &&
-          i18n.translate('DiscountAppComponents.MethodCard.methodSubtitle')
-        }
-      >
-        <Stack vertical>
-          {!discountMethodHidden && (
-            <ChoiceList
-              title={i18n.translate(
-                'DiscountAppComponents.MethodCard.choiceList.title',
-              )}
-              titleHidden
-              choices={[
-                {
-                  value: DiscountMethod.Code,
-                  label: i18n.translate(
-                    'DiscountAppComponents.MethodCard.choiceList.code',
-                  ),
-                },
-                {
-                  value: DiscountMethod.Automatic,
-                  label: i18n.translate(
-                    'DiscountAppComponents.MethodCard.choiceList.automatic',
-                  ),
-                },
-              ]}
-              selected={[discountMethod.value]}
-              onChange={handleChangeMethod}
-            />
-          )}
-          {discountMethod.value === DiscountMethod.Code ? (
-            <DiscountCodeGenerator
-              defaultLength={defaultDiscountCodeLength}
-              discountCode={discountCode}
-            />
-          ) : (
-            <TextField
-              autoComplete="off"
-              label={i18n.translate(
-                'DiscountAppComponents.MethodCard.discountField.label',
-              )}
-              helpText={i18n.translate(
-                'DiscountAppComponents.MethodCard.discountField.helpText',
-              )}
-              maxLength={DISCOUNT_TITLE_MAX_LENGTH}
-              {...discountTitle}
-            />
-          )}
-        </Stack>
-      </Card.Section>
-    </Card>
+          <VerticalStack gap="4">
+            {!discountMethodHidden && (
+              <ChoiceList
+                title={i18n.translate(
+                  'DiscountAppComponents.MethodCard.choiceList.title',
+                )}
+                titleHidden
+                choices={[
+                  {
+                    value: DiscountMethod.Code,
+                    label: i18n.translate(
+                      'DiscountAppComponents.MethodCard.choiceList.code',
+                    ),
+                  },
+                  {
+                    value: DiscountMethod.Automatic,
+                    label: i18n.translate(
+                      'DiscountAppComponents.MethodCard.choiceList.automatic',
+                    ),
+                  },
+                ]}
+                selected={[discountMethod.value]}
+                onChange={handleChangeMethod}
+              />
+            )}
+            {discountMethod.value === DiscountMethod.Code ? (
+              <DiscountCodeGenerator
+                defaultLength={defaultDiscountCodeLength}
+                discountCode={discountCode}
+              />
+            ) : (
+              <TextField
+                autoComplete="off"
+                label={i18n.translate(
+                  'DiscountAppComponents.MethodCard.discountField.label',
+                )}
+                helpText={i18n.translate(
+                  'DiscountAppComponents.MethodCard.discountField.helpText',
+                )}
+                maxLength={DISCOUNT_TITLE_MAX_LENGTH}
+                {...discountTitle}
+              />
+            )}
+          </VerticalStack>
+        </VerticalStack>
+      </Card>
+    </Box>
   );
 }
 
