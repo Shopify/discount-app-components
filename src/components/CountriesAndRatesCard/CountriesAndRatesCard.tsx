@@ -1,9 +1,11 @@
 import React from 'react';
 import {
-  LegacyCard as Card,
+  Card,
   ChoiceList,
   Checkbox,
   InlineError,
+  VerticalStack,
+  Text,
 } from '@shopify/polaris';
 import {CurrencyCode, useI18n} from '@shopify/react-i18n';
 
@@ -62,12 +64,12 @@ export function CountriesAndRatesCard({
   const localizeCountry = useLocalizeCountry();
 
   return (
-    <Card
-      title={i18n.translate(
-        'DiscountAppComponents.CountriesAndRatesCard.title',
-      )}
-    >
-      <Card.Section>
+    <Card>
+      <VerticalStack gap="4">
+        <Text variant="headingMd" as="h2">
+          {i18n.translate('DiscountAppComponents.CountriesAndRatesCard.title')}
+        </Text>
+        {/* <Card.Section> */}
         <ChoiceList
           title={i18n.translate(
             'DiscountAppComponents.CountriesAndRatesCard.choiceList.title',
@@ -111,12 +113,14 @@ export function CountriesAndRatesCard({
             />
           </>
         )}
-      </Card.Section>
-      <Card.Section
-        title={i18n.translate(
-          'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.title',
-        )}
-      >
+        {/* </Card.Section> */}
+        {/* <Card.Section */}
+        <Text variant="headingMd" as="h2">
+          {i18n.translate(
+            'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.title',
+          )}
+        </Text>
+        {/* > */}
         <Checkbox
           label={i18n.translate(
             'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.checkboxLabel',
@@ -148,7 +152,8 @@ export function CountriesAndRatesCard({
             )}
           </>
         )}
-      </Card.Section>
+        {/* </Card.Section> */}
+      </VerticalStack>
     </Card>
   );
 }

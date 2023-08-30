@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import {Button, Text, LegacyStack as Stack, Link} from '@shopify/polaris';
+import {Button, Text, Link, VerticalStack} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 import {useAppBridge} from '@shopify/app-bridge-react';
 import {Modal} from '@shopify/app-bridge/actions';
@@ -55,7 +55,7 @@ export function HelpText({
   };
 
   return count > 0 ? (
-    <Stack spacing="none" vertical>
+    <VerticalStack>
       <Text as="span" color="subdued">
         {i18n.translate(
           'combinations.info',
@@ -81,7 +81,7 @@ export function HelpText({
       <Text as="span" color="subdued">
         {i18n.translate('combinations.multipleEligibleDiscounts', {scope})}
       </Text>
-    </Stack>
+    </VerticalStack>
   ) : (
     <>
       <Text as="span" color="subdued">
