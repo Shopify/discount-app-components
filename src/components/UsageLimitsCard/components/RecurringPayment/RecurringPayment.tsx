@@ -92,7 +92,7 @@ export function RecurringPayment({
   ];
 
   return (
-    <VerticalStack>
+    <VerticalStack gap="4">
       <Text variant="headingXs" as="h3">
         {i18n.translate('DiscountAppComponents.RecurringPayment.title')}
       </Text>
