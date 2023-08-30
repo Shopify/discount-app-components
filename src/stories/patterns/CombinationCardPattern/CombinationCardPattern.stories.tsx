@@ -24,27 +24,32 @@ export default {
   },
 };
 
-const Template = (args) => (
+interface Props {
+  discountClass: DiscountClass;
+  discountDescriptor: string;
+}
+
+const Template = (args: Props) => (
   <Provider>
     <CombinationCard {...args} />
   </Provider>
 );
 
-export const ProductDiscount = (args) => (
+export const ProductDiscount = (args: any) => (
   <Template
     discountDescriptor="My cool product discount"
     {...args}
     discountClass={DiscountClass.Product}
   />
 );
-export const OrderDiscount = (args) => (
+export const OrderDiscount = (args: any) => (
   <Template
     discountDescriptor="My cool order discount"
     {...args}
     discountClass={DiscountClass.Order}
   />
 );
-export const ShippingDiscount = (args) => (
+export const ShippingDiscount = (args: any) => (
   <Template
     discountDescriptor="My cool shipping discount"
     {...args}
