@@ -16,5 +16,5 @@
       "~/*": ["./src/*"]
     }
   },
-  "include": ["./config/typescript", "./src", "./tests"]
+  "include": ["./config/typescript", "./src", "./tests", "./styles.d.ts"]
 }
