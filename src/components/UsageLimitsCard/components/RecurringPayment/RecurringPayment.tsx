@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   ChoiceList,
-  LegacyStack as Stack,
   TextField,
   Text,
   InlineError,
@@ -49,7 +48,7 @@ export function RecurringPayment({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <Stack vertical spacing="extraTight">
+            <VerticalStack gap="4">
               <div className={styles.RecurringPaymentTextField}>
                 <TextField
                   id={RECURRING_PAYMENT_FIELD_ID}
@@ -79,7 +78,7 @@ export function RecurringPayment({
                   message={recurringPaymentLimit.error}
                 />
               )}
-            </Stack>
+            </VerticalStack>
           )
         );
       },

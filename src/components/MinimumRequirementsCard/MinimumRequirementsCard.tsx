@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import {
-  LegacyCard as Card,
+  Card,
   TextField,
   ChoiceList,
   InlineError,
   Text,
-  LegacyStack as Stack,
+  VerticalStack,
 } from '@shopify/polaris';
 import {CurrencyCode, I18n, useI18n} from '@shopify/react-i18n';
 
@@ -120,7 +120,7 @@ export function MinimumRequirementsCard({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <Stack vertical spacing="extraTight">
+            <VerticalStack gap="4">
               <div className={styles.TextField}>
                 <CurrencyField
                   id={SUBTOTAL_FIELD_ID}
@@ -142,7 +142,7 @@ export function MinimumRequirementsCard({
                   message={subtotal.error}
                 />
               )}
-            </Stack>
+            </VerticalStack>
           )
         );
       },
@@ -153,7 +153,7 @@ export function MinimumRequirementsCard({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <Stack vertical spacing="extraTight">
+            <VerticalStack gap="4">
               <div className={styles.TextField}>
                 <TextField
                   id={QUANTITY_FIELD_ID}
@@ -176,7 +176,7 @@ export function MinimumRequirementsCard({
                   message={quantity.error}
                 />
               )}
-            </Stack>
+            </VerticalStack>
           )
         );
       },
@@ -191,23 +191,25 @@ export function MinimumRequirementsCard({
       : allMinimumRequirementChoices;
 
   return (
-    <Card
-      title={i18n.translate(
-        'DiscountAppComponents.MinimumRequirementsCard.title',
-      )}
-      sectioned
-    >
-      <ChoiceList
-        title={i18n.translate(
-          'DiscountAppComponents.MinimumRequirementsCard.title',
-        )}
-        titleHidden
-        choices={minimumRequirementChoicesToRender}
-        selected={[requirementType.value]}
-        onChange={(nextValue: RequirementType[]) =>
-          requirementType.onChange(nextValue[0])
-        }
-      />
+    <Card>
+      <VerticalStack gap="4">
+        <Text variant="headingMd" as="h2">
+          {i18n.translate(
+            'DiscountAppComponents.MinimumRequirementsCard.title',
+          )}
+        </Text>
+        <ChoiceList
+          title={i18n.translate(
+            'DiscountAppComponents.MinimumRequirementsCard.title',
+          )}
+          titleHidden
+          choices={minimumRequirementChoicesToRender}
+          selected={[requirementType.value]}
+          onChange={(nextValue: RequirementType[]) =>
+            requirementType.onChange(nextValue[0])
+          }
+        />
+      </VerticalStack>
     </Card>
   );
 }

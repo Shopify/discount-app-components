@@ -2,10 +2,10 @@ import React from 'react';
 import {
   Card,
   ChoiceList,
-  LegacyStack as Stack,
+  VerticalStack,
   TextField,
   Text,
-  VerticalStack,
+  HorizontalStack,
 } from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
@@ -76,14 +76,14 @@ export function MethodCard({
   return (
     <Card>
       <VerticalStack gap="4">
-        <Stack distribution="equalSpacing" alignment="center">
+        <HorizontalStack align="start" gap="1">
           <Text variant="headingMd" as="h2">
             {title}
           </Text>
           <Text as="span" color="subdued">
             {getDiscountClassLabel(discountClass, i18n)}
           </Text>
-        </Stack>
+        </HorizontalStack>
 
         <Text variant="headingMd" as="h2">
           {!discountMethodHidden &&

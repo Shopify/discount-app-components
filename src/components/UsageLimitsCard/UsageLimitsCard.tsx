@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import {
-  LegacyCard as Card,
+  Card,
   ChoiceList,
   TextField,
-  LegacyStack as Stack,
   Text,
   InlineError,
+  VerticalStack,
 } from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
@@ -95,8 +95,11 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
   };
 
   return (
-    <Card title={i18n.translate('DiscountAppComponents.UsageLimitsCard.title')}>
-      <Card.Section>
+    <Card>
+      <VerticalStack gap="4">
+        <Text variant="headingMd" as="h2">
+          {i18n.translate('DiscountAppComponents.UsageLimitsCard.title')}
+        </Text>
         <ChoiceList
           title={i18n.translate(
             'DiscountAppComponents.UsageLimitsCard.options',
@@ -116,7 +119,7 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
               ),
               value: UsageLimitType.TotalUsageLimit,
               renderChildren: (isSelected: boolean) => (
-                <Stack vertical spacing="extraTight">
+                <VerticalStack>
                   {isSelected && (
                     <div className={styles.TotalUsageLimitTextField}>
                       <TextField
@@ -150,7 +153,7 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
                       message={totalUsageLimit.error}
                     />
                   )}
-                </Stack>
+                </VerticalStack>
               ),
             },
             {
@@ -162,14 +165,14 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
           ]}
           onChange={handleUsageLimitsChoicesChange}
         />
-      </Card.Section>
+      </VerticalStack>
       {isShowRecurringPaymentSection(props) && (
-        <Card.Section>
+        <VerticalStack gap="4">
           <RecurringPayment
             recurringPaymentType={props.recurringPaymentType}
             recurringPaymentLimit={props.recurringPaymentLimit}
           />
-        </Card.Section>
+        </VerticalStack>
       )}
     </Card>
   );
