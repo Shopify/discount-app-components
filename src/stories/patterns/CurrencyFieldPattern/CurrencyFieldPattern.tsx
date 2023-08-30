@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import {Button, Page, TopBar} from '@shopify/polaris';
+import {Page} from '@shopify/polaris';
 import {CurrencyField} from '../../../components/CurrencyField';
 import {CurrencyCode} from '@shopify/react-i18n';
 import {FormattedNumberField} from '../../../components/FormattedNumberField';
