@@ -24,7 +24,6 @@ export default function SummaryCardPattern() {
           discountStatus: DiscountStatus.Active,
         }}
         performance={{
-          isEditing: true,
           status: DiscountStatus.Scheduled,
           usageCount: 0,
         }}
