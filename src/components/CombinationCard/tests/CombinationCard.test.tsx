@@ -1,5 +1,5 @@
 import React from 'react';
-import {Banner, LegacyCard as Card, ChoiceList} from '@shopify/polaris';
+import {Banner, Card, ChoiceList, Text} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 import {composeGid} from '@shopify/admin-graphql-api-utilities';
 
@@ -77,9 +77,9 @@ describe('<CombinationCard />', () => {
   it('renders <Card />', () => {
     const combinationCard = mountWithApp(<CombinationCard {...mockProps} />);
 
-    expect(combinationCard).toContainReactComponent(Card, {
-      sectioned: true,
-      title: 'Combinations',
+    expect(combinationCard).toContainReactComponent(Card);
+    expect(combinationCard).toContainReactComponent(Text, {
+      children: 'Combinations',
     });
   });
 

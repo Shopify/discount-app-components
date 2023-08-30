@@ -2,9 +2,9 @@ import React from 'react';
 import {
   Banner,
   Link,
-  LegacyCard as Card,
+  Card,
   ChoiceList,
-  LegacyStack as Stack,
+  VerticalStack,
   Text,
   ChoiceListProps,
 } from '@shopify/polaris';
@@ -79,8 +79,11 @@ export function CombinationCard({
       selectedChoices.includes(DiscountClass.Order));
 
   return (
-    <Card title={i18n.translate('title', I18N_SCOPE)} sectioned>
-      <Stack vertical spacing="baseTight">
+    <Card>
+      <Text variant="headingMd" as="h2">
+        {i18n.translate('title', I18N_SCOPE)}
+      </Text>
+      <VerticalStack>
         {shouldShowBanner && (
           <Banner
             title={i18n.translate('warning.title', I18N_SCOPE)}
@@ -90,7 +93,7 @@ export function CombinationCard({
               {i18n.translate('warning.description', I18N_SCOPE)}{' '}
               <Link
                 url={`https://help.shopify.com/${i18n.locale}/manual/discounts/combining-discounts`}
-                external
+                target="_blank"
               >
                 {i18n.translate('warning.link', I18N_SCOPE)}
               </Link>
@@ -128,7 +131,7 @@ export function CombinationCard({
           selected={getSelectedChoices(combinableDiscountTypes.value)}
           onChange={handleDiscountCombinesWithChange}
         />
-      </Stack>
+      </VerticalStack>
     </Card>
   );
 }
