@@ -16,6 +16,5 @@
       "~/*": ["./src/*"]
     }
   },
-  "include": ["./config/typescript", "./src", "./tests"],
-  "exclude": ["./src/stories"]
+  "include": ["./config/typescript", "./src", "./tests"]
 }
