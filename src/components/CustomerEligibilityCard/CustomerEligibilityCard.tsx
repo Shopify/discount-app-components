@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  LegacyCard as Card,
-  ChoiceList,
-  LegacyStack as Stack,
-} from '@shopify/polaris';
+import {Card, ChoiceList, Text, VerticalStack} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 import {Action} from '@shopify/app-bridge/actions/Navigation/Redirect';
 import {parseGid} from '@shopify/admin-graphql-api-utilities';
@@ -56,47 +52,51 @@ export function CustomerEligibilityCard({
   const [i18n] = useI18n();
 
   return (
-    <Card title={i18n.translate('title', I18N_SCOPE)} sectioned>
-      <ChoiceList
-        title={i18n.translate('title', I18N_SCOPE)}
-        titleHidden
-        selected={[eligibility.value]}
-        choices={[
-          {
-            label: i18n.translate('everyone', I18N_SCOPE),
-            value: Eligibility.Everyone,
-          },
-          {
-            label: i18n.translate('customerSegments', I18N_SCOPE),
-            value: Eligibility.CustomerSegments,
-          },
-          {
-            label: i18n.translate('customers', I18N_SCOPE),
-            value: Eligibility.Customers,
-          },
-        ]}
-        onChange={(selectedEligibility: Eligibility[]) => {
-          eligibility.onChange(selectedEligibility[0]);
-        }}
-      />
+    <Card>
+      <VerticalStack gap="4">
+        <Text variant="headingMd" as="h2">
+          {i18n.translate('title', I18N_SCOPE)}
+        </Text>
+        <ChoiceList
+          title={i18n.translate('title', I18N_SCOPE)}
+          titleHidden
+          selected={[eligibility.value]}
+          choices={[
+            {
+              label: i18n.translate('everyone', I18N_SCOPE),
+              value: Eligibility.Everyone,
+            },
+            {
+              label: i18n.translate('customerSegments', I18N_SCOPE),
+              value: Eligibility.CustomerSegments,
+            },
+            {
+              label: i18n.translate('customers', I18N_SCOPE),
+              value: Eligibility.Customers,
+            },
+          ]}
+          onChange={(selectedEligibility: Eligibility[]) => {
+            eligibility.onChange(selectedEligibility[0]);
+          }}
+        />
 
-      {eligibility.value === Eligibility.CustomerSegments && (
-        <Stack vertical spacing="extraTight">
-          {customerSegmentSelector}
+        {eligibility.value === Eligibility.CustomerSegments && (
+          <VerticalStack gap="4">
+            {customerSegmentSelector}
 
-          <SelectedCustomerSegmentsList
-            selectedCustomerSegments={selectedCustomerSegments}
-          />
-        </Stack>
-      )}
+            <SelectedCustomerSegmentsList
+              selectedCustomerSegments={selectedCustomerSegments}
+            />
+          </VerticalStack>
+        )}
 
-      {eligibility.value === Eligibility.Customers && (
-        <Stack vertical spacing="extraTight">
-          {customerSelector}
-
-          <SelectedCustomersList selectedCustomers={selectedCustomers} />
-        </Stack>
-      )}
+        {eligibility.value === Eligibility.Customers && (
+          <VerticalStack gap="4">
+            {customerSelector}
+            <SelectedCustomersList selectedCustomers={selectedCustomers} />
+          </VerticalStack>
+        )}
+      </VerticalStack>
     </Card>
   );
 }

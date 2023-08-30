@@ -2,4 +2,4 @@
 '@shopify/discount-app-components': patch
 ---
 
-Upgrade CombinationCard, HelpText, CountriesAndRatesCard to use Alpha components
+Upgrade CombinationCard, HelpText, CountriesAndRatesCard, CurrencyField to use Alpha components
