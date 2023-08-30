@@ -26,13 +26,17 @@ export default function CountriesAndRatesCardPattern() {
   );
   const [excludeShippingRates, setExcludeShippingRates] =
     useState<boolean>(false);
-  const [maximumShippingPrice, setMaximumShippingPrice] = useState<string>();
+  const [maximumShippingPrice, setMaximumShippingPrice] = useState<string>("");
   const [countries, setCountries] = useState<CountryCode[]>([
     ALL_SHOP_COUNTRIES[0],
     ALL_SHOP_COUNTRIES[1],
   ]);
   const selectedCountriesField = {value: countries, onChange: setCountries};
   const [modalOpen, setModalOpen] = useState<boolean>(false);
+
+  const onBlur = () => {
+    setMaximumShippingPrice("");
+  };
 
   return (
     <Page>
@@ -45,7 +49,7 @@ export default function CountriesAndRatesCardPattern() {
         maximumShippingPrice={{
           value: maximumShippingPrice,
           onChange: setMaximumShippingPrice,
-          onBlur: setMaximumShippingPrice,
+          onBlur: onBlur,
         }}
         excludeShippingRates={{
           value: excludeShippingRates,
