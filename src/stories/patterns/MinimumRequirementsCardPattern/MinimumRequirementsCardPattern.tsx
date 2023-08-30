@@ -15,8 +15,8 @@ export default function MinimumRequirementsCardPattern() {
   const [requirementType, setRequirementType] = useState<RequirementType>(
     RequirementType.None,
   );
-  const [subtotal, setSubtotal] = useState<string>('');
-  const [quantity, setQuantity] = useState<string>('');
+  const [subtotal, setSubtotal] = useState<string>();
+  const [quantity, setQuantity] = useState<string>();
 
   const [discountMethod, setDiscountMethod] = useState<DiscountMethod>(
     DiscountMethod.Code,
