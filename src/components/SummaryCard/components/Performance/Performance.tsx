@@ -1,6 +1,6 @@
 import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
-import {Card, List, Text, VerticalStack} from '@shopify/polaris';
+import {List, Text, VerticalStack} from '@shopify/polaris';
 import {Redirect} from '@shopify/app-bridge/actions';
 
 import {AppBridgeLink} from '../../../AppBridgeLink';
