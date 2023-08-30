@@ -1,10 +1,11 @@
 import React from 'react';
 import {
-  LegacyCard as Card,
+  Card,
   ChoiceList,
   LegacyStack as Stack,
   TextField,
   Text,
+  VerticalStack,
 } from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
@@ -74,7 +75,7 @@ export function MethodCard({
 
   return (
     <Card>
-      <Card.Section>
+      <VerticalStack gap="4">
         <Stack distribution="equalSpacing" alignment="center">
           <Text variant="headingMd" as="h2">
             {title}
@@ -83,14 +84,12 @@ export function MethodCard({
             {getDiscountClassLabel(discountClass, i18n)}
           </Text>
         </Stack>
-      </Card.Section>
-      <Card.Section
-        title={
-          !discountMethodHidden &&
-          i18n.translate('DiscountAppComponents.MethodCard.methodSubtitle')
-        }
-      >
-        <Stack vertical>
+
+        <Text variant="headingMd" as="h2">
+          {!discountMethodHidden &&
+            i18n.translate('DiscountAppComponents.MethodCard.methodSubtitle')}
+        </Text>
+        <VerticalStack gap="4">
           {!discountMethodHidden && (
             <ChoiceList
               title={i18n.translate(
@@ -133,8 +132,8 @@ export function MethodCard({
               {...discountTitle}
             />
           )}
-        </Stack>
-      </Card.Section>
+        </VerticalStack>
+      </VerticalStack>
     </Card>
   );
 }
