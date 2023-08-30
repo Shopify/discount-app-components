@@ -117,7 +117,7 @@ export default function DiscountPage({id = '1'}) {
 
   // Active dates
   const [startTime, setStartTime] = useState(discountData.startsAt);
-  const [endTime, setEndTime] = useState(discountData.endsAt);
+  const [endTime, setEndTime] = useState<string | null>(discountData.endsAt);
 
   // Combination card
   const [combinesWith, setCombinesWith] = useState(discountData.combinesWith);
@@ -135,8 +135,8 @@ export default function DiscountPage({id = '1'}) {
   const [requirementType, setRequirementType] = useState<RequirementType>(
     RequirementType.None,
   );
-  const [subtotal, setSubtotal] = useState<string>('');
-  const [quantity, setQuantity] = useState<string>('');
+  const [subtotal, setSubtotal] = useState<string>();
+  const [quantity, setQuantity] = useState<string>();
 
   // Usage limits card
   const [totalUsageLimit, setTotalUsageLimit] = useState<string | null>(null);
@@ -152,12 +152,6 @@ export default function DiscountPage({id = '1'}) {
   return (
     <Page
       title="Create discount"
-      breadcrumbs={[
-        {
-          content: 'Discounts',
-          onAction: () => {},
-        },
-      ]}
     >
       <Layout>
         <Layout.Section>
@@ -255,7 +249,6 @@ export default function DiscountPage({id = '1'}) {
             }}
             performance={{
               status: discountData.status,
-              isEditing,
             }}
             activeDates={{
               startDate: startTime,
