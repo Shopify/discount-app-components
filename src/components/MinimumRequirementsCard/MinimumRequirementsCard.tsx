@@ -6,6 +6,7 @@ import {
   InlineError,
   Text,
   VerticalStack,
+  Box,
 } from '@shopify/polaris';
 import {CurrencyCode, I18n, useI18n} from '@shopify/react-i18n';
 
@@ -191,26 +192,28 @@ export function MinimumRequirementsCard({
       : allMinimumRequirementChoices;
 
   return (
-    <Card>
-      <VerticalStack gap="4">
-        <Text variant="headingMd" as="h2">
-          {i18n.translate(
-            'DiscountAppComponents.MinimumRequirementsCard.title',
-          )}
-        </Text>
-        <ChoiceList
-          title={i18n.translate(
-            'DiscountAppComponents.MinimumRequirementsCard.title',
-          )}
-          titleHidden
-          choices={minimumRequirementChoicesToRender}
-          selected={[requirementType.value]}
-          onChange={(nextValue: RequirementType[]) =>
-            requirementType.onChange(nextValue[0])
-          }
-        />
-      </VerticalStack>
-    </Card>
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="4">
+          <Text variant="headingMd" as="h2">
+            {i18n.translate(
+              'DiscountAppComponents.MinimumRequirementsCard.title',
+            )}
+          </Text>
+          <ChoiceList
+            title={i18n.translate(
+              'DiscountAppComponents.MinimumRequirementsCard.title',
+            )}
+            titleHidden
+            choices={minimumRequirementChoicesToRender}
+            selected={[requirementType.value]}
+            onChange={(nextValue: RequirementType[]) =>
+              requirementType.onChange(nextValue[0])
+            }
+          />
+        </VerticalStack>
+      </Card>
+    </Box>
   );
 }
 

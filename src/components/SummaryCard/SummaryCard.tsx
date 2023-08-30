@@ -1,7 +1,7 @@
 /* eslint-disable @shopify/typescript/prefer-pascal-case-enums */
 import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
-import {List, Card, VerticalStack, Text} from '@shopify/polaris';
+import {List, Card, VerticalStack, Text, Box} from '@shopify/polaris';
 
 import {
   ActiveDates,
@@ -115,63 +115,67 @@ export function SummaryCard(props: SummaryCardProps) {
   );
 
   return (
-    <Card>
-      <VerticalStack gap="4">
-        <Text variant="headingMd" as="h2">
-          {i18n.translate('title', I18N_SCOPE)}
-        </Text>
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="4">
+          <Text variant="headingMd" as="h2">
+            {i18n.translate('title', I18N_SCOPE)}
+          </Text>
 
-        <VerticalStack>
-          <Header {...props.header} />
+          <VerticalStack>
+            <Header {...props.header} />
 
-          {showDetailsSection && (
-            <VerticalStack>
-              <Text variant="headingXs" as="h3">
-                {i18n.translate('details', I18N_SCOPE)}
-              </Text>
+            {showDetailsSection && (
+              <VerticalStack>
+                <Text variant="headingXs" as="h3">
+                  {i18n.translate('details', I18N_SCOPE)}
+                </Text>
 
-              <List type="bullet">
-                {props.additionalDetails?.map((detail) => (
-                  <List.Item key={detail.replace(/\s/g, '-')}>
-                    {detail}
-                  </List.Item>
-                ))}
+                <List type="bullet">
+                  {props.additionalDetails?.map((detail) => (
+                    <List.Item key={detail.replace(/\s/g, '-')}>
+                      {detail}
+                    </List.Item>
+                  ))}
 
-                {props.appliesToPurchaseType && (
-                  <AppliesToPurchaseType {...props.appliesToPurchaseType} />
-                )}
+                  {props.appliesToPurchaseType && (
+                    <AppliesToPurchaseType {...props.appliesToPurchaseType} />
+                  )}
 
-                {props.recurringPayment && (
-                  <RecurringPayment {...props.recurringPayment} />
-                )}
+                  {props.recurringPayment && (
+                    <RecurringPayment {...props.recurringPayment} />
+                  )}
 
-                {props.selectedCountries && (
-                  <SelectedCountries {...props.selectedCountries} />
-                )}
+                  {props.selectedCountries && (
+                    <SelectedCountries {...props.selectedCountries} />
+                  )}
 
-                {props.maximumShippingPrice && (
-                  <MaximumShippingPrice {...props.maximumShippingPrice} />
-                )}
+                  {props.maximumShippingPrice && (
+                    <MaximumShippingPrice {...props.maximumShippingPrice} />
+                  )}
 
-                {props.minimumRequirements && (
-                  <MinimumRequirements {...props.minimumRequirements} />
-                )}
+                  {props.minimumRequirements && (
+                    <MinimumRequirements {...props.minimumRequirements} />
+                  )}
 
-                {props.customerEligibility && (
-                  <CustomerEligibility {...props.customerEligibility} />
-                )}
+                  {props.customerEligibility && (
+                    <CustomerEligibility {...props.customerEligibility} />
+                  )}
 
-                {props.usageLimits && <UsageLimits {...props.usageLimits} />}
+                  {props.usageLimits && <UsageLimits {...props.usageLimits} />}
 
-                {props.combinations && <Combinations {...props.combinations} />}
+                  {props.combinations && (
+                    <Combinations {...props.combinations} />
+                  )}
 
-                {props.activeDates && <ActiveDates {...props.activeDates} />}
-              </List>
-            </VerticalStack>
-          )}
+                  {props.activeDates && <ActiveDates {...props.activeDates} />}
+                </List>
+              </VerticalStack>
+            )}
+          </VerticalStack>
+          <Performance {...props.performance} />
         </VerticalStack>
-        <Performance {...props.performance} />
-      </VerticalStack>
-    </Card>
+      </Card>
+    </Box>
   );
 }

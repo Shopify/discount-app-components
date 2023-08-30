@@ -7,6 +7,7 @@ import {
   VerticalStack,
   Text,
   ChoiceListProps,
+  Box,
 } from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
@@ -79,60 +80,62 @@ export function CombinationCard({
       selectedChoices.includes(DiscountClass.Order));
 
   return (
-    <Card>
-      <VerticalStack gap="4">
-        <Text variant="headingMd" as="h2">
-          {i18n.translate('title', I18N_SCOPE)}
-        </Text>
-        {shouldShowBanner && (
-          <Banner
-            title={i18n.translate('warning.title', I18N_SCOPE)}
-            status="warning"
-          >
-            <p>
-              {i18n.translate('warning.description', I18N_SCOPE)}{' '}
-              <Link
-                url={`https://help.shopify.com/${i18n.locale}/manual/discounts/combining-discounts`}
-                target="_blank"
-              >
-                {i18n.translate('warning.link', I18N_SCOPE)}
-              </Link>
-            </p>
-          </Banner>
-        )}
-        <p>
-          {trimmedDescriptor ? (
-            <>
-              <Text as="span" fontWeight="semibold">
-                {trimmedDescriptor}
-              </Text>{' '}
-              {i18n.translate('discountNameFilled', I18N_SCOPE)}
-            </>
-          ) : (
-            i18n.translate('discountNameNotFilled', I18N_SCOPE, {
-              discountClass: i18n.translate(
-                `discountClass.${discountClass.toLowerCase()}`,
-                I18N_SCOPE,
-              ),
-            })
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="4">
+          <Text variant="headingMd" as="h2">
+            {i18n.translate('title', I18N_SCOPE)}
+          </Text>
+          {shouldShowBanner && (
+            <Banner
+              title={i18n.translate('warning.title', I18N_SCOPE)}
+              status="warning"
+            >
+              <p>
+                {i18n.translate('warning.description', I18N_SCOPE)}{' '}
+                <Link
+                  url={`https://help.shopify.com/${i18n.locale}/manual/discounts/combining-discounts`}
+                  target="_blank"
+                >
+                  {i18n.translate('warning.link', I18N_SCOPE)}
+                </Link>
+              </p>
+            </Banner>
           )}
-        </p>
-        <ChoiceList
-          title={i18n.translate('combinesWith', I18N_SCOPE)}
-          titleHidden
-          allowMultiple
-          choices={buildChoices({
-            discountClass,
-            discountId,
-            discountDescriptor,
-            i18n,
-            combinableDiscountCounts,
-          })}
-          selected={getSelectedChoices(combinableDiscountTypes.value)}
-          onChange={handleDiscountCombinesWithChange}
-        />
-      </VerticalStack>
-    </Card>
+          <p>
+            {trimmedDescriptor ? (
+              <>
+                <Text as="span" fontWeight="semibold">
+                  {trimmedDescriptor}
+                </Text>{' '}
+                {i18n.translate('discountNameFilled', I18N_SCOPE)}
+              </>
+            ) : (
+              i18n.translate('discountNameNotFilled', I18N_SCOPE, {
+                discountClass: i18n.translate(
+                  `discountClass.${discountClass.toLowerCase()}`,
+                  I18N_SCOPE,
+                ),
+              })
+            )}
+          </p>
+          <ChoiceList
+            title={i18n.translate('combinesWith', I18N_SCOPE)}
+            titleHidden
+            allowMultiple
+            choices={buildChoices({
+              discountClass,
+              discountId,
+              discountDescriptor,
+              i18n,
+              combinableDiscountCounts,
+            })}
+            selected={getSelectedChoices(combinableDiscountTypes.value)}
+            onChange={handleDiscountCombinesWithChange}
+          />
+        </VerticalStack>
+      </Card>
+    </Box>
   );
 }
 
