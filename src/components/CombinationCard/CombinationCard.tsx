@@ -80,10 +80,10 @@ export function CombinationCard({
 
   return (
     <Card>
-      <Text variant="headingMd" as="h2">
-        {i18n.translate('title', I18N_SCOPE)}
-      </Text>
-      <VerticalStack>
+      <VerticalStack gap="4">
+        <Text variant="headingMd" as="h2">
+          {i18n.translate('title', I18N_SCOPE)}
+        </Text>
         {shouldShowBanner && (
           <Banner
             title={i18n.translate('warning.title', I18N_SCOPE)}
