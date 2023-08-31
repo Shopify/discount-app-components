@@ -313,3 +313,8 @@ export enum SupportedCountryCode {
 }
 
 export const REST_OF_WORLD = 'REST_OF_WORLD';
+
+export enum DiscountValueType {
+  Percentage = 'PERCENTAGE',
+  FixedAmount = 'FIXED_AMOUNT',
+}
