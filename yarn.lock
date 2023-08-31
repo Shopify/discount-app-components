@@ -2963,11 +2963,6 @@
     postcss-flexbugs-fixes "^5.0.2"
     postcss-will-change "^4.0.1"
 
-"@shopify/predicates@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@shopify/predicates/-/predicates-3.0.1.tgz#c09c3d6c65d462d6bc9ac54a4f1b1895d29ce59b"
-  integrity sha512-Q6awrbeIwfJ/duJqNy9n2CPSBKhDPIpa60va472Q2VgKaEH5Rrzi6aZjabLeVVrLKl2V+YF96GS/4GzOV5I5cg==
-
 "@shopify/prettier-config@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@shopify/prettier-config/-/prettier-config-1.1.2.tgz#612f87c0cd1196e8b43c85425e587d0fa7f1172d"
@@ -2977,16 +2972,6 @@
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/@shopify/react-effect/-/react-effect-5.0.3.tgz#9bbf53a03a06a955ac54a86c8403ea4e3067fc8e"
   integrity sha512-xBOzxApzO/KNo1xbdodWNFbRvsCymnnjLiZr3KehOgqp/aSb7fMJw5o6COeo9v2k4phoUlbWXye+JJuEOB8DTA==
-
-"@shopify/react-form@^2.5.5":
-  version "2.5.5"
-  resolved "https://registry.yarnpkg.com/@shopify/react-form/-/react-form-2.5.5.tgz#a2f7db0f2d41b6d9bbb774377f56b5c8f6bfc8e4"
-  integrity sha512-cOuz7yYm3LfvynhIw7ANVDUjLZTJ7Nc/zOgjQKNS2++TFKz9wi2vheWhpZIADehoOqIWuxX0jX7vfltvbeUd9w==
-  dependencies:
-    "@shopify/predicates" "^3.0.1"
-    "@shopify/react-hooks" "^3.0.5"
-    fast-deep-equal "^3.1.3"
-    get-value "^3.0.1"
 
 "@shopify/react-hooks@^3.0.5":
   version "3.0.5"
@@ -8082,13 +8067,6 @@ get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha512-Ln0UQDlxH1BapMu3GPtf7CuYNwRZf2gwCuPqbyG6pB8WfmFpzqcy4xtAaAMUhnNqjMKTiCPZG2oMT3YSx8U2NA==
-
-get-value@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/get-value/-/get-value-3.0.1.tgz#5efd2a157f1d6a516d7524e124ac52d0a39ef5a8"
-  integrity sha512-mKZj9JLQrwMBtj5wxi6MH8Z5eSKaERpAwjg43dPtlGI1ZVEgH/qC7T8/6R2OBSUA+zzHBZgICsVJaEIV2tKTDA==
-  dependencies:
-    isobject "^3.0.1"
 
 giget@^1.0.0:
   version "1.1.2"
