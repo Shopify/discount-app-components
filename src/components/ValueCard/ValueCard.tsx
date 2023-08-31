@@ -2,12 +2,15 @@ import React from 'react';
 import {
   Button,
   ButtonGroup,
-  LegacyCard,
   Checkbox,
   ChoiceList,
   InlineError,
-  LegacyStack,
+  VerticalStack,
   TextField,
+  HorizontalStack,
+  Box,
+  Card,
+  Text,
 } from '@shopify/polaris';
 import type {CurrencyCode, I18n} from '@shopify/react-i18n';
 import {useI18n} from '@shopify/react-i18n';
@@ -87,140 +90,145 @@ export function ValueCard({
   );
 
   return (
-    <LegacyCard title={i18n.translate('DiscountAppComponents.ValueCard.title')}>
-      <LegacyCard.Section>
-        <LegacyStack>
-          <ButtonGroup segmented>
-            <Button
-              size="large"
-              pressed={isPercentageDiscount}
-              onClick={() =>
-                discountValueType.onChange(DiscountValueType.Percentage)
-              }
-            >
-              {i18n.translate(
-                'DiscountAppComponents.ValueCard.percentageButton',
-              )}
-            </Button>
-            <Button
-              size="large"
-              pressed={!isPercentageDiscount}
-              onClick={() =>
-                discountValueType.onChange(DiscountValueType.FixedAmount)
-              }
-            >
-              {i18n.translate(
-                'DiscountAppComponents.ValueCard.fixedAmountButton',
-              )}
-            </Button>
-          </ButtonGroup>
-          <LegacyStack.Item fill>
-            {!isPercentageDiscount && (
-              <CurrencyField
-                label={i18n.translate(
-                  'DiscountAppComponents.ValueCard.discountValueLabel',
+    <Box paddingBlockEnd="4">
+      <Card padding="4">
+        <VerticalStack gap="2">
+          <Text variant="headingMd" as="h2">
+            {i18n.translate('DiscountAppComponents.ValueCard.title')}{' '}
+          </Text>
+          <HorizontalStack gap="3" align="start">
+            <ButtonGroup segmented>
+              <Button
+                size="large"
+                pressed={isPercentageDiscount}
+                onClick={() =>
+                  discountValueType.onChange(DiscountValueType.Percentage)
+                }
+              >
+                {i18n.translate(
+                  'DiscountAppComponents.ValueCard.percentageButton',
                 )}
-                labelHidden
-                id={FIXED_AMOUNT_VALUE_FIELD_ID}
-                value={fixedAmountDiscountValue.value}
-                maxLength={15}
-                error={fixedAmountDiscountValue.error !== undefined}
-                currencyCode={currencyCode}
-                onChange={fixedAmountDiscountValue.onChange}
-                onBlur={fixedAmountDiscountValue.onBlur}
-                positiveOnly
-              />
-            )}
-            {isPercentageDiscount && (
-              <TextField
-                autoComplete="off"
-                label={i18n.translate(
-                  'DiscountAppComponents.ValueCard.discountValueLabel',
+              </Button>
+              <Button
+                size="large"
+                pressed={!isPercentageDiscount}
+                onClick={() =>
+                  discountValueType.onChange(DiscountValueType.FixedAmount)
+                }
+              >
+                {i18n.translate(
+                  'DiscountAppComponents.ValueCard.fixedAmountButton',
                 )}
-                labelHidden
-                suffix="%"
-                value={percentageDiscountValue.value}
-                onBlur={percentageDiscountValue.onBlur}
-                maxLength={MAX_PERCENTAGE_LENGTH}
-                minLength={MIN_PERCENTAGE_LENGTH}
-                onChange={handlePercentageValueChange}
-                error={hasPercentageDiscountValueError}
-              />
-            )}
-            {!isPercentageDiscount && fixedAmountDiscountValue.error && (
-              <div className={styles.Error}>
-                <InlineError
-                  fieldID={FIXED_AMOUNT_VALUE_FIELD_ID}
-                  message={fixedAmountDiscountValue.error}
+              </Button>
+            </ButtonGroup>
+            <Box width="75%">
+              {!isPercentageDiscount && (
+                <CurrencyField
+                  label={i18n.translate(
+                    'DiscountAppComponents.ValueCard.discountValueLabel',
+                  )}
+                  labelHidden
+                  id={FIXED_AMOUNT_VALUE_FIELD_ID}
+                  value={fixedAmountDiscountValue.value}
+                  maxLength={15}
+                  error={fixedAmountDiscountValue.error !== undefined}
+                  currencyCode={currencyCode}
+                  onChange={fixedAmountDiscountValue.onChange}
+                  onBlur={fixedAmountDiscountValue.onBlur}
+                  positiveOnly
                 />
-              </div>
-            )}
-            {isPercentageDiscount && percentageDiscountValue.error && (
-              <div className={styles.Error}>
-                <InlineError
-                  fieldID={PERCENTAGE_VALUE_FIELD_ID}
-                  message={percentageDiscountValue.error}
+              )}
+              {isPercentageDiscount && (
+                <TextField
+                  autoComplete="off"
+                  label={i18n.translate(
+                    'DiscountAppComponents.ValueCard.discountValueLabel',
+                  )}
+                  labelHidden
+                  suffix="%"
+                  value={percentageDiscountValue.value}
+                  onBlur={percentageDiscountValue.onBlur}
+                  maxLength={MAX_PERCENTAGE_LENGTH}
+                  minLength={MIN_PERCENTAGE_LENGTH}
+                  onChange={handlePercentageValueChange}
+                  error={hasPercentageDiscountValueError}
                 />
-              </div>
-            )}
-          </LegacyStack.Item>
-        </LegacyStack>
-      </LegacyCard.Section>
-      {sellsSubscriptions && (
-        <LegacyCard.Section
-          title={i18n.translate(
-            'DiscountAppComponents.ValueCard.purchaseType.title',
+              )}
+              {!isPercentageDiscount && fixedAmountDiscountValue.error && (
+                <div className={styles.Error}>
+                  <InlineError
+                    fieldID={FIXED_AMOUNT_VALUE_FIELD_ID}
+                    message={fixedAmountDiscountValue.error}
+                  />
+                </div>
+              )}
+              {isPercentageDiscount && percentageDiscountValue.error && (
+                <div className={styles.Error}>
+                  <InlineError
+                    fieldID={PERCENTAGE_VALUE_FIELD_ID}
+                    message={percentageDiscountValue.error}
+                  />
+                </div>
+              )}
+            </Box>
+          </HorizontalStack>
+          {sellsSubscriptions && (
+            <>
+              <Text variant="headingMd" as="h2">
+                {i18n.translate(
+                  'DiscountAppComponents.ValueCard.purchaseType.title',
+                )}
+              </Text>
+
+              {isCodeDiscount ? (
+                <ChoiceList
+                  title={i18n.translate(
+                    'DiscountAppComponents.ValueCard.purchaseType.choiceListTitle',
+                  )}
+                  titleHidden
+                  choices={purchaseTypeChoices}
+                  selected={[purchaseType.value]}
+                  onChange={(values: string[]) =>
+                    purchaseType.onChange(values[0] as PurchaseType)
+                  }
+                />
+              ) : (
+                <p>{getPurchaseTypeWarning(discountClass, i18n)}</p>
+              )}
+            </>
           )}
-        >
-          {isCodeDiscount ? (
-            <ChoiceList
-              title={i18n.translate(
-                'DiscountAppComponents.ValueCard.purchaseType.choiceListTitle',
+          {isProductDiscount && !isPercentageDiscount && (
+            <Checkbox
+              id={ONCE_PER_ORDER_CHECKBOX_ID}
+              label={i18n.translate(
+                'DiscountAppComponents.ValueCard.oncePerOrder',
               )}
-              titleHidden
-              choices={purchaseTypeChoices}
-              selected={[purchaseType.value]}
-              onChange={(values: string[]) =>
-                purchaseType.onChange(values[0] as PurchaseType)
+              checked={oncePerOrder.value}
+              onChange={oncePerOrder.onChange}
+              helpText={
+                isNaN(fixedAmountValueFloat)
+                  ? i18n.translate(
+                      'DiscountAppComponents.ValueCard.oncePerOrderHelpText',
+                    )
+                  : i18n.translate(
+                      'DiscountAppComponents.ValueCard.oncePerOrderHelpTextWithAmount',
+                      {
+                        fixedAmountValue: i18n.formatCurrency(
+                          Number(fixedAmountValueFloat),
+                          {
+                            currency: currencyCode,
+                            precision: 0,
+                            form: 'explicit',
+                          },
+                        ),
+                      },
+                    )
               }
             />
-          ) : (
-            <p>{getPurchaseTypeWarning(discountClass, i18n)}</p>
           )}
-        </LegacyCard.Section>
-      )}
-      {isProductDiscount && !isPercentageDiscount && (
-        <LegacyCard.Section>
-          <Checkbox
-            id={ONCE_PER_ORDER_CHECKBOX_ID}
-            label={i18n.translate(
-              'DiscountAppComponents.ValueCard.oncePerOrder',
-            )}
-            checked={oncePerOrder.value}
-            onChange={oncePerOrder.onChange}
-            helpText={
-              isNaN(fixedAmountValueFloat)
-                ? i18n.translate(
-                    'DiscountAppComponents.ValueCard.oncePerOrderHelpText',
-                  )
-                : i18n.translate(
-                    'DiscountAppComponents.ValueCard.oncePerOrderHelpTextWithAmount',
-                    {
-                      fixedAmountValue: i18n.formatCurrency(
-                        Number(fixedAmountValueFloat),
-                        {
-                          currency: currencyCode,
-                          precision: 0,
-                          form: 'explicit',
-                        },
-                      ),
-                    },
-                  )
-            }
-          />
-        </LegacyCard.Section>
-      )}
-    </LegacyCard>
+        </VerticalStack>
+      </Card>
+    </Box>
   );
 }
 const getPurchaseTypeWarning = (discountClass: string, i18n: I18n): string => {
