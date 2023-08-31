@@ -1,20 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
 import { ValueCard } from "../../../components/ValueCard/ValueCard"
 import { DiscountClass, DiscountValueType, PurchaseType } from "~/constants";
 import { CurrencyCode } from "@shopify/react-i18n";
-import {useField} from '@shopify/react-form';
 import { Page } from "@shopify/polaris";
 
 const ValueCardPattern = () => {
-  const fixedAmountDiscountValue = useField('10');
+  const [fixedAmountDiscountValue, setFixedAmountDiscountValue] = useState('10');
 
-  const percentageDiscountValue = useField('20');
+  const [percentageDiscountValue, setPercentageDiscountValue] = useState('20');
 
-  const discountValueType = useField(DiscountValueType.Percentage);
+  const [discountValueType, setDiscountValueType] = useState(DiscountValueType.Percentage);
 
-  const purchaseType = useField(PurchaseType.OneTimePurchase);
+  const [purchaseType, setPurchaseType] = useState(PurchaseType.OneTimePurchase);
 
-  const oncePerOrder = useField(true);
+  const [oncePerOrder, setOncePerOrder] = useState(true);
 
   const discountClass = DiscountClass.Product;
   const currencyCode = CurrencyCode.Usd;
@@ -24,11 +23,26 @@ const ValueCardPattern = () => {
   return (
     <Page>
       <ValueCard
-        fixedAmountDiscountValue={fixedAmountDiscountValue}
-        percentageDiscountValue={percentageDiscountValue}
-        discountValueType={discountValueType}
-        purchaseType={purchaseType}
-        oncePerOrder={oncePerOrder}
+        fixedAmountDiscountValue={{
+          value: fixedAmountDiscountValue,
+          onChange: setFixedAmountDiscountValue,
+        }}
+        percentageDiscountValue={{
+          value: percentageDiscountValue,
+          onChange: setPercentageDiscountValue,
+        }}
+        discountValueType={{
+          value: discountValueType,
+          onChange: setDiscountValueType,
+        }}
+        purchaseType={{
+          value: purchaseType,
+          onChange: setPurchaseType,
+        }}
+        oncePerOrder={{
+          value: oncePerOrder,
+          onChange: setOncePerOrder,
+        }}
         discountClass={discountClass}
         currencyCode={currencyCode}
         sellsSubscriptions={sellsSubscriptions}
