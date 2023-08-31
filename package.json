@@ -62,6 +62,7 @@
     "@shopify/admin-graphql-api-utilities": "^2.0.0",
     "@shopify/dates": "^2.0.3",
     "@shopify/polaris-icons": "^7.1.0",
+    "@shopify/react-form": "^2.5.5",
     "@shopify/react-hooks": "^3.0.5",
     "@shopify/react-i18n": "^7.8.0",
     "d3-time-format": "2.1.1",

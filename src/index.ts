@@ -108,3 +108,4 @@ export {useLocalizeCountry} from './components/CountriesAndRatesCard/utilities';
 export {onBreadcrumbAction, handleRedirect} from './utilities/navigation';
 
 export {generateRandomDiscountCode} from './components/DiscountCodeGenerator/utilities';
+export {ValueCard} from './components/ValueCard';
