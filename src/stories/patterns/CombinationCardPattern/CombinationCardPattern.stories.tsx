@@ -35,21 +35,26 @@ const Template = (args: Props) => (
   </Provider>
 );
 
-export const ProductDiscount = (args: any) => (
+interface TemplateProps {
+  discountDescriptor?: string;
+  discountClass?: DiscountClass;
+}
+
+export const ProductDiscount = (args: TemplateProps) => (
   <Template
     discountDescriptor="My cool product discount"
     {...args}
     discountClass={DiscountClass.Product}
   />
 );
-export const OrderDiscount = (args: any) => (
+export const OrderDiscount = (args: TemplateProps) => (
   <Template
     discountDescriptor="My cool order discount"
     {...args}
     discountClass={DiscountClass.Order}
   />
 );
-export const ShippingDiscount = (args: any) => (
+export const ShippingDiscount = (args: TemplateProps) => (
   <Template
     discountDescriptor="My cool shipping discount"
     {...args}
