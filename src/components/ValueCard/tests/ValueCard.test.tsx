@@ -266,31 +266,6 @@ describe('<ValueCard />', () => {
       });
     });
 
-    // it.each`
-    //   discountClass             | expectedWarning
-    //   ${DiscountClass.Product}  | ${i18n.translate('ValueCard.purchaseType.warning.product')}
-    //   ${DiscountClass.Order}    | ${i18n.translate('ValueCard.purchaseType.warning.order')}
-    //   ${DiscountClass.Shipping} | ${i18n.translate('ValueCard.purchaseType.warning.shipping')}
-    // `(
-    //   'renders purchase type support warning if isCodeDiscount is false',
-    //   ({discountClass, expectedWarning}) => {
-    //     const props = {
-    //       ...mockProps,
-    //       isCodeDiscount: false,
-    //       discountClass,
-    //     };
-    //     const valueCard = mountWithApp(
-    //       <ValueCard
-    //         {...props}
-    //         sellsSubscriptions
-    //         purchaseType={mockField(PurchaseType.OneTimePurchase)}
-    //       />,
-    //     );
-
-    //     expect(valueCard).toContainReactText(expectedWarning);
-    //   },
-    // );
-
     it.each([
       PurchaseType.OneTimePurchase,
       PurchaseType.Subscription,
