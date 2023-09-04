@@ -534,6 +534,29 @@
       "ZA": "Güney Afrika",
       "ZM": "Zambiya",
       "ZW": "Zimbabve"
+    },
+    "ValueCard": {
+      "title": "Değer",
+      "percentageButton": "Yüzde",
+      "fixedAmountButton": "Sabit tutar",
+      "purchaseType": {
+        "title": "Satın alım türü",
+        "choiceListTitle": "Satın alım türünü seçin",
+        "choices": {
+          "oneTime": "Tek seferlik satın alım",
+          "subscription": "Abonelik",
+          "both": "Her ikisi"
+        },
+        "warning": {
+          "product": "Ürün indirimleri yalnızca tek seferlik satın alımlarda desteklenir.",
+          "order": "Sipariş indirimleri yalnızca tek seferlik satın alımlarda desteklenir.",
+          "shipping": "Kargo indirimleri yalnızca tek seferlik satın alımlarda desteklenir."
+        }
+      },
+      "discountValueLabel": "İndirim değeri",
+      "oncePerOrder": "Her sipariş için yalnızca bir kez indirim uygula",
+      "oncePerOrderHelpText": "Bu seçenek işaretlenmezse indirim tutarı, bir siparişteki uygun her üründen düşülür.",
+      "oncePerOrderHelpTextWithAmount": "Bu seçenek işaretlenmezse bir siparişteki uygun her üründen {fixedAmountValue} düşülür."
     }
   }
 }

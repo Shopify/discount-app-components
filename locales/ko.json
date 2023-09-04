@@ -534,6 +534,29 @@
       "ZA": "남아프리카 공화국",
       "ZM": "잠비아",
       "ZW": "짐바브웨"
+    },
+    "ValueCard": {
+      "title": "값",
+      "percentageButton": "백분율",
+      "fixedAmountButton": "고정 금액",
+      "purchaseType": {
+        "title": "구매 유형",
+        "choiceListTitle": "구매 유형 선택",
+        "choices": {
+          "oneTime": "1회성 구매",
+          "subscription": "구독",
+          "both": "모두"
+        },
+        "warning": {
+          "product": "제품 할인 제공은 1회성 구매에만 지원됩니다.",
+          "order": "주문 할인 제공은 1회성 구매에만 지원됩니다.",
+          "shipping": "배송 할인 제공은 1회성 구매에만 지원됩니다."
+        }
+      },
+      "discountValueLabel": "할인 값",
+      "oncePerOrder": "주문당 1회만 할인 적용",
+      "oncePerOrderHelpText": "선택하지 않으면 주문의 각 적격 품목에서 금액이 차감됩니다.",
+      "oncePerOrderHelpTextWithAmount": "선택하지 않으면 주문의 각 적격 품목에서 {fixedAmountValue}이(가) 차감됩니다."
     }
   }
 }
