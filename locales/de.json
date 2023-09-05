@@ -534,6 +534,29 @@
       "ZA": "Südafrika",
       "ZM": "Sambia",
       "ZW": "Simbabwe"
+    },
+    "ValueCard": {
+      "title": "Wert",
+      "percentageButton": "Prozentsatz",
+      "fixedAmountButton": "Fester Betrag",
+      "purchaseType": {
+        "title": "Art des Einkaufs",
+        "choiceListTitle": "Art des Einkaufs auswählen",
+        "choices": {
+          "oneTime": "Einmaliger Kauf",
+          "subscription": "Abonnement",
+          "both": "Beides"
+        },
+        "warning": {
+          "product": "Produktrabatte werden nur für einmalige Käufe unterstützt.",
+          "order": "Bestellrabatte werden nur für einmalige Käufe unterstützt.",
+          "shipping": "Versandrabatte werden nur für einmalige Käufe unterstützt."
+        }
+      },
+      "discountValueLabel": "Rabattwert",
+      "oncePerOrder": "Rabattcode nur einmal pro Bestellung anwenden",
+      "oncePerOrderHelpText": "Sollte diese Option nicht ausgewählt sein, wird der Betrag von jedem berechtigten Artikel in einer Bestellung abgezogen.",
+      "oncePerOrderHelpTextWithAmount": "Sollte diese Option nicht ausgewählt sein, werden {fixedAmountValue} von jedem berechtigten Artikel in einer Bestellung abgezogen."
     }
   }
 }

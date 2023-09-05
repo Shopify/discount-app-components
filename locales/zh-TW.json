@@ -534,6 +534,29 @@
       "ZA": "南非",
       "ZM": "尚比亞",
       "ZW": "辛巴威"
+    },
+    "ValueCard": {
+      "title": "價值",
+      "percentageButton": "百分比",
+      "fixedAmountButton": "固定金額",
+      "purchaseType": {
+        "title": "購買類型",
+        "choiceListTitle": "選取購買類型",
+        "choices": {
+          "oneTime": "一次性購買",
+          "subscription": "訂閱",
+          "both": "兩者皆是"
+        },
+        "warning": {
+          "product": "商品折扣僅支援一次性購買。",
+          "order": "訂單折扣僅支援一次性購買。",
+          "shipping": "運費折扣僅支援一次性購買。"
+        }
+      },
+      "discountValueLabel": "折扣價值",
+      "oncePerOrder": "單張訂單僅能使用一項折扣",
+      "oncePerOrderHelpText": "如果未選取，系統將從訂單中的每件合格品項中扣除該金額。",
+      "oncePerOrderHelpTextWithAmount": "如果未選取，系統將從訂單中的每件合格品項中扣除 {fixedAmountValue}。"
     }
   }
 }

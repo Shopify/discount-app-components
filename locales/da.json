@@ -534,6 +534,29 @@
       "ZA": "Sydafrika",
       "ZM": "Zambia",
       "ZW": "Zimbabwe"
+    },
+    "ValueCard": {
+      "title": "Værdi",
+      "percentageButton": "Procent",
+      "fixedAmountButton": "Fast beløb",
+      "purchaseType": {
+        "title": "Købstype",
+        "choiceListTitle": "Vælg købstype",
+        "choices": {
+          "oneTime": "Engangskøb",
+          "subscription": "Abonnement",
+          "both": "Begge"
+        },
+        "warning": {
+          "product": "Produktrabatter understøttes kun med engangskøb.",
+          "order": "Ordrerabatter understøttes kun med engangskøb.",
+          "shipping": "Leveringsrabatter understøttes kun med engangskøb."
+        }
+      },
+      "discountValueLabel": "Rabatværdi",
+      "oncePerOrder": "Rabatten gælder kun én gang pr. ordre",
+      "oncePerOrderHelpText": "Hvis den ikke vælges, trækkes beløbet fra hver kvalificeret vare i en ordre.",
+      "oncePerOrderHelpTextWithAmount": "Hvis den ikke vælges, trækkes {fixedAmountValue} fra hver kvalificeret vare i en ordre."
     }
   }
 }

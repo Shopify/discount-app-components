@@ -534,6 +534,29 @@
       "ZA": "Zuid-Afrika",
       "ZM": "Zambia",
       "ZW": "Zimbabwe"
+    },
+    "ValueCard": {
+      "title": "Waarde",
+      "percentageButton": "Percentage",
+      "fixedAmountButton": "Vast bedrag",
+      "purchaseType": {
+        "title": "Type aankoop",
+        "choiceListTitle": "Soort aankoop selecteren",
+        "choices": {
+          "oneTime": "Eenmalige aankoop",
+          "subscription": "Abonnement",
+          "both": "Beide"
+        },
+        "warning": {
+          "product": "Productkortingen worden alleen ondersteund bij eenmalige aankopen.",
+          "order": "Bestelkortingen worden alleen ondersteund bij eenmalige aankopen.",
+          "shipping": "Verzendkortingen worden alleen ondersteund bij eenmalige aankopen."
+        }
+      },
+      "discountValueLabel": "Kortingswaarde",
+      "oncePerOrder": "Korting geldt eenmaal per bestelling",
+      "oncePerOrderHelpText": "Als deze optie niet is geselecteerd, wordt het bedrag afgetrokken van elk in aanmerking komend artikel in een bestelling.",
+      "oncePerOrderHelpTextWithAmount": "Als deze optie niet is geselecteerd, wordt er {fixedAmountValue} afgetrokken van elk in aanmerking komend artikel in een bestelling."
     }
   }
 }

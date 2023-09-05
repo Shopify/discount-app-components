@@ -534,6 +534,29 @@
       "ZA": "Sør-Afrika",
       "ZM": "Zambia",
       "ZW": "Zimbabwe"
+    },
+    "ValueCard": {
+      "title": "Verdi",
+      "percentageButton": "Prosentandel",
+      "fixedAmountButton": "Fast beløp",
+      "purchaseType": {
+        "title": "Kjøpstype",
+        "choiceListTitle": "Velg kjøpstype",
+        "choices": {
+          "oneTime": "Éngangskjøp",
+          "subscription": "Abonnement",
+          "both": "Begge deler"
+        },
+        "warning": {
+          "product": "Produktrabatter støttes bare for éngangskjøp.",
+          "order": "Bestillingsrabatter støttes bare for éngangskjøp.",
+          "shipping": "Fraktrabatter støttes bare for éngangskjøp."
+        }
+      },
+      "discountValueLabel": "Rabattverdi",
+      "oncePerOrder": "Bare bruk rabatt én gang per bestilling",
+      "oncePerOrderHelpText": "Hvis den ikke er valgt, vil beløpet bli trukket fra hver berettigede vare i en bestilling.",
+      "oncePerOrderHelpTextWithAmount": "Hvis den ikke er valgt, vil {fixedAmountValue} bli trukket fra hver berettigede vare i en bestilling."
     }
   }
 }

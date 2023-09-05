@@ -544,6 +544,29 @@
       "ZA": "Afrique du Sud",
       "ZM": "Zambie",
       "ZW": "Zimbabwe"
+    },
+    "ValueCard": {
+      "title": "Valeur",
+      "percentageButton": "Pourcentage",
+      "fixedAmountButton": "Montant fixe",
+      "purchaseType": {
+        "title": "Type d’achat",
+        "choiceListTitle": "Sélectionner le type d’achat",
+        "choices": {
+          "oneTime": "Achat unique",
+          "subscription": "Abonnement",
+          "both": "Les deux"
+        },
+        "warning": {
+          "product": "Les réductions sur les produits sont compatibles uniquement avec les achats uniques.",
+          "order": "Les réductions sur les commandes sont compatibles uniquement avec les achats uniques.",
+          "shipping": "Les réductions sur l’expédition sont compatibles uniquement avec les achats uniques."
+        }
+      },
+      "discountValueLabel": "Valeur de la réduction",
+      "oncePerOrder": "N'appliquer qu'une seule réduction par commande",
+      "oncePerOrderHelpText": "S’il n’est pas sélectionné, le montant sera déduit de chaque article éligible dans une commande.",
+      "oncePerOrderHelpTextWithAmount": "S’il n’est pas sélectionné, {fixedAmountValue} seront déduits de chaque article éligible dans une commande."
     }
   }
 }
