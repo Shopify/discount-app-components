@@ -544,6 +544,29 @@
       "ZA": "Sudáfrica",
       "ZM": "Zambia",
       "ZW": "Zimbabue"
+    },
+    "ValueCard": {
+      "title": "Valor",
+      "percentageButton": "Porcentaje",
+      "fixedAmountButton": "Monto fijo",
+      "purchaseType": {
+        "title": "Tipo de compra",
+        "choiceListTitle": "Seleccionar tipo de compra",
+        "choices": {
+          "oneTime": "Compra única",
+          "subscription": "Suscripción",
+          "both": "Ambas opciones"
+        },
+        "warning": {
+          "product": "Los descuentos en productos solo se admiten con las compras únicas.",
+          "order": "Los descuentos en pedidos solo se admiten con las compras únicas.",
+          "shipping": "Los descuentos en envíos solo se admiten con las compras únicas."
+        }
+      },
+      "discountValueLabel": "Valor del descuento",
+      "oncePerOrder": "Aplicar descuento solo una vez por pedido",
+      "oncePerOrderHelpText": "Si no está seleccionado, el monto se descontará de cada producto elegible de un pedido.",
+      "oncePerOrderHelpTextWithAmount": "Si no está seleccionado, se descontarán {fixedAmountValue} de cada producto elegible de un pedido."
     }
   }
 }

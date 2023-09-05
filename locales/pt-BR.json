@@ -544,6 +544,29 @@
       "ZA": "África do Sul",
       "ZM": "Zâmbia",
       "ZW": "Zimbábue"
+    },
+    "ValueCard": {
+      "title": "Valor",
+      "percentageButton": "Percentual",
+      "fixedAmountButton": "Valor fixo",
+      "purchaseType": {
+        "title": "Tipo de compra",
+        "choiceListTitle": "Selecione o tipo de compra",
+        "choices": {
+          "oneTime": "Compra única",
+          "subscription": "Assinatura",
+          "both": "Ambos"
+        },
+        "warning": {
+          "product": "Os descontos em produtos são compatíveis apenas com compras únicas.",
+          "order": "Os descontos em pedidos são compatíveis apenas com compras únicas.",
+          "shipping": "Os descontos de frete são compatíveis apenas com compras únicas."
+        }
+      },
+      "discountValueLabel": "Valor do desconto",
+      "oncePerOrder": "Aplique o desconto apenas uma vez por pedido",
+      "oncePerOrderHelpText": "Se não estiver selecionado, o valor será descontado de cada item qualificado do pedido.",
+      "oncePerOrderHelpTextWithAmount": "Se não estiver selecionado, será descontado {fixedAmountValue} de cada item qualificado do pedido."
     }
   }
 }
