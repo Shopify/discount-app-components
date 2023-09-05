@@ -3,8 +3,7 @@ import {List} from '@shopify/polaris';
 import {mountWithApp} from 'tests/utilities';
 
 import {AppliesToPurchaseType} from '../AppliesToPurchaseType';
-
-import {PurchaseType} from '~/constants';
+import {PurchaseType} from '../../../../../constants';
 
 describe('<AppliesToPurchaseType />', () => {
   it('renders when purchase type is PurchaseType.Both', () => {

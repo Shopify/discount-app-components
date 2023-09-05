@@ -1,4 +1,4 @@
-import {DEFAULT_DISCOUNT_CODE_LENGTH} from '~/constants';
+import {DEFAULT_DISCOUNT_CODE_LENGTH} from '../../constants';
 
 const CHARS = '0123456789ABCDEFGHJKMNPQRSTVWXYZ';
 

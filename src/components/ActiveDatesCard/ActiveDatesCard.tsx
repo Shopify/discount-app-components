@@ -5,14 +5,13 @@ import {useI18n} from '@shopify/react-i18n';
 
 import {DatePicker} from '../DatePicker';
 import {TimePicker} from '../TimePicker';
-
 import {
   getDateInUTC,
   getDateTimeInShopTimeZone,
   getNewDateAtEndOfDay,
-} from '~/utilities/dates';
-import {DEFAULT_WEEK_START_DAY, Weekday} from '~/constants';
-import type {DateTime, Field} from '~/types';
+} from '../../utilities/dates';
+import {DEFAULT_WEEK_START_DAY, Weekday} from '../../constants';
+import type {DateTime, Field} from '../../types';
 
 export interface ActiveDatesCardProps {
   /**

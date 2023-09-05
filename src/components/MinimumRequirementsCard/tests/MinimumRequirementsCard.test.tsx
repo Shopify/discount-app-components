@@ -5,9 +5,8 @@ import {mockField, mountWithApp} from 'tests/utilities';
 
 import {MinimumRequirementsCard} from '../MinimumRequirementsCard';
 import {CurrencyField} from '../../CurrencyField';
-
-import {forcePositiveInteger} from '~/utilities/numbers';
-import {AppliesTo, DiscountMethod, RequirementType} from '~/constants';
+import {forcePositiveInteger} from '../../../utilities/numbers';
+import {AppliesTo, DiscountMethod, RequirementType} from '../../../constants';
 
 describe('<MinimumRequirementsCard>', () => {
   const mockProps = {

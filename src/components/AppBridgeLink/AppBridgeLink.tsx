@@ -3,8 +3,8 @@ import {useAppBridge} from '@shopify/app-bridge-react';
 import {Redirect} from '@shopify/app-bridge/actions';
 import {Link} from '@shopify/polaris';
 
-import {handleRedirect} from '~/utilities/navigation';
-import type {LinkAction} from '~/types';
+import {handleRedirect} from '../../utilities/navigation';
+import type {LinkAction} from '../../types';
 
 export interface AppBridgeLinkProps {
   children?: React.ReactNode;

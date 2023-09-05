@@ -3,18 +3,18 @@ import {Autocomplete, Icon} from '@shopify/polaris';
 import {ClockMinor} from '@shopify/polaris-icons';
 import {useI18n} from '@shopify/react-i18n';
 
+import type {DateTime, Field} from '../../types';
+import {
+  getDateInShopTimeZone,
+  getDateTimeInShopTimeZone,
+} from '../../utilities/dates';
+
 import {
   formatDateListAsOptionList,
   generateTimes,
   getLocalizedTimeForDate,
   getValidDateForTime,
 } from './utilities';
-
-import type {DateTime, Field} from '~/types';
-import {
-  getDateInShopTimeZone,
-  getDateTimeInShopTimeZone,
-} from '~/utilities/dates';
 
 const TIME_BLOCKLIST_REGEX = /[^\d\s:apmAPM]/g;
 

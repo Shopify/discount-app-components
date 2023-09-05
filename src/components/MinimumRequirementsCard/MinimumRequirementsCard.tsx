@@ -11,12 +11,11 @@ import {
 import {CurrencyCode, I18n, useI18n} from '@shopify/react-i18n';
 
 import {CurrencyField} from '../CurrencyField';
+import {forcePositiveInteger} from '../../utilities/numbers';
+import type {Field, PositiveNumericString} from '../../types';
+import {AppliesTo, DiscountMethod, RequirementType} from '../../constants';
 
 import styles from './MinimumRequirementsCard.scss';
-
-import {forcePositiveInteger} from '~/utilities/numbers';
-import type {Field, PositiveNumericString} from '~/types';
-import {AppliesTo, DiscountMethod, RequirementType} from '~/constants';
 
 export interface MinimumRequirementsCardProps {
   /**

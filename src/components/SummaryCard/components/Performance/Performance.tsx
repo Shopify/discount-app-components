@@ -4,9 +4,8 @@ import {List, Text, VerticalStack} from '@shopify/polaris';
 import {Redirect} from '@shopify/app-bridge/actions';
 
 import {AppBridgeLink} from '../../../AppBridgeLink';
-
-import {DiscountMethod, DiscountStatus} from '~/constants';
-import type {MoneyInput} from '~/types';
+import {DiscountMethod, DiscountStatus} from '../../../../constants';
+import type {MoneyInput} from '../../../../types';
 
 export interface PerformanceProps {
   /**

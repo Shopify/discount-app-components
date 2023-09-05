@@ -4,9 +4,8 @@ import {CurrencyCode} from '@shopify/react-i18n';
 import {Redirect} from '@shopify/app-bridge/actions';
 
 import {Performance} from '../Performance';
-
-import {DiscountMethod, DiscountStatus} from '~/constants';
-import {AppBridgeLink} from '~/components/AppBridgeLink';
+import {DiscountMethod, DiscountStatus} from '../../../../../constants';
+import {AppBridgeLink} from '../../../../AppBridgeLink';
 
 describe('<Performance />', () => {
   const mockProps = {

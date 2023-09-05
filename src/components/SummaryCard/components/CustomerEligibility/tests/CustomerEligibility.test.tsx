@@ -4,9 +4,8 @@ import {mountWithApp} from 'tests/utilities';
 import {List} from '@shopify/polaris';
 
 import {CustomerEligibility} from '../CustomerEligibility';
-
-import {Eligibility} from '~/constants';
-import type {Customer, CustomerSegment} from '~/types';
+import {Eligibility} from '../../../../../constants';
+import type {Customer, CustomerSegment} from '../../../../../types';
 
 describe('<CustomerEligibility />', () => {
   const mockProps = {

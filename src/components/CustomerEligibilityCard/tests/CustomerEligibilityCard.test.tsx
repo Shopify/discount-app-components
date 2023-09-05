@@ -10,11 +10,10 @@ import {
   SelectedCustomersList,
 } from '../CustomerEligibilityCard';
 import styles from '../CustomerEligibilityCard.scss';
-
-import {Eligibility} from '~/constants';
-import {SelectedItemsList} from '~/components/SelectedItemsList';
-import {AppBridgeLink} from '~/components/AppBridgeLink';
-import type {Customer, CustomerSegment} from '~/types';
+import {Eligibility} from '../../../constants';
+import {SelectedItemsList} from '../../SelectedItemsList';
+import {AppBridgeLink} from '../../AppBridgeLink';
+import type {Customer, CustomerSegment} from '../../../types';
 
 describe('<CustomerEligibilityCard />', () => {
   const customerSegmentsList = [

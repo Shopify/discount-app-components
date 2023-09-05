@@ -17,7 +17,6 @@ import {
   CustomerEligibility,
   SelectedCountries,
 } from '../components';
-
 import {
   CountrySelectionType,
   DiscountMethod,
@@ -27,7 +26,7 @@ import {
   RecurringPaymentType,
   RequirementType,
   SupportedCountryCode,
-} from '~/constants';
+} from '../../../constants';
 
 describe('<SummaryCard />', () => {
   const mockProps: SummaryCardProps = {

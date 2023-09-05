@@ -2,8 +2,7 @@ import React from 'react';
 import {mountWithApp} from 'tests/utilities';
 
 import {SelectedItemsList, Item} from '..';
-
-import type {Country} from '~/types';
+import type {Country} from '../../../types';
 
 describe('<SelectedItemsList />', () => {
   const mockProps = {

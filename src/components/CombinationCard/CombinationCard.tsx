@@ -11,14 +11,14 @@ import {
 } from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
-import {HelpText} from './components';
-
-import {DiscountClass} from '~/constants';
+import {DiscountClass} from '../../constants';
 import type {
   CombinableDiscountTypes,
   CombinableDiscountCounts,
   Field,
-} from '~/types';
+} from '../../types';
+
+import {HelpText} from './components';
 
 const I18N_SCOPE = {
   scope: 'DiscountAppComponents.CombinationCard',

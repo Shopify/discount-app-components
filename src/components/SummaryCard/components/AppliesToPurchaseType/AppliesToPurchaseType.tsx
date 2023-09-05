@@ -2,7 +2,7 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
-import {PurchaseType} from '~/constants';
+import {PurchaseType} from '../../../../constants';
 
 export interface AppliesToPurchaseTypeProps {
   /**

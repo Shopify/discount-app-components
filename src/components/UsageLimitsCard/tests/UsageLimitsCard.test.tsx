@@ -15,9 +15,8 @@ import {
   UsageLimitType,
 } from '../UsageLimitsCard';
 import {RecurringPayment} from '../components';
-
-import {RecurringPaymentType} from '~/constants';
-import {forcePositiveInteger} from '~/utilities/numbers';
+import {RecurringPaymentType} from '../../../constants';
+import {forcePositiveInteger} from '../../../utilities/numbers';
 
 describe('UsageLimitsCard', () => {
   const defaultProps = {

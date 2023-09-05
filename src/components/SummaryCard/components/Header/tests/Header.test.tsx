@@ -3,8 +3,7 @@ import {Badge} from '@shopify/polaris';
 import {mountWithApp} from 'tests/utilities';
 
 import {BadgeStatus, Header, HeaderProps} from '../Header';
-
-import {DiscountMethod, DiscountStatus} from '~/constants';
+import {DiscountMethod, DiscountStatus} from '../../../../../constants';
 
 describe('<Header />', () => {
   const mockProps: HeaderProps = {

@@ -2,10 +2,10 @@ import React from 'react';
 import {Button, TextField} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
-import {generateRandomDiscountCode} from './utilities';
+import type {Field} from '../../types';
+import {DEFAULT_DISCOUNT_CODE_LENGTH} from '../../constants';
 
-import type {Field} from '~/types';
-import {DEFAULT_DISCOUNT_CODE_LENGTH} from '~/constants';
+import {generateRandomDiscountCode} from './utilities';
 
 export interface DiscountCodeGeneratorProps {
   /**

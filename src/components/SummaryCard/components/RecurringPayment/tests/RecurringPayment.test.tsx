@@ -2,8 +2,7 @@ import React from 'react';
 import {mountWithApp} from 'tests/utilities';
 
 import {RecurringPayment} from '../RecurringPayment';
-
-import {RecurringPaymentType} from '~/constants';
+import {RecurringPaymentType} from '../../../../../constants';
 
 describe('<RecurringPayment />', () => {
   const mockProps = {

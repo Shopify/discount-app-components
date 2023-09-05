@@ -2,7 +2,7 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
-import type {PositiveNumericString} from '~/types';
+import type {PositiveNumericString} from '../../../../types';
 
 export interface UsageLimitsProps {
   /**

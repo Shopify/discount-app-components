@@ -2,8 +2,8 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
-import {RecurringPaymentType} from '~/constants';
-import type {PositiveNumericString} from '~/types';
+import {RecurringPaymentType} from '../../../../constants';
+import type {PositiveNumericString} from '../../../../types';
 
 export interface RecurringPaymentProps {
   /**

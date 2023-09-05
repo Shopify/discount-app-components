@@ -1,6 +1,6 @@
 import {applyTimeZoneOffset, formatDate, isSameDay} from '@shopify/dates';
 
-import {getBrowserAndShopTimeZoneOffset} from '~/utilities/dates';
+import {getBrowserAndShopTimeZoneOffset} from '../../utilities/dates';
 
 const TIME_INCREMENT = 30;
 const USER_INPUT_TIME_REGEX =

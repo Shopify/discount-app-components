@@ -2,8 +2,8 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {I18n, useI18n, CurrencyCode} from '@shopify/react-i18n';
 
-import {RequirementType} from '~/constants';
-import type {PositiveNumericString} from '~/types';
+import {RequirementType} from '../../../../constants';
+import type {PositiveNumericString} from '../../../../types';
 
 export interface MinimumRequirementsProps {
   /**

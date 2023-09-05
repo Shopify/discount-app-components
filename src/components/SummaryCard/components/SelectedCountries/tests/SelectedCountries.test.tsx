@@ -2,8 +2,10 @@ import React from 'react';
 import {mountWithApp} from 'tests/utilities';
 
 import {SelectedCountries} from '../SelectedCountries';
-
-import {CountrySelectionType, SupportedCountryCode} from '~/constants';
+import {
+  CountrySelectionType,
+  SupportedCountryCode,
+} from '../../../../../constants';
 
 const COUNTRIES = [
   SupportedCountryCode.Ca,
