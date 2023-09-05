@@ -18,10 +18,9 @@ import {useI18n} from '@shopify/react-i18n';
 import {CurrencyField} from '../CurrencyField';
 import {DiscountValueType, DiscountClass, PurchaseType} from '../../constants';
 import {forcePositiveInteger} from '../../utilities/numbers';
+import type {Field} from '../../types';
 
 import styles from './ValueCard.scss';
-
-import type {Field} from '~/types';
 
 const FIXED_AMOUNT_VALUE_FIELD_ID = 'fixedAmountValueField';
 const PERCENTAGE_VALUE_FIELD_ID = 'percentageValueField';
