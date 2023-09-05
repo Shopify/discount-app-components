@@ -1,17 +1,26 @@
-import React, { useState } from "react"
-import { ValueCard } from "../../../components/ValueCard/ValueCard"
-import { DiscountClass, DiscountValueType, PurchaseType } from "~/constants";
-import { CurrencyCode } from "@shopify/react-i18n";
-import { Page } from "@shopify/polaris";
+import React, {useState} from 'react';
+import {ValueCard} from '../../../components/ValueCard/ValueCard';
+import {
+  DiscountClass,
+  DiscountValueType,
+  PurchaseType,
+} from '../../../constants';
+import {CurrencyCode} from '@shopify/react-i18n';
+import {Page} from '@shopify/polaris';
 
 const ValueCardPattern = () => {
-  const [fixedAmountDiscountValue, setFixedAmountDiscountValue] = useState('10');
+  const [fixedAmountDiscountValue, setFixedAmountDiscountValue] =
+    useState('10');
 
   const [percentageDiscountValue, setPercentageDiscountValue] = useState('20');
 
-  const [discountValueType, setDiscountValueType] = useState(DiscountValueType.Percentage);
+  const [discountValueType, setDiscountValueType] = useState(
+    DiscountValueType.Percentage,
+  );
 
-  const [purchaseType, setPurchaseType] = useState(PurchaseType.OneTimePurchase);
+  const [purchaseType, setPurchaseType] = useState(
+    PurchaseType.OneTimePurchase,
+  );
 
   const [oncePerOrder, setOncePerOrder] = useState(true);
 
