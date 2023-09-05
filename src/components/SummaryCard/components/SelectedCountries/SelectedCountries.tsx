@@ -2,8 +2,8 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
-import {CountrySelectionType} from '~/constants';
-import type {CountryCode} from '~/types';
+import {CountrySelectionType} from '../../../../constants';
+import type {CountryCode} from '../../../../types';
 
 const I18N_SCOPE = {
   scope: 'DiscountAppComponents.SummaryCard.SelectedCountries',

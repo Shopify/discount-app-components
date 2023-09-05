@@ -9,8 +9,7 @@ import {
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {RecurringPayment} from '../RecurringPayment';
-
-import {RecurringPaymentType} from '~/constants';
+import {RecurringPaymentType} from '../../../../../constants';
 
 const defaultProps = {
   recurringPaymentType: mockField(RecurringPaymentType.FirstPayment),

@@ -5,7 +5,7 @@ import {useAppBridge} from '@shopify/app-bridge-react';
 import {Modal} from '@shopify/app-bridge/actions';
 import {Action} from '@shopify/app-bridge/actions/Modal';
 
-import {DiscountClass} from '~/constants';
+import {DiscountClass} from '../../../../constants';
 
 const DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL =
   'shopify://app-bridge/modal/discounts-combinations';

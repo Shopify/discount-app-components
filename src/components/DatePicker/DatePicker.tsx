@@ -10,13 +10,13 @@ import {CalendarMajor} from '@shopify/polaris-icons';
 import {timeParse, timeFormat} from 'd3-time-format';
 import {useI18n} from '@shopify/react-i18n';
 
-import type {DateTime, Field} from '~/types';
-import {Weekday, DEFAULT_WEEK_START_DAY} from '~/constants';
+import type {DateTime, Field} from '../../types';
+import {Weekday, DEFAULT_WEEK_START_DAY} from '../../constants';
 import {
   getDateInUTC,
   getDateTimeInShopTimeZone,
   getNewDateAtStartOfDay,
-} from '~/utilities/dates';
+} from '../../utilities/dates';
 
 const DATE_BLOCKLIST_REGEX = /[^\d-]/g;
 

@@ -9,9 +9,8 @@ import {mockField, mountWithApp} from 'tests/utilities';
 import {CalendarMajor} from '@shopify/polaris-icons';
 
 import {DatePicker} from '../DatePicker';
-
-import {Weekday} from '~/constants';
-import {getDateTimeInShopTimeZone} from '~/utilities/dates';
+import {Weekday} from '../../../constants';
+import {getDateTimeInShopTimeZone} from '../../../utilities/dates';
 
 describe('<DatePicker />', () => {
   const mockDate = '2023-05-20';

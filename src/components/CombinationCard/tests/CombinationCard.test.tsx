@@ -6,8 +6,7 @@ import {composeGid} from '@shopify/admin-graphql-api-utilities';
 import {CombinationCard} from '../CombinationCard';
 import {HelpText} from '../components';
 import type {CombinationCardProps} from '../CombinationCard';
-
-import {DiscountClass} from '~/constants';
+import {DiscountClass} from '../../../constants';
 
 describe('<CombinationCard />', () => {
   const mockProps: CombinationCardProps = {

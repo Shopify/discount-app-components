@@ -5,8 +5,7 @@ import {Action} from '@shopify/app-bridge/actions/Modal';
 import {composeGid} from '@shopify/admin-graphql-api-utilities';
 
 import {HelpText} from '../HelpText';
-
-import {DiscountClass} from '~/constants';
+import {DiscountClass} from '../../../../../constants';
 
 jest.mock('@shopify/app-bridge-react', () => ({
   ...jest.requireActual('@shopify/app-bridge-react'),

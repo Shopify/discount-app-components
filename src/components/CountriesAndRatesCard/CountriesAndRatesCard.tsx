@@ -12,12 +12,16 @@ import {CurrencyCode, useI18n} from '@shopify/react-i18n';
 
 import {SelectedItemsList} from '../SelectedItemsList';
 import {CurrencyField} from '../CurrencyField';
+import type {
+  Field,
+  PositiveNumericString,
+  CountryCode,
+  Country,
+} from '../../types';
+import {CountrySelectionType} from '../../constants';
 
 import styles from './CountriesAndRatesCard.scss';
 import {useLocalizeCountry} from './utilities';
-
-import type {Field, PositiveNumericString, CountryCode, Country} from '~/types';
-import {CountrySelectionType} from '~/constants';
 
 const EXCLUDE_SHIPPING_RATES_FIELD_ID = 'excludeShippingRatesOverTextField';
 

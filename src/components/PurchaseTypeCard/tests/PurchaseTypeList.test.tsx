@@ -3,8 +3,7 @@ import {Card, ChoiceList, Text} from '@shopify/polaris';
 import {mountWithApp, mockField} from 'tests/utilities';
 
 import {PurchaseTypeCard} from '../PurchaseTypeCard';
-
-import {PurchaseType} from '~/constants';
+import {PurchaseType} from '../../../constants';
 
 function mountWithProps({
   purchaseType = PurchaseType.OneTimePurchase,

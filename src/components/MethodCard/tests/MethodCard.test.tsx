@@ -4,8 +4,7 @@ import {mockField, mountWithApp} from 'tests/utilities';
 
 import {MethodCard} from '../MethodCard';
 import {DiscountCodeGenerator} from '../../DiscountCodeGenerator';
-
-import {DiscountClass, DiscountMethod} from '~/constants';
+import {DiscountClass, DiscountMethod} from '../../../constants';
 
 describe('<MethodCard />', () => {
   const mockProps = {

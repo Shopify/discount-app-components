@@ -3,8 +3,7 @@ import {CurrencyCode} from '@shopify/react-i18n';
 import {mountWithApp} from 'tests/utilities';
 
 import {MinimumRequirements} from '../MinimumRequirements';
-
-import {RequirementType} from '~/constants';
+import {RequirementType} from '../../../../../constants';
 
 describe('<MinimumRequirements />', () => {
   const mockProps = {

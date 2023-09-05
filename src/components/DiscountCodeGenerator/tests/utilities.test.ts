@@ -1,6 +1,5 @@
 import {generateRandomDiscountCode} from '../utilities';
-
-import {DEFAULT_DISCOUNT_CODE_LENGTH} from '~/constants';
+import {DEFAULT_DISCOUNT_CODE_LENGTH} from '../../../constants';
 
 describe('discount code generator utilities', () => {
   describe('#generateRandomDiscountCode', () => {

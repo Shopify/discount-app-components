@@ -11,9 +11,8 @@ import {mountWithApp, mockField} from 'tests/utilities';
 
 import {CountriesAndRatesCard} from '../CountriesAndRatesCard';
 import {CountrySelectionType, SupportedCountryCode} from '../../../constants';
-
-import {CurrencyField} from '~/components/CurrencyField';
-import {SelectedItemsList} from '~/components/SelectedItemsList';
+import {CurrencyField} from '../../CurrencyField';
+import {SelectedItemsList} from '../../SelectedItemsList';
 
 describe('<CountriesAndRatesCard />', () => {
   const mockProps = {

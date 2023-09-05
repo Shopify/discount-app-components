@@ -8,11 +8,11 @@ import {
 } from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
-import styles from './RecurringPayment.scss';
+import {RecurringPaymentType} from '../../../../constants';
+import type {Field, PositiveNumericString} from '../../../../types';
+import {forcePositiveInteger} from '../../../../utilities/numbers';
 
-import {RecurringPaymentType} from '~/constants';
-import type {Field, PositiveNumericString} from '~/types';
-import {forcePositiveInteger} from '~/utilities/numbers';
+import styles from './RecurringPayment.scss';
 
 const RECURRING_PAYMENT_FIELD_ID = 'RECURRING_PAYMENT_FIELD_ID';
 

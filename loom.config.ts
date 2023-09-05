@@ -68,7 +68,6 @@ function jestAdjustmentsPlugin() {
           '^tests/(.*)': '<rootDir>/tests/$1',
           '\\.s?css$': require.resolve('./config/jest-transform-style'),
           "^@locales(.*)$": "<rootDir>/locales$1",
-          "^~(.*)$": "<rootDir>/src$1",
         }));
 
         configuration.jestConfig?.hook((config) => ({
@@ -135,7 +134,6 @@ function rollupAliasPlugin() {
   return rollupPlugins(() => [
       alias({
         entries: [
-          { find: '~', replacement: path.resolve(projectRootDir, 'src')},
           { find: '@locales', replacement: './locales' },
         ],
       })

@@ -3,8 +3,7 @@ import {ChoiceList, Card, Text, VerticalStack, Box} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
 import type {Field} from '../../types';
-
-import {PurchaseType} from '~/constants';
+import {PurchaseType} from '../../constants';
 
 export interface PurchaseTypeCardProps {
   /**

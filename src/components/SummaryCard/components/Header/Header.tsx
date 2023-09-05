@@ -8,7 +8,7 @@ import {
   VerticalStack,
 } from '@shopify/polaris';
 
-import {DiscountMethod, DiscountStatus} from '~/constants';
+import {DiscountMethod, DiscountStatus} from '../../../../constants';
 
 interface BaseProps {
   /**

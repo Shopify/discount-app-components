@@ -11,13 +11,12 @@ import {
 import {I18n, useI18n} from '@shopify/react-i18n';
 
 import {DiscountCodeGenerator} from '../DiscountCodeGenerator';
-
 import {
   DEFAULT_DISCOUNT_CODE_LENGTH,
   DiscountClass,
   DiscountMethod,
-} from '~/constants';
-import type {Field} from '~/types';
+} from '../../constants';
+import type {Field} from '../../types';
 
 const DISCOUNT_TITLE_MAX_LENGTH = 255;
 

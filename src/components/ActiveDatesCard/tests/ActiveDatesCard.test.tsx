@@ -7,8 +7,7 @@ import MockDate from 'mockdate';
 import {ActiveDatesCard} from '../ActiveDatesCard';
 import {DatePicker} from '../../DatePicker';
 import {TimePicker} from '../../TimePicker';
-
-import {Weekday} from '~/constants';
+import {Weekday} from '../../../constants';
 
 describe('<ActiveDatesCard />', () => {
   const mockProps = {

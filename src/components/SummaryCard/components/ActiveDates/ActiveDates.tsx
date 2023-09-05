@@ -3,7 +3,7 @@ import {I18n, useI18n} from '@shopify/react-i18n';
 import {List} from '@shopify/polaris';
 import {isToday, isSameDay} from '@shopify/dates';
 
-import type {DateTime} from '~/types';
+import type {DateTime} from '../../../../types';
 
 export interface ActiveDatesProps {
   /**

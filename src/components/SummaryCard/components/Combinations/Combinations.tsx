@@ -2,8 +2,8 @@ import React from 'react';
 import {List} from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
 
-import {DiscountClass} from '~/constants';
-import type {CombinableDiscountTypes} from '~/types';
+import {DiscountClass} from '../../../../constants';
+import type {CombinableDiscountTypes} from '../../../../types';
 
 export interface CombinationsProps {
   /**

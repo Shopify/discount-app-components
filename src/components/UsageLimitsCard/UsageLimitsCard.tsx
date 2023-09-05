@@ -10,12 +10,12 @@ import {
 } from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
-import styles from './UsageLimitsCard.scss';
-import {RecurringPayment} from './components';
+import type {Field, PositiveNumericString} from '../../types';
+import type {RecurringPaymentType} from '../../constants';
+import {forcePositiveInteger} from '../../utilities/numbers';
 
-import type {Field, PositiveNumericString} from '~/types';
-import type {RecurringPaymentType} from '~/constants';
-import {forcePositiveInteger} from '~/utilities/numbers';
+import {RecurringPayment} from './components';
+import styles from './UsageLimitsCard.scss';
 
 export enum UsageLimitType {
   TotalUsageLimit = 'TOTAL_USAGE_LIMIT',
