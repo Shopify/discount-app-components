@@ -2925,12 +2925,7 @@
     fs-extra "^9.0.0"
     glob "^7.1.6"
 
-"@shopify/polaris-icons@^7.1.0":
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris-icons/-/polaris-icons-7.5.0.tgz#91c5282ccd6495f141768870dbf2e64312b125fb"
-  integrity sha512-YUx3ROWDLzsCDZaXvFOGvL4wJgeSPmrx8c6QWygQtU/Sd7fiJfuJJHSsSLrcsvZLV9S+szwI/zoG2mIj542Niw==
-
-"@shopify/polaris-icons@^7.7.0":
+"@shopify/polaris-icons@^7.1.0", "@shopify/polaris-icons@^7.7.0":
   version "7.8.1"
   resolved "https://registry.yarnpkg.com/@shopify/polaris-icons/-/polaris-icons-7.8.1.tgz#06f304a9cee40a414e87278ebc3eabb180006bcf"
   integrity sha512-3qg3tzLEzeKzAcVcswNtdAoY+YNk0zq7Q0BUYzCQrr8InJqxMTrbihbVVxJ9209onfh/eosMacmzM2CHx3xjeQ==
