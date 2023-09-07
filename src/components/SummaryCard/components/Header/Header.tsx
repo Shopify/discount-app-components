@@ -64,7 +64,7 @@ export function Header(props: HeaderProps) {
   return (
     <VerticalStack gap="4">
       {trimmedDescriptor ? (
-        <HorizontalStack align="center">
+        <HorizontalStack align="space-between">
           <Text variant="headingMd" as="h3">
             {trimmedDescriptor}
           </Text>
