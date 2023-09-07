@@ -171,7 +171,7 @@
     },
     "SummaryCard": {
       "title": "Summary",
-      "details": "details",
+      "details": "Details",
       "Header": {
         "emptyState": {
           "Code": "No discount code yet.",
@@ -182,7 +182,7 @@
           "expired": "Expired",
           "scheduled": "Scheduled"
         },
-        "typeAndMethod": "type and method",
+        "typeAndMethod": "Type and method",
         "discountMethod": {
           "Code": "Code",
           "Automatic": "Automatic"
