@@ -122,11 +122,11 @@ export function SummaryCard(props: SummaryCardProps) {
             {i18n.translate('title', I18N_SCOPE)}
           </Text>
 
-          <VerticalStack>
+          <VerticalStack gap="2">
             <Header {...props.header} />
 
             {showDetailsSection && (
-              <VerticalStack>
+              <VerticalStack gap="2">
                 <Text variant="headingXs" as="h3">
                   {i18n.translate('details', I18N_SCOPE)}
                 </Text>

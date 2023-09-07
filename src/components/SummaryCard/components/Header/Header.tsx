@@ -77,7 +77,7 @@ export function Header(props: HeaderProps) {
         </Text>
       )}
 
-      <VerticalStack gap="4">
+      <VerticalStack gap="2">
         <Text variant="headingXs" as="h3">
           {i18n.translate('typeAndMethod', I18N_SCOPE)}
         </Text>
