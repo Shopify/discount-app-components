@@ -53,7 +53,7 @@ export function Performance({
     status === DiscountStatus.Active || status === DiscountStatus.Expired;
 
   return (
-    <VerticalStack>
+    <VerticalStack gap="2">
       <Text variant="headingXs" as="h3">
         {i18n.translate('title', I18N_SCOPE)}
       </Text>
