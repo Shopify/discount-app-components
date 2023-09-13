@@ -169,6 +169,15 @@
         }
       }
     },
+    "AppliesToCard": {
+      "title": "Applies to",
+      "choiceList": {
+        "titleProducts": "Select products",
+        "titleCollections": "Select collections",
+        "products": "Products",
+        "collections": "Collections"
+      }
+    },
     "SummaryCard": {
       "title": "Summary",
       "details": "Details",
