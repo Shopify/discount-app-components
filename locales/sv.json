@@ -144,7 +144,7 @@
     },
     "SummaryCard": {
       "title": "Sammanfattning",
-      "details": "detaljer",
+      "details": "Uppgifter",
       "Header": {
         "emptyState": {
           "Code": "Ännu ingen rabattkod.",
@@ -155,7 +155,7 @@
           "expired": "Har utgått",
           "scheduled": "Schemalagd"
         },
-        "typeAndMethod": "typ och metod",
+        "typeAndMethod": "Typ och metod",
         "discountMethod": {
           "Code": "Kod",
           "Automatic": "Automatisk"

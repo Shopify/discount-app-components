@@ -148,7 +148,7 @@
     },
     "SummaryCard": {
       "title": "Resumen",
-      "details": "detalles",
+      "details": "Detalles",
       "Header": {
         "emptyState": {
           "Code": "Aún no hay ningún código de descuento.",
@@ -159,7 +159,7 @@
           "expired": "Expirado",
           "scheduled": "Programado"
         },
-        "typeAndMethod": "tipo y método",
+        "typeAndMethod": "Tipo y método",
         "discountMethod": {
           "Code": "Código",
           "Automatic": "Automático"

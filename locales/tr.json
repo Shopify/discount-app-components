@@ -144,7 +144,7 @@
     },
     "SummaryCard": {
       "title": "Özet",
-      "details": "ayrıntılar",
+      "details": "Ayrıntılar",
       "Header": {
         "emptyState": {
           "Code": "Henüz indirim kodu yok.",
@@ -155,7 +155,7 @@
           "expired": "Süresi sona ermiş",
           "scheduled": "Planlanmış"
         },
-        "typeAndMethod": "tür ve yöntem",
+        "typeAndMethod": "Tür ve yöntem",
         "discountMethod": {
           "Code": "Kod",
           "Automatic": "Otomatik"
