@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1695240925077" clover="3.2.0">
+  <project timestamp="1695240925077" name="All files">
+    <metrics statements="58" coveredstatements="47" conditionals="34" coveredconditionals="26" methods="30" coveredmethods="24" elements="122" coveredelements="97" complexity="0" loc="58" ncloc="58" packages="13" files="24" classes="24"/>
+    <package name="config">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="jest-transform-style.js" path="/Users/td/src/github.com/Shopify/discount-app-components/config/jest-transform-style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="constants.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/constants.ts">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="328" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.AppProvider">
+      <metrics statements="8" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="AppProvider.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/AppProvider/AppProvider.tsx">
+        <metrics statements="8" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="31" count="9" type="stmt"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="41" count="9" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/AppProvider/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.AppProvider.components">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/AppProvider/components/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.AppProvider.components.DiscountsI18nProvider">
+      <metrics statements="6" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
+      <file name="DiscountsI18nProvider.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/AppProvider/components/DiscountsI18nProvider/DiscountsI18nProvider.tsx">
+        <metrics statements="6" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="2"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/AppProvider/components/DiscountsI18nProvider/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.AppliesTo">
+      <metrics statements="16" coveredstatements="16" conditionals="14" coveredconditionals="14" methods="11" coveredmethods="11"/>
+      <file name="AppliesTo.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/AppliesTo/AppliesTo.tsx">
+        <metrics statements="16" coveredstatements="16" conditionals="14" coveredconditionals="14" methods="11" coveredmethods="11"/>
+        <line num="27" count="9" type="stmt"/>
+        <line num="28" count="9" type="stmt"/>
+        <line num="29" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="35" count="9" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="75" count="20" type="stmt"/>
+        <line num="77" count="20" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="81" count="5" type="stmt"/>
+        <line num="93" count="20" type="stmt"/>
+        <line num="95" count="20" type="stmt"/>
+        <line num="98" count="1" type="stmt"/>
+        <line num="99" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.DiscountAppComponentsTestProvider">
+      <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <file name="DiscountAppComponentsTestProvider.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/DiscountAppComponentsTestProvider/DiscountAppComponentsTestProvider.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="30" count="9" type="cond" truecount="1" falsecount="1"/>
+        <line num="32" count="9" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/DiscountAppComponentsTestProvider/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.SelectedItemsList">
+      <metrics statements="3" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+      <file name="SelectedItemsList.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/SelectedItemsList/SelectedItemsList.tsx">
+        <metrics statements="3" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
+        <line num="21" count="8" type="stmt"/>
+        <line num="24" count="40" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="index.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/SelectedItemsList/index.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.SelectedItemsList.components">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/SelectedItemsList/components/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.components.SelectedItemsList.components.Item">
+      <metrics statements="2" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <file name="Item.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/SelectedItemsList/components/Item/Item.tsx">
+        <metrics statements="2" coveredstatements="1" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="13" count="40" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/components/SelectedItemsList/components/Item/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="collections.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/data/collections.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="customer-segments.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/data/customer-segments.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="customers.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/data/customers.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/data/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="products.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/src/data/products.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="tests.setup.matchers">
+      <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/tests/setup/matchers/index.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="13" count="1" type="stmt"/>
+      </file>
+      <file name="props.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/tests/setup/matchers/props.ts">
+        <metrics statements="3" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+    </package>
+    <package name="tests.utilities">
+      <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="5"/>
+      <file name="index.ts" path="/Users/td/src/github.com/Shopify/discount-app-components/tests/utilities/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="react-testing.tsx" path="/Users/td/src/github.com/Shopify/discount-app-components/tests/utilities/react-testing.tsx">
+        <metrics statements="7" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="5"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="27" count="9" type="stmt"/>
+        <line num="32" count="9" type="stmt"/>
+        <line num="35" count="9" type="stmt"/>
+        <line num="47" count="14" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
