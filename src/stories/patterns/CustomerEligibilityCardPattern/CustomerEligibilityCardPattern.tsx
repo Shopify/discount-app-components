@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 
-import {Button, ChoiceList, Modal, Page} from '@shopify/polaris';
+import {Button, ChoiceList, HorizontalStack, Modal, Page} from '@shopify/polaris';
 import {
   Customer,
   CustomerEligibilityCard,
@@ -149,7 +149,7 @@ function CustomerModal({
 
   return (
     <Modal
-      activator={<Button onClick={toggleModal}>Browse</Button>}
+      activator={<HorizontalStack><Button onClick={toggleModal}>Browse</Button></HorizontalStack>}
       open={open}
       onClose={handleClose}
       title="Select customers"
