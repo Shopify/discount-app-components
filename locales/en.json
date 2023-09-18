@@ -557,6 +557,17 @@
       "oncePerOrder": "Only apply discount once per order",
       "oncePerOrderHelpText": "If not selected, the amount will be taken off each eligible item in an order.",
       "oncePerOrderHelpTextWithAmount": "If not selected, {fixedAmountValue} will be taken off each eligible item in an order."
+    },
+    "DiscountAppStrategyCard": {
+      "title": "Discount Application Strategy",
+      "first": {
+        "label": "First",
+        "helpText": "Only apply the first discount with conditions that are satisfied."
+      },
+      "maximum": {
+        "label": "Maximum",
+        "helpText": "Only apply the discount that offers the maximum reduction."
+      }
     }
   }
 }

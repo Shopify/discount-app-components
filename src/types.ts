@@ -82,3 +82,8 @@ export interface CombinableDiscountCounts {
 }
 
 export type CountryCode = SupportedCountryCode | typeof REST_OF_WORLD;
+
+export enum DiscountApplicationStrategy {
+  First = 'First',
+  Maximum = 'Maximum',
+}
