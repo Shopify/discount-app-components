@@ -41,7 +41,7 @@ export function DiscountCodeGenerator({
       )}
       {...discountCode}
       connectedRight={
-        <Button onClick={handleGenerateDiscount}>
+        <Button onClick={handleGenerateDiscount} size="large">
           {i18n.translate(
             'DiscountAppComponents.DiscountCodeGenerator.buttonText',
           )}

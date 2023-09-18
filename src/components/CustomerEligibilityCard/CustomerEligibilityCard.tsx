@@ -80,6 +80,7 @@ export function CustomerEligibilityCard({
               eligibility.onChange(selectedEligibility[0]);
             }}
           />
+
           {eligibility.value === Eligibility.CustomerSegments && (
             <VerticalStack gap="4">
               {customerSegmentSelector}

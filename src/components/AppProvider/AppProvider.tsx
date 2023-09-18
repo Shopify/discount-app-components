@@ -1,6 +1,5 @@
 import React, {useMemo} from 'react';
 import {I18nContext, I18nManager} from '@shopify/react-i18n';
-import {Frame} from '@shopify/polaris';
 
 import {DiscountsI18nProvider} from './components';
 
@@ -41,9 +40,7 @@ export function AppProvider(props: AppProviderProps) {
 
   return (
     <I18nContext.Provider value={i18nManager}>
-      <DiscountsI18nProvider>
-        <Frame>{props.children}</Frame>
-      </DiscountsI18nProvider>
+      <DiscountsI18nProvider>{props.children}</DiscountsI18nProvider>
     </I18nContext.Provider>
   );
 }
