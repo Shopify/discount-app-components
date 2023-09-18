@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {ReactNode} from 'react';
 import {
   createMount,
   mount,
@@ -14,6 +14,11 @@ import {
 import type {Field} from '../../src';
 
 export {createMount, mount, ReactTestingElement, CustomRoot};
+
+jest.mock('@shopify/polaris', () => ({
+  ...jest.requireActual('@shopify/polaris'),
+  Frame: ({children}: {children?: ReactNode}) => <div>{children}</div>,
+}));
 
 export const mountWithApp = (
   component: React.ReactElement<any, string | React.JSXElementConstructor<any>>,
