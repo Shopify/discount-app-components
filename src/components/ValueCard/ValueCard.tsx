@@ -96,31 +96,31 @@ export function ValueCard({
             {i18n.translate('DiscountAppComponents.ValueCard.title')}{' '}
           </Text>
           <HorizontalStack gap="3" align="start">
-            <ButtonGroup segmented>
-              <Button
-                size="large"
-                pressed={isPercentageDiscount}
-                onClick={() =>
-                  discountValueType.onChange(DiscountValueType.Percentage)
-                }
-              >
-                {i18n.translate(
-                  'DiscountAppComponents.ValueCard.percentageButton',
-                )}
-              </Button>
-              <Button
-                size="large"
-                pressed={!isPercentageDiscount}
-                onClick={() =>
-                  discountValueType.onChange(DiscountValueType.FixedAmount)
-                }
-              >
-                {i18n.translate(
-                  'DiscountAppComponents.ValueCard.fixedAmountButton',
-                )}
-              </Button>
-            </ButtonGroup>
-            <Box width="75%">
+            <Box>
+              <ButtonGroup segmented>
+                <Button
+                  pressed={isPercentageDiscount}
+                  onClick={() =>
+                    discountValueType.onChange(DiscountValueType.Percentage)
+                  }
+                >
+                  {i18n.translate(
+                    'DiscountAppComponents.ValueCard.percentageButton',
+                  )}
+                </Button>
+                <Button
+                  pressed={!isPercentageDiscount}
+                  onClick={() =>
+                    discountValueType.onChange(DiscountValueType.FixedAmount)
+                  }
+                >
+                  {i18n.translate(
+                    'DiscountAppComponents.ValueCard.fixedAmountButton',
+                  )}
+                </Button>
+              </ButtonGroup>
+            </Box>
+            <Box>
               {!isPercentageDiscount && (
                 <CurrencyField
                   label={i18n.translate(
