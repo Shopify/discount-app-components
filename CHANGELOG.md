@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 1.5.0
+
+### Minor Changes
+
+- [#148](https://github.com/Shopify/discount-app-components/pull/148) [`a516750`](https://github.com/Shopify/discount-app-components/commit/a516750a5024287509f18ba6c9763c264e776b4d) Thanks [@devisscher](https://github.com/devisscher)! - Polaris peer dependencies are now all on version 11
+
 ## 1.4.0
 
 ### Minor Changes
