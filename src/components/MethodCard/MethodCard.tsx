@@ -77,7 +77,7 @@ export function MethodCard({
     <Box paddingBlockEnd="4">
       <Card padding="4">
         <VerticalStack gap="4">
-          <HorizontalStack align="start" gap="1">
+          <HorizontalStack align="start" blockAlign="center" gap="1">
             <Text variant="headingMd" as="h2">
               {title}
             </Text>
