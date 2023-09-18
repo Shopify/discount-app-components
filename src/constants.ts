@@ -35,7 +35,7 @@ export enum RequirementType {
   Quantity = 'QUANTITY',
 }
 
-export enum AppliesTo {
+export enum AppliesToType {
   Order = 'ORDER',
   Products = 'PRODUCTS',
   Collections = 'COLLECTIONS',
@@ -62,6 +62,11 @@ export enum Eligibility {
   Everyone = 'EVERYONE',
   Customers = 'CUSTOMERS',
   CustomerSegments = 'CUSTOMER_SEGMENTS',
+}
+
+export enum AppliesToEligibility {
+  Products = 'PRODUCTS',
+  Collections = 'COLLECTIONS',
 }
 
 export enum SupportedCountryCode {
