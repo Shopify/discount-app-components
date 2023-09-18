@@ -152,7 +152,7 @@
     },
     "SummaryCard": {
       "title": "Shrnutí",
-      "details": "podrobnosti",
+      "details": "Podrobnosti",
       "Header": {
         "emptyState": {
           "Code": "Zatím není k dispozici žádný slevový kód.",
@@ -163,7 +163,7 @@
           "expired": "Po konci platnosti",
           "scheduled": "Naplánováno"
         },
-        "typeAndMethod": "typ a metoda",
+        "typeAndMethod": "Typ a metoda",
         "discountMethod": {
           "Code": "Kód",
           "Automatic": "Automatická"

@@ -144,7 +144,7 @@
     },
     "SummaryCard": {
       "title": "Tóm tắt",
-      "details": "chi tiết",
+      "details": "Chi tiết",
       "Header": {
         "emptyState": {
           "Code": "Chưa có mã giảm giá nào.",
@@ -155,7 +155,7 @@
           "expired": "Đã hết hạn",
           "scheduled": "Đã lên lịch"
         },
-        "typeAndMethod": "loại và phương pháp",
+        "typeAndMethod": "Loại và phương thức",
         "discountMethod": {
           "Code": "Mã",
           "Automatic": "Tự động"

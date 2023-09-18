@@ -144,7 +144,7 @@
     },
     "SummaryCard": {
       "title": "摘要",
-      "details": "详情",
+      "details": "详细信息",
       "Header": {
         "emptyState": {
           "Code": "尚无折扣码。",
