@@ -144,7 +144,7 @@
     },
     "SummaryCard": {
       "title": "Yhteenveto",
-      "details": "tiedot",
+      "details": "Tiedot",
       "Header": {
         "emptyState": {
           "Code": "Ei vielä alennuskoodia.",
@@ -155,7 +155,7 @@
           "expired": "Vanhentunut",
           "scheduled": "Ajastettu"
         },
-        "typeAndMethod": "tyyppi ja menetelmä",
+        "typeAndMethod": "Tyyppi ja menetelmä",
         "discountMethod": {
           "Code": "Koodi",
           "Automatic": "Automaattinen"

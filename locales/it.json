@@ -148,7 +148,7 @@
     },
     "SummaryCard": {
       "title": "Riepilogo",
-      "details": "dettagli",
+      "details": "Dettagli",
       "Header": {
         "emptyState": {
           "Code": "Ancora nessun codice sconto.",
@@ -159,7 +159,7 @@
           "expired": "Scaduto",
           "scheduled": "Programmato"
         },
-        "typeAndMethod": "tipo e metodo",
+        "typeAndMethod": "Tipo e metodo",
         "discountMethod": {
           "Code": "Codice",
           "Automatic": "Automatico"

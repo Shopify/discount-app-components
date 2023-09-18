@@ -144,7 +144,7 @@
     },
     "SummaryCard": {
       "title": "Oversigt",
-      "details": "detaljer",
+      "details": "Detaljer",
       "Header": {
         "emptyState": {
           "Code": "Ingen rabatkode endnu.",
@@ -155,7 +155,7 @@
           "expired": "Udløbet",
           "scheduled": "Planlagt"
         },
-        "typeAndMethod": "type og metode",
+        "typeAndMethod": "Type og metode",
         "discountMethod": {
           "Code": "Kode",
           "Automatic": "Automatisk"
