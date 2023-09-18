@@ -1,5 +1,11 @@
 import React from 'react';
-import {Card, ChoiceList, Text, TextField} from '@shopify/polaris';
+import {
+  Card,
+  ChoiceList,
+  Text,
+  TextField,
+  HorizontalStack,
+} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {MethodCard} from '../MethodCard';
@@ -37,6 +43,19 @@ describe('<MethodCard />', () => {
     });
     expect(methodCard).not.toContainReactComponent(TextField, {
       label: 'Title',
+    });
+  });
+
+  it('renders the title align start and blockAlign center', () => {
+    const methodCard = mountWithApp(<MethodCard {...mockProps} />);
+
+    expect(methodCard).toContainReactComponent(Card, {
+      padding: '4',
+    });
+    expect(methodCard).toContainReactComponent(HorizontalStack, {
+      align: 'start',
+      blockAlign: 'center',
+      gap: '1',
     });
   });
 
