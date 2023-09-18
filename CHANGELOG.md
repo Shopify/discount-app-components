@@ -1,5 +1,15 @@
 # @shopify/discount-app-components
 
+## 1.4.0
+
+### Minor Changes
+
+- [#145](https://github.com/Shopify/discount-app-components/pull/145) [`b498459`](https://github.com/Shopify/discount-app-components/commit/b498459e1fc97547e2275d44d7e27d344b2119b2) Thanks [@devisscher](https://github.com/devisscher)! - return to Polaris 11
+
+### Patch Changes
+
+- [#135](https://github.com/Shopify/discount-app-components/pull/135) [`627ef9f`](https://github.com/Shopify/discount-app-components/commit/627ef9f3462cf102d1f694889681cd440ad8d61e) Thanks [@bkspace](https://github.com/bkspace)! - Updates the spacing between in the MethodCard whilst in edit mode
+
 ## 1.3.0
 
 ### Minor Changes
