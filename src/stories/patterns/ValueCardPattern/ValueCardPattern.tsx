@@ -4,7 +4,6 @@ import {
   DiscountClass,
   DiscountValueType,
   PurchaseType,
-  VisibleModal,
   AppliesToEligibility,
 } from '../../../constants';
 import {ProductOrCollectionResource} from '../../../types';
@@ -12,7 +11,7 @@ import {ALL_COLLECTIONS_IN_SHOP, ALL_PRODUCTS_IN_SHOP} from '../../../data';
 import {ItemModal} from '../AppliesToPattern/AppliesToPattern';
 import {CurrencyCode} from '@shopify/react-i18n';
 import {Page} from '@shopify/polaris';
-
+import {VisibleModal} from '../../constants';
 const ValueCardPattern = () => {
   const [fixedAmountDiscountValue, setFixedAmountDiscountValue] =
     useState('10');
