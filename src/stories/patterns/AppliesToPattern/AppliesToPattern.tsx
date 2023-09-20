@@ -9,7 +9,8 @@ import {
 import {AppliesTo} from '../../../components/AppliesTo';
 
 import {Field} from '../../../types';
-import {AppliesToEligibility, VisibleModal} from '../../../constants';
+import {AppliesToEligibility} from '../../../constants';
+import {VisibleModal} from '../../constants';
 import {ProductOrCollectionResource} from '../../../types';
 import {ALL_COLLECTIONS_IN_SHOP, ALL_PRODUCTS_IN_SHOP} from '../../../data';
 

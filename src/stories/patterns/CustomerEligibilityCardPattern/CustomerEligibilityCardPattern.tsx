@@ -8,8 +8,8 @@ import {
   Field,
 } from '../../..';
 
-import {Eligibility, VisibleModal} from '../../../constants';
-
+import {Eligibility} from '../../../constants';
+import {VisibleModal} from '../../constants';
 import {
   ALL_CUSTOMERS_IN_SHOP,
   ALL_CUSTOMER_SEGMENTS_IN_SHOP,
