@@ -6,3 +6,4 @@ node_modules
 *.scss.d.ts
 .idea
 .vscode/*
+coverage

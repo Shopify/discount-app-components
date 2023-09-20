@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import {Page} from '@shopify/polaris';
 import {MinimumRequirementsCard} from '../../../../src';
 import {
-  AppliesTo,
+  AppliesToType,
   DiscountClass,
   DiscountMethod,
   RequirementType,
@@ -43,7 +43,7 @@ export default function MinimumRequirementsCardPattern() {
         }}
       />
       <MinimumRequirementsCard
-        appliesTo={AppliesTo.Products}
+        appliesTo={AppliesToType.Products}
         currencyCode={CurrencyCode.Cad}
         requirementType={{
           value: requirementType,

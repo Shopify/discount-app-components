@@ -4,7 +4,12 @@ import {
   DiscountClass,
   DiscountValueType,
   PurchaseType,
+  VisibleModal,
+  AppliesToEligibility,
 } from '../../../constants';
+import {ProductOrCollectionResource} from '../../../types';
+import {ALL_COLLECTIONS_IN_SHOP, ALL_PRODUCTS_IN_SHOP} from '../../../data';
+import {ItemModal} from '../AppliesToPattern/AppliesToPattern';
 import {CurrencyCode} from '@shopify/react-i18n';
 import {Page} from '@shopify/polaris';
 
@@ -28,6 +33,30 @@ const ValueCardPattern = () => {
   const currencyCode = CurrencyCode.Usd;
   const sellsSubscriptions = true;
   const isCodeDiscount = true;
+
+  // Value card
+  const [visibleModal, setVisibleModal] = useState<VisibleModal>(
+    VisibleModal.None,
+  );
+
+  const [selectedProducts, setSelectedProducts] =
+    useState<ProductOrCollectionResource[]>(ALL_PRODUCTS_IN_SHOP);
+  const [selectedCollections, setSelectedCollections] = useState<
+    ProductOrCollectionResource[]
+  >(ALL_COLLECTIONS_IN_SHOP);
+  const selectedProductsField = {
+    value: selectedProducts,
+    onChange: setSelectedProducts,
+  };
+
+  const selectedCollectionsField = {
+    value: selectedCollections,
+    onChange: setSelectedCollections,
+  };
+
+  const [eligibility, setEligibility] = useState<AppliesToEligibility>(
+    AppliesToEligibility.Products,
+  );
 
   return (
     <Page>
@@ -56,6 +85,42 @@ const ValueCardPattern = () => {
         currencyCode={currencyCode}
         sellsSubscriptions={sellsSubscriptions}
         isCodeDiscount={isCodeDiscount}
+        eligibility={{value: eligibility, onChange: setEligibility}}
+        selectedItems={
+          eligibility === AppliesToEligibility.Products
+            ? selectedProductsField
+            : selectedCollectionsField
+        }
+        productSelector={
+          <ItemModal
+            eligibility={eligibility}
+            items={ALL_PRODUCTS_IN_SHOP}
+            selectedItems={selectedProductsField}
+            open={visibleModal === VisibleModal.Products}
+            toggleModal={() =>
+              setVisibleModal((visibleModal) =>
+                visibleModal === VisibleModal.None
+                  ? VisibleModal.Products
+                  : VisibleModal.None,
+              )
+            }
+          />
+        }
+        collectionSelector={
+          <ItemModal
+            eligibility={eligibility}
+            items={ALL_COLLECTIONS_IN_SHOP}
+            selectedItems={selectedCollectionsField}
+            open={visibleModal === VisibleModal.Products}
+            toggleModal={() =>
+              setVisibleModal((visibleModal) =>
+                visibleModal === VisibleModal.None
+                  ? VisibleModal.Products
+                  : VisibleModal.None,
+              )
+            }
+          />
+        }
       />
     </Page>
   );

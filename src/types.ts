@@ -5,6 +5,7 @@ import type {
   Section,
 } from '@shopify/app-bridge/actions/Navigation/Redirect';
 import type {CurrencyCode} from '@shopify/react-i18n';
+import {Resource} from '@shopify/app-bridge/actions/ResourcePicker';
 
 import type {REST_OF_WORLD, SupportedCountryCode} from './constants';
 
@@ -86,4 +87,7 @@ export type CountryCode = SupportedCountryCode | typeof REST_OF_WORLD;
 export enum DiscountApplicationStrategy {
   First = 'FIRST',
   Maximum = 'MAXIMUM',
+}
+export interface ProductOrCollectionResource extends Resource {
+  title: string;
 }

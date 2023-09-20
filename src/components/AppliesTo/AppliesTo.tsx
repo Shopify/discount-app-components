@@ -1,104 +1,110 @@
-import React from 'react';
-import {
-  ChoiceList,
-  InlineError,
-  VerticalStack,
-  Text,
-  Box,
-} from '@shopify/polaris';
+import React, {useEffect} from 'react';
+import {ChoiceList, VerticalStack, Text, Box} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
-import {
-  type Product,
-  type Collection,
-} from '@shopify/app-bridge/actions/ResourcePicker';
 
 import {SelectedItemsList} from '../SelectedItemsList';
-import type {Field, Country} from '../../types';
-import {AppliesToEligibility, AppliesToType} from '../../constants';
+import type {Field, ProductOrCollectionResource} from '../../types';
+import {AppliesToEligibility} from '../../constants';
 
-export interface AppliesToCardProps {
+import styles from './AppliesTo.scss';
+
+export interface AppliesToProps {
   /**
    * Specific collections or products
    */
   eligibility: Field<AppliesToEligibility>;
-  selectedItems: Field<Product[]> | Field<Collection[]>;
-  itemSelector: React.ReactNode;
+  selectedItems: Field<ProductOrCollectionResource[]>;
+  productSelector?: React.ReactNode;
+  collectionSelector?: React.ReactNode;
 }
 
 export function AppliesTo({
   eligibility,
   selectedItems,
-  itemSelector,
-}: AppliesToCardProps) {
+  productSelector,
+  collectionSelector,
+}: AppliesToProps) {
   const [i18n] = useI18n();
-
+  useEffect(() => {
+    if (!productSelector) {
+      eligibility.onChange(AppliesToEligibility.Collections);
+    } else if (!collectionSelector) {
+      eligibility.onChange(AppliesToEligibility.Products);
+    }
+  }, [productSelector, collectionSelector, eligibility]);
   return (
-    <Box paddingBlockEnd="4">
-      <VerticalStack gap="4">
-        <Text variant="headingMd" as="h2">
-          {i18n.translate('DiscountAppComponents.AppliesToCard.title')}
-        </Text>
-        <ChoiceList
-          title={i18n.translate(
-            'DiscountAppComponents.AppliesToCard.choiceList.titleProducts',
-          )}
-          titleHidden
-          choices={[
-            {
-              value: AppliesToType.Products,
-              label: i18n.translate(
-                'DiscountAppComponents.AppliesToCard.choiceList.products',
-              ),
-            },
-            {
-              value: AppliesToType.Collections,
-              label: i18n.translate(
-                'DiscountAppComponents.AppliesToCard.choiceList.collections',
-              ),
-            },
-          ]}
-          selected={[]}
-          onChange={(values: AppliesToType[]) =>
-            eligibility.onChange(values[0])
-          }
-        />
-        {countrySelectionType.value ===
-          CountrySelectionType.SelectedCountries && (
-          <>
-            <div className={styles.countrySelectorActivator}>
-              {countrySelector}
-            </div>
-            <SelectedItemsList
-              items={selectedCountries.value.map(localizeCountry)}
-              renderItem={(item: Country) => <div>{item.name}</div>}
-              onRemoveItem={(itemId: string) =>
-                selectedCountries.onChange(
-                  selectedCountries.value.filter(
-                    (countryCode) => countryCode !== itemId,
+    <>
+      {productSelector || collectionSelector ? (
+        <Box paddingBlockEnd="4">
+          <VerticalStack gap="4">
+            <Text variant="headingMd" as="h2">
+              {i18n.translate('DiscountAppComponents.AppliesToCard.title')}
+            </Text>
+            <ChoiceList
+              title={i18n.translate(
+                'DiscountAppComponents.AppliesToCard.choiceList.titleProducts',
+              )}
+              disabled={!productSelector || !collectionSelector}
+              titleHidden
+              choices={[
+                {
+                  value: AppliesToEligibility.Products,
+                  label: i18n.translate(
+                    'DiscountAppComponents.AppliesToCard.choiceList.products',
                   ),
-                )
+                },
+                {
+                  value: AppliesToEligibility.Collections,
+                  label: i18n.translate(
+                    'DiscountAppComponents.AppliesToCard.choiceList.collections',
+                  ),
+                },
+              ]}
+              selected={[eligibility.value]}
+              onChange={(values: AppliesToEligibility[]) =>
+                eligibility.onChange(values[0])
               }
             />
-          </>
-        )}
-        <Text variant="headingMd" as="h2">
-          {i18n.translate(
-            'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.title',
-          )}
-        </Text>
 
-        {excludeShippingRates.value && (
-          <>
-            <div className={styles.ShippingRatesTextField} />
-            {maximumShippingPrice?.error && (
-              <InlineError
-                fieldID={EXCLUDE_SHIPPING_RATES_FIELD_ID}
-                message={maximumShippingPrice.error}
-              />
+            {eligibility.value === AppliesToEligibility.Products && (
+              <>
+                <div className={styles.SelectedItemsActivator}>
+                  {productSelector}
+                </div>
+                <SelectedItemsList
+                  items={selectedItems.value.map((item) => item)}
+                  renderItem={(item: ProductOrCollectionResource) => (
+                    <div>{item.title}</div>
+                  )}
+                  onRemoveItem={(itemId: string) =>
+                    selectedItems.onChange(
+                      selectedItems.value.filter((item) => item.id !== itemId),
+                    )
+                  }
+                />
+              </>
             )}
-          </>
-        )}
-      </VerticalStack>
-    </Box>
+            {eligibility.value === AppliesToEligibility.Collections && (
+              <>
+                <div className={styles.SelectedItemsActivator}>
+                  {collectionSelector}
+                </div>
+                <SelectedItemsList
+                  items={selectedItems.value.map((item) => item)}
+                  renderItem={(item: ProductOrCollectionResource) => (
+                    <div>{item.title}</div>
+                  )}
+                  onRemoveItem={(itemId: string) =>
+                    selectedItems.onChange(
+                      selectedItems.value.filter((item) => item.id !== itemId),
+                    )
+                  }
+                />
+              </>
+            )}
+          </VerticalStack>
+        </Box>
+      ) : null}
+    </>
   );
 }

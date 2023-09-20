@@ -1,6 +1,6 @@
 import React from 'react';
 import {Provider} from '../../foundation/Provider';
-import {AppliesTo} from '../../../components/AppliesTo';
+import {AppliesToPattern} from './AppliesToPattern';
 
 // eslint-disable-next-line import/no-default-export, import/no-anonymous-default-export
 export default {
@@ -12,7 +12,7 @@ export default {
 
 const CustomerEligibilityCardPattern = () => (
   <Provider>
-    <AppliesTo />
+    <AppliesToPattern />
   </Provider>
 );
 
