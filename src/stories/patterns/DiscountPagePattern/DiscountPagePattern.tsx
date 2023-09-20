@@ -9,7 +9,7 @@ import {UsageLimitsCard} from '../../../components/UsageLimitsCard';
 import {SummaryCard} from '../../../components/SummaryCard';
 
 import {
-  AppliesTo,
+  AppliesToType,
   CountrySelectionType,
   DiscountClass,
   DiscountMethod,
@@ -150,9 +150,7 @@ export default function DiscountPage({id = '1'}) {
     discountMethod === DiscountMethod.Automatic ? discountTitle : discountCode;
 
   return (
-    <Page
-      title="Create discount"
-    >
+    <Page title="Create discount">
       <Layout>
         <Layout.Section>
           <MethodCard
@@ -175,7 +173,7 @@ export default function DiscountPage({id = '1'}) {
           {discountMethod === DiscountMethod.Code && (
             <>
               <MinimumRequirementsCard
-                appliesTo={AppliesTo.Products}
+                appliesTo={AppliesToType.Products}
                 currencyCode={currencyCode}
                 requirementType={{
                   value: requirementType,

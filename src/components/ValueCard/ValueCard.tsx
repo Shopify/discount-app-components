@@ -16,9 +16,15 @@ import type {CurrencyCode, I18n} from '@shopify/react-i18n';
 import {useI18n} from '@shopify/react-i18n';
 
 import {CurrencyField} from '../CurrencyField';
-import {DiscountValueType, DiscountClass, PurchaseType} from '../../constants';
+import {
+  DiscountValueType,
+  DiscountClass,
+  PurchaseType,
+  AppliesToEligibility,
+} from '../../constants';
 import {forcePositiveInteger} from '../../utilities/numbers';
-import type {Field} from '../../types';
+import type {Field, ProductOrCollectionResource} from '../../types';
+import {AppliesTo} from '../AppliesTo';
 
 import styles from './ValueCard.scss';
 
@@ -39,6 +45,10 @@ interface Props {
   currencyCode: CurrencyCode;
   sellsSubscriptions: boolean;
   isCodeDiscount: boolean;
+  eligibility?: Field<AppliesToEligibility>;
+  selectedItems?: Field<ProductOrCollectionResource[]>;
+  productSelector?: React.ReactNode;
+  collectionSelector?: React.ReactNode;
 }
 
 export function ValueCard({
@@ -51,6 +61,10 @@ export function ValueCard({
   currencyCode,
   sellsSubscriptions,
   isCodeDiscount,
+  eligibility,
+  selectedItems,
+  productSelector,
+  collectionSelector,
 }: Props) {
   const [i18n] = useI18n();
 
@@ -225,6 +239,16 @@ export function ValueCard({
               }
             />
           )}
+          {eligibility &&
+          selectedItems &&
+          (productSelector || collectionSelector) ? (
+            <AppliesTo
+              eligibility={eligibility}
+              selectedItems={selectedItems}
+              productSelector={productSelector}
+              collectionSelector={collectionSelector}
+            />
+          ) : null}
         </VerticalStack>
       </Card>
     </Box>

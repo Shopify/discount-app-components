@@ -15,5 +15,5 @@
       "locales_dynamic/*": ["./locales/*"]
     }
   },
-  "include": ["./config/typescript", "./src", "./tests", "./styles.d.ts"]
+  "include": ["./config/typescript", "./src/**/*", "./tests", "./styles.d.ts"]
 }

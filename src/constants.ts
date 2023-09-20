@@ -10,6 +10,14 @@ export enum Weekday {
 
 export const DEFAULT_WEEK_START_DAY = Weekday.Sunday;
 
+export enum VisibleModal {
+  None,
+  Products,
+  Collections,
+  Customers,
+  CustomerSegments,
+}
+
 export enum DiscountMethod {
   Code = 'Code',
   Automatic = 'Automatic',

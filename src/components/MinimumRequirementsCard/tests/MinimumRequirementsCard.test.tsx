@@ -6,11 +6,15 @@ import {mockField, mountWithApp} from 'tests/utilities';
 import {MinimumRequirementsCard} from '../MinimumRequirementsCard';
 import {CurrencyField} from '../../CurrencyField';
 import {forcePositiveInteger} from '../../../utilities/numbers';
-import {AppliesTo, DiscountMethod, RequirementType} from '../../../constants';
+import {
+  AppliesToType,
+  DiscountMethod,
+  RequirementType,
+} from '../../../constants';
 
 describe('<MinimumRequirementsCard>', () => {
   const mockProps = {
-    appliesTo: AppliesTo.Products,
+    appliesTo: AppliesToType.Products,
     requirementType: mockField(RequirementType.None),
     subtotal: mockField(''),
     quantity: mockField(''),
@@ -91,7 +95,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Order}
+          appliesTo={AppliesToType.Order}
           requirementType={mockField(RequirementType.Subtotal)}
         />,
       );
@@ -105,7 +109,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Collections}
+          appliesTo={AppliesToType.Collections}
           requirementType={mockField(RequirementType.Subtotal)}
         />,
       );
@@ -119,7 +123,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Products}
+          appliesTo={AppliesToType.Products}
           requirementType={mockField(RequirementType.Subtotal)}
         />,
       );
@@ -133,7 +137,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Products}
+          appliesTo={AppliesToType.Products}
           isRecurring
           requirementType={mockField(RequirementType.Subtotal)}
         />,
@@ -148,7 +152,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Collections}
+          appliesTo={AppliesToType.Collections}
           isRecurring
           requirementType={mockField(RequirementType.Subtotal)}
         />,
@@ -163,7 +167,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Order}
+          appliesTo={AppliesToType.Order}
           isRecurring
           requirementType={mockField(RequirementType.Subtotal)}
         />,
@@ -178,7 +182,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Order}
+          appliesTo={AppliesToType.Order}
           requirementType={mockField(RequirementType.Quantity)}
         />,
       );
@@ -192,7 +196,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Collections}
+          appliesTo={AppliesToType.Collections}
           requirementType={mockField(RequirementType.Quantity)}
         />,
       );
@@ -206,7 +210,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Products}
+          appliesTo={AppliesToType.Products}
           requirementType={mockField(RequirementType.Quantity)}
         />,
       );
@@ -220,7 +224,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Products}
+          appliesTo={AppliesToType.Products}
           isRecurring
           requirementType={mockField(RequirementType.Quantity)}
         />,
@@ -235,7 +239,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Collections}
+          appliesTo={AppliesToType.Collections}
           isRecurring
           requirementType={mockField(RequirementType.Quantity)}
         />,
@@ -250,7 +254,7 @@ describe('<MinimumRequirementsCard>', () => {
       const minimumRequirementsCard = mountWithApp(
         <MinimumRequirementsCard
           {...mockProps}
-          appliesTo={AppliesTo.Order}
+          appliesTo={AppliesToType.Order}
           isRecurring
           requirementType={mockField(RequirementType.Quantity)}
         />,

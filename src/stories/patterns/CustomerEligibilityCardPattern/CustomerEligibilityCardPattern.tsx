@@ -7,42 +7,13 @@ import {
   CustomerSegment,
   Field,
 } from '../../..';
-import {Eligibility} from '../../../constants';
 
-enum VisibleModal {
-  None,
-  Customers,
-  CustomerSegments,
-}
+import {Eligibility, VisibleModal} from '../../../constants';
 
-const ALL_CUSTOMER_SEGMENTS_IN_SHOP = [
-  {
-    id: '1',
-    name: 'Email subscribers',
-  },
-  {
-    id: '2',
-    name: 'Abandoned checkouts in the last 30 days',
-  },
-];
-
-const ALL_CUSTOMERS_IN_SHOP = [
-  {
-    id: '1',
-    displayName: 'Shopify customer',
-    email: 'hello@shopify.com',
-  },
-  {
-    id: '2',
-    displayName: 'Shopify customer with long name',
-    email: 'hello_shopify_customer_with_long_name@shopify.com',
-  },
-  {
-    id: '3',
-    displayName: 'Frodo Baggins',
-    email: 'frodo_b@theshire.com',
-  },
-];
+import {
+  ALL_CUSTOMERS_IN_SHOP,
+  ALL_CUSTOMER_SEGMENTS_IN_SHOP,
+} from '../../../data';
 
 export default function CustomerEligibilityCardPattern() {
   const [visibleModal, setVisibleModal] = useState<VisibleModal>(

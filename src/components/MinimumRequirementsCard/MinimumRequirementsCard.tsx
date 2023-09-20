@@ -13,7 +13,7 @@ import {CurrencyCode, I18n, useI18n} from '@shopify/react-i18n';
 import {CurrencyField} from '../CurrencyField';
 import {forcePositiveInteger} from '../../utilities/numbers';
 import type {Field, PositiveNumericString} from '../../types';
-import {AppliesTo, DiscountMethod, RequirementType} from '../../constants';
+import {AppliesToType, DiscountMethod, RequirementType} from '../../constants';
 
 import styles from './MinimumRequirementsCard.scss';
 
@@ -41,7 +41,7 @@ export interface MinimumRequirementsCardProps {
   /**
    * Used to render a string describing what entity the minimum requirements apply to (collections, selected products, all products)
    */
-  appliesTo: AppliesTo;
+  appliesTo: AppliesToType;
 
   /**
    * The currency code that should be used to format the input value
@@ -218,18 +218,18 @@ export function MinimumRequirementsCard({
 
 function getFieldHelpText(
   isRecurring: boolean,
-  appliesTo: AppliesTo,
+  appliesTo: AppliesToType,
   i18n: I18n,
 ) {
   const scope = isRecurring
     ? 'DiscountAppComponents.MinimumRequirementsCard.subscriptions'
     : 'DiscountAppComponents.MinimumRequirementsCard.oneTime';
   switch (appliesTo) {
-    case AppliesTo.Order:
+    case AppliesToType.Order:
       return i18n.translate('appliesToAllProducts', {scope});
-    case AppliesTo.Products:
+    case AppliesToType.Products:
       return i18n.translate('appliesToProducts', {scope});
-    case AppliesTo.Collections:
+    case AppliesToType.Collections:
       return i18n.translate('appliesToCollections', {scope});
   }
 }
