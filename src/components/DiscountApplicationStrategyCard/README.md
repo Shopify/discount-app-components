@@ -9,5 +9,5 @@ The Discount Application Strategy Card enables users to toggle between `discount
 ### Basic usage
 
 ```jsx
-<DiscountAppStategyCard strategy="ALL" />
+<DiscountAppStategyCard strategy={strategyField} />
 ```
