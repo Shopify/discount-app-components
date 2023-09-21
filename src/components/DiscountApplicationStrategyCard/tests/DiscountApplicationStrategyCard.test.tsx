@@ -2,10 +2,10 @@ import React from 'react';
 import {ChoiceList, TextField} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
-import {DiscountAppStrategyCard} from '../DiscountAppStrategyCard';
+import {DiscountApplicationStrategyCard} from '../DiscountApplicationStrategyCard';
 import {DiscountApplicationStrategy} from '../../../types';
 
-describe('<DiscountAppStrategyCard />', () => {
+describe('<DiscountApplicationStrategyCard />', () => {
   const mockProps = {
     strategy: mockField(DiscountApplicationStrategy.First),
   };
@@ -14,8 +14,10 @@ describe('<DiscountAppStrategyCard />', () => {
     jest.resetAllMocks();
   });
 
-  it('renders a DiscountAppStrategyCard', () => {
-    const methodCard = mountWithApp(<DiscountAppStrategyCard {...mockProps} />);
+  it('renders a DiscountApplicationStrategyCard', () => {
+    const methodCard = mountWithApp(
+      <DiscountApplicationStrategyCard {...mockProps} />,
+    );
 
     expect(methodCard).not.toContainReactComponent(TextField, {
       label: 'Title',
@@ -23,7 +25,9 @@ describe('<DiscountAppStrategyCard />', () => {
   });
 
   it('calls onChange when the strategy is changed', () => {
-    const methodCard = mountWithApp(<DiscountAppStrategyCard {...mockProps} />);
+    const methodCard = mountWithApp(
+      <DiscountApplicationStrategyCard {...mockProps} />,
+    );
 
     methodCard
       .find(ChoiceList)

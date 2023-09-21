@@ -1,10 +1,10 @@
 import React from 'react';
 import {Provider} from '../../foundation/Provider';
-import DiscountAppStrategyCard from './DiscountAppStrategyCardPattern';
+import DiscountApplicationStrategyCard from './DiscountApplicationStrategyCardPattern';
 
 // eslint-disable-next-line import/no-default-export, import/no-anonymous-default-export
 export default {
-  title: 'DiscountAppStrategyCard pattern',
+  title: 'DiscountApplicationStrategyCard pattern',
   parameters: {
     layout: 'fullscreen',
   },
@@ -12,7 +12,7 @@ export default {
 
 const ApplicationStrategyCardPattern = () => (
   <Provider>
-    <DiscountAppStrategyCard />
+    <DiscountApplicationStrategyCard />
   </Provider>
 );
 

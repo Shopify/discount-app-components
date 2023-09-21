@@ -109,4 +109,4 @@ export {onBreadcrumbAction, handleRedirect} from './utilities/navigation';
 
 export {generateRandomDiscountCode} from './components/DiscountCodeGenerator/utilities';
 export {ValueCard} from './components/ValueCard';
-export {DiscountAppStrategyCard} from './components/DiscountAppStrategyCard';
+export {DiscountApplicationStrategyCard} from './components/DiscountApplicationStrategyCard';
