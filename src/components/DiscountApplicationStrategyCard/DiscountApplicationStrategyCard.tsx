@@ -35,13 +35,13 @@ export function DiscountApplicationStrategyCard({
             titleHidden
             choices={[
               {
+                value: DiscountApplicationStrategy.First,
                 label: i18n.translate('first.label', I18N_SCOPE),
-                value: i18n.translate('first.label', I18N_SCOPE),
                 helpText: i18n.translate('first.helpText', I18N_SCOPE),
               },
               {
+                value: DiscountApplicationStrategy.Maximum,
                 label: i18n.translate('maximum.label', I18N_SCOPE),
-                value: i18n.translate('maximum.label', I18N_SCOPE),
                 helpText: i18n.translate('maximum.helpText', I18N_SCOPE),
               },
             ]}
