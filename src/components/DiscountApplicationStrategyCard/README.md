@@ -1,6 +1,6 @@
 # DiscountAppStategyCard
 
-The Discount Application Strategy Card enables users to toggle between `discountApplicationStrategy`s to select between `FIRST` and `MAXIMUM` strategies.
+The Discount Application Strategy Card enables users to toggle between `discountApplicationStrategy`s to select between `FIRST` or `MAXIMUM` strategies.
 
 ---
 
