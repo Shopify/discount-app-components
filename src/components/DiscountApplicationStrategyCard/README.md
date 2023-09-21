@@ -1,6 +1,6 @@
 # DiscountAppStategyCard
 
-The Discount Application Strategy Card enables users to toggle between `discountApplicationStrategy`s to select between `All`, `First`, and `Maximum` strategies.
+The Discount Application Strategy Card enables users to toggle between `discountApplicationStrategy`s to select between `FIRST` and `MAXIMUM` strategies.
 
 ---
 
@@ -9,5 +9,5 @@ The Discount Application Strategy Card enables users to toggle between `discount
 ### Basic usage
 
 ```jsx
-<DiscountAppStategyCard strategy="All" />
+<DiscountAppStategyCard strategy="ALL" />
 ```
