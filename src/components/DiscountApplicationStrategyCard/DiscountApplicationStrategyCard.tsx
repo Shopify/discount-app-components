@@ -12,10 +12,12 @@ export interface DiscountAppStrategyProps {
 }
 
 const I18N_SCOPE = {
-  scope: 'DiscountAppComponents.DiscountAppStrategyCard',
+  scope: 'DiscountAppComponents.DiscountApplicationStrategyCard',
 };
 
-export function DiscountAppStrategyCard({strategy}: DiscountAppStrategyProps) {
+export function DiscountApplicationStrategyCard({
+  strategy,
+}: DiscountAppStrategyProps) {
   const [i18n] = useI18n();
 
   const handleChange = (strategies: DiscountApplicationStrategy[]) =>
