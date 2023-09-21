@@ -117,7 +117,7 @@
     "change-case": "^4.1.2",
     "copyfiles": "^2.1.1",
     "downlevel-dts": "^0.11.0",
-    "eslint": "^8.3.0",
+    "eslint": "^8.49.0",
     "glob": "^10.3.3",
     "jest-location-mock": "^1.0.9",
     "mockdate": "^3.0.5",
