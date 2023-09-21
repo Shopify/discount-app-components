@@ -1,14 +1,14 @@
-import React, {useCallback, useState} from 'react';
+import React from 'react';
 import {Box, Card, ChoiceList, Text, VerticalStack} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
-import {DiscountApplicationStrategy} from '../../types';
+import {DiscountApplicationStrategy, Field} from '../../types';
 
 export interface DiscountAppStrategyProps {
   /**
    * The discount application strategy.
    */
-  strategy: DiscountApplicationStrategy;
+  strategy: Field<DiscountApplicationStrategy>;
 }
 
 const I18N_SCOPE = {
@@ -17,9 +17,9 @@ const I18N_SCOPE = {
 
 export function DiscountAppStrategyCard({strategy}: DiscountAppStrategyProps) {
   const [i18n] = useI18n();
-  const [selected, setSelected] = useState<string[]>([strategy]);
 
-  const handleChange = useCallback((value: string[]) => setSelected(value), []);
+  const handleChange = (strategies: DiscountApplicationStrategy[]) =>
+    strategy.onChange(strategies[0]);
 
   return (
     <Box paddingBlockEnd="4">
@@ -43,7 +43,7 @@ export function DiscountAppStrategyCard({strategy}: DiscountAppStrategyProps) {
                 helpText: i18n.translate('maximum.helpText', I18N_SCOPE),
               },
             ]}
-            selected={selected}
+            selected={[strategy.value]}
             onChange={handleChange}
           />
         </VerticalStack>
