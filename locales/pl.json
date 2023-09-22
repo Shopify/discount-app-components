@@ -577,6 +577,15 @@
       "oncePerOrder": "Rabat należy stosować tylko raz na zamówienie",
       "oncePerOrderHelpText": "Jeśli wybór nie zostanie dokonany, kwota zostanie odjęta od każdej kwalifikującej się pozycji w zamówieniu.",
       "oncePerOrderHelpTextWithAmount": "Jeśli wybór nie zostanie dokonany, kwota {fixedAmountValue} zostanie odjęta od każdej kwalifikującej się pozycji w zamówieniu."
+    },
+    "AppliesToCard": {
+      "title": "Dotyczy",
+      "choiceList": {
+        "titleProducts": "Wybierz produkty",
+        "titleCollections": "Wybierz kolekcje",
+        "products": "Produkty",
+        "collections": "Kolekcje"
+      }
     }
   }
 }

@@ -567,6 +567,15 @@
       "oncePerOrder": "Applica sconto solo una volta per ordine",
       "oncePerOrderHelpText": "Se non selezionato, l'importo sarà sottratto da ogni articolo idoneo dell'ordine.",
       "oncePerOrderHelpTextWithAmount": "Se non selezionato, sarà sottratto {fixedAmountValue} da ogni articolo idoneo dell'ordine."
+    },
+    "AppliesToCard": {
+      "title": "Si applica a",
+      "choiceList": {
+        "titleProducts": "Seleziona prodotti",
+        "titleCollections": "Seleziona collezioni",
+        "products": "Prodotti",
+        "collections": "Collezioni"
+      }
     }
   }
 }

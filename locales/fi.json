@@ -557,6 +557,15 @@
       "oncePerOrder": "Käytä alennusta vain kerran tilausta kohti",
       "oncePerOrderHelpText": "Jos tätä ei valita, summa vähennetään tilauksen jokaisesta hyväksyttävästä tuotteesta.",
       "oncePerOrderHelpTextWithAmount": "Jos tätä ei valita, tilauksen jokaisesta hyväksyttävästä tuotteesta vähennetään {fixedAmountValue}."
+    },
+    "AppliesToCard": {
+      "title": "Koskee:",
+      "choiceList": {
+        "titleProducts": "Valitse tuotteet",
+        "titleCollections": "Valitse kokoelmat",
+        "products": "Tuotteet",
+        "collections": "Kokoelmat"
+      }
     }
   }
 }

@@ -557,6 +557,15 @@
       "oncePerOrder": "Chỉ áp dụng ưu đãi giảm giá một lần mỗi đơn hàng",
       "oncePerOrderHelpText": "Nếu không được chọn, số lượng sẽ bị loại bỏ khỏi các mặt hàng đủ điều kiện trong đơn hàng.",
       "oncePerOrderHelpTextWithAmount": "Nếu không được chọn, {fixedAmountValue} sẽ bị loại bỏ khỏi các mặt hàng đủ điều kiện trong đơn hàng."
+    },
+    "AppliesToCard": {
+      "title": "Áp dụng cho",
+      "choiceList": {
+        "titleProducts": "Chọn sản phẩm",
+        "titleCollections": "Chọn bộ sưu tập",
+        "products": "Sản phẩm",
+        "collections": "Bộ sưu tập"
+      }
     }
   }
 }

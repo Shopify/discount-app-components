@@ -557,6 +557,15 @@
       "oncePerOrder": "주문당 1회만 할인 적용",
       "oncePerOrderHelpText": "선택하지 않으면 주문의 각 적격 품목에서 금액이 차감됩니다.",
       "oncePerOrderHelpTextWithAmount": "선택하지 않으면 주문의 각 적격 품목에서 {fixedAmountValue}이(가) 차감됩니다."
+    },
+    "AppliesToCard": {
+      "title": "적용 대상",
+      "choiceList": {
+        "titleProducts": "제품 선택",
+        "titleCollections": "컬렉션 선택",
+        "products": "제품",
+        "collections": "컬렉션"
+      }
     }
   }
 }
