@@ -557,6 +557,15 @@
       "oncePerOrder": "注文ごとにディスカウントを1回のみ適用する",
       "oncePerOrderHelpText": "選択されていない場合、金額は注文内の各対象アイテムから差し引かれます。",
       "oncePerOrderHelpTextWithAmount": "選択されていない場合、{fixedAmountValue}は注文内の各対象アイテムから差し引かれます。"
+    },
+    "AppliesToCard": {
+      "title": "適用対象",
+      "choiceList": {
+        "titleProducts": "商品を選択する",
+        "titleCollections": "コレクションを選択する",
+        "products": "商品",
+        "collections": "コレクション"
+      }
     }
   }
 }

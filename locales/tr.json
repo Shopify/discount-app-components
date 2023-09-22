@@ -557,6 +557,15 @@
       "oncePerOrder": "Her sipariş için yalnızca bir kez indirim uygula",
       "oncePerOrderHelpText": "Bu seçenek işaretlenmezse indirim tutarı, bir siparişteki uygun her üründen düşülür.",
       "oncePerOrderHelpTextWithAmount": "Bu seçenek işaretlenmezse bir siparişteki uygun her üründen {fixedAmountValue} düşülür."
+    },
+    "AppliesToCard": {
+      "title": "Geçerlilik:",
+      "choiceList": {
+        "titleProducts": "Ürünleri seçin",
+        "titleCollections": "Koleksiyonları seçin",
+        "products": "Ürünler",
+        "collections": "Koleksiyonlar"
+      }
     }
   }
 }

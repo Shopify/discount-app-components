@@ -567,6 +567,15 @@
       "oncePerOrder": "N'appliquer qu'une seule réduction par commande",
       "oncePerOrderHelpText": "S’il n’est pas sélectionné, le montant sera déduit de chaque article éligible dans une commande.",
       "oncePerOrderHelpTextWithAmount": "S’il n’est pas sélectionné, {fixedAmountValue} seront déduits de chaque article éligible dans une commande."
+    },
+    "AppliesToCard": {
+      "title": "S’applique à",
+      "choiceList": {
+        "titleProducts": "Sélectionner des produits",
+        "titleCollections": "Sélectionner des collections",
+        "products": "Produits",
+        "collections": "Collections"
+      }
     }
   }
 }

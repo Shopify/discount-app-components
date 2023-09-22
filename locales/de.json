@@ -557,6 +557,15 @@
       "oncePerOrder": "Rabattcode nur einmal pro Bestellung anwenden",
       "oncePerOrderHelpText": "Sollte diese Option nicht ausgewählt sein, wird der Betrag von jedem berechtigten Artikel in einer Bestellung abgezogen.",
       "oncePerOrderHelpTextWithAmount": "Sollte diese Option nicht ausgewählt sein, werden {fixedAmountValue} von jedem berechtigten Artikel in einer Bestellung abgezogen."
+    },
+    "AppliesToCard": {
+      "title": "Gilt für",
+      "choiceList": {
+        "titleProducts": "Produkte auswählen",
+        "titleCollections": "Kollektionen auswählen",
+        "products": "Produkte",
+        "collections": "Kollektionen"
+      }
     }
   }
 }

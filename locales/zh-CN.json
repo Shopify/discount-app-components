@@ -557,6 +557,15 @@
       "oncePerOrder": "每个订单仅使用一次折扣",
       "oncePerOrderHelpText": "如果未选择，订单中每件符合条件的商品都将减去此金额。",
       "oncePerOrderHelpTextWithAmount": "如果未选择，订单中每件符合条件的商品都将减去 {fixedAmountValue}。"
+    },
+    "AppliesToCard": {
+      "title": "适用于",
+      "choiceList": {
+        "titleProducts": "选择产品",
+        "titleCollections": "选择产品系列",
+        "products": "产品",
+        "collections": "产品系列"
+      }
     }
   }
 }

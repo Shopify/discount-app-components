@@ -557,6 +557,15 @@
       "oncePerOrder": "Rabatten gælder kun én gang pr. ordre",
       "oncePerOrderHelpText": "Hvis den ikke vælges, trækkes beløbet fra hver kvalificeret vare i en ordre.",
       "oncePerOrderHelpTextWithAmount": "Hvis den ikke vælges, trækkes {fixedAmountValue} fra hver kvalificeret vare i en ordre."
+    },
+    "AppliesToCard": {
+      "title": "Gælder for",
+      "choiceList": {
+        "titleProducts": "Vælg produkter",
+        "titleCollections": "Vælg kollektioner",
+        "products": "Produkter",
+        "collections": "Kollektioner"
+      }
     }
   }
 }

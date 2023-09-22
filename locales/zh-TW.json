@@ -557,6 +557,15 @@
       "oncePerOrder": "單張訂單僅能使用一項折扣",
       "oncePerOrderHelpText": "如果未選取，系統將從訂單中的每件合格品項中扣除該金額。",
       "oncePerOrderHelpTextWithAmount": "如果未選取，系統將從訂單中的每件合格品項中扣除 {fixedAmountValue}。"
+    },
+    "AppliesToCard": {
+      "title": "套用至",
+      "choiceList": {
+        "titleProducts": "選取商品",
+        "titleCollections": "選取商品系列",
+        "products": "商品",
+        "collections": "商品系列"
+      }
     }
   }
 }

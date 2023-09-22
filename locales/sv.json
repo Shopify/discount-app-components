@@ -557,6 +557,15 @@
       "oncePerOrder": "Använd endast en rabatt en gång per order",
       "oncePerOrderHelpText": "Om den inte väljs kommer beloppet att dras av för varje behörig artikel i en order.",
       "oncePerOrderHelpTextWithAmount": "Om den inte väljs kommer {fixedAmountValue} att dras av för varje behörig artikel i en order."
+    },
+    "AppliesToCard": {
+      "title": "Gäller för",
+      "choiceList": {
+        "titleProducts": "Välj produkter",
+        "titleCollections": "Välj produktserier",
+        "products": "Produkter",
+        "collections": "Produktserier"
+      }
     }
   }
 }
