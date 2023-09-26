@@ -557,6 +557,15 @@
       "oncePerOrder": "Korting geldt eenmaal per bestelling",
       "oncePerOrderHelpText": "Als deze optie niet is geselecteerd, wordt het bedrag afgetrokken van elk in aanmerking komend artikel in een bestelling.",
       "oncePerOrderHelpTextWithAmount": "Als deze optie niet is geselecteerd, wordt er {fixedAmountValue} afgetrokken van elk in aanmerking komend artikel in een bestelling."
+    },
+    "AppliesToCard": {
+      "title": "Van toepassing op",
+      "choiceList": {
+        "titleProducts": "Producten selecteren",
+        "titleCollections": "Collecties selecteren",
+        "products": "Producten",
+        "collections": "Collecties"
+      }
     }
   }
 }
