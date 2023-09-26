@@ -557,6 +557,15 @@
       "oncePerOrder": "ใช้ส่วนลดได้เพียงหนึ่งครั้งต่อหนึ่งคำสั่งซื้อ",
       "oncePerOrderHelpText": "หากไม่เลือก ระบบจะนำส่วนลดออกจากสินค้าที่ตรงตามคุณสมบัติแต่ละรายการในคำสั่งซื้อ",
       "oncePerOrderHelpTextWithAmount": "หากไม่เลือก ระบบจะนำส่วนลดมูลค่า {fixedAmountValue} ออกจากสินค้าที่ตรงตามคุณสมบัติแต่ละรายการในคำสั่งซื้อ"
+    },
+    "AppliesToCard": {
+      "title": "มีผลใช้กับ",
+      "choiceList": {
+        "titleProducts": "เลือกสินค้า",
+        "titleCollections": "เลือกคอลเลกชัน",
+        "products": "สินค้า",
+        "collections": "คอลเลกชัน"
+      }
     }
   }
 }
