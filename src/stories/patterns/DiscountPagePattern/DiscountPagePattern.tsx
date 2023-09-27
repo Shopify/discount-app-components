@@ -236,7 +236,7 @@ export default function DiscountPage({id = '1'}) {
             timezoneAbbreviation={timezoneAbbreviation}
           />
         </Layout.Section>
-        <Layout.Section secondary>
+        <Layout.Section variant='oneThird'>
           <SummaryCard
             header={{
               discountMethod: discountMethod,

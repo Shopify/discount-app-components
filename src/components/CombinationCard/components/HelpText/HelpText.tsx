@@ -64,7 +64,7 @@ export function HelpText({
             count,
             discountCountLink: (
               <span ref={buttonWrapperRef}>
-                <Button onClick={handleModalOpen} plain>
+                <Button onClick={handleModalOpen} variant='plain'>
                   {i18n.translate(
                     `combinations.counts.${targetDiscountClassLabel}`,
                     {scope},
