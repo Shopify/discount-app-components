@@ -1,12 +1,6 @@
 import React from 'react';
 import {I18n, useI18n} from '@shopify/react-i18n';
-import {
-  Badge,
-  InlineStack,
-  List,
-  Text,
-  BlockStack,
-} from '@shopify/polaris';
+import {Badge, InlineStack, List, Text, BlockStack} from '@shopify/polaris';
 
 import {DiscountMethod, DiscountStatus} from '../../../../constants';
 

@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Card,
-  ChoiceList,
-  Text,
-  TextField,
-  InlineStack,
-} from '@shopify/polaris';
+import {Card, ChoiceList, Text, TextField, InlineStack} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {MethodCard} from '../MethodCard';
