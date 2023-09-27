@@ -5,9 +5,9 @@ import {
   Checkbox,
   ChoiceList,
   InlineError,
-  VerticalStack,
+  BlockStack,
   TextField,
-  HorizontalStack,
+  InlineStack,
   Box,
   Card,
   Text,
@@ -105,11 +105,11 @@ export function ValueCard({
   return (
     <Box paddingBlockEnd="4">
       <Card padding="4">
-        <VerticalStack gap="2">
+        <BlockStack gap="2">
           <Text variant="headingMd" as="h2">
             {i18n.translate('DiscountAppComponents.ValueCard.title')}{' '}
           </Text>
-          <HorizontalStack gap="3" align="start">
+          <InlineStack gap="3" align="start">
             <ButtonGroup segmented>
               <Button
                 size="large"
@@ -184,7 +184,7 @@ export function ValueCard({
                 </div>
               )}
             </Box>
-          </HorizontalStack>
+          </InlineStack>
           {sellsSubscriptions && (
             <>
               <Text variant="headingMd" as="h2">
@@ -249,7 +249,7 @@ export function ValueCard({
               collectionSelector={collectionSelector}
             />
           ) : null}
-        </VerticalStack>
+        </BlockStack>
       </Card>
     </Box>
   );

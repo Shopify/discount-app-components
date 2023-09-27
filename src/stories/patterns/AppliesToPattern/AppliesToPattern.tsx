@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {
   Page,
   Modal,
-  HorizontalStack,
+  InlineStack,
   Button,
   ChoiceList,
 } from '@shopify/polaris';
@@ -116,9 +116,9 @@ export function ItemModal({
   return (
     <Modal
       activator={
-        <HorizontalStack>
+        <InlineStack>
           <Button onClick={toggleModal}>Browse</Button>
-        </HorizontalStack>
+        </InlineStack>
       }
       open={open}
       onClose={handleClose}

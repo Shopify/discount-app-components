@@ -1,6 +1,6 @@
 import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
-import {List, Text, VerticalStack} from '@shopify/polaris';
+import {List, Text, BlockStack} from '@shopify/polaris';
 import {Redirect} from '@shopify/app-bridge/actions';
 
 import {AppBridgeLink} from '../../../AppBridgeLink';
@@ -53,7 +53,7 @@ export function Performance({
     status === DiscountStatus.Active || status === DiscountStatus.Expired;
 
   return (
-    <VerticalStack gap="2">
+    <BlockStack gap="2">
       <Text variant="headingXs" as="h3">
         {i18n.translate('title', I18N_SCOPE)}
       </Text>
@@ -90,6 +90,6 @@ export function Performance({
           )}
         </>
       )}
-    </VerticalStack>
+    </BlockStack>
   );
 }

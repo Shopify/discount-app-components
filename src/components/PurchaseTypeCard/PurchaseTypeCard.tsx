@@ -1,5 +1,5 @@
 import React from 'react';
-import {ChoiceList, Card, Text, VerticalStack, Box} from '@shopify/polaris';
+import {ChoiceList, Card, Text, BlockStack, Box} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
 import type {Field} from '../../types';
@@ -17,7 +17,7 @@ export function PurchaseTypeCard({purchaseType}: PurchaseTypeCardProps) {
   return (
     <Box paddingBlockEnd="4">
       <Card padding="4">
-        <VerticalStack gap="4">
+        <BlockStack gap="4">
           <Text variant="headingMd" as="h2">
             {i18n.translate('DiscountAppComponents.PurchaseTypeList.title')}
           </Text>
@@ -51,7 +51,7 @@ export function PurchaseTypeCard({purchaseType}: PurchaseTypeCardProps) {
               purchaseType.onChange(purchaseTypeList[0] as PurchaseType);
             }}
           />
-        </VerticalStack>
+        </BlockStack>
       </Card>
     </Box>
   );

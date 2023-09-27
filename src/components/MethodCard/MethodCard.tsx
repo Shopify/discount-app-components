@@ -2,10 +2,10 @@ import React from 'react';
 import {
   Card,
   ChoiceList,
-  VerticalStack,
+  BlockStack,
   TextField,
   Text,
-  HorizontalStack,
+  InlineStack,
   Box,
 } from '@shopify/polaris';
 import {I18n, useI18n} from '@shopify/react-i18n';
@@ -76,15 +76,15 @@ export function MethodCard({
   return (
     <Box paddingBlockEnd="4">
       <Card padding="4">
-        <VerticalStack gap="4">
-          <HorizontalStack align="start" blockAlign="center" gap="1">
+        <BlockStack gap="4">
+          <InlineStack align="start" blockAlign="center" gap="1">
             <Text variant="headingMd" as="h2">
               {title}
             </Text>
             <Text as="span" color="subdued">
               {getDiscountClassLabel(discountClass, i18n)}
             </Text>
-          </HorizontalStack>
+          </InlineStack>
 
           {!discountMethodHidden && (
             <Text variant="headingMd" as="h2">
@@ -93,7 +93,7 @@ export function MethodCard({
               )}
             </Text>
           )}
-          <VerticalStack gap="4">
+          <BlockStack gap="4">
             {!discountMethodHidden && (
               <ChoiceList
                 title={i18n.translate(
@@ -136,8 +136,8 @@ export function MethodCard({
                 {...discountTitle}
               />
             )}
-          </VerticalStack>
-        </VerticalStack>
+          </BlockStack>
+        </BlockStack>
       </Card>
     </Box>
   );

@@ -4,7 +4,7 @@ import {
   TextField,
   Card,
   InlineError,
-  VerticalStack,
+  BlockStack,
   Text,
 } from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
@@ -89,7 +89,7 @@ describe('UsageLimitsCard', () => {
     it('displays usage limit option in a stack', () => {
       const usageLimits = mountWithApp(<UsageLimitsCard {...defaultProps} />);
 
-      expect(usageLimits).toContainReactComponent(VerticalStack);
+      expect(usageLimits).toContainReactComponent(BlockStack);
     });
 
     it('displays total usage limit text field when totalUsageLimit is a number', () => {
@@ -101,7 +101,7 @@ describe('UsageLimitsCard', () => {
         />,
       );
 
-      const stack = usageLimits.find(VerticalStack);
+      const stack = usageLimits.find(BlockStack);
 
       expect(stack).toContainReactComponent(TextField, {
         value: totalUsageLimit,
@@ -118,7 +118,7 @@ describe('UsageLimitsCard', () => {
         />,
       );
 
-      const stack = usageLimits.find(VerticalStack);
+      const stack = usageLimits.find(BlockStack);
 
       expect(stack).toContainReactComponent(Text, {
         children: 'A subscription with many payments will count as one use.',
