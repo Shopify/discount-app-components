@@ -110,7 +110,7 @@ export function ValueCard({
             {i18n.translate('DiscountAppComponents.ValueCard.title')}{' '}
           </Text>
           <InlineStack gap="3" align="start">
-            <ButtonGroup variant='segmented'>
+            <ButtonGroup variant="segmented">
               <Button
                 size="large"
                 pressed={isPercentageDiscount}

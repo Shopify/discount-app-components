@@ -15,7 +15,11 @@ export function Item({children, onRemove}: Props) {
       <div className={styles.Content}>{children}</div>
       {onRemove && (
         <div className={styles.Actions}>
-          <Button icon={CancelSmallMinor} variant='plain' onClick={() => onRemove()} />
+          <Button
+            icon={CancelSmallMinor}
+            variant="plain"
+            onClick={() => onRemove()}
+          />
         </div>
       )}
     </li>
