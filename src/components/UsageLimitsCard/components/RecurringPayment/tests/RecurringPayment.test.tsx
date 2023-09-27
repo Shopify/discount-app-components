@@ -4,7 +4,7 @@ import {
   TextField,
   InlineError,
   Text,
-  VerticalStack,
+  BlockStack,
 } from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
@@ -22,7 +22,7 @@ describe('<RecurringPayment />', () => {
       <RecurringPayment {...defaultProps} />,
     );
 
-    const container = recurringPayment.find(VerticalStack);
+    const container = recurringPayment.find(BlockStack);
 
     expect(container).toContainReactComponent(Text, {
       children: 'Recurring payments for subscriptions',

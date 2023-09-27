@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Card, ChoiceList, Text, VerticalStack} from '@shopify/polaris';
+import {Box, Card, ChoiceList, Text, BlockStack} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
 import {DiscountApplicationStrategy, Field} from '../../types';
@@ -26,7 +26,7 @@ export function DiscountApplicationStrategyCard({
   return (
     <Box paddingBlockEnd="4">
       <Card padding="4">
-        <VerticalStack gap="4">
+        <BlockStack gap="4">
           <Text variant="headingMd" as="h2">
             {i18n.translate('title', I18N_SCOPE)}
           </Text>
@@ -48,7 +48,7 @@ export function DiscountApplicationStrategyCard({
             selected={[strategy.value]}
             onChange={handleChange}
           />
-        </VerticalStack>
+        </BlockStack>
       </Card>
     </Box>
   );

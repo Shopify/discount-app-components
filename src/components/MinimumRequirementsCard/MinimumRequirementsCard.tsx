@@ -5,7 +5,7 @@ import {
   ChoiceList,
   InlineError,
   Text,
-  VerticalStack,
+  BlockStack,
   Box,
 } from '@shopify/polaris';
 import {CurrencyCode, I18n, useI18n} from '@shopify/react-i18n';
@@ -120,7 +120,7 @@ export function MinimumRequirementsCard({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <VerticalStack gap="4">
+            <BlockStack gap="4">
               <div className={styles.TextField}>
                 <CurrencyField
                   id={SUBTOTAL_FIELD_ID}
@@ -142,7 +142,7 @@ export function MinimumRequirementsCard({
                   message={subtotal.error}
                 />
               )}
-            </VerticalStack>
+            </BlockStack>
           )
         );
       },
@@ -153,7 +153,7 @@ export function MinimumRequirementsCard({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <VerticalStack gap="4">
+            <BlockStack gap="4">
               <div className={styles.TextField}>
                 <TextField
                   id={QUANTITY_FIELD_ID}
@@ -176,7 +176,7 @@ export function MinimumRequirementsCard({
                   message={quantity.error}
                 />
               )}
-            </VerticalStack>
+            </BlockStack>
           )
         );
       },
@@ -193,7 +193,7 @@ export function MinimumRequirementsCard({
   return (
     <Box paddingBlockEnd="4">
       <Card padding="4">
-        <VerticalStack gap="4">
+        <BlockStack gap="4">
           <Text variant="headingMd" as="h2">
             {i18n.translate(
               'DiscountAppComponents.MinimumRequirementsCard.title',
@@ -210,7 +210,7 @@ export function MinimumRequirementsCard({
               requirementType.onChange(nextValue[0])
             }
           />
-        </VerticalStack>
+        </BlockStack>
       </Card>
     </Box>
   );

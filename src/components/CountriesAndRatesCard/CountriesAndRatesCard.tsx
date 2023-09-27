@@ -4,7 +4,7 @@ import {
   ChoiceList,
   Checkbox,
   InlineError,
-  VerticalStack,
+  BlockStack,
   Text,
   Box,
 } from '@shopify/polaris';
@@ -71,7 +71,7 @@ export function CountriesAndRatesCard({
   return (
     <Box paddingBlockEnd="4">
       <Card padding="4">
-        <VerticalStack gap="4">
+        <BlockStack gap="4">
           <Text variant="headingMd" as="h2">
             {i18n.translate(
               'DiscountAppComponents.CountriesAndRatesCard.title',
@@ -158,7 +158,7 @@ export function CountriesAndRatesCard({
             </>
           )}
           {/* </Card.Section> */}
-        </VerticalStack>
+        </BlockStack>
       </Card>
     </Box>
   );

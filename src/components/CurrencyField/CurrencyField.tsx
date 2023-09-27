@@ -1,6 +1,6 @@
 import React from 'react';
 import {useI18n, CurrencyCode, I18n} from '@shopify/react-i18n';
-import {HorizontalStack} from '@shopify/polaris';
+import {InlineStack} from '@shopify/polaris';
 
 import {
   FormattedNumberField,
@@ -94,10 +94,10 @@ function renderSuffix(
 
   if (appendSuffixToCurrency && !prefixed && suffix) {
     return (
-      <HorizontalStack align="center">
+      <InlineStack align="center">
         <div>{symbol}</div>
         <div>{suffix}</div>
-      </HorizontalStack>
+      </InlineStack>
     );
   }
 

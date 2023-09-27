@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {ChoiceList, VerticalStack, Text, Box} from '@shopify/polaris';
+import {ChoiceList, BlockStack, Text, Box} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
 import {SelectedItemsList} from '../SelectedItemsList';
@@ -36,7 +36,7 @@ export function AppliesTo({
     <>
       {productSelector || collectionSelector ? (
         <Box paddingBlockEnd="4">
-          <VerticalStack gap="4">
+          <BlockStack gap="4">
             <Text variant="headingMd" as="h2">
               {i18n.translate('DiscountAppComponents.AppliesToCard.title')}
             </Text>
@@ -102,7 +102,7 @@ export function AppliesTo({
                 />
               </>
             )}
-          </VerticalStack>
+          </BlockStack>
         </Box>
       ) : null}
     </>

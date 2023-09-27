@@ -4,7 +4,7 @@ import {
   ChoiceList,
   Text,
   TextField,
-  HorizontalStack,
+  InlineStack,
 } from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
@@ -52,7 +52,7 @@ describe('<MethodCard />', () => {
     expect(methodCard).toContainReactComponent(Card, {
       padding: '4',
     });
-    expect(methodCard).toContainReactComponent(HorizontalStack, {
+    expect(methodCard).toContainReactComponent(InlineStack, {
       align: 'start',
       blockAlign: 'center',
       gap: '1',

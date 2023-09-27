@@ -4,7 +4,7 @@ import {
   Link,
   Card,
   ChoiceList,
-  VerticalStack,
+  BlockStack,
   Text,
   ChoiceListProps,
   Box,
@@ -82,7 +82,7 @@ export function CombinationCard({
   return (
     <Box paddingBlockEnd="4">
       <Card padding="4">
-        <VerticalStack gap="4">
+        <BlockStack gap="4">
           <Text variant="headingMd" as="h2">
             {i18n.translate('title', I18N_SCOPE)}
           </Text>
@@ -133,7 +133,7 @@ export function CombinationCard({
             selected={getSelectedChoices(combinableDiscountTypes.value)}
             onChange={handleDiscountCombinesWithChange}
           />
-        </VerticalStack>
+        </BlockStack>
       </Card>
     </Box>
   );
