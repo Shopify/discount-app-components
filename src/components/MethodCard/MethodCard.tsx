@@ -81,7 +81,7 @@ export function MethodCard({
             <Text variant="headingMd" as="h2">
               {title}
             </Text>
-            <Text as="span" color="subdued">
+            <Text as="span" tone="subdued">
               {getDiscountClassLabel(discountClass, i18n)}
             </Text>
           </InlineStack>

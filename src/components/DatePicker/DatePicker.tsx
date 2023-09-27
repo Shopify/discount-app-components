@@ -177,7 +177,7 @@ export function DatePicker({
           value={userInput}
           label={label}
           labelHidden={labelHidden}
-          prefix={<Icon source={CalendarMajor} color="subdued" />}
+          prefix={<Icon source={CalendarMajor} tone="subdued" />}
           placeholder={i18n.translate(
             'DiscountAppComponents.DatePicker.datePlaceholder',
           )}

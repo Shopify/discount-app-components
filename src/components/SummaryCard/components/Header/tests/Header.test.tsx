@@ -29,7 +29,7 @@ describe('<Header />', () => {
           {...mockProps}
           discountDescriptor="SPRING_SALE"
           isEditing
-          discountStatus={DiscountStatus.Active}
+          discounttone={DiscountStatus.Active}
         />,
       );
 
@@ -45,7 +45,7 @@ describe('<Header />', () => {
           {...mockProps}
           discountDescriptor="SPRING_SALE"
           isEditing
-          discountStatus={DiscountStatus.Expired}
+          discounttone={DiscountStatus.Expired}
         />,
       );
 
@@ -60,7 +60,7 @@ describe('<Header />', () => {
           {...mockProps}
           discountDescriptor="SPRING_SALE"
           isEditing
-          discountStatus={DiscountStatus.Scheduled}
+          discounttone={DiscountStatus.Scheduled}
         />,
       );
 

@@ -89,7 +89,7 @@ export function CombinationCard({
           {shouldShowBanner && (
             <Banner
               title={i18n.translate('warning.title', I18N_SCOPE)}
-              status="warning"
+              tone="warning"
             >
               <p>
                 {i18n.translate('warning.description', I18N_SCOPE)}{' '}

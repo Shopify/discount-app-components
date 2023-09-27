@@ -102,7 +102,7 @@ export function MinimumRequirementsCard({
   );
 
   const fieldHelpTextMarkup = (
-    <Text as="span" color="subdued">
+    <Text as="span" tone="subdued">
       {getFieldHelpText(isRecurring, appliesTo, i18n)}
     </Text>
   );

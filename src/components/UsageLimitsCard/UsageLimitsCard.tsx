@@ -143,7 +143,7 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
                       </div>
                     )}
                     {isRecurring && (
-                      <Text as="span" color="subdued">
+                      <Text as="span" tone="subdued">
                         {i18n.translate(
                           'DiscountAppComponents.UsageLimitsCard.totalUsageLimitHelpTextSubscription',
                         )}

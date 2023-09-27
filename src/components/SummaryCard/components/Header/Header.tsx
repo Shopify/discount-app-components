@@ -72,7 +72,7 @@ export function Header(props: HeaderProps) {
           {isEditing(props) && renderBadgeForStatus(props.discountStatus, i18n)}
         </InlineStack>
       ) : (
-        <Text as="span" fontWeight="semibold" color="subdued">
+        <Text as="span" fontWeight="semibold" tone="subdued">
           {i18n.translate(`emptyState.${discountMethod}`, I18N_SCOPE)}
         </Text>
       )}
@@ -96,7 +96,7 @@ function renderBadgeForStatus(status: DiscountStatus, i18n: I18n) {
   switch (status) {
     case DiscountStatus.Active:
       return (
-        <Badge status={BadgeStatus.Success}>
+        <Badge tone={BadgeStatus.Success}>
           {i18n.translate('badge.active', I18N_SCOPE)}
         </Badge>
       );
@@ -104,7 +104,7 @@ function renderBadgeForStatus(status: DiscountStatus, i18n: I18n) {
       return <Badge>{i18n.translate('badge.expired', I18N_SCOPE)}</Badge>;
     case DiscountStatus.Scheduled:
       return (
-        <Badge status={BadgeStatus.Attention}>
+        <Badge tone={BadgeStatus.Attention}>
           {i18n.translate('badge.scheduled', I18N_SCOPE)}
         </Badge>
       );
