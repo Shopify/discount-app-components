@@ -29,12 +29,12 @@ describe('<Header />', () => {
           {...mockProps}
           discountDescriptor="SPRING_SALE"
           isEditing
-          discounttone={DiscountStatus.Active}
+          discountStatus={DiscountStatus.Active}
         />,
       );
 
       expect(header).toContainReactComponent(Badge, {
-        status: BadgeStatus.Success,
+        tone: BadgeStatus.Success,
         children: 'Active',
       });
     });
@@ -45,7 +45,7 @@ describe('<Header />', () => {
           {...mockProps}
           discountDescriptor="SPRING_SALE"
           isEditing
-          discounttone={DiscountStatus.Expired}
+          discountStatus={DiscountStatus.Expired}
         />,
       );
 
@@ -60,12 +60,12 @@ describe('<Header />', () => {
           {...mockProps}
           discountDescriptor="SPRING_SALE"
           isEditing
-          discounttone={DiscountStatus.Scheduled}
+          discountStatus={DiscountStatus.Scheduled}
         />,
       );
 
       expect(header).toContainReactComponent(Badge, {
-        status: BadgeStatus.Attention,
+        tone: BadgeStatus.Attention,
         children: 'Scheduled',
       });
     });

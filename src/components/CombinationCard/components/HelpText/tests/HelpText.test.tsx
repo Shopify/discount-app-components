@@ -96,7 +96,7 @@ describe('<HelpText />', () => {
       expect(helpText).toContainReactComponent(Button, {
         children: `2 product discounts`,
         onClick: expect.any(Function),
-        plain: true,
+        variant: 'plain',
       });
     });
 

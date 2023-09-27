@@ -245,7 +245,7 @@ describe('<TimePicker />', () => {
         Icon,
         {
           source: ClockMinor,
-          color: 'subdued',
+          tone: 'subdued',
         },
       );
     });

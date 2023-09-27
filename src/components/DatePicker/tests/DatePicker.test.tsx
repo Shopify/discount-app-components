@@ -53,7 +53,7 @@ describe('<DatePicker />', () => {
 
       expect(datePicker.find(TextField)).toContainReactComponent(Icon, {
         source: CalendarMajor,
-        color: 'subdued',
+        tone: 'subdued',
       });
     });
 
