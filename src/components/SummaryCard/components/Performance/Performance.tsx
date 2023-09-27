@@ -58,7 +58,7 @@ export function Performance({
         {i18n.translate('title', I18N_SCOPE)}
       </Text>
       {status === DiscountStatus.Scheduled && (
-        <Text as="span" color="subdued">
+        <Text as="span" tone="subdued">
           {i18n.translate('notActive', I18N_SCOPE)}
         </Text>
       )}

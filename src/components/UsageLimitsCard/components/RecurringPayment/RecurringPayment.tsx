@@ -67,7 +67,7 @@ export function RecurringPayment({
                   error={Boolean(recurringPaymentLimit.error)}
                 />
               </div>
-              <Text as="span" color="subdued">
+              <Text as="span" tone="subdued">
                 {i18n.translate(
                   'DiscountAppComponents.RecurringPayment.includesFirstPayment',
                 )}

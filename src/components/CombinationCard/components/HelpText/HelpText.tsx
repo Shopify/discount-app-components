@@ -56,7 +56,7 @@ export function HelpText({
 
   return count > 0 ? (
     <BlockStack>
-      <Text as="span" color="subdued">
+      <Text as="span" tone="subdued">
         {i18n.translate(
           'combinations.info',
           {scope},
@@ -78,13 +78,13 @@ export function HelpText({
           },
         )}
       </Text>
-      <Text as="span" color="subdued">
+      <Text as="span" tone="subdued">
         {i18n.translate('combinations.multipleEligibleDiscounts', {scope})}
       </Text>
     </BlockStack>
   ) : (
     <>
-      <Text as="span" color="subdued">
+      <Text as="span" tone="subdued">
         {i18n.translate('title', {
           scope: `${scope}.emptyState.${targetDiscountClass.toLowerCase()}`,
         })}{' '}

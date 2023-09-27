@@ -17,7 +17,7 @@ describe('<Performance />', () => {
   describe('when discount is scheduled', () => {
     it('renders copy for inactive discount', () => {
       const performance = mountWithApp(
-        <Performance {...mockProps} status={DiscountStatus.Scheduled} />,
+        <Performance {...mockProps} tone={DiscountStatus.Scheduled} />,
       );
 
       expect(performance).toContainReactText('Discount is not active yet.');
@@ -32,7 +32,7 @@ describe('<Performance />', () => {
         const performance = mountWithApp(
           <Performance
             {...mockProps}
-            status={status}
+            tone={status}
             usageCount={usageCount}
           />,
         );

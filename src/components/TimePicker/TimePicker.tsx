@@ -129,7 +129,7 @@ export function TimePicker({
         <Autocomplete.TextField
           label={label}
           labelHidden={labelHidden}
-          prefix={<Icon source={ClockMinor} color="subdued" />}
+          prefix={<Icon source={ClockMinor} tone="subdued" />}
           placeholder={i18n.translate(
             'DiscountAppComponents.TimePicker.timePlaceholder',
           )}
