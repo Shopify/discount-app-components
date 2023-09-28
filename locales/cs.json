@@ -577,6 +577,15 @@
       "oncePerOrder": "Uplatnit slevu na objednávku pouze jednou",
       "oncePerOrderHelpText": "Pokud není možnost vybrána, odečte se příslušná částka od každé položky v objednávce, která splňuje dané podmínky.",
       "oncePerOrderHelpTextWithAmount": "Pokud není možnost vybrána, odečte se {fixedAmountValue} od každé položky v objednávce, která splňuje dané podmínky."
+    },
+    "AppliesToCard": {
+      "title": "Vztahuje se na",
+      "choiceList": {
+        "titleProducts": "Vyberte produkty",
+        "titleCollections": "Vyberte kolekce",
+        "products": "Produkty",
+        "collections": "Kolekce"
+      }
     }
   }
 }
