@@ -566,6 +566,17 @@
         "products": "Produkter",
         "collections": "Kollektioner"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Strategi for rabattildeling",
+      "first": {
+        "label": "Første",
+        "helpText": "Anvend kun den første rabat, hvor betingelserne er opfyldt."
+      },
+      "maximum": {
+        "label": "Maksimum",
+        "helpText": "Anvend kun den rabat, der giver den maksimale prisnedsættelse."
+      }
     }
   }
 }

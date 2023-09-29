@@ -566,6 +566,17 @@
         "products": "商品",
         "collections": "コレクション"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "ディスカウントアプリケーションの戦略",
+      "first": {
+        "label": "最初",
+        "helpText": "条件を満たした最初のディスカウントのみを適用します。"
+      },
+      "maximum": {
+        "label": "最大",
+        "helpText": "最大のディスカウントを提供するディスカウントのみを適用します。"
+      }
     }
   }
 }

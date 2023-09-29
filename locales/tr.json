@@ -566,6 +566,17 @@
         "products": "Ürünler",
         "collections": "Koleksiyonlar"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "İndirim Uygulama Stratejisi",
+      "first": {
+        "label": "İlk",
+        "helpText": "Yalnızca koşulları karşılayan ilk indirimi uygulayın."
+      },
+      "maximum": {
+        "label": "Maksimum",
+        "helpText": "Yalnızca maksimum en büyük düşüş sağlayan indirimi uygulayın."
+      }
     }
   }
 }

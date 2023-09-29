@@ -566,6 +566,17 @@
         "products": "Produkter",
         "collections": "Produktserier"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Rabattillämpningsstrategi",
+      "first": {
+        "label": "Första",
+        "helpText": "Tillämpa bara den första rabatten vars villkor är uppfyllda."
+      },
+      "maximum": {
+        "label": "Maximum",
+        "helpText": "Tillämpa bara den rabatt som erbjuder störst avdrag."
+      }
     }
   }
 }
