@@ -566,6 +566,17 @@
         "products": "商品",
         "collections": "商品系列"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "折扣套用策略",
+      "first": {
+        "label": "第一",
+        "helpText": "僅在滿足條件的情況下，套用第一個折扣。"
+      },
+      "maximum": {
+        "label": "最大值",
+        "helpText": "僅套用提供最大折價的折扣。"
+      }
     }
   }
 }
