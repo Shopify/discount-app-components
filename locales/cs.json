@@ -586,6 +586,17 @@
         "products": "Produkty",
         "collections": "Kolekce"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Strategie uplatnění slev",
+      "first": {
+        "label": "První",
+        "helpText": "Uplatní se jen první sleva za splnění příslušných podmínek."
+      },
+      "maximum": {
+        "label": "Maximum",
+        "helpText": "Uplatní se jen sleva, která nabízí maximální snížení částky."
+      }
     }
   }
 }

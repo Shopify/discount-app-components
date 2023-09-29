@@ -566,6 +566,17 @@
         "products": "Sản phẩm",
         "collections": "Bộ sưu tập"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Chiến lược áp dụng ưu đãi giảm giá",
+      "first": {
+        "label": "Thứ nhất",
+        "helpText": "Chỉ áp dụng ưu đãi giảm giá đầu tiên khi đã thỏa mãn các điều kiện."
+      },
+      "maximum": {
+        "label": "Tối đa",
+        "helpText": "Chỉ áp dụng ưu đãi giảm giá có mức khấu trừ tối đa."
+      }
     }
   }
 }

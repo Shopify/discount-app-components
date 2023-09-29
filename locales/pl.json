@@ -586,6 +586,17 @@
         "products": "Produkty",
         "collections": "Kolekcje"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Strategia stosowania rabatów",
+      "first": {
+        "label": "Pierwszy",
+        "helpText": "Zastosuj pierwszy rabat tylko przy spełnieniu warunków."
+      },
+      "maximum": {
+        "label": "Maksimum",
+        "helpText": "Zastosuj tylko ten rabat, który oferuje maksymalną obniżkę."
+      }
     }
   }
 }

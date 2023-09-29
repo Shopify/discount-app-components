@@ -576,6 +576,17 @@
         "products": "Produtos",
         "collections": "Coleções"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Estratégia de aplicação de descontos",
+      "first": {
+        "label": "Primeiro",
+        "helpText": "Aplicar apenas o primeiro desconto com condições cumpridas."
+      },
+      "maximum": {
+        "label": "Máximo",
+        "helpText": "Aplicar apenas o desconto que oferece a máxima redução."
+      }
     }
   }
 }

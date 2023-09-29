@@ -566,6 +566,17 @@
         "products": "Produkter",
         "collections": "Samlinger"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Strategi for rabattbruk",
+      "first": {
+        "label": "Første",
+        "helpText": "Bruk bare den første rabatten med betingelser som er oppfylt."
+      },
+      "maximum": {
+        "label": "Maksimum",
+        "helpText": "Bruk bare den rabatten som gir den største reduksjonen."
+      }
     }
   }
 }

@@ -566,6 +566,17 @@
         "products": "产品",
         "collections": "产品系列"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "折扣应用策略",
+      "first": {
+        "label": "第一个",
+        "helpText": "仅应用满足条件的第一个折扣。"
+      },
+      "maximum": {
+        "label": "最大降幅",
+        "helpText": "仅应用提供最大金额降幅的折扣。"
+      }
     }
   }
 }

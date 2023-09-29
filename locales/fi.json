@@ -566,6 +566,17 @@
         "products": "Tuotteet",
         "collections": "Kokoelmat"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Alennuksen sovellusstrategiat",
+      "first": {
+        "label": "Ensimmäinen",
+        "helpText": "Sovella ensimmäistä alennusta vain sellaisilla ehdoilla, jotka täyttyvät."
+      },
+      "maximum": {
+        "label": "Enimmäistaso",
+        "helpText": "Käytä vain sellaista alennusta, joka tarjoaa suurimman alennuksen."
+      }
     }
   }
 }
