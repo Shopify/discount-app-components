@@ -566,6 +566,17 @@
         "products": "Producten",
         "collections": "Collecties"
       }
+    },
+    "DiscountApplicationStrategyCard": {
+      "title": "Strategie voor kortingstoepassing",
+      "first": {
+        "label": "Eerste",
+        "helpText": "Pas alleen de eerste korting toe waarbij aan de voorwaarden is voldaan."
+      },
+      "maximum": {
+        "label": "Maximum",
+        "helpText": "Pas alleen de korting toe die de maximale reductie biedt."
+      }
     }
   }
 }
