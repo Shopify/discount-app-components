@@ -53,8 +53,8 @@ export function Performance({
     status === DiscountStatus.Active || status === DiscountStatus.Expired;
 
   return (
-    <BlockStack gap="2">
-      <Text variant="headingXs" as="h3">
+    <BlockStack gap="200">
+      <Text variant="headingSm" as="h3">
         {i18n.translate('title', I18N_SCOPE)}
       </Text>
       {status === DiscountStatus.Scheduled && (

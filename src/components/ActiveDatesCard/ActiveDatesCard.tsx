@@ -113,8 +113,8 @@ export function ActiveDatesCard({
   );
 
   return (
-    <Box paddingBlockEnd="4">
-      <Card padding="4">
+    <Box paddingBlockEnd="400">
+      <Card padding="400">
         <FormLayout>
           <Text variant="headingMd" as="h2">
             {i18n.translate('DiscountAppComponents.ActiveDatesCard.title')}

@@ -120,7 +120,7 @@ export function MinimumRequirementsCard({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <BlockStack gap="4">
+            <BlockStack gap="400">
               <div className={styles.TextField}>
                 <CurrencyField
                   id={SUBTOTAL_FIELD_ID}
@@ -153,7 +153,7 @@ export function MinimumRequirementsCard({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <BlockStack gap="4">
+            <BlockStack gap="400">
               <div className={styles.TextField}>
                 <TextField
                   id={QUANTITY_FIELD_ID}
@@ -191,9 +191,9 @@ export function MinimumRequirementsCard({
       : allMinimumRequirementChoices;
 
   return (
-    <Box paddingBlockEnd="4">
-      <Card padding="4">
-        <BlockStack gap="4">
+    <Box paddingBlockEnd="400">
+      <Card padding="400">
+        <BlockStack gap="400">
           <Text variant="headingMd" as="h2">
             {i18n.translate(
               'DiscountAppComponents.MinimumRequirementsCard.title',
