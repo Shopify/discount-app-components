@@ -52,9 +52,9 @@ export function CustomerEligibilityCard({
   const [i18n] = useI18n();
 
   return (
-    <Box paddingBlockEnd="4">
-      <Card padding="4">
-        <BlockStack gap="4">
+    <Box paddingBlockEnd="400">
+      <Card padding="400">
+        <BlockStack gap="400">
           <Text variant="headingMd" as="h2">
             {i18n.translate('title', I18N_SCOPE)}
           </Text>
@@ -82,7 +82,7 @@ export function CustomerEligibilityCard({
           />
 
           {eligibility.value === Eligibility.CustomerSegments && (
-            <BlockStack gap="4">
+            <BlockStack gap="400">
               {customerSegmentSelector}
 
               <SelectedCustomerSegmentsList
@@ -92,7 +92,7 @@ export function CustomerEligibilityCard({
           )}
 
           {eligibility.value === Eligibility.Customers && (
-            <BlockStack gap="4">
+            <BlockStack gap="400">
               {customerSelector}
               <SelectedCustomersList selectedCustomers={selectedCustomers} />
             </BlockStack>

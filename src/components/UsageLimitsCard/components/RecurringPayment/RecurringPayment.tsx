@@ -48,7 +48,7 @@ export function RecurringPayment({
       renderChildren: (isSelected: boolean) => {
         return (
           isSelected && (
-            <BlockStack gap="4">
+            <BlockStack gap="400">
               <div className={styles.RecurringPaymentTextField}>
                 <TextField
                   id={RECURRING_PAYMENT_FIELD_ID}
@@ -92,8 +92,8 @@ export function RecurringPayment({
   ];
 
   return (
-    <BlockStack gap="4">
-      <Text variant="headingXs" as="h3">
+    <BlockStack gap="400">
+      <Text variant="headingSm" as="h3">
         {i18n.translate('DiscountAppComponents.RecurringPayment.title')}
       </Text>
       <ChoiceList

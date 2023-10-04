@@ -74,10 +74,10 @@ export function MethodCard({
   };
 
   return (
-    <Box paddingBlockEnd="4">
-      <Card padding="4">
-        <BlockStack gap="4">
-          <InlineStack align="start" blockAlign="center" gap="1">
+    <Box paddingBlockEnd="400">
+      <Card padding="400">
+        <BlockStack gap="400">
+          <InlineStack align="start" blockAlign="center" gap="100">
             <Text variant="headingMd" as="h2">
               {title}
             </Text>
@@ -93,7 +93,7 @@ export function MethodCard({
               )}
             </Text>
           )}
-          <BlockStack gap="4">
+          <BlockStack gap="400">
             {!discountMethodHidden && (
               <ChoiceList
                 title={i18n.translate(

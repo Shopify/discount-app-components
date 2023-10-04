@@ -56,7 +56,7 @@ export function Header(props: HeaderProps) {
   const trimmedDescriptor = discountDescriptor.trim();
 
   return (
-    <BlockStack gap="4">
+    <BlockStack gap="400">
       {trimmedDescriptor ? (
         <InlineStack align="space-between">
           <Text variant="headingMd" as="h3">
@@ -71,8 +71,8 @@ export function Header(props: HeaderProps) {
         </Text>
       )}
 
-      <BlockStack gap="2">
-        <Text variant="headingXs" as="h3">
+      <BlockStack gap="200">
+        <Text variant="headingSm" as="h3">
           {i18n.translate('typeAndMethod', I18N_SCOPE)}
         </Text>
         <List type="bullet">

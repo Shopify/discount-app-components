@@ -115,19 +115,19 @@ export function SummaryCard(props: SummaryCardProps) {
   );
 
   return (
-    <Box paddingBlockEnd="4">
-      <Card padding="4">
-        <BlockStack gap="4">
+    <Box paddingBlockEnd="400">
+      <Card padding="400">
+        <BlockStack gap="400">
           <Text variant="headingMd" as="h2">
             {i18n.translate('title', I18N_SCOPE)}
           </Text>
 
-          <BlockStack gap="2">
+          <BlockStack gap="200">
             <Header {...props.header} />
 
             {showDetailsSection && (
-              <BlockStack gap="2">
-                <Text variant="headingXs" as="h3">
+              <BlockStack gap="200">
+                <Text variant="headingSm" as="h3">
                   {i18n.translate('details', I18N_SCOPE)}
                 </Text>
 

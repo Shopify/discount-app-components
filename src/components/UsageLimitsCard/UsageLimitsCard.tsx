@@ -96,9 +96,9 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
   };
 
   return (
-    <Box paddingBlockEnd="4">
-      <Card padding="4">
-        <BlockStack gap="4">
+    <Box paddingBlockEnd="400">
+      <Card padding="400">
+        <BlockStack gap="400">
           <Text variant="headingMd" as="h2">
             {i18n.translate('DiscountAppComponents.UsageLimitsCard.title')}
           </Text>
@@ -169,7 +169,7 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
           />
         </BlockStack>
         {isShowRecurringPaymentSection(props) && (
-          <BlockStack gap="4">
+          <BlockStack gap="400">
             <RecurringPayment
               recurringPaymentType={props.recurringPaymentType}
               recurringPaymentLimit={props.recurringPaymentLimit}

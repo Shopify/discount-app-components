@@ -44,12 +44,12 @@ describe('<MethodCard />', () => {
     const methodCard = mountWithApp(<MethodCard {...mockProps} />);
 
     expect(methodCard).toContainReactComponent(Card, {
-      padding: '4',
+      padding: '400',
     });
     expect(methodCard).toContainReactComponent(InlineStack, {
       align: 'start',
       blockAlign: 'center',
-      gap: '1',
+      gap: '100',
     });
   });
 
