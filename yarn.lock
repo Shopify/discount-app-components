@@ -2821,20 +2821,20 @@
   resolved "https://registry.yarnpkg.com/@shopify/polaris-icons/-/polaris-icons-7.9.0.tgz#2c7ec5b5cf2d68c6252bf9992c4604a2def596c3"
   integrity sha512-JSn8tg5c6cWiKqOJE1757kuK8JKP9NGpwIp9Li2gEIA/PP4LL8RHMYOIuH3RS/yQO3pEhVsHnnlVFvREate8ng==
 
-"@shopify/polaris-tokens@^8.0.0-beta.1":
-  version "8.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris-tokens/-/polaris-tokens-8.0.0-beta.1.tgz#ca9ef2fdf3d3d280b7f86314d8523b5c34c44f78"
-  integrity sha512-2ej78htPdX0t6rgAdRdX5odSNiWO059/bfGCipjYwOUmuuB0vXYgfR3N/KxjnlhlKouY5a/g+ohRYEegBiqAvg==
+"@shopify/polaris-tokens@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris-tokens/-/polaris-tokens-8.0.0.tgz#7cc80efb93119ebf215c6f9a49e4e877c620acab"
+  integrity sha512-msCbisjh5XWplcFrQIk3CF0ym6/MTgvCdjQh0PjN7avvq5M7ryBJ+1s4VBSe55pPDK03JEYybWGvvrlOtCtlWQ==
   dependencies:
     deepmerge "^4.3.1"
 
-"@shopify/polaris@^12.0.0-beta.2":
-  version "12.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-12.0.0-beta.2.tgz#f81ad365d865e2d5eeab0fc02c66f853132d6257"
-  integrity sha512-jcz1czJHKS9/0Cepk7X4VxbTFinBrkQwJpEQWslfKg8gA8MbdqPsqwDY1jvODIkhvGYAsaGNuGkpEYOFOnFyPQ==
+"@shopify/polaris@^12.0.0":
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/@shopify/polaris/-/polaris-12.0.0.tgz#e0b188efcc0c6173c7d81941839817f23fdba5f5"
+  integrity sha512-g2V73EpbziaS9FF3uDQ0hXoNkxbe/2KPOWkgVZ7e3qr62J3GDYvKfHqY8SmljwEYGvoUjZ2erQEOTMP9M0teXQ==
   dependencies:
     "@shopify/polaris-icons" "^7.9.0"
-    "@shopify/polaris-tokens" "^8.0.0-beta.1"
+    "@shopify/polaris-tokens" "^8.0.0"
     "@types/react" "^18.2.0"
     "@types/react-dom" "^18.2.0"
     "@types/react-transition-group" "^4.4.2"
