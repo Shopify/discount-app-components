@@ -1,6 +1,6 @@
 .CustomerItem {
   display: flex;
-  gap: var(--p-space-3);
+  gap: var(--p-space-300);
   align-items: center;
 }
 
@@ -10,6 +10,6 @@
   color: var(--p-text-subdued);
 }
 
-.CustomerModalActivator {
-  margin-top: var(--p-space-2);
+.SelectedItemsActivator {
+  margin-top: var(--p-space-200);
 }
