@@ -125,7 +125,6 @@ export function CountriesAndRatesCard({
               'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.title',
             )}
           </Text>
-          {/* > */}
           <Checkbox
             label={i18n.translate(
               'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.checkboxLabel',
@@ -157,7 +156,6 @@ export function CountriesAndRatesCard({
               )}
             </>
           )}
-          {/* </Card.Section> */}
         </BlockStack>
       </Card>
     </Box>
