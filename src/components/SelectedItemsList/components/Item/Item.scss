@@ -1,7 +1,7 @@
 $close-btn-size: 20px;
 
 .Item {
-  padding: var(--p-space-4) 0;
+  padding: var(--p-space-400) 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,7 @@ $close-btn-size: 20px;
 
 .Content {
   flex: 1 1 auto;
-  padding: var(--p-space-1);
+  padding: var(--p-space-100);
   max-width: calc(100% - $close-btn-size);
   overflow: hidden;
 }

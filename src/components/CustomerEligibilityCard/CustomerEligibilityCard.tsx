@@ -83,10 +83,9 @@ export function CustomerEligibilityCard({
 
           {eligibility.value === Eligibility.CustomerSegments && (
             <>
-              <div className={styles.customerSelectorActivator}>
+              <div className={styles.SelectedItemsActivator}>
                 {customerSegmentSelector}
               </div>
-
               <SelectedCustomerSegmentsList
                 selectedCustomerSegments={selectedCustomerSegments}
               />
@@ -95,10 +94,9 @@ export function CustomerEligibilityCard({
 
           {eligibility.value === Eligibility.Customers && (
             <>
-              <div className={styles.customerSelectorActivator}>
+              <div className={styles.SelectedItemsActivator}>
                 {customerSelector}
               </div>
-
               <SelectedCustomersList selectedCustomers={selectedCustomers} />
             </>
           )}
