@@ -82,20 +82,25 @@ export function CustomerEligibilityCard({
           />
 
           {eligibility.value === Eligibility.CustomerSegments && (
-            <BlockStack gap="400">
-              {customerSegmentSelector}
+            <>
+              <div className={styles.customerSelectorActivator}>
+                {customerSegmentSelector}
+              </div>
 
               <SelectedCustomerSegmentsList
                 selectedCustomerSegments={selectedCustomerSegments}
               />
-            </BlockStack>
+            </>
           )}
 
           {eligibility.value === Eligibility.Customers && (
-            <BlockStack gap="400">
-              {customerSelector}
+            <>
+              <div className={styles.customerSelectorActivator}>
+                {customerSelector}
+              </div>
+
               <SelectedCustomersList selectedCustomers={selectedCustomers} />
-            </BlockStack>
+            </>
           )}
         </BlockStack>
       </Card>
