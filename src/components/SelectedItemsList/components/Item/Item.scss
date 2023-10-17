@@ -7,7 +7,8 @@ $close-btn-size: 20px;
   justify-content: space-between;
 
   &:not(:last-child) {
-    border-bottom: var(--p-border-width-025) solid var(--p-color-border-secondary);
+    border-bottom: var(--p-border-width-025) solid
+      var(--p-color-border-secondary);
   }
 }
 
