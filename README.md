@@ -5,6 +5,10 @@
 
 `@shopify/discount-app-components` provides a set of stateless discount components to help 3p app developers create [AppBridge](https://shopify.dev/apps/tools/app-bridge)-powered discounts apps.
 
+## Note on updates
+
+While we strive to keep the library updated, please note that the current version available in the Shopify admin may be different from this version. We will communicate upcoming updates as they are planned.
+
 ## App development
 
 For more information about creating apps for the Shopify App Store, see the [app development documentation](https://shopify.dev/apps).
