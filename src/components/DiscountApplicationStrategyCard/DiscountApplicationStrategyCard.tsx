@@ -44,6 +44,11 @@ export function DiscountApplicationStrategyCard({
                 label: i18n.translate('maximum.label', I18N_SCOPE),
                 helpText: i18n.translate('maximum.helpText', I18N_SCOPE),
               },
+              {
+                value: DiscountApplicationStrategy.All,
+                label: i18n.translate('all.label', I18N_SCOPE),
+                helpText: i18n.translate('all.helpText', I18N_SCOPE),
+              },
             ]}
             selected={[strategy.value]}
             onChange={handleChange}
