@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Maksimum",
         "helpText": "Anvend kun den rabat, der giver den maksimale prisnedsættelse."
+      },
+      "all": {
+        "label": "Alle",
+        "helpText": "Anvend alle rabatter med betingelser, der er opfyldt."
       }
     }
   }
