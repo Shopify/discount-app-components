@@ -596,6 +596,10 @@
       "maximum": {
         "label": "Maximum",
         "helpText": "Uplatní se jen sleva, která nabízí maximální snížení částky."
+      },
+      "all": {
+        "label": "Vše",
+        "helpText": "Uplatní se všechny slevy za splnění příslušných podmínek."
       }
     }
   }
