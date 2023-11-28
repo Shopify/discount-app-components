@@ -3,8 +3,7 @@ import {ChoiceList, TextField} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {DiscountApplicationStrategyCard} from '../DiscountApplicationStrategyCard';
-import {DiscountApplicationStrategy} from '../../../types';
-import {DiscountClass} from '../../../constants';
+import {DiscountClass, DiscountApplicationStrategy} from '../../../constants';
 
 describe('<DiscountApplicationStrategyCard />', () => {
   const mockProps = {

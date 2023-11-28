@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 
 import {Page} from '@shopify/polaris';
 import {DiscountApplicationStrategyCard} from '../../../components/DiscountApplicationStrategyCard';
-import {DiscountApplicationStrategy} from '../../../types';
-import {DiscountClass} from '../../../constants';
+import {DiscountClass, DiscountApplicationStrategy} from '../../../constants';
 
 interface Props {
   discountClass: DiscountClass;

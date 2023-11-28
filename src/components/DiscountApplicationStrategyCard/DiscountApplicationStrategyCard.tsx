@@ -2,8 +2,8 @@ import React from 'react';
 import {Box, Card, ChoiceList, Text, BlockStack} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 
-import {DiscountApplicationStrategy, Field} from '../../types';
-import {DiscountClass} from '../../constants';
+import {Field} from '../../types';
+import {DiscountClass, DiscountApplicationStrategy} from '../../constants';
 
 export interface DiscountAppStrategyProps {
   /**

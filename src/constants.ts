@@ -323,3 +323,9 @@ export enum DiscountValueType {
   Percentage = 'PERCENTAGE',
   FixedAmount = 'FIXED_AMOUNT',
 }
+
+export enum DiscountApplicationStrategy {
+  First = 'FIRST',
+  Maximum = 'MAXIMUM',
+  All = 'ALL',
+}
