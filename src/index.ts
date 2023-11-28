@@ -17,7 +17,6 @@ export type {
   CustomerSegment,
   CombinableDiscountTypes,
   CombinableDiscountCounts,
-  DiscountApplicationStrategy,
 } from './types';
 
 // constants
@@ -32,6 +31,7 @@ export {
   DiscountStatus,
   Eligibility,
   PurchaseType,
+  DiscountApplicationStrategy,
 } from './constants';
 
 // provider
