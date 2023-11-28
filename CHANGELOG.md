@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 2.1.1
+
+### Patch Changes
+
+- [#186](https://github.com/Shopify/discount-app-components/pull/186) [`4b47938`](https://github.com/Shopify/discount-app-components/commit/4b479380fb64cc4c730b9faff3baa22dc1227789) Thanks [@mathiusj](https://github.com/mathiusj)! - export strategy type from index
+
 ## 2.1.0
 
 ### Minor Changes
