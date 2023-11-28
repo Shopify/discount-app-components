@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 2.1.0
+
+### Minor Changes
+
+- [#178](https://github.com/Shopify/discount-app-components/pull/178) [`0d67597`](https://github.com/Shopify/discount-app-components/commit/0d67597354622bd9fd616bfc7ca93dca1c013401) Thanks [@mathiusj](https://github.com/mathiusj)! - add strategy all to DiscountApplicationStrategyCard
+
 ## 2.0.0
 
 ### Major Changes
