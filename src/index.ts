@@ -17,6 +17,7 @@ export type {
   CustomerSegment,
   CombinableDiscountTypes,
   CombinableDiscountCounts,
+  DiscountApplicationStrategy,
 } from './types';
 
 // constants
