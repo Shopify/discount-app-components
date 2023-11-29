@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 2.1.2
+
+### Patch Changes
+
+- [#188](https://github.com/Shopify/discount-app-components/pull/188) [`0e366a8`](https://github.com/Shopify/discount-app-components/commit/0e366a8f9ede089de37ec4f8fcf0a86577c4711f) Thanks [@mathiusj](https://github.com/mathiusj)! - move strategy to constants
+
 ## 2.1.1
 
 ### Patch Changes
