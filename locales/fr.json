@@ -588,7 +588,7 @@
         "helpText": "Appliquer uniquement la réduction maximale."
       },
       "all": {
-        "label": "Tout",
+        "label": "Toutes",
         "helpText": "Appliquez toutes les réductions dont les conditions sont satisfaites."
       }
     }
