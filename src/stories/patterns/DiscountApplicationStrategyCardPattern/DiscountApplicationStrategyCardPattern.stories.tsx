@@ -1,6 +1,7 @@
 import React from 'react';
 import {Provider} from '../../foundation/Provider';
 import DiscountApplicationStrategyCard from './DiscountApplicationStrategyCardPattern';
+import {DiscountClass} from '../../../constants';
 
 // eslint-disable-next-line import/no-default-export, import/no-anonymous-default-export
 export default {
@@ -10,10 +11,20 @@ export default {
   },
 };
 
-const ApplicationStrategyCardPattern = () => (
+export const ApplicationStrategyCardOrderPattern = () => (
   <Provider>
-    <DiscountApplicationStrategyCard />
+    <DiscountApplicationStrategyCard discountClass={DiscountClass.Order} />
   </Provider>
 );
 
-export {ApplicationStrategyCardPattern};
+export const ApplicationStrategyCardProductPattern = () => (
+  <Provider>
+    <DiscountApplicationStrategyCard discountClass={DiscountClass.Product} />
+  </Provider>
+);
+
+export const ApplicationStrategyCardShippingPattern = () => (
+  <Provider>
+    <DiscountApplicationStrategyCard discountClass={DiscountClass.Shipping} />
+  </Provider>
+);

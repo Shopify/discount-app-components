@@ -2,9 +2,15 @@ import React, {useState} from 'react';
 
 import {Page} from '@shopify/polaris';
 import {DiscountApplicationStrategyCard} from '../../../components/DiscountApplicationStrategyCard';
-import {DiscountApplicationStrategy} from '../../../types';
+import {DiscountClass, DiscountApplicationStrategy} from '../../../constants';
 
-export default function MethodCardPattern() {
+interface Props {
+  discountClass: DiscountClass;
+}
+
+export default function DiscountApplicationStrategyCardPattern({
+  discountClass,
+}: Props) {
   const [strategy, setStrategy] = useState<DiscountApplicationStrategy>(
     DiscountApplicationStrategy.First,
   );
@@ -15,6 +21,7 @@ export default function MethodCardPattern() {
           value: strategy,
           onChange: setStrategy,
         }}
+        discountClass={discountClass}
       />
     </Page>
   );

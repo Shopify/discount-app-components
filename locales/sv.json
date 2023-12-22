@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Maximum",
         "helpText": "Tillämpa bara den rabatt som erbjuder störst avdrag."
+      },
+      "all": {
+        "label": "Alla",
+        "helpText": "Tillämpa alla rabatter vars villkor uppfylls."
       }
     }
   }

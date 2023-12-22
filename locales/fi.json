@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Enimmäistaso",
         "helpText": "Käytä vain sellaista alennusta, joka tarjoaa suurimman alennuksen."
+      },
+      "all": {
+        "label": "Kaikki",
+        "helpText": "Sovella kaikkia alennuksia ehdoilla, jotka täyttyvät."
       }
     }
   }

@@ -31,6 +31,7 @@ export {
   DiscountStatus,
   Eligibility,
   PurchaseType,
+  DiscountApplicationStrategy,
 } from './constants';
 
 // provider

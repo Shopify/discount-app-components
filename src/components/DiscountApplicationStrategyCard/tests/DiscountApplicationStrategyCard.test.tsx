@@ -3,11 +3,12 @@ import {ChoiceList, TextField} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
 
 import {DiscountApplicationStrategyCard} from '../DiscountApplicationStrategyCard';
-import {DiscountApplicationStrategy} from '../../../types';
+import {DiscountClass, DiscountApplicationStrategy} from '../../../constants';
 
 describe('<DiscountApplicationStrategyCard />', () => {
   const mockProps = {
     strategy: mockField(DiscountApplicationStrategy.First),
+    discountClass: DiscountClass.Order,
   };
 
   afterEach(() => {
@@ -36,5 +37,106 @@ describe('<DiscountApplicationStrategyCard />', () => {
     expect(mockProps.strategy.onChange).toHaveBeenCalledWith(
       DiscountApplicationStrategy.Maximum,
     );
+  });
+
+  it('renders first strategy if discountClass is Order', () => {
+    const methodCard = mountWithApp(
+      <DiscountApplicationStrategyCard
+        {...mockProps}
+        discountClass={DiscountClass.Order}
+      />,
+    );
+
+    expect(methodCard).toContainReactComponent(ChoiceList, {
+      choices: expect.arrayContaining([
+        expect.objectContaining({
+          value: DiscountApplicationStrategy.First,
+        }),
+      ]),
+    });
+  });
+
+  it('renders first strategy if discountClass is Product', () => {
+    const methodCard = mountWithApp(
+      <DiscountApplicationStrategyCard
+        {...mockProps}
+        discountClass={DiscountClass.Product}
+      />,
+    );
+
+    expect(methodCard).toContainReactComponent(ChoiceList, {
+      choices: expect.arrayContaining([
+        expect.objectContaining({
+          value: DiscountApplicationStrategy.First,
+        }),
+      ]),
+    });
+  });
+
+  it('does not render all strategy if discountClass is not Product', () => {
+    const methodCard = mountWithApp(
+      <DiscountApplicationStrategyCard
+        {...mockProps}
+        discountClass={DiscountClass.Order}
+      />,
+    );
+
+    expect(methodCard).not.toContainReactComponent(ChoiceList, {
+      choices: expect.arrayContaining([
+        expect.objectContaining({
+          value: DiscountApplicationStrategy.All,
+        }),
+      ]),
+    });
+  });
+
+  it('renders all strategy if discountClass is Product', () => {
+    const methodCard = mountWithApp(
+      <DiscountApplicationStrategyCard
+        {...mockProps}
+        discountClass={DiscountClass.Product}
+      />,
+    );
+
+    expect(methodCard).toContainReactComponent(ChoiceList, {
+      choices: expect.arrayContaining([
+        expect.objectContaining({
+          value: DiscountApplicationStrategy.All,
+        }),
+      ]),
+    });
+  });
+
+  it('only renders all strategy if discountClass is Shipping', () => {
+    const methodCard = mountWithApp(
+      <DiscountApplicationStrategyCard
+        {...mockProps}
+        discountClass={DiscountClass.Shipping}
+      />,
+    );
+
+    expect(methodCard).toContainReactComponent(ChoiceList, {
+      choices: expect.arrayContaining([
+        expect.objectContaining({
+          value: DiscountApplicationStrategy.All,
+        }),
+      ]),
+    });
+
+    expect(methodCard).not.toContainReactComponent(ChoiceList, {
+      choices: expect.arrayContaining([
+        expect.objectContaining({
+          value: DiscountApplicationStrategy.First,
+        }),
+      ]),
+    });
+
+    expect(methodCard).not.toContainReactComponent(ChoiceList, {
+      choices: expect.arrayContaining([
+        expect.objectContaining({
+          value: DiscountApplicationStrategy.Maximum,
+        }),
+      ]),
+    });
   });
 });

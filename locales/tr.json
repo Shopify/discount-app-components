@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Maksimum",
         "helpText": "Yalnızca maksimum en büyük düşüş sağlayan indirimi uygulayın."
+      },
+      "all": {
+        "label": "Tümü",
+        "helpText": "Koşulları karşılanan tüm indirimleri uygulayın."
       }
     }
   }

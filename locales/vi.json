@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Tối đa",
         "helpText": "Chỉ áp dụng ưu đãi giảm giá có mức khấu trừ tối đa."
+      },
+      "all": {
+        "label": "Tất cả",
+        "helpText": "Áp dụng mọi ưu đãi giảm giá có các điều kiện được thỏa mãn."
       }
     }
   }

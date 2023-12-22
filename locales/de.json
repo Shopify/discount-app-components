@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Maximal",
         "helpText": "Nur den Rabatt verwenden, bei dem am meisten gespart wird."
+      },
+      "all": {
+        "label": "Alle",
+        "helpText": "Alle Rabatte anwenden, deren Bedingungen erfüllt sind."
       }
     }
   }

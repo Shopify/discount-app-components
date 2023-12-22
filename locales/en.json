@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Maximum",
         "helpText": "Only apply the discount that offers the maximum reduction."
+      },
+      "all": {
+        "label": "All",
+        "helpText": "Apply all discounts with conditions that are satisfied."
       }
     }
   }

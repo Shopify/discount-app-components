@@ -576,6 +576,10 @@
       "maximum": {
         "label": "Maximum",
         "helpText": "Pas alleen de korting toe die de maximale reductie biedt."
+      },
+      "all": {
+        "label": "Alle",
+        "helpText": "Pas alle kortingen toe waarbij aan de voorwaarden is voldaan."
       }
     }
   }
