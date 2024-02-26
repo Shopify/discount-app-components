@@ -60,12 +60,12 @@
       "minimumSubtotal": "Mindestabnahmebetrag ({currencySymbol})",
       "minimumQuantity": "Mindeststückzahl",
       "subscriptions": {
-        "appliesToCollections": "Gilt nur für Abonnementprodukte in ausgewählten Kategorien.",
+        "appliesToCollections": "Gilt nur für Abonnementprodukte in ausgewählten Kollektionen.",
         "appliesToProducts": "Gilt nur für ausgewählte Abonnementprodukte.",
         "appliesToAllProducts": "Gilt nur für Abonnementprodukte."
       },
       "oneTime": {
-        "appliesToCollections": "Gilt nur für ausgewählte Kategorien.",
+        "appliesToCollections": "Gilt nur für ausgewählte Kollektionen.",
         "appliesToProducts": "Gilt nur für ausgewählte Produkte.",
         "appliesToAllProducts": "Gilt für alle Produkte."
       }
