@@ -81,56 +81,6 @@
         "shippingLabel": "Kargo indirimleri"
       },
       "newBadge": "Yeni",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Birleştirilmek üzere ayarlanmış ürün indirimi yok.",
-            "warning": {
-              "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın.",
-              "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın.",
-              "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir ürün indirimi ayarlayın."
-            }
-          },
-          "order": {
-            "title": "Birleştirilmek üzere ayarlanmış sipariş indirimi yok.",
-            "warning": {
-              "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın.",
-              "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın.",
-              "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir sipariş indirimi ayarlayın."
-            }
-          },
-          "shipping": {
-            "title": "Birleştirilmek üzere ayarlanmış kargo indirimi yok.",
-            "warning": {
-              "withproduct": "Müşterilerin birden fazla indirim kullanmasına izin vermek için ürün indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
-              "withorder": "Müşterilerin birden fazla indirim kullanmasına izin vermek için sipariş indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın.",
-              "withshipping": "Müşterilerin birden fazla indirim kullanmasına izin vermek için kargo indirimleriyle birleştirilebilen en az bir kargo indirimi ayarlayın."
-            }
-          },
-          "link": "Daha fazla bilgi edinin"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} ürün indirimi",
-              "other": "{count} ürün indirimi"
-            },
-            "order": {
-              "one": "{count} sipariş indirimi",
-              "other": "{count} sipariş indirimi"
-            },
-            "shipping": {
-              "one": "{count} kargo indirimi",
-              "other": "{count} kargo indirimi"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} birleştirilmek üzere ayarlanmış durumda.",
-            "other": "{discountCountLink} birleştirilmek üzere ayarlanmış durumda."
-          },
-          "multipleEligibleDiscounts": "Bir ürün birden fazla indirim için uygunsa yalnızca en büyük indirim uygulanır."
-        }
-      },
       "discountClass": {
         "product": "ürün",
         "order": "sipariş",

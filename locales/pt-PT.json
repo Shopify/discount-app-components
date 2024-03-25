@@ -81,60 +81,6 @@
         "shippingLabel": "Descontos de envio"
       },
       "newBadge": "Novo",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Não há descontos de produtos configurados para combinação.",
-            "warning": {
-              "withproduct": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do produto que combine com descontos do produto.",
-              "withorder": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do produto que combine com descontos da encomenda.",
-              "withshipping": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do produto que combine com descontos do envio."
-            }
-          },
-          "order": {
-            "title": "Não há descontos de encomenda configurados para combinação.",
-            "warning": {
-              "withproduct": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto da encomenda que combine com descontos do produto.",
-              "withorder": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto da encomenda que combine com descontos da encomenda.",
-              "withshipping": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto da encomenda que combine com descontos do envio."
-            }
-          },
-          "shipping": {
-            "title": "Não há descontos de envio configurados para combinação.",
-            "warning": {
-              "withproduct": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do envio que combine com descontos do produto.",
-              "withorder": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do envio que combine com descontos da encomenda.",
-              "withshipping": "Para permitir que os clientes utilizem mais do que um desconto, configure, pelo menos, um desconto do envio que combine com descontos do envio."
-            }
-          },
-          "link": "Saber mais"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} desconto do produto",
-              "other": "{count} descontos do produto",
-              "many": "{count} descontos do produto"
-            },
-            "order": {
-              "one": "{count} desconto da encomenda",
-              "other": "{count} descontos da encomenda",
-              "many": "{count} descontos da encomenda"
-            },
-            "shipping": {
-              "one": "{count} desconto do envio",
-              "other": "{count} descontos do envio",
-              "many": "{count} descontos do envio"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} está configurado para combinação.",
-            "other": "{discountCountLink} estão configurados para combinação.",
-            "many": "{discountCountLink} estão configurados para combinação."
-          },
-          "multipleEligibleDiscounts": "Se um item for elegível para vários descontos, apenas é aplicado o maior."
-        }
-      },
       "discountClass": {
         "product": "produto",
         "order": "encomenda",

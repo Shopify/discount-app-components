@@ -1,8 +1,7 @@
 import React from 'react';
 import {mockField, mountWithApp} from 'tests/utilities';
-import {Action} from '@shopify/app-bridge/actions/Navigation/Redirect';
 import {composeGid, parseGid} from '@shopify/admin-graphql-api-utilities';
-import {ChoiceList, Card, Text} from '@shopify/polaris';
+import {ChoiceList, Card, Text, Link} from '@shopify/polaris';
 
 import {
   CustomerEligibilityCard,
@@ -12,7 +11,6 @@ import {
 import styles from '../CustomerEligibilityCard.scss';
 import {Eligibility} from '../../../constants';
 import {SelectedItemsList} from '../../SelectedItemsList';
-import {AppBridgeLink} from '../../AppBridgeLink';
 import type {Customer, CustomerSegment} from '../../../types';
 
 describe('<CustomerEligibilityCard />', () => {
@@ -235,13 +233,9 @@ describe('<CustomerEligibilityCard />', () => {
         ),
       ).toStrictEqual(
         JSON.stringify(({name, id}: CustomerSegment) => (
-          <AppBridgeLink
-            external
-            action={Action.ADMIN_PATH}
-            url={`/customers?segment_id=${parseGid(id)}`}
-          >
+          <Link target="_blank" url={`/customers?segment_id=${parseGid(id)}`}>
             {name}
-          </AppBridgeLink>
+          </Link>
         )),
       );
     });

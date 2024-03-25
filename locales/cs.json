@@ -81,64 +81,6 @@
         "shippingLabel": "Slevy na dopravu"
       },
       "newBadge": "Nové",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Nejsou nastaveny žádné slevy na produkty, které by bylo možné kombinovat.",
-            "warning": {
-              "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na produkt, kterou bude možné kombinovat se slevami na produkty.",
-              "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na produkt, kterou bude možné kombinovat se slevami na objednávku.",
-              "withshipping": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na produkt, kterou bude možné kombinovat se slevami na dopravu."
-            }
-          },
-          "order": {
-            "title": "Nejsou nastaveny žádné slevy na objednávku, které by bylo možné kombinovat.",
-            "warning": {
-              "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na objednávku, kterou bude možné kombinovat se slevami na produkty.",
-              "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na objednávku, kterou bude možné kombinovat se slevami na objednávky.",
-              "withshipping": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na objednávku, kterou bude možné kombinovat se slevami na dopravu."
-            }
-          },
-          "shipping": {
-            "title": "Nejsou nastaveny žádné slevy na dopravu, které by bylo možné kombinovat.",
-            "warning": {
-              "withproduct": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na produkty.",
-              "withorder": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na objednávku.",
-              "withshipping": "Pokud chcete zákazníkům umožnit uplatnění více než jedné slevy, nastavte alespoň jednu slevu na dopravu, kterou bude možné kombinovat se slevami na dopravu."
-            }
-          },
-          "link": "Zjistit více"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} slevu na produkt",
-              "other": "{count} slev(y) na produkty",
-              "few": "{count} slev(y) na produkty",
-              "many": "{count} slev(y) na produkty"
-            },
-            "order": {
-              "one": "{count} slevu na objednávku",
-              "other": "{count} slev(y) na objednávku",
-              "few": "{count} slev(y) na objednávku",
-              "many": "{count} slev(y) na objednávku"
-            },
-            "shipping": {
-              "one": "{count} slevu na dopravu",
-              "other": "{count} slev(y) na dopravu",
-              "few": "{count} slev(y) na dopravu",
-              "many": "{count} slev(y) na dopravu"
-            }
-          },
-          "info": {
-            "one": "Je nastavena {discountCountLink}, kterou je možné kombinovat.",
-            "other": "Jsou nastaveny {discountCountLink}, které je možné kombinovat.",
-            "few": "Jsou nastaveny {discountCountLink}, které je možné kombinovat.",
-            "many": "Jsou nastaveny {discountCountLink}, které je možné kombinovat."
-          },
-          "multipleEligibleDiscounts": "Pokud se na položku vztahuje více slev, uplatní se pouze ta nejvyšší."
-        }
-      },
       "discountClass": {
         "product": "produkt",
         "order": "objednávku",

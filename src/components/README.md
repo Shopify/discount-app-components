@@ -1,6 +1,6 @@
 # Components
 
-Our components are a collection of interface elements that can be reused and composed to build discounts-focused [AppBridge](https://shopify.dev/apps/tools/app-bridge) apps.
+Our components are a collection of interface elements that can be reused and composed to build discounts-focused apps.
 
 ---
 

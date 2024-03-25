@@ -1,10 +1,8 @@
 import React from 'react';
 import {Banner, Card, ChoiceList, Text} from '@shopify/polaris';
 import {mockField, mountWithApp} from 'tests/utilities';
-import {composeGid} from '@shopify/admin-graphql-api-utilities';
 
 import {CombinationCard} from '../CombinationCard';
-import {HelpText} from '../components';
 import type {CombinationCardProps} from '../CombinationCard';
 import {DiscountClass} from '../../../constants';
 
@@ -17,56 +15,20 @@ describe('<CombinationCard />', () => {
       productDiscounts: true,
       shippingDiscounts: false,
     }),
-    combinableDiscountCounts: {
-      orderDiscountsCount: 0,
-      productDiscountsCount: 3,
-      shippingDiscountsCount: 0,
-    },
-    discountId: composeGid('DiscountNode', '1'),
   };
 
   const mockProductOtherOption = {
     label: 'Other product discounts',
     value: DiscountClass.Product,
-    renderChildren: (isSelected: boolean) =>
-      isSelected ? (
-        <HelpText
-          currentDiscountClass={mockProps.discountClass}
-          targetDiscountClass={DiscountClass.Product}
-          count={mockProps.combinableDiscountCounts!.productDiscountsCount}
-          currentDiscountName={mockProps.discountDescriptor}
-          currentDiscountId={mockProps.discountId}
-        />
-      ) : null,
   };
 
   const mockOrderOption = {
     label: 'Order discounts',
     value: DiscountClass.Order,
-    renderChildren: (isSelected: boolean) =>
-      isSelected ? (
-        <HelpText
-          currentDiscountClass={mockProps.discountClass}
-          targetDiscountClass={DiscountClass.Order}
-          count={mockProps.combinableDiscountCounts!.orderDiscountsCount}
-          currentDiscountName={mockProps.discountDescriptor}
-          currentDiscountId={mockProps.discountId}
-        />
-      ) : null,
   };
   const mockShippingOption = {
     label: 'Shipping discounts',
     value: DiscountClass.Shipping,
-    renderChildren: (isSelected: boolean) =>
-      isSelected ? (
-        <HelpText
-          currentDiscountClass={mockProps.discountClass}
-          targetDiscountClass={DiscountClass.Shipping}
-          count={mockProps.combinableDiscountCounts!.shippingDiscountsCount}
-          currentDiscountName={mockProps.discountDescriptor}
-          currentDiscountId={mockProps.discountId}
-        />
-      ) : null,
   };
 
   beforeEach(() => {
@@ -154,7 +116,6 @@ describe('<CombinationCard />', () => {
             expect.objectContaining({
               value: choice.value,
               label: choice.label,
-              renderChildren: expect.any(Function),
             }),
           ),
         ),
@@ -203,63 +164,6 @@ describe('<CombinationCard />', () => {
       productDiscounts: false,
       orderDiscounts: false,
       shippingDiscounts: true,
-    });
-  });
-
-  it('does not render help text when combinableDiscountCounts is not passed', () => {
-    const combinationCard = mountWithApp(
-      <CombinationCard
-        combinableDiscountTypes={mockProps.combinableDiscountTypes}
-        discountClass={mockProps.discountClass}
-        discountDescriptor={mockProps.discountDescriptor}
-      />,
-    );
-
-    expect(combinationCard).not.toContainReactComponent(HelpText);
-  });
-
-  it.each`
-    currentDiscountClass      | targetDiscountClass       | expectedCount
-    ${DiscountClass.Product}  | ${DiscountClass.Product}  | ${1}
-    ${DiscountClass.Product}  | ${DiscountClass.Shipping} | ${2}
-    ${DiscountClass.Order}    | ${DiscountClass.Shipping} | ${2}
-    ${DiscountClass.Shipping} | ${DiscountClass.Product}  | ${2}
-    ${DiscountClass.Shipping} | ${DiscountClass.Order}    | ${2}
-  `(
-    'adjusts the HelpText count to $expectedCount based on the currentDiscountClass of $currentDiscountClass and targetDiscountClass of $targetDiscountClass',
-    ({currentDiscountClass, targetDiscountClass, expectedCount}) => {
-      const combinationCard = mountWithApp(
-        <CombinationCard
-          {...mockProps}
-          discountClass={currentDiscountClass}
-          combinableDiscountCounts={{
-            orderDiscountsCount: 2,
-            productDiscountsCount: 2,
-            shippingDiscountsCount: 2,
-          }}
-          combinableDiscountTypes={mockField({
-            productDiscounts: true,
-            orderDiscounts: true,
-            shippingDiscounts: true,
-          })}
-        />,
-      );
-
-      expect(combinationCard).toContainReactComponent(HelpText, {
-        targetDiscountClass,
-        count: expectedCount,
-      });
-    },
-  );
-
-  it('passes the discount id to HelpText if present', () => {
-    const mockDiscountId = composeGid('DiscountNode', '123');
-    const combinationCard = mountWithApp(
-      <CombinationCard {...mockProps} discountId={mockDiscountId} />,
-    );
-
-    expect(combinationCard).toContainReactComponent(HelpText, {
-      currentDiscountId: mockDiscountId,
     });
   });
 

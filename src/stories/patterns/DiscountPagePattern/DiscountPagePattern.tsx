@@ -216,11 +216,6 @@ export default function DiscountPage({id = '1'}) {
               value: combinesWith,
               onChange: setCombinesWith,
             }}
-            combinableDiscountCounts={{
-              orderDiscountsCount: 0,
-              productDiscountsCount: 3,
-              shippingDiscountsCount: 0,
-            }}
             discountClass={discountData.discountClass}
             discountDescriptor={discountDescriptor}
           />
@@ -236,7 +231,7 @@ export default function DiscountPage({id = '1'}) {
             timezoneAbbreviation={timezoneAbbreviation}
           />
         </Layout.Section>
-        <Layout.Section variant='oneThird'>
+        <Layout.Section variant="oneThird">
           <SummaryCard
             header={{
               discountMethod: discountMethod,

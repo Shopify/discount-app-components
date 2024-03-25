@@ -7,7 +7,6 @@ export type {
   DateTime,
   Decimal,
   Field,
-  LinkAction,
   MoneyInput,
   Option,
   PositiveNumericValue,
@@ -16,7 +15,6 @@ export type {
   Customer,
   CustomerSegment,
   CombinableDiscountTypes,
-  CombinableDiscountCounts,
 } from './types';
 
 // constants
@@ -41,9 +39,6 @@ export type {AppProviderProps} from './components/AppProvider';
 // components
 export {ActiveDatesCard} from './components/ActiveDatesCard';
 export type {ActiveDatesCardProps} from './components/ActiveDatesCard';
-
-export {AppBridgeLink} from './components/AppBridgeLink';
-export type {AppBridgeLinkProps} from './components/AppBridgeLink';
 
 export {CombinationCard} from './components/CombinationCard';
 export type {CombinationCardProps} from './components/CombinationCard';
@@ -105,8 +100,6 @@ export {
 } from './utilities/dates';
 
 export {useLocalizeCountry} from './components/CountriesAndRatesCard/utilities';
-
-export {onBreadcrumbAction, handleRedirect} from './utilities/navigation';
 
 export {generateRandomDiscountCode} from './components/DiscountCodeGenerator/utilities';
 export {ValueCard} from './components/ValueCard';

@@ -81,60 +81,6 @@
         "shippingLabel": "Descontos de frete"
       },
       "newBadge": "Novo",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Não há descontos de produtos configurados para combinação.",
-            "warning": {
-              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto em produto que combine com outros.",
-              "withorder": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto em produto que combine com descontos no pedido.",
-              "withshipping": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto em produto que combine com descontos de frete."
-            }
-          },
-          "order": {
-            "title": "Não há descontos no pedido configurados para combinação.",
-            "warning": {
-              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com descontos no produto.",
-              "withorder": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com outros.",
-              "withshipping": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto no pedido que combine com descontos de frete."
-            }
-          },
-          "shipping": {
-            "title": "Não há descontos de frete configurados para combinação.",
-            "warning": {
-              "withproduct": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com descontos no produto.",
-              "withorder": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com descontos no pedido.",
-              "withshipping": "Para permitir que os clientes usem mais de um desconto, configure pelo menos um desconto de frete que combine com outros."
-            }
-          },
-          "link": "Saiba mais"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} desconto no produto",
-              "other": "{count} descontos no produto",
-              "many": "{count} descontos no produto"
-            },
-            "order": {
-              "one": "{count} desconto no pedido",
-              "other": "{count} descontos nos pedidos",
-              "many": "{count} descontos nos pedidos"
-            },
-            "shipping": {
-              "one": "{count} desconto de frete",
-              "other": "{count} descontos de frete",
-              "many": "{count} descontos de frete"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} está configurado para combinação.",
-            "other": "{discountCountLink} estão configurados para combinação.",
-            "many": "{discountCountLink} estão configurados para combinação."
-          },
-          "multipleEligibleDiscounts": "Se um item estiver qualificado para vários descontos, será aplicado apenas o maior deles."
-        }
-      },
       "discountClass": {
         "product": "produto",
         "order": "pedido",

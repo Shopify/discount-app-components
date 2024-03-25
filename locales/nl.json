@@ -81,56 +81,6 @@
         "shippingLabel": "Verzendkortingen"
       },
       "newBadge": "Nieuw",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Er zijn geen productkortingen ingesteld voor combinatie.",
-            "warning": {
-              "withproduct": "Stel minstens één productkorting in die met productkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
-              "withorder": "Stel minstens één productkorting in die met bestellingskortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
-              "withshipping": "Stel minstens één productkorting in die met verzendkortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken."
-            }
-          },
-          "order": {
-            "title": "Er zijn geen bestelkortingen ingesteld voor combinatie.",
-            "warning": {
-              "withproduct": "Stel minstens één bestellingskorting in die met productkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
-              "withorder": "Stel minstens één bestellingskorting in die met andere bestellingskortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken.",
-              "withshipping": "Stel minstens één bestellingskorting in die met verzendkortingen kan worden gecombineerd, als je klanten meerdere kortingen wilt laten gebruiken."
-            }
-          },
-          "shipping": {
-            "title": "Er zijn geen verzendkortingen ingesteld voor combinatie.",
-            "warning": {
-              "withproduct": "Stel minstens één verzendkorting in die met productkortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken.",
-              "withorder": "Stel minstens één verzendkorting in die met bestellingskortingen kan worden gecombineerd als je klanten meerdere kortingen wilt laten gebruiken.",
-              "withshipping": "Als je klanten meerdere kortingen wilt laten gebruiken, stel je minstens één verzendkorting in die met andere verzendkortingen kan worden gecombineerd."
-            }
-          },
-          "link": "Meer informatie"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} productkorting",
-              "other": "{count} productkortingen"
-            },
-            "order": {
-              "one": "{count} bestellingskorting",
-              "other": "{count} bestellingskortingen"
-            },
-            "shipping": {
-              "one": "{count} verzendkorting",
-              "other": "{count} verzendkortingen"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} is ingesteld voor combinatie.",
-            "other": "{discountCountLink} zijn ingesteld voor combinatie."
-          },
-          "multipleEligibleDiscounts": "Als een artikel voor meerdere kortingen in aanmerking komt, geldt alleen de hoogste."
-        }
-      },
       "discountClass": {
         "product": "product",
         "order": "bestelling",

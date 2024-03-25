@@ -81,60 +81,6 @@
         "shippingLabel": "Descuentos en envíos"
       },
       "newBadge": "Nuevo",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "No hay descuentos en productos que puedan combinarse.",
-            "warning": {
-              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos del mismo tipo.",
-              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos en pedidos.",
-              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en productos que combine con descuentos en envíos."
-            }
-          },
-          "order": {
-            "title": "No hay descuentos en pedidos que puedan combinarse.",
-            "warning": {
-              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos en productos.",
-              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos del mismo tipo.",
-              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en pedidos que combine con descuentos en envíos."
-            }
-          },
-          "shipping": {
-            "title": "No hay descuentos en envíos que puedan combinarse.",
-            "warning": {
-              "withproduct": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en productos.",
-              "withorder": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos en pedidos.",
-              "withshipping": "Para que los clientes puedan usar más de un descuento, configura al menos un descuento en envíos que combine con descuentos del mismo tipo."
-            }
-          },
-          "link": "Más información"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} descuento en productos",
-              "other": "{count} descuentos en productos",
-              "many": "{count} descuentos en productos"
-            },
-            "order": {
-              "one": "{count} descuento en pedidos",
-              "other": "{count} descuentos en pedidos",
-              "many": "{count} descuentos en pedidos"
-            },
-            "shipping": {
-              "one": "{count} descuento en envíos",
-              "other": "{count} descuentos en envíos",
-              "many": "{count} descuentos en envíos"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} se puede combinar.",
-            "other": "{discountCountLink} se pueden combinar.",
-            "many": "{discountCountLink} se pueden combinar."
-          },
-          "multipleEligibleDiscounts": "Si un artículo es elegible para varios descuentos, solo se aplicará el mayor."
-        }
-      },
       "discountClass": {
         "product": "producto",
         "order": "pedido",

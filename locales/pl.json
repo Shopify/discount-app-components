@@ -81,64 +81,6 @@
         "shippingLabel": "Rabaty na wysyłkę"
       },
       "newBadge": "Nowe",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Nie ma możliwości łączenia rabatów na produkty.",
-            "warning": {
-              "withproduct": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na produkt, który łączy się z rabatami na produkty.",
-              "withorder": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na produkt, który łączy się z rabatami na zamówienia.",
-              "withshipping": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na produkt, który łączy się z rabatami na wysyłkę."
-            }
-          },
-          "order": {
-            "title": "Nie ma możliwości łączenia rabatów na zamówienia.",
-            "warning": {
-              "withproduct": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na zamówienie, który łączy się z rabatami na produkty.",
-              "withorder": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na zamówienie, który łączy się z rabatami na zamówienia.",
-              "withshipping": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na zamówienie, który łączy się z rabatami na wysyłkę."
-            }
-          },
-          "shipping": {
-            "title": "Nie ma możliwości łączenia rabatów na wysyłkę.",
-            "warning": {
-              "withproduct": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na produkty.",
-              "withorder": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na zamówienia.",
-              "withshipping": "Aby umożliwić klientom korzystanie z więcej niż jednego rabatu, ustaw co najmniej jeden rabat na wysyłkę, który łączy się z rabatami na wysyłkę."
-            }
-          },
-          "link": "Dowiedz się więcej"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} rabat na produkt",
-              "other": "{count} rabaty(-ów) na produkty",
-              "few": "{count} rabaty(-ów) na produkty",
-              "many": "{count} rabaty(-ów) na produkty"
-            },
-            "order": {
-              "one": "{count} rabat na zamówienie",
-              "other": "{count} rabaty(-ów) na zamówienia",
-              "few": "{count} rabaty(-ów) na zamówienia",
-              "many": "{count} rabaty(-ów) na zamówienia"
-            },
-            "shipping": {
-              "one": "{count} rabat na wysyłkę",
-              "other": "{count} rabaty(-ów) na wysyłkę",
-              "few": "{count} rabaty(-ów) na wysyłkę",
-              "many": "{count} rabaty(-ów) na wysyłkę"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} można łączyć.",
-            "other": "{discountCountLink} można łączyć.",
-            "few": "{discountCountLink} można łączyć.",
-            "many": "{discountCountLink} można łączyć."
-          },
-          "multipleEligibleDiscounts": "Jeśli pozycja kwalifikuje się do kilku rabatów, zastosowany zostanie jeden, największy rabat."
-        }
-      },
       "discountClass": {
         "product": "produkt",
         "order": "zamówienie",

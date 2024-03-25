@@ -1,6 +1,5 @@
 import React, {Fragment, StrictMode} from 'react';
 import {PolarisTestProvider} from '@shopify/polaris';
-import {Provider as AppBridgeProvider} from '@shopify/app-bridge-react';
 
 import {AppProvider} from '../AppProvider';
 
@@ -31,16 +30,14 @@ export function DiscountAppComponentsTestProvider(
 
   return (
     <Wrapper>
-      <AppBridgeProvider config={{apiKey: '12345', host: 'encodedHost'}}>
-        <AppProvider
-          locale={props.locale || DEFAULT_LOCALE}
-          ianaTimezone={props.ianaTimezone || DEFAULT_IANA_TIMEZONE}
-        >
-          <PolarisTestProvider>
-            <>{props.children}</>
-          </PolarisTestProvider>
-        </AppProvider>
-      </AppBridgeProvider>
+      <AppProvider
+        locale={props.locale || DEFAULT_LOCALE}
+        ianaTimezone={props.ianaTimezone || DEFAULT_IANA_TIMEZONE}
+      >
+        <PolarisTestProvider>
+          <>{props.children}</>
+        </PolarisTestProvider>
+      </AppProvider>
     </Wrapper>
   );
 }

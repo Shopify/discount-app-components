@@ -81,56 +81,6 @@
         "shippingLabel": "Versandrabatte"
       },
       "newBadge": "Neu",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Es wurden keine kombinierbaren Produktrabatte eingerichtet.",
-            "warning": {
-              "withproduct": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Produktrabatt fest, der mit Produktrabatten kombinierbar ist.",
-              "withorder": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Produktrabatt fest, der mit Bestellrabatten kombinierbar ist.",
-              "withshipping": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Produktrabatt fest, der mit Versandrabatten kombinierbar ist."
-            }
-          },
-          "order": {
-            "title": "Es wurden keine kombinierbaren Bestellrabatte eingerichtet.",
-            "warning": {
-              "withproduct": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Bestellrabatt fest, der mit Produktrabatten kombinierbar ist.",
-              "withorder": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Bestellrabatt fest, der mit Bestellrabatten kombinierbar ist.",
-              "withshipping": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Bestellrabatt fest, der mit Versandrabatten kombinierbar ist."
-            }
-          },
-          "shipping": {
-            "title": "Es wurden keine kombinierbaren Versandrabatte eingerichtet.",
-            "warning": {
-              "withproduct": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Versandrabatt fest, der mit Produktrabatten kombinierbar ist.",
-              "withorder": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Versandrabatt fest, der mit Bestellrabatten kombinierbar ist.",
-              "withshipping": "Damit Kunden mehr als einen Rabatt nutzen können, lege mindestens einen Versandrabatt fest, der mit Versandrabatten kombinierbar ist."
-            }
-          },
-          "link": "Weitere Informationen"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} Produktrabatt",
-              "other": "{count} Produktrabatte"
-            },
-            "order": {
-              "one": "{count} Bestellrabatt",
-              "other": "{count} Bestellrabatte"
-            },
-            "shipping": {
-              "one": "{count} Versandrabatt",
-              "other": "{count} Versandrabatte"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} ist kombinierbar.",
-            "other": "{discountCountLink} sind kombinierbar."
-          },
-          "multipleEligibleDiscounts": "Wenn ein Artikel für mehrere Rabatte qualifiziert ist, wird nur der höchste Rabatt angewendet."
-        }
-      },
       "discountClass": {
         "product": "Produkt",
         "order": "Bestellung",

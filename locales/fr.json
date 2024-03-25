@@ -81,60 +81,6 @@
         "shippingLabel": "Réductions sur les frais d’expédition"
       },
       "newBadge": "Nouveau",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Les réductions sur les produits ne peuvent pas être cumulées.",
-            "warning": {
-              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur un produit qui soit cumulable avec d’autres réductions sur des produits.",
-              "withorder": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur un produit qui soit cumulable avec les réductions sur la commande.",
-              "withshipping": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur un produit qui soit cumulable avec les réductions sur les frais d’expédition."
-            }
-          },
-          "order": {
-            "title": "Les réductions sur les commandes ne peuvent pas être cumulées.",
-            "warning": {
-              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur la commande qui soit cumulable avec les réductions sur des produits.",
-              "withorder": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur la commande qui soit cumulable avec d’autres réductions sur la commande.",
-              "withshipping": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur la commande qui soit cumulable avec les réductions sur les frais d’expédition."
-            }
-          },
-          "shipping": {
-            "title": "Les réductions sur les frais d’expédition ne peuvent pas être cumulées.",
-            "warning": {
-              "withproduct": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec les réductions sur les produits.",
-              "withorder": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec les réductions sur la commande.",
-              "withshipping": "Pour permettre aux clients d’utiliser plus d’une réduction, paramétrez au moins une réduction sur les frais d’expédition qui soit cumulable avec d’autres réductions sur les frais d’expédition."
-            }
-          },
-          "link": "En savoir plus"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} réduction sur un produit",
-              "other": "{count} réductions sur un produit",
-              "many": "{count} réductions sur un produit"
-            },
-            "order": {
-              "one": "{count} réduction sur la commande",
-              "other": "{count} réductions sur la commande",
-              "many": "{count} réductions sur la commande"
-            },
-            "shipping": {
-              "one": "{count} réduction sur les frais d’expédition",
-              "other": "{count} réductions sur les frais d’expédition",
-              "many": "{count} réductions sur les frais d’expédition"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} peut être cumulée.",
-            "other": "{discountCountLink} peuvent être cumulées.",
-            "many": "{discountCountLink} peuvent être cumulées."
-          },
-          "multipleEligibleDiscounts": "Si un article est admissible à plusieurs réductions, seule la plus importante sera appliquée."
-        }
-      },
       "discountClass": {
         "product": "produit",
         "order": "commande",
