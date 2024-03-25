@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Card, ChoiceList, Text, BlockStack} from '@shopify/polaris';
+import {Box, Card, ChoiceList, Text, BlockStack, Link} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 import {Action} from '@shopify/app-bridge/actions/Navigation/Redirect';
 import {parseGid} from '@shopify/admin-graphql-api-utilities';
@@ -7,7 +7,6 @@ import {parseGid} from '@shopify/admin-graphql-api-utilities';
 import {Eligibility} from '../../constants';
 import type {Customer, CustomerSegment, Field} from '../../types';
 import {SelectedItemsList} from '../SelectedItemsList';
-import {AppBridgeLink} from '../AppBridgeLink';
 
 import styles from './CustomerEligibilityCard.scss';
 
@@ -143,13 +142,9 @@ export const SelectedCustomerSegmentsList = ({
   selectedCustomerSegments: Field<CustomerSegment[]>;
 }) => {
   const renderCustomerSegmentItem = ({name, id}: CustomerSegment) => (
-    <AppBridgeLink
-      external
-      action={Action.ADMIN_PATH}
-      url={`/customers?segment_id=${parseGid(id)}`}
-    >
+    <Link target="_blank" url={`/customers?segment_id=${parseGid(id)}`}>
       {name}
-    </AppBridgeLink>
+    </Link>
   );
 
   const handleRemoveCustomerSegment = (customerSegmentId: string) => {

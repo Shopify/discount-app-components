@@ -42,9 +42,6 @@ export type {AppProviderProps} from './components/AppProvider';
 export {ActiveDatesCard} from './components/ActiveDatesCard';
 export type {ActiveDatesCardProps} from './components/ActiveDatesCard';
 
-export {AppBridgeLink} from './components/AppBridgeLink';
-export type {AppBridgeLinkProps} from './components/AppBridgeLink';
-
 export {CombinationCard} from './components/CombinationCard';
 export type {CombinationCardProps} from './components/CombinationCard';
 

@@ -2,8 +2,8 @@ import React, {useRef} from 'react';
 import {Button, Text, Link, BlockStack} from '@shopify/polaris';
 import {useI18n} from '@shopify/react-i18n';
 import {useAppBridge} from '@shopify/app-bridge-react';
-import {Modal} from '@shopify/app-bridge/actions';
-import {Action} from '@shopify/app-bridge/actions/Modal';
+// import {Modal} from '@shopify/app-bridge/actions';
+// import {Action} from '@shopify/app-bridge/actions/Modal';
 
 import {DiscountClass} from '../../../../constants';
 
@@ -27,31 +27,24 @@ export function HelpText({
 }: Props) {
   const buttonWrapperRef = useRef<HTMLSpanElement>(null);
   const [i18n] = useI18n();
-  const app = useAppBridge();
-  const myModal = Modal.create(app, {
-    url: DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL,
-  });
+  const shopify = useAppBridge();
 
   const targetDiscountClassLabel = targetDiscountClass.toLocaleLowerCase();
   const scope = `DiscountAppComponents.CombinationCard.HelpText`;
 
   const handleModalOpen = () => {
-    myModal.dispatch(Action.DATA, {
+    shopify.modal.show(DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL);
+    const test = {
       discountOptions: {
         currentDiscountName,
         currentDiscountClass,
         currentDiscountId,
         targetDiscountClass,
       },
-    });
+    };
+    console.log('test', test);
 
-    myModal.dispatch(Modal.Action.OPEN);
-
-    const closeUnsubscribe = myModal.subscribe(Modal.Action.CLOSE, () => {
-      buttonWrapperRef.current?.getElementsByTagName('button')[0]?.focus();
-
-      closeUnsubscribe();
-    });
+    shopify.modal.hide(DISCOUNT_COMBINATION_MODAL_APP_BRIDGE_URL);
   };
 
   return count > 0 ? (
