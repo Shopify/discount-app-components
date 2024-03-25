@@ -5,7 +5,6 @@ import enPolarisTranslations from '@shopify/polaris/locales/en.json';
 import '@shopify/polaris/build/esm/styles.css';
 
 import {AppProvider as PolarisAppProvider} from '@shopify/polaris';
-import {Provider as AppBridgeProvider} from '@shopify/app-bridge-react';
 import {AppProvider} from '../../components/AppProvider';
 
 export function Provider({children}: {children: React.ReactNode}) {
@@ -15,9 +14,9 @@ export function Provider({children}: {children: React.ReactNode}) {
   };
 
   return (
-    <PolarisAppProvider i18n={enPolarisTranslations}>
-      <AppProvider ianaTimezone={i18n.ianaTimezone} locale={i18n.locale}>
-        <AppBridgeProvider config={{apiKey: '12345', host: 'encodedHost'}}>
+    <>
+      <PolarisAppProvider i18n={enPolarisTranslations}>
+        <AppProvider ianaTimezone={i18n.ianaTimezone} locale={i18n.locale}>
           {children}
 
           <pre
@@ -32,8 +31,8 @@ export function Provider({children}: {children: React.ReactNode}) {
             Rendering with locale={i18n.locale}, timezone={i18n.ianaTimezone}.
             Modify these values in <em>src/stories/foundation/Provider.tsx</em>
           </pre>
-        </AppBridgeProvider>
-      </AppProvider>
-    </PolarisAppProvider>
+        </AppProvider>
+      </PolarisAppProvider>
+    </>
   );
 }

@@ -2580,24 +2580,17 @@
   resolved "https://registry.yarnpkg.com/@shopify/admin-graphql-api-utilities/-/admin-graphql-api-utilities-2.1.0.tgz#340b41ce12e7cbb522adbb8dccfbb7496e3404b2"
   integrity sha512-HECld91U2FODf7s4/WL7T2ekYRC+FOl0IhUuWG2xY03yCLTwIpWt2UXwtUPX9psZlAFThIzD6zORWYqJZQWkkQ==
 
-"@shopify/app-bridge-core@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-core/-/app-bridge-core-1.0.2.tgz#083835998082c1577f30c34224ab0750d9bee204"
-  integrity sha512-lI+nZHMDqBJSqTBQiI1GY3Xs7YjPuZ83/sW7TIvWtTsxQZyoanAVXloo63sGEd58t1KvKFnDtVFN1NJYe/zouQ==
+"@shopify/app-bridge-core@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-core/-/app-bridge-core-1.1.1.tgz#b8b16e7c4ba60d6d593a89f397e4abef9be6ef50"
+  integrity sha512-kEnJUpkC9vDdmGMN3Mezq/FlDBqP+DFg/A1PFzqTW8FILu0wzFmz1aFk4Hxy6Y6ilceMmn8QXsyLA9DfaeH4jQ==
 
-"@shopify/app-bridge-react@^3.1.0":
-  version "3.7.9"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge-react/-/app-bridge-react-3.7.9.tgz#0d5356124d82a772f9d40ec6d1c7451ee0d7223a"
-  integrity sha512-1DdRaXGllYwuInY3v8JXUmXdLIorkIMiKIK2IZkJL45kjigbMZ/I9rE53rvfLGBan9E6EafliP0PbX1YBFUbFg==
+"@shopify/app-bridge@^3.7.10":
+  version "3.7.10"
+  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-3.7.10.tgz#f2f72a7897afdd6b48b0e5484efd56fff71892b5"
+  integrity sha512-zy4c05DEOkYXm1yWIe0FrI0lq6hzffIT4JWzb9XKqY5OPRNHRHg+ihDt0ZnR8eMVmYV03yStpGAITIfqOgn4TQ==
   dependencies:
-    "@shopify/app-bridge" "^3.7.9"
-
-"@shopify/app-bridge@^3.1.0", "@shopify/app-bridge@^3.7.9":
-  version "3.7.9"
-  resolved "https://registry.yarnpkg.com/@shopify/app-bridge/-/app-bridge-3.7.9.tgz#8ee10f531af9bf8260d65d9b5adbe42351e243f8"
-  integrity sha512-ZT4Lc8wg/r8/VF5QbpGiIICyuytSPcPMiqTxsAXwT72mSgWTUog5/FMMu0hBH9c+OpvjDM4FjxDv9f8pKCC3aw==
-  dependencies:
-    "@shopify/app-bridge-core" "1.0.2"
+    "@shopify/app-bridge-core" "1.1.1"
     base64url "^3.0.1"
     web-vitals "^3.0.1"
 

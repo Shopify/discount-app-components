@@ -12,13 +12,7 @@ import {
 import {I18n, useI18n} from '@shopify/react-i18n';
 
 import {DiscountClass} from '../../constants';
-import type {
-  CombinableDiscountTypes,
-  CombinableDiscountCounts,
-  Field,
-} from '../../types';
-
-import {HelpText} from './components';
+import type {CombinableDiscountTypes, Field} from '../../types';
 
 const I18N_SCOPE = {
   scope: 'DiscountAppComponents.CombinationCard',
@@ -39,24 +33,12 @@ export interface CombinationCardProps {
    * Field used for setting which discount classes may be combined with this discount
    */
   combinableDiscountTypes: Field<CombinableDiscountTypes>;
-
-  /**
-   * (optional) The number of existing product, order, and shipping discount classes in the shop which can be combined with this discount
-   */
-  combinableDiscountCounts?: CombinableDiscountCounts;
-
-  /**
-   * (optional) The full GID of the current discount. Used to filter out the current discount from the combinations modal.
-   */
-  discountId?: string;
 }
 
 export function CombinationCard({
   discountClass,
   discountDescriptor,
   combinableDiscountTypes,
-  combinableDiscountCounts,
-  discountId,
 }: CombinationCardProps) {
   const [i18n] = useI18n();
 
@@ -125,10 +107,7 @@ export function CombinationCard({
             allowMultiple
             choices={buildChoices({
               discountClass,
-              discountId,
-              discountDescriptor,
               i18n,
-              combinableDiscountCounts,
             })}
             selected={getSelectedChoices(combinableDiscountTypes.value)}
             onChange={handleDiscountCombinesWithChange}
@@ -141,72 +120,22 @@ export function CombinationCard({
 
 function buildChoices({
   discountClass: currentDiscountClass,
-  combinableDiscountCounts,
-  discountId: currentDiscountId,
-  discountDescriptor,
   i18n,
 }: {
   discountClass: DiscountClass;
-  discountId?: string;
-  discountDescriptor: string;
   i18n: I18n;
-  combinableDiscountCounts?: CombinableDiscountCounts;
 }): ChoiceListProps['choices'] {
-  const hasCounts = typeof combinableDiscountCounts !== 'undefined';
-
   const productOption = {
     label: i18n.translate('options.productLabel', I18N_SCOPE),
     value: DiscountClass.Product,
-    renderChildren: (isSelected: boolean) =>
-      isSelected && hasCounts ? (
-        <HelpText
-          currentDiscountClass={currentDiscountClass}
-          targetDiscountClass={DiscountClass.Product}
-          count={getActualCombiningDiscountsCount(
-            combinableDiscountCounts!.productDiscountsCount,
-            currentDiscountClass === DiscountClass.Product,
-            currentDiscountId,
-          )}
-          currentDiscountId={currentDiscountId}
-          currentDiscountName={discountDescriptor}
-        />
-      ) : null,
   };
   const orderOption = {
     label: i18n.translate('options.orderLabel', I18N_SCOPE),
     value: DiscountClass.Order,
-    renderChildren: (isSelected: boolean) =>
-      isSelected && hasCounts ? (
-        <HelpText
-          currentDiscountClass={currentDiscountClass}
-          targetDiscountClass={DiscountClass.Order}
-          count={getActualCombiningDiscountsCount(
-            combinableDiscountCounts!.orderDiscountsCount,
-            currentDiscountClass === DiscountClass.Order,
-            currentDiscountId,
-          )}
-          currentDiscountId={currentDiscountId}
-          currentDiscountName={discountDescriptor}
-        />
-      ) : null,
   };
   const shippingOption = {
     label: i18n.translate('options.shippingLabel', I18N_SCOPE),
     value: DiscountClass.Shipping,
-    renderChildren: (isSelected: boolean) =>
-      isSelected && hasCounts ? (
-        <HelpText
-          currentDiscountClass={currentDiscountClass}
-          targetDiscountClass={DiscountClass.Shipping}
-          count={getActualCombiningDiscountsCount(
-            combinableDiscountCounts!.shippingDiscountsCount,
-            currentDiscountClass === DiscountClass.Shipping,
-            currentDiscountId,
-          )}
-          currentDiscountId={currentDiscountId}
-          currentDiscountName={discountDescriptor}
-        />
-      ) : null,
   };
 
   switch (currentDiscountClass) {
@@ -224,23 +153,6 @@ function buildChoices({
         },
       ];
   }
-}
-
-/**
- * The combines with count needs to exclude the current discount if:
- *  - the current discount is of the same type as the combination discount type
- *  - the current discount is saved
- */
-function getActualCombiningDiscountsCount(
-  numCombinableDiscountsForClass: number,
-  discountClassesMatch: boolean,
-  currentDiscountId?: string,
-): number {
-  if (discountClassesMatch && Boolean(currentDiscountId)) {
-    return numCombinableDiscountsForClass - 1;
-  }
-
-  return numCombinableDiscountsForClass;
 }
 
 const getSelectedChoices = (

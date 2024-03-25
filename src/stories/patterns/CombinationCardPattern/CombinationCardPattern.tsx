@@ -25,11 +25,6 @@ export default function CombinationCardPattern({
           value: combinesWith,
           onChange: setCombinesWith,
         }}
-        combinableDiscountCounts={{
-          orderDiscountsCount: 0,
-          productDiscountsCount: 3,
-          shippingDiscountsCount: 0,
-        }}
         discountClass={discountClass}
         discountDescriptor={discountDescriptor}
       />

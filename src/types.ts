@@ -1,9 +1,4 @@
 import type {ReactElement} from 'react';
-import type {Redirect} from '@shopify/app-bridge/actions';
-import type {
-  AdminSectionPayload,
-  Section,
-} from '@shopify/app-bridge/actions/Navigation/Redirect';
 import type {CurrencyCode} from '@shopify/react-i18n';
 import {Resource} from '@shopify/app-bridge/actions/ResourcePicker';
 
@@ -30,25 +25,6 @@ export interface Option {
   value: string;
   label: string;
 }
-
-interface ExternalAction {
-  action: Redirect.Action.REMOTE | Redirect.Action.ADMIN_PATH;
-  url: string;
-  newContext?: boolean;
-}
-
-interface AppAction {
-  action: Redirect.Action.APP;
-  url: string;
-}
-
-interface ComplexAction {
-  action: Redirect.Action.ADMIN_SECTION;
-  payload: Section | AdminSectionPayload;
-}
-
-export type LinkAction = AppAction | ExternalAction | ComplexAction;
-
 export interface MoneyInput {
   amount: Decimal;
   currencyCode: CurrencyCode;
@@ -74,12 +50,6 @@ export interface CombinableDiscountTypes {
   orderDiscounts: boolean;
   productDiscounts: boolean;
   shippingDiscounts: boolean;
-}
-
-export interface CombinableDiscountCounts {
-  productDiscountsCount: number;
-  orderDiscountsCount: number;
-  shippingDiscountsCount: number;
 }
 
 export type CountryCode = SupportedCountryCode | typeof REST_OF_WORLD;

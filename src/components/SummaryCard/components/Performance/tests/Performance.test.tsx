@@ -1,11 +1,10 @@
 import React from 'react';
 import {mountWithApp} from 'tests/utilities';
 import {CurrencyCode} from '@shopify/react-i18n';
-import {Redirect} from '@shopify/app-bridge/actions';
+import {Link} from '@shopify/polaris';
 
 import {Performance} from '../Performance';
 import {DiscountMethod, DiscountStatus} from '../../../../../constants';
-import {AppBridgeLink} from '../../../../AppBridgeLink';
 
 describe('<Performance />', () => {
   const mockProps = {
@@ -63,8 +62,7 @@ describe('<Performance />', () => {
           />,
         );
 
-        expect(performance).toContainReactComponent(AppBridgeLink, {
-          action: Redirect.Action.ADMIN_PATH,
+        expect(performance).toContainReactComponent(Link, {
           url: '/reports/sales_by_discount',
           children: 'View the sales by discount report',
         });
@@ -75,7 +73,7 @@ describe('<Performance />', () => {
           <Performance {...mockProps} discountMethod={DiscountMethod.Code} />,
         );
 
-        expect(performance).not.toContainReactComponent(AppBridgeLink);
+        expect(performance).not.toContainReactComponent(Link);
       });
 
       it('does not render a report link when discountMethod is automatic', () => {
@@ -87,7 +85,7 @@ describe('<Performance />', () => {
           />,
         );
 
-        expect(performance).not.toContainReactComponent(AppBridgeLink);
+        expect(performance).not.toContainReactComponent(Link);
       });
     });
   });

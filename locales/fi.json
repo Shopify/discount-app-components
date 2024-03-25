@@ -81,56 +81,6 @@
         "shippingLabel": "Toimitusalennukset"
       },
       "newBadge": "Uusi",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Tuotealennuksista yhtään ei ole määritetty sellaisiksi, että sen voisi yhdistää muiden alennusten kanssa.",
-            "warning": {
-              "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää tuotealennuksiin.",
-              "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää tilausalennuksiin.",
-              "withshipping": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tuotealennus, joka voidaan yhdistää toimitusalennuksiin."
-            }
-          },
-          "order": {
-            "title": "Tilausalennuksista yhtään ei ole määritetty sellaisiksi, että sen voisi yhdistää muiden alennusten kanssa.",
-            "warning": {
-              "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tuotealennuksiin.",
-              "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tilausalennuksiin.",
-              "withshipping": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tuotealennuksiin."
-            }
-          },
-          "shipping": {
-            "title": "Toimitusalennuksista yhtään ei ole määritetty sellaisiksi, että sen voisi yhdistää muiden alennusten kanssa.",
-            "warning": {
-              "withproduct": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi toimitusalennus, joka voidaan yhdistää tuotealennuksiin.",
-              "withorder": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi tilausalennus, joka voidaan yhdistää tilausalennuksiin.",
-              "withshipping": "Jotta asiakkaat voisivat käyttää useampaa kuin yhtä alennusta, määritä vähintään yksi toimitusalennus, joka voidaan yhdistää toimitusalennuksiin."
-            }
-          },
-          "link": "Lisätietoja"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} tuotealennus",
-              "other": "{count} tuotealennusta"
-            },
-            "order": {
-              "one": "{count} tilausalennus",
-              "other": "{count} tilausalennusta"
-            },
-            "shipping": {
-              "one": "{count} toimitusalennus",
-              "other": "{count} toimitusalennusta"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} on määritetty sellaiseksi, että sen voi yhdistää.",
-            "other": "{discountCountLink} on määritetty sellaisiksi, että ne voi yhdistää."
-          },
-          "multipleEligibleDiscounts": "Jos tuote on oikeutettu useaan alennukseen, käytetään niistä vain suurinta."
-        }
-      },
       "discountClass": {
         "product": "tuote",
         "order": "tilaus",

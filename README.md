@@ -3,7 +3,7 @@
 [![npm Package Version](https://img.shields.io/npm/v/@shopify/discount-app-components)](https://www.npmjs.com/package/@shopify/discount-app-components)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 
-`@shopify/discount-app-components` provides a set of stateless discount components to help 3p app developers create [AppBridge](https://shopify.dev/apps/tools/app-bridge)-powered discounts apps.
+`@shopify/discount-app-components` provides a set of stateless discount components to help 3p app developers create discounts apps.
 
 ## Note on updates
 
@@ -31,7 +31,7 @@ If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead
 yarn add @shopify/discount-app-components
 ```
 
-> 🛑 The project has `peerDependencies` of `@shopify/app-bridge`, `@shopify/app-bridge-react`, and `@shopify/polaris` which must also be installed in your app.
+> 🛑 The project has `peerDependencies` of `@shopify/app-bridge`, and `@shopify/polaris` which must also be installed in your app.
 
 ### Usage
 
@@ -55,12 +55,11 @@ yarn add @shopify/discount-app-components
     />
     ```
 
-2.  This library contains a number of locale-specific components, and you will be required to pass a `locale` and a `ianaTimezone` to the discounts AppProvider. Also, this library will require you to wrap your app in a [Polaris AppProvider](https://polaris.shopify.com/components/utilities/app-provider) and an [AppBridge AppProvider](https://shopify.dev/apps/tools/app-bridge/getting-started/using-react#provider). A full example of an app root can be found below:
+2.  This library contains a number of locale-specific components, and you will be required to pass a `locale` and a `ianaTimezone` to the discounts AppProvider.
 
     ```js
     import {Page, AppProvider as PolarisAppProvider} from '@shopify/polaris';
-    import {Provider as AppBridgeProvider} from '@shopify/app-bridge-react';
-    import {AppProvider} from '@shopify/discount-app-components';
+    import {AppProvider as DiscountsProvider} from '@shopify/discount-app-components';
 
     // See [Polaris AppProvider documentation](https://github.com/Shopify/polaris/blob/main/polaris-react/src/components/AppProvider/README.md#using-translations) for more details on using Polaris translations
     import enPolarisTranslations from '@shopify/polaris/locales/en.json';
@@ -76,38 +75,19 @@ yarn add @shopify/discount-app-components
       ...
 
       return (
-        <AppBridgeProvider config={/* pass your app bridge config here */}>
           <PolarisAppProvider i18n={enPolarisTranslations}>
             {/* discount-app-component specific AppProvider */}
-            <AppProvider locale="en-US" ianaTimezone="America/Los_Angeles">
+            <DiscountsProvider locale="en-US" ianaTimezone="America/Los_Angeles">
               <Page title="Example app">
                 {/* Add your discount components here */}
               </Page>
-            </AppProvider>
+            </DiscountsProvider>
           </PolarisAppProvider>
-        </AppBridgeProvider>
       );
     }
     ```
 
 _**Note**: you may need to rename the discounts AppProvider to avoid clashing with another AppProvider component:_
-
-```js
-import {AppProvider as DiscountAppComponentsProvider} from '@shopify/discount-app-components';
-```
-
-_And in your app root:_
-
-```js
-<DiscountAppComponentsProvider
-  locale="en-US"
-  ianaTimezone="America/Los_Angeles"
->
-  <Page title="Example app">{/* Add your discount components here */}</Page>
-</DiscountAppComponentsProvider>
-```
-
----
 
 ## Development
 

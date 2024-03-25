@@ -81,56 +81,6 @@
         "shippingLabel": "Fraktrabatter"
       },
       "newBadge": "Ny",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Ingen produktrabatter kan kombineres.",
-            "warning": {
-              "withproduct": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én produktrabatt som kan kombineres med produktrabatter.",
-              "withorder": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én produktrabatt som kan kombineres med bestillingsrabatter.",
-              "withshipping": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én produktrabatt som kan kombineres med fraktrabatter."
-            }
-          },
-          "order": {
-            "title": "Ingen bestillingsrabatter kan kombineres.",
-            "warning": {
-              "withproduct": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én bestillingsrabatt som kan kombineres med produktrabatter.",
-              "withorder": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én bestillingsrabatt som kan kombineres med bestillingsrabatter.",
-              "withshipping": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én bestillingsrabatt som kan kombineres med fraktrabatter."
-            }
-          },
-          "shipping": {
-            "title": "Ingen fraktrabatter kan kombineres.",
-            "warning": {
-              "withproduct": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én fraktrabatt som kan kombineres med produktrabatter.",
-              "withorder": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én fraktrabatt som kan kombineres med bestillingsrabatter.",
-              "withshipping": "For at kundene skal kunne bruke mer enn én rabatt må du konfigurere minst én fraktrabatt som kan kombineres med fraktrabatter."
-            }
-          },
-          "link": "Finn ut mer"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} produktrabatt",
-              "other": "{count} produktrabatter"
-            },
-            "order": {
-              "one": "{count} bestillingsrabatt",
-              "other": "{count} bestillingsrabatter"
-            },
-            "shipping": {
-              "one": "{count} fraktrabatt",
-              "other": "{count} fraktrabatter"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} kan kombineres.",
-            "other": "{discountCountLink} kan kombineres."
-          },
-          "multipleEligibleDiscounts": "Hvis en vare er berettiget for flere rabatter, vil bare den største gjelde."
-        }
-      },
       "discountClass": {
         "product": "produkt",
         "order": "bestilling",

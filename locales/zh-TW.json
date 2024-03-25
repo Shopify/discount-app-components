@@ -81,56 +81,6 @@
         "shippingLabel": "運費折扣"
       },
       "newBadge": "新版",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "未設定任何可併用的商品折扣。",
-            "warning": {
-              "withproduct": "若要讓顧客使用多個折扣，請至少設定一個可與其他商品折扣合併使用的商品折扣。",
-              "withorder": "若要讓顧客使用多個折扣，請至少設定一個可與訂單折扣合併使用的商品折扣。",
-              "withshipping": "若要讓顧客使用多個折扣，請至少設定一個可與運費折扣合併使用的商品折扣。"
-            }
-          },
-          "order": {
-            "title": "未設定任何可併用的訂單折扣。",
-            "warning": {
-              "withproduct": "若要讓顧客使用多個折扣，請至少設定一個可與商品折扣合併使用的訂單折扣。",
-              "withorder": "若要讓顧客使用多個折扣，請至少設定一個可與其他訂單折扣合併使用的訂單折扣。",
-              "withshipping": "若要讓顧客使用多個折扣，請至少設定一個可與運費折扣合併使用的訂單折扣。"
-            }
-          },
-          "shipping": {
-            "title": "未設定任何可併用的運費折扣。",
-            "warning": {
-              "withproduct": "若要讓顧客使用多個折扣，請至少設定一個可與商品折扣合併使用的運費折扣。",
-              "withorder": "若要讓顧客使用多個折扣，請至少設定一個可與訂單折扣合併使用的運費折扣。",
-              "withshipping": "若要讓顧客使用多個折扣，請至少設定一個可與其他運費折扣合併使用的運費折扣。"
-            }
-          },
-          "link": "深入瞭解"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} 個商品折扣",
-              "other": "{count} 個商品折扣"
-            },
-            "order": {
-              "one": "{count} 個訂單折扣",
-              "other": "{count} 個訂單折扣"
-            },
-            "shipping": {
-              "one": "{count} 個運費折扣",
-              "other": "{count} 個運費折扣"
-            }
-          },
-          "info": {
-            "one": "已設定可併用的 {discountCountLink}。",
-            "other": "已設定可併用的 {discountCountLink}。"
-          },
-          "multipleEligibleDiscounts": "若某品項符合多項折扣資格，則系統會套用最優惠的折扣。"
-        }
-      },
       "discountClass": {
         "product": "商品",
         "order": "訂單",

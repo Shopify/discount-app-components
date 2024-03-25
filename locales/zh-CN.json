@@ -81,56 +81,6 @@
         "shippingLabel": "运费折扣"
       },
       "newBadge": "新",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "未设置要组合的产品折扣。",
-            "warning": {
-              "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的产品折扣。",
-              "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的产品折扣。",
-              "withshipping": "若要允许客户使用多项折扣，请至少设置一项与其他运费折扣进行组合的产品折扣。"
-            }
-          },
-          "order": {
-            "title": "未设置要组合的订单折扣。",
-            "warning": {
-              "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的订单折扣。",
-              "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的订单折扣。",
-              "withshipping": "若要允许客户使用多项折扣，请至少设置一项与其他运费折扣进行组合的订单折扣。"
-            }
-          },
-          "shipping": {
-            "title": "未设置要组合的运费折扣。",
-            "warning": {
-              "withproduct": "若要允许客户使用多项折扣，请至少设置一项与其他产品折扣进行组合的运费折扣。",
-              "withorder": "若要允许客户使用多项折扣，请至少设置一项与其他订单折扣进行组合的运费折扣。",
-              "withshipping": "若要允许客户使用多项折扣，请至少设置一项与其他运费折扣进行组合的运费折扣。"
-            }
-          },
-          "link": "了解详细信息"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} 项产品折扣",
-              "other": "{count} 项产品折扣"
-            },
-            "order": {
-              "one": "{count} 项订单折扣",
-              "other": "{count} 项订单折扣"
-            },
-            "shipping": {
-              "one": "{count} 项运费折扣",
-              "other": "{count} 项运费折扣"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} 已被设置为进行组合。",
-            "other": "{discountCountLink} 已被设置为进行组合。"
-          },
-          "multipleEligibleDiscounts": "如果某商品可使用多项折扣，则只会应用优惠金额最大的折扣。"
-        }
-      },
       "discountClass": {
         "product": "产品",
         "order": "订单",

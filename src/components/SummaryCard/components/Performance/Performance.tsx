@@ -1,9 +1,7 @@
 import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
-import {List, Text, BlockStack} from '@shopify/polaris';
-import {Redirect} from '@shopify/app-bridge/actions';
+import {List, Text, BlockStack, Link} from '@shopify/polaris';
 
-import {AppBridgeLink} from '../../../AppBridgeLink';
 import {DiscountMethod, DiscountStatus} from '../../../../constants';
 import type {MoneyInput} from '../../../../types';
 
@@ -80,12 +78,9 @@ export function Performance({
           </List>
           {hasReports && discountMethod === DiscountMethod.Code && (
             <p>
-              <AppBridgeLink
-                action={Redirect.Action.ADMIN_PATH}
-                url={CODE_DISCOUNT_ADMIN_REPORT_URL}
-              >
+              <Link url={CODE_DISCOUNT_ADMIN_REPORT_URL}>
                 {i18n.translate('performanceLink', I18N_SCOPE)}
-              </AppBridgeLink>
+              </Link>
             </p>
           )}
         </>

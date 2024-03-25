@@ -81,60 +81,6 @@
         "shippingLabel": "Sconti sulla spedizione"
       },
       "newBadge": "Nuova",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Nessuno sconto sui prodotti è configurato per essere cumulabile.",
-            "warning": {
-              "withproduct": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sul prodotto cumulabile con gli sconti sui prodotti.",
-              "withorder": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sul prodotto cumulabile con gli sconti sugli ordini.",
-              "withshipping": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sul prodotto cumulabile con gli sconti sulle spedizioni."
-            }
-          },
-          "order": {
-            "title": "Nessuno sconto sugli ordini è configurato per essere cumulabile.",
-            "warning": {
-              "withproduct": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sull'ordine cumulabile con gli sconti sui prodotti.",
-              "withorder": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sull'ordine cumulabile con gli sconti sugli ordini.",
-              "withshipping": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sull'ordine cumulabile con gli sconti sulle spedizioni."
-            }
-          },
-          "shipping": {
-            "title": "Nessuno sconto sulle spedizioni è configurato per essere cumulabile.",
-            "warning": {
-              "withproduct": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sulla spedizione cumulabile con gli sconti sui prodotti.",
-              "withorder": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sulla spedizione cumulabile con gli sconti sugli ordini.",
-              "withshipping": "Per consentire ai clienti di utilizzare più di uno sconto, configura almeno uno sconto sulla spedizione cumulabile con gli sconti sulle spedizioni."
-            }
-          },
-          "link": "Maggiori informazioni"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} sconto sul prodotto",
-              "other": "{count} sconti sui prodotti",
-              "many": "{count} sconti sui prodotti"
-            },
-            "order": {
-              "one": "{count} sconto sull'ordine",
-              "other": "{count} sconti sugli ordini",
-              "many": "{count} sconti sugli ordini"
-            },
-            "shipping": {
-              "one": "{count} sconto sulla spedizione",
-              "other": "{count} sconti sulle spedizioni",
-              "many": "{count} sconti sulle spedizioni"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} è configurato come cumulabile.",
-            "other": "{discountCountLink} sono configurati come cumulabili.",
-            "many": "{discountCountLink} sono configurati come cumulabili."
-          },
-          "multipleEligibleDiscounts": "Se un articolo è idoneo a più sconti, verrà applicato solo quello maggiore."
-        }
-      },
       "discountClass": {
         "product": "prodotto",
         "order": "ordine",

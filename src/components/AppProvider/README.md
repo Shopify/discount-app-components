@@ -2,23 +2,12 @@
 
 App provider is a required component that enables sharing global settings throughout the hierarchy of your application.
 
----
-
-## Usage and best practices
-
-The app provider component is required to use `@shopify/discount-app-components`. Without it the components in your application will not function correctly. You must wrap the root (the top) of your application in the app provider component.
-
-This project uses [@shopify/polaris](https://github.com/Shopify/polaris) and [@shopify/app-bridge-react](https://github.com/Shopify/app-bridge/tree/main/packages/app-bridge-react) under the hood, so you will also need to wrap your app root in the [Polaris AppProvider](https://github.com/Shopify/polaris/blob/main/polaris-react/src/components/AppProvider/README.md) and the [AppBridge Provider](https://github.com/Shopify/app-bridge/blob/main/packages/app-bridge-react/src/components/Provider/README.md).
-
----
-
 ## Examples
 
 ### Usage
 
 ```js
 import {Page, AppProvider as PolarisAppProvider} from '@shopify/polaris';
-import {Provider as AppBridgeProvider} from '@shopify/app-bridge-react';
 import {AppProvider} from '@shopify/discount-app-components';
 
 // See [Polaris AppProvider documentation](https://github.com/Shopify/polaris/blob/main/polaris-react/src/components/AppProvider/README.md#using-translations) for more details on using Polaris translations
@@ -35,7 +24,6 @@ export default function App() {
   ...
 
   return (
-    <AppBridgeProvider config={/* pass your app bridge config here */}>
       <PolarisAppProvider i18n={enPolarisTranslations}>
         <AppProvider locale="en-US" ianaTimezone="America/Los_Angeles">
           <Page title="Example app">
@@ -43,7 +31,6 @@ export default function App() {
           </Page>
         </AppProvider>
       </PolarisAppProvider>
-    </AppBridgeProvider>
   );
 }
 ```
@@ -58,4 +45,4 @@ Translations for `@shopify/discount-app-components` reside in the repository and
 
 ## Testing components
 
-You must include the discounts app context, polaris app context, and appbridge app context when writing tests that include `@shopify/discount-app-components` components. For your convenience, we've provided a [DiscountAppComponentsTestProvider component](https://github.com/Shopify/discount-app-components/blob/main/src/components/DiscountAppComponentsTestProvider/DiscountAppComponentsTestProvider.tsx) to provide these contexts.
+You must include the discounts app context and polaris app context when writing tests that include `@shopify/discount-app-components` components. For your convenience, we've provided a [DiscountAppComponentsTestProvider component](https://github.com/Shopify/discount-app-components/blob/main/src/components/DiscountAppComponentsTestProvider/DiscountAppComponentsTestProvider.tsx) to provide these contexts.

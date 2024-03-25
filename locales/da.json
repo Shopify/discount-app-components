@@ -81,56 +81,6 @@
         "shippingLabel": "Leveringsrabatter"
       },
       "newBadge": "Ny",
-      "HelpText": {
-        "emptyState": {
-          "product": {
-            "title": "Ingen produktrabatter er indstillet til at blive kombineret.",
-            "warning": {
-              "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med produktrabatter.",
-              "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med ordrerabatter.",
-              "withshipping": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én produktrabat, der kan kombineres med leveringsrabatter."
-            }
-          },
-          "order": {
-            "title": "Ingen bestillingsrabatter er indstillet til at blive kombineret.",
-            "warning": {
-              "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med produktrabatter.",
-              "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med ordrerabatter.",
-              "withshipping": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én ordrerabat, der kan kombineres med leveringsrabatter."
-            }
-          },
-          "shipping": {
-            "title": "Ingen forsendelsesrabatter er indstillet til at blive kombineret.",
-            "warning": {
-              "withproduct": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med produktrabatter.",
-              "withorder": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med ordrerabatter.",
-              "withshipping": "Hvis du vil give dine kunder mulighed for at bruge mere end én rabat, skal du opsætte mindst én leveringsrabat, der kan kombineres med leveringsrabatter."
-            }
-          },
-          "link": "Få mere at vide"
-        },
-        "combinations": {
-          "counts": {
-            "product": {
-              "one": "{count} produktrabat",
-              "other": "{count} produktrabatter"
-            },
-            "order": {
-              "one": "{count} ordrerabat",
-              "other": "{count} ordrerabatter"
-            },
-            "shipping": {
-              "one": "{count} leveringsrabat",
-              "other": "{count} leveringsrabatter"
-            }
-          },
-          "info": {
-            "one": "{discountCountLink} er indstillet til at blive kombineret.",
-            "other": "{discountCountLink} er indstillet til at blive kombineret."
-          },
-          "multipleEligibleDiscounts": "Hvis en vare er kvalificeret til flere rabatter, anvendes kun den største rabat."
-        }
-      },
       "discountClass": {
         "product": "produkt",
         "order": "ordre",
