@@ -1,20 +1,19 @@
 $close-btn-size: 20px;
 
 .Item {
-  padding: var(--p-space-400) 0;
+  padding: var(--p-space-300);
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   &:not(:last-child) {
-    border-bottom: var(--p-border-width-025) solid
-      var(--p-color-border-secondary);
+    box-shadow: 0 var(--p-border-width-025) 0 var(--p-color-border-secondary);
+    margin-bottom: var(--p-border-width-025);
   }
 }
 
 .Content {
   flex: 1 1 auto;
-  padding: var(--p-space-100);
   max-width: calc(100% - $close-btn-size);
   overflow: hidden;
 }
