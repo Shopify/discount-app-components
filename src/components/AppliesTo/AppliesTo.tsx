@@ -35,7 +35,7 @@ export function AppliesTo({
   return (
     <>
       {productSelector || collectionSelector ? (
-        <Box>
+        <Box paddingBlockEnd="400">
           <BlockStack gap="400">
             <Text variant="headingSm" as="h2">
               {i18n.translate('DiscountAppComponents.AppliesToCard.title')}

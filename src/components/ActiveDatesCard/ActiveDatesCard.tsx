@@ -113,7 +113,7 @@ export function ActiveDatesCard({
   );
 
   return (
-    <Box>
+    <Box paddingBlockEnd="400">
       <Card padding="400">
         <FormLayout>
           <Text variant="headingSm" as="h2">

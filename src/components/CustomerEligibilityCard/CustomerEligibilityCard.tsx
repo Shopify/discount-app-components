@@ -51,7 +51,7 @@ export function CustomerEligibilityCard({
 }: CustomerEligibilityCardProps) {
   const [i18n] = useI18n();
   return (
-    <Box>
+    <Box paddingBlockEnd="400">
       <Card padding="400">
         <BlockStack gap="400">
           <Text variant="headingSm" as="h2">

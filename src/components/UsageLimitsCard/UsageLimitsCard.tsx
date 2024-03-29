@@ -96,7 +96,7 @@ export function UsageLimitsCard(props: UsageLimitsCardProps) {
   };
 
   return (
-    <Box>
+    <Box paddingBlockEnd="400">
       <Card padding="400">
         <BlockStack gap="400">
           <Text variant="headingSm" as="h2">
