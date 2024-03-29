@@ -72,7 +72,7 @@ export function CountriesAndRatesCard({
     <Box paddingBlockEnd="400">
       <Card padding="400">
         <BlockStack gap="400">
-          <Text variant="headingMd" as="h2">
+          <Text variant="headingSm" as="h2">
             {i18n.translate(
               'DiscountAppComponents.CountriesAndRatesCard.title',
             )}
@@ -120,7 +120,7 @@ export function CountriesAndRatesCard({
               />
             </>
           )}
-          <Text variant="headingMd" as="h2">
+          <Text variant="headingSm" as="h2">
             {i18n.translate(
               'DiscountAppComponents.CountriesAndRatesCard.excludeShippingRatesSection.title',
             )}
