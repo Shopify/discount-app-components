@@ -57,7 +57,7 @@ export function DiscountApplicationStrategyCard({
   ];
 
   return (
-    <Box paddingBlockEnd="400">
+    <Box>
       <Card padding="400">
         <BlockStack gap="400">
           <Text variant="headingSm" as="h2">

@@ -74,7 +74,7 @@ export function MethodCard({
   };
 
   return (
-    <Box paddingBlockEnd="400">
+    <Box>
       <Card padding="400">
         <BlockStack gap="400">
           <InlineStack align="start" blockAlign="center" gap="100">

@@ -103,7 +103,7 @@ export function ValueCard({
   );
 
   return (
-    <Box paddingBlockEnd="400">
+    <Box>
       <Card padding="400">
         <BlockStack gap="200">
           <Text variant="headingSm" as="h2">

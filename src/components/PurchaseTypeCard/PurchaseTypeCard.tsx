@@ -15,7 +15,7 @@ export interface PurchaseTypeCardProps {
 export function PurchaseTypeCard({purchaseType}: PurchaseTypeCardProps) {
   const [i18n] = useI18n();
   return (
-    <Box paddingBlockEnd="400">
+    <Box>
       <Card padding="400">
         <BlockStack gap="400">
           <Text variant="headingSm" as="h2">

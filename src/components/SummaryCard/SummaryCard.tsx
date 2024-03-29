@@ -115,7 +115,7 @@ export function SummaryCard(props: SummaryCardProps) {
   );
 
   return (
-    <Box paddingBlockEnd="400">
+    <Box>
       <Card padding="400">
         <BlockStack gap="400">
           <Text variant="headingMd" as="h2">
