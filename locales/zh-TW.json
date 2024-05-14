@@ -261,7 +261,7 @@
       },
       "excludeShippingRatesSection": {
         "title": "運費費率",
-        "checkboxLabel": "達到指定金額後免除運費費率"
+        "checkboxLabel": "排除超過特定金額的運費"
       }
     },
     "PurchaseTypeList": {
