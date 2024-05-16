@@ -1,5 +1,17 @@
 # @shopify/discount-app-components
 
+## 3.0.0
+
+### Major Changes
+
+- [#203](https://github.com/Shopify/discount-app-components/pull/203) [`8d15cc1`](https://github.com/Shopify/discount-app-components/commit/8d15cc197d1b9bb314546a3a4ae46d9224684d12) Thanks [@devisscher](https://github.com/devisscher)! - Support App Bridge React V4
+
+  - Remove dependency on App Bridge React V4.
+  - Update readme to explain how to use discount-app-components with App Bridge React V4.
+  - Removed navigation utilities included in this library in favor of App Bridge React patterns to be used in App.
+  - Updated the CombinationCard to remove the ability to open the DiscountCombinationModal. This is no longer supported in App Bridge React.
+  - Removed HelpText component.
+
 ## 2.1.2
 
 ### Patch Changes
