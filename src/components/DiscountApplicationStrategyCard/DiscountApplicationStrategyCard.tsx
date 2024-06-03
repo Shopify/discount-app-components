@@ -60,7 +60,7 @@ export function DiscountApplicationStrategyCard({
     <Box paddingBlockEnd="400">
       <Card padding="400">
         <BlockStack gap="400">
-          <Text variant="headingMd" as="h2">
+          <Text variant="headingSm" as="h2">
             {i18n.translate('title', I18N_SCOPE)}
           </Text>
           <ChoiceList
