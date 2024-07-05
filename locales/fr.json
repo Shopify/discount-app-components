@@ -80,7 +80,7 @@
         "orderLabel": "Réductions sur la commande",
         "shippingLabel": "Réductions sur les frais d’expédition"
       },
-      "newBadge": "Nouveau(-elle)",
+      "newBadge": "Nouveau",
       "discountClass": {
         "product": "produit",
         "order": "commande",
