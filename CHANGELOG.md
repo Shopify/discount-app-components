@@ -1,5 +1,13 @@
 # @shopify/discount-app-components
 
+## 3.0.1
+
+### Patch Changes
+
+- [#209](https://github.com/Shopify/discount-app-components/pull/209) [`562fb3c`](https://github.com/Shopify/discount-app-components/commit/562fb3c3ef8d305a5a5fe93daf91bf7bf3f36ad5) Thanks [@dan-gamble](https://github.com/dan-gamble)! - Allow @shopify/polaris v13.x peer dependency
+
+- [#209](https://github.com/Shopify/discount-app-components/pull/209) [`94ef7b9`](https://github.com/Shopify/discount-app-components/commit/94ef7b972082967445f1af5a6618fa08571a4be3) Thanks [@dan-gamble](https://github.com/dan-gamble)! - allow polaris v13+ peer dependency
+
 ## 3.0.0
 
 ### Major Changes
