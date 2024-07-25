@@ -106,7 +106,7 @@ export function ValueCard({
     <Box paddingBlockEnd="400">
       <Card padding="400">
         <BlockStack gap="200">
-          <Text variant="headingMd" as="h2">
+          <Text variant="headingSm" as="h2">
             {i18n.translate('DiscountAppComponents.ValueCard.title')}{' '}
           </Text>
           <InlineStack gap="300" align="start">
@@ -187,7 +187,7 @@ export function ValueCard({
           </InlineStack>
           {sellsSubscriptions && (
             <>
-              <Text variant="headingMd" as="h2">
+              <Text variant="headingSm" as="h2">
                 {i18n.translate(
                   'DiscountAppComponents.ValueCard.purchaseType.title',
                 )}
