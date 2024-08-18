@@ -27,10 +27,6 @@ export interface PerformanceProps {
   totalSales?: MoneyInput;
 }
 
-// const DISCOUNT_ADMIN_REPORT_URL = `shopify://admin/reports/sales_by_discount`;
-
-// `/reports/sales_by_discount`;
-
 const I18N_SCOPE = {
   scope: 'DiscountAppComponents.SummaryCard.Performance',
 };
