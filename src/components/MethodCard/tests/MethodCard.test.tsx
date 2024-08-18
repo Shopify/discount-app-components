@@ -40,16 +40,15 @@ describe('<MethodCard />', () => {
     });
   });
 
-  it('renders the title align start and blockAlign center', () => {
+  it('renders the title align space-betweeen and blockAlign center', () => {
     const methodCard = mountWithApp(<MethodCard {...mockProps} />);
 
     expect(methodCard).toContainReactComponent(Card, {
       padding: '400',
     });
     expect(methodCard).toContainReactComponent(InlineStack, {
-      align: 'start',
+      align: 'space-between',
       blockAlign: 'center',
-      gap: '100',
     });
   });
 
