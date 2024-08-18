@@ -2,7 +2,7 @@ import React from 'react';
 import {useI18n} from '@shopify/react-i18n';
 import {List, Text, BlockStack, Link} from '@shopify/polaris';
 
-import {DiscountMethod, DiscountStatus} from '../../../../constants';
+import {DiscountStatus} from '../../../../constants';
 import type {MoneyInput} from '../../../../types';
 
 export interface PerformanceProps {
@@ -17,14 +17,9 @@ export interface PerformanceProps {
   usageCount?: number;
 
   /**
-   * (optional) Flag that indicates whether a shop has an enabled `ShopFeatures` of `reports` (see https://shopify.dev/api/admin-graphql/2022-04/objects/ShopFeatures#field-shopfeatures-reports)
+   * (optional) Url to the sales by discount report (this changes based on shop's subscription level)
    */
-  hasReports?: boolean;
-
-  /**
-   * (optional) When hasReports is true and discountMethod is Code, displays a link to the admin report
-   */
-  discountMethod?: DiscountMethod;
+  reportsUrl?: string;
 
   /**
    * (optional) The total number of sales that have been made with the discount
@@ -32,7 +27,9 @@ export interface PerformanceProps {
   totalSales?: MoneyInput;
 }
 
-const CODE_DISCOUNT_ADMIN_REPORT_URL = `/reports/sales_by_discount`;
+// const DISCOUNT_ADMIN_REPORT_URL = `shopify://admin/reports/sales_by_discount`;
+
+// `/reports/sales_by_discount`;
 
 const I18N_SCOPE = {
   scope: 'DiscountAppComponents.SummaryCard.Performance',
@@ -41,8 +38,7 @@ const I18N_SCOPE = {
 export function Performance({
   status,
   totalSales,
-  hasReports,
-  discountMethod,
+  reportsUrl,
   usageCount,
 }: PerformanceProps) {
   const [i18n] = useI18n();
@@ -76,9 +72,9 @@ export function Performance({
               </List.Item>
             )}
           </List>
-          {hasReports && discountMethod === DiscountMethod.Code && (
+          {reportsUrl && (
             <p>
-              <Link url={CODE_DISCOUNT_ADMIN_REPORT_URL}>
+              <Link url={reportsUrl} target="_top">
                 {i18n.translate('performanceLink', I18N_SCOPE)}
               </Link>
             </p>

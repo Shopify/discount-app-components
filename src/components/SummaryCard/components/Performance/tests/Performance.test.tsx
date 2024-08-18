@@ -4,7 +4,7 @@ import {CurrencyCode} from '@shopify/react-i18n';
 import {Link} from '@shopify/polaris';
 
 import {Performance} from '../Performance';
-import {DiscountMethod, DiscountStatus} from '../../../../../constants';
+import {DiscountStatus} from '../../../../../constants';
 
 describe('<Performance />', () => {
   const mockProps = {
@@ -53,37 +53,23 @@ describe('<Performance />', () => {
     });
 
     describe('Report link', () => {
-      it('renders a report link when discountMethod is code and the shop has reports', () => {
+      it('renders a report link when report url is passed in', () => {
         const performance = mountWithApp(
           <Performance
             {...mockProps}
-            discountMethod={DiscountMethod.Code}
-            hasReports
+            reportsUrl="shopify://admin/reports/sales_by_discount"
           />,
         );
 
         expect(performance).toContainReactComponent(Link, {
-          url: '/reports/sales_by_discount',
+          url: 'shopify://admin/reports/sales_by_discount',
+          target: '_top',
           children: 'View the sales by discount report',
         });
       });
 
-      it('does not render a report link when discountMethod is code and the shop does not have reports', () => {
-        const performance = mountWithApp(
-          <Performance {...mockProps} discountMethod={DiscountMethod.Code} />,
-        );
-
-        expect(performance).not.toContainReactComponent(Link);
-      });
-
-      it('does not render a report link when discountMethod is automatic', () => {
-        const performance = mountWithApp(
-          <Performance
-            {...mockProps}
-            discountMethod={DiscountMethod.Automatic}
-            hasReports
-          />,
-        );
+      it('does not render a report link when no report url is passed in', () => {
+        const performance = mountWithApp(<Performance {...mockProps} />);
 
         expect(performance).not.toContainReactComponent(Link);
       });
