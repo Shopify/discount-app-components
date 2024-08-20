@@ -51,7 +51,7 @@
       "options": "Opciones de pagos recurrentes",
       "firstPayment": "Limitar el descuento al primer pago",
       "multiplePayments": "Limitar el descuento a varios pagos recurrentes",
-      "allPayments": "El descuento se aplica a todos los pagos recurrentes.",
+      "allPayments": "El descuento se aplica a todos los pagos recurrentes",
       "includesFirstPayment": "Incluye el pago en el primer pedido."
     },
     "MinimumRequirementsCard": {
@@ -113,8 +113,8 @@
       },
       "AppliesToPurchaseType": {
         "appliesToPurchaseTypeSubscription": "Se aplica a compras por suscripción",
-        "appliesToPurchaseTypeOneTime": "Se aplica a compras únicas.",
-        "appliesToPurchaseTypeBoth": "Se aplica a compras por suscripción y únicas."
+        "appliesToPurchaseTypeOneTime": "Se aplica a compras únicas",
+        "appliesToPurchaseTypeBoth": "Se aplica a compras por suscripción y únicas"
       },
       "ActiveDates": {
         "today": "hoy",
@@ -172,7 +172,7 @@
         "totalSales": "{totalSales} en ventas totales"
       },
       "RatesExclusion": {
-        "forShippingRatesUnder": "Se aplica a tarifas de envío inferiores a {value}."
+        "forShippingRatesUnder": "Se aplica a tarifas de envío inferiores a {value}"
       },
       "RecurringPayment": {
         "subscriptionRecurringPayments": {
