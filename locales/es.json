@@ -131,16 +131,16 @@
       "Combinations": {
         "cannotCombine": "No puede combinarse con otros descuentos.",
         "combinesWithOne": {
-          "product": "Se puede combinar con descuentos en productos.",
-          "order": "Se puede combinar con descuentos en pedidos.",
-          "shipping": "Se puede combinar con descuentos de envío."
+          "product": "Se puede combinar con descuentos en productos",
+          "order": "Se puede combinar con descuentos en pedidos",
+          "shipping": "Se puede combinar con descuentos de envío"
         },
         "combinesWithTwo": {
-          "productAndOrder": "Se puede combinar con descuentos en productos y pedidos.",
-          "productAndShipping": "Se puede combinar con descuentos en productos y envíos.",
-          "orderAndShipping": "Se puede combinar con descuentos en pedidos y envíos."
+          "productAndOrder": "Se puede combinar con descuentos en productos y pedidos",
+          "productAndShipping": "Se puede combinar con descuentos en productos y envíos",
+          "orderAndShipping": "Se puede combinar con descuentos en pedidos y envíos"
         },
-        "combinesAll": "Combina con descuentos en productos, pedidos y envíos."
+        "combinesAll": "Combina con descuentos en productos, pedidos y envíos"
       },
       "CustomerEligibility": {
         "allCustomers": "Todos los clientes",
