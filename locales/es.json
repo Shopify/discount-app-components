@@ -56,7 +56,7 @@
     },
     "MinimumRequirementsCard": {
       "title": "Requisitos de compra mínimos",
-      "none": "No hay requisitos mínimos.",
+      "none": "No hay requisitos mínimos",
       "minimumSubtotal": "Monto mínimo de compra ({currencySymbol})",
       "minimumQuantity": "Cantidad mínima de artículos",
       "subscriptions": {
@@ -162,7 +162,7 @@
           "other": "Compra mínima de {count} artículos",
           "many": "Compra mínima de {count} artículos"
         },
-        "noMinimumPurchaseRequirement": "No hay ningún requisito de compra mínima."
+        "noMinimumPurchaseRequirement": "No hay ningún requisito de compra mínima"
       },
       "Performance": {
         "title": "Rendimiento",
