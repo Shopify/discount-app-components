@@ -14,7 +14,7 @@ describe('<ActiveDatesCard />', () => {
     startDate: mockField('2023-02-20T18:23:00.000Z'),
     endDate: mockField('2023-03-20T18:23:00.000Z'),
     locale: 'en-US',
-    ianaTimeZone: 'America/Toronto',
+    timezone: 'America/Toronto',
     timezoneAbbreviation: 'EDT',
   };
 

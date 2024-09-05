@@ -25,9 +25,14 @@ export interface ActiveDatesCardProps {
   endDate: Field<DateTime | null>;
 
   /**
-   * The shop's time zone abbreviation. This can be queried from the [Shop gql object](https://shopify.dev/api/admin-graphql/2022-07/objects/Shop#field-shop-timezoneabbreviation).
+   * The shop's time zone abbreviation. This can be queried from the [Shop gql object](https://shopify.dev/api/admin-graphql/2022-07/objects/Shop#field-timezoneabbreviation).
    */
   timezoneAbbreviation: string;
+
+  /**
+   * (optional) The shop's iana time zone. This can be queried from the [Shop gql object](https://shopify.dev/api/admin-graphql/2022-07/objects/Shop#field-ianatimezone).
+   */
+  timezone?: string;
 
   /**
    * (optional) The day that should be used as the start of the week.
@@ -48,13 +53,14 @@ export function ActiveDatesCard({
   startDate,
   endDate,
   timezoneAbbreviation,
+  timezone,
   weekStartsOn = DEFAULT_WEEK_START_DAY,
   disabled,
 }: ActiveDatesCardProps) {
   const [i18n] = useI18n();
   const nowInUTC = new Date();
 
-  const ianaTimezone = i18n.defaultTimezone!;
+  const ianaTimezone = timezone ?? i18n.defaultTimezone!;
   const showEndDate = Boolean(endDate.value);
 
   // When start date or time changes, updates the end date to be later than start date (if applicable)
