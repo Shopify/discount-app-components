@@ -15,6 +15,7 @@ export default function UsageLimitsPattern() {
   return (
     <Page>
       <UsageLimitsCard
+        isLimited
         totalUsageLimit={{
           value: totalUsageLimit,
           onChange: setTotalUsageLimit,
@@ -25,14 +26,6 @@ export default function UsageLimitsPattern() {
         }}
       />
       <UsageLimitsCard
-        totalUsageLimit={{
-          value: totalUsageLimit,
-          onChange: setTotalUsageLimit,
-        }}
-        oncePerCustomer={{
-          value: oncePerCustomer,
-          onChange: setOncePerCustomer,
-        }}
         isRecurring
         recurringPaymentType={{
           value: recurringPaymentType,

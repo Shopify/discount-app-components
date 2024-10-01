@@ -93,7 +93,7 @@ export function RecurringPayment({
 
   return (
     <BlockStack gap="400">
-      <Text variant="headingSm" as="h3">
+      <Text variant="headingMd" as="h2">
         {i18n.translate('DiscountAppComponents.RecurringPayment.title')}
       </Text>
       <ChoiceList
