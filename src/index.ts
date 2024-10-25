@@ -15,6 +15,7 @@ export type {
   Customer,
   CustomerSegment,
   CombinableDiscountTypes,
+  ProductOrCollectionResource
 } from './types';
 
 // constants
@@ -107,3 +108,5 @@ export {ValueCard} from './components/ValueCard';
 export {DiscountApplicationStrategyCard} from './components/DiscountApplicationStrategyCard';
 
 export {AppliesTo} from './components/AppliesTo';
+
+export {AppliesToEligibility} from './constants';
