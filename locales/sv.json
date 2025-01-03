@@ -60,12 +60,12 @@
       "minimumSubtotal": "Minsta inköpsbelopp ({currencySymbol})",
       "minimumQuantity": "Minsta antal artiklar",
       "subscriptions": {
-        "appliesToCollections": "Gäller endast för prenumerationsprodukter i utvald kategori.",
+        "appliesToCollections": "Gäller endast för prenumerationsprodukter i utvald produktserie.",
         "appliesToProducts": "Gäller endast för utvalda prenumerationsprodukter.",
         "appliesToAllProducts": "Gäller endast för prenumerationsprodukter."
       },
       "oneTime": {
-        "appliesToCollections": "Gäller endast för utvalda kategorier.",
+        "appliesToCollections": "Gäller endast för utvalda produktserier.",
         "appliesToProducts": "Gäller endast för utvalda produkter.",
         "appliesToAllProducts": "Gäller alla produkter."
       }
