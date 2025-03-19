@@ -2,6 +2,7 @@
   "name": "@shopify/discount-app-components",
   "description": "Shopify’s discounts component library",
   "version": "3.0.2",
+  "deprecated": "This package is deprecated. Please use @shopify/polaris instead.",
   "author": "Shopify <dev@shopify.com>",
   "repository": "https://github.com/Shopify/discount-app-components",
   "bugs": "https://github.com/Shopify/discount-app-components/issues",
@@ -41,7 +42,7 @@
     }
   },
   "engines": {
-    "node": "^16.17.0 || >=18.12.0"
+    "node": ">=18.12.0"
   },
   "scripts": {
     "lint": "loom lint",
