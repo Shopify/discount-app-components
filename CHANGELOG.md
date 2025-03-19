@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 3.0.2
+
+### Patch Changes
+
+- [#227](https://github.com/Shopify/discount-app-components/pull/227) [`a4bf926`](https://github.com/Shopify/discount-app-components/commit/a4bf92669afc87e47a5702ed9cf7d8cf9fc6175a) Thanks [@mathiusj](https://github.com/mathiusj)! - add provenance to release workflow
+
 ## 3.0.1
 
 ### Patch Changes
