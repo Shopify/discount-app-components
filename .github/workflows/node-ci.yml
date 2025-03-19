@@ -32,7 +32,7 @@ jobs:
           cache: 'yarn'
           check-latest: true
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v4
         name: Restore loom cache
         with:
           path: |
