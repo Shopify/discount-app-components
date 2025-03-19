@@ -118,7 +118,7 @@
 
 ### Patch Changes
 
-- [#79](https://github.com/Shopify/discount-app-components/pull/79) [`cd675be`](https://github.com/Shopify/discount-app-components/commit/cd675be135779c2ed62405bded88f68e09f0b38f) Thanks [@mathiusj](https://github.com/mathiusj)! - increase node version to 16.17.0
+- [#79](https://github.com/Shopify/discount-app-components/pull/79) [`cd675be`](https://github.com/Shopify/discount-app-components/commit/cd675be135779c2ed62405bded88f68e09f0b38f) Thanks [@mathiusj](https://github.com/mathiusj)! - increase node version to 18.12.0
 
 - [#62](https://github.com/Shopify/discount-app-components/pull/62) [`b0c72e7`](https://github.com/Shopify/discount-app-components/commit/b0c72e7b46ad022274c201ba80f7896fb8933380) Thanks [@laurkim](https://github.com/laurkim)! - Update Polaris style guide links
 
