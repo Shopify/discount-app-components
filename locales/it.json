@@ -224,7 +224,7 @@
       "title": "Tipo di acquisto",
       "choiceList": {
         "title": "Tipo di acquisto",
-        "oneTimePurchase": "Acquisto una tantum",
+        "oneTimePurchase": "Acquisto singolo",
         "subscription": "Abbonamento",
         "both": "Entrambi"
       }
@@ -499,7 +499,7 @@
         "title": "Tipo di acquisto",
         "choiceListTitle": "Seleziona tipo di acquisto",
         "choices": {
-          "oneTime": "Acquisto una tantum",
+          "oneTime": "Acquisto singolo",
           "subscription": "Abbonamento",
           "both": "Entrambe"
         },
