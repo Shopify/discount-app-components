@@ -5,9 +5,19 @@
 
 `@shopify/discount-app-components` provides a set of stateless discount components to help 3p app developers create discounts apps.
 
-## Note on updates
+# Deprecation Notice: @shopify/discount-app-components
 
-While we strive to keep the library updated, please note that the current version available in the Shopify admin may be different from this version. We will communicate upcoming updates as they are planned.
+> 🚨 This package is deprecated. Please use [Polaris](https://polaris.shopify.com/) instead.
+
+We're officially deprecating the `@shopify/discount-app-components` package, as it hasn't been actively maintained or supported for an extended period. This deprecation helps reduce maintenance overhead for our team and directs developers toward our current recommended solutions.
+
+## Recommended Alternatives
+
+1. **Polaris Components**: For general UI components, please use [Polaris](https://polaris.shopify.com/) which offers a comprehensive set of maintained, accessible components.
+
+2. **Admin UI Extensions**: For building discount apps specifically, we strongly recommend using [Admin UI Extensions](https://shopify.dev/docs/api/admin-extensions), which provide a more integrated, future-proof approach to building discount apps.
+
+This change aligns with our broader strategy of consolidating component libraries and providing extension-based approaches for app development.
 
 ## App development
 
