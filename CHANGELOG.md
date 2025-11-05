@@ -1,5 +1,11 @@
 # @shopify/discount-app-components
 
+## 3.0.3
+
+### Patch Changes
+
+- [#229](https://github.com/Shopify/discount-app-components/pull/229) [`e5b7f5d`](https://github.com/Shopify/discount-app-components/commit/e5b7f5de384597773a4a62d181d864f2fa34e5ee) Thanks [@devisscher](https://github.com/devisscher)! - This package is deprecated. Please use [Polaris](https://polaris.shopify.com/) instead.
+
 ## 3.0.2
 
 ### Patch Changes
