@@ -125,7 +125,7 @@
         "activeFromDateUntilToday": "Ativo de {date} até hoje"
       },
       "AvailableOnPos": {
-        "availableOnCheckoutAndPos": "Disponível em canais de vendas online e no Shopify PDV",
+        "availableOnCheckoutAndPos": "Disponível em canais de vendas online e no Shopify POS",
         "availableOnCheckoutOnly": "Disponível em canais de venda online"
       },
       "Combinations": {
