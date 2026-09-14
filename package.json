@@ -6,12 +6,8 @@
   "author": "Shopify <dev@shopify.com>",
   "repository": "https://github.com/Shopify/discount-app-components",
   "bugs": "https://github.com/Shopify/discount-app-components/issues",
-  "private": false,
+  "private": true,
   "license": "SEE LICENSE IN LICENSE.md",
-  "publishConfig": {
-    "access": "public",
-    "@shopify:registry": "https://registry.npmjs.org"
-  },
   "files": [
     "build/",
     "!build/ts/**/*.tsbuildinfo",
@@ -54,10 +50,7 @@
     "build": "node ./scripts/build.js",
     "preyalcpublish": "npm-run-all clean build",
     "prepare": "npm-run-all clean build",
-    "storybook": "yarn sb dev",
-    "changeset": "changeset",
-    "version": "changeset version",
-    "release": "changeset publish"
+    "storybook": "yarn sb dev"
   },
   "dependencies": {
     "@shopify/admin-graphql-api-utilities": "^2.0.0",
@@ -77,8 +70,6 @@
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/node": "^7.14.9",
-    "@changesets/changelog-github": "^0.4.6",
-    "@changesets/cli": "^2.24.4",
     "@rollup/plugin-alias": "^5.0.0",
     "@rollup/plugin-image": "^2.0.5",
     "@rollup/plugin-json": "^4.1.0",
