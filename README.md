@@ -5,15 +5,13 @@
 
 `@shopify/discount-app-components` provides a set of stateless discount components to help 3p app developers create discounts apps.
 
-# Deprecation Notice: @shopify/discount-app-components
+## Deprecated
 
-> 🚨 This package is deprecated. Please use [Polaris](https://polaris.shopify.com/) instead.
+`@shopify/discount-app-components` is deprecated and no longer maintained. This repository does not accept changes or publish new releases.
 
-We're officially deprecating the `@shopify/discount-app-components` package, as it hasn't been actively maintained or supported for an extended period. This deprecation helps reduce maintenance overhead for our team and directs developers toward our current recommended solutions.
+## Recommended alternatives
 
-## Recommended Alternatives
-
-1. **Polaris Components**: For general UI components, please use [Polaris](https://polaris.shopify.com/) which offers a comprehensive set of maintained, accessible components.
+1. **Polaris web components**: For general UI components, use [Polaris web components](https://shopify.dev/docs/api/polaris), which offer a maintained, accessible component set.
 
 2. **Admin UI Extensions**: For building discount apps specifically, we strongly recommend using [Admin UI Extensions](https://shopify.dev/docs/api/admin-extensions), which provide a more integrated, future-proof approach to building discount apps.
 
@@ -153,29 +151,3 @@ You may need to update your webpack.config.js to include a `module.rules` of:
   type: 'javascript/auto',
 }
 ```
-
-### Deploying new versions
-
-Writing changelogs and releasing should be as seamless and automated as possible. This repo uses changesets to version and release packages. To create a new version and release, follow these steps:
-
-#### Typical flow:
-
-##### Feature work
-
-1. Changes are made in a working branch and it is deemed that a version (patch/minor/major) bump is needed.
-2. On the working branch:
-   a. If you want to include those changes into the changelog, run `yarn changeset add` and commit the generated changesets.
-   b. If you don't want to include those changes in the changelog, you can label your pr with 🤖 Skip Changelog.
-3. Then push the generated changesets and or changes to your working branch
-4. Merge working branch as you would normally, after getting reviews and CI passing
-
-##### New version and releasing
-
-1. When feature work is merged into main there is a release GitHub action that runs which generates a Version Packages pull request.
-2. It runs `yarn version` and incorporates the changesets into the changelog and bumps the version accordingly. (patch/minor/major) It then creates a `Version Packages` pull request.
-3. Merge the Version Packages PR.
-4. The release action runs `yarn release`, which publishes the package to npm.
-
-### Contributing
-
-Please see our [contributing guidelines](https://github.com/Shopify/discount-app-components/blob/main/CONTRIBUTING.md) for details.
