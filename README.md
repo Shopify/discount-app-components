@@ -11,7 +11,7 @@
 
 ## Recommended alternatives
 
-1. **Polaris Components**: For general UI components, please use [Polaris](https://polaris.shopify.com/) which offers a comprehensive set of maintained, accessible components.
+1. **Polaris web components**: For general UI components, use [Polaris web components](https://shopify.dev/docs/api/polaris), which offer a maintained, accessible component set.
 
 2. **Admin UI Extensions**: For building discount apps specifically, we strongly recommend using [Admin UI Extensions](https://shopify.dev/docs/api/admin-extensions), which provide a more integrated, future-proof approach to building discount apps.
 
